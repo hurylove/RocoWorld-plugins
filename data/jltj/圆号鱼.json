@@ -1,0 +1,384 @@
+{
+  "name": "圆号鱼",
+  "number": "184",
+  "attribute": [
+    "水"
+  ],
+  "attributeIcon": "https://patchwiki.biligame.com/images/rocom/d/d1/csqsyhq1k488329455xdlzdcybv6zjh.png",
+  "portrait": "https://patchwiki.biligame.com/images/rocom/a/a1/b8v1gy6rvsqs6g02hko4oa7bj0z04gk.png",
+  "stats": {
+    "生命": 136,
+    "物攻": 34,
+    "魔攻": 95,
+    "物防": 95,
+    "魔防": 110,
+    "速度": 105
+  },
+  "traits": [
+    {
+      "name": "泛音列",
+      "description": "使用状态技能后，敌方获得【聒噪】技能的效果，持续3回合。"
+    }
+  ],
+  "evolution": "",
+  "skills": {
+    "elfSkills": [
+      {
+        "name": "激怒",
+        "type": "状态",
+        "power": "0",
+        "energy": "3",
+        "accuracy": "✦敌方除本回合使用的技能，其他技能能耗+3，持续3回合。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/3/30/pp49lmegm9cmvv79oz7lvaw0h9r6q3m.png"
+      },
+      {
+        "name": "甩水",
+        "type": "魔攻",
+        "power": "30",
+        "energy": "0",
+        "accuracy": "✦造成魔伤，自己回复1能量。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/1/1b/bcpw1ec5qsevcgb1ob8ot842hgghy3e.png"
+      },
+      {
+        "name": "防御",
+        "type": "防御",
+        "power": "0",
+        "energy": "1",
+        "accuracy": "✦减伤70%，应对攻击。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/4/40/d5m527azmrkdmrdvfnayi157ossqe5a.png"
+      },
+      {
+        "name": "肥皂泡",
+        "type": "魔攻",
+        "power": "60",
+        "energy": "1",
+        "accuracy": "✦对敌方精灵造成魔法伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/8/8b/dunqswg1h0fyc2hzgnsu00xvx8tl80l.png"
+      },
+      {
+        "name": "洗礼",
+        "type": "状态",
+        "power": "0",
+        "energy": "1",
+        "accuracy": "✦驱散自己的减益，并获得全技能能耗-1。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/a/a7/1x7ennxbgrbn8mg4zainrur50yn9vwn.png"
+      },
+      {
+        "name": "许愿星",
+        "type": "魔攻",
+        "power": "110",
+        "energy": "3",
+        "accuracy": "✦对敌方精灵造成魔法伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/9/9f/tnom58ix8ltac2qdz2dh89owjhcsxty.png"
+      },
+      {
+        "name": "打湿",
+        "type": "状态",
+        "power": "0",
+        "energy": "4",
+        "accuracy": "✦自己获得1层湿润印记。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/3/36/33qryzuif3xjgl549gok9ojyl7giy3t.png"
+      },
+      {
+        "name": "泡沫幻影",
+        "type": "防御",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦减伤80%，应对攻击：自己脱离。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/9/97/pseovvl9sj5fusmbole306xda69bdcr.png"
+      },
+      {
+        "name": "水炮",
+        "type": "魔攻",
+        "power": "110",
+        "energy": "5",
+        "accuracy": "✦造成魔伤，每次使用后，本技能能耗永久-1。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/0/00/n0g484008mywyuvfjzlepm1r54wjxhn.png"
+      },
+      {
+        "name": "润泽",
+        "type": "状态",
+        "power": "0",
+        "energy": "7",
+        "accuracy": "✦自己获得魔攻+190%。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/c/cc/q0hvhfunr3knp5nt4xr5shgqifi94ps.png"
+      },
+      {
+        "name": "涌泉",
+        "type": "魔攻",
+        "power": "60",
+        "energy": "6",
+        "accuracy": "✦造成魔伤，本技能能耗每-1，威力+10。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/e7/cl4n15i3da71hfeo3tleig2mw0vlxpv.png"
+      },
+      {
+        "name": "落雨",
+        "type": "状态",
+        "power": "0",
+        "energy": "5",
+        "accuracy": "✦将天气改为雨天，持续8回合。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/3/36/cqjtpcdcm1ozdhnyh3kgo4mtx0gxadb.png"
+      },
+      {
+        "name": "盐水浴",
+        "type": "状态",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦自己获得全技能能耗-2，应对防御：改为技能能耗-3。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/4/4e/4mzbfpaie7z3pbqdirzgx835mderbsh.png"
+      }
+    ],
+    "bloodlineSkills": [
+      {
+        "name": "休息回复",
+        "type": "状态",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦自己回复30%生命。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/c/c1/jano9wuttu2xsegfr835gmxxtxh54us.png"
+      },
+      {
+        "name": "贪婪",
+        "type": "状态",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦自己获得100%吸血。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/b/b0/8j640unemfn5brxe2ekvljuf4djmq2i.png"
+      },
+      {
+        "name": "升龙咆哮",
+        "type": "魔攻",
+        "power": "200",
+        "energy": "3",
+        "accuracy": "✦蓄力，对敌方造成魔法伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/e9/h5mznzxstkiuigtrwdnrsahmio6oqcb.png"
+      },
+      {
+        "name": "麻痹",
+        "type": "状态",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦敌方先手-1，应对防御：额外使敌方获得双攻-70%。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/d/d4/p0e89icdz5hoaaikyhi3vwpkusnldlj.png"
+      },
+      {
+        "name": "化劲",
+        "type": "状态",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦自己获得全技能威力+40。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/9/92/7f0v32friezvc0qxvuqqdihamnbtdxg.png"
+      },
+      {
+        "name": "引燃",
+        "type": "状态",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦敌方获得10层灼烧。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/d/d9/ptoxi3sd725e4asif3ee5ak5h76r3ng.png"
+      },
+      {
+        "name": "鬼火",
+        "type": "魔攻",
+        "power": "30",
+        "energy": "0",
+        "accuracy": "✦造成魔伤，自己回复1能量。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/2/2e/mb458tr0rfhbi1c8y3a6ym3drz194s2.png"
+      },
+      {
+        "name": "徒长",
+        "type": "状态",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦自己回复10能量。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/5/50/s5toniuyg91wv9obse5g19c0sd98orb.png"
+      },
+      {
+        "name": "霜降",
+        "type": "状态",
+        "power": "0",
+        "energy": "1",
+        "accuracy": "✦敌方获得4层冻结。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/b/bd/lfplex8gjbax37wl13uk3p83yzbuy8a.png"
+      },
+      {
+        "name": "假寐",
+        "type": "状态",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦自己回复2能量，己方队伍获得1次奉献：能耗-2。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/c/c2/aaueqqyqeqi5o1jqm5zrm5tp7dtv6y2.png"
+      },
+      {
+        "name": "虹光冲击",
+        "type": "魔攻",
+        "power": "100",
+        "energy": "3",
+        "accuracy": "✦对敌方精灵造成魔法伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/0/07/0gkbj8jwj0s8ayldj3rw48b6hefaa8n.png"
+      },
+      {
+        "name": "啮合传递",
+        "type": "状态",
+        "power": "0",
+        "energy": "1",
+        "accuracy": "✦自己获得速度+80，本技能位于1号或3号位时额外获得物攻+60%，传动1。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/7/74/togldrxfbzydbe48p7e9w8zidd7c8f0.png"
+      },
+      {
+        "name": "甜心续航",
+        "type": "状态",
+        "power": "0",
+        "energy": "3",
+        "accuracy": "✦自己和敌方获得萌化：回复40%生命和4能量。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/a/a4/9c0vpmic56t9ybatxl4oe0r0tsg6tjc.png"
+      },
+      {
+        "name": "超维投射",
+        "type": "状态",
+        "power": "0",
+        "energy": "4",
+        "accuracy": "✦敌方获得4层星陨印记。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/d/d6/rlm1yfi6u8pfn2xcxplt1d60cnzq94w.png"
+      },
+      {
+        "name": "泥浆铠甲",
+        "type": "状态",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦自己获得物攻和物防+60%，应对防御：额外使自己的增益翻倍。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/c/c8/gm1n80gvc7gdtjx0voifrpki1susxc2.png"
+      },
+      {
+        "name": "毒孢子",
+        "type": "状态",
+        "power": "0",
+        "energy": "3",
+        "accuracy": "✦敌方获得5层中毒。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/8/8f/dkpwubnyefitw7vuqw3uhy582f1uo9u.png"
+      },
+      {
+        "name": "水弹枪",
+        "type": "魔攻",
+        "power": "80",
+        "energy": "2",
+        "accuracy": "✦对敌方精灵造成魔法伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/8/8c/k5sx0uik6bto4jk16zcenez14b2dslu.png"
+      },
+      {
+        "name": "羽化加速",
+        "type": "状态",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦自己获得全技能威力+20，迅捷。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/a/ad/fk5yguh4nd5a72stw5u7fvbeaat2r7c.png"
+      }
+    ],
+    "skillStones": [
+      {
+        "name": "主轴",
+        "type": "物攻",
+        "power": "75",
+        "energy": "2",
+        "accuracy": "✦造成物伤，此技能位置不会改变。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/8/8b/sam3gg2ms20vh8ksnvqppgnaed2eitx.png"
+      },
+      {
+        "name": "勾魂",
+        "type": "状态",
+        "power": "0",
+        "energy": "1",
+        "accuracy": "✦偷取敌方3能量。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/5/5b/742j3psv922fzlkabop0okvjyk2ypmk.png"
+      },
+      {
+        "name": "取念",
+        "type": "状态",
+        "power": "0",
+        "energy": "0",
+        "accuracy": "✦每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/3/31/ag032vsj7ieb4jbt3sx3w9adisv97a0.png"
+      },
+      {
+        "name": "嘲弄",
+        "type": "状态",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/2/21/is1urbdqcf48h77lz36dby5obsrmigr.png"
+      },
+      {
+        "name": "快速移动",
+        "type": "状态",
+        "power": "0",
+        "energy": "1",
+        "accuracy": "✦自己获得速度+80，应对防御：改为速度+160。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/e6/pvc3oiw47yx4rl5skzm8ag7knivbm5w.png"
+      },
+      {
+        "name": "恐吓",
+        "type": "魔攻",
+        "power": "80",
+        "energy": "2",
+        "accuracy": "✦对敌方精灵造成魔法伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/0/04/bzqvobak5yee2cgivlt3q10770uobx2.png"
+      },
+      {
+        "name": "恶作剧",
+        "type": "状态",
+        "power": "0",
+        "energy": "1",
+        "accuracy": "✦敌方失去3能量，应对防御：改为敌方失去6能量。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/7/77/is1urbdqcf48h77lz36dby5obsrmigr.png"
+      },
+      {
+        "name": "操控",
+        "type": "状态",
+        "power": "0",
+        "energy": "1",
+        "accuracy": "✦敌方本回合使用的技能能耗+7，持续3回合。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/7/79/mjs772jnvrv9hn1b65lknl2tyzzma35.png"
+      },
+      {
+        "name": "杠杆置换",
+        "type": "状态",
+        "power": "0",
+        "energy": "0",
+        "accuracy": "✦自己回复2能量，交换两侧技能位置。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/3/32/5hy17v1ba9zyiat78433unhkaoh698q.png"
+      },
+      {
+        "name": "棘刺",
+        "type": "状态",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦敌方获得1层棘刺印记。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/f/fb/bklgf0tt9kxbm7hhif3m2d43at3cbes.png"
+      },
+      {
+        "name": "灵媒",
+        "type": "魔攻",
+        "power": "100",
+        "energy": "3",
+        "accuracy": "✦对敌方精灵造成魔法伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/0/08/4epob8f12qj5nepa4unoidkj6ul85ae.png"
+      },
+      {
+        "name": "精神扰乱",
+        "type": "状态",
+        "power": "0",
+        "energy": "0",
+        "accuracy": "✦敌方获得全技能能耗+1，应对防御：改为能耗+3。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/9/9c/9sp9n7fjbbkqprmhvny5tyfoia8uwto.png"
+      },
+      {
+        "name": "魔法增效",
+        "type": "状态",
+        "power": "0",
+        "energy": "0",
+        "accuracy": "✦自己获得魔攻+70%。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/9/91/ccs5zv2xagec1cs05nqh09in7524vco.png"
+      }
+    ]
+  }
+}

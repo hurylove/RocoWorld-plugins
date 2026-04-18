@@ -1,0 +1,432 @@
+{
+  "name": "迷迷箱怪",
+  "number": "211",
+  "attribute": [
+    "机械"
+  ],
+  "attributeIcon": "https://patchwiki.biligame.com/images/rocom/a/ad/fw81a2pvdickbcnq5rt17m6066cchcf.png",
+  "portrait": "https://patchwiki.biligame.com/images/rocom/0/0a/ocy3pzt2cn0mmx85cm8is2ulwy8s2ii.png",
+  "stats": {
+    "生命": 138,
+    "物攻": 129,
+    "魔攻": 129,
+    "物防": 153,
+    "魔防": 153,
+    "速度": 80
+  },
+  "traits": [
+    {
+      "name": "虚假宝箱",
+      "description": "自己力竭时，敌方获得攻防+20%。"
+    }
+  ],
+  "evolution": "",
+  "skills": {
+    "elfSkills": [
+      {
+        "name": "杠杆置换",
+        "type": "状态",
+        "power": "0",
+        "energy": "0",
+        "accuracy": "✦自己回复2能量，交换两侧技能位置。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/3/32/5hy17v1ba9zyiat78433unhkaoh698q.png"
+      },
+      {
+        "name": "能量守恒",
+        "type": "防御",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦减伤80%，应对攻击：两侧技能能耗永久-1。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/3/37/6auaafc79ya0cd65kpmrpqkcs8e8viq.png"
+      },
+      {
+        "name": "粒子对撞",
+        "type": "物攻",
+        "power": "40",
+        "energy": "0",
+        "accuracy": "✦对敌方精灵造成物理伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/7/73/2562kho8opartow6zgrgmxnp7evn0t3.png"
+      },
+      {
+        "name": "离子震荡",
+        "type": "魔攻",
+        "power": "90",
+        "energy": "3",
+        "accuracy": "✦造成魔伤，本技能位于3号位时威力+40，传动1。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/d/dc/3c4l1zj598p0rb88vlj3nj5etl1r3o4.png"
+      },
+      {
+        "name": "啮合传递",
+        "type": "状态",
+        "power": "0",
+        "energy": "1",
+        "accuracy": "✦自己获得速度+80，本技能位于1号或3号位时额外获得物攻+60%，传动1。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/7/74/togldrxfbzydbe48p7e9w8zidd7c8f0.png"
+      },
+      {
+        "name": "星云漩涡",
+        "type": "物攻",
+        "power": "60",
+        "energy": "1",
+        "accuracy": "✦对敌方精灵造成物理伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/9/9b/rahz9b2f88z2tnwlzut03jf0lm5yo46.png"
+      },
+      {
+        "name": "星链",
+        "type": "状态",
+        "power": "0",
+        "energy": "3",
+        "accuracy": "✦2连击，每次连击使敌方获得1层星陨印记。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/0/0f/svpekyitq7zeetxqs892wiuntuizyk9.png"
+      },
+      {
+        "name": "防御",
+        "type": "防御",
+        "power": "0",
+        "energy": "1",
+        "accuracy": "✦减伤70%，应对攻击。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/4/40/d5m527azmrkdmrdvfnayi157ossqe5a.png"
+      },
+      {
+        "name": "针状物",
+        "type": "魔攻",
+        "power": "30",
+        "energy": "3",
+        "accuracy": "✦造成魔伤，3连击。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/f/fd/f3kia358a7mvemmfgbh5kc1sxo0xdpv.png"
+      },
+      {
+        "name": "主轴",
+        "type": "物攻",
+        "power": "75",
+        "energy": "2",
+        "accuracy": "✦造成物伤，此技能位置不会改变。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/8/8b/sam3gg2ms20vh8ksnvqppgnaed2eitx.png"
+      },
+      {
+        "name": "冥想",
+        "type": "防御",
+        "power": "0",
+        "energy": "3",
+        "accuracy": "✦减伤80%，应对攻击：敌方获得2层星陨印记。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/c/cf/oefq890dnl5rb31p7hazwjzflq3qxr2.png"
+      },
+      {
+        "name": "磁暴",
+        "type": "魔攻",
+        "power": "70",
+        "energy": "2",
+        "accuracy": "✦造成魔伤，本技能位于1号或3号位时威力+30，传动1。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/2/2a/qrv2hngecjqi0fsi93926sd99l2kjr1.png"
+      },
+      {
+        "name": "双星",
+        "type": "物攻",
+        "power": "100",
+        "energy": "3",
+        "accuracy": "✦对敌方精灵造成物理伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/7/7f/1150hglyn81esiou15a3ouqzfvfob4y.png"
+      },
+      {
+        "name": "后发制人",
+        "type": "物攻",
+        "power": "155",
+        "energy": "3",
+        "accuracy": "✦造成物理伤害，先手-1。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/4/4e/rqh3gnllc6fwdkwqn7nohui2en41xje.png"
+      },
+      {
+        "name": "齿轮切开",
+        "type": "物攻",
+        "power": "130",
+        "energy": "5",
+        "accuracy": "✦造成物伤，本技能位于1号或3号位时能耗-2，传动1。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/2/2d/ldb6er0e3ifqs2yo6aodu2c0rgi1p8d.png"
+      },
+      {
+        "name": "错乱",
+        "type": "魔攻",
+        "power": "65",
+        "energy": "2",
+        "accuracy": "✦造成魔伤，应对状态：敌方获得3层星陨印记。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/4/46/iydnp4q1o4vkol5j9cqu7yeyv87p2es.png"
+      }
+    ],
+    "bloodlineSkills": [
+      {
+        "name": "防反",
+        "type": "防御",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦减伤60%，应对攻击：自己获得物攻和魔攻+40%。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/e0/c606sqa07y5tujdp1eumt76561qggo8.png"
+      },
+      {
+        "name": "等价交换",
+        "type": "防御",
+        "power": "0",
+        "energy": "3",
+        "accuracy": "✦减伤90%，应对攻击：自己获得50%吸血。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/5/54/sqc5heg9kd20h7ytzhn7su24drdzf8e.png"
+      },
+      {
+        "name": "升龙咆哮",
+        "type": "魔攻",
+        "power": "200",
+        "energy": "3",
+        "accuracy": "✦蓄力，对敌方造成魔法伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/e9/h5mznzxstkiuigtrwdnrsahmio6oqcb.png"
+      },
+      {
+        "name": "集中",
+        "type": "防御",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦减伤80%，应对攻击：自己回合结束返场。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/5/51/j0r3fyeme8ibytepaq1qgu6jwbgn7sj.png"
+      },
+      {
+        "name": "反击拳",
+        "type": "物攻",
+        "power": "25",
+        "energy": "2",
+        "accuracy": "✦造成物伤，2连击，若后手攻击，改为3连击。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/3/39/b1ehyr5b2nojwrxfwbk5qrdt2yeaek4.png"
+      },
+      {
+        "name": "火焰护盾",
+        "type": "防御",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦减伤70%，应对攻击：敌方获得6层灼烧。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/7/7b/1kjcyximafzqdu8d6xly4qoojewmogf.png"
+      },
+      {
+        "name": "虚化",
+        "type": "防御",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦减伤80%，应对攻击：自己获得魔防+70%。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/4/40/pvwcu7julu4yeqpurawcvfip0ks5vm0.png"
+      },
+      {
+        "name": "蜡质膜",
+        "type": "防御",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦减伤80%，应对攻击：回复3能量。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/b/b6/hzfjcm4r5ip3s00mp5b4at6el7332b6.png"
+      },
+      {
+        "name": "雪替身",
+        "type": "防御",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦减伤70%，应对攻击：回复能量，回复值等于被应对技能能耗的2倍。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/3/3c/jlzhrih3ngp2bkhdj85sa1tl5jsf5qa.png"
+      },
+      {
+        "name": "尾后针",
+        "type": "物攻",
+        "power": "80",
+        "energy": "2",
+        "accuracy": "✦对敌方精灵造成物理伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/b/be/m9aundeeyagfd7hk6pl7g9uqnqy4yy6.png"
+      },
+      {
+        "name": "虹光冲击",
+        "type": "魔攻",
+        "power": "100",
+        "energy": "3",
+        "accuracy": "✦对敌方精灵造成魔法伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/0/07/0gkbj8jwj0s8ayldj3rw48b6hefaa8n.png"
+      },
+      {
+        "name": "金属噪音",
+        "type": "魔攻",
+        "power": "100",
+        "energy": "3",
+        "accuracy": "✦对敌方精灵造成魔法伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/1/1c/17k7ebhxzujvu27l257nur3b7e3ller.png"
+      },
+      {
+        "name": "魅惑",
+        "type": "魔攻",
+        "power": "60",
+        "energy": "1",
+        "accuracy": "✦对敌方精灵造成魔法伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/d/d5/mlwztkwvmbm1rmlvxdh8dzkntzh56ak.png"
+      },
+      {
+        "name": "念力膨胀",
+        "type": "物攻",
+        "power": "80",
+        "energy": "2",
+        "accuracy": "✦对敌方精灵造成物理伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/e7/oh2csauefqvr62g21j1qxikz14prjju.png"
+      },
+      {
+        "name": "淤泥表皮",
+        "type": "防御",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦减伤80%，应对攻击：敌方获得连击数-3。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/5/54/3l6legwmhf2h8n97wrgth1qg85rfusg.png"
+      },
+      {
+        "name": "溃烂触碰",
+        "type": "物攻",
+        "power": "60",
+        "energy": "1",
+        "accuracy": "✦对敌方精灵造成物理伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/6/6e/exs3sq1o8p2575vo4xj85pylzvmd6uw.png"
+      },
+      {
+        "name": "水泡盾",
+        "type": "防御",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦减伤80%，应对攻击：自己获得魔攻+70%。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/1/12/3pbf86nnvzykqxqarqjgn4d802vgap0.png"
+      },
+      {
+        "name": "风墙",
+        "type": "防御",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦减伤50%，迅捷，应对攻击。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/5/5b/lyawadaxu1x5q0r6cww2yvvr0hj8vo0.png"
+      }
+    ],
+    "skillStones": [
+      {
+        "name": "借用",
+        "type": "状态",
+        "power": "0",
+        "energy": "0",
+        "accuracy": "✦每回合随机变成己方队伍中其他精灵的技能。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/0/0e/nh7e53mds21njmjq0qrf8mskxobmuhu.png"
+      },
+      {
+        "name": "偷袭",
+        "type": "物攻",
+        "power": "85",
+        "energy": "3",
+        "accuracy": "✦造成物伤，应对状态：本次技能威力变为3倍。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/3/31/rvptw2pcdrwebq0hs3dslj1474iys8h.png"
+      },
+      {
+        "name": "刺盾",
+        "type": "防御",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦减伤70%，应对攻击：敌方获得物攻-70%。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/7/7b/2hsayokwivc29seg3x3q07tcdp5w233.png"
+      },
+      {
+        "name": "力量增效",
+        "type": "状态",
+        "power": "0",
+        "energy": "1",
+        "accuracy": "✦自己获得物攻+100%。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/0/03/kqkpuxytz7mjs3n3o6zn8pklqd0stll.png"
+      },
+      {
+        "name": "压扁",
+        "type": "物攻",
+        "power": "155",
+        "energy": "5",
+        "accuracy": "✦对敌方精灵造成物理伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/7/70/3f928v01mzvptx7li1s3izrvayahgel.png"
+      },
+      {
+        "name": "吓退",
+        "type": "防御",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦减伤60%，应对攻击：敌方脱离。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/b/b8/ezpwek4u1nf1i2ndbs2tbd41t94zbnb.png"
+      },
+      {
+        "name": "四维降解",
+        "type": "魔攻",
+        "power": "100",
+        "energy": "7",
+        "accuracy": "✦造成魔伤，敌方每有1层印记，本技能能耗-1。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/4/4f/3dczehuqt6emm71mxwysdfy6gle07a1.png"
+      },
+      {
+        "name": "无畏之心",
+        "type": "防御",
+        "power": "0",
+        "energy": "5",
+        "accuracy": "✦减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/6/67/mtsvwcsxgn96a0q51hp7mujdngp3jz2.png"
+      },
+      {
+        "name": "械斗",
+        "type": "物攻",
+        "power": "45",
+        "energy": "1",
+        "accuracy": "✦造成物伤，本技能位于1号位时威力+60，传动1。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/3/33/den5z7tkhzg3n2n92lgfp79uuyotqjc.png"
+      },
+      {
+        "name": "棘刺",
+        "type": "状态",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦敌方获得1层棘刺印记。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/f/fb/bklgf0tt9kxbm7hhif3m2d43at3cbes.png"
+      },
+      {
+        "name": "泥巴喷射",
+        "type": "魔攻",
+        "power": "60",
+        "energy": "1",
+        "accuracy": "✦对敌方精灵造成魔法伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/f/f3/5snc9qgisd2m34aspdjsxwvobr9fl2p.png"
+      },
+      {
+        "name": "硬化",
+        "type": "防御",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/ee/nyg0ayllg5hbbmkxcr7nr2hp7tzoebj.png"
+      },
+      {
+        "name": "退化",
+        "type": "状态",
+        "power": "0",
+        "energy": "2",
+        "accuracy": "✦敌方获得1层萌化。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/f/fb/aqzrftu1f03zi8yqtcjb1m6qo4h9lpv.png"
+      },
+      {
+        "name": "钢钻",
+        "type": "物攻",
+        "power": "0",
+        "energy": "4",
+        "accuracy": "✦造成物伤，技能威力为两侧技能威力和的三分之一，传动1。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/1/1b/7piztbuvxqjsok3b23l5ehse80rwwyl.png"
+      },
+      {
+        "name": "震击",
+        "type": "物攻",
+        "power": "80",
+        "energy": "3",
+        "accuracy": "✦造成伤害，敌方获得连击数-3。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/9/9f/85zmqjztxzq6day97jm2mxxbh2kajge.png"
+      },
+      {
+        "name": "音爆",
+        "type": "魔攻",
+        "power": "130",
+        "energy": "4",
+        "accuracy": "✦对敌方精灵造成魔法伤害。",
+        "icon": "https://patchwiki.biligame.com/images/rocom/6/62/6f7sfp0fh4ogqon6s5uk3plpktu3xcp.png"
+      }
+    ]
+  }
+}

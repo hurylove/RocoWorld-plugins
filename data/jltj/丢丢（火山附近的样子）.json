@@ -1,0 +1,29 @@
+{
+  "name": "丢丢",
+  "number": "044",
+  "attribute": [
+    "草"
+  ],
+  "attributeIcon": "https://patchwiki.biligame.com/images/rocom/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png",
+  "portrait": "https://patchwiki.biligame.com/images/rocom/0/0b/ruciu7ybhb244ff3iz2ukedib2ux4h0.png",
+  "stats": {
+    "生命": 0,
+    "物攻": 0,
+    "魔攻": 0,
+    "物防": 0,
+    "魔防": 0,
+    "速度": 0
+  },
+  "traits": [
+    {
+      "name": "诈死",
+      "description": "自己力竭时，少损失1点魔力。"
+    }
+  ],
+  "evolution": "",
+  "skills": {
+    "elfSkills": [],
+    "bloodlineSkills": [],
+    "skillStones": []
+  }
+}

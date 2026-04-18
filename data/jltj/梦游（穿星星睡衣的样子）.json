@@ -1,0 +1,29 @@
+{
+  "name": "梦游",
+  "number": "057",
+  "attribute": [
+    "幽"
+  ],
+  "attributeIcon": "https://patchwiki.biligame.com/images/rocom/e/e7/ttqdi3zlz72g5dgmc8qg9ko4aorwllw.png",
+  "portrait": "https://patchwiki.biligame.com/images/rocom/c/cb/mpbge4upayjqh87ry5g5yacuj1dkzxe.png",
+  "stats": {
+    "生命": 0,
+    "物攻": 0,
+    "魔攻": 0,
+    "物防": 0,
+    "魔防": 0,
+    "速度": 0
+  },
+  "traits": [
+    {
+      "name": "做噩梦",
+      "description": "敌方精灵离场后，更换入场的精灵失去3能量。"
+    }
+  ],
+  "evolution": "",
+  "skills": {
+    "elfSkills": [],
+    "bloodlineSkills": [],
+    "skillStones": []
+  }
+}

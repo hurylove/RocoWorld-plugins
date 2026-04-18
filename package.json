@@ -1,0 +1,25 @@
+{
+  "name": "RocoWorld-plugins",
+  "version": "1.0.0",
+  "description": "洛克王国世界查询插件",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yunzai",
+    "plugin",
+    "洛克王国",
+    "RocoWorld-plugins"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "node-fetch": "^3.3.2",
+    "puppeteer": "^24.40.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}

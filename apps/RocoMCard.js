@@ -26,7 +26,7 @@ function isSpriteNameValid(spriteName) {
   return spriteList.some(sprite => sprite.名字 === spriteName);
 }
 
-export class spriteCard extends plugin {
+export default class spriteCard extends plugin {
   constructor () {
     super({
       name: '精灵卡牌',
@@ -75,7 +75,7 @@ export class spriteCard extends plugin {
       }
       
       // 发送生成的图片
-      this.reply(`[CQ:image,file=base64://${base64Image}]`, false);
+      this.reply(segment.image(`base64://${base64Image}`), false);
       
     } catch (error) {
       console.error('生成卡牌失败:', error);
@@ -83,10 +83,3 @@ export class spriteCard extends plugin {
     }
   }
 }
-
-// 注册插件
-function register(app) {
-  new spriteCard();
-}
-
-export { register };

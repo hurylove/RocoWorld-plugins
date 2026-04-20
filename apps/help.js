@@ -1,6 +1,6 @@
 import plugin from "../../../lib/plugins/plugin.js";
 
-export class Help extends plugin {
+export default class Help extends plugin {
   constructor() {
     super({
       name: "洛克王国-帮助",

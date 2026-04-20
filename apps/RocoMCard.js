@@ -63,7 +63,7 @@ export default class spriteCard extends plugin {
       }
       
       // 调用generateCard函数生成卡牌
-      this.reply('正在生成精灵卡牌，请稍候...', false);
+      this.reply('正在生成宠物图鉴，请稍候...', false);
       
       const base64Image = await generateCard(spriteName);
       

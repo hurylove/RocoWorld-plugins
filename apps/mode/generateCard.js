@@ -204,12 +204,37 @@ async function generateCard(spriteName) {
                     border-bottom: 2px solid rgba(255,255,255,0.1);
                     padding-bottom: 20px;
                 }
+                .header-left {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
                 .name {
                     font-family: 'Orbitron', sans-serif;
                     font-size: 48px;
                     font-weight: 700;
                     color: ${colorScheme.text};
                     text-shadow: 0 0 10px ${colorScheme.accent};
+                }
+                .attribute {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    background: rgba(255,255,255,0.1);
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    backdrop-filter: blur(10px);
+                }
+                .attribute-icon {
+                    width: 36px;
+                    height: 36px;
+                    object-fit: contain;
+                }
+                .attribute-text {
+                    font-family: 'Noto Serif SC', serif;
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: ${colorScheme.text};
                 }
                 .number {
                     font-size: 24px;
@@ -411,7 +436,13 @@ async function generateCard(spriteName) {
         <body>
             <div class="card-container">
                 <div class="header">
-                    <div class="name">${spriteData.name}</div>
+                    <div class="header-left">
+                        <div class="name">${spriteData.name}</div>
+                        <div class="attribute">
+                            ${spriteData.attributeIcon ? `<img src="${spriteData.attributeIcon}" alt="attribute" class="attribute-icon" />` : ''}
+                            <span class="attribute-text">${spriteData.attribute && spriteData.attribute.length > 0 ? spriteData.attribute.join(' ') : '普通'}</span>
+                        </div>
+                    </div>
                     <div class="number">NO.${spriteData.number}</div>
                 </div>
                 <div class="middle-section">

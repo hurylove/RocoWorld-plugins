@@ -39,7 +39,7 @@ git clone https://github.com/hurylove/RocoWorld-plugins.git ./plugins/RocoWorld-
 pnpm i
 
 # 或从GitCode下载（国内访问更快）
-git clone https://gitcode.net/hurylove/RocoWorld-plugins.git ./plugins/RocoWorld-plugins/
+git clone https://gitcode.com/hurylove/RocoWorld-plugins.git ./plugins/RocoWorld-plugins/
 
 # 安装依赖
 pnpm i

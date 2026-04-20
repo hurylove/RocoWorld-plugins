@@ -1,7 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 import plugin from "../../../lib/plugins/plugin.js";
-import { segment } from 'icqq';
 import generateCard from './mode/generateCard.js';
 
 // 精灵列表路径
@@ -64,16 +63,16 @@ export class spriteCard extends plugin {
       // 调用generateCard函数生成卡牌
       this.reply('正在生成精灵卡牌，请稍候...', false);
       
-      const imagePath = await generateCard(spriteName);
+      const base64Image = await generateCard(spriteName);
       
       // 检查图片是否生成成功
-      if (!fs.existsSync(imagePath)) {
+      if (!base64Image) {
         this.reply('卡牌生成失败，请检查精灵名称是否正确', false);
         return;
       }
       
       // 发送生成的图片
-      this.reply(segment.image(imagePath), false);
+      this.reply(`[CQ:image,file=base64://${base64Image}]`, false);
       
     } catch (error) {
       console.error('生成卡牌失败:', error);

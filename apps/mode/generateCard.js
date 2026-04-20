@@ -535,13 +535,12 @@ async function generateCard(spriteName) {
         await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
         await wait(1000);
         
-        // 使用精灵名称作为图片文件名
-        const imagePath = `${spriteData.name}.png`;
-        await page.screenshot({ path: imagePath, fullPage: true, omitBackground: false });
-        console.log(`✅ 图片生成成功！文件名：${imagePath}`);
+        // 生成base64格式的图片
+        const base64Image = await page.screenshot({ encoding: 'base64', fullPage: true, omitBackground: false });
+        console.log(`✅ 图片生成成功！`);
         
-        // 返回生成的图片路径
-        return imagePath;
+        // 返回base64格式的图片
+        return base64Image;
 
     } catch (error) {
         console.error('❌ 渲染失败:', error);

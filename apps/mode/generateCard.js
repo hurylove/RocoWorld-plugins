@@ -8,13 +8,16 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// 使用process.cwd()作为项目根目录的基准
+const projectRoot = process.cwd();
+
 // 等待函数
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 // 主函数：生成精灵卡牌
 async function generateCard(spriteName) {
     // 构建JSON文件路径
-    const jsonPath = path.join(__dirname, '..', '..', 'data', 'jltj', `${spriteName}.json`);
+    const jsonPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'jltj', `${spriteName}.json`);
     console.log(`📄 正在读取精灵数据: ${spriteName}`);
     let spriteData;
     

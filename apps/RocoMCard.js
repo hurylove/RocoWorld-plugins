@@ -2,12 +2,11 @@ import fs from 'fs';
 import path from 'path';
 import plugin from "../../../lib/plugins/plugin.js";
 import generateCard from './mode/generateCard.js';
-
-// 精灵列表路径
 import { fileURLToPath } from 'url';
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const spriteListPath = path.join(__dirname, '..', '..', 'data', 'jllb', '精灵列表.json');
+
+// 使用process.cwd()作为项目根目录的基准
+const projectRoot = process.cwd();
+const spriteListPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'jllb', '精灵列表.json');
 
 // 加载精灵列表
 function loadSpriteList() {
@@ -35,17 +34,17 @@ export default class spriteCard extends plugin {
       priority: 500,
       rule: [
         {
-          reg: '^#?(.*?)(?:资料卡)?$',
+          reg: '^#(.*?)(?:资料卡)?$',
           fnc: 'generateSpriteCard',
         }
-    ]
+      ]
     })
   }
 
   async generateSpriteCard(e) {
     try {
       // 提取精灵名称
-      const match = e.msg.match(/^#?(.*?)(?:资料卡)?$/);
+      const match = e.msg.match(/^#(.*?)(?:资料卡)?$/);
       if (!match) {
         return;
       }

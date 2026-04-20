@@ -4,6 +4,9 @@ import plugin from "../../../lib/plugins/plugin.js";
 import generateCard from './mode/generateCard.js';
 
 // 精灵列表路径
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const spriteListPath = path.join(__dirname, '..', '..', 'data', 'jllb', '精灵列表.json');
 
 // 加载精灵列表

@@ -1,5 +1,5 @@
-// 精灵卡牌渲染脚本
-// 功能：根据宠物JSON数据生成宠物解析卡
+// 宠物资料卡渲染脚本
+// 功能：根据宠物JSON数据生成宠物资料卡（不含技能部分）
 
 import puppeteer from 'puppeteer';
 import fs from 'fs';
@@ -58,8 +58,8 @@ const config = loadConfig();
 // 等待函数
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-// 主函数：生成解析卡
-async function generateCard(spriteName) {
+// 主函数：生成资料卡
+async function generatePetCard(spriteName) {
     // 构建JSON文件路径
     const jsonPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'jltj', `${spriteName}.json`);
     console.log(`📄 正在读取精灵数据: ${spriteName}`);
@@ -214,11 +214,8 @@ async function generateCard(spriteName) {
     const page = await browser.newPage();
     
     try {
-        // 计算动态高度
-        const baseHeight = 1200;
-        const totalSkills = spriteData.skills.elfSkills.length + spriteData.skills.bloodlineSkills.length + spriteData.skills.skillStones.length;
-        const dynamicHeight = baseHeight + (totalSkills * 20);
-        const finalHeight = Math.max(dynamicHeight, 1500);
+        // 设置固定高度（不需要技能部分，所以高度可以固定）
+        const finalHeight = 800;
 
         // 生成HTML内容
         const htmlContent = `
@@ -360,123 +357,6 @@ async function generateCard(spriteName) {
                     line-height: 1.6;
                     opacity: 0.9;
                 }
-                .section {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
-                }
-                .section-title {
-                    font-size: 32px;
-                    color: ${colorScheme.accent};
-                    border-bottom: 2px solid ${colorScheme.accent};
-                    padding-bottom: 10px;
-                    font-family: 'Orbitron', sans-serif;
-                    text-transform: uppercase;
-                }
-                .category-title {
-                    background: ${colorScheme.border.replace('0.6', '0.2')};
-                    padding: 8px 15px;
-                    border-radius: 8px;
-                    font-size: 20px;
-                    font-weight: bold;
-                    color: ${colorScheme.text};
-                    margin-top: 20px;
-                }
-                .skills-container {
-                    display: flex;
-                    gap: 30px;
-                    width: 100%;
-                    margin-top: 10px;
-                }
-                .skill-column {
-                    flex: 1;
-                    min-width: 0;
-                    display: flex;
-                    flex-direction: column;
-                    background: rgba(255, 255, 255, 0.05);
-                    border: 2px solid ${colorScheme.border};
-                    border-radius: 15px;
-                    padding: 15px;
-                    box-shadow: 0 4px 15px ${colorScheme.border.replace('0.3', '0.2')};
-                    transition: all 0.3s ease;
-                }
-                .skill-column:hover {
-                    box-shadow: 0 6px 20px ${colorScheme.border.replace('0.3', '0.4')};
-                    border-color: ${colorScheme.border};
-                }
-                .skills-table {
-                    width: 100%;
-                    border-collapse: collapse;
-                    margin-bottom: 10px;
-                    table-layout: fixed;
-                }
-                .skills-table th {
-                    text-align: left;
-                    padding: 12px;
-                    background: rgba(0,0,0,0.4);
-                    color: ${colorScheme.accent};
-                    font-size: 18px;
-                    border-bottom: 2px solid ${colorScheme.accent};
-                }
-                .skills-table td {
-                    padding: 12px;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-                    font-size: 16px;
-                    vertical-align: middle;
-                    overflow-wrap: break-word;
-                    white-space: normal;
-                }
-                .skills-table th:nth-child(1),
-                .skills-table td:nth-child(1) {
-                    width: 18%;
-                }
-                .skills-table th:nth-child(2),
-                .skills-table td:nth-child(2) {
-                    width: 17%;
-                    text-align: center;
-                    white-space: nowrap;
-                }
-                .skills-table th:nth-child(3),
-                .skills-table td:nth-child(3) {
-                    width: 15%;
-                    text-align: center;
-                    white-space: nowrap;
-                }
-                .skills-table th:nth-child(4),
-                .skills-table td:nth-child(4) {
-                    width: 15%;
-                    text-align: center;
-                    white-space: nowrap;
-                }
-                .skills-table th:nth-child(5),
-                .skills-table td:nth-child(5) {
-                    width: 35%;
-                }
-                .skills-table tr:hover td {
-                    background: rgba(255,255,255,0.05);
-                }
-                .skill-type {
-                    padding: 4px 8px;
-                    border-radius: 4px;
-                    font-size: 14px;
-                    font-weight: bold;
-                    color: white;
-                }
-                .type-物攻 {
-                    background: #ff5722;
-                }
-                .type-魔攻 {
-                    background: #2196f3;
-                }
-                .type-防御 {
-                    background: #4caf50;
-                }
-                .type-状态 {
-                    background: #9c27b0;
-                }
-                .type-技能石 {
-                    background: #795548;
-                }
                 @keyframes float {
                     0%,
                     100% {
@@ -532,92 +412,6 @@ async function generateCard(spriteName) {
                         ` : ''}
                     </div>
                 </div>
-                <div class="section">
-                    <div class="section-title">⚔️ 技能列表</div>
-                    <div class="skills-container">
-                        <div class="skill-column">
-                            <div class="category-title">精灵技能</div>
-                            <table class="skills-table">
-                                <thead>
-                                    <tr>
-                                        <th>名称</th>
-                                        <th>类型</th>
-                                        <th>威力</th>
-                                        <th>能量</th>
-                                        <th>描述</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    ${spriteData.skills.elfSkills.map(skill => {
-                                        return `
-                                        <tr>
-                                            <td>${skill.name}</td>
-                                            <td>${skill.type || '-'}</td>
-                                            <td>${skill.power || '-'}</td>
-                                            <td>${skill.energy || '-'}</td>
-                                            <td>${skill.accuracy || '-'}</td>
-                                        </tr>
-                                        `;
-                                    }).join('')}
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="skill-column">
-                            <div class="category-title">血脉技能</div>
-                            <table class="skills-table">
-                                <thead>
-                                    <tr>
-                                        <th>名称</th>
-                                        <th>类型</th>
-                                        <th>威力</th>
-                                        <th>能量</th>
-                                        <th>描述</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    ${spriteData.skills.bloodlineSkills.map(skill => {
-                                        return `
-                                        <tr>
-                                            <td>${skill.name}</td>
-                                            <td>${skill.type || '-'}</td>
-                                            <td>${skill.power || '-'}</td>
-                                            <td>${skill.energy || '-'}</td>
-                                            <td>${skill.accuracy || '-'}</td>
-                                        </tr>
-                                        `;
-                                    }).join('')}
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="skill-column">
-                            <div class="category-title">技能石</div>
-                            <table class="skills-table">
-                                <thead>
-                                    <tr>
-                                        <th>名称</th>
-                                        <th>类型</th>
-                                        <th>威力</th>
-                                        <th>能量</th>
-                                        <th>描述</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    ${spriteData.skills.skillStones.map(skill => {
-                                        return `
-                                        <tr>
-                                            <td>${skill.name}</td>
-                                            <td>${skill.type}</td>
-                                            <td>${skill.power || '-'}</td>
-                                            <td>${skill.energy || '-'}</td>
-                                            <td>${skill.accuracy || '-'}</td>
-                                        </tr>
-                                        `;
-                                    }).join('')}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
             </div>
         </body>
         </html> `;
@@ -643,17 +437,17 @@ async function generateCard(spriteName) {
 }
 
 // 导出函数，供其他模块调用
-export default generateCard;
+export default generatePetCard;
 
 // 如果直接运行此文件，则从命令行参数获取精灵名称
 if (import.meta.url === `file://${process.argv[1]}`) {
     const spriteName = process.argv[2];
     if (!spriteName) {
-        console.error('❌ 请提供精灵名称作为参数，例如：node generateCard.js 迪莫');
+        console.error('❌ 请提供精灵名称作为参数，例如：node generatePetCard.js 迪莫');
         process.exit(1);
     }
     
-    generateCard(spriteName)
+    generatePetCard(spriteName)
         .then(imagePath => {
             console.log(`🎉 任务完成！生成的图片路径：${imagePath}`);
         })

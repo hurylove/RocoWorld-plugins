@@ -1,8 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 import plugin from "../../../lib/plugins/plugin.js";
-import generateCard from './mode/generateCard.js';
+import generatePetCard from './mode/generatePetCard.js';
 import { fileURLToPath } from 'url';
+import segment from "../../../lib/segment.js";
 
 // 使用process.cwd()作为项目根目录的基准
 const projectRoot = process.cwd();
@@ -19,57 +20,57 @@ function loadSpriteList() {
   }
 }
 
-// 检查精灵名称是否存在
-function isSpriteNameValid(spriteName) {
-  const spriteList = loadSpriteList();
-  return spriteList.some(sprite => sprite.名字 === spriteName);
+// 检查宠物名称是否存在
+function isPetNameValid(petName) {
+  const petList = loadSpriteList();
+  return petList.some(pet => pet.名字 === petName);
 }
 
-export default class spriteCard extends plugin {
+export default class petCard extends plugin {
   constructor () {
     super({
-      name: '宠物解析卡',
-      dsc: '生成宠物解析卡图片',
+      name: '宠物资料卡',
+      dsc: '生成宠物资料卡图片',
       event: 'message',
       priority: 500,
       rule: [
         {
-          reg: '#(.*?)(解析卡)$',
-          fnc: 'generateSpriteCard',
+          reg: '#(.*?)(资料卡)$',
+          fnc: 'generatePetCard',
         }
       ]
     })
   }
 
-  async generateSpriteCard(e) {
+  async generatePetCard(e) {
     try {
-      // 提取精灵名称
-      const match = e.msg.match(/^#(.*?)(?:解析卡)?$/);
+      // 提取宠物名称
+      const match = e.msg.match(/^#(.*?)(?:资料卡)?$/);
       if (!match) {
         return;
       }
 
-      let spriteName = match[1].trim();
+      let petName = match[1].trim();
 
-      if (!spriteName) {
-        this.reply('请提供精灵名称，例如：#迪莫 或 迪莫解析卡', false);
+      if (!petName) {
+        this.reply('请提供宠物名称，例如：#迪莫 或 迪莫资料卡', false);
         return;
       }
 
-      // 验证精灵名称是否在列表中
-      if (!isSpriteNameValid(spriteName)) {
-        this.reply('精灵名称不存在，请检查输入是否正确', false);
+      // 验证宠物名称是否在列表中
+      if (!isPetNameValid(petName)) {
+        this.reply('宠物名称不存在，请检查输入是否正确', false);
         return;
       }
 
-      // 调用generateCard函数生成卡牌
-      this.reply('正在生成宠物图鉴，请稍候...', false);
+      // 调用generatePetCard函数生成卡牌
+      this.reply('正在生成宠物资料卡，请稍候...', false);
 
-      const base64Image = await generateCard(spriteName);
+      const base64Image = await generatePetCard(petName);
 
       // 检查图片是否生成成功
       if (!base64Image) {
-        this.reply('卡牌生成失败，请检查精灵名称是否正确', false);
+        this.reply('卡牌生成失败，请检查宠物名称是否正确', false);
         return;
       }
 

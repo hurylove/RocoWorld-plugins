@@ -3,7 +3,6 @@ import path from 'path';
 import plugin from "../../../lib/plugins/plugin.js";
 import generatePetCard from './mode/generatePetCard.js';
 import { fileURLToPath } from 'url';
-import segment from "../../../lib/segment.js";
 
 // 使用process.cwd()作为项目根目录的基准
 const projectRoot = process.cwd();

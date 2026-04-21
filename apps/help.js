@@ -1,16 +1,74 @@
 import plugin from "../../../lib/plugins/plugin.js";
 import puppeteer from 'puppeteer';
+import fs from 'fs';
+import path from 'path';
 
 // 等待函数
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
+// 简单的YAML解析函数
+function parseYAML(yamlContent) {
+    const config = {};
+    const lines = yamlContent.split('\n');
+    
+    for (const line of lines) {
+        const trimmedLine = line.trim();
+        // 跳过注释和空行
+        if (trimmedLine.startsWith('#') || trimmedLine === '') {
+            continue;
+        }
+        
+        // 解析键值对
+        const colonIndex = trimmedLine.indexOf(':');
+        if (colonIndex > 0) {
+            const key = trimmedLine.substring(0, colonIndex).trim();
+            let value = trimmedLine.substring(colonIndex + 1).trim();
+            
+            // 处理引号
+            if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+                value = value.substring(1, value.length - 1);
+            }
+            
+            config[key] = value;
+        }
+    }
+    
+    return config;
+}
+
+// 读取配置文件
+function loadConfig() {
+    try {
+        const projectRoot = process.cwd();
+        const configPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'config', 'config.yaml');
+        const configData = fs.readFileSync(configPath, 'utf-8');
+        return parseYAML(configData);
+    } catch (error) {
+        console.warn('读取配置文件失败，使用默认配置:', error.message);
+        return {};
+    }
+}
+
+const config = loadConfig();
+
 // 生成帮助图片
 async function generateHelpImage() {
-  const browser = await puppeteer.launch({
+  // 构建puppeteer启动选项
+  const launchOptions = {
     headless: 'new',
     defaultViewport: null,
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu']
-  });
+  };
+  
+  // 如果配置了Chromium路径，则使用配置的路径
+  if (config.chromiumPath) {
+    console.log(`使用配置的Chrome路径: ${config.chromiumPath}`);
+    launchOptions.executablePath = config.chromiumPath;
+  } else {
+    console.log('使用默认Chrome路径');
+  }
+  
+  const browser = await puppeteer.launch(launchOptions);
   
   const page = await browser.newPage();
   
@@ -26,8 +84,7 @@ async function generateHelpImage() {
             body {
                 width: 1280px;
                 height: 1000px;
-                background: url('./plugins/RocoWorld-plugins/data/image/readme.webp') no-repeat center center;
-                background-size: cover;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
                 font-family: 'Noto Serif SC', serif;
                 color: #ffffff;
                 padding: 40px;

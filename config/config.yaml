@@ -1,0 +1,10 @@
+# 插件配置文件
+
+# Chromium浏览器路径
+chromiumPath: "C:\\Users\\Administrator\\Desktop\\su\\Yunzai\\chrome\\win64-138.0.7204.94\\chrome-win64\\chrome.exe"
+
+# 其他配置项
+plugin:  
+  name: "RocoWorld-plugins"
+  version: "1.0.0"
+  author: ""

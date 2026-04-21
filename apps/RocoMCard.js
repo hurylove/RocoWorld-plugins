@@ -34,7 +34,7 @@ export default class spriteCard extends plugin {
       priority: 500,
       rule: [
         {
-          reg: '^#(.*?)(?:资料卡)?$',
+          reg: '#(.*?)(资料卡)$',
           fnc: 'generateSpriteCard',
         }
       ]

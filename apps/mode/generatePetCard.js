@@ -215,201 +215,267 @@ async function generatePetCard(spriteName) {
     
     try {
         // 设置固定高度（不需要技能部分，所以高度可以固定）
-        const finalHeight = 800;
+        const finalHeight = 860;
+        const primaryTrait = spriteData.traits && spriteData.traits.length > 0 ? spriteData.traits[0] : null;
 
-        // 生成HTML内容
+        // 生成HTML内容（参考图：浅色底 + 深色数值区 + 信息卡片）
         const htmlContent = `
         <!DOCTYPE html>
         <html lang="zh">
         <head>
             <meta charset="UTF-8" />
             <style>
-                @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Noto+Serif+SC:wght@400;700&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Noto+Serif+SC:wght@400;600;700&display=swap');
+                * {
+                    box-sizing: border-box;
+                }
                 body {
                     width: 1280px;
                     min-height: ${finalHeight}px;
-                    background: ${colorScheme.background};
-                    font-family: 'Noto Serif SC', serif;
-                    color: ${colorScheme.text};
-                    padding: 40px;
                     margin: 0;
+                    padding: 34px;
+                    font-family: 'Noto Serif SC', serif;
+                    color: #2f2418;
+                    background:
+                        radial-gradient(circle at 15% 12%, rgba(255,255,255,0.68) 0%, rgba(255,255,255,0) 34%),
+                        radial-gradient(circle at 85% 85%, rgba(255,255,255,0.46) 0%, rgba(255,255,255,0) 38%),
+                        linear-gradient(135deg, #f8e7bc 0%, #f0d99e 40%, #e9cd89 100%);
                     display: flex;
                     justify-content: center;
                     align-items: flex-start;
                 }
-                .card-container {
-                    width: 1200px;
-                    background: rgba(255, 255, 255, 0.08);
-                    border-radius: 25px;
-                    padding: 40px;
-                    backdrop-filter: blur(15px);
-                    border: 2px solid rgba(255, 255, 255, 0.2);
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-                    display: flex;
-                    flex-direction: column;
-                    gap: 30px;
+                .card {
+                    width: 1210px;
+                    border-radius: 34px;
+                    background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(255,252,242,0.86) 100%);
+                    border: 2px solid rgba(255, 255, 255, 0.7);
+                    box-shadow:
+                        0 26px 52px rgba(112, 72, 20, 0.22),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+                    padding: 28px 30px 32px;
+                    position: relative;
+                    overflow: hidden;
                 }
-                .header {
+                .card::after {
+                    content: '';
+                    position: absolute;
+                    right: -140px;
+                    top: -120px;
+                    width: 430px;
+                    height: 430px;
+                    border-radius: 50%;
+                    background: radial-gradient(circle, ${colorScheme.border.replace('0.6', '0.26')} 0%, rgba(255,255,255,0) 72%);
+                    pointer-events: none;
+                }
+
+                .top {
+                    position: relative;
+                    z-index: 2;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    border-bottom: 2px solid rgba(255,255,255,0.1);
-                    padding-bottom: 20px;
+                    gap: 14px;
+                    margin-bottom: 18px;
                 }
-                .header-left {
+                .title-group {
                     display: flex;
                     align-items: center;
-                    gap: 20px;
+                    gap: 12px;
+                    min-width: 0;
                 }
                 .name {
-                    font-family: 'Orbitron', sans-serif;
-                    font-size: 48px;
+                    font-size: 54px;
                     font-weight: 700;
-                    color: ${colorScheme.text};
-                    text-shadow: 0 0 10px ${colorScheme.accent};
+                    line-height: 1.1;
+                    color: #2f2418;
+                    text-shadow: 0 2px 6px rgba(255,255,255,0.45);
                 }
-                .attribute {
-                    display: flex;
+                .badge {
+                    display: inline-flex;
                     align-items: center;
-                    gap: 10px;
-                    background: rgba(255,255,255,0.1);
-                    padding: 8px 16px;
-                    border-radius: 20px;
-                    backdrop-filter: blur(10px);
+                    gap: 8px;
+                    padding: 8px 14px;
+                    border-radius: 999px;
+                    background: #fff8e6;
+                    border: 1px solid rgba(194, 149, 79, 0.32);
+                    box-shadow: 0 4px 12px rgba(127, 93, 36, 0.12);
                 }
                 .attribute-icon {
-                    width: 36px;
-                    height: 36px;
+                    width: 30px;
+                    height: 30px;
                     object-fit: contain;
+                    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.12));
                 }
                 .attribute-text {
-                    font-family: 'Noto Serif SC', serif;
                     font-size: 24px;
-                    font-weight: bold;
-                    color: ${colorScheme.text};
+                    font-weight: 700;
+                    color: #694b21;
+                    letter-spacing: 1px;
                 }
                 .number {
-                    font-size: 24px;
-                    opacity: 0.8;
                     font-family: 'Orbitron', sans-serif;
+                    font-size: 28px;
+                    color: #6f532b;
+                    opacity: 0.9;
+                    background: rgba(255,255,255,0.5);
+                    border-radius: 14px;
+                    padding: 8px 14px;
+                    border: 1px solid rgba(255,255,255,0.8);
                 }
-                .middle-section {
+
+                .main {
+                    position: relative;
+                    z-index: 2;
+                    display: grid;
+                    grid-template-columns: 390px 1fr;
+                    gap: 22px;
+                    margin-bottom: 18px;
+                }
+
+                .portrait-panel {
+                    border-radius: 26px;
+                    background: linear-gradient(160deg, #f9edd0 0%, #f3dcab 100%);
+                    border: 1px solid rgba(255,255,255,0.85);
+                    box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), 0 10px 22px rgba(119,86,40,0.18);
+                    min-height: 355px;
                     display: flex;
                     align-items: center;
-                    gap: 40px;
-                    padding: 20px 0;
-                    border-bottom: 1px dashed rgba(255,255,255,0.1);
-                }
-                .portrait-container {
-                    flex-shrink: 0;
+                    justify-content: center;
                     position: relative;
+                    overflow: hidden;
+                }
+                .portrait-panel::before {
+                    content: '';
+                    position: absolute;
+                    width: 310px;
+                    height: 310px;
+                    border-radius: 50%;
+                    background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
                 }
                 .portrait {
-                    width: 280px;
-                    height: 280px;
+                    width: 320px;
+                    height: 320px;
                     object-fit: contain;
-                    filter: drop-shadow(0 0 20px rgba(0, 210, 255, 0.6));
-                    animation: float 3s ease-in-out infinite;
+                    position: relative;
+                    z-index: 1;
+                    filter: drop-shadow(0 10px 20px rgba(70, 46, 17, 0.25));
+                    animation: float 3.4s ease-in-out infinite;
                 }
-                .info-panel {
-                    flex-grow: 1;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 25px;
+
+                .stats-panel {
+                    border-radius: 28px;
+                    background: linear-gradient(165deg, #6f5a42 0%, #5a4633 46%, #46382a 100%);
+                    color: #fff3db;
+                    border: 1px solid rgba(255,255,255,0.16);
+                    box-shadow: 0 12px 30px rgba(49, 34, 18, 0.33);
+                    padding: 20px 22px;
+                    display: grid;
+                    gap: 12px;
+                    align-content: start;
+                }
+                .stats-title {
+                    font-size: 28px;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    color: #ffe2b0;
                 }
                 .stats-grid {
-                    width: 100%;
-                    border-collapse: collapse;
-                    font-family: 'Noto Serif SC', serif;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 10px;
                 }
-                .stats-grid td {
-                    padding: 6px 8px;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-                    text-align: left;
-                    font-size: 22px;
+                .stat-item {
+                    background: rgba(255, 255, 255, 0.08);
+                    border-radius: 14px;
+                    padding: 12px 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.14);
                 }
-                .stats-grid .stat-label {
-                    color: ${colorScheme.accent};
-                    font-weight: bold;
-                    width: 25%;
-                    font-size: 24px;
+                .stat-label {
+                    font-size: 20px;
+                    color: #f0cf97;
+                    margin-bottom: 4px;
+                    font-weight: 600;
                 }
-                .stats-grid td.stat-value {
+                .stat-value {
                     font-family: 'Orbitron', sans-serif;
-                    color: ${colorScheme.text};
-                    font-size: 28px;
-                    font-weight: bold;
+                    font-size: 35px;
+                    font-weight: 700;
+                    line-height: 1;
+                    color: #ffffff;
+                    letter-spacing: 1px;
                 }
-                .trait-box {
-                    background: linear-gradient(90deg, ${colorScheme.border.replace('0.6', '0.1')}, transparent);
-                    border-left: 5px solid ${colorScheme.accent};
-                    padding: 25px;
-                    border-radius: 0 15px 15px 0;
+
+                .bottom {
+                    position: relative;
+                    z-index: 2;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 14px;
                 }
-                .trait-title {
-                    font-size: 26px;
-                    color: ${colorScheme.accent};
-                    font-weight: bold;
-                    margin-bottom: 12px;
+                .info-card {
+                    border-radius: 18px;
+                    background: rgba(255, 248, 230, 0.82);
+                    border: 1px solid rgba(214, 171, 106, 0.36);
+                    box-shadow: 0 6px 14px rgba(114, 76, 33, 0.1);
+                    padding: 14px 16px;
                 }
-                .trait-desc {
+                .info-title {
                     font-size: 22px;
-                    line-height: 1.6;
-                    opacity: 0.9;
+                    font-weight: 700;
+                    color: #734e1f;
+                    margin-bottom: 6px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
                 }
+                .info-content {
+                    font-size: 21px;
+                    line-height: 1.45;
+                    color: #45301a;
+                    word-break: break-word;
+                }
+
                 @keyframes float {
-                    0%,
-                    100% {
-                        transform: translateY(0);
-                    }
-                    50% {
-                        transform: translateY(-15px);
-                    }
+                    0%, 100% { transform: translateY(0); }
+                    50% { transform: translateY(-9px); }
                 }
             </style>
         </head>
         <body>
-            <div class="card-container">
-                <div class="header">
-                    <div class="header-left">
-                        <div class="name">${spriteData.name}</div>
-                        <div class="attribute">
+            <div class="card">
+                <div class="top">
+                    <div class="title-group">
+                        <div class="name">${spriteData.name || '未知精灵'}</div>
+                        <div class="badge">
                             ${spriteData.attributeIcon ? `<img src="${spriteData.attributeIcon}" alt="attribute" class="attribute-icon" />` : ''}
                             <span class="attribute-text">${spriteData.attribute && spriteData.attribute.length > 0 ? spriteData.attribute.join(' ') : '普通'}</span>
                         </div>
                     </div>
-                    <div class="number">NO.${spriteData.number}</div>
+                    <div class="number">NO.${spriteData.number || '--'}</div>
                 </div>
-                <div class="middle-section">
-                    <div class="portrait-container">
+
+                <div class="main">
+                    <div class="portrait-panel">
                         <img src="${spriteData.portrait}" alt="Portrait" class="portrait" />
                     </div>
-                    <div class="info-panel">
-                        <table class="stats-grid">
-                            <tr>
-                                <td class="stat-label">物攻</td>
-                                <td class="stat-value">${spriteData.stats.物攻}</td>
-                                <td class="stat-label">魔攻</td>
-                                <td class="stat-value">${spriteData.stats.魔攻}</td>
-                                <td class="stat-label">生命</td>
-                                <td class="stat-value">${spriteData.stats.生命}</td>
-                            </tr>
-                            <tr>
-                                <td class="stat-label">物防</td>
-                                <td class="stat-value">${spriteData.stats.物防}</td>
-                                <td class="stat-label">魔防</td>
-                                <td class="stat-value">${spriteData.stats.魔防}</td>
-                                <td class="stat-label">速度</td>
-                                <td class="stat-value">${spriteData.stats.速度}</td>
-                            </tr>
-                        </table>
-                        
-                        ${spriteData.traits && spriteData.traits.length > 0 ? `
-                        <div class="trait-box">
-                            <div class="trait-title">✨ ${spriteData.traits[0].name}</div>
-                            <div class="trait-desc">${spriteData.traits[0].description}</div>
+
+                    <div class="stats-panel">
+                        <div class="stats-title">基础能力值</div>
+                        <div class="stats-grid">
+                            <div class="stat-item"><div class="stat-label">生命</div><div class="stat-value">${spriteData.stats?.生命 ?? '--'}</div></div>
+                            <div class="stat-item"><div class="stat-label">速度</div><div class="stat-value">${spriteData.stats?.速度 ?? '--'}</div></div>
+                            <div class="stat-item"><div class="stat-label">魔攻</div><div class="stat-value">${spriteData.stats?.魔攻 ?? '--'}</div></div>
+                            <div class="stat-item"><div class="stat-label">物攻</div><div class="stat-value">${spriteData.stats?.物攻 ?? '--'}</div></div>
+                            <div class="stat-item"><div class="stat-label">物防</div><div class="stat-value">${spriteData.stats?.物防 ?? '--'}</div></div>
+                            <div class="stat-item"><div class="stat-label">魔防</div><div class="stat-value">${spriteData.stats?.魔防 ?? '--'}</div></div>
                         </div>
-                        ` : ''}
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="info-card">
+                        <div class="info-title">🧬 特性</div>
+                        <div class="info-content">${primaryTrait ? `${primaryTrait.name}：${primaryTrait.description}` : '暂无特性信息'}</div>
                     </div>
                 </div>
             </div>
@@ -417,7 +483,7 @@ async function generatePetCard(spriteName) {
         </html> `;
 
         // 设置视口和截图
-        await page.setViewport({ width: 1280, height: 0 });
+        await page.setViewport({ width: 1280, height: finalHeight });
         await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
         await wait(1000);
         

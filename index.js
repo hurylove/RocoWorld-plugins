@@ -14,7 +14,7 @@ logger.info(logger.yellow("- 正在载入 ROCOWORLD-PLUGIN"));
 
 const files = fs
   .readdirSync('./plugins/RocoWorld-plugins/apps')
-  .filter((file) => file.endsWith('.js'));
+  .filter((file) => file.endsWith('.js') && file !== 'config.js');
 
 files.forEach((file) => {
   ret.push(import(`./apps/${file}`))

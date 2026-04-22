@@ -5,7 +5,7 @@
     "草"
   ],
   "attributeIcon": "https://patchwiki.biligame.com/images/rocom/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png",
-  "portrait": "https://patchwiki.biligame.com/images/rocom/c/c7/5wp4p8collnhnv5ljxo4rj2d2ooq1kb.png",
+  "portrait": "https://patchwiki.biligame.com/images/rocom/4/4c/b89cg2rtmz5u2es2m41sc18ythoghc5.png",
   "stats": {
     "生命": 76,
     "物攻": 82,
@@ -29,7 +29,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦自己回复15%生命和4能量。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/f/f6/i2upwtqg6sarzxitjmop6yuyz0wihvq.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/f/f6/i2upwtqg6sarzxitjmop6yuyz0wihvq.png",
+        "attr": "草",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%8D%89.png"
       },
       {
         "name": "汲取",
@@ -37,7 +39,9 @@
         "power": "30",
         "energy": "1",
         "accuracy": "✦造成魔伤，并吸血100%。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/e/e4/ixieggz0o76p5usoa7i0iq4o0x1vfdq.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/e4/ixieggz0o76p5usoa7i0iq4o0x1vfdq.png",
+        "attr": "草",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%8D%89.png"
       },
       {
         "name": "毒沼",
@@ -45,7 +49,9 @@
         "power": "80",
         "energy": "2",
         "accuracy": "✦对敌方精灵造成物理伤害。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/9/9b/0lq0a5e10y7eqvw9l3s6jrx9menzm6d.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/9/9b/0lq0a5e10y7eqvw9l3s6jrx9menzm6d.png",
+        "attr": "毒",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/5/53/jnd3vijasgthdz2ukggyfpisd464r2v.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%AF%92.png"
       },
       {
         "name": "毒孢子",
@@ -53,7 +59,9 @@
         "power": "0",
         "energy": "3",
         "accuracy": "✦敌方获得5层中毒。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/8/8f/dkpwubnyefitw7vuqw3uhy582f1uo9u.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/8/8f/dkpwubnyefitw7vuqw3uhy582f1uo9u.png",
+        "attr": "毒",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/5/53/jnd3vijasgthdz2ukggyfpisd464r2v.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%AF%92.png"
       },
       {
         "name": "防御",
@@ -61,7 +69,9 @@
         "power": "0",
         "energy": "1",
         "accuracy": "✦减伤70%，应对攻击。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/4/40/d5m527azmrkdmrdvfnayi157ossqe5a.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/4/40/d5m527azmrkdmrdvfnayi157ossqe5a.png",
+        "attr": "普通",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/6/69/nc77midbqeafn7i2snh5a5h16ctdi0o.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%99%AE%E9%80%9A.png"
       },
       {
         "name": "刺藤",
@@ -69,7 +79,9 @@
         "power": "45",
         "energy": "3",
         "accuracy": "✦造成物伤，2连击。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/8/81/0uuxasnpiqfh5mia6rz12bdwyyi7ok0.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/8/81/0uuxasnpiqfh5mia6rz12bdwyyi7ok0.png",
+        "attr": "草",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%8D%89.png"
       },
       {
         "name": "孢子",
@@ -77,7 +89,9 @@
         "power": "0",
         "energy": "3",
         "accuracy": "✦敌方获得1层寄生。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/d/d2/1gqansjgpb1l1ytn00ue29vev6606jn.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/d/d2/1gqansjgpb1l1ytn00ue29vev6606jn.png",
+        "attr": "草",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%8D%89.png"
       },
       {
         "name": "蜡质膜",
@@ -85,7 +99,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦减伤80%，应对攻击：回复3能量。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/b/b6/hzfjcm4r5ip3s00mp5b4at6el7332b6.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/b/b6/hzfjcm4r5ip3s00mp5b4at6el7332b6.png",
+        "attr": "草",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%8D%89.png"
       },
       {
         "name": "叶绿光束",
@@ -93,7 +109,9 @@
         "power": "120",
         "energy": "4",
         "accuracy": "✦对敌方精灵造成魔法伤害。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/6/6e/0fkridaaj9lcb2ncchw04lqe92o4q72.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/6/6e/0fkridaaj9lcb2ncchw04lqe92o4q72.png",
+        "attr": "草",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%8D%89.png"
       },
       {
         "name": "针刺射击",
@@ -101,7 +119,9 @@
         "power": "80",
         "energy": "3",
         "accuracy": "✦造成物伤，若敌方本回合更换精灵，自己回复7点能量。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/5/5c/170n98bp3ynwb456bsxzg2qvfcy67rd.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/5/5c/170n98bp3ynwb456bsxzg2qvfcy67rd.png",
+        "attr": "草",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%8D%89.png"
       },
       {
         "name": "腐化",
@@ -109,7 +129,9 @@
         "power": "0",
         "energy": "1",
         "accuracy": "✦敌方每有1层中毒效果，敌方获得双攻-30%。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/6/6a/l17k3ey1wk0x9qs0yvs4goxrdbrtmxm.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/6/6a/l17k3ey1wk0x9qs0yvs4goxrdbrtmxm.png",
+        "attr": "毒",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/5/53/jnd3vijasgthdz2ukggyfpisd464r2v.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%AF%92.png"
       },
       {
         "name": "毒液渗透",
@@ -117,7 +139,9 @@
         "power": "120",
         "energy": "5",
         "accuracy": "✦造成魔伤，敌方每有1层中毒效果，本技能能耗-1，敌方获得1层中毒。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/0/0b/dkpwubnyefitw7vuqw3uhy582f1uo9u.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/0/0b/dkpwubnyefitw7vuqw3uhy582f1uo9u.png",
+        "attr": "毒",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/5/53/jnd3vijasgthdz2ukggyfpisd464r2v.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%AF%92.png"
       },
       {
         "name": "剧毒",
@@ -125,7 +149,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦敌方获得3层中毒，应对防御：改为获得8层。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/f/f0/qfb4lc1kn10dr1y5vrg2c0p9bn2mzej.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/f/f0/qfb4lc1kn10dr1y5vrg2c0p9bn2mzej.png",
+        "attr": "毒",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/5/53/jnd3vijasgthdz2ukggyfpisd464r2v.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%AF%92.png"
       },
       {
         "name": "仙人掌刺击",
@@ -133,7 +159,9 @@
         "power": "150",
         "energy": "6",
         "accuracy": "✦对敌方精灵造成物理伤害。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/e/e4/qmg39369noiygo9p4k4tiois4xjbtl0.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/e4/qmg39369noiygo9p4k4tiois4xjbtl0.png",
+        "attr": "草",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%8D%89.png"
       },
       {
         "name": "芳香诱引",
@@ -141,7 +169,9 @@
         "power": "0",
         "energy": "1",
         "accuracy": "✦自己获得连击数+3，应对防御：额外造成打断，且敌方下回合获得眩晕。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/3/3c/p9af7nrtobhgdqaecezx2y23xbwkayt.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/3/3c/p9af7nrtobhgdqaecezx2y23xbwkayt.png",
+        "attr": "草",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%8D%89.png"
       },
       {
         "name": "落井下毒",
@@ -149,7 +179,9 @@
         "power": "0",
         "energy": "6",
         "accuracy": "✦使敌方精灵减益的层数翻倍。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/1/16/auk6r6tgj6p09ru4b1skckwcl4ytd6b.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/1/16/auk6r6tgj6p09ru4b1skckwcl4ytd6b.png",
+        "attr": "毒",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/5/53/jnd3vijasgthdz2ukggyfpisd464r2v.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%AF%92.png"
       }
     ],
     "bloodlineSkills": [
@@ -159,7 +191,9 @@
         "power": "90",
         "energy": "2",
         "accuracy": "✦对敌方精灵造成魔法伤害。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/5/56/2eocpd50qt7y6ogp1tongzbzostbzko.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/5/56/2eocpd50qt7y6ogp1tongzbzostbzko.png",
+        "attr": "普通",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/6/69/nc77midbqeafn7i2snh5a5h16ctdi0o.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%99%AE%E9%80%9A.png"
       },
       {
         "name": "贪婪",
@@ -167,7 +201,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦自己获得100%吸血。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/b/b0/8j640unemfn5brxe2ekvljuf4djmq2i.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/b/b0/8j640unemfn5brxe2ekvljuf4djmq2i.png",
+        "attr": "恶",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/3/3b/hrdmz7n0qt3bnmir9fdn7977fvleec0.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%81%B6.png"
       },
       {
         "name": "升龙咆哮",
@@ -175,7 +211,9 @@
         "power": "200",
         "energy": "3",
         "accuracy": "✦蓄力，对敌方造成魔法伤害。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/e/e9/h5mznzxstkiuigtrwdnrsahmio6oqcb.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/e9/h5mznzxstkiuigtrwdnrsahmio6oqcb.png",
+        "attr": "龙",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/6/65/kgcg0hvl19o7up0ug8f42bbvhi71dke.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E9%BE%99.png"
       },
       {
         "name": "麻痹",
@@ -183,7 +221,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦敌方先手-1，应对防御：额外使敌方获得双攻-70%。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/d/d4/p0e89icdz5hoaaikyhi3vwpkusnldlj.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/d/d4/p0e89icdz5hoaaikyhi3vwpkusnldlj.png",
+        "attr": "电",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/0/02/iqzkamzcra945jsw5z6o8h9p30fv7db.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E7%94%B5.png"
       },
       {
         "name": "化劲",
@@ -191,7 +231,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦自己获得全技能威力+40。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/9/92/7f0v32friezvc0qxvuqqdihamnbtdxg.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/9/92/7f0v32friezvc0qxvuqqdihamnbtdxg.png",
+        "attr": "武",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/5/52/q9hbq9nrnhjt7t86hy7sftv3e2e5fvx.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%AD%A6.png"
       },
       {
         "name": "引燃",
@@ -199,7 +241,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦敌方获得10层灼烧。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/d/d9/ptoxi3sd725e4asif3ee5ak5h76r3ng.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/d/d9/ptoxi3sd725e4asif3ee5ak5h76r3ng.png",
+        "attr": "火",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/a/ab/8wvxz3p479e2b702afdqyzhx9340qgx.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E7%81%AB.png"
       },
       {
         "name": "勾魂",
@@ -207,7 +251,9 @@
         "power": "0",
         "energy": "1",
         "accuracy": "✦偷取敌方3能量。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/5/5b/742j3psv922fzlkabop0okvjyk2ypmk.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/5/5b/742j3psv922fzlkabop0okvjyk2ypmk.png",
+        "attr": "幽",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/e/e7/ttqdi3zlz72g5dgmc8qg9ko4aorwllw.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E5%B9%BD.png"
       },
       {
         "name": "荆棘爪",
@@ -215,7 +261,9 @@
         "power": "80",
         "energy": "2",
         "accuracy": "✦对敌方精灵造成物理伤害。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/5/5a/ltm06cprw7zeg7wlp45vo833s1v3m1s.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/5/5a/ltm06cprw7zeg7wlp45vo833s1v3m1s.png",
+        "attr": "草",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%8D%89.png"
       },
       {
         "name": "霜降",
@@ -223,7 +271,9 @@
         "power": "0",
         "energy": "1",
         "accuracy": "✦敌方获得4层冻结。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/b/bd/lfplex8gjbax37wl13uk3p83yzbuy8a.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/b/bd/lfplex8gjbax37wl13uk3p83yzbuy8a.png",
+        "attr": "冰",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/9/9b/oxnxxud1xhopw87c7mnawxijz8r1hns.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E5%86%B0.png"
       },
       {
         "name": "假寐",
@@ -231,7 +281,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦自己回复2能量，己方队伍获得1次奉献：能耗-2。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/c/c2/aaueqqyqeqi5o1jqm5zrm5tp7dtv6y2.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/c/c2/aaueqqyqeqi5o1jqm5zrm5tp7dtv6y2.png",
+        "attr": "虫",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/c/cb/q3mlwj270f67spwr934hpqx7hj62bm3.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%99%AB.png"
       },
       {
         "name": "虹光冲击",
@@ -239,7 +291,9 @@
         "power": "100",
         "energy": "3",
         "accuracy": "✦对敌方精灵造成魔法伤害。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/0/07/0gkbj8jwj0s8ayldj3rw48b6hefaa8n.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/0/07/0gkbj8jwj0s8ayldj3rw48b6hefaa8n.png",
+        "attr": "光",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/d/de/pxfi7cg0j94c45uxf4itigu90wis7jr.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E5%85%89.png"
       },
       {
         "name": "啮合传递",
@@ -247,7 +301,9 @@
         "power": "0",
         "energy": "1",
         "accuracy": "✦自己获得速度+80，本技能位于1号或3号位时额外获得物攻+60%，传动1。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/7/74/togldrxfbzydbe48p7e9w8zidd7c8f0.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/7/74/togldrxfbzydbe48p7e9w8zidd7c8f0.png",
+        "attr": "机械",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/a/ad/fw81a2pvdickbcnq5rt17m6066cchcf.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%9C%BA%E6%A2%B0.png"
       },
       {
         "name": "甜心续航",
@@ -255,7 +311,9 @@
         "power": "0",
         "energy": "3",
         "accuracy": "✦自己和敌方获得萌化：回复40%生命和4能量。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/a/a4/9c0vpmic56t9ybatxl4oe0r0tsg6tjc.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/a/a4/9c0vpmic56t9ybatxl4oe0r0tsg6tjc.png",
+        "attr": "萌",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/5/5f/80jhk99eosjv1ld26wp7ljtmif27lfv.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%90%8C.png"
       },
       {
         "name": "超维投射",
@@ -263,7 +321,9 @@
         "power": "0",
         "energy": "4",
         "accuracy": "✦敌方获得4层星陨印记。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/d/d6/rlm1yfi6u8pfn2xcxplt1d60cnzq94w.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/d/d6/rlm1yfi6u8pfn2xcxplt1d60cnzq94w.png",
+        "attr": "幻",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/6/64/89miqle961qdw2tt56hb78bps6f34ci.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E5%B9%BB.png"
       },
       {
         "name": "泥浆铠甲",
@@ -271,7 +331,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦自己获得物攻和物防+60%，应对防御：额外使自己的增益翻倍。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/c/c8/gm1n80gvc7gdtjx0voifrpki1susxc2.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/c/c8/gm1n80gvc7gdtjx0voifrpki1susxc2.png",
+        "attr": "地",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/3/32/0w5pybmkd8qm306doqx8kh5onl1o8cq.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E5%9C%B0.png"
       },
       {
         "name": "溃烂触碰",
@@ -279,7 +341,9 @@
         "power": "60",
         "energy": "1",
         "accuracy": "✦对敌方精灵造成物理伤害。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/6/6e/exs3sq1o8p2575vo4xj85pylzvmd6uw.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/6/6e/exs3sq1o8p2575vo4xj85pylzvmd6uw.png",
+        "attr": "毒",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/5/53/jnd3vijasgthdz2ukggyfpisd464r2v.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%AF%92.png"
       },
       {
         "name": "蓄水",
@@ -287,7 +351,9 @@
         "power": "0",
         "energy": "1",
         "accuracy": "✦下次使用的技能能耗-6。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/e/eb/osktsv4rm7s8y5afxh0nh7uzzuqcqsr.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/eb/osktsv4rm7s8y5afxh0nh7uzzuqcqsr.png",
+        "attr": "水",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/d/d1/csqsyhq1k488329455xdlzdcybv6zjh.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%B0%B4.png"
       },
       {
         "name": "羽化加速",
@@ -295,7 +361,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦自己获得全技能威力+20，迅捷。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/a/ad/fk5yguh4nd5a72stw5u7fvbeaat2r7c.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/a/ad/fk5yguh4nd5a72stw5u7fvbeaat2r7c.png",
+        "attr": "翼",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/2/2b/p7wdw88ziupp84s1mr8t9t602psswzz.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E7%BF%BC.png"
       }
     ],
     "skillStones": [
@@ -305,7 +373,9 @@
         "power": "25",
         "energy": "2",
         "accuracy": "✦造成物伤，2连击，若后手攻击，改为3连击。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/3/39/b1ehyr5b2nojwrxfwbk5qrdt2yeaek4.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/3/39/b1ehyr5b2nojwrxfwbk5qrdt2yeaek4.png",
+        "attr": "武",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/5/52/q9hbq9nrnhjt7t86hy7sftv3e2e5fvx.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%AD%A6.png"
       },
       {
         "name": "复写",
@@ -313,7 +383,9 @@
         "power": "0",
         "energy": "0",
         "accuracy": "✦每回合随机变成自己未携带的技能，且该技能能耗-2。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/e/e0/g0nnz4o2vym9p1xc6p7l7crr6o4je0j.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/e0/g0nnz4o2vym9p1xc6p7l7crr6o4je0j.png",
+        "attr": "普通",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/6/69/nc77midbqeafn7i2snh5a5h16ctdi0o.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%99%AE%E9%80%9A.png"
       },
       {
         "name": "应激反应",
@@ -321,7 +393,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦自己回复25%生命，应对防御：改为回复50%生命。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/f/fc/9p3lluctc0oqi335qby11vhzqdo3zki.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/f/fc/9p3lluctc0oqi335qby11vhzqdo3zki.png",
+        "attr": "普通",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/6/69/nc77midbqeafn7i2snh5a5h16ctdi0o.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%99%AE%E9%80%9A.png"
       },
       {
         "name": "提气",
@@ -329,7 +403,9 @@
         "power": "0",
         "energy": "4",
         "accuracy": "✦自己获得全技能威力+40，若敌方本回合更换精灵，额外获得威力+50。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/8/80/rlkozon5iwgvpzuyk8bq9dpf2odu05k.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/8/80/rlkozon5iwgvpzuyk8bq9dpf2odu05k.png",
+        "attr": "武",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/5/52/q9hbq9nrnhjt7t86hy7sftv3e2e5fvx.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%AD%A6.png"
       },
       {
         "name": "晒太阳",
@@ -337,7 +413,9 @@
         "power": "0",
         "energy": "1",
         "accuracy": "✦驱散敌方所有增益。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/e/e5/c101i37mocd5yon1nlxkz86dp0vqu3i.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/e5/c101i37mocd5yon1nlxkz86dp0vqu3i.png",
+        "attr": "普通",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/6/69/nc77midbqeafn7i2snh5a5h16ctdi0o.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%99%AE%E9%80%9A.png"
       },
       {
         "name": "棘刺",
@@ -345,7 +423,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦敌方获得1层棘刺印记。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/f/fb/bklgf0tt9kxbm7hhif3m2d43at3cbes.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/f/fb/bklgf0tt9kxbm7hhif3m2d43at3cbes.png",
+        "attr": "普通",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/6/69/nc77midbqeafn7i2snh5a5h16ctdi0o.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%99%AE%E9%80%9A.png"
       },
       {
         "name": "棘突",
@@ -353,7 +433,9 @@
         "power": "100",
         "energy": "3",
         "accuracy": "✦对敌方精灵造成魔法伤害。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/e/ee/hwwbr2zgt2k56medvh2cimahmzxc6zi.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/ee/hwwbr2zgt2k56medvh2cimahmzxc6zi.png",
+        "attr": "草",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%8D%89.png"
       },
       {
         "name": "毒雾",
@@ -361,7 +443,9 @@
         "power": "0",
         "energy": "7",
         "accuracy": "✦将敌方所有增益，转化成中毒。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/4/4c/g0pabxs6lyeit4gp23ngsxc9k5l4x08.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/4/4c/g0pabxs6lyeit4gp23ngsxc9k5l4x08.png",
+        "attr": "毒",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/5/53/jnd3vijasgthdz2ukggyfpisd464r2v.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%AF%92.png"
       },
       {
         "name": "气波",
@@ -369,7 +453,9 @@
         "power": "40",
         "energy": "0",
         "accuracy": "✦对敌方精灵造成魔法伤害。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/6/6f/lom0reu9dc0sfyoo1aglp64st0gehab.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/6/6f/lom0reu9dc0sfyoo1aglp64st0gehab.png",
+        "attr": "武",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/5/52/q9hbq9nrnhjt7t86hy7sftv3e2e5fvx.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%AD%A6.png"
       },
       {
         "name": "热身运动",
@@ -377,7 +463,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦自己获得连击数+3。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/2/29/n794splvfobhv8u64zt2z4kmldf3v6e.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/2/29/n794splvfobhv8u64zt2z4kmldf3v6e.png",
+        "attr": "普通",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/6/69/nc77midbqeafn7i2snh5a5h16ctdi0o.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%99%AE%E9%80%9A.png"
       },
       {
         "name": "盛开",
@@ -385,7 +473,9 @@
         "power": "0",
         "energy": "1",
         "accuracy": "✦自己获得全技能威力+30，应对防御：改为威力+60。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/8/81/k59zkgq1gg8f8o20t6cjngd94vmnz8l.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/8/81/k59zkgq1gg8f8o20t6cjngd94vmnz8l.png",
+        "attr": "草",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%8D%89.png"
       },
       {
         "name": "移花接木",
@@ -393,7 +483,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦自己回复15%生命，随后脱离。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/a/a8/sh94sx6ve623kdgtlv801ogypguh2ar.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/a/a8/sh94sx6ve623kdgtlv801ogypguh2ar.png",
+        "attr": "草",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%8D%89.png"
       },
       {
         "name": "藤绞",
@@ -401,7 +493,9 @@
         "power": "80",
         "energy": "4",
         "accuracy": "✦造成物伤，自己回复5能量。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/3/36/d4d20uwcxwj2q0gh149n5ezt8760mwt.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/3/36/d4d20uwcxwj2q0gh149n5ezt8760mwt.png",
+        "attr": "草",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/1/12/b8bsilucec9a98rsmqkmxt06c4mnnix.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E8%8D%89.png"
       },
       {
         "name": "见招拆招",
@@ -409,7 +503,9 @@
         "power": "65",
         "energy": "2",
         "accuracy": "✦造成物伤，若上回合使用状态技能，本次技能威力+55。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/b/b3/iuyyreltlni06z2xyqycf0x4ggyy2dg.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/b/b3/iuyyreltlni06z2xyqycf0x4ggyy2dg.png",
+        "attr": "普通",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/6/69/nc77midbqeafn7i2snh5a5h16ctdi0o.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%99%AE%E9%80%9A.png"
       },
       {
         "name": "许愿星",
@@ -417,7 +513,9 @@
         "power": "110",
         "energy": "3",
         "accuracy": "✦对敌方精灵造成魔法伤害。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/9/9f/tnom58ix8ltac2qdz2dh89owjhcsxty.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/9/9f/tnom58ix8ltac2qdz2dh89owjhcsxty.png",
+        "attr": "普通",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/6/69/nc77midbqeafn7i2snh5a5h16ctdi0o.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%99%AE%E9%80%9A.png"
       },
       {
         "name": "防反",
@@ -425,7 +523,9 @@
         "power": "0",
         "energy": "2",
         "accuracy": "✦减伤60%，应对攻击：自己获得物攻和魔攻+40%。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/e/e0/c606sqa07y5tujdp1eumt76561qggo8.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/e/e0/c606sqa07y5tujdp1eumt76561qggo8.png",
+        "attr": "普通",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/6/69/nc77midbqeafn7i2snh5a5h16ctdi0o.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%99%AE%E9%80%9A.png"
       },
       {
         "name": "预备势",
@@ -433,7 +533,9 @@
         "power": "0",
         "energy": "1",
         "accuracy": "✦自己获得物攻+80%，应对防御：额外使敌方获得物防-80%。",
-        "icon": "https://patchwiki.biligame.com/images/rocom/0/0f/goryva3q1ucgtp7fllc65x1ynlntab4.png"
+        "icon": "https://patchwiki.biligame.com/images/rocom/0/0f/goryva3q1ucgtp7fllc65x1ynlntab4.png",
+        "attr": "武",
+        "attrIcon": "https://patchwiki.biligame.com/images/rocom/thumb/5/52/q9hbq9nrnhjt7t86hy7sftv3e2e5fvx.png/40px-%E5%9B%BE%E6%A0%87_%E5%AE%A0%E7%89%A9_%E5%B1%9E%E6%80%A7_%E6%AD%A6.png"
       }
     ]
   }

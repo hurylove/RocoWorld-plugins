@@ -1,11 +1,25 @@
 {
-  "name": "寒音蛇（本命年的样子）",
-  "number": "000",
-  "attribute": [],
-  "attributeIcon": "",
-  "portrait": "",
-  "stats": {},
-  "traits": [],
+  "name": "寒音蛇",
+  "number": "213",
+  "attribute": [
+    "萌"
+  ],
+  "attributeIcon": "https://patchwiki.biligame.com/images/rocom/5/5f/80jhk99eosjv1ld26wp7ljtmif27lfv.png",
+  "portrait": "https://patchwiki.biligame.com/images/rocom/8/88/h5wobros8r6a1fxi8ytpo4v2fgxgkjz.png",
+  "stats": {
+    "生命": 0,
+    "物攻": 0,
+    "魔攻": 0,
+    "物防": 0,
+    "魔防": 0,
+    "速度": 0
+  },
+  "traits": [
+    {
+      "name": "拨浪鼓",
+      "description": "己方精灵每使用1次状态技能，自己入场时毒系和萌系技能威力+10。"
+    }
+  ],
   "evolution": "",
   "skills": {
     "elfSkills": [],

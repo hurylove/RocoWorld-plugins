@@ -15,29 +15,29 @@ const projectRoot = process.cwd();
 function parseYAML(yamlContent) {
     const config = {};
     const lines = yamlContent.split('\n');
-    
+
     for (const line of lines) {
         const trimmedLine = line.trim();
         // 跳过注释和空行
         if (trimmedLine.startsWith('#') || trimmedLine === '') {
             continue;
         }
-        
+
         // 解析键值对
         const colonIndex = trimmedLine.indexOf(':');
         if (colonIndex > 0) {
             const key = trimmedLine.substring(0, colonIndex).trim();
             let value = trimmedLine.substring(colonIndex + 1).trim();
-            
+
             // 处理引号
             if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
                 value = value.substring(1, value.length - 1);
             }
-            
+
             config[key] = value;
         }
     }
-    
+
     return config;
 }
 
@@ -64,7 +64,7 @@ async function generateCard(spriteName) {
     const jsonPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'jltj', `${spriteName}.json`);
     console.log(`📄 正在读取精灵数据: ${spriteName}`);
     let spriteData;
-    
+
     try {
         const rawData = fs.readFileSync(jsonPath, 'utf-8');
         spriteData = JSON.parse(rawData);
@@ -194,13 +194,50 @@ async function generateCard(spriteName) {
     const primaryAttribute = spriteData.attribute && spriteData.attribute.length > 0 ? spriteData.attribute[0] : '普通';
     const colorScheme = getAttributeColor(primaryAttribute);
 
+    const fallbackAttrText = spriteData.attribute && spriteData.attribute.length > 0 ? spriteData.attribute.join('/') : '普通';
+    const fallbackAttrIcon = spriteData.attributeIcon || '';
+
+    // 技能行渲染
+    const renderSkillAttr = (skill) => {
+        const attrText = skill?.attr || fallbackAttrText || '-';
+        const attrIcon = skill?.attrIcon || fallbackAttrIcon || '';
+        return `
+            <div class="skill-attr-badge">
+                ${attrIcon ? `<img src="${attrIcon}" alt="${attrText}" class="skill-attr-icon" />` : ''}
+                <span>${attrText}</span>
+            </div>
+        `;
+    };
+
+    const renderSkillName = (skill) => {
+        return `
+            <div class="skill-name-wrap">
+                ${skill?.icon ? `<img src="${skill.icon}" alt="${skill.name || 'skill'}" class="skill-icon" />` : ''}
+                <span class="skill-name-text">${skill?.name || '-'}</span>
+            </div>
+        `;
+    };
+
+    const renderSkillRow = (skill) => {
+        return `
+            <tr>
+                <td>${renderSkillName(skill)}</td>
+                <td>${renderSkillAttr(skill)}</td>
+                <td><span class="skill-type type-${skill?.type || '状态'}">${skill?.type || '-'}</span></td>
+                <td>${skill?.power || '-'}</td>
+                <td>${skill?.energy || '-'}</td>
+                <td>${skill?.accuracy || '-'}</td>
+            </tr>
+        `;
+    };
+
     // 构建puppeteer启动选项
     const launchOptions = {
         headless: 'new',
         defaultViewport: null,
         args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu']
     };
-    
+
     // 如果配置了Chromium路径，则使用配置的路径
     if (config.chromiumPath) {
         console.log(`使用配置的Chrome路径: ${config.chromiumPath}`);
@@ -208,17 +245,17 @@ async function generateCard(spriteName) {
     } else {
         console.log('使用默认Chrome路径');
     }
-    
+
     const browser = await puppeteer.launch(launchOptions);
-    
+
     const page = await browser.newPage();
-    
+
     try {
         // 计算动态高度
-        const baseHeight = 1200;
+        const baseHeight = 1240;
         const totalSkills = spriteData.skills.elfSkills.length + spriteData.skills.bloodlineSkills.length + spriteData.skills.skillStones.length;
-        const dynamicHeight = baseHeight + (totalSkills * 20);
-        const finalHeight = Math.max(dynamicHeight, 1500);
+        const dynamicHeight = baseHeight + (totalSkills * 24);
+        const finalHeight = Math.max(dynamicHeight, 1560);
 
         // 生成HTML内容
         const htmlContent = `
@@ -228,26 +265,32 @@ async function generateCard(spriteName) {
             <meta charset="UTF-8" />
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Noto+Serif+SC:wght@400;700&display=swap');
+                * {
+                    box-sizing: border-box;
+                }
                 body {
-                    width: 1280px;
+                    width: 1320px;
                     min-height: ${finalHeight}px;
-                    background: ${colorScheme.background};
+                    background:
+                        radial-gradient(circle at 12% 18%, ${colorScheme.border.replace('0.6', '0.28')}, transparent 28%),
+                        radial-gradient(circle at 92% 82%, ${colorScheme.border.replace('0.6', '0.2')}, transparent 32%),
+                        linear-gradient(135deg, #0b1020 0%, #111a2e 45%, #0f1426 100%);
                     font-family: 'Noto Serif SC', serif;
                     color: ${colorScheme.text};
-                    padding: 40px;
+                    padding: 44px;
                     margin: 0;
                     display: flex;
                     justify-content: center;
                     align-items: flex-start;
                 }
                 .card-container {
-                    width: 1200px;
-                    background: rgba(255, 255, 255, 0.08);
-                    border-radius: 25px;
+                    width: 1240px;
+                    background: linear-gradient(155deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+                    border-radius: 28px;
                     padding: 40px;
-                    backdrop-filter: blur(15px);
-                    border: 2px solid rgba(255, 255, 255, 0.2);
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                    backdrop-filter: blur(18px);
+                    border: 1px solid rgba(255, 255, 255, 0.24);
+                    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.45);
                     display: flex;
                     flex-direction: column;
                     gap: 30px;
@@ -256,7 +299,7 @@ async function generateCard(spriteName) {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    border-bottom: 2px solid rgba(255,255,255,0.1);
+                    border-bottom: 1px solid rgba(255,255,255,0.16);
                     padding-bottom: 20px;
                 }
                 .header-left {
@@ -266,224 +309,284 @@ async function generateCard(spriteName) {
                 }
                 .name {
                     font-family: 'Orbitron', sans-serif;
-                    font-size: 48px;
+                    font-size: 50px;
                     font-weight: 700;
-                    color: ${colorScheme.text};
-                    text-shadow: 0 0 10px ${colorScheme.accent};
+                    letter-spacing: 1px;
+                    color: #ffffff;
+                    text-shadow: 0 0 20px ${colorScheme.accent};
                 }
                 .attribute {
                     display: flex;
                     align-items: center;
                     gap: 10px;
-                    background: rgba(255,255,255,0.1);
+                    background: rgba(255,255,255,0.14);
                     padding: 8px 16px;
-                    border-radius: 20px;
-                    backdrop-filter: blur(10px);
+                    border-radius: 999px;
+                    border: 1px solid rgba(255,255,255,0.25);
                 }
                 .attribute-icon {
-                    width: 36px;
-                    height: 36px;
+                    width: 34px;
+                    height: 34px;
                     object-fit: contain;
                 }
                 .attribute-text {
-                    font-family: 'Noto Serif SC', serif;
-                    font-size: 24px;
+                    font-size: 22px;
                     font-weight: bold;
-                    color: ${colorScheme.text};
+                    color: #ffffff;
                 }
                 .number {
                     font-size: 24px;
-                    opacity: 0.8;
+                    opacity: 0.9;
                     font-family: 'Orbitron', sans-serif;
+                    background: rgba(255, 255, 255, 0.12);
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+                    padding: 8px 16px;
+                    border-radius: 999px;
                 }
                 .middle-section {
                     display: flex;
                     align-items: center;
-                    gap: 40px;
-                    padding: 20px 0;
-                    border-bottom: 1px dashed rgba(255,255,255,0.1);
+                    gap: 38px;
+                    padding: 8px 0 20px 0;
+                    border-bottom: 1px dashed rgba(255,255,255,0.2);
                 }
                 .portrait-container {
                     flex-shrink: 0;
                     position: relative;
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 20px;
+                    background: linear-gradient(160deg, rgba(255,255,255,0.14), rgba(255,255,255,0.06));
+                    border: 1px solid rgba(255,255,255,0.2);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
                 }
                 .portrait {
                     width: 280px;
                     height: 280px;
                     object-fit: contain;
-                    filter: drop-shadow(0 0 20px rgba(0, 210, 255, 0.6));
+                    filter: drop-shadow(0 0 24px rgba(0, 210, 255, 0.52));
                     animation: float 3s ease-in-out infinite;
                 }
                 .info-panel {
                     flex-grow: 1;
                     display: flex;
                     flex-direction: column;
-                    gap: 25px;
+                    gap: 22px;
                 }
                 .stats-grid {
                     width: 100%;
                     border-collapse: collapse;
-                    font-family: 'Noto Serif SC', serif;
+                    background: rgba(255, 255, 255, 0.06);
+                    border: 1px solid rgba(255,255,255,0.16);
+                    border-radius: 14px;
+                    overflow: hidden;
                 }
                 .stats-grid td {
-                    padding: 6px 8px;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    padding: 10px 10px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
                     text-align: left;
                     font-size: 22px;
                 }
+                .stats-grid tr:last-child td {
+                    border-bottom: none;
+                }
                 .stats-grid .stat-label {
-                    color: ${colorScheme.accent};
+                    color: #dbeafe;
                     font-weight: bold;
                     width: 25%;
-                    font-size: 24px;
+                    font-size: 22px;
                 }
                 .stats-grid td.stat-value {
                     font-family: 'Orbitron', sans-serif;
-                    color: ${colorScheme.text};
+                    color: #ffffff;
                     font-size: 28px;
                     font-weight: bold;
                 }
                 .trait-box {
-                    background: linear-gradient(90deg, ${colorScheme.border.replace('0.6', '0.1')}, transparent);
+                    background: linear-gradient(100deg, ${colorScheme.border.replace('0.6', '0.22')}, rgba(255,255,255,0.04));
+                    border: 1px solid ${colorScheme.border.replace('0.6', '0.5')};
                     border-left: 5px solid ${colorScheme.accent};
-                    padding: 25px;
-                    border-radius: 0 15px 15px 0;
+                    padding: 20px 22px;
+                    border-radius: 14px;
                 }
                 .trait-title {
-                    font-size: 26px;
-                    color: ${colorScheme.accent};
+                    font-size: 24px;
+                    color: #ffffff;
                     font-weight: bold;
-                    margin-bottom: 12px;
+                    margin-bottom: 8px;
                 }
                 .trait-desc {
-                    font-size: 22px;
-                    line-height: 1.6;
-                    opacity: 0.9;
+                    font-size: 20px;
+                    line-height: 1.65;
+                    opacity: 0.95;
                 }
                 .section {
                     display: flex;
                     flex-direction: column;
-                    gap: 15px;
+                    gap: 14px;
                 }
                 .section-title {
-                    font-size: 32px;
-                    color: ${colorScheme.accent};
+                    font-size: 30px;
+                    color: #ffffff;
                     border-bottom: 2px solid ${colorScheme.accent};
-                    padding-bottom: 10px;
+                    padding-bottom: 8px;
                     font-family: 'Orbitron', sans-serif;
                     text-transform: uppercase;
-                }
-                .category-title {
-                    background: ${colorScheme.border.replace('0.6', '0.2')};
-                    padding: 8px 15px;
-                    border-radius: 8px;
-                    font-size: 20px;
-                    font-weight: bold;
-                    color: ${colorScheme.text};
-                    margin-top: 20px;
+                    letter-spacing: 0.5px;
                 }
                 .skills-container {
                     display: flex;
-                    gap: 30px;
+                    gap: 18px;
                     width: 100%;
-                    margin-top: 10px;
+                    margin-top: 6px;
                 }
                 .skill-column {
                     flex: 1;
                     min-width: 0;
                     display: flex;
                     flex-direction: column;
-                    background: rgba(255, 255, 255, 0.05);
-                    border: 2px solid ${colorScheme.border};
-                    border-radius: 15px;
-                    padding: 15px;
-                    box-shadow: 0 4px 15px ${colorScheme.border.replace('0.3', '0.2')};
+                    background: linear-gradient(160deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.04));
+                    border: 1px solid ${colorScheme.border};
+                    border-radius: 16px;
+                    padding: 14px;
+                    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
                     transition: all 0.3s ease;
                 }
                 .skill-column:hover {
-                    box-shadow: 0 6px 20px ${colorScheme.border.replace('0.3', '0.4')};
-                    border-color: ${colorScheme.border};
+                    transform: translateY(-2px);
+                    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+                }
+                .category-title {
+                    background: linear-gradient(90deg, ${colorScheme.border.replace('0.6', '0.42')}, rgba(255, 255, 255, 0.05));
+                    padding: 9px 14px;
+                    border-radius: 10px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #ffffff;
+                    margin-bottom: 10px;
+                    border: 1px solid rgba(255,255,255,0.2);
                 }
                 .skills-table {
                     width: 100%;
                     border-collapse: collapse;
-                    margin-bottom: 10px;
                     table-layout: fixed;
+                    border-radius: 12px;
+                    overflow: hidden;
                 }
                 .skills-table th {
                     text-align: left;
-                    padding: 12px;
-                    background: rgba(0,0,0,0.4);
-                    color: ${colorScheme.accent};
-                    font-size: 18px;
-                    border-bottom: 2px solid ${colorScheme.accent};
+                    padding: 10px 8px;
+                    background: rgba(6, 11, 24, 0.65);
+                    color: #dbeafe;
+                    font-size: 15px;
+                    border-bottom: 1px solid rgba(255,255,255,0.16);
                 }
                 .skills-table td {
-                    padding: 12px;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-                    font-size: 16px;
+                    padding: 10px 8px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                    font-size: 14px;
                     vertical-align: middle;
                     overflow-wrap: break-word;
                     white-space: normal;
                 }
-                .skills-table th:nth-child(1),
-                .skills-table td:nth-child(1) {
+                .skills-table tbody tr:last-child td {
+                    border-bottom: none;
+                }
+                .skills-table th:nth-child(1), .skills-table td:nth-child(1) {
+                    width: 22%;
+                }
+                .skills-table th:nth-child(2), .skills-table td:nth-child(2) {
                     width: 18%;
+                    text-align: center;
                 }
-                .skills-table th:nth-child(2),
-                .skills-table td:nth-child(2) {
-                    width: 17%;
+                .skills-table th:nth-child(3), .skills-table td:nth-child(3) {
+                    width: 12%;
+                    text-align: center;
+                }
+                .skills-table th:nth-child(4), .skills-table td:nth-child(4) {
+                    width: 11%;
                     text-align: center;
                     white-space: nowrap;
                 }
-                .skills-table th:nth-child(3),
-                .skills-table td:nth-child(3) {
-                    width: 15%;
+                .skills-table th:nth-child(5), .skills-table td:nth-child(5) {
+                    width: 11%;
                     text-align: center;
                     white-space: nowrap;
                 }
-                .skills-table th:nth-child(4),
-                .skills-table td:nth-child(4) {
-                    width: 15%;
-                    text-align: center;
-                    white-space: nowrap;
-                }
-                .skills-table th:nth-child(5),
-                .skills-table td:nth-child(5) {
-                    width: 35%;
+                .skills-table th:nth-child(6), .skills-table td:nth-child(6) {
+                    width: 26%;
                 }
                 .skills-table tr:hover td {
-                    background: rgba(255,255,255,0.05);
+                    background: rgba(255,255,255,0.08);
+                }
+                .skill-name-wrap {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+                .skill-icon {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 6px;
+                    object-fit: cover;
+                    border: 1px solid rgba(255,255,255,0.25);
+                    flex-shrink: 0;
+                }
+                .skill-name-text {
+                    font-weight: 600;
+                    color: #ffffff;
+                }
+                .skill-attr-badge {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 6px;
+                    background: rgba(255,255,255,0.12);
+                    border: 1px solid rgba(255,255,255,0.22);
+                    border-radius: 999px;
+                    padding: 4px 8px;
+                    min-width: 72px;
+                }
+                .skill-attr-icon {
+                    width: 16px;
+                    height: 16px;
+                    object-fit: contain;
+                    flex-shrink: 0;
                 }
                 .skill-type {
+                    display: inline-block;
                     padding: 4px 8px;
-                    border-radius: 4px;
-                    font-size: 14px;
+                    border-radius: 999px;
+                    font-size: 12px;
                     font-weight: bold;
                     color: white;
+                    min-width: 46px;
+                    text-align: center;
                 }
                 .type-物攻 {
-                    background: #ff5722;
+                    background: linear-gradient(135deg, #ff7043, #e53935);
                 }
                 .type-魔攻 {
-                    background: #2196f3;
+                    background: linear-gradient(135deg, #42a5f5, #1e88e5);
                 }
                 .type-防御 {
-                    background: #4caf50;
+                    background: linear-gradient(135deg, #66bb6a, #43a047);
                 }
                 .type-状态 {
-                    background: #9c27b0;
+                    background: linear-gradient(135deg, #ab47bc, #8e24aa);
                 }
                 .type-技能石 {
-                    background: #795548;
+                    background: linear-gradient(135deg, #8d6e63, #6d4c41);
                 }
                 @keyframes float {
-                    0%,
-                    100% {
+                    0%, 100% {
                         transform: translateY(0);
                     }
                     50% {
-                        transform: translateY(-15px);
+                        transform: translateY(-14px);
                     }
                 }
             </style>
@@ -523,7 +626,7 @@ async function generateCard(spriteName) {
                                 <td class="stat-value">${spriteData.stats.速度}</td>
                             </tr>
                         </table>
-                        
+
                         ${spriteData.traits && spriteData.traits.length > 0 ? `
                         <div class="trait-box">
                             <div class="trait-title">✨ ${spriteData.traits[0].name}</div>
@@ -541,6 +644,7 @@ async function generateCard(spriteName) {
                                 <thead>
                                     <tr>
                                         <th>名称</th>
+                                        <th>属性</th>
                                         <th>类型</th>
                                         <th>威力</th>
                                         <th>能量</th>
@@ -548,17 +652,7 @@ async function generateCard(spriteName) {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    ${spriteData.skills.elfSkills.map(skill => {
-                                        return `
-                                        <tr>
-                                            <td>${skill.name}</td>
-                                            <td>${skill.type || '-'}</td>
-                                            <td>${skill.power || '-'}</td>
-                                            <td>${skill.energy || '-'}</td>
-                                            <td>${skill.accuracy || '-'}</td>
-                                        </tr>
-                                        `;
-                                    }).join('')}
+                                    ${spriteData.skills.elfSkills.map(skill => renderSkillRow(skill)).join('')}
                                 </tbody>
                             </table>
                         </div>
@@ -568,6 +662,7 @@ async function generateCard(spriteName) {
                                 <thead>
                                     <tr>
                                         <th>名称</th>
+                                        <th>属性</th>
                                         <th>类型</th>
                                         <th>威力</th>
                                         <th>能量</th>
@@ -575,17 +670,7 @@ async function generateCard(spriteName) {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    ${spriteData.skills.bloodlineSkills.map(skill => {
-                                        return `
-                                        <tr>
-                                            <td>${skill.name}</td>
-                                            <td>${skill.type || '-'}</td>
-                                            <td>${skill.power || '-'}</td>
-                                            <td>${skill.energy || '-'}</td>
-                                            <td>${skill.accuracy || '-'}</td>
-                                        </tr>
-                                        `;
-                                    }).join('')}
+                                    ${spriteData.skills.bloodlineSkills.map(skill => renderSkillRow(skill)).join('')}
                                 </tbody>
                             </table>
                         </div>
@@ -595,6 +680,7 @@ async function generateCard(spriteName) {
                                 <thead>
                                     <tr>
                                         <th>名称</th>
+                                        <th>属性</th>
                                         <th>类型</th>
                                         <th>威力</th>
                                         <th>能量</th>
@@ -602,17 +688,7 @@ async function generateCard(spriteName) {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    ${spriteData.skills.skillStones.map(skill => {
-                                        return `
-                                        <tr>
-                                            <td>${skill.name}</td>
-                                            <td>${skill.type}</td>
-                                            <td>${skill.power || '-'}</td>
-                                            <td>${skill.energy || '-'}</td>
-                                            <td>${skill.accuracy || '-'}</td>
-                                        </tr>
-                                        `;
-                                    }).join('')}
+                                    ${spriteData.skills.skillStones.map(skill => renderSkillRow(skill)).join('')}
                                 </tbody>
                             </table>
                         </div>
@@ -623,14 +699,14 @@ async function generateCard(spriteName) {
         </html> `;
 
         // 设置视口和截图
-        await page.setViewport({ width: 1280, height: 0 });
+        await page.setViewport({ width: 1320, height: 0 });
         await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
         await wait(1000);
-        
+
         // 生成base64格式的图片
         const base64Image = await page.screenshot({ encoding: 'base64', fullPage: true, omitBackground: false });
         console.log(`✅ 图片生成成功！`);
-        
+
         // 返回base64格式的图片
         return base64Image;
 
@@ -652,7 +728,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
         console.error('❌ 请提供精灵名称作为参数，例如：node generateCard.js 迪莫');
         process.exit(1);
     }
-    
+
     generateCard(spriteName)
         .then(imagePath => {
             console.log(`🎉 任务完成！生成的图片路径：${imagePath}`);

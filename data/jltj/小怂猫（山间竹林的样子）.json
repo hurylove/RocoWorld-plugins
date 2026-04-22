@@ -1,11 +1,25 @@
 {
-  "name": "小怂猫（山间竹林的样子）",
-  "number": "000",
-  "attribute": [],
-  "attributeIcon": "",
-  "portrait": "",
-  "stats": {},
-  "traits": [],
+  "name": "小怂猫",
+  "number": "163",
+  "attribute": [
+    "武"
+  ],
+  "attributeIcon": "https://patchwiki.biligame.com/images/rocom/5/52/q9hbq9nrnhjt7t86hy7sftv3e2e5fvx.png",
+  "portrait": "https://patchwiki.biligame.com/images/rocom/d/d1/f32k1wjwrvu0dxo75t4nyfkxj6ylfph.png",
+  "stats": {
+    "生命": 0,
+    "物攻": 0,
+    "魔攻": 0,
+    "物防": 0,
+    "魔防": 0,
+    "速度": 0
+  },
+  "traits": [
+    {
+      "name": "威慑",
+      "description": "打断敌方时，被打断的技能进入2回合冷却。"
+    }
+  ],
   "evolution": "",
   "skills": {
     "elfSkills": [],

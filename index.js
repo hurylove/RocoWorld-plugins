@@ -1,8 +1,12 @@
 import fs from 'node:fs';
+import initConfig from './apps/config.js';
 
 if (!global.segment) {
   global.segment = (await import("oicq")).segment;
 }
+
+// 初始化配置文件
+initConfig();
 
 let ret = [];
 

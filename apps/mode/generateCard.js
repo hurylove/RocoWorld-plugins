@@ -252,10 +252,10 @@ async function generateCard(spriteName) {
 
     try {
         // 计算动态高度
-        const baseHeight = 1240;
+        const baseHeight = 1600;
         const totalSkills = spriteData.skills.elfSkills.length + spriteData.skills.bloodlineSkills.length + spriteData.skills.skillStones.length;
-        const dynamicHeight = baseHeight + (totalSkills * 24);
-        const finalHeight = Math.max(dynamicHeight, 1560);
+        const dynamicHeight = baseHeight + (totalSkills * 28);
+        const finalHeight = Math.max(dynamicHeight, 2100);
 
         // 生成HTML内容
         const htmlContent = `
@@ -269,124 +269,124 @@ async function generateCard(spriteName) {
                     box-sizing: border-box;
                 }
                 body {
-                    width: 1320px;
+                    width: 1480px;
                     min-height: ${finalHeight}px;
                     background:
-                        radial-gradient(circle at 12% 18%, ${colorScheme.border.replace('0.6', '0.28')}, transparent 28%),
-                        radial-gradient(circle at 92% 82%, ${colorScheme.border.replace('0.6', '0.2')}, transparent 32%),
-                        linear-gradient(135deg, #0b1020 0%, #111a2e 45%, #0f1426 100%);
+                        radial-gradient(circle at 12% 18%, ${colorScheme.border.replace('0.6', '0.16')}, transparent 30%),
+                        radial-gradient(circle at 88% 80%, ${colorScheme.border.replace('0.6', '0.14')}, transparent 34%),
+                        linear-gradient(145deg, #f8fbff 0%, #eef4ff 52%, #f7fafc 100%);
                     font-family: 'Noto Serif SC', serif;
-                    color: ${colorScheme.text};
-                    padding: 44px;
+                    color: #334155;
+                    padding: 34px;
                     margin: 0;
                     display: flex;
                     justify-content: center;
                     align-items: flex-start;
                 }
                 .card-container {
-                    width: 1240px;
-                    background: linear-gradient(155deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
-                    border-radius: 28px;
-                    padding: 40px;
-                    backdrop-filter: blur(18px);
-                    border: 1px solid rgba(255, 255, 255, 0.24);
-                    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.45);
+                    width: 1420px;
+                    background: linear-gradient(165deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
+                    border-radius: 26px;
+                    padding: 34px;
+                    border: 1px solid rgba(148, 163, 184, 0.35);
+                    box-shadow: 0 20px 45px rgba(30, 41, 59, 0.12);
                     display: flex;
                     flex-direction: column;
-                    gap: 30px;
+                    gap: 26px;
                 }
                 .header {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    border-bottom: 1px solid rgba(255,255,255,0.16);
-                    padding-bottom: 20px;
+                    border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+                    padding-bottom: 18px;
                 }
                 .header-left {
                     display: flex;
                     align-items: center;
-                    gap: 20px;
+                    gap: 18px;
                 }
                 .name {
                     font-family: 'Orbitron', sans-serif;
-                    font-size: 50px;
+                    font-size: 48px;
                     font-weight: 700;
                     letter-spacing: 1px;
-                    color: #ffffff;
-                    text-shadow: 0 0 20px ${colorScheme.accent};
+                    color: #0f172a;
+                    text-shadow: 0 3px 16px ${colorScheme.border.replace('0.6', '0.35')};
                 }
                 .attribute {
                     display: flex;
                     align-items: center;
                     gap: 10px;
-                    background: rgba(255,255,255,0.14);
+                    background: rgba(255,255,255,0.9);
                     padding: 8px 16px;
                     border-radius: 999px;
-                    border: 1px solid rgba(255,255,255,0.25);
+                    border: 1px solid ${colorScheme.border.replace('0.6', '0.45')};
+                    color: #1e293b;
                 }
                 .attribute-icon {
-                    width: 34px;
-                    height: 34px;
+                    width: 32px;
+                    height: 32px;
                     object-fit: contain;
                 }
                 .attribute-text {
-                    font-size: 22px;
+                    font-size: 21px;
                     font-weight: bold;
-                    color: #ffffff;
+                    color: #1e293b;
                 }
                 .number {
                     font-size: 24px;
-                    opacity: 0.9;
                     font-family: 'Orbitron', sans-serif;
-                    background: rgba(255, 255, 255, 0.12);
-                    border: 1px solid rgba(255, 255, 255, 0.25);
+                    color: #334155;
+                    background: #f8fafc;
+                    border: 1px solid rgba(148, 163, 184, 0.45);
                     padding: 8px 16px;
                     border-radius: 999px;
                 }
                 .middle-section {
                     display: flex;
                     align-items: center;
-                    gap: 38px;
-                    padding: 8px 0 20px 0;
-                    border-bottom: 1px dashed rgba(255,255,255,0.2);
+                    gap: 34px;
+                    padding: 4px 0 18px 0;
+                    border-bottom: 1px dashed rgba(148, 163, 184, 0.45);
                 }
                 .portrait-container {
                     flex-shrink: 0;
                     position: relative;
                     width: 300px;
                     height: 300px;
-                    border-radius: 20px;
-                    background: linear-gradient(160deg, rgba(255,255,255,0.14), rgba(255,255,255,0.06));
-                    border: 1px solid rgba(255,255,255,0.2);
+                    border-radius: 18px;
+                    background: linear-gradient(160deg, #ffffff, #f1f5f9);
+                    border: 1px solid rgba(148, 163, 184, 0.38);
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     overflow: hidden;
                 }
                 .portrait {
-                    width: 280px;
-                    height: 280px;
+                    width: 282px;
+                    height: 282px;
                     object-fit: contain;
-                    filter: drop-shadow(0 0 24px rgba(0, 210, 255, 0.52));
-                    animation: float 3s ease-in-out infinite;
+                    filter: drop-shadow(0 0 18px ${colorScheme.border.replace('0.6', '0.5')});
+                    animation: float 3.1s ease-in-out infinite;
                 }
                 .info-panel {
                     flex-grow: 1;
                     display: flex;
                     flex-direction: column;
-                    gap: 22px;
+                    gap: 18px;
                 }
                 .stats-grid {
                     width: 100%;
                     border-collapse: collapse;
-                    background: rgba(255, 255, 255, 0.06);
-                    border: 1px solid rgba(255,255,255,0.16);
+                    background: rgba(255, 255, 255, 0.92);
+                    border: 1px solid rgba(148, 163, 184, 0.3);
                     border-radius: 14px;
                     overflow: hidden;
                 }
                 .stats-grid td {
-                    padding: 10px 10px;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                    padding: 11px 10px;
+                    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
                     text-align: left;
                     font-size: 22px;
                 }
@@ -394,44 +394,45 @@ async function generateCard(spriteName) {
                     border-bottom: none;
                 }
                 .stats-grid .stat-label {
-                    color: #dbeafe;
+                    color: #475569;
                     font-weight: bold;
                     width: 25%;
-                    font-size: 22px;
+                    font-size: 21px;
                 }
                 .stats-grid td.stat-value {
                     font-family: 'Orbitron', sans-serif;
-                    color: #ffffff;
+                    color: #0f172a;
                     font-size: 28px;
                     font-weight: bold;
                 }
                 .trait-box {
-                    background: linear-gradient(100deg, ${colorScheme.border.replace('0.6', '0.22')}, rgba(255,255,255,0.04));
-                    border: 1px solid ${colorScheme.border.replace('0.6', '0.5')};
-                    border-left: 5px solid ${colorScheme.accent};
-                    padding: 20px 22px;
+                    background: linear-gradient(100deg, ${colorScheme.border.replace('0.6', '0.18')}, rgba(255,255,255,0.8));
+                    border: 1px solid ${colorScheme.border.replace('0.6', '0.45')};
+                    border-left: 5px solid ${colorScheme.border.replace('0.6', '0.85')};
+                    padding: 18px 20px;
                     border-radius: 14px;
+                    color: #1e293b;
                 }
                 .trait-title {
                     font-size: 24px;
-                    color: #ffffff;
+                    color: #0f172a;
                     font-weight: bold;
                     margin-bottom: 8px;
                 }
                 .trait-desc {
                     font-size: 20px;
-                    line-height: 1.65;
-                    opacity: 0.95;
+                    line-height: 1.62;
+                    opacity: 0.96;
                 }
                 .section {
                     display: flex;
                     flex-direction: column;
-                    gap: 14px;
+                    gap: 12px;
                 }
                 .section-title {
-                    font-size: 30px;
-                    color: #ffffff;
-                    border-bottom: 2px solid ${colorScheme.accent};
+                    font-size: 31px;
+                    color: #0f172a;
+                    border-bottom: 2px solid ${colorScheme.border.replace('0.6', '0.75')};
                     padding-bottom: 8px;
                     font-family: 'Orbitron', sans-serif;
                     text-transform: uppercase;
@@ -439,55 +440,52 @@ async function generateCard(spriteName) {
                 }
                 .skills-container {
                     display: flex;
-                    gap: 18px;
+                    flex-direction: column;
+                    gap: 14px;
                     width: 100%;
                     margin-top: 6px;
                 }
                 .skill-column {
-                    flex: 1;
                     min-width: 0;
                     display: flex;
                     flex-direction: column;
-                    background: linear-gradient(160deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.04));
-                    border: 1px solid ${colorScheme.border};
-                    border-radius: 16px;
-                    padding: 14px;
-                    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
-                    transition: all 0.3s ease;
-                }
-                .skill-column:hover {
-                    transform: translateY(-2px);
-                    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+                    background: linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(248, 250, 252, 0.95));
+                    border: 1px solid ${colorScheme.border.replace('0.6', '0.45')};
+                    border-radius: 14px;
+                    padding: 12px;
+                    box-shadow: 0 8px 20px rgba(30, 41, 59, 0.08);
                 }
                 .category-title {
-                    background: linear-gradient(90deg, ${colorScheme.border.replace('0.6', '0.42')}, rgba(255, 255, 255, 0.05));
-                    padding: 9px 14px;
+                    background: linear-gradient(90deg, ${colorScheme.border.replace('0.6', '0.28')}, rgba(255, 255, 255, 0.85));
+                    padding: 8px 12px;
                     border-radius: 10px;
                     font-size: 18px;
                     font-weight: bold;
-                    color: #ffffff;
+                    color: #1e293b;
                     margin-bottom: 10px;
-                    border: 1px solid rgba(255,255,255,0.2);
+                    border: 1px solid rgba(148, 163, 184, 0.35);
                 }
                 .skills-table {
                     width: 100%;
                     border-collapse: collapse;
                     table-layout: fixed;
-                    border-radius: 12px;
+                    border-radius: 10px;
                     overflow: hidden;
                 }
                 .skills-table th {
                     text-align: left;
-                    padding: 10px 8px;
-                    background: rgba(6, 11, 24, 0.65);
-                    color: #dbeafe;
+                    padding: 10px 9px;
+                    background: #eef2ff;
+                    color: #334155;
                     font-size: 15px;
-                    border-bottom: 1px solid rgba(255,255,255,0.16);
+                    border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+                    font-weight: 700;
                 }
                 .skills-table td {
-                    padding: 10px 8px;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-                    font-size: 14px;
+                    padding: 10px 9px;
+                    border-bottom: 1px solid rgba(203, 213, 225, 0.75);
+                    font-size: 15px;
+                    color: #334155;
                     vertical-align: middle;
                     overflow-wrap: break-word;
                     white-space: normal;
@@ -496,31 +494,31 @@ async function generateCard(spriteName) {
                     border-bottom: none;
                 }
                 .skills-table th:nth-child(1), .skills-table td:nth-child(1) {
-                    width: 22%;
+                    width: 16%;
                 }
                 .skills-table th:nth-child(2), .skills-table td:nth-child(2) {
-                    width: 18%;
-                    text-align: center;
-                }
-                .skills-table th:nth-child(3), .skills-table td:nth-child(3) {
                     width: 12%;
                     text-align: center;
                 }
+                .skills-table th:nth-child(3), .skills-table td:nth-child(3) {
+                    width: 10%;
+                    text-align: center;
+                }
                 .skills-table th:nth-child(4), .skills-table td:nth-child(4) {
-                    width: 11%;
+                    width: 8%;
                     text-align: center;
                     white-space: nowrap;
                 }
                 .skills-table th:nth-child(5), .skills-table td:nth-child(5) {
-                    width: 11%;
+                    width: 8%;
                     text-align: center;
                     white-space: nowrap;
                 }
                 .skills-table th:nth-child(6), .skills-table td:nth-child(6) {
-                    width: 26%;
+                    width: 46%;
                 }
                 .skills-table tr:hover td {
-                    background: rgba(255,255,255,0.08);
+                    background: rgba(219, 234, 254, 0.35);
                 }
                 .skill-name-wrap {
                     display: flex;
@@ -528,27 +526,29 @@ async function generateCard(spriteName) {
                     gap: 8px;
                 }
                 .skill-icon {
-                    width: 22px;
-                    height: 22px;
+                    width: 23px;
+                    height: 23px;
                     border-radius: 6px;
                     object-fit: cover;
-                    border: 1px solid rgba(255,255,255,0.25);
+                    border: 1px solid rgba(148, 163, 184, 0.4);
                     flex-shrink: 0;
                 }
                 .skill-name-text {
                     font-weight: 600;
-                    color: #ffffff;
+                    color: #1e293b;
                 }
                 .skill-attr-badge {
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
                     gap: 6px;
-                    background: rgba(255,255,255,0.12);
-                    border: 1px solid rgba(255,255,255,0.22);
+                    background: rgba(248, 250, 252, 1);
+                    border: 1px solid rgba(148, 163, 184, 0.55);
                     border-radius: 999px;
                     padding: 4px 8px;
                     min-width: 72px;
+                    color: #334155;
+                    font-weight: 600;
                 }
                 .skill-attr-icon {
                     width: 16px;
@@ -586,7 +586,7 @@ async function generateCard(spriteName) {
                         transform: translateY(0);
                     }
                     50% {
-                        transform: translateY(-14px);
+                        transform: translateY(-12px);
                     }
                 }
             </style>
@@ -699,7 +699,7 @@ async function generateCard(spriteName) {
         </html> `;
 
         // 设置视口和截图
-        await page.setViewport({ width: 1320, height: 0 });
+        await page.setViewport({ width: 1480, height: 0 });
         await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
         await wait(1000);
 

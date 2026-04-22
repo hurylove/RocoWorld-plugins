@@ -83,7 +83,7 @@ async function generateHelpImage() {
             @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Noto+Serif+SC:wght@400;700&display=swap');
             body {
                 width: 1280px;
-                height: 1000px;
+                height: 1200px;
                 background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
                 font-family: 'Noto Serif SC', serif;
                 color: #ffffff;
@@ -196,12 +196,28 @@ async function generateHelpImage() {
                 <div class="section-title">功能命令</div>
                 <div class="command-grid">
                     <div class="command-item">
-                        <div class="command">#精灵名称</div>
-                        <div class="description">查看精灵宠物图鉴，例如：#迪莫</div>
+                        <div class="command">#宠物名称</div>
+                        <div class="description">查看宠物图鉴，例如：#迪莫</div>
                     </div>
                     <div class="command-item">
-                        <div class="command">#精灵名称资料卡</div>
-                        <div class="description">查看精灵宠物图鉴，例如：#迪莫资料卡</div>
+                        <div class="command">#宠物名称解析卡</div>
+                        <div class="description">查看宠物解析卡，例如：#迪莫解析卡</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="command">#宠物名称资料卡</div>
+                        <div class="description">查看宠物资料卡，例如：#迪莫资料卡</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="command">#属性克制表</div>
+                        <div class="description">查看完整的属性克制表</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="command">#属性名称克制</div>
+                        <div class="description">查看单属性克制关系，例如：#光系克制</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="command">#洛克王国更新</div>
+                        <div class="description">更新洛克王国插件</div>
                     </div>
                     <div class="command-item">
                         <div class="command">#洛克帮助</div>
@@ -249,7 +265,7 @@ async function generateHelpImage() {
     </html>`;
 
     // 设置视口和截图
-    await page.setViewport({ width: 1280, height: 1000 });
+    await page.setViewport({ width: 1280, height: 1200 });
     await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
     await wait(1000);
     

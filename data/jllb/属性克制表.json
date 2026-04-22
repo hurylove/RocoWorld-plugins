@@ -1,0 +1,123 @@
+{
+  "title": "洛克王国属性克制表",
+  "subtitle": "作攻方 × 作防方",
+  "version": "1.1.0",
+  "description": "由属性克制图整理的结构化数据，用于生成可视化克制图（已移除岩石系）。",
+  "types": [
+    { "name": "草", "short": "草", "color": "#4CAF50" },
+    { "name": "火", "short": "火", "color": "#FF7043" },
+    { "name": "水", "short": "水", "color": "#42A5F5" },
+    { "name": "光", "short": "光", "color": "#5C6BC0" },
+    { "name": "地", "short": "地", "color": "#A1887F" },
+    { "name": "冰", "short": "冰", "color": "#26C6DA" },
+    { "name": "龙", "short": "龙", "color": "#7E57C2" },
+    { "name": "电", "short": "电", "color": "#FBC02D" },
+    { "name": "毒", "short": "毒", "color": "#AB47BC" },
+    { "name": "虫", "short": "虫", "color": "#8BC34A" },
+    { "name": "武", "short": "武", "color": "#EF6C00" },
+    { "name": "翼", "short": "翼", "color": "#64B5F6" },
+    { "name": "萌", "short": "萌", "color": "#EC407A" },
+    { "name": "机械", "short": "机", "color": "#78909C" },
+    { "name": "幻", "short": "幻", "color": "#26A69A" },
+    { "name": "幽", "short": "幽", "color": "#5C6BC0" },
+    { "name": "恶", "short": "恶", "color": "#424242" },
+    { "name": "普通", "short": "普", "color": "#BDBDBD" }
+  ],
+  "matchups": [
+    {
+      "attacker": "草",
+      "strongAgainst": ["水", "地"],
+      "weakAgainst": ["火", "草", "毒", "虫", "翼", "龙", "机械"]
+    },
+    {
+      "attacker": "火",
+      "strongAgainst": ["草", "冰", "虫", "机械"],
+      "weakAgainst": ["水", "火", "龙"]
+    },
+    {
+      "attacker": "水",
+      "strongAgainst": ["火", "地"],
+      "weakAgainst": ["草", "水", "龙"]
+    },
+    {
+      "attacker": "光",
+      "strongAgainst": ["武", "毒", "幽"],
+      "weakAgainst": ["光", "恶", "机械", "幻"]
+    },
+    {
+      "attacker": "地",
+      "strongAgainst": ["火", "电", "毒", "机械"],
+      "weakAgainst": ["草", "虫", "翼"]
+    },
+    {
+      "attacker": "冰",
+      "strongAgainst": ["草", "地", "翼", "龙"],
+      "weakAgainst": ["火", "水", "冰", "机械"]
+    },
+    {
+      "attacker": "龙",
+      "strongAgainst": ["龙"],
+      "weakAgainst": ["机械", "萌"]
+    },
+    {
+      "attacker": "电",
+      "strongAgainst": ["水", "翼"],
+      "weakAgainst": ["草", "电", "龙", "地"]
+    },
+    {
+      "attacker": "毒",
+      "strongAgainst": ["草", "萌"],
+      "weakAgainst": ["地", "毒", "幽", "机械"]
+    },
+    {
+      "attacker": "虫",
+      "strongAgainst": ["草", "光", "恶"],
+      "weakAgainst": ["火", "武", "毒", "翼", "幽", "机械", "萌"]
+    },
+    {
+      "attacker": "武",
+      "strongAgainst": ["普通", "冰", "恶", "机械"],
+      "weakAgainst": ["毒", "翼", "光", "虫", "萌", "幽"]
+    },
+    {
+      "attacker": "翼",
+      "strongAgainst": ["草", "虫", "武"],
+      "weakAgainst": ["电", "机械"]
+    },
+    {
+      "attacker": "萌",
+      "strongAgainst": ["武", "龙", "恶"],
+      "weakAgainst": ["火", "毒", "机械"]
+    },
+    {
+      "attacker": "机械",
+      "strongAgainst": ["冰", "萌"],
+      "weakAgainst": ["火", "水", "电", "机械"]
+    },
+    {
+      "attacker": "幻",
+      "strongAgainst": ["光", "龙", "幽"],
+      "weakAgainst": ["恶", "萌", "机械"]
+    },
+    {
+      "attacker": "幽",
+      "strongAgainst": ["光", "幽"],
+      "weakAgainst": ["恶", "普通"]
+    },
+    {
+      "attacker": "恶",
+      "strongAgainst": ["光", "幽", "幻"],
+      "weakAgainst": ["武", "萌", "恶"]
+    },
+    {
+      "attacker": "普通",
+      "strongAgainst": [],
+      "weakAgainst": ["机械", "幽"]
+    }
+  ],
+  "legend": {
+    "up": "↑ 克制",
+    "down": "↓ 被克制/无效",
+    "empty": "· 正常"
+  }
+}

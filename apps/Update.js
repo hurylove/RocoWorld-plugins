@@ -185,10 +185,7 @@ export class Update extends plugin {
    */
   async makeForwardMsg(title, msg, end) {
     let { nickname } = this.e.bot ?? Bot
-    if (this.e.isGroup) {
-      let info = await (this.e.bot ?? Bot).getGroupMemberInfo(this.e.group_id, (this.e.bot ?? Bot).uin)
-      nickname = info.card || info.nickname
-    }
+    // 简化获取昵称的逻辑，避免使用不存在的 getGroupMemberInfo 方法
     let userInfo = {
       user_id: (this.e.bot ?? Bot).uin,
       nickname
@@ -218,7 +215,7 @@ export class Update extends plugin {
     } else if (this.e?.friend?.makeForwardMsg) {
       forwardMsg = await this.e.friend.makeForwardMsg(forwardMsg)
     } else {
-      return msg.join('\n')
+      return msg
     }
 
     let dec = 'RocoWorld-plugins 更新日志'

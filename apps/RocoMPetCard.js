@@ -4,9 +4,10 @@ import plugin from "../../../lib/plugins/plugin.js";
 import generatePetCard from './mode/generatePetCard.js';
 import { fileURLToPath } from 'url';
 
-// 使用process.cwd()作为项目根目录的基准
-const projectRoot = process.cwd();
-const spriteListPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'jllb', '精灵列表.json');
+// 使用fileURLToPath获取正确的目录路径
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const spriteListPath = path.join(__dirname, '..', 'data', 'jllb', '精灵列表.json');
 
 // 加载精灵列表
 function loadSpriteList() {
@@ -34,7 +35,7 @@ export default class petCard extends plugin {
       priority: 500,
       rule: [
         {
-          reg: '#(.*?)(资料卡)$',
+          reg: '#(.*?)(资料卡)?$',
           fnc: 'generatePetCard',
         }
       ]

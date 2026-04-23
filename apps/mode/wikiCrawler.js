@@ -169,6 +169,19 @@ function buildDisplayText(logData) {
   return lines.join('\n');
 }
 
+/**
+ * 强制刷新远行商人日志文件并返回展示文案
+ * 用于定时任务：每次执行都会主动抓取并覆盖 data/yxsr/远行商人日志.txt
+ */
+export async function refreshYxsrLog() {
+  await crawlWiki();
+  const logData = readLogFile();
+  if (!logData) {
+    return '远行商人情报暂不可用，请稍后重试。';
+  }
+  return buildDisplayText(logData);
+}
+
 // 主函数：获取远行商人信息
 async function getYxsrInfo() {
   try {

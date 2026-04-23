@@ -3,6 +3,18 @@
 # Chromium浏览器路径
 chromiumPath: ""
 
+# 远行商人自动推送配置
+# 是否启用定时推送（true/false）
+yxsrPushEnable: false
+
+# 固定推送时间：08:05 / 12:05 / 16:05 / 20:05（无需配置）
+# 说明：该配置项为兼容旧版本保留，当前固定时段模式下不再使用
+yxsrPushIntervalMinutes: 60
+
+# 推送群号，多个群号用英文逗号分隔
+# 示例: "123456789,987654321"
+yxsrPushGroups: ""
+
 # 其他配置项
 plugin:  
   name: "RocoWorld-plugins"

@@ -29,7 +29,7 @@ function crawlWiki() {
   return new Promise((resolve, reject) => {
     // 解析URL
     const url = new URL(wikiUrl);
-    
+
     // 发送HTTP请求获取页面内容
     const options = {
       hostname: url.hostname,
@@ -38,29 +38,29 @@ function crawlWiki() {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
       }
     };
-    
+
     const req = https.get(options, (response) => {
       // 检查响应状态
       if (response.statusCode !== 200) {
         reject(new Error(`HTTP错误: ${response.statusCode} ${response.statusMessage}`));
         return;
       }
-      
+
       let htmlContent = '';
-      
+
       // 收集响应数据
       response.on('data', (chunk) => {
         htmlContent += chunk;
       });
-      
+
       // 响应结束
       response.on('end', () => {
         // 确保保存目录存在
         ensureDirExists(saveDir);
-        
+
         // 提取特定部分内容
         const extractedContent = extractContent(htmlContent);
-        
+
         // 保存提取的内容到txt文件
         try {
           fs.writeFileSync(txtSavePath, extractedContent, 'utf-8');
@@ -70,16 +70,16 @@ function crawlWiki() {
         }
       });
     });
-    
+
     req.on('error', (error) => {
       reject(error);
     });
-    
+
     req.on('timeout', () => {
       req.destroy();
       reject(new Error('HTTP请求超时'));
     });
-    
+
     // 设置超时
     req.setTimeout(10000);
   });
@@ -87,10 +87,10 @@ function crawlWiki() {
 
 // 提取特定内容
 function extractContent(html) {
-  // 查找包含"远行商人"的部分
-  const regex = /远行商人现在出售种类3[\s\S]*?结束时间\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/;
+  // 查找包含"远行商人"的部分，支持种类1、2、3等
+  const regex = /远行商人现在出售种类\d[\s\S]*?结束时间\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/;
   const match = html.match(regex);
-  
+
   if (match) {
     // 提取匹配的内容并去除HTML标签
     let content = match[0];
@@ -108,22 +108,22 @@ function readLogFile() {
     if (fs.existsSync(txtSavePath)) {
       const content = fs.readFileSync(txtSavePath, 'utf-8');
       const lines = content.split('\n');
-      
+
       // 解析开始时间和结束时间
       let startTime = null;
       let endTime = null;
       let itemContent = null;
-      
+
       for (const line of lines) {
         if (line.includes('开始时间')) {
           startTime = line.replace('开始时间', '').trim();
         } else if (line.includes('结束时间')) {
           endTime = line.replace('结束时间', '').trim();
-        } else if (line.includes('为魔力果')) {
+        } else if (line.includes('为')) {
           itemContent = line.trim();
         }
       }
-      
+
       return {
         startTime,
         endTime,
@@ -144,7 +144,7 @@ function isWithinTimeRange(startTime, endTime) {
   const now = new Date();
   const start = new Date(startTime);
   const end = new Date(endTime);
-  
+
   return now >= start && now <= end;
 }
 
@@ -174,20 +174,20 @@ async function getYxsrInfo() {
   try {
     // 读取日志文件
     let logData = readLogFile();
-    
+
     // 检查是否在时间范围内
     if (logData && logData.startTime && logData.endTime) {
       if (isWithinTimeRange(logData.startTime, logData.endTime)) {
         return buildDisplayText(logData);
       }
     }
-    
+
     // 爬取新数据
     await crawlWiki();
-    
+
     // 再次读取日志文件
     logData = readLogFile();
-    
+
     // 再次检查时间范围
     if (logData && logData.startTime && logData.endTime) {
       if (isWithinTimeRange(logData.startTime, logData.endTime)) {

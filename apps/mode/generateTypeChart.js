@@ -128,15 +128,15 @@ async function generateTypeChart(chartName = '属性克制表') {
                 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap');
 
                 :root {
-                    --bg-1: #0f172a;
-                    --bg-2: #1e293b;
-                    --panel: rgba(15, 23, 42, 0.78);
-                    --line: rgba(148, 163, 184, 0.22);
-                    --text-main: #e2e8f0;
-                    --text-sub: #94a3b8;
-                    --strong: #22c55e;
-                    --weak: #ef4444;
-                    --normal: #64748b;
+                    --bg-1: #f7fafc;
+                    --bg-2: #eef5ff;
+                    --panel: rgba(255, 255, 255, 0.94);
+                    --line: rgba(148, 163, 184, 0.25);
+                    --text-main: #1f2937;
+                    --text-sub: #64748b;
+                    --strong: #16a34a;
+                    --weak: #dc2626;
+                    --normal: #94a3b8;
                 }
 
                 * {
@@ -151,20 +151,20 @@ async function generateTypeChart(chartName = '属性克制表') {
                     color: var(--text-main);
                     font-family: 'Noto Sans SC', sans-serif;
                     background:
-                        radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.25), transparent 35%),
-                        radial-gradient(circle at 90% 10%, rgba(16, 185, 129, 0.18), transparent 32%),
-                        radial-gradient(circle at 85% 88%, rgba(236, 72, 153, 0.18), transparent 34%),
-                        linear-gradient(145deg, var(--bg-1), var(--bg-2));
+                        radial-gradient(circle at 8% 14%, rgba(56, 189, 248, 0.14), transparent 34%),
+                        radial-gradient(circle at 92% 12%, rgba(99, 102, 241, 0.10), transparent 32%),
+                        radial-gradient(circle at 85% 88%, rgba(16, 185, 129, 0.10), transparent 30%),
+                        linear-gradient(150deg, var(--bg-1), var(--bg-2));
                 }
 
                 .container {
                     width: 100%;
                     background: var(--panel);
-                    border: 1px solid rgba(148, 163, 184, 0.25);
-                    border-radius: 28px;
-                    box-shadow: 0 18px 45px rgba(2, 6, 23, 0.45);
-                    padding: 30px 30px 24px;
-                    backdrop-filter: blur(12px);
+                    border: 1px solid rgba(148, 163, 184, 0.22);
+                    border-radius: 24px;
+                    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.10);
+                    padding: 28px 28px 22px;
+                    backdrop-filter: blur(6px);
                 }
 
                 .header {
@@ -178,10 +178,10 @@ async function generateTypeChart(chartName = '属性克制表') {
                 .title-wrap h1 {
                     margin: 0;
                     font-family: 'Orbitron', sans-serif;
-                    font-size: 42px;
-                    letter-spacing: 1px;
+                    font-size: 40px;
+                    letter-spacing: 0.6px;
                     line-height: 1.15;
-                    background: linear-gradient(90deg, #e2e8f0, #93c5fd, #86efac);
+                    background: linear-gradient(90deg, #0f172a, #2563eb, #0ea5a4);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
@@ -214,7 +214,7 @@ async function generateTypeChart(chartName = '属性克制表') {
                     padding: 6px 10px;
                     border-radius: 999px;
                     border: 1px solid var(--line);
-                    background: rgba(15, 23, 42, 0.5);
+                    background: rgba(255, 255, 255, 0.85);
                     font-size: 13px;
                     color: var(--text-main);
                 }
@@ -231,9 +231,9 @@ async function generateTypeChart(chartName = '属性克制表') {
 
                 .table-wrap {
                     overflow: hidden;
-                    border-radius: 18px;
+                    border-radius: 16px;
                     border: 1px solid var(--line);
-                    background: rgba(2, 6, 23, 0.35);
+                    background: rgba(255, 255, 255, 0.9);
                 }
 
                 table {
@@ -243,18 +243,18 @@ async function generateTypeChart(chartName = '属性克制表') {
                 }
 
                 th, td {
-                    border: 1px solid rgba(148, 163, 184, 0.12);
+                    border: 1px solid rgba(148, 163, 184, 0.20);
                     text-align: center;
                     vertical-align: middle;
-                    height: 52px;
+                    height: 50px;
                     font-size: 14px;
                     position: relative;
                 }
 
                 th.corner {
                     width: 168px;
-                    background: linear-gradient(140deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
-                    color: #cbd5e1;
+                    background: linear-gradient(140deg, #e2e8f0, #f1f5f9);
+                    color: #334155;
                     font-size: 12px;
                     letter-spacing: 0.5px;
                     line-height: 1.7;
@@ -263,8 +263,8 @@ async function generateTypeChart(chartName = '属性克制表') {
                 th.type-col, th.type-row {
                     font-size: 13px;
                     font-weight: 700;
-                    color: #f8fafc;
-                    text-shadow: 0 1px 2px rgba(15, 23, 42, 0.6);
+                    color: #0f172a;
+                    text-shadow: none;
                 }
 
                 th.type-row {
@@ -278,10 +278,10 @@ async function generateTypeChart(chartName = '属性克制表') {
                     align-items: center;
                     gap: 8px;
                     border-radius: 999px;
-                    border: 1px solid rgba(255, 255, 255, 0.32);
+                    border: 1px solid rgba(148, 163, 184, 0.35);
                     padding: 4px 10px;
                     font-size: 12px;
-                    background: rgba(15, 23, 42, 0.35);
+                    background: rgba(255, 255, 255, 0.82);
                     max-width: 100%;
                 }
 
@@ -290,19 +290,19 @@ async function generateTypeChart(chartName = '属性克制表') {
                     height: 10px;
                     border-radius: 50%;
                     flex-shrink: 0;
-                    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25);
+                    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
                 }
 
                 td.cell-strong {
-                    background: rgba(34, 197, 94, 0.2);
+                    background: rgba(22, 163, 74, 0.12);
                 }
 
                 td.cell-weak {
-                    background: rgba(239, 68, 68, 0.18);
+                    background: rgba(220, 38, 38, 0.10);
                 }
 
                 td.cell-normal {
-                    background: rgba(100, 116, 139, 0.12);
+                    background: rgba(148, 163, 184, 0.10);
                 }
 
                 .badge {
@@ -319,20 +319,21 @@ async function generateTypeChart(chartName = '属性克制表') {
                 }
 
                 .badge.strong {
-                    color: #14532d;
-                    background: linear-gradient(160deg, #86efac, #22c55e);
-                    box-shadow: 0 6px 12px rgba(34, 197, 94, 0.4);
+                    color: #166534;
+                    background: linear-gradient(160deg, #dcfce7, #86efac);
+                    box-shadow: 0 4px 10px rgba(22, 163, 74, 0.18);
                 }
 
                 .badge.weak {
-                    color: #7f1d1d;
-                    background: linear-gradient(160deg, #fca5a5, #ef4444);
-                    box-shadow: 0 6px 12px rgba(239, 68, 68, 0.36);
+                    color: #991b1b;
+                    background: linear-gradient(160deg, #fee2e2, #fecaca);
+                    box-shadow: 0 4px 10px rgba(220, 38, 38, 0.16);
                 }
 
                 .badge.normal {
-                    color: #cbd5e1;
-                    background: rgba(100, 116, 139, 0.25);
+                    color: #475569;
+                    background: rgba(226, 232, 240, 0.9);
+                    border: 1px solid rgba(148, 163, 184, 0.28);
                 }
 
                 .footer {

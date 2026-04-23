@@ -177,14 +177,14 @@ async function generateSingleTypeChart(inputKeyword = '#光系克制') {
                 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap');
 
                 :root {
-                    --bg1: #0b1020;
-                    --bg2: #131b33;
-                    --text: #e2e8f0;
-                    --sub: #94a3b8;
+                    --bg1: #f8fbff;
+                    --bg2: #eef5ff;
+                    --text: #1f2937;
+                    --sub: #64748b;
                     --line: rgba(148, 163, 184, 0.24);
                     --strong: #16a34a;
                     --weak: #dc2626;
-                    --normal: #475569;
+                    --normal: #64748b;
                     --type: ${selectedColor};
                 }
 
@@ -198,18 +198,18 @@ async function generateSingleTypeChart(inputKeyword = '#光系克制') {
                     color: var(--text);
                     font-family: 'Noto Sans SC', sans-serif;
                     background:
-                        radial-gradient(circle at 80% 10%, color-mix(in srgb, var(--type) 35%, transparent), transparent 30%),
-                        radial-gradient(circle at 10% 90%, rgba(59, 130, 246, 0.22), transparent 32%),
-                        linear-gradient(145deg, var(--bg1), var(--bg2));
+                        radial-gradient(circle at 82% 10%, color-mix(in srgb, var(--type) 22%, transparent), transparent 34%),
+                        radial-gradient(circle at 10% 88%, rgba(56, 189, 248, 0.14), transparent 32%),
+                        linear-gradient(150deg, var(--bg1), var(--bg2));
                 }
 
                 .card {
-                    border-radius: 26px;
+                    border-radius: 22px;
                     border: 1px solid var(--line);
-                    background: rgba(15, 23, 42, 0.72);
-                    backdrop-filter: blur(10px);
-                    box-shadow: 0 20px 45px rgba(2, 6, 23, 0.5);
-                    padding: 28px;
+                    background: rgba(255, 255, 255, 0.94);
+                    backdrop-filter: blur(6px);
+                    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.10);
+                    padding: 26px;
                 }
 
                 .header {
@@ -222,10 +222,10 @@ async function generateSingleTypeChart(inputKeyword = '#光系克制') {
                 .title h1 {
                     margin: 0;
                     font-family: 'Orbitron', sans-serif;
-                    font-size: 40px;
-                    letter-spacing: 1px;
+                    font-size: 38px;
+                    letter-spacing: 0.6px;
                     line-height: 1.1;
-                    background: linear-gradient(90deg, #f8fafc, var(--type));
+                    background: linear-gradient(90deg, #0f172a, color-mix(in srgb, var(--type) 75%, #2563eb));
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
@@ -238,10 +238,10 @@ async function generateSingleTypeChart(inputKeyword = '#光系克制') {
 
                 .pill {
                     border: 1px solid var(--line);
-                    background: rgba(15, 23, 42, 0.55);
+                    background: rgba(255, 255, 255, 0.9);
                     padding: 10px 14px;
                     border-radius: 999px;
-                    color: #f8fafc;
+                    color: #334155;
                     font-size: 14px;
                     font-weight: 700;
                 }
@@ -254,22 +254,23 @@ async function generateSingleTypeChart(inputKeyword = '#光系克制') {
 
                 .panel {
                     border: 1px solid var(--line);
-                    border-radius: 16px;
-                    background: rgba(2, 6, 23, 0.34);
+                    border-radius: 14px;
+                    background: rgba(255, 255, 255, 0.84);
                     padding: 14px;
                 }
 
                 .panel h3 {
                     margin: 0 0 12px;
                     font-size: 18px;
-                    color: #f8fafc;
+                    color: #0f172a;
                 }
 
                 .sub-panel {
-                    border: 1px dashed rgba(148, 163, 184, 0.28);
+                    border: 1px dashed rgba(148, 163, 184, 0.35);
                     border-radius: 12px;
                     padding: 10px;
                     margin-top: 10px;
+                    background: rgba(255, 255, 255, 0.7);
                 }
 
                 .sub-panel:first-of-type { margin-top: 0; }
@@ -293,9 +294,9 @@ async function generateSingleTypeChart(inputKeyword = '#光系克制') {
                     padding: 6px 10px;
                     border-radius: 999px;
                     font-size: 13px;
-                    color: #e2e8f0;
-                    border: 1px solid rgba(148, 163, 184, 0.35);
-                    background: rgba(51, 65, 85, 0.45);
+                    color: #334155;
+                    border: 1px solid rgba(148, 163, 184, 0.38);
+                    background: rgba(241, 245, 249, 0.95);
                 }
 
                 .tag-empty {
@@ -303,13 +304,13 @@ async function generateSingleTypeChart(inputKeyword = '#光系克制') {
                     border-style: dashed;
                 }
 
-                .sub-panel.strong .sub-title { color: #86efac; }
-                .sub-panel.strong .tag { background: rgba(22, 163, 74, 0.22); border-color: rgba(34, 197, 94, 0.45); }
+                .sub-panel.strong .sub-title { color: #166534; }
+                .sub-panel.strong .tag { background: rgba(220, 252, 231, 0.95); border-color: rgba(34, 197, 94, 0.42); }
 
-                .sub-panel.weak .sub-title { color: #fca5a5; }
-                .sub-panel.weak .tag { background: rgba(220, 38, 38, 0.2); border-color: rgba(248, 113, 113, 0.45); }
+                .sub-panel.weak .sub-title { color: #991b1b; }
+                .sub-panel.weak .tag { background: rgba(254, 226, 226, 0.95); border-color: rgba(248, 113, 113, 0.42); }
 
-                .sub-panel.normal .sub-title { color: #cbd5e1; }
+                .sub-panel.normal .sub-title { color: #475569; }
 
                 .tips {
                     margin-top: 14px;

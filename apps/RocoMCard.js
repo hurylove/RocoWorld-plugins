@@ -31,10 +31,10 @@ export default class spriteCard extends plugin {
       name: '宠物解析卡',
       dsc: '生成宠物解析卡图片',
       event: 'message',
-      priority: 500,
+      priority: 20,
       rule: [
         {
-          reg: '#(.*?)(解析卡)$',
+          reg: '^#(?:洛克)?\\s*(.+?)\\s*解析卡$',
           fnc: 'generateSpriteCard',
         }
       ]
@@ -43,8 +43,9 @@ export default class spriteCard extends plugin {
 
   async generateSpriteCard(e) {
     try {
-      // 提取精灵名称
-      const match = e.msg.match(/^#(.*?)(?:解析卡)?$/);
+      // 提取精灵名称（与 rule 保持一致）
+      const msg = (e.msg || '').trim();
+      const match = msg.match(/^#(?:洛克)?\s*(.+?)\s*解析卡$/);
       if (!match) {
         return;
       }
@@ -52,7 +53,7 @@ export default class spriteCard extends plugin {
       let spriteName = match[1].trim();
 
       if (!spriteName) {
-        this.reply('请提供精灵名称，例如：#迪莫 或 迪莫解析卡', false);
+        this.reply('请提供精灵名称，例如：#迪莫解析卡 或 #洛克迪莫解析卡', false);
         return;
       }
 

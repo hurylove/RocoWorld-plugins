@@ -157,7 +157,7 @@ async function getYxsrInfo() {
     // 检查是否在时间范围内
     if (logData && logData.startTime && logData.endTime) {
       if (isWithinTimeRange(logData.startTime, logData.endTime)) {
-        return logData.itemContent;
+        return logData.content;
       }
     }
     
@@ -170,7 +170,7 @@ async function getYxsrInfo() {
     // 再次检查时间范围
     if (logData && logData.startTime && logData.endTime) {
       if (isWithinTimeRange(logData.startTime, logData.endTime)) {
-        return logData.itemContent;
+        return logData.content;
       } else {
         return '错误：当前不在远行商人活动时间范围内';
       }

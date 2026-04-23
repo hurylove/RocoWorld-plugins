@@ -32,10 +32,10 @@ export default class petCard extends plugin {
       name: '宠物资料卡',
       dsc: '生成宠物资料卡图片',
       event: 'message',
-      priority: 500,
+      priority: 20,
       rule: [
         {
-          reg: '#(.*?)(资料卡)?$',
+          reg: '^#(?:洛克)?\\s*(.+?)\\s*资料卡$',
           fnc: 'generatePetCard',
         }
       ]
@@ -44,8 +44,9 @@ export default class petCard extends plugin {
 
   async generatePetCard(e) {
     try {
-      // 提取宠物名称
-      const match = e.msg.match(/^#(.*?)(?:资料卡)?$/);
+      // 提取宠物名称（与 rule 保持一致）
+      const msg = (e.msg || '').trim();
+      const match = msg.match(/^#(?:洛克)?\s*(.+?)\s*资料卡$/);
       if (!match) {
         return;
       }

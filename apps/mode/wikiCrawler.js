@@ -148,6 +148,27 @@ function isWithinTimeRange(startTime, endTime) {
   return now >= start && now <= end;
 }
 
+// 将爬虫原始日志重写为展示文案（避免直白暴露原始格式）
+function buildDisplayText(logData) {
+  if (!logData) return '暂无远行商人情报';
+
+  const rawItemLine = (logData.itemContent || '').trim();
+  const itemText = rawItemLine.replace(/^为/, '').trim();
+  const itemList = itemText ? itemText.split(/\s+/).filter(Boolean) : [];
+
+  const startTime = (logData.startTime || '').trim();
+  const endTime = (logData.endTime || '').trim();
+
+  const lines = [
+    '远行商人情报更新',
+    '限时货架已刷新',
+    `本轮上架：${itemList.length ? itemList.join('、') : '待确认'}`,
+    `售卖时段：${startTime || '待确认'} ～ ${endTime || '待确认'}`
+  ];
+
+  return lines.join('\n');
+}
+
 // 主函数：获取远行商人信息
 async function getYxsrInfo() {
   try {
@@ -157,7 +178,7 @@ async function getYxsrInfo() {
     // 检查是否在时间范围内
     if (logData && logData.startTime && logData.endTime) {
       if (isWithinTimeRange(logData.startTime, logData.endTime)) {
-        return logData.content;
+        return buildDisplayText(logData);
       }
     }
     
@@ -170,15 +191,15 @@ async function getYxsrInfo() {
     // 再次检查时间范围
     if (logData && logData.startTime && logData.endTime) {
       if (isWithinTimeRange(logData.startTime, logData.endTime)) {
-        return logData.content;
+        return buildDisplayText(logData);
       } else {
-        return '错误：当前不在远行商人活动时间范围内';
+        return '远行商人暂未营业，请稍后再查询。';
       }
     } else {
-      return '错误：无法获取远行商人信息';
+      return '远行商人情报暂不可用，请稍后重试。';
     }
   } catch (error) {
-    return '错误：获取远行商人信息时发生错误';
+    return '远行商人情报获取失败，请稍后重试。';
   }
 }
 

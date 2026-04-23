@@ -243,6 +243,14 @@ async function generateHelpImage() {
                         <div class="command">#洛克王国功能</div>
                         <div class="description">查看帮助菜单</div>
                     </div>
+                    <div class="command-item">
+                        <div class="command">#远行商人</div>
+                        <div class="description">查看洛克王国远行商人信息</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="command">#商人</div>
+                        <div class="description">查看洛克王国远行商人信息</div>
+                    </div>
                 </div>
             </div>
             

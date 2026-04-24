@@ -2,7 +2,7 @@
   "title": "洛克王国属性克制表",
   "subtitle": "作攻方 × 作防方",
   "version": "1.1.0",
-  "description": "由属性克制图整理的结构化数据，用于生成可视化克制图（已移除岩石系）。",
+  "description": "由属性克制图整理的结构化数据，用于生成可视化克制图。",
   "types": [
     { "name": "草", "short": "草", "color": "#4CAF50" },
     { "name": "火", "short": "火", "color": "#FF7043" },

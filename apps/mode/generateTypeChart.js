@@ -307,33 +307,28 @@ async function generateTypeChart(chartName = '属性克制表') {
 
                 .badge {
                     display: inline-flex;
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 10px;
                     align-items: center;
                     justify-content: center;
-                    font-size: 18px;
-                    font-weight: 700;
+                    font-size: 17px;
+                    font-weight: 600;
                     line-height: 1;
+                    letter-spacing: 0.2px;
                     user-select: none;
+                    min-width: 34px;
                 }
 
                 .badge.strong {
                     color: #166534;
-                    background: linear-gradient(160deg, #dcfce7, #86efac);
-                    box-shadow: 0 4px 10px rgba(22, 163, 74, 0.18);
+                    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
                 }
 
                 .badge.weak {
-                    color: #991b1b;
-                    background: linear-gradient(160deg, #fee2e2, #fecaca);
-                    box-shadow: 0 4px 10px rgba(220, 38, 38, 0.16);
+                    color: #7f1d1d;
+                    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
                 }
 
                 .badge.normal {
-                    color: #475569;
-                    background: rgba(226, 232, 240, 0.9);
-                    border: 1px solid rgba(148, 163, 184, 0.28);
+                    color: #334155;
                 }
 
                 .footer {
@@ -367,7 +362,7 @@ async function generateTypeChart(chartName = '属性克制表') {
                     <table>
                         <thead>
                             <tr>
-                                <th class="corner">作攻方<br/>作防方 →</th>
+                                <th class="corner">作攻方<br/>作防方</th>
                                 ${typeNames
                                     .map((name) => {
                                         const color = typeColorMap.get(name) || '#BDBDBD';
@@ -390,12 +385,12 @@ async function generateTypeChart(chartName = '属性克制表') {
                                     const cells = matrix[rowIndex]
                                         .map((state) => {
                                             if (state === 'strong') {
-                                                return '<td class="cell-strong"><span class="badge strong">↑</span></td>';
+                                                return '<td class="cell-strong"><span class="badge strong">2×</span></td>';
                                             }
                                             if (state === 'weak') {
-                                                return '<td class="cell-weak"><span class="badge weak">↓</span></td>';
+                                                return '<td class="cell-weak"><span class="badge weak">½×</span></td>';
                                             }
-                                            return '<td class="cell-normal"><span class="badge normal">·</span></td>';
+                                            return '<td class="cell-normal"><span class="badge normal">1×</span></td>';
                                         })
                                         .join('');
 

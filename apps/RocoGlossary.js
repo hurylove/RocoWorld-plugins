@@ -24,7 +24,7 @@ export default class RocoGlossary extends plugin {
       name: '词条查询',
       dsc: '生成词条列表图片（支持关键词筛选）',
       event: 'message',
-      priority: 450,
+      priority: 20,
       rule: [
         {
           reg: '^#词条查询(?:\\s+(.+))?$',

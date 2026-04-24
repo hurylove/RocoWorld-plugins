@@ -2,7 +2,7 @@
   "title": "洛克王国词条列表",
   "subtitle": "印记 / 负面 / 天气 / 其他",
   "version": "1.0.0",
-  "description": "由用户提供的四张词条截图整理而成的结构化数据。",
+  "description": "由网络数据整理而成的结构化数据。",
   "total": 30,
   "categories": [
     {

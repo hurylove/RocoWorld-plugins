@@ -27,11 +27,11 @@ export default class RocoGlossary extends plugin {
       priority: 20,
       rule: [
         {
-          reg: '^#词条查询(?:\\s+(.+))?$',
+          reg: '^#术语查询(?:\\s+(.+))?$',
           fnc: 'queryGlossary'
         },
         {
-          reg: '^#词条(?:总览|大全)$',
+          reg: '^#术语(?:总览|大全)$',
           fnc: 'queryGlossaryAll'
         }
       ]
@@ -65,7 +65,7 @@ export default class RocoGlossary extends plugin {
   async queryGlossary(e) {
     try {
       const msg = String(e.msg || '').trim();
-      const match = msg.match(/^#词条查询(?:\s+(.+))?$/);
+      const match = msg.match(/^#术语查询(?:\s+(.+))?$/);
       if (!match) {
         return;
       }

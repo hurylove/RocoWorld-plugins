@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import puppeteer from 'puppeteer';
 import plugin from "../../../lib/plugins/plugin.js";
-import getYxsrInfo from './mode/wikiCrawler.js';
+import getYxsrInfo, { refreshYxsrLog } from './mode/wikiCrawler.js';
 
 const projectRoot = process.cwd();
 
@@ -216,8 +216,8 @@ export default class yxsrPlugin extends plugin {
     try {
       this.reply('正在查询远行商人信息，请稍候...', false);
 
-      // 这里拿到的是“完整日志文本”
-      const yxsrInfo = await getYxsrInfo();
+      // 每次都强制刷新数据
+      const yxsrInfo = await refreshYxsrLog();
 
       // 转图片并发送
       const base64Image = await renderYxsrImageBase64(yxsrInfo);
@@ -227,7 +227,7 @@ export default class yxsrPlugin extends plugin {
 
       // 兜底：发送文本
       try {
-        const yxsrInfo = await getYxsrInfo();
+        const yxsrInfo = await refreshYxsrLog();
         this.reply(yxsrInfo || '获取远行商人信息时出现错误，请稍后重试', false);
       } catch {
         this.reply('获取远行商人信息时出现错误，请稍后重试', false);

@@ -85,6 +85,37 @@ function crawlWiki() {
   });
 }
 
+// 计算开始时间和结束时间
+function calculateTimeRange() {
+  const now = new Date();
+  const hour = now.getHours();
+  const dateStr = now.toISOString().split('T')[0];
+  
+  if (hour >= 8 && hour < 12) {
+    return {
+      startTime: `${dateStr} 08:00:00`,
+      endTime: `${dateStr} 12:00:00`
+    };
+  } else if (hour >= 12 && hour < 16) {
+    return {
+      startTime: `${dateStr} 12:00:00`,
+      endTime: `${dateStr} 16:00:00`
+    };
+  } else if (hour >= 16 && hour < 20) {
+    return {
+      startTime: `${dateStr} 16:00:00`,
+      endTime: `${dateStr} 20:00:00`
+    };
+  } else if (hour >= 20 && hour < 24) {
+    return {
+      startTime: `${dateStr} 20:00:00`,
+      endTime: `${dateStr} 24:00:00`
+    };
+  } else {
+    return null;
+  }
+}
+
 // 提取特定内容
 function extractContent(html) {
   // 查找包含"远行商人"的部分，支持种类1、2、3等
@@ -96,7 +127,40 @@ function extractContent(html) {
     let content = match[0];
     // 替换<br />标签为换行符
     content = content.replace(/<br \/>/g, '\n');
-    return content;
+    
+    // 提取只包含物品的部分
+    const lines = content.split('\n');
+    let itemLine = '';
+    
+    for (const line of lines) {
+      if (line.includes('为')) {
+        // 剔除第一个"为"字
+        itemLine = line.replace(/^为/, '').trim();
+        break;
+      }
+    }
+    
+    if (itemLine) {
+      // 计算时间范围
+      const timeRange = calculateTimeRange();
+      const now = new Date();
+      const fetchTime = now.toLocaleString('zh-CN');
+      
+      // 构建输出格式
+      let output = itemLine + '\n\n';
+      output += `数据获取时间：${fetchTime}\n\n`;
+      
+      if (timeRange) {
+        output += `开始时间：${timeRange.startTime}\n`;
+        output += `结束时间：${timeRange.endTime}`;
+      } else {
+        output += '远行商人还未出现';
+      }
+      
+      return output;
+    }
+    
+    return '未找到指定内容';
   } else {
     return '未找到指定内容';
   }
@@ -108,26 +172,35 @@ function readLogFile() {
     if (fs.existsSync(txtSavePath)) {
       const content = fs.readFileSync(txtSavePath, 'utf-8');
       const lines = content.split('\n');
-
-      // 解析开始时间和结束时间
+      
+      let itemContent = '';
+      let fetchTime = '';
       let startTime = null;
       let endTime = null;
-      let itemContent = null;
-
+      let isNotAppeared = false;
+      
+      // 解析文件内容
       for (const line of lines) {
-        if (line.includes('开始时间')) {
-          startTime = line.replace('开始时间', '').trim();
-        } else if (line.includes('结束时间')) {
-          endTime = line.replace('结束时间', '').trim();
-        } else if (line.includes('为')) {
-          itemContent = line.trim();
+        const trimmedLine = line.trim();
+        if (!itemContent) {
+          itemContent = trimmedLine;
+        } else if (trimmedLine.includes('数据获取时间')) {
+          fetchTime = trimmedLine.replace('数据获取时间：', '').trim();
+        } else if (trimmedLine.includes('开始时间')) {
+          startTime = trimmedLine.replace('开始时间：', '').trim();
+        } else if (trimmedLine.includes('结束时间')) {
+          endTime = trimmedLine.replace('结束时间：', '').trim();
+        } else if (trimmedLine === '远行商人还未出现') {
+          isNotAppeared = true;
         }
       }
-
+      
       return {
         startTime,
         endTime,
         itemContent,
+        fetchTime,
+        isNotAppeared,
         content
       };
     } else {
@@ -152,19 +225,26 @@ function isWithinTimeRange(startTime, endTime) {
 function buildDisplayText(logData) {
   if (!logData) return '暂无远行商人情报';
 
-  const rawItemLine = (logData.itemContent || '').trim();
-  const itemText = rawItemLine.replace(/^为/, '').trim();
-  const itemList = itemText ? itemText.split(/\s+/).filter(Boolean) : [];
+  if (logData.isNotAppeared) {
+    return '远行商人还未出现';
+  }
 
-  const startTime = (logData.startTime || '').trim();
-  const endTime = (logData.endTime || '').trim();
+  const rawItemLine = (logData.itemContent || '').trim();
+  const itemList = rawItemLine ? rawItemLine.split(/\s+/).filter(Boolean) : [];
 
   const lines = [
     '远行商人情报更新',
     '限时货架已刷新',
-    `本轮上架：${itemList.length ? itemList.join('、') : '待确认'}`,
-    `售卖时段：${startTime || '待确认'} ～ ${endTime || '待确认'}`
+    `本轮上架：${itemList.length ? itemList.join('、') : '待确认'}`
   ];
+
+  if (logData.fetchTime) {
+    lines.push(`获取时间：${logData.fetchTime}`);
+  }
+
+  if (logData.startTime && logData.endTime) {
+    lines.push(`售卖时段：${logData.startTime} ～ ${logData.endTime}`);
+  }
 
   return lines.join('\n');
 }
@@ -188,11 +268,9 @@ async function getYxsrInfo() {
     // 读取日志文件
     let logData = readLogFile();
 
-    // 检查是否在时间范围内
-    if (logData && logData.startTime && logData.endTime) {
-      if (isWithinTimeRange(logData.startTime, logData.endTime)) {
-        return buildDisplayText(logData);
-      }
+    // 检查是否有数据
+    if (logData && logData.itemContent && logData.itemContent !== '未找到指定内容') {
+      return buildDisplayText(logData);
     }
 
     // 爬取新数据
@@ -201,13 +279,9 @@ async function getYxsrInfo() {
     // 再次读取日志文件
     logData = readLogFile();
 
-    // 再次检查时间范围
-    if (logData && logData.startTime && logData.endTime) {
-      if (isWithinTimeRange(logData.startTime, logData.endTime)) {
-        return buildDisplayText(logData);
-      } else {
-        return '远行商人暂未营业，请稍后再查询。';
-      }
+    // 检查是否有数据
+    if (logData && logData.itemContent && logData.itemContent !== '未找到指定内容') {
+      return buildDisplayText(logData);
     } else {
       return '远行商人情报暂不可用，请稍后重试。';
     }

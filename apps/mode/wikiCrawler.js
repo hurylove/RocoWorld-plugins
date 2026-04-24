@@ -119,7 +119,7 @@ function calculateTimeRange() {
 // 提取特定内容
 function extractContent(html) {
   // 查找包含"远行商人"的部分，支持种类1、2、3等
-  const regex = /远行商人现在出售种类\d[\s\S]*?结束时间\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/;
+  const regex = /远行商人现在出售种类\d[\s\S]*?<button type="button" class="btn-close"/;
   const match = html.match(regex);
 
   if (match) {
@@ -136,6 +136,13 @@ function extractContent(html) {
       if (line.includes('为')) {
         // 剔除第一个"为"字
         itemLine = line.replace(/^为/, '').trim();
+        // 只保留第一个<字符之前的内容
+        const htmlIndex = itemLine.indexOf('<');
+        if (htmlIndex > -1) {
+          itemLine = itemLine.substring(0, htmlIndex).trim();
+        }
+        // 再次确保去除所有HTML标签
+        itemLine = itemLine.replace(/<[^>]*>/g, '').trim();
         break;
       }
     }

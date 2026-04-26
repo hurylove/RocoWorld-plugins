@@ -36,18 +36,33 @@ function getItemImageUrl(itemName) {
   return item ? item.imageUrl : null;
 }
 
-// 从远行商人日志第一行读取物品列表（按空格分隔）
-function getItemsFromYxsrLogFirstLine() {
+function readYxsrLogContent() {
   try {
     const logPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'yxsr', '远行商人日志.txt');
-    const logContent = fs.readFileSync(logPath, 'utf-8');
-    const firstLine = logContent.split(/\r?\n/)[0]?.trim() || '';
-    if (!firstLine) return [];
-    return firstLine.split(/\s+/).map(item => item.trim()).filter(Boolean);
+    return fs.readFileSync(logPath, 'utf-8');
   } catch (error) {
     console.warn('读取远行商人日志失败:', error.message);
-    return [];
+    return '';
   }
+}
+
+// 从远行商人日志第一行读取物品列表（按空格分隔）
+function getItemsFromYxsrLogFirstLine() {
+  const logContent = readYxsrLogContent();
+  const firstLine = logContent.split(/\r?\n/)[0]?.trim() || '';
+  if (!firstLine) return [];
+  return firstLine.split(/\s+/).map(item => item.trim()).filter(Boolean);
+}
+
+function getYxsrLogMeta() {
+  const logContent = readYxsrLogContent();
+  const lines = logContent.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+
+  return {
+    fetchTime: (lines.find(line => /^数据获取时间[:：]/.test(line)) || '').replace(/^数据获取时间[:：]\s*/, ''),
+    startTime: (lines.find(line => /^开始时间[:：]/.test(line)) || '').replace(/^开始时间[:：]\s*/, ''),
+    endTime: (lines.find(line => /^结束时间[:：]/.test(line)) || '').replace(/^结束时间[:：]\s*/, '')
+  };
 }
 
 function parseYAML(yamlContent) {
@@ -101,6 +116,7 @@ async function renderYxsrImageBase64(rawText) {
   const config = loadConfig();
   const text = String(rawText ?? '').trim();
   const plainLines = text.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+  const logMeta = getYxsrLogMeta();
 
   // 优先使用远行商人日志第一行（按空格分隔）的物品列表
   let items = getItemsFromYxsrLogFirstLine();
@@ -115,30 +131,26 @@ async function renderYxsrImageBase64(rawText) {
       .filter(item => item && item !== '待确认');
   }
 
-  const fetchTime = (plainLines.find(line => /^数据获取时间[:：]/.test(line)) || '').replace(/^数据获取时间[:：]\s*/, '');
-  const startTime = (plainLines.find(line => /^开始时间[:：]/.test(line)) || '').replace(/^开始时间[:：]\s*/, '');
-  const endTime = (plainLines.find(line => /^结束时间[:：]/.test(line)) || '').replace(/^结束时间[:：]\s*/, '');
-
-  const getRoundText = (start) => {
-    if (!start) return '-- / 4轮';
-    const hour = Number((start.match(/\b(\d{2}):\d{2}:\d{2}\b/) || [])[1]);
-    const map = { 8: 1, 12: 2, 16: 3, 20: 4 };
-    const round = map[hour] || '--';
-    return `${round} / 4轮`;
-  };
+  const fetchTime = logMeta.fetchTime;
+  const startTime = logMeta.startTime;
+  const endTime = logMeta.endTime;
 
   const getDateText = () => {
-    if (startTime) return startTime.slice(0, 10);
     const m = fetchTime.match(/\d{4}[/-]\d{1,2}[/-]\d{1,2}/);
     return m ? m[0].replaceAll('/', '-') : '未知日期';
   };
 
+  const formatDateTimeText = (timeText) => {
+    if (!timeText) return '--';
+    const normalized = timeText.replace(/\//g, '-');
+    const match = normalized.match(/(\d{4}-\d{1,2}-\d{1,2}) (\d{2}:\d{2})(:\d{2})?/);
+    if (!match) return normalized;
+    return `${match[1]} ${match[2]}`;
+  };
+
   const getPeriodText = () => {
-    if (!startTime || !endTime) return '北京时间 --';
-    const sm = startTime.match(/(\d{2})-(\d{2}) (\d{2}:\d{2})/);
-    const em = endTime.match(/(\d{2})-(\d{2}) (\d{2}:\d{2})/);
-    if (!sm || !em) return `北京时间 ${escapeHTML(startTime)} - ${escapeHTML(endTime)}`;
-    return `北京时间 ${sm[1]}-${sm[2]} ${sm[3]} - ${em[3]}`;
+    if (!startTime || !endTime) return '持续时间：--';
+    return `持续时间：${formatDateTimeText(startTime)} ~ ${formatDateTimeText(endTime)}`;
   };
 
   const getRemainText = () => {
@@ -382,7 +394,6 @@ async function renderYxsrImageBase64(rawText) {
             </div>
             <div class="stats">
               <div class="chip">当前商品数 <strong>${items.length}</strong></div>
-              <div class="chip">第 ${escapeHTML(getRoundText(startTime))}</div>
               <div class="chip"><strong>${escapeHTML(getRemainText())}</strong></div>
             </div>
           </div>

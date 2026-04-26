@@ -6,6 +6,36 @@ import getYxsrInfo, { refreshYxsrLog } from './mode/wikiCrawler.js';
 
 const projectRoot = process.cwd();
 
+// 加载物品信息
+function loadItemsInfo() {
+  try {
+    const itemsInfoPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'wptj', 'items_info.json');
+    const itemsData = fs.readFileSync(itemsInfoPath, 'utf-8');
+    return JSON.parse(itemsData);
+  } catch (error) {
+    console.warn('读取物品信息失败:', error.message);
+    return [];
+  }
+}
+
+// 物品信息缓存
+let itemsInfoCache = null;
+
+// 获取物品信息，带缓存
+function getItemsInfo() {
+  if (!itemsInfoCache) {
+    itemsInfoCache = loadItemsInfo();
+  }
+  return itemsInfoCache;
+}
+
+// 根据物品名称获取图片URL
+function getItemImageUrl(itemName) {
+  const itemsInfo = getItemsInfo();
+  const item = itemsInfo.find(item => item.name === itemName);
+  return item ? item.imageUrl : null;
+}
+
 function parseYAML(yamlContent) {
   const config = {};
   const lines = yamlContent.split('\n');
@@ -58,7 +88,35 @@ async function renderYxsrImageBase64(rawText) {
   const text = String(rawText ?? '').trim();
   const safeText = escapeHTML(text || '暂无远行商人信息');
   const lines = safeText.split(/\r?\n/).filter(Boolean);
-  const contentRows = lines.map(line => `<div class="line">${line}</div>`).join('');
+  
+  // 处理第一行的物品信息，添加图片
+  let contentRows = '';
+  if (lines.length > 0) {
+    // 第一行是物品列表
+    const firstLine = lines[0];
+    const items = firstLine.split(/\s+/).filter(item => item);
+    
+    // 生成物品行，包含图片
+    let itemsHTML = '<div class="line items-line">';
+    items.forEach(itemName => {
+      const imageUrl = getItemImageUrl(itemName);
+      itemsHTML += `
+        <div class="item">
+          ${imageUrl ? `<img src="${imageUrl}" alt="${escapeHTML(itemName)}" class="item-image" />` : ''}
+          <span class="item-name">${escapeHTML(itemName)}</span>
+        </div>
+      `;
+    });
+    itemsHTML += '</div>';
+    contentRows += itemsHTML;
+    
+    // 处理剩余行
+    for (let i = 1; i < lines.length; i++) {
+      contentRows += `<div class="line">${lines[i]}</div>`;
+    }
+  } else {
+    contentRows = '<div class="line">暂无数据</div>';
+  }
 
   const launchOptions = {
     headless: 'new',
@@ -152,6 +210,39 @@ async function renderYxsrImageBase64(rawText) {
 
           .line:last-child {
             border-bottom: none;
+          }
+
+          /* 物品行样式 */
+          .items-line {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+            padding: 12px 0;
+          }
+
+          .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            min-width: 80px;
+          }
+
+          .item-image {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: #f8fafc;
+            padding: 4px;
+          }
+
+          .item-name {
+            font-size: 14px;
+            text-align: center;
+            word-break: break-word;
+            max-width: 80px;
           }
 
           .footer {

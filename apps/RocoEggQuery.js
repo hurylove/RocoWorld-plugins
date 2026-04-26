@@ -10,11 +10,7 @@ export default class RocoEggQuery extends plugin {
       priority: 500,
       rule: [
         {
-          reg: '^#?孵蛋查询\s*(\d+\.\d+)\s*(\d+\.\d+)$',
-          fnc: 'queryEgg',
-        },
-        {
-          reg: '^#?蛋查询\s*(\d+\.\d+)\s*(\d+\.\d+)$',
+          reg: '^#?(?:孵蛋|蛋)查询(.+)$',
           fnc: 'queryEgg',
         }
       ]
@@ -23,14 +19,25 @@ export default class RocoEggQuery extends plugin {
 
   async queryEgg(e) {
     try {
-      const match = e.msg.match(/^#?孵蛋查询\s*(\d+\.\d+)\s*(\d+\.\d+)$/) || e.msg.match(/^#?蛋查询\s*(\d+\.\d+)\s*(\d+\.\d+)$/);
+      const match = e.msg.match(/^#?(?:孵蛋|蛋)查询(.+)$/);
       if (!match) {
         await this.reply('请使用正确的格式：#孵蛋查询 尺寸 重量', false);
         return;
       }
 
-      const size = parseFloat(match[1]);
-      const weight = parseFloat(match[2]);
+      const params = match[1].trim().split(/\s+/);
+      if (params.length < 2) {
+        await this.reply('请使用正确的格式：#孵蛋查询 尺寸 重量', false);
+        return;
+      }
+
+      const size = parseFloat(params[0]);
+      const weight = parseFloat(params[1]);
+
+      if (isNaN(size) || isNaN(weight)) {
+        await this.reply('尺寸和重量必须是数字', false);
+        return;
+      }
 
       await this.reply('正在查询孵蛋信息，请稍候...', false);
 

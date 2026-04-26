@@ -100,51 +100,80 @@ function escapeHTML(value) {
 async function renderYxsrImageBase64(rawText) {
   const config = loadConfig();
   const text = String(rawText ?? '').trim();
-  const safeText = escapeHTML(text || '暂无远行商人信息');
-  const lines = safeText.split(/\r?\n/).filter(Boolean);
-  
-  // 处理物品信息，添加图片
+  const plainLines = text.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+
+  // 优先使用远行商人日志第一行（按空格分隔）的物品列表
+  let items = getItemsFromYxsrLogFirstLine();
+
+  // 兜底：日志读取失败时，回退到展示文案中的“本轮上架”行解析
+  if (items.length === 0) {
+    const itemLine = plainLines.find(line => /^本轮上架[:：]/.test(line)) || '';
+    const itemText = itemLine.replace(/^本轮上架[:：]\s*/, '').trim();
+    items = itemText
+      .split(/[\s、,，]+/)
+      .map(item => item.trim())
+      .filter(item => item && item !== '待确认');
+  }
+
+  const fetchTime = (plainLines.find(line => /^数据获取时间[:：]/.test(line)) || '').replace(/^数据获取时间[:：]\s*/, '');
+  const startTime = (plainLines.find(line => /^开始时间[:：]/.test(line)) || '').replace(/^开始时间[:：]\s*/, '');
+  const endTime = (plainLines.find(line => /^结束时间[:：]/.test(line)) || '').replace(/^结束时间[:：]\s*/, '');
+
+  const getRoundText = (start) => {
+    if (!start) return '-- / 4轮';
+    const hour = Number((start.match(/\b(\d{2}):\d{2}:\d{2}\b/) || [])[1]);
+    const map = { 8: 1, 12: 2, 16: 3, 20: 4 };
+    const round = map[hour] || '--';
+    return `${round} / 4轮`;
+  };
+
+  const getDateText = () => {
+    if (startTime) return startTime.slice(0, 10);
+    const m = fetchTime.match(/\d{4}[/-]\d{1,2}[/-]\d{1,2}/);
+    return m ? m[0].replaceAll('/', '-') : '未知日期';
+  };
+
+  const getPeriodText = () => {
+    if (!startTime || !endTime) return '北京时间 --';
+    const sm = startTime.match(/(\d{2})-(\d{2}) (\d{2}:\d{2})/);
+    const em = endTime.match(/(\d{2})-(\d{2}) (\d{2}:\d{2})/);
+    if (!sm || !em) return `北京时间 ${escapeHTML(startTime)} - ${escapeHTML(endTime)}`;
+    return `北京时间 ${sm[1]}-${sm[2]} ${sm[3]} - ${em[3]}`;
+  };
+
+  const getRemainText = () => {
+    if (!endTime) return '--';
+    const end = new Date(endTime.replace(/-/g, '/'));
+    if (Number.isNaN(end.getTime())) return '--';
+    const diff = end.getTime() - Date.now();
+    if (diff <= 0) return '已结束';
+    const hour = Math.floor(diff / (1000 * 60 * 60));
+    const min = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    return `剩余 ${hour}小时${min}分钟`;
+  };
+
   let contentRows = '';
-  if (lines.length > 0) {
-    // 优先使用远行商人日志第一行（按空格分隔）的物品列表
-    let items = getItemsFromYxsrLogFirstLine();
-
-    // 兜底：日志读取失败时，回退到展示文案中的“本轮上架”行解析
-    let itemLineIndex = -1;
-    if (items.length === 0) {
-      itemLineIndex = lines.findIndex(line => /^本轮上架[:：]/.test(line));
-      const itemLine = itemLineIndex >= 0 ? lines[itemLineIndex] : '';
-      const itemText = itemLine.replace(/^本轮上架[:：]\s*/, '').trim();
-      items = itemText
-        .split(/[\s、,，]+/)
-        .map(item => item.trim())
-        .filter(item => item && item !== '待确认');
-    }
-
-    // 仅在成功解析到物品时渲染物品图片行
-    if (items.length > 0) {
-      let itemsHTML = '<div class="line items-line">';
-      items.forEach(itemName => {
-        const imageUrl = getItemImageUrl(itemName);
-        itemsHTML += `
-        <div class="item">
-          ${imageUrl ? `<img src="${imageUrl}" alt="${escapeHTML(itemName)}" class="item-image" />` : ''}
-          <span class="item-name">${escapeHTML(itemName)}</span>
+  if (items.length > 0) {
+    items.forEach(itemName => {
+      const imageUrl = getItemImageUrl(itemName);
+      contentRows += `
+        <div class="item-row">
+          <div class="item-left">
+            <div class="thumb-wrap">
+              ${imageUrl ? `<img src="${imageUrl}" alt="${escapeHTML(itemName)}" class="thumb" />` : '<div class="thumb-fallback">?</div>'}
+            </div>
+            <div class="item-main">
+              <div class="item-title">${escapeHTML(itemName)}</div>
+              <div class="item-sub">远行商人当前轮次商品</div>
+              <div class="item-time">${escapeHTML(getPeriodText())}</div>
+            </div>
+          </div>
+          <div class="tag">本轮商品</div>
         </div>
       `;
-      });
-      itemsHTML += '</div>';
-      contentRows += itemsHTML;
-    }
-
-    // 展示其余文本行（避免重复展示物品行）
-    lines.forEach((line, index) => {
-      if (index === itemLineIndex) return;
-      const isMetaLine = /^(数据获取时间|开始时间|结束时间)[:：]/.test(line);
-      contentRows += `<div class="line${isMetaLine ? ' meta-line' : ''}">${line}</div>`;
     });
   } else {
-    contentRows = '<div class="line">暂无数据</div>';
+    contentRows = `<div class="empty">暂无商品数据</div>`;
   }
 
   const launchOptions = {
@@ -174,157 +203,198 @@ async function renderYxsrImageBase64(rawText) {
           * { box-sizing: border-box; }
           body {
             margin: 0;
-            width: 980px;
-            min-height: 560px;
-            padding: 32px;
-            font-family: 'Noto Sans SC', sans-serif;
-            color: #1f2937;
-            background:
-              radial-gradient(circle at 8% 8%, rgba(34, 211, 238, 0.20), transparent 30%),
-              radial-gradient(circle at 92% 12%, rgba(99, 102, 241, 0.18), transparent 32%),
-              radial-gradient(circle at 70% 90%, rgba(16, 185, 129, 0.12), transparent 28%),
-              linear-gradient(145deg, #f6faff, #eaf2ff 55%, #f5f8ff);
+            width: 1520px;
+            min-height: 800px;
+            padding: 18px;
+            font-family: 'Noto Sans SC', 'PingFang SC', sans-serif;
+            color: #3d3024;
+            background: #c7c2b7;
           }
 
-          .card {
-            width: 100%;
-            border: 1px solid rgba(148, 163, 184, 0.24);
-            border-radius: 24px;
-            background: rgba(255, 255, 255, 0.88);
-            backdrop-filter: blur(5px);
-            box-shadow:
-              0 12px 34px rgba(15, 23, 42, 0.10),
-              0 2px 8px rgba(59, 130, 246, 0.10);
-            padding: 26px 24px 20px;
+          .board {
+            border-radius: 28px;
+            overflow: hidden;
           }
 
-          .header {
+          .top {
+            background: #ebe8e1;
+            border-radius: 26px;
+            padding: 22px 26px;
+            border: 1px solid rgba(120, 102, 83, 0.15);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 12px;
-            margin-bottom: 14px;
+            margin-bottom: 16px;
+          }
+
+          .title-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
           }
 
           .title {
             margin: 0;
-            font-size: 34px;
-            line-height: 1.15;
+            font-size: 58px;
+            line-height: 1;
             font-weight: 900;
-            letter-spacing: 0.6px;
-            background: linear-gradient(90deg, #0f172a, #1d4ed8 55%, #0ea5e9);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            letter-spacing: 1px;
+            color: #2f241a;
           }
 
-          .badge {
-            border: 1px solid rgba(59, 130, 246, 0.24);
-            border-radius: 999px;
-            padding: 8px 14px;
-            font-size: 12px;
-            font-weight: 700;
-            color: #1d4ed8;
-            background: linear-gradient(135deg, #eff6ff, #f0f9ff);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+          .date {
+            font-size: 26px;
+            color: #5f5245;
+            font-weight: 600;
           }
 
-          .content {
-            border: 1px solid rgba(148, 163, 184, 0.18);
-            border-radius: 16px;
-            background: linear-gradient(180deg, #ffffff, #f8fbff);
-            padding: 14px;
-          }
-
-          .line {
-            font-size: 19px;
-            line-height: 1.72;
-            padding: 6px 6px;
-            border-bottom: 1px dashed rgba(148, 163, 184, 0.24);
-            word-break: break-word;
-          }
-
-          .line:last-child {
-            border-bottom: none;
-          }
-
-          .line.meta-line {
-            font-size: 15px;
-            color: #64748b;
-            background: rgba(241, 245, 249, 0.55);
-            border-radius: 10px;
-            border-bottom: none;
-            margin-top: 8px;
-            padding: 8px 10px;
-          }
-
-          /* 物品行样式 */
-          .items-line {
+          .stats {
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
             gap: 12px;
-            align-items: stretch;
-            padding: 6px 2px 10px;
-            border-bottom: none;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            max-width: 640px;
           }
 
-          .item {
+          .chip {
+            background: #f4f1ea;
+            border: 1px solid rgba(120, 102, 83, 0.16);
+            border-radius: 999px;
+            padding: 10px 20px;
+            font-size: 22px;
+            font-weight: 800;
+            color: #57493b;
+            white-space: nowrap;
+          }
+
+          .chip strong {
+            color: #8b5d23;
+            margin-left: 6px;
+          }
+
+          .list {
             display: flex;
             flex-direction: column;
+            gap: 14px;
+          }
+
+          .item-row {
+            background: #eeebe5;
+            border-radius: 24px;
+            border: 1px solid rgba(120, 102, 83, 0.12);
+            padding: 18px 22px;
+            display: flex;
             align-items: center;
-            gap: 7px;
-            width: 96px;
-            padding: 10px 8px 8px;
-            border-radius: 14px;
-            border: 1px solid rgba(148, 163, 184, 0.20);
-            background: linear-gradient(180deg, #ffffff, #f8fbff);
-            box-shadow: 0 3px 10px rgba(15, 23, 42, 0.06);
+            justify-content: space-between;
           }
 
-          .item-image {
-            width: 64px;
-            height: 64px;
+          .item-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            min-width: 0;
+          }
+
+          .thumb-wrap {
+            width: 118px;
+            height: 118px;
+            border-radius: 18px;
+            background: #f3f0e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(120, 102, 83, 0.12);
+            flex-shrink: 0;
+          }
+
+          .thumb {
+            width: 106px;
+            height: 106px;
             object-fit: contain;
-            border-radius: 10px;
-            background: radial-gradient(circle at 35% 30%, #ffffff, #edf4ff);
-            border: 1px solid rgba(148, 163, 184, 0.20);
-            padding: 5px;
           }
 
-          .item-name {
-            font-size: 13px;
-            font-weight: 600;
-            line-height: 1.35;
-            text-align: center;
+          .thumb-fallback {
+            font-size: 38px;
+            font-weight: 900;
+            color: #9b8b77;
+          }
+
+          .item-main {
+            min-width: 0;
+          }
+
+          .item-title {
+            font-size: 58px;
+            line-height: 1.02;
+            font-weight: 900;
+            color: #2f241a;
+            margin-bottom: 8px;
             word-break: break-word;
-            color: #334155;
-            max-width: 80px;
           }
 
-          .footer {
-            margin-top: 12px;
-            text-align: right;
-            font-size: 12px;
-            color: #64748b;
-            letter-spacing: 0.3px;
+          .item-sub {
+            font-size: 24px;
+            color: #6a5b4e;
+            margin-bottom: 8px;
+            font-weight: 700;
+          }
+
+          .item-time {
+            display: inline-block;
+            background: #f2e2c3;
+            color: #8a5b22;
+            border-radius: 999px;
+            padding: 6px 14px;
+            font-size: 20px;
+            font-weight: 800;
+          }
+
+          .tag {
+            flex-shrink: 0;
+            background: #f5f1ea;
+            border: 1px solid rgba(120, 102, 83, 0.14);
+            border-radius: 20px;
+            color: #6f532f;
+            padding: 10px 18px;
+            font-size: 34px;
+            font-weight: 900;
+          }
+
+          .empty {
+            border-radius: 16px;
+            background: #eeebe5;
+            border: 1px solid rgba(120, 102, 83, 0.12);
+            padding: 28px;
+            font-size: 24px;
+            color: #6d5d50;
+            text-align: center;
+            font-weight: 700;
           }
         </style>
       </head>
       <body>
-        <div class="card">
-          <div class="header">
-            <h1 class="title">远行商人信息</h1>
-            <div class="badge">自动生成</div>
+        <div class="board">
+          <div class="top">
+            <div class="title-wrap">
+              <h1 class="title">远行商人</h1>
+              <div class="date">${escapeHTML(getDateText())}</div>
+            </div>
+            <div class="stats">
+              <div class="chip">当前商品数 <strong>${items.length}</strong></div>
+              <div class="chip">第 ${escapeHTML(getRoundText(startTime))}</div>
+              <div class="chip"><strong>${escapeHTML(getRemainText())}</strong></div>
+            </div>
           </div>
-          <div class="content">
-            ${contentRows || '<div class="line">暂无数据</div>'}
+          <div class="list">
+            ${contentRows}
           </div>
-          <div class="footer">RocoWorld 插件渲染</div>
         </div>
       </body>
       </html>
     `;
 
-    await page.setViewport({ width: 980, height: 560 });
+    await page.setViewport({ width: 1520, height: 800 });
     await page.setContent(html, { waitUntil: 'networkidle0' });
 
     const image = await page.screenshot({

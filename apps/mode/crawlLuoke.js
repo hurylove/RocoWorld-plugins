@@ -166,7 +166,6 @@ async function renderLuokeImage(data) {
   };
 
   if (config.chromiumPath) {
-    console.log(`使用配置的Chrome路径: ${config.chromiumPath}`);
     launchOptions.executablePath = config.chromiumPath;
   }
 
@@ -408,7 +407,7 @@ async function renderLuokeImage(data) {
           </div>
           <div class="content">
             <div class="section-tip">${data.sectionTip || '查询结果'}</div>
-            
+
             ${data.leadCandidate ? `
             <div class="lead-candidate">
               <img src="${data.leadCandidate.image}" alt="${data.leadCandidate.imageAlt}" class="lead-image" />
@@ -436,7 +435,7 @@ async function renderLuokeImage(data) {
               </div>
             </div>
             ` : ''}
-            
+
             ${data.otherCandidates && data.otherCandidates.length > 0 ? `
             <div class="candidates-list">
               <h3>其他候选</h3>
@@ -490,7 +489,6 @@ async function crawlLuoke(height = 0.28, weight = 2.36) {
   };
 
   if (config.chromiumPath) {
-    console.log(`使用配置的Chrome路径: ${config.chromiumPath}`);
     launchOptions.executablePath = config.chromiumPath;
   }
 
@@ -499,56 +497,34 @@ async function crawlLuoke(height = 0.28, weight = 2.36) {
   const page = await browser.newPage();
 
   try {
-    console.log(`正在访问: ${url}`);
     await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
 
     await new Promise(resolve => setTimeout(resolve, 500));
 
-    console.log(`填写参数：身高=${height}，体重=${weight}`);
-
-    console.log('查找身高输入框...');
     const heightInput = await page.$('input[placeholder="例如 0.58"]');
     if (heightInput) {
-      console.log('找到身高输入框，填写值...');
       await heightInput.type(height.toString());
-    } else {
-      console.error('未找到身高输入框');
     }
 
-    console.log('查找体重输入框...');
     const weightInput = await page.$('input[placeholder="例如 34.20"]');
     if (weightInput) {
-      console.log('找到体重输入框，填写值...');
       await weightInput.type(weight.toString());
-    } else {
-      console.error('未找到体重输入框');
     }
 
-    console.log('查找并点击开始查询按钮...');
     const queryButton = await page.$('.primary-btn');
     if (queryButton) {
-      console.log('找到开始查询按钮，点击...');
       await queryButton.click();
-    } else {
-      console.error('未找到开始查询按钮');
     }
 
-    console.log('等待结果加载...');
     await new Promise(resolve => setTimeout(resolve, 2000));
 
     const rawHtml = await page.content();
-    console.log(`获取到HTML，长度: ${rawHtml.length}`);
 
     const extractedData = extractLuokeDataFromHtml(rawHtml);
     patchLuokeResultImageUrls(extractedData);
 
-    console.log('提取结果预览：');
-    console.log(JSON.stringify(extractedData, null, 2));
-
-    // 渲染图片
     console.log('正在渲染图片...');
     const base64Image = await renderLuokeImage(extractedData);
-    console.log('图片渲染完成');
 
     return {
       data: extractedData,
@@ -570,10 +546,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const weight = process.argv[3] ? parseFloat(process.argv[3]) : 2.36;
   
   crawlLuoke(height, weight)
-    .then(result => {
-      console.log('爬取完成');
-      console.log(`候选数量: ${result.data?.otherCandidates?.length || 0}`);
-      console.log(`图片base64长度: ${result.imageBase64?.length || 0}`);
+    .then(() => {
       process.exit(0);
     })
     .catch(error => {

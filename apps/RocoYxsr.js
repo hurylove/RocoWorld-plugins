@@ -36,6 +36,20 @@ function getItemImageUrl(itemName) {
   return item ? item.imageUrl : null;
 }
 
+// 从远行商人日志第一行读取物品列表（按空格分隔）
+function getItemsFromYxsrLogFirstLine() {
+  try {
+    const logPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'yxsr', '远行商人日志.txt');
+    const logContent = fs.readFileSync(logPath, 'utf-8');
+    const firstLine = logContent.split(/\r?\n/)[0]?.trim() || '';
+    if (!firstLine) return [];
+    return firstLine.split(/\s+/).map(item => item.trim()).filter(Boolean);
+  } catch (error) {
+    console.warn('读取远行商人日志失败:', error.message);
+    return [];
+  }
+}
+
 function parseYAML(yamlContent) {
   const config = {};
   const lines = yamlContent.split('\n');
@@ -89,31 +103,46 @@ async function renderYxsrImageBase64(rawText) {
   const safeText = escapeHTML(text || '暂无远行商人信息');
   const lines = safeText.split(/\r?\n/).filter(Boolean);
   
-  // 处理第一行的物品信息，添加图片
+  // 处理物品信息，添加图片
   let contentRows = '';
   if (lines.length > 0) {
-    // 第一行是物品列表
-    const firstLine = lines[0];
-    const items = firstLine.split(/\s+/).filter(item => item);
-    
-    // 生成物品行，包含图片
-    let itemsHTML = '<div class="line items-line">';
-    items.forEach(itemName => {
-      const imageUrl = getItemImageUrl(itemName);
-      itemsHTML += `
+    // 优先使用远行商人日志第一行（按空格分隔）的物品列表
+    let items = getItemsFromYxsrLogFirstLine();
+
+    // 兜底：日志读取失败时，回退到展示文案中的“本轮上架”行解析
+    let itemLineIndex = -1;
+    if (items.length === 0) {
+      itemLineIndex = lines.findIndex(line => /^本轮上架[:：]/.test(line));
+      const itemLine = itemLineIndex >= 0 ? lines[itemLineIndex] : '';
+      const itemText = itemLine.replace(/^本轮上架[:：]\s*/, '').trim();
+      items = itemText
+        .split(/[\s、,，]+/)
+        .map(item => item.trim())
+        .filter(item => item && item !== '待确认');
+    }
+
+    // 仅在成功解析到物品时渲染物品图片行
+    if (items.length > 0) {
+      let itemsHTML = '<div class="line items-line">';
+      items.forEach(itemName => {
+        const imageUrl = getItemImageUrl(itemName);
+        itemsHTML += `
         <div class="item">
           ${imageUrl ? `<img src="${imageUrl}" alt="${escapeHTML(itemName)}" class="item-image" />` : ''}
           <span class="item-name">${escapeHTML(itemName)}</span>
         </div>
       `;
-    });
-    itemsHTML += '</div>';
-    contentRows += itemsHTML;
-    
-    // 处理剩余行
-    for (let i = 1; i < lines.length; i++) {
-      contentRows += `<div class="line">${lines[i]}</div>`;
+      });
+      itemsHTML += '</div>';
+      contentRows += itemsHTML;
     }
+
+    // 展示其余文本行（避免重复展示物品行）
+    lines.forEach((line, index) => {
+      if (index === itemLineIndex) return;
+      const isMetaLine = /^(数据获取时间|开始时间|结束时间)[:：]/.test(line);
+      contentRows += `<div class="line${isMetaLine ? ' meta-line' : ''}">${line}</div>`;
+    });
   } else {
     contentRows = '<div class="line">暂无数据</div>';
   }
@@ -147,22 +176,26 @@ async function renderYxsrImageBase64(rawText) {
             margin: 0;
             width: 980px;
             min-height: 560px;
-            padding: 36px;
+            padding: 32px;
             font-family: 'Noto Sans SC', sans-serif;
             color: #1f2937;
             background:
-              radial-gradient(circle at 15% 12%, rgba(56, 189, 248, 0.14), transparent 34%),
-              radial-gradient(circle at 88% 10%, rgba(129, 140, 248, 0.10), transparent 32%),
-              linear-gradient(150deg, #f8fbff, #eef5ff);
+              radial-gradient(circle at 8% 8%, rgba(34, 211, 238, 0.20), transparent 30%),
+              radial-gradient(circle at 92% 12%, rgba(99, 102, 241, 0.18), transparent 32%),
+              radial-gradient(circle at 70% 90%, rgba(16, 185, 129, 0.12), transparent 28%),
+              linear-gradient(145deg, #f6faff, #eaf2ff 55%, #f5f8ff);
           }
 
           .card {
             width: 100%;
-            border: 1px solid rgba(148, 163, 184, 0.26);
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 10px 28px rgba(15, 23, 42, 0.10);
-            padding: 24px;
+            border: 1px solid rgba(148, 163, 184, 0.24);
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(5px);
+            box-shadow:
+              0 12px 34px rgba(15, 23, 42, 0.10),
+              0 2px 8px rgba(59, 130, 246, 0.10);
+            padding: 26px 24px 20px;
           }
 
           .header {
@@ -170,40 +203,42 @@ async function renderYxsrImageBase64(rawText) {
             align-items: center;
             justify-content: space-between;
             gap: 12px;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
           }
 
           .title {
             margin: 0;
-            font-size: 32px;
-            line-height: 1.2;
-            font-weight: 800;
-            letter-spacing: 0.4px;
-            background: linear-gradient(90deg, #0f172a, #2563eb);
+            font-size: 34px;
+            line-height: 1.15;
+            font-weight: 900;
+            letter-spacing: 0.6px;
+            background: linear-gradient(90deg, #0f172a, #1d4ed8 55%, #0ea5e9);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
 
           .badge {
-            border: 1px solid rgba(148, 163, 184, 0.30);
+            border: 1px solid rgba(59, 130, 246, 0.24);
             border-radius: 999px;
-            padding: 8px 12px;
-            font-size: 13px;
-            color: #475569;
-            background: #f8fafc;
+            padding: 8px 14px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #1d4ed8;
+            background: linear-gradient(135deg, #eff6ff, #f0f9ff);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
           }
 
           .content {
-            border: 1px solid rgba(148, 163, 184, 0.22);
-            border-radius: 14px;
-            background: #ffffff;
+            border: 1px solid rgba(148, 163, 184, 0.18);
+            border-radius: 16px;
+            background: linear-gradient(180deg, #ffffff, #f8fbff);
             padding: 14px;
           }
 
           .line {
-            font-size: 20px;
-            line-height: 1.75;
-            padding: 4px 2px;
+            font-size: 19px;
+            line-height: 1.72;
+            padding: 6px 6px;
             border-bottom: 1px dashed rgba(148, 163, 184, 0.24);
             word-break: break-word;
           }
@@ -212,36 +247,56 @@ async function renderYxsrImageBase64(rawText) {
             border-bottom: none;
           }
 
+          .line.meta-line {
+            font-size: 15px;
+            color: #64748b;
+            background: rgba(241, 245, 249, 0.55);
+            border-radius: 10px;
+            border-bottom: none;
+            margin-top: 8px;
+            padding: 8px 10px;
+          }
+
           /* 物品行样式 */
           .items-line {
             display: flex;
             flex-wrap: wrap;
-            gap: 16px;
-            align-items: center;
-            padding: 12px 0;
+            gap: 12px;
+            align-items: stretch;
+            padding: 6px 2px 10px;
+            border-bottom: none;
           }
 
           .item {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 8px;
-            min-width: 80px;
+            gap: 7px;
+            width: 96px;
+            padding: 10px 8px 8px;
+            border-radius: 14px;
+            border: 1px solid rgba(148, 163, 184, 0.20);
+            background: linear-gradient(180deg, #ffffff, #f8fbff);
+            box-shadow: 0 3px 10px rgba(15, 23, 42, 0.06);
           }
 
           .item-image {
-            width: 60px;
-            height: 60px;
+            width: 64px;
+            height: 64px;
             object-fit: contain;
-            border-radius: 8px;
-            background: #f8fafc;
-            padding: 4px;
+            border-radius: 10px;
+            background: radial-gradient(circle at 35% 30%, #ffffff, #edf4ff);
+            border: 1px solid rgba(148, 163, 184, 0.20);
+            padding: 5px;
           }
 
           .item-name {
-            font-size: 14px;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.35;
             text-align: center;
             word-break: break-word;
+            color: #334155;
             max-width: 80px;
           }
 
@@ -250,6 +305,7 @@ async function renderYxsrImageBase64(rawText) {
             text-align: right;
             font-size: 12px;
             color: #64748b;
+            letter-spacing: 0.3px;
           }
         </style>
       </head>

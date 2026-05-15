@@ -1,7 +1,8 @@
-// 洛克王国Wiki爬虫脚本
-// 功能：获取洛克王国Wiki页面的HTML内容，提取特定部分并保存为txt文件
+// 洛克王国远行商人爬虫脚本
+// 功能：获取远行商人页面的HTML内容，提取特定部分并保存为txt文件
 // 模块化输出，支持其他JS文件调用
 
+import http from 'http';
 import https from 'https';
 import fs from 'fs';
 import path from 'path';
@@ -10,7 +11,7 @@ import path from 'path';
 const __dirname = path.dirname(new URL(import.meta.url).pathname).replace(/^\//, '');
 
 // 爬虫目标URL
-const wikiUrl = 'https://wiki.lcx.cab/lk/index.php';
+const wikiUrl = 'https://www.onebiji.com/hykb_tools/comm/lkwgmerchant/preview.php?id=1&immgj=0';
 
 // 保存路径
 const saveDir = path.join(__dirname, '..', '..', 'data', 'yxsr');
@@ -24,11 +25,14 @@ function ensureDirExists(dir) {
   }
 }
 
-// 爬取Wiki页面并提取特定内容
+// 爬取页面并提取特定内容
 function crawlWiki() {
   return new Promise((resolve, reject) => {
     // 解析URL
     const url = new URL(wikiUrl);
+
+    // 选择HTTP或HTTPS模块
+    const httpModule = url.protocol === 'https:' ? https : http;
 
     // 发送HTTP请求获取页面内容
     const options = {
@@ -39,7 +43,7 @@ function crawlWiki() {
       }
     };
 
-    const req = https.get(options, (response) => {
+    const req = httpModule.get(options, (response) => {
       // 检查响应状态
       if (response.statusCode !== 200) {
         reject(new Error(`HTTP错误: ${response.statusCode} ${response.statusMessage}`));
@@ -90,7 +94,7 @@ function calculateTimeRange() {
   const now = new Date();
   const hour = now.getHours();
   const dateStr = now.toISOString().split('T')[0];
-  
+
   if (hour >= 8 && hour < 12) {
     return {
       startTime: `${dateStr} 08:00:00`,
@@ -118,13 +122,14 @@ function calculateTimeRange() {
 
 // 提取特定内容
 function extractContent(html) {
-  // 从 merchant-frame-product-name 类中提取商品信息
-  const regex = /class="merchant-frame-product-name"[^>]*>([^<]+)<\/div>/gi;
+  // 从 sp-text 类中提取商品信息
+  const regex = /<div class="sp-text">[\s\S]*?<p><em>([^<]+)<\/em><\/p>[\s\S]*?<div><em>价格：([^<]+)\s*<\/em><img/gi;
   const matches = [];
   let match;
-  
+
   while ((match = regex.exec(html)) !== null) {
     const itemName = match[1].trim();
+    const price = match[2].trim();
     if (itemName) {
       matches.push(itemName);
     }
@@ -135,18 +140,18 @@ function extractContent(html) {
     const timeRange = calculateTimeRange();
     const now = new Date();
     const fetchTime = now.toLocaleString('zh-CN');
-    
+
     // 构建输出格式
     let output = matches.join(' ') + '\n\n';
     output += `数据获取时间：${fetchTime}\n\n`;
-    
+
     if (timeRange) {
       output += `开始时间：${timeRange.startTime}\n`;
       output += `结束时间：${timeRange.endTime}`;
     } else {
       output += '远行商人还未出现';
     }
-    
+
     return output;
   } else {
     return '未找到指定内容';
@@ -159,13 +164,13 @@ function readLogFile() {
     if (fs.existsSync(txtSavePath)) {
       const content = fs.readFileSync(txtSavePath, 'utf-8');
       const lines = content.split('\n');
-      
+
       let itemContent = '';
       let fetchTime = '';
       let startTime = null;
       let endTime = null;
       let isNotAppeared = false;
-      
+
       // 解析文件内容
       for (const line of lines) {
         const trimmedLine = line.trim();
@@ -181,7 +186,7 @@ function readLogFile() {
           isNotAppeared = true;
         }
       }
-      
+
       return {
         startTime,
         endTime,
@@ -252,19 +257,11 @@ export async function refreshYxsrLog() {
 // 主函数：获取远行商人信息
 async function getYxsrInfo() {
   try {
-    // 读取日志文件
-    let logData = readLogFile();
-
-    // 检查是否有数据
-    if (logData && logData.itemContent && logData.itemContent !== '未找到指定内容') {
-      return buildDisplayText(logData);
-    }
-
-    // 爬取新数据
+    // 强制爬取新数据
     await crawlWiki();
 
-    // 再次读取日志文件
-    logData = readLogFile();
+    // 读取日志文件
+    const logData = readLogFile();
 
     // 检查是否有数据
     if (logData && logData.itemContent && logData.itemContent !== '未找到指定内容') {
@@ -273,6 +270,7 @@ async function getYxsrInfo() {
       return '远行商人情报暂不可用，请稍后重试。';
     }
   } catch (error) {
+    console.error('爬取失败:', error);
     return '远行商人情报获取失败，请稍后重试。';
   }
 }
@@ -281,8 +279,11 @@ async function getYxsrInfo() {
 export default getYxsrInfo;
 
 // 如果直接运行此文件
-if (import.meta.url === `file://${process.argv[1]}`) {
-  getYxsrInfo()
+const currentFilePath = new URL(import.meta.url).pathname.replace(/^\//, '');
+if (currentFilePath === process.argv[1] || currentFilePath.toLowerCase() === process.argv[1].toLowerCase()) {
+  // 直接运行时强制刷新数据
+  console.log('开始获取远行商人信息...');
+  refreshYxsrLog()
     .then(info => {
       console.log('获取到的远行商人信息:', info);
     })

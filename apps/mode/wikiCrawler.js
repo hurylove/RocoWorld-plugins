@@ -1,8 +1,7 @@
 // 洛克王国远行商人爬虫脚本
-// 功能：获取远行商人页面的HTML内容，提取特定部分并保存为txt文件
+// 功能：从 roco.dayun.cool API 获取远行商人商品数据，保存为txt文件
 // 模块化输出，支持其他JS文件调用
 
-import http from 'http';
 import https from 'https';
 import fs from 'fs';
 import path from 'path';
@@ -10,8 +9,8 @@ import path from 'path';
 // 使用当前文件所在目录作为基准
 const __dirname = path.dirname(new URL(import.meta.url).pathname).replace(/^\//, '');
 
-// 爬虫目标URL
-const wikiUrl = 'https://www.onebiji.com/hykb_tools/comm/lkwgmerchant/preview.php?id=1&immgj=0';
+// 爬虫目标 API
+const apiUrl = 'https://roco.dayun.cool/api/merchant';
 
 // 保存路径
 const saveDir = path.join(__dirname, '..', '..', 'data', 'yxsr');
@@ -25,52 +24,42 @@ function ensureDirExists(dir) {
   }
 }
 
-// 爬取页面并提取特定内容
+// 从 API 获取远行商人数据
 function crawlWiki() {
   return new Promise((resolve, reject) => {
-    // 解析URL
-    const url = new URL(wikiUrl);
+    const url = new URL(apiUrl);
 
-    // 选择HTTP或HTTPS模块
-    const httpModule = url.protocol === 'https:' ? https : http;
-
-    // 发送HTTP请求获取页面内容
     const options = {
       hostname: url.hostname,
-      path: url.pathname + url.search,
+      path: url.pathname,
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
       }
     };
 
-    const req = httpModule.get(options, (response) => {
-      // 检查响应状态
+    const req = https.get(options, (response) => {
       if (response.statusCode !== 200) {
         reject(new Error(`HTTP错误: ${response.statusCode} ${response.statusMessage}`));
         return;
       }
 
-      let htmlContent = '';
+      let rawData = '';
 
-      // 收集响应数据
       response.on('data', (chunk) => {
-        htmlContent += chunk;
+        rawData += chunk;
       });
 
-      // 响应结束
       response.on('end', () => {
-        // 确保保存目录存在
-        ensureDirExists(saveDir);
-
-        // 提取特定部分内容
-        const extractedContent = extractContent(htmlContent);
-
-        // 保存提取的内容到txt文件
         try {
+          const json = JSON.parse(rawData);
+          ensureDirExists(saveDir);
+
+          const extractedContent = extractContent(json);
+
           fs.writeFileSync(txtSavePath, extractedContent, 'utf-8');
           resolve(extractedContent);
-        } catch (writeError) {
-          reject(writeError);
+        } catch (parseError) {
+          reject(new Error(`JSON解析失败: ${parseError.message}`));
         }
       });
     });
@@ -84,7 +73,6 @@ function crawlWiki() {
       reject(new Error('HTTP请求超时'));
     });
 
-    // 设置超时
     req.setTimeout(10000);
   });
 }
@@ -120,40 +108,40 @@ function calculateTimeRange() {
   }
 }
 
-// 提取特定内容
-function extractContent(html) {
-  // 先移除 display:none 的隐藏项（过往时段商品），只保留当前可见商品
-  const filteredHtml = html.replace(
-    /<li\b[^>]*?display\s*:\s*none[^>]*>[\s\S]*?<\/li>/gi,
-    ''
-  );
+// 从 API 返回的 JSON 中提取商品信息和时间
+function extractContent(json) {
+  const items = json.items || [];
+  const roundInfo = json.roundInfo || {};
 
-  // 从 sp-text 类中提取商品信息
-  const regex = /<div class="sp-text">[\s\S]*?<p><em>([^<]+)<\/em><\/p>[\s\S]*?<div><em>价格：([^<]+)\s*<\/em><img/gi;
-  const matches = [];
-  let match;
-
-  while ((match = regex.exec(filteredHtml)) !== null) {
-    const itemName = match[1].trim();
-    const price = match[2].trim();
-    if (itemName) {
-      matches.push(itemName);
-    }
-  }
-
-  if (matches.length > 0) {
-    // 计算时间范围
-    const timeRange = calculateTimeRange();
+  if (items.length > 0) {
     const now = new Date();
     const fetchTime = now.toLocaleString('zh-CN');
 
-    // 构建输出格式
-    let output = matches.join(' ') + '\n\n';
+    let startTime = null;
+    let endTime = null;
+
+    if (roundInfo.current && roundInfo.date) {
+      const parts = roundInfo.current.split('-').map(s => s.trim());
+      if (parts.length === 2) {
+        startTime = `${roundInfo.date} ${parts[0]}:00`;
+        endTime = `${roundInfo.date} ${parts[1]}:00`;
+      }
+    }
+
+    if (!startTime || !endTime) {
+      const timeRange = calculateTimeRange();
+      if (timeRange) {
+        startTime = timeRange.startTime;
+        endTime = timeRange.endTime;
+      }
+    }
+
+    let output = items.join(' ') + '\n\n';
     output += `数据获取时间：${fetchTime}\n\n`;
 
-    if (timeRange) {
-      output += `开始时间：${timeRange.startTime}\n`;
-      output += `结束时间：${timeRange.endTime}`;
+    if (startTime && endTime) {
+      output += `开始时间：${startTime}\n`;
+      output += `结束时间：${endTime}`;
     } else {
       output += '远行商人还未出现';
     }

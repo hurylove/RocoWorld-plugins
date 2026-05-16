@@ -455,9 +455,9 @@ function getPushTriggerHour(date) {
   const h = date.getHours();
   const min = date.getMinutes();
 
-  const targetHours = [7, 11, 15, 19];
+  const targetHours = [8, 12, 16, 20];
   if (!targetHours.includes(h)) return null;
-  if (min !== 59) return null;
+  if (min !== 1) return null;
 
   return h;
 }
@@ -476,7 +476,7 @@ function getStopHour(date) {
 function getCurrentTriggerKey(date) {
   const triggerHour = getPushTriggerHour(date);
   if (triggerHour === null) return null;
-  return `${formatDateKey(date)} ${String(triggerHour).padStart(2, '0')}:59`;
+  return `${formatDateKey(date)} ${String(triggerHour).padStart(2, '0')}:01`;
 }
 
 function getCurrentStopKey(date) {
@@ -500,103 +500,57 @@ function shouldPush(subscribeItems, currentItems) {
 }
 
 async function monitorAndPush(triggerHour) {
-  console.log(`[RocoYxsrPush] 开始监控，触发时间：${String(triggerHour).padStart(2, '0')}:59`);
-
-  const initialLogContent = readYxsrLogContent();
-  const initialItems = getItemsFromYxsrLogFirstLine();
-
-  console.log(`[RocoYxsrPush] 初始物品列表:`, initialItems);
+  console.log(`[RocoYxsrPush] 开始推送，触发时间：${String(triggerHour).padStart(2, '0')}:01`);
 
   const cfg = loadConfig();
   const subscribeItems = parseSubscribeItems(cfg.yxsrSubscribeItems);
 
-  if (subscribeItems.length > 0) {
-    console.log(`[RocoYxsrPush] 订阅物品列表:`, subscribeItems);
-  } else {
-    console.log(`[RocoYxsrPush] 未配置订阅物品，有变化即推送`);
-  }
+  try {
+    await refreshYxsrLog();
 
-  const stopHour = triggerHour + 1;
-  const stopKey = `${formatDateKey(new Date())} ${String(stopHour).padStart(2, '0')}:05`;
+    const currentItems = getItemsFromYxsrLogFirstLine();
+    console.log(`[RocoYxsrPush] 当前物品列表:`, currentItems);
 
-  let monitorInterval = null;
-
-  const checkAndPush = async () => {
-    try {
-      const now = new Date();
-      const currentStopKey = getCurrentStopKey(now);
-
-      if (currentStopKey === stopKey) {
-        console.log(`[RocoYxsrPush] 到达停止时间 ${stopKey}，停止监控`);
-        if (monitorInterval) {
-          clearInterval(monitorInterval);
-          monitorInterval = null;
-        }
-        return;
-      }
-
-      await refreshYxsrLog();
-
-      const currentItems = getItemsFromYxsrLogFirstLine();
-      console.log(`[RocoYxsrPush] 当前物品列表:`, currentItems);
-
-      const hasChanged = JSON.stringify(initialItems) !== JSON.stringify(currentItems);
-
-      if (hasChanged) {
-        console.log(`[RocoYxsrPush] 检测到数据变化`);
-
-        if (shouldPush(subscribeItems, currentItems)) {
-          console.log(`[RocoYxsrPush] 符合推送条件，开始推送`);
-
-          let base64Image;
-          try {
-            const yxsrInfo = await refreshYxsrLog();
-            base64Image = await renderYxsrImageBase64(yxsrInfo);
-          } catch (error) {
-            console.error('[RocoYxsrPush] 渲染图片失败:', error);
-            return;
-          }
-
-          const groups = parseGroups(cfg.yxsrPushGroups);
-          let successCount = 0;
-          let failCount = 0;
-
-          for (const groupId of groups) {
-            try {
-              const group = Bot.pickGroup(groupId);
-              if (!group) {
-                failCount++;
-                console.warn(`[RocoYxsrPush] 群 ${groupId} 不存在或无法访问`);
-                continue;
-              }
-
-              await group.sendMsg(segment.image(`base64://${base64Image}`));
-              successCount++;
-            } catch (error) {
-              failCount++;
-              console.error(`[RocoYxsrPush] 推送到群 ${groupId} 失败:`, error);
-            }
-          }
-
-          console.log(`[RocoYxsrPush] 推送完成：成功 ${successCount} 个群，失败 ${failCount} 个群`);
-
-          if (monitorInterval) {
-            clearInterval(monitorInterval);
-            monitorInterval = null;
-          }
-        } else {
-          console.log(`[RocoYxsrPush] 不符合推送条件，继续监控`);
-        }
-      }
-    } catch (error) {
-      console.error('[RocoYxsrPush] 监控检查失败:', error);
+    if (!shouldPush(subscribeItems, currentItems)) {
+      console.log(`[RocoYxsrPush] 不符合推送条件，跳过推送`);
+      return;
     }
-  };
 
-  await checkAndPush();
+    console.log(`[RocoYxsrPush] 符合推送条件，开始推送`);
 
-  if (monitorInterval !== null) {
-    monitorInterval = setInterval(checkAndPush, 30 * 1000);
+    let base64Image;
+    try {
+      const yxsrInfo = await refreshYxsrLog();
+      base64Image = await renderYxsrImageBase64(yxsrInfo);
+    } catch (error) {
+      console.error('[RocoYxsrPush] 渲染图片失败:', error);
+      return;
+    }
+
+    const groups = parseGroups(cfg.yxsrPushGroups);
+    let successCount = 0;
+    let failCount = 0;
+
+    for (const groupId of groups) {
+      try {
+        const group = Bot.pickGroup(groupId);
+        if (!group) {
+          failCount++;
+          console.warn(`[RocoYxsrPush] 群 ${groupId} 不存在或无法访问`);
+          continue;
+        }
+
+        await group.sendMsg(segment.image(`base64://${base64Image}`));
+        successCount++;
+      } catch (error) {
+        failCount++;
+        console.error(`[RocoYxsrPush] 推送到群 ${groupId} 失败:`, error);
+      }
+    }
+
+    console.log(`[RocoYxsrPush] 推送完成：成功 ${successCount} 个群，失败 ${failCount} 个群`);
+  } catch (error) {
+    console.error('[RocoYxsrPush] 推送失败:', error);
   }
 }
 
@@ -709,7 +663,7 @@ export default class RocoYxsrPush extends plugin {
 
     setTimeout(checkAndRun, 10 * 1000);
 
-    console.log('[RocoYxsrPush] 定时任务已启动，监控触发时间：07:59 / 11:59 / 15:59 / 19:59');
+    console.log('[RocoYxsrPush] 定时任务已启动，推送时间：08:01 / 12:01 / 16:01 / 20:01');
   }
 
   async manualPush(e) {

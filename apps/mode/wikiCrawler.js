@@ -122,12 +122,18 @@ function calculateTimeRange() {
 
 // 提取特定内容
 function extractContent(html) {
+  // 先移除 display:none 的隐藏项（过往时段商品），只保留当前可见商品
+  const filteredHtml = html.replace(
+    /<li\b[^>]*?display\s*:\s*none[^>]*>[\s\S]*?<\/li>/gi,
+    ''
+  );
+
   // 从 sp-text 类中提取商品信息
   const regex = /<div class="sp-text">[\s\S]*?<p><em>([^<]+)<\/em><\/p>[\s\S]*?<div><em>价格：([^<]+)\s*<\/em><img/gi;
   const matches = [];
   let match;
 
-  while ((match = regex.exec(html)) !== null) {
+  while ((match = regex.exec(filteredHtml)) !== null) {
     const itemName = match[1].trim();
     const price = match[2].trim();
     if (itemName) {
@@ -280,7 +286,8 @@ export default getYxsrInfo;
 
 // 如果直接运行此文件
 const currentFilePath = new URL(import.meta.url).pathname.replace(/^\//, '');
-if (currentFilePath === process.argv[1] || currentFilePath.toLowerCase() === process.argv[1].toLowerCase()) {
+const argv1 = process.argv[1];
+if (argv1 && (currentFilePath === argv1 || currentFilePath.toLowerCase() === argv1.toLowerCase())) {
   // 直接运行时强制刷新数据
   console.log('开始获取远行商人信息...');
   refreshYxsrLog()

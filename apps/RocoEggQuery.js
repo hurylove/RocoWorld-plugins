@@ -41,7 +41,7 @@ export default class RocoEggQuery extends plugin {
 
       await this.reply('正在查询孵蛋信息，请稍候...', false);
 
-      const imageBase64 = await crawlLuoke(size, weight);
+      const imageBase64 = await crawlLuoke(weight, size);
 
       if (imageBase64) {
         await this.reply(segment.image(`base64://${imageBase64}`), false);

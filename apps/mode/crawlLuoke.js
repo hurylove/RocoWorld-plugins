@@ -1,13 +1,51 @@
 import fs from 'fs';
 import path from 'path';
-import pinyin from 'pinyin';
+import https from 'https';
 import puppeteer from 'puppeteer';
 
 const projectRoot = process.cwd();
-const DATA_DIR = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'BinData');
+const PLUGIN_DIR = path.join(projectRoot, 'plugins', 'RocoWorld-plugins');
+const DATA_DIR = path.join(PLUGIN_DIR, 'data', 'BinData');
+const JLTJ_DIR = path.join(PLUGIN_DIR, 'data', 'jltj');
+const JLLB_PATH = path.join(PLUGIN_DIR, 'data', 'jllb', '精灵列表.json');
+const configPath = path.join(PLUGIN_DIR, 'config', 'config.yaml');
 
-// 图片 CDN 配置
-const IMAGE_CDN_BASE = 'https://raw.gitcode.com/hurylove/rocom_img/raw/main/friends';
+function parseYAML(yamlContent) {
+    const config = {};
+    const lines = yamlContent.split('\n');
+
+    for (const line of lines) {
+        const trimmedLine = line.trim();
+        if (!trimmedLine || trimmedLine.startsWith('#')) continue;
+
+        const colonIndex = trimmedLine.indexOf(':');
+        if (colonIndex > 0) {
+            const key = trimmedLine.substring(0, colonIndex).trim();
+            let value = trimmedLine.substring(colonIndex + 1).trim();
+
+            if (
+                (value.startsWith('"') && value.endsWith('"')) ||
+                (value.startsWith("'") && value.endsWith("'"))
+            ) {
+                value = value.substring(1, value.length - 1);
+            }
+
+            config[key] = value;
+        }
+    }
+
+    return config;
+}
+
+function loadConfig() {
+    try {
+        const configData = fs.readFileSync(configPath, 'utf-8');
+        return parseYAML(configData);
+    } catch (error) {
+        console.warn('读取配置文件失败，使用默认配置:', error.message);
+        return {};
+    }
+}
 
 function loadJSONFile(fileName) {
     const filePath = path.join(DATA_DIR, fileName);
@@ -20,9 +58,36 @@ function loadJSONFile(fileName) {
     }
 }
 
-function petNameToPinyin(name) {
-    const result = pinyin.pinyin(name, { style: 0 });
-    return result.join('').toLowerCase();
+function loadJlbSet() {
+    try {
+        const data = fs.readFileSync(JLLB_PATH, 'utf-8');
+        const list = JSON.parse(data);
+        const nameSet = new Set();
+        for (const item of list) {
+            if (item['名字']) {
+                nameSet.add(item['名字']);
+            }
+        }
+        return nameSet;
+    } catch (error) {
+        console.error('读取精灵列表.json 失败:', error.message);
+        return new Set();
+    }
+}
+
+function getPetPortrait(petName) {
+    try {
+        const jltjPath = path.join(JLTJ_DIR, `${petName}.json`);
+        if (!fs.existsSync(jltjPath)) {
+            return null;
+        }
+        const data = fs.readFileSync(jltjPath, 'utf-8');
+        const json = JSON.parse(data);
+        return json.portrait || null;
+    } catch (error) {
+        console.warn(`读取精灵图鉴 ${petName} 失败:`, error.message);
+        return null;
+    }
 }
 
 function calculateSimilarity(inputWeight, inputHeight, eggData) {
@@ -100,29 +165,83 @@ function findClosestPets(inputWeight, inputHeight, topN = 10) {
     return uniqueResults;
 }
 
-function getWebpFileName(petName) {
-    const py = petNameToPinyin(petName);
-    return `JL_${py}.webp`;
+async function fetchImageAsBase64(url) {
+    return new Promise((resolve) => {
+        const options = {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+        };
+
+        const req = https.get(url, options, (response) => {
+            if (response.statusCode !== 200) {
+                console.log(`图片加载失败 ${url}: HTTP ${response.statusCode}`);
+                resolve(null);
+                return;
+            }
+
+            const chunks = [];
+            response.on('data', (chunk) => chunks.push(chunk));
+            response.on('end', () => {
+                const buffer = Buffer.concat(chunks);
+                const base64 = buffer.toString('base64');
+                const ext = url.split('.').pop().split('?')[0].toLowerCase();
+                const mime = ext === 'png' ? 'image/png' : 'image/webp';
+                resolve(`data:${mime};base64,${base64}`);
+            });
+        }).on('error', (error) => {
+            console.log(`图片加载失败 ${url}: ${error.message}`);
+            resolve(null);
+        }).setTimeout(8000, () => {
+            console.log(`图片加载超时 ${url}`);
+            resolve(null);
+        });
+    });
 }
 
-function getPetImageUrl(petName) {
-    const webpName = getWebpFileName(petName);
-    return `${IMAGE_CDN_BASE}/${webpName}`;
+async function preloadImagesFromPortraits(results) {
+    const imageCache = {};
+    
+    const loadTasks = results.map(async (result) => {
+        if (result.portrait) {
+            const base64 = await fetchImageAsBase64(result.portrait);
+            if (base64) {
+                imageCache[result.name] = base64;
+            }
+        }
+    });
+    
+    await Promise.all(loadTasks);
+    return imageCache;
+}
+
+function filterByJlb(results, jlbSet) {
+    const filtered = [];
+    for (const result of results) {
+        if (jlbSet.has(result.name)) {
+            filtered.push(result);
+        }
+    }
+    return filtered;
+}
+
+function attachPortraits(results) {
+    for (const result of results) {
+        result.portrait = getPetPortrait(result.name);
+    }
+    return results;
 }
 
 function printResults(results, inputWeightKg, inputHeightM) {
     console.log(`\n=== 匹配结果 (按相似度排序) ==`);
-    console.log(`\n序号 | 宠物名称 | 相似度 | webp文件名`);
-    console.log(`-----|----------|--------|-------------------`);
+    console.log(`\n序号 | 宠物名称 | 相似度`);
+    console.log(`-----|----------|--------`);
     
     results.forEach((result, index) => {
         const similarity = (result.similarity * 100).toFixed(2) + '%';
-        const webpName = getWebpFileName(result.name);
-        
         console.log(`${index + 1}`.padStart(4, ' ') + ' | ' +
                     result.name.padEnd(8, ' ') + ' | ' +
-                    similarity.padStart(6, ' ') + ' | ' +
-                    webpName);
+                    similarity.padStart(6, ' '));
     });
 }
 
@@ -158,11 +277,24 @@ function escapeHTML(value) {
 }
 
 async function renderResultImage(results, inputWeightKg, inputHeightM) {
+    const config = loadConfig();
+    
+    console.log('正在预加载宠物图片...');
+    const imageCache = await preloadImagesFromPortraits(results);
+    console.log(`图片预加载完成，成功加载 ${Object.keys(imageCache).length}/${results.length} 张图片`);
+    
     const launchOptions = {
         headless: 'new',
         defaultViewport: null,
         args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu']
     };
+
+    if (config.chromiumPath) {
+        console.log(`使用配置的Chrome路径: ${config.chromiumPath}`);
+        launchOptions.executablePath = config.chromiumPath;
+    } else {
+        console.log('使用默认Chrome路径');
+    }
 
     const browser = await puppeteer.launch(launchOptions);
     const page = await browser.newPage();
@@ -170,6 +302,10 @@ async function renderResultImage(results, inputWeightKg, inputHeightM) {
     try {
         const topCandidate = results[0];
         const otherCandidates = results.slice(1);
+        
+        const getImageSrc = (petName) => {
+            return imageCache[petName] || '';
+        };
 
         const html = `
 <!DOCTYPE html>
@@ -484,49 +620,49 @@ async function renderResultImage(results, inputWeightKg, inputHeightM) {
 </head>
 <body>
     <div class="board">
-        <div class="top">
-            <div class="title-wrap">
-                <h1 class="title">洛克王国孵蛋查询</h1>
-                <div class="date">蛋尺寸匹配工具</div>
-            </div>
-            <div class="stats">
-                <div class="chip">候选数量 <strong>${results.length}</strong></div>
-            </div>
-        </div>
-        
-        <div class="section-tip">输入参数：重量 ${inputWeightKg}kg，高度 ${inputHeightM}m</div>
-        
-        <div class="input-info">
-            蛋尺寸：重量 ${inputWeightKg} kg (${(inputWeightKg * 1000).toFixed(0)}g)，高度 ${inputHeightM} m (${(inputHeightM * 100).toFixed(1)}cm)
-        </div>
-
-        ${topCandidate ? `
-        <div class="lead-candidate">
-            <div class="lead-thumb-wrap">
-                <img src="${getPetImageUrl(topCandidate.name)}" alt="${escapeHTML(topCandidate.name)}" class="lead-thumb" />
-            </div>
-            <div class="lead-info">
-                <div class="lead-title">${escapeHTML(topCandidate.name)}</div>
-                <div class="lead-sub">最匹配的宠物蛋</div>
-                <div class="lead-metrics">
-                    <span class="lead-metric">尺寸: ${topCandidate.heightLow}-${topCandidate.heightHigh}cm</span>
-                    <span class="lead-metric">重量: ${topCandidate.weightLow}-${topCandidate.weightHigh}g</span>
-                    <span class="lead-metric">相似度: ${(topCandidate.similarity * 100).toFixed(2)}%</span>
+            <div class="top">
+                <div class="title-wrap">
+                    <h1 class="title">洛克王国孵蛋查询</h1>
+                    <div class="date">蛋尺寸匹配工具</div>
+                </div>
+                <div class="stats">
+                    <div class="chip">候选数量 <strong>${results.length}</strong></div>
                 </div>
             </div>
-            <div class="tag">最佳匹配</div>
-        </div>
-        ` : ''}
+            
+            <div class="section-tip">输入参数：重量 ${inputWeightKg}kg，高度 ${inputHeightM}m</div>
+            
+            <div class="input-info">
+                蛋尺寸：重量 ${inputWeightKg} kg (${(inputWeightKg * 1000).toFixed(0)}g)，高度 ${inputHeightM} m (${(inputHeightM * 100).toFixed(1)}cm)
+            </div>
 
-        ${otherCandidates && otherCandidates.length > 0 ? `
-        <div class="candidates-list">
-            <h3>其他候选宠物</h3>
-            <div class="list">
-                ${otherCandidates.map((candidate, index) => `
-                <div class="candidate-row">
-                    <div class="candidate-thumb-wrap">
-                        <img src="${getPetImageUrl(candidate.name)}" alt="${escapeHTML(candidate.name)}" class="candidate-thumb" />
+            ${topCandidate ? `
+            <div class="lead-candidate">
+                <div class="lead-thumb-wrap">
+                    ${getImageSrc(topCandidate.name) ? `<img src="${getImageSrc(topCandidate.name)}" alt="${escapeHTML(topCandidate.name)}" class="lead-thumb" />` : `<div class="thumb-fallback">${escapeHTML(topCandidate.name)[0] || '?'}</div>`}
+                </div>
+                <div class="lead-info">
+                    <div class="lead-title">${escapeHTML(topCandidate.name)}</div>
+                    <div class="lead-sub">最匹配的宠物蛋</div>
+                    <div class="lead-metrics">
+                        <span class="lead-metric">尺寸: ${topCandidate.heightLow}-${topCandidate.heightHigh}cm</span>
+                        <span class="lead-metric">重量: ${topCandidate.weightLow}-${topCandidate.weightHigh}g</span>
+                        <span class="lead-metric">相似度: ${(topCandidate.similarity * 100).toFixed(2)}%</span>
                     </div>
+                </div>
+                <div class="tag">最佳匹配</div>
+            </div>
+            ` : ''}
+
+            ${otherCandidates && otherCandidates.length > 0 ? `
+            <div class="candidates-list">
+                <h3>其他候选宠物</h3>
+                <div class="list">
+                    ${otherCandidates.map((candidate, index) => `
+                    <div class="candidate-row">
+                        <div class="candidate-thumb-wrap">
+                            ${getImageSrc(candidate.name) ? `<img src="${getImageSrc(candidate.name)}" alt="${escapeHTML(candidate.name)}" class="candidate-thumb" />` : `<div class="thumb-fallback">${escapeHTML(candidate.name)[0] || '?'}</div>`}
+                        </div>
                     <div class="candidate-info">
                         <div class="candidate-title">${escapeHTML(candidate.name)}</div>
                         <div class="candidate-metrics">
@@ -542,7 +678,8 @@ async function renderResultImage(results, inputWeightKg, inputHeightM) {
         </div>
         ` : ''}
         
-        <div class="footer">RocoWorld 插件渲染 | 数据来源: PET_EGG_CONF</div>
+            <div class="footer">RocoWorld 插件渲染 | 数据来源: PET_EGG_CONF</div>
+        </div>
     </div>
 </body>
 </html>
@@ -550,6 +687,8 @@ async function renderResultImage(results, inputWeightKg, inputHeightM) {
 
         await page.setViewport({ width: 1520, height: 800 });
         await page.setContent(html, { waitUntil: 'networkidle0' });
+
+        await new Promise(resolve => setTimeout(resolve, 500));
 
         const image = await page.screenshot({
             encoding: 'base64',
@@ -567,21 +706,37 @@ async function crawlLuoke(weightKg, heightM, topN = 10) {
     const inputWeightG = weightKg * 1000;
     const inputHeightCm = heightM * 100;
 
-    const results = findClosestPets(inputWeightG, inputHeightCm, topN);
+    const rawResults = findClosestPets(inputWeightG, inputHeightCm, 20);
     
-    if (results.length === 0) {
+    if (rawResults.length === 0) {
         return null;
     }
 
-    const imageBase64 = await renderResultImage(results, weightKg, heightM);
+    const jlbSet = loadJlbSet();
+    console.log(`精灵列表共 ${jlbSet.size} 个精灵，匹配到 ${rawResults.length} 个候选`);
+    
+    let filtered = filterByJlb(rawResults, jlbSet);
+    console.log(`过滤后剩余 ${filtered.length} 个精灵（在精灵列表中）`);
+    
+    if (filtered.length === 0) {
+        return null;
+    }
+    
+    filtered = filtered.slice(0, topN);
+    
+    attachPortraits(filtered);
+    const withPortraits = filtered.filter(r => r.portrait);
+    console.log(`有 portrait 的精灵: ${withPortraits.length}/${filtered.length}`);
+
+    const imageBase64 = await renderResultImage(filtered, weightKg, heightM);
     return imageBase64;
 }
 
 export {
     findClosestPets,
     calculateSimilarity,
-    getWebpFileName,
-    getPetImageUrl,
+    filterByJlb,
+    attachPortraits,
     renderResultImage,
     crawlLuoke
 };

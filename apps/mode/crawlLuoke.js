@@ -585,3 +585,5 @@ export {
     renderResultImage,
     crawlLuoke
 };
+
+export default crawlLuoke;

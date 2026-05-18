@@ -457,7 +457,7 @@ function getPushTriggerHour(date) {
 
   const targetHours = [8, 12, 16, 20];
   if (!targetHours.includes(h)) return null;
-  if (min !== 1) return null;
+  if (min !== 2) return null;
 
   return h;
 }
@@ -476,7 +476,7 @@ function getStopHour(date) {
 function getCurrentTriggerKey(date) {
   const triggerHour = getPushTriggerHour(date);
   if (triggerHour === null) return null;
-  return `${formatDateKey(date)} ${String(triggerHour).padStart(2, '0')}:01`;
+  return `${formatDateKey(date)} ${String(triggerHour).padStart(2, '0')}:02`;
 }
 
 function getCurrentStopKey(date) {
@@ -663,7 +663,7 @@ export default class RocoYxsrPush extends plugin {
 
     setTimeout(checkAndRun, 10 * 1000);
 
-    console.log('[RocoYxsrPush] 定时任务已启动，推送时间：08:01 / 12:01 / 16:01 / 20:01');
+    console.log('[RocoYxsrPush] 定时任务已启动，推送时间：08:02 / 12:02 / 16:02 / 20:02');
   }
 
   async manualPush(e) {

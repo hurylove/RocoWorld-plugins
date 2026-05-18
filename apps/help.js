@@ -73,6 +73,14 @@ const helpSections = [
     ]
   },
   {
+    title: "词条查询",
+    items: [
+      { cmd: "#术语查询 关键词", desc: "查询词条，例如：#术语查询 洛克贝" },
+      { cmd: "#术语总览", desc: "查看完整词条总览" },
+      { cmd: "#术语大全", desc: "查看完整词条总览（别名）" }
+    ]
+  },
+  {
     title: "商人信息",
     items: [
       { cmd: "#远行商人", desc: "查看洛克王国远行商人信息" },
@@ -80,10 +88,10 @@ const helpSections = [
     ]
   },
   {
-    title: "孵蛋反差",
+    title: "孵蛋反查",
     items: [
-      { cmd: "#孵蛋查询", desc: "查询孵蛋可能孵化的宠物，例如：#孵蛋查询 0.28 2.36" },
-      { cmd: "#蛋查询", desc: "查询孵蛋可能孵化的宠物，例如：#蛋查询 0.28 2.36" }
+      { cmd: "#孵蛋查询 尺寸 重量", desc: "查询孵蛋可能孵化的宠物，例如：#孵蛋查询 0.28 2.36" },
+      { cmd: "#蛋查询 尺寸 重量", desc: "查询孵蛋可能孵化的宠物（别名）" }
     ]
   },
   {
@@ -151,42 +159,30 @@ async function generateHelpImage() {
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap');
 
         :root {
-          --bg-1: #f7f9fc;
-          --bg-2: #edf2ff;
-          --panel: rgba(255, 255, 255, 0.96);
-          --line: rgba(148, 163, 184, 0.28);
-          --text-main: #1f2937;
+          --text-main: #1e293b;
           --text-sub: #64748b;
-          --accent-1: #6366f1;
-          --accent-2: #8b5cf6;
-          --accent-3: #ec4899;
+          --line: rgba(148, 163, 184, 0.30);
         }
 
-        * {
-          box-sizing: border-box;
-        }
+        * { box-sizing: border-box; }
 
         body {
           margin: 0;
-          padding: 34px;
-          width: 1520px;
+          padding: 40px;
+          width: 1480px;
           min-height: 800px;
           color: var(--text-main);
           font-family: 'Noto Sans SC', sans-serif;
-          background:
-            radial-gradient(circle at 9% 10%, rgba(99, 102, 241, 0.14), transparent 32%),
-            radial-gradient(circle at 86% 14%, rgba(236, 72, 153, 0.10), transparent 35%),
-            radial-gradient(circle at 84% 92%, rgba(56, 189, 248, 0.10), transparent 30%),
-            linear-gradient(150deg, var(--bg-1), var(--bg-2));
+          background: linear-gradient(145deg, #f8fbff 0%, #eef4ff 52%, #f7fafc 100%);
         }
 
-        .container {
+        .card {
           width: 100%;
-          background: var(--panel);
-          border: 1px solid rgba(148, 163, 184, 0.2);
-          border-radius: 24px;
-          box-shadow: 0 12px 32px rgba(15, 23, 42, 0.10);
-          padding: 24px;
+          background: linear-gradient(165deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.92));
+          border: 1px solid rgba(148, 163, 184, 0.35);
+          border-radius: 26px;
+          box-shadow: 0 20px 45px rgba(30, 41, 59, 0.12);
+          padding: 32px;
         }
 
         .header {
@@ -194,90 +190,83 @@ async function generateHelpImage() {
           justify-content: space-between;
           align-items: flex-end;
           gap: 16px;
-          margin-bottom: 18px;
-          padding-bottom: 18px;
+          margin-bottom: 22px;
+          padding-bottom: 22px;
           border-bottom: 1px solid var(--line);
         }
 
         .title-wrap h1 {
           margin: 0;
-          font-size: 40px;
-          line-height: 1.1;
-          letter-spacing: 0.5px;
+          font-size: 42px;
+          line-height: 1.15;
+          letter-spacing: 0.6px;
           font-family: 'Orbitron', 'Noto Sans SC', sans-serif;
-          background: linear-gradient(90deg, #0f172a, #4f46e5, #db2777);
+          background: linear-gradient(90deg, #0f172a, #2563eb, #0ea5a4);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
 
         .title-wrap p {
-          margin: 8px 0 0;
+          margin: 10px 0 0;
           color: var(--text-sub);
-          font-size: 15px;
+          font-size: 16px;
+          font-weight: 500;
         }
 
         .meta {
           text-align: right;
           color: var(--text-sub);
-          font-size: 13px;
+          font-size: 14px;
           line-height: 1.6;
         }
 
-        .chip {
-          display: inline-block;
-          padding: 6px 12px;
-          border-radius: 999px;
-          border: 1px solid var(--line);
-          background: rgba(255, 255, 255, 0.9);
-          color: #4338ca;
-          font-size: 13px;
-          font-weight: 600;
-        }
-
         .content {
-          padding-top: 8px;
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
         }
 
         .section {
-          margin-top: 14px;
-          border: 1px solid var(--line);
-          border-radius: 16px;
+          border: 1px solid rgba(148, 163, 184, 0.25);
+          border-radius: 18px;
           overflow: hidden;
-          background: rgba(255, 255, 255, 0.94);
+          background: rgba(255, 255, 255, 0.88);
+          box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
         }
 
         .section-header {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 12px 16px;
-          background: linear-gradient(90deg, rgba(99, 102, 241, 0.92), rgba(139, 92, 246, 0.88));
+          padding: 14px 20px;
+          background: linear-gradient(90deg, rgba(37, 99, 235, 0.90), rgba(14, 165, 180, 0.88));
           color: #fff;
         }
 
         .section-title {
-          font-size: 18px;
+          font-size: 20px;
           font-weight: 700;
-          letter-spacing: 0.4px;
+          letter-spacing: 0.5px;
         }
 
         .section-count {
-          font-size: 13px;
+          font-size: 14px;
           opacity: 0.95;
+          font-weight: 500;
         }
 
         .list {
-          padding: 14px 16px;
+          padding: 16px 20px;
           background: #ffffff;
         }
 
         .row {
           display: grid;
-          grid-template-columns: minmax(400px, 40%) 1fr;
-          gap: 20px;
+          grid-template-columns: minmax(420px, 40%) 1fr;
+          gap: 24px;
           align-items: center;
-          padding: 14px 10px;
-          border-bottom: 1px dashed rgba(148, 163, 184, 0.2);
+          padding: 16px 12px;
+          border-bottom: 1px dashed rgba(148, 163, 184, 0.22);
         }
 
         .row:last-child {
@@ -285,35 +274,34 @@ async function generateHelpImage() {
         }
 
         .cmd {
-          font-size: 26px;
+          font-size: 24px;
           font-weight: 700;
-          color: #4f46e5;
-          background: rgba(99, 102, 241, 0.08);
-          border: 1px solid rgba(99, 102, 241, 0.18);
-          border-radius: 10px;
-          padding: 12px 16px;
-          line-height: 1.45;
+          color: #1d4ed8;
+          background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(14, 165, 180, 0.06));
+          border: 1px solid rgba(37, 99, 235, 0.20);
+          border-radius: 12px;
+          padding: 14px 18px;
+          line-height: 1.5;
           word-break: break-all;
         }
 
         .desc {
-          font-size: 22px;
+          font-size: 20px;
           color: #475569;
           line-height: 1.6;
-          padding-top: 3px;
           font-weight: 500;
         }
 
         .footer {
-          margin-top: 16px;
-          padding: 14px 16px;
-          border-radius: 12px;
-          background: rgba(99, 102, 241, 0.06);
+          margin-top: 24px;
+          padding: 16px 20px;
+          border-radius: 14px;
+          background: linear-gradient(135deg, rgba(37, 99, 235, 0.06), rgba(14, 165, 180, 0.06));
           border: 1px solid var(--line);
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 12px 16px;
-          font-size: 13px;
+          font-size: 14px;
         }
 
         .meta-item {
@@ -328,7 +316,7 @@ async function generateHelpImage() {
       </style>
     </head>
     <body>
-      <div class="container">
+      <div class="card">
         <div class="header">
           <div class="title-wrap">
             <h1>洛克王国插件帮助</h1>

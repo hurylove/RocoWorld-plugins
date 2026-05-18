@@ -1,6 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import https from 'https';
 import puppeteer from 'puppeteer';
 
 const projectRoot = process.cwd();
@@ -9,6 +8,8 @@ const DATA_DIR = path.join(PLUGIN_DIR, 'data', 'BinData');
 const JLTJ_DIR = path.join(PLUGIN_DIR, 'data', 'jltj');
 const JLLB_PATH = path.join(PLUGIN_DIR, 'data', 'jllb', '精灵列表.json');
 const EXCLUDE_PATH = path.join(PLUGIN_DIR, 'data', 'jllb', '排除名单.json');
+const FRIENDS_DIR = path.join(PLUGIN_DIR, 'data', 'friends');
+const PETS_JSON_PATH = path.join(PLUGIN_DIR, 'data', 'other', 'Pets.json');
 const configPath = path.join(PLUGIN_DIR, 'config', 'config.yaml');
 
 function parseYAML(yamlContent) {
@@ -93,17 +94,39 @@ function loadExcludeSet() {
     }
 }
 
-function getPetPortrait(petName) {
+// 缓存 Pets.json 的 id → 英文name 映射
+let _petsIdToNameMap = null;
+function loadPetsIdToNameMap() {
+    if (_petsIdToNameMap) return _petsIdToNameMap;
     try {
-        const jltjPath = path.join(JLTJ_DIR, `${petName}.json`);
-        if (!fs.existsSync(jltjPath)) {
-            return null;
+        const data = fs.readFileSync(PETS_JSON_PATH, 'utf-8');
+        const list = JSON.parse(data);
+        _petsIdToNameMap = {};
+        for (const pet of list) {
+            if (pet.id && pet.name) {
+                _petsIdToNameMap[pet.id] = pet.name;
+            }
         }
-        const data = fs.readFileSync(jltjPath, 'utf-8');
-        const json = JSON.parse(data);
-        return json.portrait || null;
+        return _petsIdToNameMap;
     } catch (error) {
-        console.warn(`读取精灵图鉴 ${petName} 失败:`, error.message);
+        console.warn('读取 Pets.json 失败:', error.message);
+        _petsIdToNameMap = {};
+        return _petsIdToNameMap;
+    }
+}
+
+// 通过 baseId 获取本地 friends 图片的 base64，找不到返回 null
+function getPetLocalImageBase64(baseId) {
+    const idToName = loadPetsIdToNameMap();
+    const engName = idToName[baseId];
+    if (!engName) return null;
+    const filePath = path.join(FRIENDS_DIR, `JL_${engName}.webp`);
+    if (!fs.existsSync(filePath)) return null;
+    try {
+        const buf = fs.readFileSync(filePath);
+        return `data:image/webp;base64,${buf.toString('base64')}`;
+    } catch (error) {
+        console.warn(`读取本地图片 JL_${engName}.webp 失败:`, error.message);
         return null;
     }
 }
@@ -156,6 +179,7 @@ function findClosestPets(inputWeight, inputHeight, topN = 10) {
             petId: eggData.pet_id,
             baseId: baseId,
             name: petName,
+            form: eggData.form || '',
             modelId: eggData.model_id,
             weightLow: eggData.weight_low,
             weightHigh: eggData.weight_high,
@@ -169,12 +193,13 @@ function findClosestPets(inputWeight, inputHeight, topN = 10) {
 
     results.sort((a, b) => b.similarity - a.similarity);
     
-    const seenNames = new Set();
+    const seenKeys = new Set();
     const uniqueResults = [];
     
     for (const result of results) {
-        if (!seenNames.has(result.name)) {
-            seenNames.add(result.name);
+        const key = result.name + '|' + (result.form || '');
+        if (!seenKeys.has(key)) {
+            seenKeys.add(key);
             uniqueResults.push(result);
             if (uniqueResults.length >= topN) break;
         }
@@ -183,53 +208,16 @@ function findClosestPets(inputWeight, inputHeight, topN = 10) {
     return uniqueResults;
 }
 
-async function fetchImageAsBase64(url) {
-    return new Promise((resolve) => {
-        const options = {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-            }
-        };
-
-        const req = https.get(url, options, (response) => {
-            if (response.statusCode !== 200) {
-                console.log(`图片加载失败 ${url}: HTTP ${response.statusCode}`);
-                resolve(null);
-                return;
-            }
-
-            const chunks = [];
-            response.on('data', (chunk) => chunks.push(chunk));
-            response.on('end', () => {
-                const buffer = Buffer.concat(chunks);
-                const base64 = buffer.toString('base64');
-                const ext = url.split('.').pop().split('?')[0].toLowerCase();
-                const mime = ext === 'png' ? 'image/png' : 'image/webp';
-                resolve(`data:${mime};base64,${base64}`);
-            });
-        }).on('error', (error) => {
-            console.log(`图片加载失败 ${url}: ${error.message}`);
-            resolve(null);
-        }).setTimeout(8000, () => {
-            console.log(`图片加载超时 ${url}`);
-            resolve(null);
-        });
-    });
-}
-
-async function preloadImagesFromPortraits(results) {
+function preloadImagesFromLocal(results) {
     const imageCache = {};
-    
-    const loadTasks = results.map(async (result) => {
-        if (result.portrait) {
-            const base64 = await fetchImageAsBase64(result.portrait);
+    for (const result of results) {
+        if (result.baseId) {
+            const base64 = getPetLocalImageBase64(result.baseId);
             if (base64) {
-                imageCache[result.name] = base64;
+                imageCache[getDisplayName(result)] = base64;
             }
         }
-    });
-    
-    await Promise.all(loadTasks);
+    }
     return imageCache;
 }
 
@@ -254,9 +242,7 @@ function filterByExcludeList(results, excludeSet) {
 }
 
 function attachPortraits(results) {
-    for (const result of results) {
-        result.portrait = getPetPortrait(result.name);
-    }
+    // 保留此函数以兼容，现在图片直接从本地读取，不再需要 portrait URL
     return results;
 }
 
@@ -304,12 +290,16 @@ function escapeHTML(value) {
         .replaceAll("'", '&#39;');
 }
 
+function getDisplayName(item) {
+    return item.form ? `${item.name}（${item.form}）` : item.name;
+}
+
 async function renderResultImage(results, inputWeightKg, inputHeightM) {
     const config = loadConfig();
     
-    console.log('正在预加载宠物图片...');
-    const imageCache = await preloadImagesFromPortraits(results);
-    console.log(`图片预加载完成，成功加载 ${Object.keys(imageCache).length}/${results.length} 张图片`);
+    console.log('正在加载本地宠物图片...');
+    const imageCache = preloadImagesFromLocal(results);
+    console.log(`本地图片加载完成，成功加载 ${Object.keys(imageCache).length}/${results.length} 张图片`);
     
     const launchOptions = {
         headless: 'new',
@@ -667,10 +657,10 @@ async function renderResultImage(results, inputWeightKg, inputHeightM) {
             ${topCandidate ? `
             <div class="lead-candidate">
                 <div class="lead-thumb-wrap">
-                    ${getImageSrc(topCandidate.name) ? `<img src="${getImageSrc(topCandidate.name)}" alt="${escapeHTML(topCandidate.name)}" class="lead-thumb" />` : `<div class="thumb-fallback">${escapeHTML(topCandidate.name)[0] || '?'}</div>`}
+                    ${getImageSrc(getDisplayName(topCandidate)) ? `<img src="${getImageSrc(getDisplayName(topCandidate))}" alt="${escapeHTML(getDisplayName(topCandidate))}" class="lead-thumb" />` : `<div class="thumb-fallback">${escapeHTML(getDisplayName(topCandidate))[0] || '?'}</div>`}
                 </div>
                 <div class="lead-info">
-                    <div class="lead-title">${escapeHTML(topCandidate.name)}</div>
+                    <div class="lead-title">${escapeHTML(getDisplayName(topCandidate))}</div>
                     <div class="lead-sub">最匹配的宠物蛋</div>
                     <div class="lead-metrics">
                         <span class="lead-metric">尺寸: ${topCandidate.heightLow}-${topCandidate.heightHigh}cm</span>
@@ -689,10 +679,10 @@ async function renderResultImage(results, inputWeightKg, inputHeightM) {
                     ${otherCandidates.map((candidate, index) => `
                     <div class="candidate-row">
                         <div class="candidate-thumb-wrap">
-                            ${getImageSrc(candidate.name) ? `<img src="${getImageSrc(candidate.name)}" alt="${escapeHTML(candidate.name)}" class="candidate-thumb" />` : `<div class="thumb-fallback">${escapeHTML(candidate.name)[0] || '?'}</div>`}
+                            ${getImageSrc(getDisplayName(candidate)) ? `<img src="${getImageSrc(getDisplayName(candidate))}" alt="${escapeHTML(getDisplayName(candidate))}" class="candidate-thumb" />` : `<div class="thumb-fallback">${escapeHTML(getDisplayName(candidate))[0] || '?'}</div>`}
                         </div>
                     <div class="candidate-info">
-                        <div class="candidate-title">${escapeHTML(candidate.name)}</div>
+                        <div class="candidate-title">${escapeHTML(getDisplayName(candidate))}</div>
                         <div class="candidate-metrics">
                             <span class="candidate-metric">尺寸: ${candidate.heightLow}-${candidate.heightHigh}cm</span>
                             <span class="candidate-metric">重量: ${candidate.weightLow}-${candidate.weightHigh}g</span>
@@ -752,10 +742,6 @@ async function crawlLuoke(weightKg, heightM, topN = 10) {
     
     filtered = filtered.slice(0, topN);
     
-    attachPortraits(filtered);
-    const withPortraits = filtered.filter(r => r.portrait);
-    console.log(`有 portrait 的精灵: ${withPortraits.length}/${filtered.length}`);
-
     const imageBase64 = await renderResultImage(filtered, weightKg, heightM);
     return imageBase64;
 }

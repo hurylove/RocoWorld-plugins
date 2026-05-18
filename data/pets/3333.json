@@ -1,0 +1,1598 @@
+{
+    "id": 3333,
+    "name": "xuewawa",
+    "form": "default",
+    "main_type": {
+        "id": 7,
+        "name": "Ice",
+        "localized": {
+            "zh": "冰"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 7,
+        "name": "Ice",
+        "localized": {
+            "zh": "冰"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "雪娃娃"
+        }
+    },
+    "implemented": true,
+    "base_hp": 56,
+    "base_phy_atk": 67,
+    "base_mag_atk": 67,
+    "base_phy_def": 63,
+    "base_mag_def": 63,
+    "base_spd": 69,
+    "evolves_from_id": null,
+    "species": {
+        "id": 139,
+        "name": "xuewawa",
+        "localized": {
+            "zh": "雪娃娃"
+        }
+    },
+    "trait": {
+        "id": 200123,
+        "name": "冰封",
+        "description": "在场时，敌方全技能能耗+1。",
+        "icon_id": "200123",
+        "localized": {
+            "zh": {
+                "name": "冰封",
+                "description": "在场时，敌方全技能能耗+1。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020780,
+            "name": "敌方获得1层萌化。",
+            "icon_id": "700023",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "“可以不用再战斗了”。"
+        },
+        {
+            "id": 7090230,
+            "name": "应对！冰墙",
+            "icon_id": "709005",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！冰墙",
+                    "description": "减伤80%，应对攻击：敌方获得2层冻结。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "减伤80%，应对攻击：敌方获得2层冻结。"
+        },
+        {
+            "id": 7090300,
+            "name": "寒风吹",
+            "icon_id": "108025",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "寒风吹",
+                    "description": "造成魔伤，敌方获得魔防-50%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "造成魔伤，敌方获得魔防-50%。"
+        },
+        {
+            "id": 7020480,
+            "name": "造成魔伤，1连击，应对状态：本技能变为3连击。",
+            "icon_id": "702049",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成魔伤，1连击，应对状态：本技能变为3连击。",
+                    "description": "不是所有精灵都能掌握的技能，如果使用不好的话会自己绊倒自己。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 35,
+            "description": "不是所有精灵都能掌握的技能，如果使用不好的话会自己绊倒自己。"
+        },
+        {
+            "id": 7020660,
+            "name": "敌方获得全攻击技能能耗+3，持续3回合。",
+            "icon_id": "702072",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得全攻击技能能耗+3，持续3回合。",
+                    "description": "一种比较激进的社交行为，也是精灵对战中常用的心理战术。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "一种比较激进的社交行为，也是精灵对战中常用的心理战术。"
+        },
+        {
+            "id": 7090280,
+            "name": "应对！滚雪球",
+            "icon_id": "108023",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！滚雪球",
+                    "description": "造成物伤，敌方获得2层冻结，应对状态：额外获得2层，本次技能威力翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "造成物伤，敌方获得2层冻结，应对状态：额外获得2层，本次技能威力翻倍。"
+        },
+        {
+            "id": 7090180,
+            "name": "应对！瞬间零度",
+            "icon_id": "709007",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！瞬间零度",
+                    "description": "本回合敌方使用的技能能耗+3，应对防御：改为全技能能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "本回合敌方使用的技能能耗+3，应对防御：改为全技能能耗+3。"
+        },
+        {
+            "id": 7090350,
+            "name": "应对！冰蛋壳",
+            "icon_id": "108031",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！冰蛋壳",
+                    "description": "减伤60%，应对攻击：敌方获得2层减速印记。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：敌方获得2层减速印记。"
+        },
+        {
+            "id": 7020920,
+            "name": "星星撞击",
+            "icon_id": "101074",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "星星撞击",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 50,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020650,
+            "name": "休息回复",
+            "icon_id": "700018",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "休息回复",
+                    "description": "自己回复30%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己回复30%生命。"
+        },
+        {
+            "id": 7090360,
+            "name": "应对！雪替身",
+            "icon_id": "108034",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！雪替身",
+                    "description": "减伤70%，应对攻击：回复能量，回复值等于被应对技能能耗的2倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": null,
+            "description": "减伤70%，应对攻击：回复能量，回复值等于被应对技能能耗的2倍。"
+        },
+        {
+            "id": 7090320,
+            "name": "碎冰冰",
+            "icon_id": "108027",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "碎冰冰",
+                    "description": "造成魔伤，敌方每有1层冻结，本次技能威力+20。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "造成魔伤，敌方每有1层冻结，本次技能威力+20。"
+        },
+        {
+            "id": 7090330,
+            "name": "冰捆缚",
+            "icon_id": "108028",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰捆缚",
+                    "description": "2连击，每次连击敌方获得全技能能耗+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "2连击，每次连击敌方获得全技能能耗+1。"
+        },
+        {
+            "id": 7090150,
+            "name": "冰冻光线",
+            "icon_id": "709003",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰冻光线",
+                    "description": "造成魔伤，若敌方有冻结，本次技能威力+60，应对状态：使冻结翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 90,
+            "description": "造成魔伤，若敌方有冻结，本次技能威力+60，应对状态：使冻结翻倍。"
+        },
+        {
+            "id": 7090370,
+            "name": "冰锋横扫",
+            "icon_id": "709009",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰锋横扫",
+                    "description": "造成魔伤，本技能威力等于敌方精灵技能总能耗的10倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "造成魔伤，本技能威力等于敌方精灵技能总能耗的10倍。"
+        },
+        {
+            "id": 7090170,
+            "name": "霜降",
+            "icon_id": "709012",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "霜降",
+                    "description": "敌方获得4层冻结。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "敌方获得4层冻结。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7170190,
+            "name": "幽灵爆发",
+            "icon_id": "116013",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "幽灵爆发",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7170160,
+            "name": "恐吓",
+            "icon_id": "705002",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恐吓",
+                    "description": "减伤70%，应对攻击：敌方失去3能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "减伤70%，应对攻击：敌方失去3能量。"
+        },
+        {
+            "id": 7170230,
+            "name": "灵媒",
+            "icon_id": "116017",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "灵媒",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 25,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7170250,
+            "name": "勾魂",
+            "icon_id": "116019",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "勾魂",
+                    "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+        },
+        {
+            "id": 7170240,
+            "name": "嘲弄",
+            "icon_id": "116018",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嘲弄",
+                    "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。"
+        },
+        {
+            "id": 7170130,
+            "name": "恶作剧",
+            "icon_id": "705004",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恶作剧",
+                    "description": "造成物伤，敌方每有1能量，本次技能威力-10%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "造成物伤，敌方每有1能量，本次技能威力-10%。"
+        },
+        {
+            "id": 7190350,
+            "name": "应对！二律背反",
+            "icon_id": "118017",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！二律背反",
+                    "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
+        },
+        {
+            "id": 7190240,
+            "name": "坍缩",
+            "icon_id": "118004",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "坍缩",
+                    "description": "造成魔伤，若击败敌方，自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 100,
+            "description": "造成魔伤，若击败敌方，自己获得魔攻+70%。"
+        },
+        {
+            "id": 7190290,
+            "name": "星轨裂变",
+            "icon_id": "118009",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "星轨裂变",
+                    "description": "敌方获得4层星陨印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得4层星陨印记。"
+        },
+        {
+            "id": 7190330,
+            "name": "心灵洞悉",
+            "icon_id": "719009",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "心灵洞悉",
+                    "description": "敌方获得星陨印记，获得层数等于敌方印记层数。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "敌方获得星陨印记，获得层数等于敌方印记层数。"
+        },
+        {
+            "id": 7020840,
+            "name": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
+            "icon_id": "700029",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
+                    "description": "这使你的精灵充满了决心。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "这使你的精灵充满了决心。"
+        },
+        {
+            "id": 7020720,
+            "name": "主场优势",
+            "icon_id": "201042",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "主场优势",
+                    "description": "自己获得1层攻击印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得1层攻击印记。"
+        },
+        {
+            "id": 7021090,
+            "name": "三连破",
+            "icon_id": "201091",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "三连破",
+                    "description": "自己获得物攻+30%，3连击。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得物攻+30%，3连击。"
+        },
+        {
+            "id": 7021160,
+            "name": "逆袭",
+            "icon_id": "201102",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "逆袭",
+                    "description": "造成物伤，本技能能耗每+1，威力+50。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "造成物伤，本技能能耗每+1，威力+50。"
+        },
+        {
+            "id": 7090210,
+            "name": "应对！冰天雪地",
+            "icon_id": "709004",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！冰天雪地",
+                    "description": "减伤80%，应对攻击：被应对技能能耗+3。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：被应对技能能耗+3。"
+        },
+        {
+            "id": 7021110,
+            "name": "晒太阳",
+            "icon_id": "201094",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3333,
+            "type_id": 1,
+            "move_id": 7020640,
+            "move": {
+                "id": 7020640,
+                "name": "魔法增效",
+                "icon_id": "700031",
+                "move_type": {
+                    "id": 1,
+                    "name": "Normal",
+                    "localized": {
+                        "zh": "普通"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "魔法增效",
+                        "description": "自己获得魔攻+70%。"
+                    }
+                },
+                "move_category": "Status",
+                "energy_cost": 2,
+                "power": null,
+                "description": "自己获得魔攻+70%。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 2,
+            "move_id": 7030220,
+            "move": {
+                "id": 7030220,
+                "name": "光能聚集",
+                "icon_id": "703029",
+                "move_type": {
+                    "id": 2,
+                    "name": "Grass",
+                    "localized": {
+                        "zh": "草"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "光能聚集",
+                        "description": "造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"
+                    }
+                },
+                "move_category": "Status",
+                "energy_cost": 2,
+                "power": null,
+                "description": "造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 3,
+            "move_id": 7040260,
+            "move": {
+                "id": 7040260,
+                "name": "造成物伤，每使用1次其他火系技能，本技能威力永久翻倍。",
+                "icon_id": "704012",
+                "move_type": {
+                    "id": 3,
+                    "name": "Fire",
+                    "localized": {
+                        "zh": "火"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "造成物伤，每使用1次其他火系技能，本技能威力永久翻倍。",
+                        "description": "火红的烈焰从地底最深处向外迸发，构成了火系部族的盛大舞台。"
+                    }
+                },
+                "move_category": "Status",
+                "energy_cost": 2,
+                "power": null,
+                "description": "火红的烈焰从地底最深处向外迸发，构成了火系部族的盛大舞台。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 4,
+            "move_id": 7050230,
+            "move": {
+                "id": 7050230,
+                "name": "自己获得魔攻+190%。",
+                "icon_id": "705024",
+                "move_type": {
+                    "id": 4,
+                    "name": "Water",
+                    "localized": {
+                        "zh": "水"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "自己获得魔攻+190%。",
+                        "description": "水就挨着陆地，摸到水就摸到了世界的尽头。"
+                    }
+                },
+                "move_category": "Status",
+                "energy_cost": 1,
+                "power": null,
+                "description": "水就挨着陆地，摸到水就摸到了世界的尽头。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 5,
+            "move_id": 7060200,
+            "move": {
+                "id": 7060200,
+                "name": "脉冲光线",
+                "icon_id": "105012",
+                "move_type": {
+                    "id": 5,
+                    "name": "Light",
+                    "localized": {
+                        "zh": "光"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "脉冲光线",
+                        "description": "对敌方精灵造成魔法伤害。"
+                    }
+                },
+                "move_category": "Magic Attack",
+                "energy_cost": 3,
+                "power": 100,
+                "description": "对敌方精灵造成魔法伤害。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 6,
+            "move_id": 7080200,
+            "move": {
+                "id": 7080200,
+                "name": "泥浆铠甲",
+                "icon_id": "708018",
+                "move_type": {
+                    "id": 6,
+                    "name": "Ground",
+                    "localized": {
+                        "zh": "地"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "泥浆铠甲",
+                        "description": "敌方3回合无法更换精灵，应对防御：敌方获得双防-60%。"
+                    }
+                },
+                "move_category": "Status",
+                "energy_cost": 2,
+                "power": null,
+                "description": "敌方3回合无法更换精灵，应对防御：敌方获得双防-60%。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 7,
+            "move_id": 7090250,
+            "move": {
+                "id": 7090250,
+                "name": "冷风",
+                "icon_id": "108020",
+                "move_type": {
+                    "id": 7,
+                    "name": "Ice",
+                    "localized": {
+                        "zh": "冰"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "冷风",
+                        "description": "对敌方精灵造成魔法伤害。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 2,
+                "power": 80,
+                "description": "对敌方精灵造成魔法伤害。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 8,
+            "move_id": 7100150,
+            "move": {
+                "id": 7100150,
+                "name": "蓄力，造成魔伤，若蓄力期间受到攻击，本技能威力变为敌方技能威力的3倍。",
+                "icon_id": "710004",
+                "move_type": {
+                    "id": 8,
+                    "name": "Dragon",
+                    "localized": {
+                        "zh": "龙"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "蓄力，造成魔伤，若蓄力期间受到攻击，本技能威力变为敌方技能威力的3倍。",
+                        "description": "必将加倍奉还。"
+                    }
+                },
+                "move_category": "Magic Attack",
+                "energy_cost": 3,
+                "power": 200,
+                "description": "必将加倍奉还。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 9,
+            "move_id": 7110250,
+            "move": {
+                "id": 7110250,
+                "name": "雷暴",
+                "icon_id": "110009",
+                "move_type": {
+                    "id": 9,
+                    "name": "Electric",
+                    "localized": {
+                        "zh": "电"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "雷暴",
+                        "description": "造成魔伤，迸发：本技能获得所有生效过的迸发，每获得1种，本技能能耗+1，威力+10。"
+                    }
+                },
+                "move_category": "Status",
+                "energy_cost": 2,
+                "power": null,
+                "description": "造成魔伤，迸发：本技能获得所有生效过的迸发，每获得1种，本技能能耗+1，威力+10。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 10,
+            "move_id": 7120120,
+            "move": {
+                "id": 7120120,
+                "name": "感染病",
+                "icon_id": "712007",
+                "move_type": {
+                    "id": 10,
+                    "name": "Poison",
+                    "localized": {
+                        "zh": "毒"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "感染病",
+                        "description": "造成魔伤，若击败敌方则将中毒转化为中毒印记。"
+                    }
+                },
+                "move_category": "Status",
+                "energy_cost": 3,
+                "power": null,
+                "description": "造成魔伤，若击败敌方则将中毒转化为中毒印记。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 11,
+            "move_id": 7130180,
+            "move": {
+                "id": 7130180,
+                "name": "捆缚",
+                "icon_id": "713010",
+                "move_type": {
+                    "id": 11,
+                    "name": "Bug",
+                    "localized": {
+                        "zh": "虫"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "捆缚",
+                        "description": "敌方获得2层中毒，获得1次奉献：敌方获得2层中毒。"
+                    }
+                },
+                "move_category": "Status",
+                "energy_cost": 2,
+                "power": null,
+                "description": "敌方获得2层中毒，获得1次奉献：敌方获得2层中毒。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 12,
+            "move_id": 7140140,
+            "move": {
+                "id": 7140140,
+                "name": "应对！截拳",
+                "icon_id": "714011",
+                "move_type": {
+                    "id": 12,
+                    "name": "Fighting",
+                    "localized": {
+                        "zh": "武"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "应对！截拳",
+                        "description": "造成物伤，应对状态：额外造成打断，回复该技能能耗的能量。"
+                    }
+                },
+                "move_category": "Status",
+                "energy_cost": 2,
+                "power": null,
+                "description": "造成物伤，应对状态：额外造成打断，回复该技能能耗的能量。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 13,
+            "move_id": 7150300,
+            "move": {
+                "id": 7150300,
+                "name": "侵蚀龙卷",
+                "icon_id": "114025",
+                "move_type": {
+                    "id": 13,
+                    "name": "Flying",
+                    "localized": {
+                        "zh": "翼"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "侵蚀龙卷",
+                        "description": "造成物伤，速度比敌方越高，本次技能威力越高。"
+                    }
+                },
+                "move_category": "Status",
+                "energy_cost": 2,
+                "power": null,
+                "description": "造成物伤，速度比敌方越高，本次技能威力越高。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 14,
+            "move_id": 7160200,
+            "move": {
+                "id": 7160200,
+                "name": "反弹",
+                "icon_id": "716005",
+                "move_type": {
+                    "id": 14,
+                    "name": "Cute",
+                    "localized": {
+                        "zh": "萌"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "反弹",
+                        "description": "将自己的萌化转移给敌方。"
+                    }
+                },
+                "move_category": "Status",
+                "energy_cost": 3,
+                "power": null,
+                "description": "将自己的萌化转移给敌方。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 15,
+            "move_id": 7170220,
+            "move": {
+                "id": 7170220,
+                "name": "造成魔伤，5连击。",
+                "icon_id": "116016",
+                "move_type": {
+                    "id": 15,
+                    "name": "Ghost",
+                    "localized": {
+                        "zh": "幽"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "造成魔伤，5连击。",
+                        "description": "铃铛幽灵从不发声。"
+                    }
+                },
+                "move_category": "Magic Attack",
+                "energy_cost": 3,
+                "power": 100,
+                "description": "铃铛幽灵从不发声。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 16,
+            "move_id": 7180160,
+            "move": {
+                "id": 7180160,
+                "name": "造成物伤，自己每失去10%生命，本技能能耗-1。",
+                "icon_id": "718014",
+                "move_type": {
+                    "id": 16,
+                    "name": "Dark",
+                    "localized": {
+                        "zh": "恶"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "造成物伤，自己每失去10%生命，本技能能耗-1。",
+                        "description": "谋生之地也可能是葬身之处。"
+                    }
+                },
+                "move_category": "Status",
+                "energy_cost": 2,
+                "power": null,
+                "description": "谋生之地也可能是葬身之处。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 17,
+            "move_id": 7070170,
+            "move": {
+                "id": 7070170,
+                "name": "造成物伤，此技能位置不会改变。",
+                "icon_id": "106017",
+                "move_type": {
+                    "id": 17,
+                    "name": "Mechanical",
+                    "localized": {
+                        "zh": "机械"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "造成物伤，此技能位置不会改变。",
+                        "description": "主轴旋转，力量传递。"
+                    }
+                },
+                "move_category": "Status",
+                "energy_cost": 1,
+                "power": null,
+                "description": "主轴旋转，力量传递。"
+            }
+        },
+        {
+            "monster_id": 3333,
+            "type_id": 18,
+            "move_id": 7190280,
+            "move": {
+                "id": 7190280,
+                "name": "应对！错乱",
+                "icon_id": "719004",
+                "move_type": {
+                    "id": 18,
+                    "name": "Illusion",
+                    "localized": {
+                        "zh": "幻"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "应对！错乱",
+                        "description": "造成魔伤，应对状态：敌方获得3层星陨印记。"
+                    }
+                },
+                "move_category": "Status",
+                "energy_cost": 4,
+                "power": null,
+                "description": "造成魔伤，应对状态：敌方获得3层星陨印记。"
+            }
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3333,
+                        "name": "xuewawa",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "雪娃娃"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null,
+                        "evolution_conditions": []
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3334,
+                        "name": "bingfengyuanling",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "冰封怨灵"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null,
+                        "evolution_conditions": [
+                            "等级达到 26 级"
+                        ]
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3335,
+                        "name": "xueling",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "雪灵"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null,
+                        "evolution_conditions": [
+                            "等级达到 42 级"
+                        ]
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 139,
+        "current_monster_id": 3333
+    },
+    "world_profile": {
+        "type_desc": "守望精灵",
+        "description_habitat": "常见于雪山",
+        "introduction": "它对洛克族异常友好，面对温暖的抚摸与拥抱也从不抗拒。传说它们是最早与洛克建立契约的种族之一，耳朵的轮廓正像星之链在契约双方之间勾勒出的形状。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "catch_info": {
+        "catch_threshold": 1000,
+        "catch_guarant_rate": 1700,
+        "catch_ball_level": null
+    },
+    "breeding": {
+        "id": 3333001,
+        "pet_id": 3333001,
+        "name": "雪娃娃",
+        "model_id": 3333001,
+        "hatch_data": 43200,
+        "weight_low": 2380,
+        "weight_high": 3264,
+        "height_low": 12,
+        "height_high": 17,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            8,
+            1125
+        ],
+        "egg_add_glass_prob_array": [
+            1,
+            50
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3333001,
+                "pet_id": 3333001,
+                "name": "雪娃娃",
+                "model_id": 3333001,
+                "hatch_data": 43200,
+                "weight_low": 2380,
+                "weight_high": 3264,
+                "height_low": 12,
+                "height_high": 17,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    8,
+                    1125
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    50
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3333002,
+                "pet_id": 3333002,
+                "name": "雪娃娃（完美无暇）",
+                "model_id": 3333001,
+                "hatch_data": 300,
+                "weight_low": 2380,
+                "weight_high": 3264,
+                "height_low": 12,
+                "height_high": 17,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3333003,
+                "pet_id": 3333003,
+                "name": "雪娃娃（幽血脉，完美无暇）",
+                "model_id": 3333001,
+                "hatch_data": 300,
+                "weight_low": 2380,
+                "weight_high": 3264,
+                "height_low": 12,
+                "height_high": 17,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 33330001,
+                "pet_id": 33330001,
+                "name": "雪娃娃",
+                "model_id": 3333001,
+                "hatch_data": 300,
+                "weight_low": 2380,
+                "weight_high": 3264,
+                "height_low": 12,
+                "height_high": 17,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000031,
+                "pet_id": 91000031,
+                "name": "雪娃娃",
+                "model_id": 3333001,
+                "hatch_data": 43200,
+                "weight_low": 2380,
+                "weight_high": 3264,
+                "height_low": 12,
+                "height_high": 17,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    8,
+                    1125
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    50
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000031,
+                "pet_id": 92000031,
+                "name": "雪娃娃",
+                "model_id": 3333001,
+                "hatch_data": 43200,
+                "weight_low": 2380,
+                "weight_high": 3264,
+                "height_low": 12,
+                "height_high": 17,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000031,
+                "pet_id": 93000031,
+                "name": "雪娃娃",
+                "model_id": 3333001,
+                "hatch_data": 43200,
+                "weight_low": 2380,
+                "weight_high": 3264,
+                "height_low": 12,
+                "height_high": 17,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000031,
+                "pet_id": 94000031,
+                "name": "雪娃娃",
+                "model_id": 3333001,
+                "hatch_data": 43200,
+                "weight_low": 2380,
+                "weight_high": 3264,
+                "height_low": 12,
+                "height_high": 17,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000031,
+                "pet_id": 96000031,
+                "name": "雪娃娃",
+                "model_id": 3333001,
+                "hatch_data": 43200,
+                "weight_low": 2380,
+                "weight_high": 3264,
+                "height_low": 12,
+                "height_high": 17,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000031,
+                "pet_id": 97000031,
+                "name": "雪娃娃",
+                "model_id": 3333001,
+                "hatch_data": 43200,
+                "weight_low": 2380,
+                "weight_high": 3264,
+                "height_low": 12,
+                "height_high": 17,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000031,
+                "pet_id": 98000031,
+                "name": "雪娃娃",
+                "model_id": 3333001,
+                "hatch_data": 43200,
+                "weight_low": 2380,
+                "weight_high": 3264,
+                "height_low": 12,
+                "height_high": 17,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000084,
+                "pet_id": 99000084,
+                "name": "雪娃娃",
+                "model_id": 3333001,
+                "hatch_data": 72000,
+                "weight_low": 2380,
+                "weight_high": 3264,
+                "height_low": 12,
+                "height_high": 17,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3333,
+        "egg_groups": [
+            7
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

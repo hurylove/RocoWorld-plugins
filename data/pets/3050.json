@@ -1,0 +1,1498 @@
+{
+    "id": 3050,
+    "name": "jiyishi",
+    "form": "default",
+    "main_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "name": "记忆石"
+        }
+    },
+    "implemented": true,
+    "base_hp": 112,
+    "base_phy_atk": 108,
+    "base_mag_atk": 97,
+    "base_phy_def": 141,
+    "base_mag_def": 79,
+    "base_spd": 70,
+    "evolves_from_id": null,
+    "species": {
+        "id": 95,
+        "name": "jiyishi",
+        "localized": {
+            "zh": "记忆石"
+        }
+    },
+    "trait": {
+        "id": 200099,
+        "name": "不移",
+        "description": "携带的无额外效果的攻击技能，威力+30%。",
+        "icon_id": "200099",
+        "localized": {
+            "zh": {
+                "name": "不移",
+                "description": "携带的无额外效果的攻击技能，威力+30%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020630,
+            "name": "力量增效",
+            "icon_id": "700020",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7020780,
+            "name": "敌方获得1层萌化。",
+            "icon_id": "700023",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "“可以不用再战斗了”。"
+        },
+        {
+            "id": 7080110,
+            "name": "应对！机械2",
+            "icon_id": "708015",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！机械2",
+                    "description": "造成物伤，传动1，应对状态：本次威力+100"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "造成物伤，传动1，应对状态：本次威力+100"
+        },
+        {
+            "id": 7080120,
+            "name": "对敌方精灵造成物理伤害。",
+            "icon_id": "708012",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "对敌方精灵造成物理伤害。",
+                    "description": "聚沙，成塔，成为利刃。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "聚沙，成塔，成为利刃。"
+        },
+        {
+            "id": 7020620,
+            "name": "造成物伤，10连击。",
+            "icon_id": "700021",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，10连击。",
+                    "description": "杀伤力不大，但……"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "杀伤力不大，但……"
+        },
+        {
+            "id": 7080310,
+            "name": "热砂",
+            "icon_id": "107027",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热砂",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7080370,
+            "name": "石肤术",
+            "icon_id": "107034",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石肤术",
+                    "description": "自己获得物防+160%和魔防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得物防+160%和魔防-60%。"
+        },
+        {
+            "id": 7020940,
+            "name": "对敌方精灵造成物理伤害。",
+            "icon_id": "101076",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "对敌方精灵造成物理伤害。",
+                    "description": "如果期末魔法等级考试压垮我，那我就扁扁的躺在宿舍里。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 130,
+            "description": "如果期末魔法等级考试压垮我，那我就扁扁的躺在宿舍里。"
+        },
+        {
+            "id": 7080380,
+            "name": "自己获得物防+140%和速度-30。",
+            "icon_id": "307035",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "自己获得物防+140%和速度-30。",
+                    "description": "现在我与山岳同呼吸。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "现在我与山岳同呼吸。"
+        },
+        {
+            "id": 7080180,
+            "name": "造成物伤，回合结束时，本技能能耗永久-5。",
+            "icon_id": "708006",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，回合结束时，本技能能耗永久-5。",
+                    "description": "虽然质朴但是工匠们的杰出之作——经过十代的改良，命中率终于到达百分之九十九。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 10,
+            "power": 190,
+            "description": "虽然质朴但是工匠们的杰出之作——经过十代的改良，命中率终于到达百分之九十九。"
+        },
+        {
+            "id": 7080210,
+            "name": "自己获得物攻和物防+60%，应对防御：额外使自己的增益翻倍。",
+            "icon_id": "708021",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "自己获得物攻和物防+60%，应对防御：额外使自己的增益翻倍。",
+                    "description": "即使地底蛮兽也不曾让他们退缩。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "即使地底蛮兽也不曾让他们退缩。"
+        },
+        {
+            "id": 7080170,
+            "name": "应对！裂石",
+            "icon_id": "708001",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！裂石",
+                    "description": "造成物伤，应对状态：敌方获得物防-80%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 30,
+            "power": 140,
+            "description": "造成物伤，应对状态：敌方获得物防-80%。"
+        },
+        {
+            "id": 7080200,
+            "name": "泥浆铠甲",
+            "icon_id": "708018",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泥浆铠甲",
+                    "description": "敌方3回合无法更换精灵，应对防御：敌方获得双防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方3回合无法更换精灵，应对防御：敌方获得双防-60%。"
+        },
+        {
+            "id": 7080160,
+            "name": "石锁",
+            "icon_id": "708003",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石锁",
+                    "description": "造成物伤，敌方3回合无法更换精灵。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "造成物伤，敌方3回合无法更换精灵。"
+        },
+        {
+            "id": 7080330,
+            "name": "造成物伤，物防比敌方越高，本次技能威力越高。",
+            "icon_id": "107029",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，物防比敌方越高，本次技能威力越高。",
+                    "description": "地系部族会把敌人和秘密一同用沙土掩埋。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 80,
+            "description": "地系部族会把敌人和秘密一同用沙土掩埋。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7030440,
+            "name": "花香",
+            "icon_id": "102027",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "花香",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7030470,
+            "name": "叶绿光束",
+            "icon_id": "102030",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "叶绿光束",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7030530,
+            "name": "应对！纤维化",
+            "icon_id": "102038",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！纤维化",
+                    "description": "减伤80%，应对攻击：自己获得物防+70%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 90,
+            "description": "减伤80%，应对攻击：自己获得物防+70%。"
+        },
+        {
+            "id": 7030300,
+            "name": "自己回复15%生命，随后脱离。",
+            "icon_id": "701005",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "自己回复15%生命，随后脱离。",
+                    "description": "不算逃跑。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "不算逃跑。"
+        },
+        {
+            "id": 7060190,
+            "name": "对敌方精灵造成物理伤害。",
+            "icon_id": "105011",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "对敌方精灵造成物理伤害。",
+                    "description": "高能量的离子束，一不小心就会划伤皮肤，让粗心的研究员深受其害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "高能量的离子束，一不小心就会划伤皮肤，让粗心的研究员深受其害。"
+        },
+        {
+            "id": 7060180,
+            "name": "造成物伤，3连击。",
+            "icon_id": "105010",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，3连击。",
+                    "description": "光系研究员曾委托地系部族——用三颗坠落的晨星打造成雪亮的矛尖。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "光系研究员曾委托地系部族——用三颗坠落的晨星打造成雪亮的矛尖。"
+        },
+        {
+            "id": 7060140,
+            "name": "折射",
+            "icon_id": "706008",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "折射",
+                    "description": "造成魔伤，携带其他系别技能会给本技能带来不同效果。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "造成魔伤，携带其他系别技能会给本技能带来不同效果。"
+        },
+        {
+            "id": 7190390,
+            "name": "针状物",
+            "icon_id": "118021",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "针状物",
+                    "description": "造成魔伤，3连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "造成魔伤，3连击。"
+        },
+        {
+            "id": 7190370,
+            "name": "星云漩涡",
+            "icon_id": "118019",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "星云漩涡",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020410,
+            "name": "音爆",
+            "icon_id": "702046",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "音爆",
+                    "description": "造成物伤。每次使用后，本技能威力永久+45。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 130,
+            "description": "造成物伤。每次使用后，本技能威力永久+45。"
+        },
+        {
+            "id": 7020470,
+            "name": "应对！连续爪击",
+            "icon_id": "703004",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！连续爪击",
+                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+        },
+        {
+            "id": 7020490,
+            "name": "造成物伤，3连击。",
+            "icon_id": "702049",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，3连击。",
+                    "description": "优雅的精灵，在此献上它的舞蹈。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "优雅的精灵，在此献上它的舞蹈。"
+        },
+        {
+            "id": 7020860,
+            "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
+            "icon_id": "702085",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
+                    "description": "“你的技能真好用”。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "“你的技能真好用”。"
+        },
+        {
+            "id": 7021100,
+            "name": "热身运动",
+            "icon_id": "201092",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7020730,
+            "name": "敌方本回合使用的技能能耗+7，持续3回合。",
+            "icon_id": "702053",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方本回合使用的技能能耗+7，持续3回合。",
+                    "description": "一个圆圆的机关装置，精灵站上去之后，会发出“吃饭！”“快点！”的声音。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "一个圆圆的机关装置，精灵站上去之后，会发出“吃饭！”“快点！”的声音。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3050,
+            "type_id": 1,
+            "move_id": 7020370,
+            "move": {
+                "id": 7020370,
+                "name": "猛烈撞击",
+                "icon_id": "700001",
+                "move_type": {
+                    "id": 1,
+                    "name": "Normal",
+                    "localized": {
+                        "zh": "普通"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "猛烈撞击",
+                        "description": "造成物伤，自己回复1能量。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 1,
+                "power": 65,
+                "description": "造成物伤，自己回复1能量。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 2,
+            "move_id": 7030170,
+            "move": {
+                "id": 7030170,
+                "name": "种子弹",
+                "icon_id": "703014",
+                "move_type": {
+                    "id": 2,
+                    "name": "Grass",
+                    "localized": {
+                        "zh": "草"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "种子弹",
+                        "description": "造成物伤，自己回复1能量。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 2,
+                "power": 80,
+                "description": "造成物伤，自己回复1能量。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 3,
+            "move_id": 7040150,
+            "move": {
+                "id": 7040150,
+                "name": "针刺射击",
+                "icon_id": "704010",
+                "move_type": {
+                    "id": 3,
+                    "name": "Fire",
+                    "localized": {
+                        "zh": "火"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "针刺射击",
+                        "description": "造成物伤，若敌方本回合更换精灵，自己回复7点能量。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 1,
+                "power": 60,
+                "description": "造成物伤，若敌方本回合更换精灵，自己回复7点能量。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 4,
+            "move_id": 7050330,
+            "move": {
+                "id": 7050330,
+                "name": "水弹",
+                "icon_id": "104022",
+                "move_type": {
+                    "id": 4,
+                    "name": "Water",
+                    "localized": {
+                        "zh": "水"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "水弹",
+                        "description": "对敌方精灵造成魔法伤害。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 1,
+                "power": 60,
+                "description": "对敌方精灵造成魔法伤害。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 5,
+            "move_id": 7060230,
+            "move": {
+                "id": 7060230,
+                "name": "造成魔伤，本技能系别和天气系别相同。",
+                "icon_id": "105015",
+                "move_type": {
+                    "id": 5,
+                    "name": "Light",
+                    "localized": {
+                        "zh": "光"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "造成魔伤，本技能系别和天气系别相同。",
+                        "description": "晶石蜗的狂热研究员说，可以在这个世界上找到6种天然矿石，矿石中蕴含的魔力与相似颜色的晶石蜗十分相似。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 1,
+                "power": 60,
+                "description": "晶石蜗的狂热研究员说，可以在这个世界上找到6种天然矿石，矿石中蕴含的魔力与相似颜色的晶石蜗十分相似。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 6,
+            "move_id": 7080280,
+            "move": {
+                "id": 7080280,
+                "name": "对敌方精灵造成魔法伤害。",
+                "icon_id": "107024",
+                "move_type": {
+                    "id": 6,
+                    "name": "Ground",
+                    "localized": {
+                        "zh": "地"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "对敌方精灵造成魔法伤害。",
+                        "description": "别人用来捏人偶的泥土，在他们手中也是神兵。"
+                    }
+                },
+                "move_category": "Magic Attack",
+                "energy_cost": 1,
+                "power": 60,
+                "description": "别人用来捏人偶的泥土，在他们手中也是神兵。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 7,
+            "move_id": 7090250,
+            "move": {
+                "id": 7090250,
+                "name": "冷风",
+                "icon_id": "108020",
+                "move_type": {
+                    "id": 7,
+                    "name": "Ice",
+                    "localized": {
+                        "zh": "冰"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "冷风",
+                        "description": "对敌方精灵造成魔法伤害。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 2,
+                "power": 80,
+                "description": "对敌方精灵造成魔法伤害。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 8,
+            "move_id": 7100150,
+            "move": {
+                "id": 7100150,
+                "name": "蓄力，造成魔伤，若蓄力期间受到攻击，本技能威力变为敌方技能威力的3倍。",
+                "icon_id": "710004",
+                "move_type": {
+                    "id": 8,
+                    "name": "Dragon",
+                    "localized": {
+                        "zh": "龙"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "蓄力，造成魔伤，若蓄力期间受到攻击，本技能威力变为敌方技能威力的3倍。",
+                        "description": "必将加倍奉还。"
+                    }
+                },
+                "move_category": "Magic Attack",
+                "energy_cost": 3,
+                "power": 200,
+                "description": "必将加倍奉还。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 9,
+            "move_id": 7110300,
+            "move": {
+                "id": 7110300,
+                "name": "电流",
+                "icon_id": "110015",
+                "move_type": {
+                    "id": 9,
+                    "name": "Electric",
+                    "localized": {
+                        "zh": "电"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "电流",
+                        "description": "对敌方精灵造成魔法伤害。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 1,
+                "power": 60,
+                "description": "对敌方精灵造成魔法伤害。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 10,
+            "move_id": 7120200,
+            "move": {
+                "id": 7120200,
+                "name": "溃烂触碰",
+                "icon_id": "111017",
+                "move_type": {
+                    "id": 10,
+                    "name": "Poison",
+                    "localized": {
+                        "zh": "毒"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "溃烂触碰",
+                        "description": "对敌方精灵造成物理伤害。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 2,
+                "power": 80,
+                "description": "对敌方精灵造成物理伤害。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 11,
+            "move_id": 7130260,
+            "move": {
+                "id": 7130260,
+                "name": "虫刺",
+                "icon_id": "112018",
+                "move_type": {
+                    "id": 11,
+                    "name": "Bug",
+                    "localized": {
+                        "zh": "虫"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "虫刺",
+                        "description": "造成魔伤，3连击。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 1,
+                "power": 60,
+                "description": "造成魔伤，3连击。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 12,
+            "move_id": 7140230,
+            "move": {
+                "id": 7140230,
+                "name": "应对！爆冲",
+                "icon_id": "113027",
+                "move_type": {
+                    "id": 12,
+                    "name": "Fighting",
+                    "localized": {
+                        "zh": "武"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "应对！爆冲",
+                        "description": "造成物伤，应对状态：本次技能威力变为5倍。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 1,
+                "power": 25,
+                "description": "造成物伤，应对状态：本次技能威力变为5倍。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 13,
+            "move_id": 7150210,
+            "move": {
+                "id": 7150210,
+                "name": "应对！羽刃",
+                "icon_id": "114016",
+                "move_type": {
+                    "id": 13,
+                    "name": "Flying",
+                    "localized": {
+                        "zh": "翼"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "应对！羽刃",
+                        "description": "造成物伤，应对状态：回合结束使敌方紧急脱离。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 2,
+                "power": 80,
+                "description": "造成物伤，应对状态：回合结束使敌方紧急脱离。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 14,
+            "move_id": 7160240,
+            "move": {
+                "id": 7160240,
+                "name": "魅惑",
+                "icon_id": "115012",
+                "move_type": {
+                    "id": 14,
+                    "name": "Cute",
+                    "localized": {
+                        "zh": "萌"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "魅惑",
+                        "description": "对敌方精灵造成魔法伤害。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 1,
+                "power": 60,
+                "description": "对敌方精灵造成魔法伤害。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 15,
+            "move_id": 7170220,
+            "move": {
+                "id": 7170220,
+                "name": "造成魔伤，5连击。",
+                "icon_id": "116016",
+                "move_type": {
+                    "id": 15,
+                    "name": "Ghost",
+                    "localized": {
+                        "zh": "幽"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "造成魔伤，5连击。",
+                        "description": "铃铛幽灵从不发声。"
+                    }
+                },
+                "move_category": "Magic Attack",
+                "energy_cost": 3,
+                "power": 100,
+                "description": "铃铛幽灵从不发声。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 16,
+            "move_id": 7180080,
+            "move": {
+                "id": 7180080,
+                "name": "魔爪",
+                "icon_id": "718013",
+                "move_type": {
+                    "id": 16,
+                    "name": "Dark",
+                    "localized": {
+                        "zh": "恶"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "魔爪",
+                        "description": "造成物伤，自己回复1能量。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 1,
+                "power": 60,
+                "description": "造成物伤，自己回复1能量。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 17,
+            "move_id": 7070010,
+            "move": {
+                "id": 7070010,
+                "name": "光系技能威力永久+50%，应对防御：改为永久+100%。",
+                "icon_id": "720001",
+                "move_type": {
+                    "id": 17,
+                    "name": "Mechanical",
+                    "localized": {
+                        "zh": "机械"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "光系技能威力永久+50%，应对防御：改为永久+100%。",
+                        "description": "光系研究员的最高杰作——让光最终的归处，与自然融为一体，变成晴天。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 1,
+                "power": 45,
+                "description": "光系研究员的最高杰作——让光最终的归处，与自然融为一体，变成晴天。"
+            }
+        },
+        {
+            "monster_id": 3050,
+            "type_id": 18,
+            "move_id": 7190360,
+            "move": {
+                "id": 7190360,
+                "name": "粒子对撞",
+                "icon_id": "118018",
+                "move_type": {
+                    "id": 18,
+                    "name": "Illusion",
+                    "localized": {
+                        "zh": "幻"
+                    }
+                },
+                "localized": {
+                    "zh": {
+                        "name": "粒子对撞",
+                        "description": "对敌方精灵造成物理伤害。"
+                    }
+                },
+                "move_category": "Physical Attack",
+                "energy_cost": 1,
+                "power": 60,
+                "description": "对敌方精灵造成物理伤害。"
+            }
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3050,
+                        "name": "jiyishi",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "记忆石"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": null,
+                        "evolution_conditions": []
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 0,
+        "total_unique_monsters": 1,
+        "species_id": 95,
+        "current_monster_id": 3050
+    },
+    "world_profile": {
+        "type_desc": "智慧精灵",
+        "description_habitat": "行踪神秘",
+        "introduction": "埋在土地里露出上半截，就像是石碑一样。通过扫描分析它所散发的波动，能窥见一点点王国百年前的历史。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "地面",
+        "classis_id": 7,
+        "classis_name": "岩石类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "catch_info": {
+        "catch_threshold": 500,
+        "catch_guarant_rate": 1200,
+        "catch_ball_level": 1
+    },
+    "breeding": {
+        "id": 3050001,
+        "pet_id": 3050001,
+        "name": "记忆石",
+        "model_id": 3050001,
+        "hatch_data": 72000,
+        "weight_low": 31570,
+        "weight_high": 44800,
+        "height_low": 41,
+        "height_high": 58,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            400,
+            3125
+        ],
+        "egg_add_glass_prob_array": [
+            2,
+            113
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3050001,
+                "pet_id": 3050001,
+                "name": "记忆石",
+                "model_id": 3050001,
+                "hatch_data": 72000,
+                "weight_low": 31570,
+                "weight_high": 44800,
+                "height_low": 41,
+                "height_high": 58,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3050002,
+                "pet_id": 3050002,
+                "name": "记忆石（草系血脉）",
+                "model_id": 3050001,
+                "hatch_data": 72000,
+                "weight_low": 31570,
+                "weight_high": 44800,
+                "height_low": 41,
+                "height_high": 58,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3050003,
+                "pet_id": 3050003,
+                "name": "记忆石（完美无瑕）",
+                "model_id": 3050001,
+                "hatch_data": 300,
+                "weight_low": 31570,
+                "weight_high": 44800,
+                "height_low": 41,
+                "height_high": 58,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 30500001,
+                "pet_id": 30500001,
+                "name": "记忆石",
+                "model_id": 3050001,
+                "hatch_data": 300,
+                "weight_low": 31570,
+                "weight_high": 44800,
+                "height_low": 41,
+                "height_high": 58,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000077,
+                "pet_id": 91000077,
+                "name": "记忆石",
+                "model_id": 3050001,
+                "hatch_data": 72000,
+                "weight_low": 31570,
+                "weight_high": 44800,
+                "height_low": 41,
+                "height_high": 58,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000077,
+                "pet_id": 92000077,
+                "name": "记忆石",
+                "model_id": 3050001,
+                "hatch_data": 72000,
+                "weight_low": 31570,
+                "weight_high": 44800,
+                "height_low": 41,
+                "height_high": 58,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000077,
+                "pet_id": 93000077,
+                "name": "记忆石",
+                "model_id": 3050001,
+                "hatch_data": 72000,
+                "weight_low": 31570,
+                "weight_high": 44800,
+                "height_low": 41,
+                "height_high": 58,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000077,
+                "pet_id": 94000077,
+                "name": "记忆石",
+                "model_id": 3050001,
+                "hatch_data": 72000,
+                "weight_low": 31570,
+                "weight_high": 44800,
+                "height_low": 41,
+                "height_high": 58,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000077,
+                "pet_id": 96000077,
+                "name": "记忆石",
+                "model_id": 3050001,
+                "hatch_data": 72000,
+                "weight_low": 31570,
+                "weight_high": 44800,
+                "height_low": 41,
+                "height_high": 58,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000077,
+                "pet_id": 97000077,
+                "name": "记忆石",
+                "model_id": 3050001,
+                "hatch_data": 72000,
+                "weight_low": 31570,
+                "weight_high": 44800,
+                "height_low": 41,
+                "height_high": 58,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000077,
+                "pet_id": 98000077,
+                "name": "记忆石",
+                "model_id": 3050001,
+                "hatch_data": 72000,
+                "weight_low": 31570,
+                "weight_high": 44800,
+                "height_low": 41,
+                "height_high": 58,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000141,
+                "pet_id": 99000141,
+                "name": "记忆石",
+                "model_id": 3050001,
+                "hatch_data": 72000,
+                "weight_low": 31570,
+                "weight_high": 44800,
+                "height_low": 41,
+                "height_high": 58,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3050,
+        "egg_groups": [
+            11
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

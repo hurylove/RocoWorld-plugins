@@ -1,0 +1,574 @@
+{
+    "id": 9801,
+    "name": "9801",
+    "form": "default",
+    "main_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "鸭吉吉_普通"
+        }
+    },
+    "implemented": false,
+    "base_hp": 800,
+    "base_phy_atk": 82,
+    "base_mag_atk": 75,
+    "base_phy_def": 83,
+    "base_mag_def": 63,
+    "base_spd": 500,
+    "evolves_from_id": null,
+    "species": {
+        "id": 9801,
+        "name": "9801",
+        "localized": {
+            "zh": "鸭吉吉_普通"
+        }
+    },
+    "trait": {
+        "id": 200000,
+        "name": "GM被动",
+        "description": "回合末恢复10能量。",
+        "icon_id": "200074",
+        "localized": {
+            "zh": {
+                "name": "GM被动",
+                "description": "回合末恢复10能量。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7021180,
+            "name": "倾泻",
+            "icon_id": "703016",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+        },
+        {
+            "id": 7030540,
+            "name": "应对！抽枝",
+            "icon_id": "102038",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！抽枝",
+                    "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 90,
+            "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+        },
+        {
+            "id": 7040600,
+            "name": "焚烧烙印",
+            "icon_id": "704013",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "焚烧烙印",
+                    "description": "驱散双方所有印记，每驱散1层，敌方获得5层灼烧。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 40,
+            "description": "驱散双方所有印记，每驱散1层，敌方获得5层灼烧。"
+        },
+        {
+            "id": 7050230,
+            "name": "自己获得魔攻+190%。",
+            "icon_id": "705024",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "自己获得魔攻+190%。",
+                    "description": "水就挨着陆地，摸到水就摸到了世界的尽头。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "水就挨着陆地，摸到水就摸到了世界的尽头。"
+        },
+        {
+            "id": 7050430,
+            "name": "应对！潮汐",
+            "icon_id": "304034",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！潮汐",
+                    "description": "减伤60%，应对攻击：自己获得1层湿润印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 10,
+            "power": null,
+            "description": "减伤60%，应对攻击：自己获得1层湿润印记。"
+        },
+        {
+            "id": 7050450,
+            "name": "应对！水1",
+            "icon_id": "705015",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！水1",
+                    "description": "造成魔伤，应对状态：驱散敌方增益"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 12,
+            "power": 220,
+            "description": "造成魔伤，应对状态：驱散敌方增益"
+        },
+        {
+            "id": 7050460,
+            "name": "水2",
+            "icon_id": "104031",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水2",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7080420,
+            "name": "应对！不动如山",
+            "icon_id": "708003",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！不动如山",
+                    "description": "减伤90%，应对攻击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "减伤90%，应对攻击。"
+        },
+        {
+            "id": 7090410,
+            "name": "应对！冰点",
+            "icon_id": "108022",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！冰点",
+                    "description": "敌方获得5层冻结，应对防御：额外获得5层。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 100,
+            "description": "敌方获得5层冻结，应对防御：额外获得5层。"
+        },
+        {
+            "id": 7100250,
+            "name": "龙威",
+            "icon_id": "109016",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙威",
+                    "description": "自己获得1层龙噬印记 。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得1层龙噬印记 。"
+        },
+        {
+            "id": 7100270,
+            "name": "绵里藏针",
+            "icon_id": "710004",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "绵里藏针",
+                    "description": "造成魔伤，若敌方上回合没受到技能伤害，本技能威力永久+30。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 7,
+            "power": 150,
+            "description": "造成魔伤，若敌方上回合没受到技能伤害，本技能威力永久+30。"
+        },
+        {
+            "id": 7100280,
+            "name": "应对！龙1",
+            "icon_id": "710005",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！龙1",
+                    "description": "造成物伤，应对状态：威力翻倍"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 190,
+            "description": "造成物伤，应对状态：威力翻倍"
+        },
+        {
+            "id": 7100290,
+            "name": "龙2",
+            "icon_id": "710004",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙2",
+                    "description": "蓄力，造成物伤，先手+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "蓄力，造成物伤，先手+1。"
+        },
+        {
+            "id": 7110430,
+            "name": "应对！电磁偏转",
+            "icon_id": "110025",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！电磁偏转",
+                    "description": "减伤70%，应对攻击：下回合所选技能使用次数+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "减伤70%，应对攻击：下回合所选技能使用次数+1。"
+        },
+        {
+            "id": 7140310,
+            "name": "减伤80%，应对攻击：自己获得全技能威力+40。",
+            "icon_id": "113032",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "减伤80%，应对攻击：自己获得全技能威力+40。",
+                    "description": "对战课的某个老师，认为精灵对战中存在一种流体力学，感受空气中魔法的流动，能预测和防御对手的招式。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对战课的某个老师，认为精灵对战中存在一种流体力学，感受空气中魔法的流动，能预测和防御对手的招式。"
+        },
+        {
+            "id": 7140320,
+            "name": "武1",
+            "icon_id": "113032",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "武1",
+                    "description": "造成魔伤，若敌方本回合替换精灵，提高自身50%魔攻。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "造成魔伤，若敌方本回合替换精灵，提高自身50%魔攻。"
+        },
+        {
+            "id": 7150170,
+            "name": "应对！风墙",
+            "icon_id": "715017",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！风墙",
+                    "description": "减伤50%，迅捷，应对攻击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 7,
+            "power": 115,
+            "description": "减伤50%，迅捷，应对攻击。"
+        },
+        {
+            "id": 7160310,
+            "name": "应对！可烤汪2",
+            "icon_id": "716004",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！可烤汪2",
+                    "description": "减伤70%，应对攻击：被应对精灵下回合只能使用被应对技能"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "减伤70%，应对攻击：被应对精灵下回合只能使用被应对技能"
+        },
+        {
+            "id": 7160320,
+            "name": "赋予敌方一层萌化，应对防御：额外赋予一层。",
+            "icon_id": "717013",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "赋予敌方一层萌化，应对防御：额外赋予一层。",
+                    "description": "“它只是一个柔弱无害的小小精灵罢了！”"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "“它只是一个柔弱无害的小小精灵罢了！”"
+        },
+        {
+            "id": 7170270,
+            "name": "应对！虚化",
+            "icon_id": "705004",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！虚化",
+                    "description": "减伤80%，应对攻击：自己获得魔防+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤80%，应对攻击：自己获得魔防+70%。"
+        },
+        {
+            "id": 7180360,
+            "name": "伪造账单",
+            "icon_id": "117027",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "伪造账单",
+                    "description": "若敌方本回合回复生命，改为失去2倍。先手+1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 130,
+            "description": "若敌方本回合回复生命，改为失去2倍。先手+1。"
+        }
+    ],
+    "move_stones": [],
+    "legacy_moves": [],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 9801,
+                        "name": "9801",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉_普通"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null,
+                        "evolution_conditions": []
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 0,
+        "total_unique_monsters": 1,
+        "species_id": 9801,
+        "current_monster_id": 9801
+    },
+    "world_profile": {
+        "type_desc": null,
+        "description_habitat": null,
+        "introduction": "这是一只测试宠物，如果你在不该看到的地方看到了它，请联系策划。",
+        "refresh_locations": [],
+        "movement_type": null,
+        "classis_id": 3,
+        "classis_name": "猫咪类精灵",
+        "handbook_area_ids": []
+    },
+    "catch_info": null,
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 9801,
+        "egg_groups": [],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

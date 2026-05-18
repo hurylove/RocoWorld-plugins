@@ -8,6 +8,7 @@ const PLUGIN_DIR = path.join(projectRoot, 'plugins', 'RocoWorld-plugins');
 const DATA_DIR = path.join(PLUGIN_DIR, 'data', 'BinData');
 const JLTJ_DIR = path.join(PLUGIN_DIR, 'data', 'jltj');
 const JLLB_PATH = path.join(PLUGIN_DIR, 'data', 'jllb', '精灵列表.json');
+const EXCLUDE_PATH = path.join(PLUGIN_DIR, 'data', 'jllb', '排除名单.json');
 const configPath = path.join(PLUGIN_DIR, 'config', 'config.yaml');
 
 function parseYAML(yamlContent) {
@@ -71,6 +72,23 @@ function loadJlbSet() {
         return nameSet;
     } catch (error) {
         console.error('读取精灵列表.json 失败:', error.message);
+        return new Set();
+    }
+}
+
+function loadExcludeSet() {
+    try {
+        const data = fs.readFileSync(EXCLUDE_PATH, 'utf-8');
+        const list = JSON.parse(data);
+        const nameSet = new Set();
+        for (const item of list) {
+            if (item['名字']) {
+                nameSet.add(item['名字']);
+            }
+        }
+        return nameSet;
+    } catch (error) {
+        console.error('读取排除名单.json 失败:', error.message);
         return new Set();
     }
 }
@@ -219,6 +237,16 @@ function filterByJlb(results, jlbSet) {
     const filtered = [];
     for (const result of results) {
         if (jlbSet.has(result.name)) {
+            filtered.push(result);
+        }
+    }
+    return filtered;
+}
+
+function filterByExcludeList(results, excludeSet) {
+    const filtered = [];
+    for (const result of results) {
+        if (!excludeSet.has(result.name)) {
             filtered.push(result);
         }
     }
@@ -712,11 +740,11 @@ async function crawlLuoke(weightKg, heightM, topN = 10) {
         return null;
     }
 
-    const jlbSet = loadJlbSet();
-    console.log(`精灵列表共 ${jlbSet.size} 个精灵，匹配到 ${rawResults.length} 个候选`);
+    const excludeSet = loadExcludeSet();
+    console.log(`排除名单共 ${excludeSet.size} 个精灵，匹配到 ${rawResults.length} 个候选`);
     
-    let filtered = filterByJlb(rawResults, jlbSet);
-    console.log(`过滤后剩余 ${filtered.length} 个精灵（在精灵列表中）`);
+    let filtered = filterByExcludeList(rawResults, excludeSet);
+    console.log(`过滤后剩余 ${filtered.length} 个精灵（不在排除名单中）`);
     
     if (filtered.length === 0) {
         return null;
@@ -736,6 +764,7 @@ export {
     findClosestPets,
     calculateSimilarity,
     filterByJlb,
+    filterByExcludeList,
     attachPortraits,
     renderResultImage,
     crawlLuoke

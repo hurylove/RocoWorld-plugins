@@ -96,21 +96,30 @@ function loadExcludeSet() {
 
 // 缓存 Pets.json 的 id → 英文name 映射
 let _petsIdToNameMap = null;
+// 缓存 Pets.json 的 base_id 对应的所有 id 列表
+let _petsBaseIdMap = null;
+
 function loadPetsIdToNameMap() {
     if (_petsIdToNameMap) return _petsIdToNameMap;
     try {
         const data = fs.readFileSync(PETS_JSON_PATH, 'utf-8');
         const list = JSON.parse(data);
         _petsIdToNameMap = {};
+        _petsBaseIdMap = {};
         for (const pet of list) {
             if (pet.id && pet.name) {
                 _petsIdToNameMap[pet.id] = pet.name;
+                // 收集每个宠物的 base_id（即它自身 id，用于查找同一学名的其他形态）
+                // Pets.json 中 base_id 就是该条目的 id 本身，相同 name 的多个 id 即为同一组
+                if (!_petsBaseIdMap[pet.name]) _petsBaseIdMap[pet.name] = [];
+                _petsBaseIdMap[pet.name].push(pet.id);
             }
         }
         return _petsIdToNameMap;
     } catch (error) {
         console.warn('读取 Pets.json 失败:', error.message);
         _petsIdToNameMap = {};
+        _petsBaseIdMap = {};
         return _petsIdToNameMap;
     }
 }
@@ -120,15 +129,39 @@ function getPetLocalImageBase64(baseId) {
     const idToName = loadPetsIdToNameMap();
     const engName = idToName[baseId];
     if (!engName) return null;
+    // 尝试精确匹配
     const filePath = path.join(FRIENDS_DIR, `JL_${engName}.webp`);
-    if (!fs.existsSync(filePath)) return null;
-    try {
-        const buf = fs.readFileSync(filePath);
-        return `data:image/webp;base64,${buf.toString('base64')}`;
-    } catch (error) {
-        console.warn(`读取本地图片 JL_${engName}.webp 失败:`, error.message);
-        return null;
+    if (fs.existsSync(filePath)) {
+        try {
+            const buf = fs.readFileSync(filePath);
+            return `data:image/webp;base64,${buf.toString('base64')}`;
+        } catch (error) {
+            console.warn(`读取本地图片 JL_${engName}.webp 失败:`, error.message);
+            return null;
+        }
     }
+    // fallback：在 Pets.json 中找同中文名的其他形态 id，取其对应的图片
+    const sameName = _petsBaseIdMap ? _petsBaseIdMap[engName.split('_')[0]] : null;
+    // 更直接：查找所有 Pets.json 中同中文名、不同 id 的条目
+    if (_petsBaseIdMap) {
+        // 找出与当前 engName 开头相同部分的所有 name
+        const siblings = Object.entries(idToName)
+            .filter(([id, name]) => Number(id) !== baseId && name !== engName);
+        for (const [sibId, sibName] of siblings) {
+            // 只尝试相邻 id（差小于10），避免匹配到完全不相关的宠物
+            if (Math.abs(Number(sibId) - baseId) <= 10) {
+                const sibPath = path.join(FRIENDS_DIR, `JL_${sibName}.webp`);
+                if (fs.existsSync(sibPath)) {
+                    console.warn(`未找到 JL_${engName}.webp，使用相邻形态 fallback: JL_${sibName}.webp`);
+                    try {
+                        const buf = fs.readFileSync(sibPath);
+                        return `data:image/webp;base64,${buf.toString('base64')}`;
+                    } catch (_) {}
+                }
+            }
+        }
+    }
+    return null;
 }
 
 function calculateSimilarity(inputWeight, inputHeight, eggData) {
@@ -194,9 +227,17 @@ function findClosestPets(inputWeight, inputHeight, topN = 10) {
     results.sort((a, b) => b.similarity - a.similarity);
     
     const seenKeys = new Set();
+    // 记录已有 form 的宠物名称集合，用于过滤同名无 form 的冗余条目
+    const namesWithForm = new Set();
+    // 第一遍：收集所有有 form 的宠物名称
+    for (const result of results) {
+        if (result.form) namesWithForm.add(result.name);
+    }
     const uniqueResults = [];
     
     for (const result of results) {
+        // 如果该宠物名称存在带 form 的版本，则跳过无 form 的条目
+        if (!result.form && namesWithForm.has(result.name)) continue;
         const key = result.name + '|' + (result.form || '');
         if (!seenKeys.has(key)) {
             seenKeys.add(key);

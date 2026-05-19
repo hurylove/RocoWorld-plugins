@@ -1,5 +1,6 @@
 // 精灵卡牌渲染脚本
 // 功能：根据宠物JSON数据生成宠物解析卡
+// 数据来源：data/pets/{id}.json, data/other/Pets.json, data/friends/JL_{pinyin}.webp
 
 import puppeteer from 'puppeteer';
 import fs from 'fs';
@@ -58,20 +59,158 @@ const config = loadConfig();
 // 等待函数
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
+// 缓存：编号映射（中文名 → 图鉴编号）
+let numberMapCache = null;
+function buildNumberMap() {
+    if (numberMapCache) return numberMapCache;
+    try {
+        const jllbPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'jllb', '精灵列表.json');
+        const rawData = fs.readFileSync(jllbPath, 'utf-8');
+        const list = JSON.parse(rawData);
+        numberMapCache = new Map();
+        for (const entry of list) {
+            numberMapCache.set(entry['名字'], entry['编号']);
+        }
+        return numberMapCache;
+    } catch (error) {
+        console.warn('读取精灵列表失败，将使用默认编号:', error.message);
+        numberMapCache = new Map();
+        return numberMapCache;
+    }
+}
+
+// 获取图鉴编号（支持中文名和 species.id）
+function getPetNumber(zhName, speciesId, fullName) {
+    const map = buildNumberMap();
+    // 优先用完整名称查找（如"梦游（穿旧睡衣的样子）"）
+    if (fullName && map.has(fullName)) {
+        return map.get(fullName);
+    }
+    // 其次用中文名查找
+    if (zhName && map.has(zhName)) {
+        return map.get(zhName);
+    }
+    // 如果都找不到，尝试用 species.id 推导编号
+    if (speciesId != null && speciesId > 0 && speciesId < 10000) {
+        const noStr = `NO.${String(speciesId).padStart(3, '0')}`;
+        // 验证这个编号是否在精灵列表中
+        for (const [, no] of map) {
+            if (no === noStr) {
+                return noStr;
+            }
+        }
+    }
+    return '--';
+}
+
+// 映射技能类型分类
+function mapMoveCategory(category) {
+    const map = {
+        'Physical Attack': '物攻',
+        'Magic Attack': '魔攻',
+        'Status': '状态'
+    };
+    return map[category] || '状态';
+}
+
 // 主函数：生成解析卡
-async function generateCard(spriteName) {
-    // 构建JSON文件路径
-    const jsonPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'jltj', `${spriteName}.json`);
-    console.log(`📄 正在读取精灵数据: ${spriteName}`);
-    let spriteData;
+async function generateCard(spriteName, petId) {
+    // 构建JSON文件路径 - 从 data/pets/{id}.json 读取
+    const jsonPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'pets', `${petId}.json`);
+    console.log(`📄 正在读取精灵数据: ${spriteName} (ID: ${petId})`);
+    let petData;
 
     try {
         const rawData = fs.readFileSync(jsonPath, 'utf-8');
-        spriteData = JSON.parse(rawData);
+        petData = JSON.parse(rawData);
     } catch (error) {
         console.error('❌ 读取或解析 JSON 失败:', error);
         throw error;
     }
+
+    // 提取中文名
+    const zhName = petData.localized?.zh?.name || spriteName;
+
+    // 提取属性
+    const attributes = [];
+    if (petData.main_type?.localized?.zh) {
+        attributes.push(petData.main_type.localized.zh);
+    }
+    if (petData.sub_type?.localized?.zh) {
+        attributes.push(petData.sub_type.localized.zh);
+    }
+    if (attributes.length === 0) {
+        attributes.push('普通');
+    }
+
+    // 提取图鉴编号（传入 species.id 和完整名称作为 fallback）
+    const speciesId = petData.species?.id;
+    const number = getPetNumber(zhName, speciesId, spriteName);
+
+    // 提取基础能力值
+    const stats = {
+        '物攻': petData.base_phy_atk ?? '--',
+        '魔攻': petData.base_mag_atk ?? '--',
+        '生命': petData.base_hp ?? '--',
+        '物防': petData.base_phy_def ?? '--',
+        '魔防': petData.base_mag_def ?? '--',
+        '速度': petData.base_spd ?? '--'
+    };
+
+    // 提取特性
+    const primaryTrait = petData.trait?.localized?.zh || null;
+
+    // 构建头像路径（尝试 data/friends/JL_{pinyin}.webp）
+    const portraitPinyin = petData.name || '';
+    const friendsDir = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'friends');
+    const portraitPath = path.join(friendsDir, `JL_${portraitPinyin}.webp`);
+    let portraitSrc = '';
+    if (fs.existsSync(portraitPath)) {
+        // 转换为 base64 data URI
+        const portraitBuffer = fs.readFileSync(portraitPath);
+        const portraitBase64 = portraitBuffer.toString('base64');
+        portraitSrc = `data:image/webp;base64,${portraitBase64}`;
+    } else {
+        console.warn(`⚠️ 未找到头像文件: JL_${portraitPinyin}.webp`);
+        // fallback：尝试查找同中文名的其他形态的头像
+        try {
+            const petsDataPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'other', 'Pets.json');
+            if (fs.existsSync(petsDataPath)) {
+                const petsRaw = fs.readFileSync(petsDataPath, 'utf-8');
+                const allPets = JSON.parse(petsRaw);
+                // 查找同中文名的其他条目
+                for (const otherPet of allPets) {
+                    if (otherPet.id !== petData.id && otherPet.localized?.zh?.name === zhName && otherPet.name) {
+                        const fallbackPath = path.join(friendsDir, `JL_${otherPet.name}.webp`);
+                        if (fs.existsSync(fallbackPath)) {
+                            const fbBuffer = fs.readFileSync(fallbackPath);
+                            const fbBase64 = fbBuffer.toString('base64');
+                            portraitSrc = `data:image/webp;base64,${fbBase64}`;
+                            console.log(`✅ 使用同形态 fallback 头像: JL_${otherPet.name}.webp`);
+                            break;
+                        }
+                    }
+                }
+            }
+        } catch (fbError) {
+            console.warn('头像 fallback 查找失败:', fbError.message);
+        }
+    }
+
+    // 映射技能数据
+    const mapMove = (move) => {
+        const moveName = move.localized?.zh?.name || move.name || '-';
+        const moveDesc = move.localized?.zh?.description || move.description || '';
+        const moveAttr = move.move_type?.localized?.zh || '普通';
+        const moveType = mapMoveCategory(move.move_category);
+        const power = move.power != null ? move.power : '-';
+        const energy = move.energy_cost != null ? move.energy_cost : '-';
+        return { name: moveName, attr: moveAttr, type: moveType, power, energy, description: moveDesc };
+    };
+
+    const elfSkills = (petData.move_pool || []).map(mapMove);
+    const bloodlineSkills = (petData.legacy_moves || []).map(mapMove);
+    const skillStones = (petData.move_stones || []).map(mapMove);
 
     // 属性颜色映射表
     const attributeColors = {
@@ -191,19 +330,16 @@ async function generateCard(spriteName) {
     };
 
     // 确定精灵的主属性
-    const primaryAttribute = spriteData.attribute && spriteData.attribute.length > 0 ? spriteData.attribute[0] : '普通';
+    const primaryAttribute = attributes.length > 0 ? attributes[0] : '普通';
     const colorScheme = getAttributeColor(primaryAttribute);
 
-    const fallbackAttrText = spriteData.attribute && spriteData.attribute.length > 0 ? spriteData.attribute.join('/') : '普通';
-    const fallbackAttrIcon = spriteData.attributeIcon || '';
+    const fallbackAttrText = attributes.join('/');
 
-    // 技能行渲染
+    // 技能行渲染（不再使用图片图标）
     const renderSkillAttr = (skill) => {
         const attrText = skill?.attr || fallbackAttrText || '-';
-        const attrIcon = skill?.attrIcon || fallbackAttrIcon || '';
         return `
             <div class="skill-attr-badge">
-                ${attrIcon ? `<img src="${attrIcon}" alt="${attrText}" class="skill-attr-icon" />` : ''}
                 <span>${attrText}</span>
             </div>
         `;
@@ -212,7 +348,6 @@ async function generateCard(spriteName) {
     const renderSkillName = (skill) => {
         return `
             <div class="skill-name-wrap">
-                ${skill?.icon ? `<img src="${skill.icon}" alt="${skill.name || 'skill'}" class="skill-icon" />` : ''}
                 <span class="skill-name-text">${skill?.name || '-'}</span>
             </div>
         `;
@@ -226,7 +361,7 @@ async function generateCard(spriteName) {
                 <td><span class="skill-type type-${skill?.type || '状态'}">${skill?.type || '-'}</span></td>
                 <td>${skill?.power || '-'}</td>
                 <td>${skill?.energy || '-'}</td>
-                <td>${skill?.accuracy || '-'}</td>
+                <td>${skill?.description || '-'}</td>
             </tr>
         `;
     };
@@ -253,7 +388,7 @@ async function generateCard(spriteName) {
     try {
         // 计算动态高度
         const baseHeight = 1600;
-        const totalSkills = spriteData.skills.elfSkills.length + spriteData.skills.bloodlineSkills.length + spriteData.skills.skillStones.length;
+        const totalSkills = elfSkills.length + bloodlineSkills.length + skillStones.length;
         const dynamicHeight = baseHeight + (totalSkills * 28);
         const finalHeight = Math.max(dynamicHeight, 2100);
 
@@ -324,11 +459,6 @@ async function generateCard(spriteName) {
                     border: 1px solid ${colorScheme.border.replace('0.6', '0.45')};
                     color: #1e293b;
                 }
-                .attribute-icon {
-                    width: 32px;
-                    height: 32px;
-                    object-fit: contain;
-                }
                 .attribute-text {
                     font-size: 21px;
                     font-weight: bold;
@@ -369,6 +499,16 @@ async function generateCard(spriteName) {
                     object-fit: contain;
                     filter: drop-shadow(0 0 18px ${colorScheme.border.replace('0.6', '0.5')});
                     animation: float 3.1s ease-in-out infinite;
+                }
+                .portrait-placeholder {
+                    width: 282px;
+                    height: 282px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 72px;
+                    color: #94a3b8;
+                    opacity: 0.5;
                 }
                 .info-panel {
                     flex-grow: 1;
@@ -525,14 +665,6 @@ async function generateCard(spriteName) {
                     align-items: center;
                     gap: 8px;
                 }
-                .skill-icon {
-                    width: 23px;
-                    height: 23px;
-                    border-radius: 6px;
-                    object-fit: cover;
-                    border: 1px solid rgba(148, 163, 184, 0.4);
-                    flex-shrink: 0;
-                }
                 .skill-name-text {
                     font-weight: 600;
                     color: #1e293b;
@@ -549,12 +681,6 @@ async function generateCard(spriteName) {
                     min-width: 72px;
                     color: #334155;
                     font-weight: 600;
-                }
-                .skill-attr-icon {
-                    width: 16px;
-                    height: 16px;
-                    object-fit: contain;
-                    flex-shrink: 0;
                 }
                 .skill-type {
                     display: inline-block;
@@ -595,42 +721,41 @@ async function generateCard(spriteName) {
             <div class="card-container">
                 <div class="header">
                     <div class="header-left">
-                        <div class="name">${spriteData.name}</div>
+                        <div class="name">${zhName}</div>
                         <div class="attribute">
-                            ${spriteData.attributeIcon ? `<img src="${spriteData.attributeIcon}" alt="attribute" class="attribute-icon" />` : ''}
-                            <span class="attribute-text">${spriteData.attribute && spriteData.attribute.length > 0 ? spriteData.attribute.join(' ') : '普通'}</span>
+                            <span class="attribute-text">${attributes.join(' ')}</span>
                         </div>
                     </div>
-                    <div class="number">NO.${spriteData.number}</div>
+                    <div class="number">${number}</div>
                 </div>
                 <div class="middle-section">
                     <div class="portrait-container">
-                        <img src="${spriteData.portrait}" alt="Portrait" class="portrait" />
+                        ${portraitSrc ? `<img src="${portraitSrc}" alt="Portrait" class="portrait" />` : `<div class="portrait-placeholder">🐾</div>`}
                     </div>
                     <div class="info-panel">
                         <table class="stats-grid">
                             <tr>
                                 <td class="stat-label">物攻</td>
-                                <td class="stat-value">${spriteData.stats.物攻}</td>
+                                <td class="stat-value">${stats['物攻']}</td>
                                 <td class="stat-label">魔攻</td>
-                                <td class="stat-value">${spriteData.stats.魔攻}</td>
+                                <td class="stat-value">${stats['魔攻']}</td>
                                 <td class="stat-label">生命</td>
-                                <td class="stat-value">${spriteData.stats.生命}</td>
+                                <td class="stat-value">${stats['生命']}</td>
                             </tr>
                             <tr>
                                 <td class="stat-label">物防</td>
-                                <td class="stat-value">${spriteData.stats.物防}</td>
+                                <td class="stat-value">${stats['物防']}</td>
                                 <td class="stat-label">魔防</td>
-                                <td class="stat-value">${spriteData.stats.魔防}</td>
+                                <td class="stat-value">${stats['魔防']}</td>
                                 <td class="stat-label">速度</td>
-                                <td class="stat-value">${spriteData.stats.速度}</td>
+                                <td class="stat-value">${stats['速度']}</td>
                             </tr>
                         </table>
 
-                        ${spriteData.traits && spriteData.traits.length > 0 ? `
+                        ${primaryTrait ? `
                         <div class="trait-box">
-                            <div class="trait-title">✨ ${spriteData.traits[0].name}</div>
-                            <div class="trait-desc">${spriteData.traits[0].description}</div>
+                            <div class="trait-title">✨ ${primaryTrait.name}</div>
+                            <div class="trait-desc">${primaryTrait.description}</div>
                         </div>
                         ` : ''}
                     </div>
@@ -638,6 +763,7 @@ async function generateCard(spriteName) {
                 <div class="section">
                     <div class="section-title">⚔️ 技能列表</div>
                     <div class="skills-container">
+                        ${elfSkills.length > 0 ? `
                         <div class="skill-column">
                             <div class="category-title">精灵技能</div>
                             <table class="skills-table">
@@ -652,10 +778,12 @@ async function generateCard(spriteName) {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    ${spriteData.skills.elfSkills.map(skill => renderSkillRow(skill)).join('')}
+                                    ${elfSkills.map(skill => renderSkillRow(skill)).join('')}
                                 </tbody>
                             </table>
                         </div>
+                        ` : ''}
+                        ${bloodlineSkills.length > 0 ? `
                         <div class="skill-column">
                             <div class="category-title">血脉技能</div>
                             <table class="skills-table">
@@ -670,10 +798,12 @@ async function generateCard(spriteName) {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    ${spriteData.skills.bloodlineSkills.map(skill => renderSkillRow(skill)).join('')}
+                                    ${bloodlineSkills.map(skill => renderSkillRow(skill)).join('')}
                                 </tbody>
                             </table>
                         </div>
+                        ` : ''}
+                        ${skillStones.length > 0 ? `
                         <div class="skill-column">
                             <div class="category-title">技能石</div>
                             <table class="skills-table">
@@ -688,10 +818,11 @@ async function generateCard(spriteName) {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    ${spriteData.skills.skillStones.map(skill => renderSkillRow(skill)).join('')}
+                                    ${skillStones.map(skill => renderSkillRow(skill)).join('')}
                                 </tbody>
                             </table>
                         </div>
+                        ` : ''}
                     </div>
                 </div>
             </div>
@@ -724,12 +855,13 @@ export default generateCard;
 // 如果直接运行此文件，则从命令行参数获取精灵名称
 if (import.meta.url === `file://${process.argv[1]}`) {
     const spriteName = process.argv[2];
+    const spriteId = process.argv[3];
     if (!spriteName) {
-        console.error('❌ 请提供精灵名称作为参数，例如：node generateCard.js 迪莫');
+        console.error('❌ 请提供精灵名称作为参数，例如：node generateCard.js 迪莫 3004');
         process.exit(1);
     }
 
-    generateCard(spriteName)
+    generateCard(spriteName, spriteId)
         .then(imagePath => {
             console.log(`🎉 任务完成！生成的图片路径：${imagePath}`);
         })

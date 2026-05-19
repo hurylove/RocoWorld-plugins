@@ -1,5 +1,6 @@
 // 宠物资料卡渲染脚本
 // 功能：根据宠物JSON数据生成宠物资料卡（不含技能部分）
+// 数据来源：data/pets/{id}.json, data/other/Pets.json, data/friends/JL_{pinyin}.webp
 
 import puppeteer from 'puppeteer';
 import fs from 'fs';
@@ -58,19 +59,132 @@ const config = loadConfig();
 // 等待函数
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
+// 缓存：编号映射（中文名 → 图鉴编号）
+let numberMapCache = null;
+function buildNumberMap() {
+    if (numberMapCache) return numberMapCache;
+    try {
+        const jllbPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'jllb', '精灵列表.json');
+        const rawData = fs.readFileSync(jllbPath, 'utf-8');
+        const list = JSON.parse(rawData);
+        numberMapCache = new Map();
+        for (const entry of list) {
+            numberMapCache.set(entry['名字'], entry['编号']);
+        }
+        return numberMapCache;
+    } catch (error) {
+        console.warn('读取精灵列表失败，将使用默认编号:', error.message);
+        numberMapCache = new Map();
+        return numberMapCache;
+    }
+}
+
+// 获取图鉴编号（支持中文名、完整名称和 species.id）
+function getPetNumber(zhName, speciesId, fullName) {
+    const map = buildNumberMap();
+    // 优先用完整名称查找（如"梦游（穿旧睡衣的样子）"）
+    if (fullName && map.has(fullName)) {
+        return map.get(fullName);
+    }
+    // 其次用中文名查找
+    if (zhName && map.has(zhName)) {
+        return map.get(zhName);
+    }
+    // 如果都找不到，尝试用 species.id 推导编号
+    if (speciesId != null && speciesId > 0 && speciesId < 10000) {
+        const noStr = `NO.${String(speciesId).padStart(3, '0')}`;
+        // 验证这个编号是否在精灵列表中
+        for (const [, no] of map) {
+            if (no === noStr) {
+                return noStr;
+            }
+        }
+    }
+    return '--';
+}
+
 // 主函数：生成资料卡
-async function generatePetCard(spriteName) {
-    // 构建JSON文件路径
-    const jsonPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'jltj', `${spriteName}.json`);
-    console.log(`📄 正在读取精灵数据: ${spriteName}`);
-    let spriteData;
+async function generatePetCard(petName, petId) {
+    // 构建JSON文件路径 - 从 data/pets/{id}.json 读取
+    const jsonPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'pets', `${petId}.json`);
+    console.log(`📄 正在读取宠物数据: ${petName} (ID: ${petId})`);
+    let petData;
     
     try {
         const rawData = fs.readFileSync(jsonPath, 'utf-8');
-        spriteData = JSON.parse(rawData);
+        petData = JSON.parse(rawData);
     } catch (error) {
         console.error('❌ 读取或解析 JSON 失败:', error);
         throw error;
+    }
+
+    // 提取中文名
+    const zhName = petData.localized?.zh?.name || petName;
+
+    // 提取属性
+    const attributes = [];
+    if (petData.main_type?.localized?.zh) {
+        attributes.push(petData.main_type.localized.zh);
+    }
+    if (petData.sub_type?.localized?.zh) {
+        attributes.push(petData.sub_type.localized.zh);
+    }
+    if (attributes.length === 0) {
+        attributes.push('普通');
+    }
+
+    // 提取图鉴编号（传入 species.id 和完整名称作为 fallback）
+    const speciesId = petData.species?.id;
+    const number = getPetNumber(zhName, speciesId, petName);
+
+    // 提取基础能力值
+    const stats = {
+        '生命': petData.base_hp ?? '--',
+        '物攻': petData.base_phy_atk ?? '--',
+        '魔攻': petData.base_mag_atk ?? '--',
+        '物防': petData.base_phy_def ?? '--',
+        '魔防': petData.base_mag_def ?? '--',
+        '速度': petData.base_spd ?? '--'
+    };
+
+    // 提取特性
+    const primaryTrait = petData.trait?.localized?.zh || null;
+
+    // 构建头像路径（尝试 data/friends/JL_{pinyin}.webp）
+    const portraitPinyin = petData.name || '';
+    const friendsDir = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'friends');
+    const portraitPath = path.join(friendsDir, `JL_${portraitPinyin}.webp`);
+    let portraitSrc = '';
+    if (fs.existsSync(portraitPath)) {
+        // 转换为 base64 data URI
+        const portraitBuffer = fs.readFileSync(portraitPath);
+        const portraitBase64 = portraitBuffer.toString('base64');
+        portraitSrc = `data:image/webp;base64,${portraitBase64}`;
+    } else {
+        console.warn(`⚠️ 未找到头像文件: JL_${portraitPinyin}.webp`);
+        // fallback：尝试查找同中文名的其他形态的头像
+        try {
+            const petsDataPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'other', 'Pets.json');
+            if (fs.existsSync(petsDataPath)) {
+                const petsRaw = fs.readFileSync(petsDataPath, 'utf-8');
+                const allPets = JSON.parse(petsRaw);
+                // 查找同中文名的其他条目
+                for (const otherPet of allPets) {
+                    if (otherPet.id !== petData.id && otherPet.localized?.zh?.name === zhName && otherPet.name) {
+                        const fallbackPath = path.join(friendsDir, `JL_${otherPet.name}.webp`);
+                        if (fs.existsSync(fallbackPath)) {
+                            const fbBuffer = fs.readFileSync(fallbackPath);
+                            const fbBase64 = fbBuffer.toString('base64');
+                            portraitSrc = `data:image/webp;base64,${fbBase64}`;
+                            console.log(`✅ 使用同形态 fallback 头像: JL_${otherPet.name}.webp`);
+                            break;
+                        }
+                    }
+                }
+            }
+        } catch (fbError) {
+            console.warn('头像 fallback 查找失败:', fbError.message);
+        }
     }
 
     // 属性颜色映射表
@@ -191,7 +305,7 @@ async function generatePetCard(spriteName) {
     };
 
     // 确定精灵的主属性
-    const primaryAttribute = spriteData.attribute && spriteData.attribute.length > 0 ? spriteData.attribute[0] : '普通';
+    const primaryAttribute = attributes.length > 0 ? attributes[0] : '普通';
     const colorScheme = getAttributeColor(primaryAttribute);
 
     // 构建puppeteer启动选项
@@ -216,7 +330,6 @@ async function generatePetCard(spriteName) {
     try {
         // 设置固定高度（不需要技能部分，所以高度可以固定）
         const finalHeight = 860;
-        const primaryTrait = spriteData.traits && spriteData.traits.length > 0 ? spriteData.traits[0] : null;
 
         // 生成HTML内容（参考图：浅色底 + 深色数值区 + 信息卡片）
         const htmlContent = `
@@ -300,12 +413,6 @@ async function generatePetCard(spriteName) {
                     border: 1px solid rgba(194, 149, 79, 0.32);
                     box-shadow: 0 4px 12px rgba(127, 93, 36, 0.12);
                 }
-                .attribute-icon {
-                    width: 30px;
-                    height: 30px;
-                    object-fit: contain;
-                    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.12));
-                }
                 .attribute-text {
                     font-size: 24px;
                     font-weight: 700;
@@ -360,6 +467,18 @@ async function generatePetCard(spriteName) {
                     z-index: 1;
                     filter: drop-shadow(0 10px 20px rgba(70, 46, 17, 0.25));
                     animation: float 3.4s ease-in-out infinite;
+                }
+                .portrait-placeholder {
+                    width: 320px;
+                    height: 320px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    z-index: 1;
+                    font-size: 80px;
+                    color: #b8955a;
+                    opacity: 0.5;
                 }
 
                 .stats-panel {
@@ -445,29 +564,28 @@ async function generatePetCard(spriteName) {
             <div class="card">
                 <div class="top">
                     <div class="title-group">
-                        <div class="name">${spriteData.name || '未知精灵'}</div>
+                        <div class="name">${zhName}</div>
                         <div class="badge">
-                            ${spriteData.attributeIcon ? `<img src="${spriteData.attributeIcon}" alt="attribute" class="attribute-icon" />` : ''}
-                            <span class="attribute-text">${spriteData.attribute && spriteData.attribute.length > 0 ? spriteData.attribute.join(' ') : '普通'}</span>
+                            <span class="attribute-text">${attributes.join(' ')}</span>
                         </div>
                     </div>
-                    <div class="number">NO.${spriteData.number || '--'}</div>
+                    <div class="number">${number}</div>
                 </div>
 
                 <div class="main">
                     <div class="portrait-panel">
-                        <img src="${spriteData.portrait}" alt="Portrait" class="portrait" />
+                        ${portraitSrc ? `<img src="${portraitSrc}" alt="Portrait" class="portrait" />` : `<div class="portrait-placeholder">🐾</div>`}
                     </div>
 
                     <div class="stats-panel">
                         <div class="stats-title">基础能力值</div>
                         <div class="stats-grid">
-                            <div class="stat-item"><div class="stat-label">生命</div><div class="stat-value">${spriteData.stats?.生命 ?? '--'}</div></div>
-                            <div class="stat-item"><div class="stat-label">速度</div><div class="stat-value">${spriteData.stats?.速度 ?? '--'}</div></div>
-                            <div class="stat-item"><div class="stat-label">魔攻</div><div class="stat-value">${spriteData.stats?.魔攻 ?? '--'}</div></div>
-                            <div class="stat-item"><div class="stat-label">物攻</div><div class="stat-value">${spriteData.stats?.物攻 ?? '--'}</div></div>
-                            <div class="stat-item"><div class="stat-label">物防</div><div class="stat-value">${spriteData.stats?.物防 ?? '--'}</div></div>
-                            <div class="stat-item"><div class="stat-label">魔防</div><div class="stat-value">${spriteData.stats?.魔防 ?? '--'}</div></div>
+                            <div class="stat-item"><div class="stat-label">生命</div><div class="stat-value">${stats['生命']}</div></div>
+                            <div class="stat-item"><div class="stat-label">速度</div><div class="stat-value">${stats['速度']}</div></div>
+                            <div class="stat-item"><div class="stat-label">魔攻</div><div class="stat-value">${stats['魔攻']}</div></div>
+                            <div class="stat-item"><div class="stat-label">物攻</div><div class="stat-value">${stats['物攻']}</div></div>
+                            <div class="stat-item"><div class="stat-label">物防</div><div class="stat-value">${stats['物防']}</div></div>
+                            <div class="stat-item"><div class="stat-label">魔防</div><div class="stat-value">${stats['魔防']}</div></div>
                         </div>
                     </div>
                 </div>
@@ -508,12 +626,13 @@ export default generatePetCard;
 // 如果直接运行此文件，则从命令行参数获取精灵名称
 if (import.meta.url === `file://${process.argv[1]}`) {
     const spriteName = process.argv[2];
+    const spriteId = process.argv[3];
     if (!spriteName) {
-        console.error('❌ 请提供精灵名称作为参数，例如：node generatePetCard.js 迪莫');
+        console.error('❌ 请提供精灵名称作为参数，例如：node generatePetCard.js 喵喵 3001');
         process.exit(1);
     }
     
-    generatePetCard(spriteName)
+    generatePetCard(spriteName, spriteId)
         .then(imagePath => {
             console.log(`🎉 任务完成！生成的图片路径：${imagePath}`);
         })

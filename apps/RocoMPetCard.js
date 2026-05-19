@@ -7,23 +7,70 @@ import { fileURLToPath } from 'url';
 // 使用fileURLToPath获取正确的目录路径
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const spriteListPath = path.join(__dirname, '..', 'data', 'jllb', '精灵列表.json');
+const petsDataPath = path.join(__dirname, '..', 'data', 'other', 'Pets.json');
+const jllbPath = path.join(__dirname, '..', 'data', 'jllb', '精灵列表.json');
 
-// 加载精灵列表
-function loadSpriteList() {
+// 加载宠物数据并构建 中文名→宠物对象 的映射
+let petNameMap = null;
+
+function buildPetNameMap() {
+  if (petNameMap) return petNameMap;
   try {
-    const rawData = fs.readFileSync(spriteListPath, 'utf-8');
-    return JSON.parse(rawData);
+    const rawData = fs.readFileSync(petsDataPath, 'utf-8');
+    const pets = JSON.parse(rawData);
+    petNameMap = new Map();
+
+    // 第一步：建立 中文名 → [pet条目] 的映射（一个中文名可能对应多个形态）
+    const zhNameToPets = new Map();
+    for (const pet of pets) {
+      const zhName = pet.localized?.zh?.name;
+      if (zhName) {
+        if (!zhNameToPets.has(zhName)) {
+          zhNameToPets.set(zhName, []);
+        }
+        zhNameToPets.get(zhName).push(pet);
+      }
+    }
+
+    // 第二步：对只有一个条目的中文名，直接映射
+    // 对有多个条目的中文名，取第一个作为默认
+    for (const [zhName, petList] of zhNameToPets) {
+      petNameMap.set(zhName, petList[0]);
+    }
+
+    // 第三步：加载精灵列表.json，支持带形态后缀的名称（如"梦游（穿旧睡衣的样子）"）
+    try {
+      const jllbRaw = fs.readFileSync(jllbPath, 'utf-8');
+      const jllbList = JSON.parse(jllbRaw);
+      for (const entry of jllbList) {
+        const fullName = entry.名字;
+        // 只处理带括号的形态名称
+        if (fullName && fullName.includes('（')) {
+          // 提取 base 名（括号前的部分）
+          const baseName = fullName.split('（')[0];
+          const petList = zhNameToPets.get(baseName);
+          if (petList && petList.length > 0) {
+            // 默认使用第一个条目（base 形态）
+            petNameMap.set(fullName, petList[0]);
+          }
+        }
+      }
+    } catch (e) {
+      console.error('加载精灵列表.json失败（非致命）:', e.message);
+    }
+
+    console.log(`✅ 已加载 ${petNameMap.size} 个宠物名称索引（含形态名称）`);
+    return petNameMap;
   } catch (error) {
-    console.error('读取精灵列表失败:', error);
-    return [];
+    console.error('读取宠物数据失败:', error);
+    return new Map();
   }
 }
 
 // 检查宠物名称是否存在
 function isPetNameValid(petName) {
-  const petList = loadSpriteList();
-  return petList.some(pet => pet.名字 === petName);
+  const map = buildPetNameMap();
+  return map.has(petName);
 }
 
 export default class petCard extends plugin {
@@ -59,15 +106,17 @@ export default class petCard extends plugin {
       }
 
       // 验证宠物名称是否在列表中
-      if (!isPetNameValid(petName)) {
+      const map = buildPetNameMap();
+      const petEntry = map.get(petName);
+      if (!petEntry) {
         this.reply('宠物名称不存在，请检查输入是否正确', false);
         return;
       }
 
-      // 调用generatePetCard函数生成卡牌
+      // 调用generatePetCard函数生成卡牌，传入宠物名称和ID
       this.reply('正在生成宠物资料卡，请稍候...', false);
 
-      const base64Image = await generatePetCard(petName);
+      const base64Image = await generatePetCard(petName, petEntry.id);
 
       // 检查图片是否生成成功
       if (!base64Image) {

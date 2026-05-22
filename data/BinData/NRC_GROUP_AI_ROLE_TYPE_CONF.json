@@ -1,551 +1,413 @@
 {
   "RocoDataRows": {
-    "Unknown_0": {
-      "group_ai_role_type_name": "普通成员"
-    },
+    "Unknown_0": {},
     "1": {
-      "id": 1,
-      "group_ai_role_type_name": "群落首领"
+      "id": 1
     },
     "2": {
-      "id": 2,
-      "group_ai_role_type_name": "群落打手"
+      "id": 2
     },
     "3": {
-      "id": 3,
-      "group_ai_role_type_name": "群落小弟"
+      "id": 3
     },
     "4": {
-      "id": 4,
-      "group_ai_role_type_name": "群落宿敌A"
+      "id": 4
     },
     "5": {
-      "id": 5,
-      "group_ai_role_type_name": "群落宿敌B"
+      "id": 5
     },
     "6": {
-      "id": 6,
-      "group_ai_role_type_name": "群落亲友A"
+      "id": 6
     },
     "7": {
-      "id": 7,
-      "group_ai_role_type_name": "群落亲友B"
+      "id": 7
     },
     "8": {
-      "id": 8,
-      "group_ai_role_type_name": "群落上位"
+      "id": 8
     },
     "9": {
-      "id": 9,
-      "group_ai_role_type_name": "群落下位"
+      "id": 9
     },
     "10": {
-      "id": 10,
-      "group_ai_role_type_name": "群落路人"
+      "id": 10
     },
     "11": {
-      "id": 11,
-      "group_ai_role_type_name": "群落宿敌C"
+      "id": 11
     },
     "12": {
-      "id": 12,
-      "group_ai_role_type_name": "野外攻击"
+      "id": 12
     },
     "13": {
-      "id": 13,
-      "group_ai_role_type_name": "跟随护卫"
+      "id": 13
     },
     "14": {
-      "id": 14,
-      "group_ai_role_type_name": "野外亲近"
+      "id": 14
     },
     "15": {
-      "id": 15,
-      "group_ai_role_type_name": "野外逃跑"
+      "id": 15
     },
     "16": {
-      "id": 16,
-      "group_ai_role_type_name": "野外无视"
+      "id": 16
     },
     "17": {
-      "id": 17,
-      "group_ai_role_type_name": "火系精灵（废弃，用下面的）"
+      "id": 17
     },
     "18": {
-      "id": 18,
-      "group_ai_role_type_name": "翼系精灵（废弃，用下面的）"
+      "id": 18
     },
     "19": {
-      "id": 19,
-      "group_ai_role_type_name": "虫系精灵（废弃，用下面的）"
+      "id": 19
     },
     "20": {
-      "id": 20,
-      "group_ai_role_type_name": "普通系精灵"
+      "id": 20
     },
     "21": {
-      "id": 21,
-      "group_ai_role_type_name": "草系精灵"
+      "id": 21
     },
     "22": {
-      "id": 22,
-      "group_ai_role_type_name": "火系精灵"
+      "id": 22
     },
     "23": {
-      "id": 23,
-      "group_ai_role_type_name": "水系精灵"
+      "id": 23
     },
     "24": {
-      "id": 24,
-      "group_ai_role_type_name": "光系精灵"
+      "id": 24
     },
     "25": {
-      "id": 25,
-      "group_ai_role_type_name": "地系精灵"
+      "id": 25
     },
     "26": {
-      "id": 26,
-      "group_ai_role_type_name": "冰系精灵"
+      "id": 26
     },
     "27": {
-      "id": 27,
-      "group_ai_role_type_name": "龙系精灵"
+      "id": 27
     },
     "28": {
-      "id": 28,
-      "group_ai_role_type_name": "电系精灵"
+      "id": 28
     },
     "29": {
-      "id": 29,
-      "group_ai_role_type_name": "毒系精灵"
+      "id": 29
     },
     "30": {
-      "id": 30,
-      "group_ai_role_type_name": "虫系精灵"
+      "id": 30
     },
     "31": {
-      "id": 31,
-      "group_ai_role_type_name": "武系精灵"
+      "id": 31
     },
     "32": {
-      "id": 32,
-      "group_ai_role_type_name": "翼系精灵"
+      "id": 32
     },
     "33": {
-      "id": 33,
-      "group_ai_role_type_name": "萌系精灵"
+      "id": 33
     },
     "34": {
-      "id": 34,
-      "group_ai_role_type_name": "幽系精灵"
+      "id": 34
     },
     "35": {
-      "id": 35,
-      "group_ai_role_type_name": "恶魔系精灵"
+      "id": 35
     },
     "36": {
-      "id": 36,
-      "group_ai_role_type_name": "机械系精灵"
+      "id": 36
     },
     "37": {
-      "id": 37,
-      "group_ai_role_type_name": "幻系精灵"
+      "id": 37
     },
     "38": {
-      "id": 38,
-      "group_ai_role_type_name": "一阶精灵"
+      "id": 38
     },
     "39": {
-      "id": 39,
-      "group_ai_role_type_name": "二阶精灵"
+      "id": 39
     },
     "40": {
-      "id": 40,
-      "group_ai_role_type_name": "三阶精灵"
+      "id": 40
     },
     "41": {
-      "id": 41,
-      "group_ai_role_type_name": "陆生精灵"
+      "id": 41
     },
     "42": {
-      "id": 42,
-      "group_ai_role_type_name": "水生精灵"
+      "id": 42
     },
     "43": {
-      "id": 43,
-      "group_ai_role_type_name": "飞行精灵"
+      "id": 43
     },
     "44": {
-      "id": 44,
-      "group_ai_role_type_name": "粘人型精灵"
+      "id": 44
     },
     "45": {
-      "id": 45,
-      "group_ai_role_type_name": "独立型精灵"
+      "id": 45
     },
     "46": {
-      "id": 46,
-      "group_ai_role_type_name": "好奇型精灵"
+      "id": 46
     },
     "47": {
-      "id": 47,
-      "group_ai_role_type_name": "慵懒型精灵"
+      "id": 47
     },
     "48": {
-      "id": 48,
-      "group_ai_role_type_name": "胆小型精灵"
+      "id": 48
     },
     "49": {
-      "id": 49,
-      "group_ai_role_type_name": "蛮横型精灵"
+      "id": 49
     },
     "50": {
-      "id": 50,
-      "group_ai_role_type_name": "家园内出现的精灵"
+      "id": 50
     },
     "51": {
-      "id": 51,
-      "group_ai_role_type_name": "松鼠和管乐团（号儿鱼）"
+      "id": 51
     },
     "52": {
-      "id": 52,
-      "group_ai_role_type_name": "松鼠和管乐团（圆号鱼）"
+      "id": 52
     },
     "53": {
-      "id": 53,
-      "group_ai_role_type_name": "松鼠和管乐团（吸泥鸥）"
+      "id": 53
     },
     "54": {
-      "id": 54,
-      "group_ai_role_type_name": "松鼠和管乐团（松鼠）"
+      "id": 54
     },
     "55": {
-      "id": 55,
-      "group_ai_role_type_name": "松鼠和打击乐团（花怨鳗）"
+      "id": 55
     },
     "56": {
-      "id": 56,
-      "group_ai_role_type_name": "松鼠和打击乐团（卡瓦重）"
+      "id": 56
     },
     "57": {
-      "id": 57,
-      "group_ai_role_type_name": "松鼠和打击乐团（鳗尾兽）"
+      "id": 57
     },
     "58": {
-      "id": 58,
-      "group_ai_role_type_name": "松鼠和打击乐团（松鼠）"
+      "id": 58
     },
     "59": {
-      "id": 59,
-      "group_ai_role_type_name": "松鼠和弦乐团（里拉鳐）"
+      "id": 59
     },
     "60": {
-      "id": 60,
-      "group_ai_role_type_name": "松鼠和弦乐团（水星龙弦）"
+      "id": 60
     },
     "61": {
-      "id": 61,
-      "group_ai_role_type_name": "松鼠和弦乐团（水星尾）"
+      "id": 61
     },
     "62": {
-      "id": 62,
-      "group_ai_role_type_name": "松鼠和弦乐团（松鼠）"
+      "id": 62
     },
     "63": {
-      "id": 63,
-      "group_ai_role_type_name": "家具交互精灵"
+      "id": 63
     },
     "64": {
-      "id": 64,
-      "group_ai_role_type_name": "中小体型适合与床或椅子交互的粘人型精灵"
+      "id": 64
     },
     "65": {
-      "id": 65,
-      "group_ai_role_type_name": "中小体型适合与床或椅子交互的独立型精灵"
+      "id": 65
     },
     "66": {
-      "id": 66,
-      "group_ai_role_type_name": "中小体型适合与床或椅子交互的好奇型精灵"
+      "id": 66
     },
     "67": {
-      "id": 67,
-      "group_ai_role_type_name": "中小体型适合与床或椅子交互的慵懒型精灵"
+      "id": 67
     },
     "68": {
-      "id": 68,
-      "group_ai_role_type_name": "中小体型适合与床或椅子交互的胆小型精灵"
+      "id": 68
     },
     "69": {
-      "id": 69,
-      "group_ai_role_type_name": "中小体型适合与床或椅子交互的蛮横型精灵"
+      "id": 69
     },
     "70": {
-      "id": 70,
-      "group_ai_role_type_name": "小体型适合与柜子或桌子交互的粘人型精灵"
+      "id": 70
     },
     "71": {
-      "id": 71,
-      "group_ai_role_type_name": "小体型适合与柜子或桌子交互的独立型精灵"
+      "id": 71
     },
     "72": {
-      "id": 72,
-      "group_ai_role_type_name": "小体型适合与柜子或桌子交互的好奇型精灵"
+      "id": 72
     },
     "73": {
-      "id": 73,
-      "group_ai_role_type_name": "小体型适合与柜子或桌子交互的慵懒型精灵"
+      "id": 73
     },
     "74": {
-      "id": 74,
-      "group_ai_role_type_name": "小体型适合与柜子或桌子交互的胆小型精灵"
+      "id": 74
     },
     "75": {
-      "id": 75,
-      "group_ai_role_type_name": "小体型适合与柜子或桌子交互的蛮横型精灵"
+      "id": 75
     },
     "76": {
-      "id": 76,
-      "group_ai_role_type_name": "绿耳松鼠"
+      "id": 76
     },
     "77": {
-      "id": 77,
-      "group_ai_role_type_name": "梦游群组精灵"
+      "id": 77
     },
     "78": {
-      "id": 78,
-      "group_ai_role_type_name": "呆小路"
+      "id": 78
     },
     "79": {
-      "id": 79,
-      "group_ai_role_type_name": "晶石蜗家族"
+      "id": 79
     },
     "80": {
-      "id": 80,
-      "group_ai_role_type_name": "独角兽"
+      "id": 80
     },
     "81": {
-      "id": 81,
-      "group_ai_role_type_name": "画精灵"
+      "id": 81
     },
     "82": {
-      "id": 82,
-      "group_ai_role_type_name": "卡瓦重"
+      "id": 82
     },
     "83": {
-      "id": 83,
-      "group_ai_role_type_name": "里拉瑶"
+      "id": 83
     },
     "84": {
-      "id": 84,
-      "group_ai_role_type_name": "号儿鱼"
+      "id": 84
     },
     "85": {
-      "id": 85,
-      "group_ai_role_type_name": "吸泥鸥"
+      "id": 85
     },
     "86": {
-      "id": 86,
-      "group_ai_role_type_name": "绿翼鸟"
+      "id": 86
     },
     "90": {
-      "id": 90,
-      "group_ai_role_type_name": "家园种植园守卫"
+      "id": 90
     },
     "91": {
-      "id": 91,
-      "group_ai_role_type_name": "恶魔狼"
+      "id": 91
     },
     "1000": {
-      "id": 1000,
-      "group_ai_role_type_name": "克制者"
+      "id": 1000
     },
     "1001": {
-      "id": 1001,
-      "group_ai_role_type_name": "被克制者"
+      "id": 1001
     },
     "1002": {
-      "id": 1002,
-      "group_ai_role_type_name": "互相克制A"
+      "id": 1002
     },
     "1003": {
-      "id": 1003,
-      "group_ai_role_type_name": "互相克制B"
+      "id": 1003
     },
     "1004": {
-      "id": 1004,
-      "group_ai_role_type_name": "好斗型"
+      "id": 1004
     },
     "1005": {
-      "id": 1005,
-      "group_ai_role_type_name": "友好型"
+      "id": 1005
     },
     "1006": {
-      "id": 1006,
-      "group_ai_role_type_name": "胆小型"
+      "id": 1006
     },
     "1007": {
-      "id": 1007,
-      "group_ai_role_type_name": "无视型"
+      "id": 1007
     },
     "6000": {
-      "id": 6000,
-      "group_ai_role_type_name": "壁炉"
+      "id": 6000
     },
     "6100": {
-      "id": 6100,
-      "group_ai_role_type_name": "床"
+      "id": 6100
     },
     "6101": {
-      "id": 6101,
-      "group_ai_role_type_name": "帐蓬床"
+      "id": 6101
     },
     "6200": {
-      "id": 6200,
-      "group_ai_role_type_name": "隔断"
+      "id": 6200
     },
     "6300": {
-      "id": 6300,
-      "group_ai_role_type_name": "大柜子-绕柜子四周"
+      "id": 6300
     },
     "6301": {
-      "id": 6301,
-      "group_ai_role_type_name": "大柜子-鸟类表演点"
+      "id": 6301
     },
     "6302": {
-      "id": 6302,
-      "group_ai_role_type_name": "大柜子-胆小型精灵躲避点"
+      "id": 6302
     },
     "6303": {
-      "id": 6303,
-      "group_ai_role_type_name": "大柜子-正面表演点"
+      "id": 6303
     },
     "6304": {
-      "id": 6304,
-      "group_ai_role_type_name": "小柜子"
+      "id": 6304
     },
     "6400": {
-      "id": 6400,
-      "group_ai_role_type_name": "架子"
+      "id": 6400
     },
     "6500": {
-      "id": 6500,
-      "group_ai_role_type_name": "椅子"
+      "id": 6500
     },
     "6501": {
-      "id": 6501,
-      "group_ai_role_type_name": "蹦床椅"
+      "id": 6501
     },
     "6600": {
-      "id": 6600,
-      "group_ai_role_type_name": "桌子"
+      "id": 6600
     },
     "6601": {
-      "id": 6601,
-      "group_ai_role_type_name": "有足够桌下空间的桌子"
+      "id": 6601
     },
     "6700": {
-      "id": 6700,
-      "group_ai_role_type_name": "灯"
+      "id": 6700
     },
     "6800": {
-      "id": 6800,
-      "group_ai_role_type_name": "功能"
+      "id": 6800
     },
     "6900": {
-      "id": 6900,
-      "group_ai_role_type_name": "镜子"
+      "id": 6900
     },
     "7000": {
-      "id": 7000,
-      "group_ai_role_type_name": "工艺品"
+      "id": 7000
     },
     "7001": {
-      "id": 7001,
-      "group_ai_role_type_name": "S1赛季展示台"
+      "id": 7001
     },
     "7002": {
-      "id": 7002,
-      "group_ai_role_type_name": "S1赛季地球仪"
+      "id": 7002
     },
     "7003": {
-      "id": 7003,
-      "group_ai_role_type_name": "S1赛季望远镜"
+      "id": 7003
     },
     "7004": {
-      "id": 7004,
-      "group_ai_role_type_name": "矿晶虫喜欢的工艺品"
+      "id": 7004
     },
     "7100": {
-      "id": 7100,
-      "group_ai_role_type_name": "食物"
+      "id": 7100
     },
     "7200": {
-      "id": 7200,
-      "group_ai_role_type_name": "书籍"
+      "id": 7200
     },
     "7300": {
-      "id": 7300,
-      "group_ai_role_type_name": "植物"
+      "id": 7300
     },
     "7400": {
-      "id": 7400,
-      "group_ai_role_type_name": "挂饰"
+      "id": 7400
     },
     "7500": {
-      "id": 7500,
-      "group_ai_role_type_name": "挂画"
+      "id": 7500
     },
     "7600": {
-      "id": 7600,
-      "group_ai_role_type_name": "地毯"
+      "id": 7600
     },
     "7700": {
-      "id": 7700,
-      "group_ai_role_type_name": "饰品"
+      "id": 7700
     },
     "7800": {
-      "id": 7800,
-      "group_ai_role_type_name": "壁灯"
+      "id": 7800
     },
     "7900": {
-      "id": 7900,
-      "group_ai_role_type_name": "墙壁"
+      "id": 7900
     },
     "8000": {
-      "id": 8000,
-      "group_ai_role_type_name": "地板"
+      "id": 8000
     },
     "11001": {
-      "id": 11001,
-      "group_ai_role_type_name": "邻居关系-克制方"
+      "id": 11001
     },
     "11002": {
-      "id": 11002,
-      "group_ai_role_type_name": "邻居关系-被克制方"
+      "id": 11002
     },
     "11003": {
-      "id": 11003,
-      "group_ai_role_type_name": "邻居关系-互相克制方A"
+      "id": 11003
     },
     "11004": {
-      "id": 11004,
-      "group_ai_role_type_name": "邻居关系-互相克制方B"
+      "id": 11004
     },
     "11011": {
-      "id": 11011,
-      "group_ai_role_type_name": "家园家庭关系-雄性"
+      "id": 11011
     },
     "11012": {
-      "id": 11012,
-      "group_ai_role_type_name": "家园家庭关系-雌性"
+      "id": 11012
     },
     "12001": {
-      "id": 12001,
-      "group_ai_role_type_name": "邻居身份-测试1"
+      "id": 12001
     },
     "12002": {
-      "id": 12002,
-      "group_ai_role_type_name": "邻居身份-测试2"
+      "id": 12002
     }
   },
   "LocalizationStrings": {}

@@ -6,7 +6,6 @@ const projectRoot = process.cwd();
 const PLUGIN_DIR = path.join(projectRoot, 'plugins', 'RocoWorld-plugins');
 const DATA_DIR = path.join(PLUGIN_DIR, 'data', 'BinData');
 const JLTJ_DIR = path.join(PLUGIN_DIR, 'data', 'jltj');
-const JLLB_PATH = path.join(PLUGIN_DIR, 'data', 'jllb', '精灵列表.json');
 const EXCLUDE_PATH = path.join(PLUGIN_DIR, 'data', 'jllb', '排除名单.json');
 const FRIENDS_DIR = path.join(PLUGIN_DIR, 'data', 'friends');
 const PETS_JSON_PATH = path.join(PLUGIN_DIR, 'data', 'other', 'Pets.json');
@@ -60,23 +59,6 @@ function loadJSONFile(fileName) {
     }
 }
 
-function loadJlbSet() {
-    try {
-        const data = fs.readFileSync(JLLB_PATH, 'utf-8');
-        const list = JSON.parse(data);
-        const nameSet = new Set();
-        for (const item of list) {
-            if (item['名字']) {
-                nameSet.add(item['名字']);
-            }
-        }
-        return nameSet;
-    } catch (error) {
-        console.error('读取精灵列表.json 失败:', error.message);
-        return new Set();
-    }
-}
-
 function loadExcludeSet() {
     try {
         const data = fs.readFileSync(EXCLUDE_PATH, 'utf-8');
@@ -98,6 +80,8 @@ function loadExcludeSet() {
 let _petsIdToNameMap = null;
 // 缓存 Pets.json 的 base_id 对应的所有 id 列表
 let _petsBaseIdMap = null;
+// 缓存 Pets.json 中已实装（implemented===true）的宠物英文名集合
+let _implementedNameSet = null;
 
 function loadPetsIdToNameMap() {
     if (_petsIdToNameMap) return _petsIdToNameMap;
@@ -106,6 +90,7 @@ function loadPetsIdToNameMap() {
         const list = JSON.parse(data);
         _petsIdToNameMap = {};
         _petsBaseIdMap = {};
+        _implementedNameSet = new Set();
         for (const pet of list) {
             if (pet.id && pet.name) {
                 _petsIdToNameMap[pet.id] = pet.name;
@@ -113,6 +98,10 @@ function loadPetsIdToNameMap() {
                 // Pets.json 中 base_id 就是该条目的 id 本身，相同 name 的多个 id 即为同一组
                 if (!_petsBaseIdMap[pet.name]) _petsBaseIdMap[pet.name] = [];
                 _petsBaseIdMap[pet.name].push(pet.id);
+                // 收集已实装的宠物 name
+                if (pet.implemented === true) {
+                    _implementedNameSet.add(pet.name);
+                }
             }
         }
         return _petsIdToNameMap;
@@ -120,8 +109,14 @@ function loadPetsIdToNameMap() {
         console.warn('读取 Pets.json 失败:', error.message);
         _petsIdToNameMap = {};
         _petsBaseIdMap = {};
+        _implementedNameSet = new Set();
         return _petsIdToNameMap;
     }
+}
+
+function loadImplementedNameSet() {
+    loadPetsIdToNameMap(); // 确保数据已加载
+    return _implementedNameSet;
 }
 
 // 通过 baseId 获取本地 friends 图片的 base64，找不到返回 null
@@ -262,20 +257,25 @@ function preloadImagesFromLocal(results) {
     return imageCache;
 }
 
-function filterByJlb(results, jlbSet) {
+function filterByExcludeList(results, excludeSet) {
     const filtered = [];
     for (const result of results) {
-        if (jlbSet.has(result.name)) {
+        if (!excludeSet.has(result.name)) {
             filtered.push(result);
         }
     }
     return filtered;
 }
 
-function filterByExcludeList(results, excludeSet) {
+function filterByImplemented(results) {
+    const implementedSet = loadImplementedNameSet();
+    if (implementedSet.size === 0) {
+        console.warn('未加载到已实装宠物数据，跳过 implemented 过滤');
+        return results;
+    }
     const filtered = [];
     for (const result of results) {
-        if (!excludeSet.has(result.name)) {
+        if (implementedSet.has(result.name)) {
             filtered.push(result);
         }
     }
@@ -775,7 +775,10 @@ async function crawlLuoke(weightKg, heightM, topN = 10) {
     console.log(`排除名单共 ${excludeSet.size} 个精灵，匹配到 ${rawResults.length} 个候选`);
     
     let filtered = filterByExcludeList(rawResults, excludeSet);
-    console.log(`过滤后剩余 ${filtered.length} 个精灵（不在排除名单中）`);
+    console.log(`排除名单过滤后剩余 ${filtered.length} 个精灵`);
+    
+    filtered = filterByImplemented(filtered);
+    console.log(`已实装过滤后剩余 ${filtered.length} 个精灵`);
     
     if (filtered.length === 0) {
         return null;
@@ -790,8 +793,8 @@ async function crawlLuoke(weightKg, heightM, topN = 10) {
 export {
     findClosestPets,
     calculateSimilarity,
-    filterByJlb,
     filterByExcludeList,
+    filterByImplemented,
     attachPortraits,
     renderResultImage,
     crawlLuoke

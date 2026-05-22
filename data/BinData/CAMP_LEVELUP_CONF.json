@@ -1,4338 +1,2973 @@
 {
   "RocoDataRows": {
-    "1": {
-      "id": 1,
-      "content_id": 130308,
-      "editor_name": "奥贝斯坦湖",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100625,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "2": {
-      "id": 2,
-      "content_id": 130308,
-      "editor_name": "奥贝斯坦湖",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 12,
-      "levelup_reward": 630001,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100625,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "3": {
-      "id": 3,
-      "content_id": 130308,
-      "editor_name": "奥贝斯坦湖",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 30,
-      "levelup_reward": 630002,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100625,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "4": {
-      "id": 4,
-      "content_id": 130309,
-      "editor_name": "月牙湖岸",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100844,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "5": {
-      "id": 5,
-      "content_id": 130309,
-      "editor_name": "月牙湖岸",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 8,
-      "levelup_reward": 630003,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100844,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "6": {
-      "id": 6,
-      "content_id": 130309,
-      "editor_name": "月牙湖岸",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 20,
-      "levelup_reward": 630004,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100844,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "7": {
-      "id": 7,
-      "content_id": 130310,
-      "editor_name": "商店街周边",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 5
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "8": {
-      "id": 8,
-      "content_id": 130310,
-      "editor_name": "商店街周边",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 8,
-      "levelup_reward": 630005,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 10
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "9": {
-      "id": 9,
-      "content_id": 130310,
-      "editor_name": "商店街周边",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 20,
-      "levelup_reward": 630006,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 20
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "10": {
-      "id": 10,
-      "content_id": 130311,
-      "editor_name": "聆风塔地",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100604,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "11": {
-      "id": 11,
-      "content_id": 130311,
-      "editor_name": "聆风塔地",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 8,
-      "levelup_reward": 630007,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100604,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "12": {
-      "id": 12,
-      "content_id": 130311,
-      "editor_name": "聆风塔地",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 20,
-      "levelup_reward": 630008,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100604,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "13": {
-      "id": 13,
-      "content_id": 130312,
-      "editor_name": "风息山口",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100623,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "14": {
-      "id": 14,
-      "content_id": 130312,
-      "editor_name": "风息山口",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 12,
-      "levelup_reward": 630009,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100623,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "15": {
-      "id": 15,
-      "content_id": 130312,
-      "editor_name": "风息山口",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 30,
-      "levelup_reward": 630010,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100623,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "16": {
-      "id": 16,
-      "content_id": 140143,
-      "editor_name": "岚语峰西侧",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100608,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "17": {
-      "id": 17,
-      "content_id": 140143,
-      "editor_name": "岚语峰西侧",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630011,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100608,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "18": {
-      "id": 18,
-      "content_id": 140143,
-      "editor_name": "岚语峰西侧",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630012,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100608,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "19": {
-      "id": 19,
-      "content_id": 140144,
-      "editor_name": "圣羽祭台",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100627,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "20": {
-      "id": 20,
-      "content_id": 140144,
-      "editor_name": "圣羽祭台",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 20,
-      "levelup_reward": 630013,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100627,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "21": {
-      "id": 21,
-      "content_id": 140144,
-      "editor_name": "圣羽祭台",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 50,
-      "levelup_reward": 630014,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100627,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "22": {
-      "id": 22,
-      "content_id": 140145,
-      "editor_name": "旧飞艇航道",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100845,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "23": {
-      "id": 23,
-      "content_id": 140145,
-      "editor_name": "旧飞艇航道",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 16,
-      "levelup_reward": 630015,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100845,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "24": {
-      "id": 24,
-      "content_id": 140145,
-      "editor_name": "旧飞艇航道",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 40,
-      "levelup_reward": 630016,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100845,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "25": {
-      "id": 25,
-      "content_id": 140146,
-      "editor_name": "挽风屏障",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100840,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "26": {
-      "id": 26,
-      "content_id": 140146,
-      "editor_name": "挽风屏障",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 16,
-      "levelup_reward": 630017,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100840,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "27": {
-      "id": 27,
-      "content_id": 140146,
-      "editor_name": "挽风屏障",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 40,
-      "levelup_reward": 630018,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100840,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "28": {
-      "id": 28,
-      "content_id": 140147,
-      "editor_name": "叽叽喳喳台地",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100624,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "29": {
-      "id": 29,
-      "content_id": 140147,
-      "editor_name": "叽叽喳喳台地",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 20,
-      "levelup_reward": 630019,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100624,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "30": {
-      "id": 30,
-      "content_id": 140147,
-      "editor_name": "叽叽喳喳台地",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 50,
-      "levelup_reward": 630020,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100624,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "31": {
-      "id": 31,
-      "content_id": 140149,
-      "editor_name": "轻风山",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100606,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "32": {
-      "id": 32,
-      "content_id": 140149,
-      "editor_name": "轻风山",
-      "level": 2,
-      "pet_fruit_num": 1,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 4,
-      "levelup_reward": 630021,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100606,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "33": {
-      "id": 33,
-      "content_id": 140149,
-      "editor_name": "轻风山",
-      "level": 3,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 10,
-      "levelup_reward": 630022,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100606,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "34": {
-      "id": 34,
-      "content_id": 1200492,
-      "editor_name": "星霜崖地",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100661,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "35": {
-      "id": 35,
-      "content_id": 1200492,
-      "editor_name": "星霜崖地",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630023,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100661,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "36": {
-      "id": 36,
-      "content_id": 1200492,
-      "editor_name": "星霜崖地",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100629,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630024,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100661,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "37": {
-      "id": 37,
-      "content_id": 130131,
-      "editor_name": "咸水湾南部",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100123,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "38": {
-      "id": 38,
-      "content_id": 130131,
-      "editor_name": "咸水湾南部",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630025,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100123,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "39": {
-      "id": 39,
-      "content_id": 130131,
-      "editor_name": "咸水湾南部",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630026,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100123,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "40": {
-      "id": 40,
-      "content_id": 130132,
-      "editor_name": "咸水湾北部",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100121,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "41": {
-      "id": 41,
-      "content_id": 130132,
-      "editor_name": "咸水湾北部",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630027,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100121,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "42": {
-      "id": 42,
-      "content_id": 130132,
-      "editor_name": "咸水湾北部",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630028,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100121,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "43": {
-      "id": 43,
-      "content_id": 130133,
-      "editor_name": "圣所前哨",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100841,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "44": {
-      "id": 44,
-      "content_id": 130133,
-      "editor_name": "圣所前哨",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 16,
-      "levelup_reward": 630029,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100841,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "45": {
-      "id": 45,
-      "content_id": 130133,
-      "editor_name": "圣所前哨",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 40,
-      "levelup_reward": 630030,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100841,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "46": {
-      "id": 46,
-      "content_id": 130134,
-      "editor_name": "晨曦山",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100626,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "47": {
-      "id": 47,
-      "content_id": 130134,
-      "editor_name": "晨曦山",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 20,
-      "levelup_reward": 630031,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100626,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "48": {
-      "id": 48,
-      "content_id": 130134,
-      "editor_name": "晨曦山",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 50,
-      "levelup_reward": 630032,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100626,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "49": {
-      "id": 49,
-      "content_id": 130135,
-      "editor_name": "彼得大道",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100848,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "50": {
-      "id": 50,
-      "content_id": 130135,
-      "editor_name": "彼得大道",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630033,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100848,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "51": {
-      "id": 51,
-      "content_id": 130135,
-      "editor_name": "彼得大道",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630034,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100848,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "52": {
-      "id": 52,
-      "content_id": 130136,
-      "editor_name": "北半岛",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100132,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "53": {
-      "id": 53,
-      "content_id": 130136,
-      "editor_name": "北半岛",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630035,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100132,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "54": {
-      "id": 54,
-      "content_id": 130136,
-      "editor_name": "北半岛",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630036,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100132,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "55": {
-      "id": 55,
-      "content_id": 130137,
-      "editor_name": "峡湾",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100133,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "56": {
-      "id": 56,
-      "content_id": 130137,
-      "editor_name": "峡湾",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630037,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100133,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "57": {
-      "id": 57,
-      "content_id": 130137,
-      "editor_name": "峡湾",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630038,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100133,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "58": {
-      "id": 58,
-      "content_id": 130138,
-      "editor_name": "王国城堡",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100674,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "59": {
-      "id": 59,
-      "content_id": 130138,
-      "editor_name": "王国城堡",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630039,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100674,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "60": {
-      "id": 60,
-      "content_id": 130138,
-      "editor_name": "王国城堡",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630040,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100674,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "61": {
-      "id": 61,
-      "content_id": 130139,
-      "editor_name": "金叶原",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100126,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "62": {
-      "id": 62,
-      "content_id": 130139,
-      "editor_name": "金叶原",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630041,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100126,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "63": {
-      "id": 63,
-      "content_id": 130139,
-      "editor_name": "金叶原",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630042,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100126,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "64": {
-      "id": 64,
-      "content_id": 130140,
-      "editor_name": "恶水沼泽",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100670,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "65": {
-      "id": 65,
-      "content_id": 130140,
-      "editor_name": "恶水沼泽",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630043,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100670,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "66": {
-      "id": 66,
-      "content_id": 130140,
-      "editor_name": "恶水沼泽",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630044,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100670,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "67": {
-      "id": 67,
-      "content_id": 130141,
-      "editor_name": "净化绿洲",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100134,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "68": {
-      "id": 68,
-      "content_id": 130141,
-      "editor_name": "净化绿洲",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630045,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100134,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "69": {
-      "id": 69,
-      "content_id": 130141,
-      "editor_name": "净化绿洲",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630046,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100134,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "70": {
-      "id": 70,
-      "content_id": 130142,
-      "editor_name": "微光湿地",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100130,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "71": {
-      "id": 71,
-      "content_id": 130142,
-      "editor_name": "微光湿地",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630047,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100130,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "72": {
-      "id": 72,
-      "content_id": 130142,
-      "editor_name": "微光湿地",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630048,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100130,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "73": {
-      "id": 73,
-      "content_id": 130143,
-      "editor_name": "巨人裂谷顶",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100123,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "74": {
-      "id": 74,
-      "content_id": 130143,
-      "editor_name": "巨人裂谷顶",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630049,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100123,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "75": {
-      "id": 75,
-      "content_id": 130143,
-      "editor_name": "巨人裂谷顶",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630050,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100123,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "76": {
-      "id": 76,
-      "content_id": 130144,
-      "editor_name": "巨人裂谷内",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100121,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "77": {
-      "id": 77,
-      "content_id": 130144,
-      "editor_name": "巨人裂谷内",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630051,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100121,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "78": {
-      "id": 78,
-      "content_id": 130144,
-      "editor_name": "巨人裂谷内",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630052,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100121,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "79": {
-      "id": 79,
-      "content_id": 130145,
-      "editor_name": "独角兽领地",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100850,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "80": {
-      "id": 80,
-      "content_id": 130145,
-      "editor_name": "独角兽领地",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 20,
-      "levelup_reward": 630053,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100850,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "81": {
-      "id": 81,
-      "content_id": 130145,
-      "editor_name": "独角兽领地",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 50,
-      "levelup_reward": 630054,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100850,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "82": {
-      "id": 82,
-      "content_id": 130146,
-      "editor_name": "采邑地",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100841,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "83": {
-      "id": 83,
-      "content_id": 130146,
-      "editor_name": "采邑地",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 20,
-      "levelup_reward": 630055,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100841,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "84": {
-      "id": 84,
-      "content_id": 130146,
-      "editor_name": "采邑地",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 50,
-      "levelup_reward": 630056,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100841,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "85": {
-      "id": 85,
-      "content_id": 130147,
-      "editor_name": "庭院山崖",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100122,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "86": {
-      "id": 86,
-      "content_id": 130147,
-      "editor_name": "庭院山崖",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630057,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100122,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "87": {
-      "id": 87,
-      "content_id": 130147,
-      "editor_name": "庭院山崖",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630058,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100122,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "88": {
-      "id": 88,
-      "content_id": 130148,
-      "editor_name": "花影迷宫",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100132,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "89": {
-      "id": 89,
-      "content_id": 130148,
-      "editor_name": "花影迷宫",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630059,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100132,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "90": {
-      "id": 90,
-      "content_id": 130148,
-      "editor_name": "花影迷宫",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630060,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100132,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "91": {
-      "id": 91,
-      "content_id": 130149,
-      "editor_name": "幻鸩庭院",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100133,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "92": {
-      "id": 92,
-      "content_id": 130149,
-      "editor_name": "幻鸩庭院",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630061,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100133,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "93": {
-      "id": 93,
-      "content_id": 130149,
-      "editor_name": "幻鸩庭院",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630062,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100133,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "94": {
-      "id": 94,
-      "content_id": 130150,
-      "editor_name": "北部荒原顶部",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100129,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "95": {
-      "id": 95,
-      "content_id": 130150,
-      "editor_name": "北部荒原顶部",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630063,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100129,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "96": {
-      "id": 96,
-      "content_id": 130150,
-      "editor_name": "北部荒原顶部",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630064,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100129,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "97": {
-      "id": 97,
-      "content_id": 130151,
-      "editor_name": "北部荒原底部",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100126,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "98": {
-      "id": 98,
-      "content_id": 130151,
-      "editor_name": "北部荒原底部",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630065,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100126,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "99": {
-      "id": 99,
-      "content_id": 130151,
-      "editor_name": "北部荒原底部",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630066,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100126,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "100": {
-      "id": 100,
-      "content_id": 130152,
-      "editor_name": "甜水农庄",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100844,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "101": {
-      "id": 101,
-      "content_id": 130152,
-      "editor_name": "甜水农庄",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630067,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100844,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "102": {
-      "id": 102,
-      "content_id": 130152,
-      "editor_name": "甜水农庄",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630068,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100844,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "103": {
-      "id": 103,
-      "content_id": 130153,
-      "editor_name": "大道半岛南部",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100134,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "104": {
-      "id": 104,
-      "content_id": 130153,
-      "editor_name": "大道半岛南部",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630069,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100134,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "105": {
-      "id": 105,
-      "content_id": 130153,
-      "editor_name": "大道半岛南部",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630070,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100134,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "106": {
-      "id": 106,
-      "content_id": 130154,
-      "editor_name": "大道半岛内部",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100130,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "107": {
-      "id": 107,
-      "content_id": 130154,
-      "editor_name": "大道半岛内部",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630071,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100130,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "108": {
-      "id": 108,
-      "content_id": 130154,
-      "editor_name": "大道半岛内部",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630072,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100130,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "109": {
-      "id": 109,
-      "content_id": 140150,
-      "editor_name": "风眠圣所",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100842,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "110": {
-      "id": 110,
-      "content_id": 140150,
-      "editor_name": "风眠圣所",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630071,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100842,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "111": {
-      "id": 111,
-      "content_id": 140150,
-      "editor_name": "风眠圣所",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630072,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100842,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "112": {
-      "id": 112,
-      "content_id": 130155,
-      "editor_name": "咸水湾",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100621,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "113": {
-      "id": 113,
-      "content_id": 130155,
-      "editor_name": "咸水湾",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630061,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100621,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "114": {
-      "id": 114,
-      "content_id": 130155,
-      "editor_name": "咸水湾",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630062,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100621,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "115": {
-      "id": 115,
-      "content_id": 130156,
-      "editor_name": "沉船漩涡",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100849,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "116": {
-      "id": 116,
-      "content_id": 130156,
-      "editor_name": "沉船漩涡",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630063,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100849,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "117": {
-      "id": 117,
-      "content_id": 130156,
-      "editor_name": "沉船漩涡",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630064,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100849,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "118": {
-      "id": 118,
-      "content_id": 130157,
-      "editor_name": "圣所前哨",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100664,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "119": {
-      "id": 119,
-      "content_id": 130157,
-      "editor_name": "圣所前哨",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630065,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100664,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "120": {
-      "id": 120,
-      "content_id": 130157,
-      "editor_name": "圣所前哨",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630066,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100664,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "121": {
-      "id": 121,
-      "content_id": 130158,
-      "editor_name": "回填山涧",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100605,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "122": {
-      "id": 122,
-      "content_id": 130158,
-      "editor_name": "回填山涧",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630067,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100605,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "123": {
-      "id": 123,
-      "content_id": 130158,
-      "editor_name": "回填山涧",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630068,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100605,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "124": {
-      "id": 124,
-      "content_id": 130159,
-      "editor_name": "采邑地",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100841,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "125": {
-      "id": 125,
-      "content_id": 130159,
-      "editor_name": "采邑地",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630069,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100841,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "126": {
-      "id": 126,
-      "content_id": 130159,
-      "editor_name": "采邑地",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630070,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100841,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "127": {
-      "id": 127,
-      "content_id": 130160,
-      "editor_name": "独角兽领地",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100850,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "128": {
-      "id": 128,
-      "content_id": 130160,
-      "editor_name": "独角兽领地",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630071,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100850,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "129": {
-      "id": 129,
-      "content_id": 130160,
-      "editor_name": "独角兽领地",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630072,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100850,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "130": {
-      "id": 130,
-      "content_id": 130161,
-      "editor_name": "恶水沼泽",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100670,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "131": {
-      "id": 131,
-      "content_id": 130161,
-      "editor_name": "恶水沼泽",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630071,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100670,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "132": {
-      "id": 132,
-      "content_id": 130161,
-      "editor_name": "恶水沼泽",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630072,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100670,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "133": {
-      "id": 133,
-      "content_id": 130162,
-      "editor_name": "黑水峡",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100663,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "134": {
-      "id": 134,
-      "content_id": 130162,
-      "editor_name": "黑水峡",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630061,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100663,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "135": {
-      "id": 135,
-      "content_id": 130162,
-      "editor_name": "黑水峡",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630062,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100663,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "136": {
-      "id": 136,
-      "content_id": 130163,
-      "editor_name": "甜水农庄",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100665,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "137": {
-      "id": 137,
-      "content_id": 130163,
-      "editor_name": "甜水农庄",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630063,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100665,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "138": {
-      "id": 138,
-      "content_id": 130163,
-      "editor_name": "甜水农庄",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630064,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100665,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "139": {
-      "id": 139,
-      "content_id": 130164,
-      "editor_name": "咕嘟咕嘟浅滩",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100839,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "140": {
-      "id": 140,
-      "content_id": 130164,
-      "editor_name": "咕嘟咕嘟浅滩",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630065,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100839,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "141": {
-      "id": 141,
-      "content_id": 130164,
-      "editor_name": "咕嘟咕嘟浅滩",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630066,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100839,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "142": {
-      "id": 142,
-      "content_id": 130165,
-      "editor_name": "银蛇河口",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100662,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "143": {
-      "id": 143,
-      "content_id": 130165,
-      "editor_name": "银蛇河口",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630067,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100662,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "144": {
-      "id": 144,
-      "content_id": 130165,
-      "editor_name": "银蛇河口",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630068,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100662,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "145": {
-      "id": 145,
-      "content_id": 130166,
-      "editor_name": "王国城堡",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100674,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "146": {
-      "id": 146,
-      "content_id": 130166,
-      "editor_name": "王国城堡",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630069,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100674,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "147": {
-      "id": 147,
-      "content_id": 130166,
-      "editor_name": "王国城堡",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630070,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100674,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "148": {
-      "id": 148,
-      "content_id": 130167,
-      "editor_name": "港口驻地",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100667,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "149": {
-      "id": 149,
-      "content_id": 130167,
-      "editor_name": "港口驻地",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630071,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100667,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "150": {
-      "id": 150,
-      "content_id": 130167,
-      "editor_name": "港口驻地",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630072,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100667,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "151": {
-      "id": 151,
-      "content_id": 130168,
-      "editor_name": "向日葵海岸",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100843,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "152": {
-      "id": 152,
-      "content_id": 130168,
-      "editor_name": "向日葵海岸",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630071,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100843,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "153": {
-      "id": 153,
-      "content_id": 130168,
-      "editor_name": "向日葵海岸",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630072,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100843,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "154": {
-      "id": 154,
-      "content_id": 130169,
-      "editor_name": "彼得大道",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100848,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "155": {
-      "id": 155,
-      "content_id": 130169,
-      "editor_name": "彼得大道",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630061,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100848,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "156": {
-      "id": 156,
-      "content_id": 130169,
-      "editor_name": "彼得大道",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630062,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100848,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "157": {
-      "id": 157,
-      "content_id": 130170,
-      "editor_name": "交汇镇",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100666,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "158": {
-      "id": 158,
-      "content_id": 130170,
-      "editor_name": "交汇镇",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630063,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100666,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "159": {
-      "id": 159,
-      "content_id": 130170,
-      "editor_name": "交汇镇",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630064,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100666,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "160": {
-      "id": 160,
-      "content_id": 130171,
-      "editor_name": "监管区",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100846,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "161": {
-      "id": 161,
-      "content_id": 130171,
-      "editor_name": "监管区",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630065,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100846,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "162": {
-      "id": 162,
-      "content_id": 130171,
-      "editor_name": "监管区",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630066,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100846,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "163": {
-      "id": 163,
-      "content_id": 130172,
-      "editor_name": "拾荒港口",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100669,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "164": {
-      "id": 164,
-      "content_id": 130172,
-      "editor_name": "拾荒港口",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630061,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100669,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "165": {
-      "id": 165,
-      "content_id": 130172,
-      "editor_name": "拾荒港口",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630062,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100669,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "166": {
-      "id": 166,
-      "content_id": 130173,
-      "editor_name": "晨曦山",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100626,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "167": {
-      "id": 167,
-      "content_id": 130173,
-      "editor_name": "晨曦山",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630063,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100626,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "168": {
-      "id": 168,
-      "content_id": 130173,
-      "editor_name": "晨曦山",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630064,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100626,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "169": {
-      "id": 169,
-      "content_id": 130174,
-      "editor_name": "信仰者村落",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100668,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "170": {
-      "id": 170,
-      "content_id": 130174,
-      "editor_name": "信仰者村落",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630065,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100668,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "171": {
-      "id": 171,
-      "content_id": 130174,
-      "editor_name": "信仰者村落",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630066,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100668,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "172": {
-      "id": 172,
-      "content_id": 130175,
-      "editor_name": "月兔暗港",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100622,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "173": {
-      "id": 173,
-      "content_id": 130175,
-      "editor_name": "月兔暗港",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630067,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100622,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "174": {
-      "id": 174,
-      "content_id": 130175,
-      "editor_name": "月兔暗港",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630068,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100622,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "175": {
-      "id": 175,
-      "content_id": 130176,
-      "editor_name": "望风半岛",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100607,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "176": {
-      "id": 176,
-      "content_id": 130176,
-      "editor_name": "望风半岛",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630069,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100607,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "177": {
-      "id": 177,
-      "content_id": 130176,
-      "editor_name": "望风半岛",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630070,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100607,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "178": {
-      "id": 178,
-      "content_id": 130177,
-      "editor_name": "金叶原",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100130,
-          "reward_item_num": 8
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "179": {
-      "id": 179,
-      "content_id": 130177,
-      "editor_name": "金叶原",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630071,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100130,
-          "reward_item_num": 16
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "180": {
-      "id": 180,
-      "content_id": 130177,
-      "editor_name": "金叶原",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630072,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100130,
-          "reward_item_num": 32
-        }
-      ],
-      "regional_division": 1,
-      "travel_goal": 1,
-      "is_travel_vaild": true,
-      "travel_destination_des": "素材收集"
-    },
-    "184": {
-      "id": 184,
-      "content_id": 801196,
-      "editor_name": "创造魔法的枯枝",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100124,
-          "reward_item_num": 8
-        }
-      ],
-      "travel_destination_des": "未知"
-    },
-    "185": {
-      "id": 185,
-      "content_id": 801196,
-      "editor_name": "创造魔法的枯枝",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630071,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100124,
-          "reward_item_num": 16
-        }
-      ],
-      "travel_destination_des": "未知"
-    },
-    "186": {
-      "id": 186,
-      "content_id": 801196,
-      "editor_name": "创造魔法的枯枝",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630072,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100124,
-          "reward_item_num": 32
-        }
-      ],
-      "travel_destination_des": "未知"
-    },
-    "187": {
-      "id": 187,
-      "content_id": 130313,
-      "editor_name": "魔法学院",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 5
-        }
-      ],
-      "regional_division": 2,
-      "travel_goal": 2,
-      "travel_destination_des": "精灵升级"
-    },
-    "188": {
-      "id": 188,
-      "content_id": 130313,
-      "editor_name": "魔法学院",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630071,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 10
-        }
-      ],
-      "regional_division": 2,
-      "travel_goal": 2,
-      "travel_destination_des": "精灵升级"
-    },
-    "189": {
-      "id": 189,
-      "content_id": 130313,
-      "editor_name": "魔法学院",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630072,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 20
-        }
-      ],
-      "regional_division": 2,
-      "travel_goal": 2,
-      "travel_destination_des": "精灵升级"
-    },
-    "190": {
-      "id": 190,
-      "content_id": 130317,
-      "editor_name": "魔法学院",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 5
-        }
-      ],
-      "regional_division": 2,
-      "travel_goal": 2,
-      "travel_destination_des": "精灵升级"
-    },
-    "191": {
-      "id": 191,
-      "content_id": 130317,
-      "editor_name": "魔法学院",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630071,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 10
-        }
-      ],
-      "regional_division": 2,
-      "travel_goal": 2,
-      "travel_destination_des": "精灵升级"
-    },
-    "192": {
-      "id": 192,
-      "content_id": 130317,
-      "editor_name": "魔法学院",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630072,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 20
-        }
-      ],
-      "regional_division": 2,
-      "travel_goal": 2,
-      "travel_destination_des": "精灵升级"
-    },
-    "193": {
-      "id": 193,
-      "content_id": 130318,
-      "editor_name": "魔法学院",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 5
-        }
-      ],
-      "regional_division": 2,
-      "travel_goal": 2,
-      "travel_destination_des": "精灵升级"
-    },
-    "194": {
-      "id": 194,
-      "content_id": 130318,
-      "editor_name": "魔法学院",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630071,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 10
-        }
-      ],
-      "regional_division": 2,
-      "travel_goal": 2,
-      "travel_destination_des": "精灵升级"
-    },
-    "195": {
-      "id": 195,
-      "content_id": 130318,
-      "editor_name": "魔法学院",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630072,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 20
-        }
-      ],
-      "regional_division": 2,
-      "travel_goal": 2,
-      "travel_destination_des": "精灵升级"
-    },
-    "196": {
-      "id": 196,
-      "content_id": 130319,
-      "editor_name": "魔法学院",
-      "level": 1,
-      "travel_time": 28800,
-      "lay_chance": 4000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 5
-        }
-      ],
-      "regional_division": 2,
-      "travel_goal": 3,
-      "travel_destination_des": "特长交流"
-    },
-    "197": {
-      "id": 197,
-      "content_id": 130319,
-      "editor_name": "魔法学院",
-      "level": 2,
-      "pet_fruit_num": 3,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 24,
-      "levelup_reward": 630071,
-      "travel_time": 43200,
-      "lay_chance": 6000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 10
-        }
-      ],
-      "regional_division": 2,
-      "travel_goal": 3,
-      "travel_destination_des": "特长交流"
-    },
-    "198": {
-      "id": 198,
-      "content_id": 130319,
-      "editor_name": "魔法学院",
-      "level": 3,
-      "pet_fruit_num": 6,
-      "levelup_cost_item_type": 1,
-      "levelup_cost_item_id": 100660,
-      "levelup_cost_item_num": 60,
-      "levelup_reward": 630072,
-      "travel_time": 72000,
-      "lay_chance": 10000,
-      "reward_item": [
-        {
-          "reward_item_type": 1,
-          "reward_item_id": 100212,
-          "reward_item_num": 20
-        }
-      ],
-      "regional_division": 2,
-      "travel_goal": 3,
-      "travel_destination_des": "特长交流"
+    "384": {
+      "id": 384,
+      "content_id": 33358848,
+      "level": 256,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 512,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "640": {
+      "id": 640,
+      "content_id": 33358848,
+      "level": 256,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 3072,
+      "travel_time": 161280256,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 1024,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "896": {
+      "id": 896,
+      "content_id": 33358848,
+      "level": 256,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 7680,
+      "travel_time": 161280512,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 1280,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "1152": {
+      "id": 1152,
+      "content_id": 33359104,
+      "level": 1536,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 1792,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "1408": {
+      "id": 1408,
+      "content_id": 33359104,
+      "level": 1536,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 2048,
+      "travel_time": 161280768,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 2048,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "1664": {
+      "id": 1664,
+      "content_id": 33359104,
+      "level": 1536,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 5120,
+      "travel_time": 161281024,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 2304,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "1920": {
+      "id": 1920,
+      "content_id": 33359360,
+      "level": 2560,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 2816,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "2176": {
+      "id": 2176,
+      "content_id": 33359360,
+      "level": 2560,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 2048,
+      "travel_time": 161281280,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 3072,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "2432": {
+      "id": 2432,
+      "content_id": 33359360,
+      "level": 2560,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 5120,
+      "travel_time": 161281536,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 3328,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "2688": {
+      "id": 2688,
+      "content_id": 33359616,
+      "level": 3584,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 3840,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "2944": {
+      "id": 2944,
+      "content_id": 33359616,
+      "level": 3584,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 2048,
+      "travel_time": 161281792,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 4096,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "3200": {
+      "id": 3200,
+      "content_id": 33359616,
+      "level": 3584,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 5120,
+      "travel_time": 161282048,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 4352,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "3456": {
+      "id": 3456,
+      "content_id": 33359872,
+      "level": 4608,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 4864,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "3712": {
+      "id": 3712,
+      "content_id": 33359872,
+      "level": 4608,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 3072,
+      "travel_time": 161282304,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 5120,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "3968": {
+      "id": 3968,
+      "content_id": 33359872,
+      "level": 4608,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 7680,
+      "travel_time": 161282560,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 5376,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "4224": {
+      "id": 4224,
+      "content_id": 35876608,
+      "level": 5632,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 5888,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "4480": {
+      "id": 4480,
+      "content_id": 35876608,
+      "level": 5632,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 6144,
+      "travel_time": 161282816,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 6144,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "4736": {
+      "id": 4736,
+      "content_id": 35876608,
+      "level": 5632,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 15360,
+      "travel_time": 161283072,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 6400,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "4992": {
+      "id": 4992,
+      "content_id": 35876864,
+      "level": 6656,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 6912,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "5248": {
+      "id": 5248,
+      "content_id": 35876864,
+      "level": 6656,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 5120,
+      "travel_time": 161283328,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 7168,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "5504": {
+      "id": 5504,
+      "content_id": 35876864,
+      "level": 6656,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 12800,
+      "travel_time": 161283584,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 7424,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "5760": {
+      "id": 5760,
+      "content_id": 35877120,
+      "level": 7680,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 7936,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "6016": {
+      "id": 6016,
+      "content_id": 35877120,
+      "level": 7680,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 4096,
+      "travel_time": 161283840,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 8192,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "6272": {
+      "id": 6272,
+      "content_id": 35877120,
+      "level": 7680,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 10240,
+      "travel_time": 161284096,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 8448,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "6528": {
+      "id": 6528,
+      "content_id": 35877376,
+      "level": 8704,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 8960,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "6784": {
+      "id": 6784,
+      "content_id": 35877376,
+      "level": 8704,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 4096,
+      "travel_time": 161284352,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 9216,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "7040": {
+      "id": 7040,
+      "content_id": 35877376,
+      "level": 8704,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 10240,
+      "travel_time": 161284608,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 9472,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "7296": {
+      "id": 7296,
+      "content_id": 35877632,
+      "level": 9728,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 9984,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "7552": {
+      "id": 7552,
+      "content_id": 35877632,
+      "level": 9728,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 5120,
+      "travel_time": 161284864,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 10240,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "7808": {
+      "id": 7808,
+      "content_id": 35877632,
+      "level": 9728,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 12800,
+      "travel_time": 161285120,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 10496,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "8064": {
+      "id": 8064,
+      "content_id": 35878144,
+      "level": 10752,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 11008,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "8320": {
+      "id": 8320,
+      "content_id": 35878144,
+      "level": 10752,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 256,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 1024,
+      "travel_time": 161285376,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 11264,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "8576": {
+      "id": 8576,
+      "content_id": 35878144,
+      "level": 10752,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 2560,
+      "travel_time": 161285632,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 11520,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "8832": {
+      "id": 8832,
+      "content_id": 307325952,
+      "level": 11776,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 12032,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "9088": {
+      "id": 9088,
+      "content_id": 307325952,
+      "level": 11776,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 6144,
+      "travel_time": 161285888,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 12288,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "9344": {
+      "id": 9344,
+      "content_id": 307325952,
+      "level": 11776,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25761024,
+      "levelup_reward": 15360,
+      "travel_time": 161286144,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 12544,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "9600": {
+      "id": 9600,
+      "content_id": 33313536,
+      "level": 12800,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 13056,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "9856": {
+      "id": 9856,
+      "content_id": 33313536,
+      "level": 12800,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161286400,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 13312,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "10112": {
+      "id": 10112,
+      "content_id": 33313536,
+      "level": 12800,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161286656,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 13568,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "10368": {
+      "id": 10368,
+      "content_id": 33313792,
+      "level": 13824,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 14080,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "10624": {
+      "id": 10624,
+      "content_id": 33313792,
+      "level": 13824,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161286912,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 14336,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "10880": {
+      "id": 10880,
+      "content_id": 33313792,
+      "level": 13824,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161287168,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 14592,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "11136": {
+      "id": 11136,
+      "content_id": 33314048,
+      "level": 14848,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 15104,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "11392": {
+      "id": 11392,
+      "content_id": 33314048,
+      "level": 14848,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 4096,
+      "travel_time": 161287424,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 15360,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "11648": {
+      "id": 11648,
+      "content_id": 33314048,
+      "level": 14848,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 10240,
+      "travel_time": 161287680,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 15616,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "11904": {
+      "id": 11904,
+      "content_id": 33314304,
+      "level": 15872,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 16128,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "12160": {
+      "id": 12160,
+      "content_id": 33314304,
+      "level": 15872,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 5120,
+      "travel_time": 161287936,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 16384,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "12416": {
+      "id": 12416,
+      "content_id": 33314304,
+      "level": 15872,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 12800,
+      "travel_time": 161288192,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 16640,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "12672": {
+      "id": 12672,
+      "content_id": 33314560,
+      "level": 16896,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 17152,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "12928": {
+      "id": 12928,
+      "content_id": 33314560,
+      "level": 16896,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161288448,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 17408,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "13184": {
+      "id": 13184,
+      "content_id": 33314560,
+      "level": 16896,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161288704,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 17664,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "13440": {
+      "id": 13440,
+      "content_id": 33314816,
+      "level": 17920,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 18176,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "13696": {
+      "id": 13696,
+      "content_id": 33314816,
+      "level": 17920,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161288960,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 18432,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "13952": {
+      "id": 13952,
+      "content_id": 33314816,
+      "level": 17920,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161289216,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 18688,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "14208": {
+      "id": 14208,
+      "content_id": 33315072,
+      "level": 18944,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 19200,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "14464": {
+      "id": 14464,
+      "content_id": 33315072,
+      "level": 18944,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161289472,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 19456,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "14720": {
+      "id": 14720,
+      "content_id": 33315072,
+      "level": 18944,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161289728,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 19712,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "14976": {
+      "id": 14976,
+      "content_id": 33315328,
+      "level": 19968,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 20224,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "15232": {
+      "id": 15232,
+      "content_id": 33315328,
+      "level": 19968,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161289984,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 20480,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "15488": {
+      "id": 15488,
+      "content_id": 33315328,
+      "level": 19968,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161290240,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 20736,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "15744": {
+      "id": 15744,
+      "content_id": 33315584,
+      "level": 20992,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 21248,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "16000": {
+      "id": 16000,
+      "content_id": 33315584,
+      "level": 20992,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161290496,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 21504,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "16256": {
+      "id": 16256,
+      "content_id": 33315584,
+      "level": 20992,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161290752,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 21760,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "16512": {
+      "id": 16512,
+      "content_id": 33315840,
+      "level": 22016,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 22272,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "16768": {
+      "id": 16768,
+      "content_id": 33315840,
+      "level": 22016,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161291008,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 22528,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "17024": {
+      "id": 17024,
+      "content_id": 33315840,
+      "level": 22016,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161291264,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 22784,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "17280": {
+      "id": 17280,
+      "content_id": 33316096,
+      "level": 23040,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 23296,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "17536": {
+      "id": 17536,
+      "content_id": 33316096,
+      "level": 23040,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161291520,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 23552,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "17792": {
+      "id": 17792,
+      "content_id": 33316096,
+      "level": 23040,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161291776,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 23808,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "18048": {
+      "id": 18048,
+      "content_id": 33316352,
+      "level": 24064,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 24320,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "18304": {
+      "id": 18304,
+      "content_id": 33316352,
+      "level": 24064,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161292032,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 24576,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "18560": {
+      "id": 18560,
+      "content_id": 33316352,
+      "level": 24064,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161292288,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 24832,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "18816": {
+      "id": 18816,
+      "content_id": 33316608,
+      "level": 25088,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 13056,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "19072": {
+      "id": 19072,
+      "content_id": 33316608,
+      "level": 25088,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161292544,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 13312,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "19328": {
+      "id": 19328,
+      "content_id": 33316608,
+      "level": 25088,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161292800,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 13568,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "19584": {
+      "id": 19584,
+      "content_id": 33316864,
+      "level": 25344,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 14080,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "19840": {
+      "id": 19840,
+      "content_id": 33316864,
+      "level": 25344,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161293056,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 14336,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "20096": {
+      "id": 20096,
+      "content_id": 33316864,
+      "level": 25344,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161293312,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 14592,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "20352": {
+      "id": 20352,
+      "content_id": 33317120,
+      "level": 25600,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 25856,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "20608": {
+      "id": 20608,
+      "content_id": 33317120,
+      "level": 25600,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 5120,
+      "travel_time": 161293568,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 26112,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "20864": {
+      "id": 20864,
+      "content_id": 33317120,
+      "level": 25600,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 12800,
+      "travel_time": 161293824,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 26368,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "21120": {
+      "id": 21120,
+      "content_id": 33317376,
+      "level": 26624,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 15104,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "21376": {
+      "id": 21376,
+      "content_id": 33317376,
+      "level": 26624,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 5120,
+      "travel_time": 161294080,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 15360,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "21632": {
+      "id": 21632,
+      "content_id": 33317376,
+      "level": 26624,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 12800,
+      "travel_time": 161294336,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 15616,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "21888": {
+      "id": 21888,
+      "content_id": 33317632,
+      "level": 26880,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 27136,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "22144": {
+      "id": 22144,
+      "content_id": 33317632,
+      "level": 26880,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161294592,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 27392,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "22400": {
+      "id": 22400,
+      "content_id": 33317632,
+      "level": 26880,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161294848,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 27648,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "22656": {
+      "id": 22656,
+      "content_id": 33317888,
+      "level": 27904,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 18176,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "22912": {
+      "id": 22912,
+      "content_id": 33317888,
+      "level": 27904,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161295104,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 18432,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "23168": {
+      "id": 23168,
+      "content_id": 33317888,
+      "level": 27904,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161295360,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 18688,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "23424": {
+      "id": 23424,
+      "content_id": 33318144,
+      "level": 28160,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 19200,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "23680": {
+      "id": 23680,
+      "content_id": 33318144,
+      "level": 28160,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161295616,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 19456,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "23936": {
+      "id": 23936,
+      "content_id": 33318144,
+      "level": 28160,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161295872,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 19712,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "24192": {
+      "id": 24192,
+      "content_id": 33318400,
+      "level": 28416,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 28672,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "24448": {
+      "id": 24448,
+      "content_id": 33318400,
+      "level": 28416,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161296128,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 28928,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "24704": {
+      "id": 24704,
+      "content_id": 33318400,
+      "level": 28416,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161296384,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 29184,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "24960": {
+      "id": 24960,
+      "content_id": 33318656,
+      "level": 29440,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 21248,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "25216": {
+      "id": 25216,
+      "content_id": 33318656,
+      "level": 29440,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161296640,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 21504,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "25472": {
+      "id": 25472,
+      "content_id": 33318656,
+      "level": 29440,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161296896,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 21760,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "25728": {
+      "id": 25728,
+      "content_id": 33318912,
+      "level": 29696,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 1792,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "25984": {
+      "id": 25984,
+      "content_id": 33318912,
+      "level": 29696,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161297152,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 2048,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "26240": {
+      "id": 26240,
+      "content_id": 33318912,
+      "level": 29696,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161297408,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 2304,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "26496": {
+      "id": 26496,
+      "content_id": 33319168,
+      "level": 29952,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 23296,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "26752": {
+      "id": 26752,
+      "content_id": 33319168,
+      "level": 29952,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161297664,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 23552,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "27008": {
+      "id": 27008,
+      "content_id": 33319168,
+      "level": 29952,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161297920,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 23808,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "27264": {
+      "id": 27264,
+      "content_id": 33319424,
+      "level": 30208,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 24320,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "27520": {
+      "id": 27520,
+      "content_id": 33319424,
+      "level": 30208,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161298176,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 24576,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "27776": {
+      "id": 27776,
+      "content_id": 33319424,
+      "level": 30208,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161298432,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 24832,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "28032": {
+      "id": 28032,
+      "content_id": 35878400,
+      "level": 30464,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 30720,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "28288": {
+      "id": 28288,
+      "content_id": 35878400,
+      "level": 30464,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161298176,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 30976,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "28544": {
+      "id": 28544,
+      "content_id": 35878400,
+      "level": 30464,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161298432,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 31232,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "28800": {
+      "id": 28800,
+      "content_id": 33319680,
+      "level": 31488,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 31744,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "29056": {
+      "id": 29056,
+      "content_id": 33319680,
+      "level": 31488,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161295616,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 32000,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "29312": {
+      "id": 29312,
+      "content_id": 33319680,
+      "level": 31488,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161295872,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 32256,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "29568": {
+      "id": 29568,
+      "content_id": 33319936,
+      "level": 32512,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 32768,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "29824": {
+      "id": 29824,
+      "content_id": 33319936,
+      "level": 32512,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161296128,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 33024,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "30080": {
+      "id": 30080,
+      "content_id": 33319936,
+      "level": 32512,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161296384,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 33280,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "30336": {
+      "id": 30336,
+      "content_id": 33320192,
+      "level": 14848,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 33536,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "30592": {
+      "id": 30592,
+      "content_id": 33320192,
+      "level": 14848,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161296640,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 33792,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "30848": {
+      "id": 30848,
+      "content_id": 33320192,
+      "level": 14848,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161296896,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 34048,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "31104": {
+      "id": 31104,
+      "content_id": 33320448,
+      "level": 34304,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 34560,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "31360": {
+      "id": 31360,
+      "content_id": 33320448,
+      "level": 34304,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161297152,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 34816,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "31616": {
+      "id": 31616,
+      "content_id": 33320448,
+      "level": 34304,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161297408,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 35072,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "31872": {
+      "id": 31872,
+      "content_id": 33320704,
+      "level": 26624,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 15104,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "32128": {
+      "id": 32128,
+      "content_id": 33320704,
+      "level": 26624,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161297664,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 15360,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "32384": {
+      "id": 32384,
+      "content_id": 33320704,
+      "level": 26624,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161297920,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 15616,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "32640": {
+      "id": 32640,
+      "content_id": 33320960,
+      "level": 25600,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 25856,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "32896": {
+      "id": 32896,
+      "content_id": 33320960,
+      "level": 25600,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161298176,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 26112,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "33152": {
+      "id": 33152,
+      "content_id": 33320960,
+      "level": 25600,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161298432,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 26368,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "33408": {
+      "id": 33408,
+      "content_id": 33321216,
+      "level": 22016,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 22272,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "33664": {
+      "id": 33664,
+      "content_id": 33321216,
+      "level": 22016,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161298176,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 22528,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "33920": {
+      "id": 33920,
+      "content_id": 33321216,
+      "level": 22016,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161298432,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 22784,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "34176": {
+      "id": 34176,
+      "content_id": 33321472,
+      "level": 35328,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 35584,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "34432": {
+      "id": 34432,
+      "content_id": 33321472,
+      "level": 35328,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161295616,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 35840,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "34688": {
+      "id": 34688,
+      "content_id": 33321472,
+      "level": 35328,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161295872,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 36096,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "34944": {
+      "id": 34944,
+      "content_id": 33321728,
+      "level": 29696,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 36352,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "35200": {
+      "id": 35200,
+      "content_id": 33321728,
+      "level": 29696,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161296128,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 36608,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "35456": {
+      "id": 35456,
+      "content_id": 33321728,
+      "level": 29696,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161296384,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 36864,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "35712": {
+      "id": 35712,
+      "content_id": 33321984,
+      "level": 37120,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 37376,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "35968": {
+      "id": 35968,
+      "content_id": 33321984,
+      "level": 37120,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161296640,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 37632,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "36224": {
+      "id": 36224,
+      "content_id": 33321984,
+      "level": 37120,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161296896,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 37888,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "36480": {
+      "id": 36480,
+      "content_id": 33322240,
+      "level": 38144,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 38400,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "36736": {
+      "id": 36736,
+      "content_id": 33322240,
+      "level": 38144,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161297152,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 38656,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "36992": {
+      "id": 36992,
+      "content_id": 33322240,
+      "level": 38144,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161297408,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 38912,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "37248": {
+      "id": 37248,
+      "content_id": 33322496,
+      "level": 19968,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 20224,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "37504": {
+      "id": 37504,
+      "content_id": 33322496,
+      "level": 19968,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161297664,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 20480,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "37760": {
+      "id": 37760,
+      "content_id": 33322496,
+      "level": 19968,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161297920,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 20736,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "38016": {
+      "id": 38016,
+      "content_id": 33322752,
+      "level": 39168,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 39424,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "38272": {
+      "id": 38272,
+      "content_id": 33322752,
+      "level": 39168,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161298176,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 39680,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "38528": {
+      "id": 38528,
+      "content_id": 33322752,
+      "level": 39168,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161298432,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 39936,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "38784": {
+      "id": 38784,
+      "content_id": 33323008,
+      "level": 40192,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 40448,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "39040": {
+      "id": 39040,
+      "content_id": 33323008,
+      "level": 40192,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161298176,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 40704,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "39296": {
+      "id": 39296,
+      "content_id": 33323008,
+      "level": 40192,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161298432,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 40960,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "39552": {
+      "id": 39552,
+      "content_id": 33323264,
+      "level": 16896,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 17152,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "39808": {
+      "id": 39808,
+      "content_id": 33323264,
+      "level": 16896,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161295616,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 17408,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "40064": {
+      "id": 40064,
+      "content_id": 33323264,
+      "level": 16896,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161295872,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 17664,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "40320": {
+      "id": 40320,
+      "content_id": 33323520,
+      "level": 41216,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 41472,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "40576": {
+      "id": 40576,
+      "content_id": 33323520,
+      "level": 41216,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161296128,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 41728,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "40832": {
+      "id": 40832,
+      "content_id": 33323520,
+      "level": 41216,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161296384,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 41984,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "41088": {
+      "id": 41088,
+      "content_id": 33323776,
+      "level": 42240,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 42496,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "41344": {
+      "id": 41344,
+      "content_id": 33323776,
+      "level": 42240,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161296640,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 42752,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "41600": {
+      "id": 41600,
+      "content_id": 33323776,
+      "level": 42240,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161296896,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 43008,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "41856": {
+      "id": 41856,
+      "content_id": 33324032,
+      "level": 43264,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 43520,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "42112": {
+      "id": 42112,
+      "content_id": 33324032,
+      "level": 43264,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161295616,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 43776,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "42368": {
+      "id": 42368,
+      "content_id": 33324032,
+      "level": 43264,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161295872,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 44032,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "42624": {
+      "id": 42624,
+      "content_id": 33324288,
+      "level": 15872,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 16128,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "42880": {
+      "id": 42880,
+      "content_id": 33324288,
+      "level": 15872,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161296128,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 16384,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "43136": {
+      "id": 43136,
+      "content_id": 33324288,
+      "level": 15872,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161296384,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 16640,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "43392": {
+      "id": 43392,
+      "content_id": 33324544,
+      "level": 44288,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 44544,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "43648": {
+      "id": 43648,
+      "content_id": 33324544,
+      "level": 44288,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161296640,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 44800,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "43904": {
+      "id": 43904,
+      "content_id": 33324544,
+      "level": 44288,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161296896,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 45056,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "44160": {
+      "id": 44160,
+      "content_id": 33324800,
+      "level": 45312,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 45568,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "44416": {
+      "id": 44416,
+      "content_id": 33324800,
+      "level": 45312,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161297152,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 45824,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "44672": {
+      "id": 44672,
+      "content_id": 33324800,
+      "level": 45312,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161297408,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 46080,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "44928": {
+      "id": 44928,
+      "content_id": 33325056,
+      "level": 46336,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 46592,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "45184": {
+      "id": 45184,
+      "content_id": 33325056,
+      "level": 46336,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161297664,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 46848,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "45440": {
+      "id": 45440,
+      "content_id": 33325056,
+      "level": 46336,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161297920,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 47104,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "45696": {
+      "id": 45696,
+      "content_id": 33325312,
+      "level": 20992,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 24320,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "45952": {
+      "id": 45952,
+      "content_id": 33325312,
+      "level": 20992,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161298176,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 24576,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "46208": {
+      "id": 46208,
+      "content_id": 33325312,
+      "level": 20992,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161298432,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 24832,
+      "travel_goal": 256,
+      "is_travel_vaild": false,
+      "travel_destination_des": ""
+    },
+    "47232": {
+      "id": 47232,
+      "content_id": 205106176,
+      "level": 47360,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 47616
+    },
+    "47488": {
+      "id": 47488,
+      "content_id": 205106176,
+      "level": 47360,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161298176,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 48128
+    },
+    "47744": {
+      "id": 47744,
+      "content_id": 205106176,
+      "level": 47360,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161298432,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 48384
+    },
+    "48000": {
+      "id": 48000,
+      "content_id": 33360128,
+      "level": 48640,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 2816,
+      "travel_goal": 512,
+      "is_travel_vaild": false
+    },
+    "48256": {
+      "id": 48256,
+      "content_id": 33360128,
+      "level": 48640,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161298176,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 3072,
+      "travel_goal": 512,
+      "is_travel_vaild": false
+    },
+    "48512": {
+      "id": 48512,
+      "content_id": 33360128,
+      "level": 48640,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161298432,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 3328,
+      "travel_goal": 512,
+      "is_travel_vaild": false
+    },
+    "48768": {
+      "id": 48768,
+      "content_id": 33361152,
+      "level": 48640,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 2816,
+      "travel_goal": 512,
+      "is_travel_vaild": false
+    },
+    "49024": {
+      "id": 49024,
+      "content_id": 33361152,
+      "level": 48640,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161298176,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 3072,
+      "travel_goal": 512,
+      "is_travel_vaild": false
+    },
+    "49280": {
+      "id": 49280,
+      "content_id": 33361152,
+      "level": 48640,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161298432,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 3328,
+      "travel_goal": 512,
+      "is_travel_vaild": false
+    },
+    "49536": {
+      "id": 49536,
+      "content_id": 33361408,
+      "level": 48640,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 2816,
+      "travel_goal": 512,
+      "is_travel_vaild": false
+    },
+    "49792": {
+      "id": 49792,
+      "content_id": 33361408,
+      "level": 48640,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161298176,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 3072,
+      "travel_goal": 512,
+      "is_travel_vaild": false
+    },
+    "50048": {
+      "id": 50048,
+      "content_id": 33361408,
+      "level": 48640,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161298432,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 3328,
+      "travel_goal": 512,
+      "is_travel_vaild": false
+    },
+    "50304": {
+      "id": 50304,
+      "content_id": 33361664,
+      "level": 48640,
+      "pet_fruit_num": 256,
+      "lay_chance": 7372800,
+      "extra_lay_chance": 1024000,
+      "regional_division": 2816,
+      "travel_goal": 512,
+      "is_travel_vaild": false
+    },
+    "50560": {
+      "id": 50560,
+      "content_id": 33361664,
+      "level": 48640,
+      "pet_fruit_num": 512,
+      "levelup_cost_item_type": 768,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 6144,
+      "travel_time": 161298176,
+      "lay_chance": 11059200,
+      "extra_lay_chance": 1536000,
+      "regional_division": 3072,
+      "travel_goal": 512,
+      "is_travel_vaild": false
+    },
+    "50816": {
+      "id": 50816,
+      "content_id": 33361664,
+      "level": 48640,
+      "pet_fruit_num": 768,
+      "levelup_cost_item_type": 1536,
+      "levelup_cost_item_id": 256,
+      "levelup_cost_item_num": 25768960,
+      "levelup_reward": 15360,
+      "travel_time": 161298432,
+      "lay_chance": 18432000,
+      "extra_lay_chance": 2560000,
+      "regional_division": 3328,
+      "travel_goal": 512,
+      "is_travel_vaild": false
     }
   },
   "LocalizationStrings": {}

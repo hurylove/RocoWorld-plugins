@@ -1795,7 +1795,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 9,
-        "classis_name": "鸭子类精灵",
+        "classis_name": null,
         "handbook_area_ids": [
             1,
             2

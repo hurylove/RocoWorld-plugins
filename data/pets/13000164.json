@@ -654,6 +654,28 @@
             "energy_cost": 3,
             "power": null,
             "description": "自己获得物防+160%和魔防-60%。"
+        },
+        {
+            "id": 7090210,
+            "name": "应对！冰天雪地",
+            "icon_id": "709004",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！冰天雪地",
+                    "description": "减伤80%，应对攻击：被应对技能能耗+3。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：被应对技能能耗+3。"
         }
     ],
     "legacy_moves": [
@@ -1223,7 +1245,7 @@
         "refresh_locations": [],
         "movement_type": null,
         "classis_id": 6,
-        "classis_name": "自然类精灵",
+        "classis_name": null,
         "handbook_area_ids": []
     },
     "catch_info": null,

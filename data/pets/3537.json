@@ -632,6 +632,50 @@
             "energy_cost": 4,
             "power": null,
             "description": "自己获得100%吸血。"
+        },
+        {
+            "id": 7040680,
+            "name": "焚尽",
+            "icon_id": null,
+            "move_type": {
+                "id": 20,
+                "name": "Unknown",
+                "localized": {
+                    "zh": "未知"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "焚尽",
+                    "description": ""
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": ""
+        },
+        {
+            "id": 7021110,
+            "name": "晒太阳",
+            "icon_id": "201094",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
         }
     ],
     "legacy_moves": [
@@ -1325,7 +1369,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 6,
-        "classis_name": "自然类精灵",
+        "classis_name": null,
         "handbook_area_ids": [
             1,
             3

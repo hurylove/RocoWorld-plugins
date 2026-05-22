@@ -1171,7 +1171,7 @@
         ],
         "movement_type": "浮游",
         "classis_id": 13,
-        "classis_name": "冰冰凉精灵",
+        "classis_name": null,
         "handbook_area_ids": []
     },
     "catch_info": {

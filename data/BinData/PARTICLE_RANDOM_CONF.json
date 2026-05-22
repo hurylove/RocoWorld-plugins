@@ -10,7 +10,8 @@
       "particle_small_icon": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/AppearanceNew/Frames/img_xiaoyise_lingxing_png.img_xiaoyise_lingxing_png'",
       "particle_big_icon": "PaperSprite'/Game/NewRoco/Modules/System/PetUI/PetUIStatic/Frames/img_dazzling_Bg3_png.img_dazzling_Bg3_png'",
       "prob": 6000,
-      "ratio": 10000
+      "ratio": 10000,
+      "StarStickTiling": 2.2
     },
     "2": {
       "id": 2,
@@ -22,7 +23,8 @@
       "particle_small_icon": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/AppearanceNew/Frames/img_xiaoyise_xin_png.img_xiaoyise_xin_png'",
       "particle_big_icon": "PaperSprite'/Game/NewRoco/Modules/System/PetUI/PetUIStatic/Frames/img_dazzling_Bg6_png.img_dazzling_Bg6_png'",
       "prob": 3000,
-      "ratio": 10000
+      "ratio": 10000,
+      "StarStickTiling": 2.2
     },
     "3": {
       "id": 3,
@@ -34,7 +36,8 @@
       "particle_small_icon": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/AppearanceNew/Frames/img_xiaoyise_xingxing_png.img_xiaoyise_xingxing_png'",
       "particle_big_icon": "PaperSprite'/Game/NewRoco/Modules/System/PetUI/PetUIStatic/Frames/img_dazzling_Bg5_png.img_dazzling_Bg5_png'",
       "prob": 900,
-      "ratio": 10000
+      "ratio": 10000,
+      "StarStickTiling": 2.2
     },
     "4": {
       "id": 4,
@@ -46,7 +49,9 @@
       "particle_small_icon": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/AppearanceNew/Frames/img_xiaoyise_loukongxing_png.img_xiaoyise_loukongxing_png'",
       "particle_big_icon": "PaperSprite'/Game/NewRoco/Modules/System/PetUI/PetUIStatic/Frames/img_dazzling_Bg10_png.img_dazzling_Bg10_png'",
       "prob": 100,
-      "ratio": 10000
+      "ratio": 10000,
+      "egg_particle_res": "Texture2D'/Game/ArtRes/BP/Texture/PetGlassyStar/T_PetGlassyStar_006_RandomEgg.T_PetGlassyStar_006_RandomEgg'",
+      "StarStickTiling": 1.0
     }
   },
   "LocalizationStrings": {}

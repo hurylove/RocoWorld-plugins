@@ -3,144 +3,122 @@
     "1": {
       "id": 1,
       "preattack_tag": 1,
-      "editor_name": "攻击增效",
-      "preattack_trans_skill_id": 7020630
+      "preattack_trans_skill_id": 1
     },
     "2": {
       "id": 2,
       "preattack_tag": 2,
-      "editor_name": "实力评估通过（废弃）"
+      "preattack_trans_skill_id": 2
     },
     "3": {
       "id": 3,
       "preattack_tag": 3,
-      "editor_name": "呼朋引伴"
+      "preattack_trans_skill_id": 3
     },
     "4": {
       "id": 4,
       "preattack_tag": 4,
-      "editor_name": "防御",
-      "preattack_trans_skill_id": 7000320
+      "preattack_trans_skill_id": 4
     },
     "5": {
       "id": 5,
       "preattack_tag": 5,
-      "editor_name": "魔法增效",
-      "preattack_trans_skill_id": 7020620
+      "preattack_trans_skill_id": 5
     },
     "6": {
       "id": 6,
       "preattack_tag": 6,
-      "editor_name": "攻击增效",
-      "preattack_trans_skill_id": 7020630
+      "preattack_trans_skill_id": 1
     },
     "7": {
       "id": 7,
       "preattack_tag": 7,
-      "editor_name": "龙舞",
-      "preattack_trans_skill_id": 7100030
+      "preattack_trans_skill_id": 6
     },
     "8": {
       "id": 8,
       "preattack_tag": 8,
-      "editor_name": "守护",
-      "preattack_trans_skill_id": 7000330
+      "preattack_trans_skill_id": 7
     },
     "9": {
       "id": 9,
       "preattack_tag": 9,
-      "editor_name": "魔法增效",
-      "preattack_trans_skill_id": 7020620
+      "preattack_trans_skill_id": 5
     },
     "10": {
       "id": 10,
       "preattack_tag": 10,
-      "editor_name": "攻击增效",
-      "preattack_trans_skill_id": 7020630
+      "preattack_trans_skill_id": 1
     },
     "11": {
       "id": 11,
       "preattack_tag": 11,
-      "editor_name": "伺机而动",
-      "preattack_trans_skill_id": 7020700
+      "preattack_trans_skill_id": 8
     },
     "12": {
       "id": 12,
       "preattack_tag": 12,
-      "editor_name": "扎根",
-      "preattack_trans_skill_id": 7030130
+      "preattack_trans_skill_id": 9
     },
     "13": {
       "id": 13,
       "preattack_tag": 13,
-      "editor_name": "风起",
-      "preattack_trans_skill_id": 7150120
+      "preattack_trans_skill_id": 10
     },
     "14": {
       "id": 14,
       "preattack_tag": 14,
-      "editor_name": "雾气缭绕",
-      "preattack_trans_skill_id": 7090080
+      "preattack_trans_skill_id": 11
     },
     "15": {
       "id": 15,
       "preattack_tag": 15,
-      "editor_name": "生长",
-      "preattack_trans_skill_id": 7030100
+      "preattack_trans_skill_id": 12
     },
     "16": {
       "id": 16,
       "preattack_tag": 16,
-      "editor_name": "激化核心",
-      "preattack_trans_skill_id": 7030100
+      "preattack_trans_skill_id": 13
     },
     "17": {
       "id": 17,
       "preattack_tag": 17,
-      "editor_name": "耀眼",
-      "preattack_trans_skill_id": 7021050
+      "preattack_trans_skill_id": 14
     },
     "18": {
       "id": 18,
       "preattack_tag": 18,
-      "editor_name": "轻伤",
-      "preattack_trans_skill_id": 7000290
+      "preattack_trans_skill_id": 15
     },
     "19": {
       "id": 19,
       "preattack_tag": 19,
-      "editor_name": "受伤",
-      "preattack_trans_skill_id": 7000300
+      "preattack_trans_skill_id": 16
     },
     "20": {
       "id": 20,
       "preattack_tag": 20,
-      "editor_name": "虚弱",
-      "preattack_trans_skill_id": 7000310
+      "preattack_trans_skill_id": 17
     },
     "21": {
       "id": 21,
       "preattack_tag": 21,
-      "editor_name": "中毒",
-      "preattack_trans_skill_id": 200207
+      "preattack_trans_skill_id": 18
     },
     "22": {
       "id": 22,
       "preattack_tag": 22,
-      "editor_name": "撞击进战",
-      "preattack_trans_skill_id": 7020370
+      "preattack_trans_skill_id": 19
     },
     "23": {
       "id": 23,
       "preattack_tag": 23,
-      "editor_name": "轴承支撑",
-      "preattack_trans_skill_id": 7070060
+      "preattack_trans_skill_id": 20
     },
     "24": {
       "id": 24,
       "preattack_tag": 24,
-      "editor_name": "化劲",
-      "preattack_trans_skill_id": 7140140
+      "preattack_trans_skill_id": 21
     }
   },
   "LocalizationStrings": {}

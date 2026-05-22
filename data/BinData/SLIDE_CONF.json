@@ -3,161 +3,161 @@
     "1": {
       "id": 1,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/xueliyuenzuo1.xueliyuenzuo1'",
-      "text": "1句开始播放BGM",
-      "mask_effect_type": 1,
+      "text": "",
+      "mask_effect_type": 2,
       "picture_switch_type": 1,
-      "auto_play_time": 20,
-      "background_music": "1",
-      "next_picture": 2
+      "auto_play_time": 1,
+      "background_music": "淡入淡出效果测试4",
+      "next_picture": 3
     },
     "2": {
       "id": 2,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/xueliyuenzuo2.xueliyuenzuo2'",
-      "text": "2句有配音",
-      "mask_effect_type": 1,
+      "text": "",
+      "mask_effect_type": 5,
       "picture_switch_type": 1,
-      "auto_play_time": 20,
-      "dialogue_sound": "dialog165000251",
-      "next_picture": 3
+      "auto_play_time": 1,
+      "dialogue_sound": "淡入淡出效果测试4",
+      "next_picture": 6
     },
     "3": {
       "id": 3,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/xueliyuenzuo3.xueliyuenzuo3'",
-      "text": "3句有配音",
-      "mask_effect_type": 1,
+      "text": "",
+      "mask_effect_type": 8,
       "picture_switch_type": 1,
-      "auto_play_time": 20,
-      "dialogue_sound": "dialog165000202",
-      "next_picture": 4
+      "auto_play_time": 1,
+      "dialogue_sound": "淡入淡出效果测试4",
+      "next_picture": 9
     },
     "4": {
       "id": 4,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/xueliyuenzuo4.xueliyuenzuo4'",
-      "text": "4句切换BGM",
-      "mask_effect_type": 1,
+      "text": "",
+      "mask_effect_type": 11,
       "picture_switch_type": 1,
-      "auto_play_time": 20,
-      "background_music": "6",
-      "next_picture": 5
+      "auto_play_time": 1,
+      "background_music": "淡入淡出效果测试4",
+      "next_picture": 12
     },
     "5": {
       "id": 5,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/xueliyuenzuo5.xueliyuenzuo5'",
-      "text": "淡入淡出效果测试1",
-      "mask_effect_type": 1,
-      "picture_switch_type": 2,
-      "auto_play_time": 20,
-      "next_picture": 6
+      "text": "",
+      "mask_effect_type": 14,
+      "picture_switch_type": 1,
+      "auto_play_time": 2,
+      "next_picture": 20
     },
     "6": {
       "id": 6,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/xueliyuenzuo6.xueliyuenzuo6'",
-      "text": "淡入淡出效果测试2",
-      "mask_effect_type": 1,
-      "picture_switch_type": 2,
-      "auto_play_time": 20,
-      "next_picture": 7
+      "text": "",
+      "mask_effect_type": 16,
+      "picture_switch_type": 1,
+      "auto_play_time": 2,
+      "next_picture": 20
     },
     "7": {
       "id": 7,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/xueliyuenzuo7.xueliyuenzuo7'",
-      "text": "淡入淡出效果测试3",
-      "mask_effect_type": 1,
-      "picture_switch_type": 2,
-      "auto_play_time": 20,
-      "next_picture": 8
+      "text": "",
+      "mask_effect_type": 18,
+      "picture_switch_type": 1,
+      "auto_play_time": 2,
+      "next_picture": 20
     },
     "8": {
       "id": 8,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/xueliyuenzuo8.xueliyuenzuo8'",
-      "text": "淡入淡出效果测试4",
-      "mask_effect_type": 1,
-      "picture_switch_type": 2,
-      "auto_play_time": 20,
-      "next_picture": 9
+      "text": "",
+      "mask_effect_type": 20,
+      "picture_switch_type": 1,
+      "auto_play_time": 2,
+      "next_picture": 20
     },
     "9": {
       "id": 9,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/xueliyuenzuo9.xueliyuenzuo9'",
-      "text": "淡入淡出效果测试5",
-      "mask_effect_type": 1,
-      "picture_switch_type": 2,
-      "auto_play_time": 20
+      "text": "",
+      "mask_effect_type": 22,
+      "picture_switch_type": 1,
+      "auto_play_time": 2
     },
     "101": {
       "id": 101,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/S1_season_task_slide1.S1_season_task_slide1'",
-      "text": "我最得意的发明，打嗝箱，也许这是我最后一次麻烦你了。",
-      "mask_effect_type": 1,
-      "picture_switch_type": 2,
-      "auto_play_time": 10,
-      "background_music": "1",
-      "next_picture": 102
+      "text": "",
+      "mask_effect_type": 24,
+      "picture_switch_type": 1,
+      "auto_play_time": 2,
+      "background_music": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/xueliyuenzuo4.xueliyuenzuo4'",
+      "next_picture": 3
     },
     "102": {
       "id": 102,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/S1_season_task_slide2.S1_season_task_slide2'",
-      "text": "这个魔法失败过很多次，但这一次，请一定要成功啊。嘿！「魔力果超级大爆发」——",
-      "mask_effect_type": 1,
+      "text": "",
+      "mask_effect_type": 26,
       "picture_switch_type": 1,
-      "auto_play_time": 15,
-      "next_picture": 103
+      "auto_play_time": 1,
+      "next_picture": 15
     },
     "103": {
       "id": 103,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/S1_season_task_slide3.S1_season_task_slide3'",
-      "text": "喂，那边的……大家伙！看这里！",
-      "mask_effect_type": 1,
+      "text": "",
+      "mask_effect_type": 28,
       "picture_switch_type": 1,
-      "auto_play_time": 5,
-      "background_music": "5",
-      "next_picture": 104
+      "auto_play_time": 1,
+      "background_music": "2句有配音",
+      "next_picture": 29
     },
     "104": {
       "id": 104,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/S1_season_task_slide4.S1_season_task_slide4'",
-      "text": "没错，乖——乖——就是这样。",
-      "mask_effect_type": 1,
+      "text": "",
+      "mask_effect_type": 31,
       "picture_switch_type": 1,
-      "auto_play_time": 5,
-      "next_picture": 105
+      "auto_play_time": 1,
+      "next_picture": 5
     },
     "105": {
       "id": 105,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/S1_season_task_slide5.S1_season_task_slide5'",
-      "text": "老大！怎、怎么办……那个菜鸟研究员把噩梦龙息帕尔变没了！",
-      "mask_effect_type": 1,
-      "picture_switch_type": 2,
-      "auto_play_time": 5,
-      "next_picture": 106
+      "text": "",
+      "mask_effect_type": 33,
+      "picture_switch_type": 1,
+      "auto_play_time": 2,
+      "next_picture": 5
     },
     "106": {
       "id": 106,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/S1_season_task_slide6.S1_season_task_slide6'",
-      "text": "急什么急，我们也追上去！",
-      "mask_effect_type": 1,
+      "text": "",
+      "mask_effect_type": 35,
       "picture_switch_type": 1,
-      "auto_play_time": 5,
-      "next_picture": 107
+      "auto_play_time": 1,
+      "next_picture": 5
     },
     "107": {
       "id": 107,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/S1_season_task_slide7.S1_season_task_slide7'",
-      "text": "到手的传说精灵，没了我怎么给上面交差！",
-      "mask_effect_type": 1,
-      "picture_switch_type": 2,
-      "auto_play_time": 5,
-      "next_picture": 108
+      "text": "",
+      "mask_effect_type": 37,
+      "picture_switch_type": 1,
+      "auto_play_time": 2,
+      "next_picture": 5
     },
     "108": {
       "id": 108,
       "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/S1_season_task_slide8.S1_season_task_slide8'",
-      "text": "里面怎么黑咕隆咚的？！什么也看不见啊，哎哟！",
-      "mask_effect_type": 1,
+      "text": "",
+      "mask_effect_type": 39,
       "picture_switch_type": 1,
-      "auto_play_time": 5,
-      "background_music": "2",
-      "next_picture": 109
+      "auto_play_time": 1,
+      "background_music": "2句有配音",
+      "next_picture": 40
     },
     "109": {
       "id": 109,

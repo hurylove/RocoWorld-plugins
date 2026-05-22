@@ -1,0 +1,147 @@
+{
+  "RocoDataRows": {
+    "1": {
+      "id": 1,
+      "nature_id": [
+        17,
+        28
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "2": {
+      "id": 2,
+      "nature_id": [
+        3,
+        7
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "3": {
+      "id": 3,
+      "nature_id": [
+        23,
+        24
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "4": {
+      "id": 4,
+      "nature_id": [
+        4,
+        6
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "5": {
+      "id": 5,
+      "nature_id": [
+        5
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "6": {
+      "id": 6,
+      "nature_id": [
+        2
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "7": {
+      "id": 7,
+      "nature_id": [
+        19
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "8": {
+      "id": 8,
+      "nature_id": [
+        11,
+        18,
+        21
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "9": {
+      "id": 9,
+      "nature_id": [
+        10,
+        30
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "10": {
+      "id": 10,
+      "nature_id": [
+        12,
+        14,
+        16,
+        26,
+        27
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "11": {
+      "id": 11,
+      "nature_id": [
+        15
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "12": {
+      "id": 12,
+      "nature_id": [
+        20
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "13": {
+      "id": 13,
+      "nature_id": [
+        13
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "14": {
+      "id": 14,
+      "nature_id": [
+        8,
+        9
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "15": {
+      "id": 15,
+      "nature_id": [
+        1,
+        29
+      ],
+      "description_1": "",
+      "description_2": ""
+    },
+    "16": {
+      "id": 16,
+      "nature_id": [
+        22,
+        25
+      ],
+      "description_1": "",
+      "description_2": ""
+    }
+  },
+  "LocalizationStrings": {}
+}

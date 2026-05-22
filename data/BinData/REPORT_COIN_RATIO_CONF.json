@@ -6,7 +6,7 @@
       "enum_param": 1,
       "enum_ratio": 10000,
       "enum_name": "天分",
-      "param_name": "一般般天分"
+      "param_name": ""
     },
     "2": {
       "id": 2,
@@ -14,7 +14,7 @@
       "enum_param": 2,
       "enum_ratio": 20000,
       "enum_name": "天分",
-      "param_name": "还不错天分"
+      "param_name": ""
     },
     "3": {
       "id": 3,
@@ -22,7 +22,7 @@
       "enum_param": 3,
       "enum_ratio": 30000,
       "enum_name": "天分",
-      "param_name": "相当好天分"
+      "param_name": ""
     },
     "4": {
       "id": 4,
@@ -30,7 +30,7 @@
       "enum_param": 4,
       "enum_ratio": 50000,
       "enum_name": "天分",
-      "param_name": "了不起天分"
+      "param_name": ""
     },
     "5": {
       "id": 5,
@@ -38,7 +38,7 @@
       "enum_param": 1,
       "enum_ratio": 30000,
       "enum_name": "外观",
-      "param_name": "异色"
+      "param_name": ""
     },
     "11": {
       "id": 11,
@@ -46,7 +46,7 @@
       "enum_param": 2,
       "enum_ratio": 30000,
       "enum_name": "外观",
-      "param_name": "噩梦污染"
+      "param_name": ""
     },
     "12": {
       "id": 12,
@@ -54,7 +54,7 @@
       "enum_param": 4,
       "enum_ratio": 30000,
       "enum_name": "外观",
-      "param_name": "噩梦污染"
+      "param_name": ""
     },
     "13": {
       "id": 13,
@@ -62,13 +62,13 @@
       "enum_param": 32,
       "enum_ratio": 30000,
       "enum_name": "外观",
-      "param_name": "噩梦污染"
+      "param_name": ""
     },
     "101": {
       "id": 101,
       "enum_ReportCoinRatio": 4,
       "enum_name": "外观",
-      "param_name": "炫彩"
+      "param_name": ""
     },
     "1002": {
       "id": 1002,
@@ -76,7 +76,7 @@
       "enum_param": 1,
       "enum_ratio": 30000,
       "enum_name": "外观",
-      "param_name": "暗夜拾光"
+      "param_name": ""
     },
     "10005": {
       "id": 10005,
@@ -84,7 +84,7 @@
       "enum_param": 1005,
       "enum_ratio": 20000,
       "enum_name": "奖牌",
-      "param_name": "轻风之息"
+      "param_name": ""
     },
     "10006": {
       "id": 10006,
@@ -92,7 +92,7 @@
       "enum_param": 1006,
       "enum_ratio": 20000,
       "enum_name": "奖牌",
-      "param_name": "王国颂歌"
+      "param_name": ""
     },
     "10007": {
       "id": 10007,
@@ -100,7 +100,7 @@
       "enum_param": 1027,
       "enum_ratio": 20000,
       "enum_name": "奖牌",
-      "param_name": "晨光破晓"
+      "param_name": ""
     },
     "10008": {
       "id": 10008,
@@ -108,7 +108,7 @@
       "enum_param": 1028,
       "enum_ratio": 20000,
       "enum_name": "奖牌",
-      "param_name": "灼日凌空"
+      "param_name": ""
     },
     "10009": {
       "id": 10009,
@@ -116,7 +116,7 @@
       "enum_param": 1029,
       "enum_ratio": 20000,
       "enum_name": "奖牌",
-      "param_name": "暮色衔山"
+      "param_name": ""
     },
     "10010": {
       "id": 10010,
@@ -124,7 +124,7 @@
       "enum_param": 1030,
       "enum_ratio": 20000,
       "enum_name": "奖牌",
-      "param_name": "星月交辉"
+      "param_name": ""
     },
     "10011": {
       "id": 10011,
@@ -132,7 +132,7 @@
       "enum_param": 1001,
       "enum_ratio": 30000,
       "enum_name": "奖牌",
-      "param_name": "大块头"
+      "param_name": ""
     },
     "10012": {
       "id": 10012,
@@ -140,7 +140,7 @@
       "enum_param": 1002,
       "enum_ratio": 30000,
       "enum_name": "奖牌",
-      "param_name": "小不点"
+      "param_name": ""
     },
     "10013": {
       "id": 10013,
@@ -148,7 +148,7 @@
       "enum_param": 1025,
       "enum_ratio": 30000,
       "enum_name": "奖牌",
-      "param_name": "粗嗓门"
+      "param_name": ""
     },
     "10014": {
       "id": 10014,
@@ -156,7 +156,7 @@
       "enum_param": 1026,
       "enum_ratio": 30000,
       "enum_name": "奖牌",
-      "param_name": "婉转声"
+      "param_name": ""
     },
     "10015": {
       "id": 10015,
@@ -164,7 +164,7 @@
       "enum_param": 1010,
       "enum_ratio": 30000,
       "enum_name": "奖牌",
-      "param_name": "完美无瑕"
+      "param_name": ""
     }
   },
   "LocalizationStrings": {}

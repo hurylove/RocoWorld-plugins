@@ -1301,7 +1301,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 16,
-        "classis_name": "动物类精灵",
+        "classis_name": null,
         "handbook_area_ids": [
             1,
             3

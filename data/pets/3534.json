@@ -736,6 +736,28 @@
             "energy_cost": 5,
             "power": null,
             "description": "造成物伤，本技能能耗每+1，威力+50。"
+        },
+        {
+            "id": 7150380,
+            "name": "飞箭",
+            "icon_id": null,
+            "move_type": {
+                "id": 20,
+                "name": "Unknown",
+                "localized": {
+                    "zh": "未知"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞箭",
+                    "description": ""
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": ""
         }
     ],
     "legacy_moves": [
@@ -1297,7 +1319,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 6,
-        "classis_name": "自然类精灵",
+        "classis_name": null,
         "handbook_area_ids": [
             1,
             3

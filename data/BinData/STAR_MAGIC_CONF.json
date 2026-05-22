@@ -1,0 +1,17 @@
+{
+  "RocoDataRows": {
+    "5": {
+      "id": 5,
+      "name": "",
+      "effect_struct": [
+        {
+          "effect": 2
+        },
+        {
+          "effect": 6
+        }
+      ]
+    }
+  },
+  "LocalizationStrings": {}
+}

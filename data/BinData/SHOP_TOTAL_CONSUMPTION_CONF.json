@@ -3,7 +3,6 @@
     "2001": {
       "id": 2001,
       "shop_id": 2001,
-      "editor_name": "安妮商店",
       "price_goods_type": 2,
       "price_goods_id": 70,
       "shop_consumption_reward": [
@@ -87,7 +86,6 @@
     "2007": {
       "id": 2007,
       "shop_id": 2007,
-      "editor_name": "安妮商店-A2",
       "price_goods_type": 2,
       "price_goods_id": 71,
       "shop_consumption_reward": [

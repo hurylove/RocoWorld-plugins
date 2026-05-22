@@ -214,6 +214,28 @@
             "description": "造成物伤，自己每失去5%生命，本次技能威力+5。"
         },
         {
+            "id": 7020790,
+            "name": "应对！防御",
+            "icon_id": "703005",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
             "id": 7020800,
             "name": "应对！防反",
             "icon_id": "301053",
@@ -458,9 +480,9 @@
             "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
         },
         {
-            "id": 7020790,
-            "name": "应对！防御",
-            "icon_id": "703005",
+            "id": 7020800,
+            "name": "应对！防反",
+            "icon_id": "301053",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -470,14 +492,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "应对！防御",
-                    "description": "减伤70%，应对攻击。"
+                    "name": "应对！防反",
+                    "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤70%，应对攻击。"
+            "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
         },
         {
             "id": 7020640,
@@ -764,6 +786,72 @@
             "energy_cost": 4,
             "power": null,
             "description": "应对攻击：打断被应对技能，并造成90威力物伤。"
+        },
+        {
+            "id": 7180430,
+            "name": "杂耍",
+            "icon_id": null,
+            "move_type": {
+                "id": 20,
+                "name": "Unknown",
+                "localized": {
+                    "zh": "未知"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "杂耍",
+                    "description": ""
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": ""
+        },
+        {
+            "id": 7021130,
+            "name": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。",
+            "icon_id": "301098",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。",
+                    "description": "这愉悦的痛苦。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "这愉悦的痛苦。"
+        },
+        {
+            "id": 7021110,
+            "name": "晒太阳",
+            "icon_id": "201094",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
         }
     ],
     "legacy_moves": [
@@ -1389,7 +1477,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 6,
-        "classis_name": "自然类精灵",
+        "classis_name": null,
         "handbook_area_ids": [
             1
         ]

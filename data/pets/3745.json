@@ -626,6 +626,28 @@
             "energy_cost": 1,
             "power": null,
             "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7040230,
+            "name": "应对！持续高温",
+            "icon_id": "704022",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！持续高温",
+                    "description": "造成魔伤，应对状态：下次攻击技能威力翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成魔伤，应对状态：下次攻击技能威力翻倍。"
         }
     ],
     "legacy_moves": [
@@ -1187,7 +1209,7 @@
         ],
         "movement_type": "地面",
         "classis_id": 6,
-        "classis_name": "自然类精灵",
+        "classis_name": null,
         "handbook_area_ids": [
             1
         ]

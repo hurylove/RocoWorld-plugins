@@ -1,374 +1,104 @@
 {
   "RocoDataRows": {
-    "7": {
-      "id": 7,
-      "activity_id": 1600003,
-      "base_id": 1600007,
-      "partake_seq_num": 1,
-      "complete_seq_num": 1,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "完成活动任务",
-      "complete_event": "领取活动奖励",
-      "monitor_event_group": [
-        {
-          "monitor_event": 5,
-          "monitor_event_param": [
-            110000001
-          ]
-        }
-      ]
+    "1976": {
+      "id": 1976,
+      "activity_id": 409600768,
+      "base_id": 409601792
     },
-    "8": {
-      "id": 8,
-      "activity_id": 1600003,
-      "base_id": 1600008,
-      "partake_seq_num": 1,
-      "complete_seq_num": 2,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "完成活动任务",
-      "complete_event": "领取活动奖励",
-      "monitor_event_group": [
-        {
-          "monitor_event": 5,
-          "monitor_event_param": [
-            110000002
-          ]
-        }
-      ]
+    "2232": {
+      "id": 2232,
+      "activity_id": 409600768,
+      "base_id": 409602048
     },
-    "9": {
-      "id": 9,
-      "activity_id": 1600003,
-      "base_id": 1600009,
-      "partake_seq_num": 1,
-      "complete_seq_num": 3,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "完成活动任务",
-      "complete_event": "领取活动奖励",
-      "monitor_event_group": [
-        {
-          "monitor_event": 5,
-          "monitor_event_param": [
-            110000003
-          ]
-        }
-      ]
+    "2488": {
+      "id": 2488,
+      "activity_id": 409600768,
+      "base_id": 409602304
     },
-    "10": {
-      "id": 10,
-      "activity_id": 1600003,
-      "base_id": 1600010,
-      "partake_seq_num": 1,
-      "complete_seq_num": 4,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "完成活动任务",
-      "complete_event": "领取活动奖励",
-      "monitor_event_group": [
-        {
-          "monitor_event": 5,
-          "monitor_event_param": [
-            110000004
-          ]
-        }
-      ]
+    "2744": {
+      "id": 2744,
+      "activity_id": 409600768,
+      "base_id": 409602560
     },
-    "11": {
-      "id": 11,
-      "activity_id": 1600003,
-      "base_id": 1600011,
-      "partake_seq_num": 1,
-      "complete_seq_num": 5,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "完成活动任务",
-      "complete_event": "领取活动奖励",
-      "monitor_event_group": [
-        {
-          "monitor_event": 5,
-          "monitor_event_param": [
-            110000005
-          ]
-        }
-      ]
+    "3000": {
+      "id": 3000,
+      "activity_id": 409600768,
+      "base_id": 409602816
     },
-    "12": {
-      "id": 12,
-      "activity_id": 1600003,
-      "base_id": 1600012,
-      "partake_seq_num": 1,
-      "complete_seq_num": 6,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "完成活动任务",
-      "complete_event": "领取活动奖励",
-      "monitor_event_group": [
-        {
-          "monitor_event": 5,
-          "monitor_event_param": [
-            110000006
-          ]
-        }
-      ]
+    "3256": {
+      "id": 3256,
+      "activity_id": 409600768,
+      "base_id": 409603072
     },
-    "13": {
-      "id": 13,
-      "activity_id": 1600003,
-      "base_id": 1600013,
-      "partake_seq_num": 1,
-      "complete_seq_num": 7,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "完成活动任务",
-      "complete_event": "领取活动奖励",
-      "core_indicator": 1,
-      "monitor_event_group": [
-        {
-          "monitor_event": 5,
-          "monitor_event_param": [
-            110000007
-          ]
-        }
-      ]
+    "3576": {
+      "id": 3576,
+      "activity_id": 409600768,
+      "base_id": 409603328
     },
-    "14": {
-      "id": 14,
-      "activity_id": 1600004,
-      "base_id": 1600014,
-      "partake_seq_num": 1,
-      "complete_seq_num": 1,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "完成活动任务",
-      "complete_event": "领取活动奖励",
-      "monitor_event_group": [
-        {
-          "monitor_event": 5,
-          "monitor_event_param": [
-            110000008
-          ]
-        }
-      ]
+    "3768": {
+      "id": 3768,
+      "activity_id": 409601024,
+      "base_id": 409603584
     },
-    "15": {
-      "id": 15,
-      "activity_id": 1600004,
-      "base_id": 1600015,
-      "partake_seq_num": 1,
-      "complete_seq_num": 2,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "完成活动任务",
-      "complete_event": "领取活动奖励",
-      "monitor_event_group": [
-        {
-          "monitor_event": 5,
-          "monitor_event_param": [
-            110000009
-          ]
-        }
-      ]
+    "4024": {
+      "id": 4024,
+      "activity_id": 409601024,
+      "base_id": 409603840
     },
-    "16": {
-      "id": 16,
-      "activity_id": 1600004,
-      "base_id": 1600016,
-      "partake_seq_num": 1,
-      "complete_seq_num": 3,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "完成活动任务",
-      "complete_event": "领取活动奖励",
-      "monitor_event_group": [
-        {
-          "monitor_event": 5,
-          "monitor_event_param": [
-            110000010
-          ]
-        }
-      ]
+    "4280": {
+      "id": 4280,
+      "activity_id": 409601024,
+      "base_id": 409604096
     },
-    "17": {
-      "id": 17,
-      "activity_id": 1600004,
-      "base_id": 1600017,
-      "partake_seq_num": 1,
-      "complete_seq_num": 4,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "完成活动任务",
-      "complete_event": "领取活动奖励",
-      "monitor_event_group": [
-        {
-          "monitor_event": 5,
-          "monitor_event_param": [
-            110000011
-          ]
-        }
-      ]
+    "4536": {
+      "id": 4536,
+      "activity_id": 409601024,
+      "base_id": 409604352
     },
-    "18": {
-      "id": 18,
-      "activity_id": 1600004,
-      "base_id": 1600018,
-      "partake_seq_num": 1,
-      "complete_seq_num": 5,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "完成活动任务",
-      "complete_event": "领取活动奖励",
-      "monitor_event_group": [
-        {
-          "monitor_event": 5,
-          "monitor_event_param": [
-            110000012
-          ]
-        }
-      ]
+    "4792": {
+      "id": 4792,
+      "activity_id": 409601024,
+      "base_id": 409604608
     },
-    "19": {
-      "id": 19,
-      "activity_id": 1600004,
-      "base_id": 1600019,
-      "partake_seq_num": 1,
-      "complete_seq_num": 6,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "完成活动任务",
-      "complete_event": "领取活动奖励",
-      "monitor_event_group": [
-        {
-          "monitor_event": 5,
-          "monitor_event_param": [
-            110000013
-          ]
-        }
-      ]
+    "5048": {
+      "id": 5048,
+      "activity_id": 409601024,
+      "base_id": 409604864
     },
-    "20": {
-      "id": 20,
-      "activity_id": 1600004,
-      "base_id": 1600020,
-      "partake_seq_num": 1,
-      "complete_seq_num": 7,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "完成活动任务",
-      "complete_event": "领取活动奖励",
-      "core_indicator": 1,
-      "monitor_event_group": [
-        {
-          "monitor_event": 5,
-          "monitor_event_param": [
-            110000014
-          ]
-        }
-      ]
+    "5368": {
+      "id": 5368,
+      "activity_id": 409601024,
+      "base_id": 409605120
     },
-    "27": {
-      "id": 27,
-      "activity_id": 1600007,
-      "base_id": 1600027,
-      "partake_seq_num": 1,
-      "complete_seq_num": 1,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "提升魔法等级",
-      "complete_event": "达到任务要求等级",
-      "core_indicator": 1,
-      "monitor_event_group": [
-        {
-          "monitor_event": 4
-        }
-      ]
+    "7160": {
+      "id": 7160,
+      "activity_id": 409601792,
+      "base_id": 409606912
     },
-    "28": {
-      "id": 28,
-      "activity_id": 1600007,
-      "base_id": 1600028,
-      "partake_seq_num": 1,
-      "complete_seq_num": 2,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "提升魔法等级",
-      "complete_event": "达到任务要求等级",
-      "core_indicator": 1,
-      "monitor_event_group": [
-        {
-          "monitor_event": 4
-        }
-      ]
+    "7416": {
+      "id": 7416,
+      "activity_id": 409601792,
+      "base_id": 409607168
     },
-    "29": {
-      "id": 29,
-      "activity_id": 1600007,
-      "base_id": 1600029,
-      "partake_seq_num": 1,
-      "complete_seq_num": 3,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "提升魔法等级",
-      "complete_event": "达到任务要求等级",
-      "core_indicator": 1,
-      "monitor_event_group": [
-        {
-          "monitor_event": 4
-        }
-      ]
+    "7672": {
+      "id": 7672,
+      "activity_id": 409601792,
+      "base_id": 409607424
     },
-    "30": {
-      "id": 30,
-      "activity_id": 1600007,
-      "base_id": 1600030,
-      "partake_seq_num": 1,
-      "complete_seq_num": 4,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "提升魔法等级",
-      "complete_event": "达到任务要求等级",
-      "core_indicator": 1,
-      "monitor_event_group": [
-        {
-          "monitor_event": 4
-        }
-      ]
+    "7928": {
+      "id": 7928,
+      "activity_id": 409601792,
+      "base_id": 409607680
     },
-    "31": {
-      "id": 31,
-      "activity_id": 1600007,
-      "base_id": 1600031,
-      "partake_seq_num": 1,
-      "complete_seq_num": 5,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "提升魔法等级",
-      "complete_event": "达到任务要求等级",
-      "core_indicator": 1,
-      "monitor_event_group": [
-        {
-          "monitor_event": 4
-        }
-      ]
+    "8184": {
+      "id": 8184,
+      "activity_id": 409601792,
+      "base_id": 409607936
     },
-    "32": {
-      "id": 32,
-      "activity_id": 1600007,
-      "base_id": 1600032,
-      "partake_seq_num": 1,
-      "complete_seq_num": 6,
-      "partake_prefix": "J",
-      "complete_prefix": "C",
-      "partake_event": "提升魔法等级",
-      "complete_event": "达到任务要求等级",
-      "core_indicator": 1,
-      "monitor_event_group": [
-        {
-          "monitor_event": 4
-        }
-      ]
+    "8440": {
+      "id": 8440,
+      "activity_id": 409601792,
+      "base_id": 409608192
     }
   },
   "LocalizationStrings": {}

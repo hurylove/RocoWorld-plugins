@@ -26,8 +26,8 @@
       "goods_type": 2,
       "goods_id": 12,
       "drop_num_tips": "可获取庆典热度剩余",
-      "daily_tips": "可获取庆典热度剩余",
-      "total_tips": "可获取庆典热度剩余"
+      "daily_tips": "【本日】可获得：",
+      "total_tips": "【本日】可获得："
     },
     "2700006": {
       "id": 2700006,

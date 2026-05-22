@@ -676,6 +676,28 @@
             "energy_cost": 1,
             "power": null,
             "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7180440,
+            "name": "假冒",
+            "icon_id": null,
+            "move_type": {
+                "id": 20,
+                "name": "Unknown",
+                "localized": {
+                    "zh": "未知"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "假冒",
+                    "description": ""
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": ""
         }
     ],
     "legacy_moves": [
@@ -1277,7 +1299,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 7,
-        "classis_name": "岩石类精灵",
+        "classis_name": null,
         "handbook_area_ids": [
             1,
             2

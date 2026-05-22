@@ -7,7 +7,7 @@
       "refresh_reset_type": 5,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本周剩余："
+      "refresh_limit_text": ""
     },
     "10002": {
       "id": 10002,
@@ -16,7 +16,7 @@
       "refresh_reset_type": 4,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本日剩余："
+      "refresh_limit_text": ""
     },
     "10003": {
       "id": 10003,
@@ -25,7 +25,7 @@
       "refresh_reset_type": 4,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本日剩余："
+      "refresh_limit_text": ""
     },
     "10004": {
       "id": 10004,
@@ -34,7 +34,7 @@
       "refresh_reset_type": 4,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本日剩余："
+      "refresh_limit_text": ""
     },
     "10005": {
       "id": 10005,
@@ -43,7 +43,7 @@
       "refresh_reset_type": 4,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本日剩余："
+      "refresh_limit_text": ""
     },
     "10006": {
       "id": 10006,
@@ -52,7 +52,7 @@
       "refresh_reset_type": 4,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本日剩余："
+      "refresh_limit_text": ""
     },
     "10007": {
       "id": 10007,
@@ -61,7 +61,7 @@
       "refresh_reset_type": 4,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本日剩余："
+      "refresh_limit_text": ""
     },
     "10008": {
       "id": 10008,
@@ -70,7 +70,7 @@
       "refresh_reset_type": 4,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本日剩余："
+      "refresh_limit_text": ""
     },
     "10009": {
       "id": 10009,
@@ -79,7 +79,7 @@
       "refresh_reset_type": 4,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本日剩余："
+      "refresh_limit_text": ""
     },
     "10010": {
       "id": 10010,
@@ -88,7 +88,7 @@
       "refresh_reset_type": 4,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本日剩余："
+      "refresh_limit_text": ""
     },
     "10011": {
       "id": 10011,
@@ -97,7 +97,7 @@
       "refresh_reset_type": 5,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本周剩余："
+      "refresh_limit_text": ""
     },
     "10012": {
       "id": 10012,
@@ -106,7 +106,7 @@
       "refresh_reset_type": 5,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本周剩余："
+      "refresh_limit_text": ""
     },
     "10013": {
       "id": 10013,
@@ -115,7 +115,7 @@
       "refresh_reset_type": 5,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本周剩余："
+      "refresh_limit_text": ""
     },
     "10014": {
       "id": 10014,
@@ -124,7 +124,7 @@
       "refresh_reset_type": 4,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本日剩余："
+      "refresh_limit_text": ""
     },
     "10015": {
       "id": 10015,
@@ -133,7 +133,7 @@
       "refresh_reset_type": 5,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本周剩余："
+      "refresh_limit_text": ""
     },
     "10016": {
       "id": 10016,
@@ -142,7 +142,7 @@
       "refresh_reset_type": 5,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本周剩余："
+      "refresh_limit_text": ""
     },
     "10017": {
       "id": 10017,
@@ -151,7 +151,7 @@
       "refresh_reset_type": 5,
       "refresh_reset_param1": "1 4:00:00",
       "refresh_reset_param2": "2025-02-24 04:00:00",
-      "refresh_limit_text": "本周剩余："
+      "refresh_limit_text": ""
     }
   },
   "LocalizationStrings": {}

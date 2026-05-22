@@ -676,6 +676,28 @@
             "energy_cost": 1,
             "power": null,
             "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7050280,
+            "name": "应对！水泡盾",
+            "icon_id": "705020",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！水泡盾",
+                    "description": "减伤80%，应对攻击：自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：自己获得魔攻+70%。"
         }
     ],
     "legacy_moves": [
@@ -1246,7 +1268,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 9,
-        "classis_name": "鸭子类精灵",
+        "classis_name": null,
         "handbook_area_ids": [
             1,
             3

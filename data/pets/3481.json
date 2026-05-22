@@ -648,6 +648,72 @@
             "energy_cost": 5,
             "power": null,
             "description": "造成物伤，本技能能耗每+1，威力+50。"
+        },
+        {
+            "id": 7170300,
+            "name": "入梦",
+            "icon_id": null,
+            "move_type": {
+                "id": 20,
+                "name": "Unknown",
+                "localized": {
+                    "zh": "未知"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "入梦",
+                    "description": ""
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": ""
+        },
+        {
+            "id": 7180260,
+            "name": "掠夺",
+            "icon_id": "117024",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "掠夺",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 45,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7040230,
+            "name": "应对！持续高温",
+            "icon_id": "704022",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！持续高温",
+                    "description": "造成魔伤，应对状态：下次攻击技能威力翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成魔伤，应对状态：下次攻击技能威力翻倍。"
         }
     ],
     "legacy_moves": [
@@ -1291,7 +1357,7 @@
         ],
         "movement_type": "地面",
         "classis_id": 2,
-        "classis_name": "漂浮类精灵",
+        "classis_name": null,
         "handbook_area_ids": [
             1,
             2,

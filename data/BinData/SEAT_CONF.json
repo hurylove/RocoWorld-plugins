@@ -1,5 +1,9 @@
 {
   "RocoDataRows": {
+    "43135": {
+      "id": 43135,
+      "seat_num": 2
+    },
     "68000": {
       "id": 68000,
       "seat_num": 1
@@ -60,6 +64,40 @@
     "730003": {
       "id": 730003,
       "seat_num": 2
+    },
+    "730004": {
+      "id": 730004,
+      "seat_num": 4
+    },
+    "950001": {
+      "id": 950001,
+      "seat_num": 2,
+      "seat_point": [
+        {
+          "seat_point_offset": [
+            0,
+            50,
+            55
+          ],
+          "seat_point_rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "seat_point_offset": [
+            0,
+            -50,
+            55
+          ],
+          "seat_point_rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
     }
   },
   "LocalizationStrings": {}

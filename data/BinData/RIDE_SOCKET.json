@@ -1,5 +1,12 @@
 {
   "RocoDataRows": {
+    "3004": {
+      "id": 3004,
+      "editor_name": "迪莫（大世界通用）",
+      "animation_name": "Lig_DiMo1_001",
+      "force_socket_pc1": "S1_B0_Ride",
+      "force_socket_pc2": "S2_B0_Ride"
+    },
     "3005": {
       "id": 3005,
       "editor_name": "水灵",
@@ -83,9 +90,9 @@
       "id": 3031,
       "editor_name": "奇丽花",
       "animation_name": "Gra_QiLiCao3_001",
-      "double_ride_socket_pc1_1p": "S1_C1_Ride",
+      "double_ride_socket_pc1_1p": "S1_C0_Ride",
       "double_ride_socket_pc1_2p": "S1_G0_Ride_0",
-      "double_ride_socket_pc2_1p": "S2_C1_Ride",
+      "double_ride_socket_pc2_1p": "S2_C0_Ride",
       "double_ride_socket_pc2_2p": "S2_G0_Ride_0"
     },
     "3037": {
@@ -160,6 +167,13 @@
       "double_ride_socket_pc2_1p": "S2_C0_Ride",
       "double_ride_socket_pc2_2p": "S2_G2_Ride_0"
     },
+    "3086": {
+      "id": 3086,
+      "editor_name": "可立鸡",
+      "animation_name": "Fir_KeLeJi1_001",
+      "force_socket_pc1": "S1_B0_Ride",
+      "force_socket_pc2": "S2_B0_Ride"
+    },
     "3089": {
       "id": 3089,
       "editor_name": "武者鸡",
@@ -213,6 +227,13 @@
       "double_ride_socket_pc1_2p": "S1_G0_Ride_1",
       "double_ride_socket_pc2_1p": "S2_G0_Ride_0",
       "double_ride_socket_pc2_2p": "S2_G0_Ride_1"
+    },
+    "3118": {
+      "id": 3118,
+      "editor_name": "果冻",
+      "animation_name": "Wat_BuDing1_001",
+      "force_socket_pc1": "S1_G0_Ride",
+      "force_socket_pc2": "S2_G0_Ride"
     },
     "3129": {
       "id": 3129,
@@ -387,6 +408,8 @@
       "id": 3235,
       "editor_name": "帅帅魔偶",
       "animation_name": "Ill_MuOu2_001",
+      "force_socket_pc1": "S1_G0_Ride",
+      "force_socket_pc2": "S2_G0_Ride",
       "double_ride_socket_pc1_1p": "S1_G0_Ride_0",
       "double_ride_socket_pc1_2p": "S1_G0_Ride_1",
       "double_ride_socket_pc2_1p": "S2_G0_Ride_0",
@@ -624,6 +647,13 @@
       "double_ride_socket_pc2_1p": "S2_G0_Ride_0",
       "double_ride_socket_pc2_2p": "S2_G0_Ride_1"
     },
+    "3393": {
+      "id": 3393,
+      "editor_name": "紫翎鹰",
+      "animation_name": "Win_FanQue2_001",
+      "force_socket_pc1": "S1_H0_Ride",
+      "force_socket_pc2": "S2_H0_Ride"
+    },
     "3397": {
       "id": 3397,
       "editor_name": "圣羽翼王",
@@ -802,6 +832,13 @@
       "force_socket_pc1": "S1_C0_Ride_1",
       "force_socket_pc2": "S2_C0_Ride_1"
     },
+    "3489": {
+      "id": 3489,
+      "editor_name": "小丑公爵 ",
+      "animation_name": "Dem_XiaoChou3_001",
+      "force_socket_pc1": "S1_G0_Ride_0",
+      "force_socket_pc2": "S2_G0_Ride_0"
+    },
     "3498": {
       "id": 3498,
       "editor_name": "风滚暮虫（枯萎的样子）",
@@ -858,10 +895,14 @@
       "id": 3532,
       "editor_name": "雪怪",
       "animation_name": "Ice_XueRen2_001",
+      "force_socket_pc1": "S1_G0_Ride",
+      "force_socket_pc2": "S2_G0_Ride",
       "double_ride_socket_pc1_1p": "S1_G0_Ride",
       "double_ride_socket_pc1_2p": "S1_G0_Ride_0",
       "double_ride_socket_pc2_1p": "S2_G0_Ride",
-      "double_ride_socket_pc2_2p": "S2_G0_Ride_0"
+      "double_ride_socket_pc2_2p": "S2_G0_Ride_0",
+      "circus_socket_pc1": "S1_G4_Ride_1",
+      "circus_socket_pc2": "S2_G4_Ride_1"
     },
     "3538": {
       "id": 3538,
@@ -952,6 +993,15 @@
       "double_ride_socket_pc1_2p": "S1_H2_Ride_1",
       "double_ride_socket_pc2_1p": "S2_H2_Ride_0",
       "double_ride_socket_pc2_2p": "S2_H2_Ride_1"
+    },
+    "3573": {
+      "id": 3573,
+      "editor_name": "爆焰喷喷",
+      "animation_name": "Fir_LieYanLong2_001",
+      "force_socket_pc1": "S1_G0_Ride",
+      "force_socket_pc2": "S2_G0_Ride",
+      "circus_socket_pc1": "S1_G4_Ride_0",
+      "circus_socket_pc2": "S2_G4_Ride_0"
     },
     "3578": {
       "id": 3578,
@@ -1066,6 +1116,104 @@
       "force_socket_pc1": "S1_C1_Ride_0",
       "force_socket_pc2": "S2_C1_Ride_0"
     },
+    "3660": {
+      "id": 3660,
+      "editor_name": "加油蟹",
+      "animation_name": "Wat_JiaYouHaiKui3_001",
+      "force_socket_pc1": "S1_G1_Ride",
+      "force_socket_pc2": "S2_G1_Ride",
+      "circus_socket_pc1": "S1_G5_Ride_0",
+      "circus_socket_pc2": "S2_G5_Ride_0"
+    },
+    "3684": {
+      "id": 3684,
+      "editor_name": "咕德帽帽",
+      "animation_name": "Gho_GuGuMao2_001",
+      "force_socket_pc1": "S1_G0_Ride",
+      "force_socket_pc2": "S2_G0_Ride"
+    },
+    "3708": {
+      "id": 3708,
+      "editor_name": "小鼓象",
+      "animation_name": "Mac_GuXiang1_001",
+      "force_socket_pc1": "S1_G1_Ride",
+      "force_socket_pc2": "S2_G1_Ride",
+      "circus_socket_pc1": "S1_G4_Ride_0",
+      "circus_socket_pc2": "S2_G4_Ride_0"
+    },
+    "3709": {
+      "id": 3709,
+      "editor_name": "巨鼓象",
+      "animation_name": "Mac_GuXiang3_001",
+      "force_socket_pc1": "S1_C1_Ride",
+      "force_socket_pc2": "S2_C1_Ride",
+      "double_ride_socket_pc1_1p": "S1_G0_Ride_0",
+      "double_ride_socket_pc1_2p": "S1_G0_Ride_1",
+      "double_ride_socket_pc2_1p": "S2_G0_Ride_0",
+      "double_ride_socket_pc2_2p": "S2_G0_Ride_1",
+      "circus_socket_pc1": "S1_G1_Ride_2",
+      "circus_socket_pc2": "S2_G1_Ride_2"
+    },
+    "3730": {
+      "id": 3730,
+      "editor_name": "音碟吼",
+      "animation_name": "Com_HouMaiZai3_001",
+      "circus_socket_pc1": "S1_G1_Ride_0",
+      "circus_socket_pc2": "S2_G1_Ride_0"
+    },
+    "3733": {
+      "id": 3733,
+      "editor_name": "钨丝贝贝",
+      "animation_name": "Mac_WuSiBB1_001",
+      "force_socket_pc1": "S1_HIH_Ride",
+      "force_socket_pc2": "S2_HIH_Ride",
+      "circus_socket_pc1": "S1_G5_Ride_0",
+      "circus_socket_pc2": "S2_G5_Ride_0"
+    },
+    "3734": {
+      "id": 3734,
+      "editor_name": "辉光幕机",
+      "animation_name": "Mac_WuSiBB2_001",
+      "force_socket_pc1": "S1_G0_Ride",
+      "force_socket_pc2": "S2_G0_Ride",
+      "double_ride_socket_pc1_1p": "S1_G1_Ride_0",
+      "double_ride_socket_pc1_2p": "S1_G1_Ride_1",
+      "double_ride_socket_pc2_1p": "S2_G1_Ride_0",
+      "double_ride_socket_pc2_2p": "S2_G1_Ride_1",
+      "circus_socket_pc1": "S1_G1_Ride_2",
+      "circus_socket_pc2": "S2_G1_Ride_2"
+    },
+    "3735": {
+      "id": 3735,
+      "editor_name": "机幕方舟",
+      "animation_name": "Mac_WuSiBB3_001",
+      "force_socket_pc1": "S1_G0_Ride",
+      "force_socket_pc2": "S2_G0_Ride",
+      "double_ride_socket_pc1_1p": "S1_G1_Ride",
+      "double_ride_socket_pc1_2p": "S1_G1_Ride_0",
+      "double_ride_socket_pc2_1p": "S2_G1_Ride",
+      "double_ride_socket_pc2_2p": "S2_G1_Ride_0",
+      "circus_socket_pc1": "S1_G5_Ride_0",
+      "circus_socket_pc2": "S2_G5_Ride_0"
+    },
+    "3736": {
+      "id": 3736,
+      "editor_name": "炫光迪迪",
+      "animation_name": "Ele_XuanGuangDD1_001",
+      "force_socket_pc1": "S1_G0_Ride",
+      "force_socket_pc2": "S2_G0_Ride",
+      "circus_socket_pc1": "S1_G4_Ride_0",
+      "circus_socket_pc2": "S2_G4_Ride_0"
+    },
+    "3737": {
+      "id": 3737,
+      "editor_name": "​​霹雳迪迪",
+      "animation_name": "Ele_XuanGuangDD3_001",
+      "force_socket_pc1": "S1_C1_Ride",
+      "force_socket_pc2": "S2_C1_Ride",
+      "circus_socket_pc1": "S1_G4_Ride_0",
+      "circus_socket_pc2": "S2_G4_Ride_0"
+    },
     "3739": {
       "id": 3739,
       "editor_name": "\t怒目怂猫(山间竹林的样子)",
@@ -1074,6 +1222,15 @@
       "double_ride_socket_pc1_2p": "S1_G0_Ride_1",
       "double_ride_socket_pc2_1p": "S2_G0_Ride_0",
       "double_ride_socket_pc2_2p": "S2_G0_Ride_1"
+    },
+    "3743": {
+      "id": 3743,
+      "editor_name": "加油蟹（单只海葵的样子）",
+      "animation_name": "Wat_JiaYouHaiKui3Ar_001",
+      "force_socket_pc1": "S1_G1_Ride",
+      "force_socket_pc2": "S2_G1_Ride",
+      "circus_socket_pc1": "S1_G5_Ride_0",
+      "circus_socket_pc2": "S2_G5_Ride_0"
     },
     "16000001": {
       "id": 16000001,
@@ -1095,6 +1252,13 @@
       "animation_name": "Com_DiShu1_001",
       "force_socket_pc1": "S1_G0_Ride",
       "force_socket_pc2": "S2_G0_Ride"
+    },
+    "16000004": {
+      "id": 16000004,
+      "editor_name": "迪莫（A2-1变形关卡）",
+      "animation_name": "Lig_DiMo1_001",
+      "force_socket_pc1": "S1_G2_Ride_0",
+      "force_socket_pc2": "S2_G2_Ride_0"
     },
     "17000001": {
       "id": 17000001,
@@ -1130,6 +1294,34 @@
       "animation_name": "Poi_GuoJing2_001",
       "force_socket_pc1": "S1_G0_Ride_0",
       "force_socket_pc2": "S2_G0_Ride_0"
+    },
+    "19000004": {
+      "id": 19000004,
+      "editor_name": "紫翎鹰",
+      "animation_name": "Win_FanQue2_001",
+      "force_socket_pc1": "S1_G0_Ride",
+      "force_socket_pc2": "S2_G0_Ride"
+    },
+    "19000005": {
+      "id": 19000005,
+      "editor_name": "可立鸡",
+      "animation_name": "Fir_KeLeJi1_001",
+      "force_socket_pc1": "S1_G0_Ride",
+      "force_socket_pc2": "S2_G0_Ride"
+    },
+    "19000006": {
+      "id": 19000006,
+      "editor_name": "果冻",
+      "animation_name": "Wat_BuDing1_001",
+      "force_socket_pc1": "S1_G0_Ride",
+      "force_socket_pc2": "S2_G0_Ride"
+    },
+    "19000008": {
+      "id": 19000008,
+      "editor_name": "钨丝贝贝",
+      "animation_name": "Mac_WuSiBB1_001",
+      "force_socket_pc1": "S1_G5_Ride_0",
+      "force_socket_pc2": "S2_G5_Ride_0"
     }
   },
   "LocalizationStrings": {}

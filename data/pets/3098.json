@@ -736,6 +736,28 @@
             "energy_cost": 3,
             "power": null,
             "description": "减伤90%，应对攻击：防御技能冷却-1。"
+        },
+        {
+            "id": 7021220,
+            "name": "同频",
+            "icon_id": null,
+            "move_type": {
+                "id": 20,
+                "name": "Unknown",
+                "localized": {
+                    "zh": "未知"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "同频",
+                    "description": ""
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": ""
         }
     ],
     "legacy_moves": [
@@ -1325,7 +1347,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 4,
-        "classis_name": "植物类精灵",
+        "classis_name": null,
         "handbook_area_ids": [
             1,
             2

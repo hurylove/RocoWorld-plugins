@@ -1659,7 +1659,7 @@
         ],
         "movement_type": "地面",
         "classis_id": 4,
-        "classis_name": "植物类精灵",
+        "classis_name": null,
         "handbook_area_ids": [
             1,
             2

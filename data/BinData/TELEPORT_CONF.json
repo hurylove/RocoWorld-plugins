@@ -64,10 +64,32 @@
         "deviation_online": 300
       }
     },
+    "20": {
+      "id": 20,
+      "editor_name": "地图传送-A1室外-商店街-皮卡服装店",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 151030076,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 151030076,
+        "dest_outside_radius_online": 200,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
     "28": {
       "id": 28,
       "editor_name": "出生点附近的复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10003,
       "teleport_actor_types": [
         2
       ],
@@ -3782,6 +3804,48 @@
         "deviation_online": 300
       }
     },
+    "223": {
+      "id": 223,
+      "editor_name": "传说精灵团体战-机幕方舟（V101）",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 241030057,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 241030057,
+        "dest_outside_radius_online": 400,
+        "dest_inside_radius_online": 200,
+        "deviation_online": 300
+      }
+    },
+    "224": {
+      "id": 224,
+      "editor_name": "传说精灵团体战-凡鹰（V101）",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 241030058,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 241030058,
+        "dest_outside_radius_online": 400,
+        "dest_inside_radius_online": 200,
+        "deviation_online": 300
+      }
+    },
     "301": {
       "id": 301,
       "editor_name": "魔法学院魔力之源",
@@ -5491,6 +5555,90 @@
         "deviation_online": 300
       }
     },
+    "393": {
+      "id": 393,
+      "editor_name": "安妮商店传送点",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 291030270,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 291030270,
+        "dest_outside_radius_online": 200,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "394": {
+      "id": 394,
+      "editor_name": "安妮商店室外传送点",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 671031125,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 671031125,
+        "dest_outside_radius_online": 200,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "395": {
+      "id": 395,
+      "editor_name": "地图传送-A2室外-王国城堡-皮卡服装店",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 511030298,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 511030298,
+        "dest_outside_radius_online": 200,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "396": {
+      "id": 396,
+      "editor_name": "地图传送-A2室外-彼得大道-皮卡服装店",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 671031126,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 671031126,
+        "dest_outside_radius_online": 200,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
     "401": {
       "id": 401,
       "editor_name": "序章_雪山_临时复活点",
@@ -6431,6 +6579,69 @@
         "deviation_online": 300
       }
     },
+    "706": {
+      "id": 706,
+      "editor_name": "领地试炼-深渊罗隐",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 241030063,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 241030063,
+        "dest_outside_radius_online": 800,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "707": {
+      "id": 707,
+      "editor_name": "领地试炼-高帽鹬者",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 241030064,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 241030064,
+        "dest_outside_radius_online": 800,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "781": {
+      "id": 781,
+      "editor_name": "八大徽章-草系徽章-入口传送门",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 241030060,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 241030060,
+        "dest_outside_radius_online": 800,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
     "801": {
       "id": 801,
       "editor_name": "801440炼金",
@@ -6687,6 +6898,7 @@
       "id": 901,
       "editor_name": "服装店保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10019,
       "teleport_actor_types": [
         2
       ],
@@ -6709,6 +6921,7 @@
       "id": 902,
       "editor_name": "道具店保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10020,
       "teleport_actor_types": [
         2
       ],
@@ -6731,6 +6944,7 @@
       "id": 903,
       "editor_name": "侦探社保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10035,
       "teleport_actor_types": [
         2
       ],
@@ -6753,6 +6967,7 @@
       "id": 904,
       "editor_name": "通用教室保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10017,
       "teleport_actor_types": [
         2
       ],
@@ -6775,6 +6990,7 @@
       "id": 905,
       "editor_name": "礼拜教堂保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10028,
       "teleport_actor_types": [
         2
       ],
@@ -6797,6 +7013,7 @@
       "id": 906,
       "editor_name": "学院大厅保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10026,
       "teleport_actor_types": [
         2
       ],
@@ -6819,6 +7036,7 @@
       "id": 907,
       "editor_name": "怪谈社保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10027,
       "teleport_actor_types": [
         2
       ],
@@ -6841,6 +7059,7 @@
       "id": 908,
       "editor_name": "生态社保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10022,
       "teleport_actor_types": [
         2
       ],
@@ -6863,6 +7082,7 @@
       "id": 909,
       "editor_name": "魔法学院保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10018,
       "teleport_actor_types": [
         2
       ],
@@ -6885,6 +7105,7 @@
       "id": 910,
       "editor_name": "伊里斯小屋复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10010,
       "teleport_actor_types": [
         2
       ],
@@ -6907,6 +7128,7 @@
       "id": 911,
       "editor_name": "（整齐版)礼拜教堂保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10034,
       "teleport_actor_types": [
         2
       ],
@@ -7161,6 +7383,7 @@
       "id": 1057,
       "editor_name": "家园室内传送点",
       "resurrection_group": 1,
+      "scene_res_id": 30001,
       "teleport_actor_types": [
         2
       ],
@@ -7288,6 +7511,7 @@
       "id": 1063,
       "editor_name": "王国城堡服装店保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10036,
       "teleport_actor_types": [
         2
       ],
@@ -7310,6 +7534,7 @@
       "id": 1064,
       "editor_name": "彼得大道服装店保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10037,
       "teleport_actor_types": [
         2
       ],
@@ -7921,6 +8146,7 @@
       "id": 1210,
       "editor_name": "种植园-大地图种植园特效门传送点",
       "resurrection_group": 1,
+      "scene_res_id": 30002,
       "teleport_actor_types": [
         2
       ],
@@ -7981,10 +8207,137 @@
         "deviation_online": 300
       }
     },
+    "1213": {
+      "id": 1213,
+      "editor_name": "S2赛季大厅-大世界入口",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 641030022,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 641030022,
+        "dest_outside_radius_online": 200,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "1214": {
+      "id": 1214,
+      "editor_name": "S2赛季大厅-马戏团",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 641030020,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 641030020,
+        "dest_outside_radius_online": 200,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "1215": {
+      "id": 1215,
+      "editor_name": "S2赛季任务地城-声波缇塔",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 401030302,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 401030302,
+        "dest_outside_radius_online": 200,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "1216": {
+      "id": 1216,
+      "editor_name": "S2赛季任务地城-机械方方",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 401030312,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 641030020,
+        "dest_outside_radius_online": 200,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "1217": {
+      "id": 1217,
+      "editor_name": "S2赛季大厅-马戏团-4号帐篷",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 21031053,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 21031053,
+        "dest_outside_radius_online": 200,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "1218": {
+      "id": 1218,
+      "editor_name": "S2赛季大厅-马戏团-爆焰仔帐篷",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 221031010,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 221031010,
+        "dest_outside_radius_online": 200,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
     "1301": {
       "id": 1301,
       "editor_name": "A2银行总部1楼保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10039,
       "teleport_actor_types": [
         2
       ],
@@ -8007,6 +8360,7 @@
       "id": 1302,
       "editor_name": "A2银行总部2楼保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10047,
       "teleport_actor_types": [
         2
       ],
@@ -8029,6 +8383,7 @@
       "id": 1303,
       "editor_name": "A2侦探社拾遗-旅店保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10040,
       "teleport_actor_types": [
         2
       ],
@@ -8051,6 +8406,7 @@
       "id": 1304,
       "editor_name": "A2秘密基地保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10041,
       "teleport_actor_types": [
         2
       ],
@@ -8073,6 +8429,7 @@
       "id": 1305,
       "editor_name": "A2-通用王国城堡民居室内--贵族保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10042,
       "teleport_actor_types": [
         2
       ],
@@ -8095,6 +8452,7 @@
       "id": 1306,
       "editor_name": "A2-通用王国城堡餐厅室内--高档保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10043,
       "teleport_actor_types": [
         2
       ],
@@ -8117,6 +8475,7 @@
       "id": 1307,
       "editor_name": "A2-通用王国城堡民居室内--平民保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10044,
       "teleport_actor_types": [
         2
       ],
@@ -8139,6 +8498,7 @@
       "id": 1308,
       "editor_name": "A2-通用王国城堡餐厅室内--普通保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10045,
       "teleport_actor_types": [
         2
       ],
@@ -8161,6 +8521,7 @@
       "id": 1309,
       "editor_name": "A2-彼得大道通用书店室内保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10046,
       "teleport_actor_types": [
         2
       ],
@@ -8183,6 +8544,7 @@
       "id": 1310,
       "editor_name": "A2-王国城堡室内保底复活点",
       "resurrection_group": 1,
+      "scene_res_id": 10038,
       "teleport_actor_types": [
         2
       ],
@@ -8197,6 +8559,199 @@
       "teleport_dest_online": {
         "dest_area_id_online": 161400014,
         "dest_outside_radius_online": 800,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "1401": {
+      "id": 1401,
+      "editor_name": "走钢丝-STG1复活点",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 555060012,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 555060012,
+        "dest_outside_radius_online": 800,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "1402": {
+      "id": 1402,
+      "editor_name": "走钢丝-STG2复活点",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 555060013,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 555060013,
+        "dest_outside_radius_online": 800,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "1403": {
+      "id": 1403,
+      "editor_name": "走钢丝-STG3复活点",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 555060014,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 555060014,
+        "dest_outside_radius_online": 800,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "1404": {
+      "id": 1404,
+      "editor_name": "走钢丝-STG4复活点",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 555060015,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 555060015,
+        "dest_outside_radius_online": 800,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "1405": {
+      "id": 1405,
+      "editor_name": "电力恢复-STG1复活点",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 555090016,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 555090016,
+        "dest_outside_radius_online": 800,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "1406": {
+      "id": 1406,
+      "editor_name": "电力恢复-STG2复活点",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 555090017,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 555090017,
+        "dest_outside_radius_online": 800,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "1407": {
+      "id": 1407,
+      "editor_name": "雪花-传送点",
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 225080020,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 225080020,
+        "dest_outside_radius_online": 800,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "1522": {
+      "id": 1522,
+      "editor_name": "S1赛季大厅-保底复活点",
+      "resurrection_group": 1,
+      "scene_res_id": 50001,
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 641030012,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 221030981,
+        "dest_outside_radius_online": 200,
+        "dest_inside_radius_online": 100,
+        "deviation_online": 300
+      }
+    },
+    "1523": {
+      "id": 1523,
+      "editor_name": "S2赛季大厅-保底复活点",
+      "resurrection_group": 1,
+      "scene_res_id": 50002,
+      "teleport_actor_types": [
+        2
+      ],
+      "teleport_begin_point_type": 1,
+      "teleport_dest_type": 1,
+      "teleport_dest": [
+        {
+          "dest_id": 641030020,
+          "dest_weight": 100
+        }
+      ],
+      "teleport_dest_online": {
+        "dest_area_id_online": 641030020,
+        "dest_outside_radius_online": 200,
         "dest_inside_radius_online": 100,
         "deviation_online": 300
       }

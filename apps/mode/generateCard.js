@@ -209,7 +209,7 @@ async function generateCard(spriteName, petId) {
     };
 
     const elfSkills = (petData.move_pool || []).map(mapMove);
-    const bloodlineSkills = (petData.legacy_moves || []).map(mapMove);
+    const bloodlineSkills = (petData.legacy_moves || []).map(item => mapMove(item.move));
     const skillStones = (petData.move_stones || []).map(mapMove);
 
     // 属性颜色映射表

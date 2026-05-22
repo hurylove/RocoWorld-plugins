@@ -34,10 +34,7 @@
     },
     "10003": {
       "id": 10003,
-      "aura_type": 10003,
-      "reject_add_aura_effect": [
-        5
-      ]
+      "aura_type": 10003
     },
     "10004": {
       "id": 10004,

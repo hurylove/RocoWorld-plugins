@@ -2,29 +2,29 @@
   "RocoDataRows": {
     "1": {
       "id": 1,
-      "name": "查看名片",
+      "name": "",
       "RelationTreeBasic": 1,
       "friend_need": true
     },
     "2": {
       "id": 2,
-      "name": "世界信息",
+      "name": "",
       "RelationTreeBasic": 2
     },
     "3": {
       "id": 3,
-      "name": "家园信息",
+      "name": "",
       "RelationTreeBasic": 3
     },
     "4": {
       "id": 4,
-      "name": "好友备注",
-      "RelationTreeBasic": 6,
+      "name": "",
+      "RelationTreeBasic": 4,
       "friend_need": true
     },
     "5": {
       "id": 5,
-      "name": "举报玩家",
+      "name": "",
       "RelationTreeBasic": 5
     }
   },

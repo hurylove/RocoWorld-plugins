@@ -18,9 +18,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100002": {
       "id": 100002,
@@ -42,9 +42,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100003": {
       "id": 100003,
@@ -66,9 +66,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100254": {
       "id": 100254,
@@ -90,9 +90,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100255": {
       "id": 100255,
@@ -114,9 +114,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100261": {
       "id": 100261,
@@ -137,9 +137,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 8.0,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100262": {
       "id": 100262,
@@ -160,9 +160,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 4.0,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100263": {
       "id": 100263,
@@ -183,9 +183,9 @@
       "ball_return_speed_min": 1,
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100271": {
       "id": 100271,
@@ -207,9 +207,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100272": {
       "id": 100272,
@@ -230,9 +230,9 @@
       "ball_return_speed_min": 1,
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100273": {
       "id": 100273,
@@ -254,9 +254,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100274": {
       "id": 100274,
@@ -278,9 +278,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100275": {
       "id": 100275,
@@ -300,9 +300,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100281": {
       "id": 100281,
@@ -324,9 +324,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100282": {
       "id": 100282,
@@ -348,9 +348,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100283": {
       "id": 100283,
@@ -373,9 +373,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 8.0,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100284": {
       "id": 100284,
@@ -397,9 +397,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100285": {
       "id": 100285,
@@ -420,9 +420,9 @@
       "ball_return_speed_min": 1,
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100286": {
       "id": 100286,
@@ -444,9 +444,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100287": {
       "id": 100287,
@@ -468,9 +468,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "100288": {
       "id": 100288,
@@ -492,9 +492,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     },
     "280001": {
       "id": 280001,
@@ -516,9 +516,9 @@
       "speed_min_overdue_recycling": 100,
       "overdue_recycling": 10000,
       "ball_raise_angle": 3.5,
-      "Max_Auto_Find_Target_Angle": 300,
-      "Ball_Breaking_Distance_Min": 1500,
-      "Ball_Breaking_Distance_Max": 6000
+      "Max_Auto_Find_Target_Distance": 300,
+      "Max_Auto_Find_Target_Angle": 1500,
+      "Ball_Breaking_Distance_Min": 6000
     }
   },
   "LocalizationStrings": {}

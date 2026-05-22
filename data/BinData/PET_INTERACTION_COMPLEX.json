@@ -2,7 +2,6 @@
   "RocoDataRows": {
     "602800101": {
       "id": 602800101,
-      "editor_name": "咸水峡湾",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -11,7 +10,6 @@
     },
     "602800102": {
       "id": 602800102,
-      "editor_name": "咸水峡湾",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -20,7 +18,6 @@
     },
     "602800201": {
       "id": 602800201,
-      "editor_name": "沉船漩涡",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -29,7 +26,6 @@
     },
     "602800202": {
       "id": 602800202,
-      "editor_name": "沉船漩涡",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -38,7 +34,6 @@
     },
     "602800301": {
       "id": 602800301,
-      "editor_name": "圣所前哨",
       "interact_cond_group": [
         {
           "interact_cond": 7,
@@ -50,7 +45,6 @@
     },
     "602800401": {
       "id": 602800401,
-      "editor_name": "回填山涧",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -59,7 +53,6 @@
     },
     "602800402": {
       "id": 602800402,
-      "editor_name": "回填山涧",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -68,7 +61,6 @@
     },
     "602800501": {
       "id": 602800501,
-      "editor_name": "采邑地",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -77,7 +69,6 @@
     },
     "602800502": {
       "id": 602800502,
-      "editor_name": "采邑地",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -86,7 +77,6 @@
     },
     "602800601": {
       "id": 602800601,
-      "editor_name": "独角兽领地",
       "interact_cond_group": [
         {
           "interact_cond": 7,
@@ -98,7 +88,6 @@
     },
     "602800701": {
       "id": 602800701,
-      "editor_name": "恶水沼泽",
       "interact_cond_group": [
         {
           "interact_cond": 7,
@@ -110,7 +99,6 @@
     },
     "602800801": {
       "id": 602800801,
-      "editor_name": "黑水峡",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -119,7 +107,6 @@
     },
     "602800802": {
       "id": 602800802,
-      "editor_name": "黑水峡",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -128,7 +115,6 @@
     },
     "602800901": {
       "id": 602800901,
-      "editor_name": "甜水农庄",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -137,7 +123,6 @@
     },
     "602800902": {
       "id": 602800902,
-      "editor_name": "甜水农庄",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -146,7 +131,6 @@
     },
     "602801001": {
       "id": 602801001,
-      "editor_name": "咕噜咕噜浅滩",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -155,7 +139,6 @@
     },
     "602801002": {
       "id": 602801002,
-      "editor_name": "咕噜咕噜浅滩",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -164,7 +147,6 @@
     },
     "602801101": {
       "id": 602801101,
-      "editor_name": "银蛇河口",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -173,7 +155,6 @@
     },
     "602801102": {
       "id": 602801102,
-      "editor_name": "银蛇河口",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -182,7 +163,6 @@
     },
     "602801301": {
       "id": 602801301,
-      "editor_name": "港口驻地",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -191,7 +171,6 @@
     },
     "602801302": {
       "id": 602801302,
-      "editor_name": "港口驻地",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -200,7 +179,6 @@
     },
     "602801401": {
       "id": 602801401,
-      "editor_name": "向日葵海岸",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -209,7 +187,6 @@
     },
     "602801402": {
       "id": 602801402,
-      "editor_name": "向日葵海岸",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -218,7 +195,6 @@
     },
     "602801601": {
       "id": 602801601,
-      "editor_name": "二叠山丘",
       "interact_cond_group": [
         {
           "interact_cond": 7,
@@ -230,7 +206,6 @@
     },
     "602801602": {
       "id": 602801602,
-      "editor_name": "二叠山丘",
       "interact_cond_group": [
         {
           "interact_cond": 7,
@@ -242,7 +217,6 @@
     },
     "602801701": {
       "id": 602801701,
-      "editor_name": "监管区",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -251,7 +225,6 @@
     },
     "602801702": {
       "id": 602801702,
-      "editor_name": "监管区",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -260,7 +233,6 @@
     },
     "602801801": {
       "id": 602801801,
-      "editor_name": "拾荒港口",
       "interact_cond_group": [
         {
           "interact_cond": 7,
@@ -272,7 +244,6 @@
     },
     "602801901": {
       "id": 602801901,
-      "editor_name": "晨曦山",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -281,7 +252,6 @@
     },
     "602801902": {
       "id": 602801902,
-      "editor_name": "晨曦山",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -290,7 +260,6 @@
     },
     "602802001": {
       "id": 602802001,
-      "editor_name": "信仰者村落",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -299,7 +268,6 @@
     },
     "602802002": {
       "id": 602802002,
-      "editor_name": "信仰者村落",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -308,7 +276,6 @@
     },
     "602802201": {
       "id": 602802201,
-      "editor_name": "望风半岛",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -317,7 +284,6 @@
     },
     "602802202": {
       "id": 602802202,
-      "editor_name": "望风半岛",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -326,7 +292,6 @@
     },
     "602802401": {
       "id": 602802401,
-      "editor_name": "奥贝斯坦湖",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -335,7 +300,6 @@
     },
     "602802402": {
       "id": 602802402,
-      "editor_name": "奥贝斯坦湖",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -344,7 +308,6 @@
     },
     "602802501": {
       "id": 602802501,
-      "editor_name": "月牙湖岸",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -353,7 +316,6 @@
     },
     "602802502": {
       "id": 602802502,
-      "editor_name": "月牙湖岸",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -362,7 +324,6 @@
     },
     "602802701": {
       "id": 602802701,
-      "editor_name": "聆风塔地",
       "interact_cond_group": [
         {
           "interact_cond": 7,
@@ -374,7 +335,6 @@
     },
     "602802801": {
       "id": 602802801,
-      "editor_name": "风息山口",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -383,7 +343,6 @@
     },
     "602802802": {
       "id": 602802802,
-      "editor_name": "风息山口",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -392,7 +351,6 @@
     },
     "602803001": {
       "id": 602803001,
-      "editor_name": "岚语峰西侧",
       "interact_cond_group": [
         {
           "interact_cond": 7,
@@ -404,7 +362,6 @@
     },
     "602803002": {
       "id": 602803002,
-      "editor_name": "岚语峰西侧",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -413,7 +370,6 @@
     },
     "602803101": {
       "id": 602803101,
-      "editor_name": "圣羽祭台",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -422,7 +378,6 @@
     },
     "602803102": {
       "id": 602803102,
-      "editor_name": "圣羽祭台",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -431,7 +386,6 @@
     },
     "602803201": {
       "id": 602803201,
-      "editor_name": "旧飞艇航道",
       "interact_cond_group": [
         {
           "interact_cond": 7,
@@ -443,7 +397,6 @@
     },
     "602803202": {
       "id": 602803202,
-      "editor_name": "旧飞艇航道",
       "interact_cond_group": [
         {
           "interact_cond": 7,
@@ -455,7 +408,6 @@
     },
     "602803301": {
       "id": 602803301,
-      "editor_name": "挽风屏障",
       "interact_cond_group": [
         {
           "interact_cond": 7,
@@ -467,7 +419,6 @@
     },
     "602803401": {
       "id": 602803401,
-      "editor_name": "叽叽喳喳台地",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -476,7 +427,6 @@
     },
     "602803402": {
       "id": 602803402,
-      "editor_name": "叽叽喳喳台地",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -485,7 +435,6 @@
     },
     "602803501": {
       "id": 602803501,
-      "editor_name": "轻风山",
       "interact_cond_group": [
         {
           "interact_cond": 7,
@@ -497,7 +446,6 @@
     },
     "602803502": {
       "id": 602803502,
-      "editor_name": "轻风山",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -506,7 +454,6 @@
     },
     "602803601": {
       "id": 602803601,
-      "editor_name": "风眠圣所",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -515,7 +462,6 @@
     },
     "602803602": {
       "id": 602803602,
-      "editor_name": "风眠圣所",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -524,7 +470,6 @@
     },
     "602803701": {
       "id": 602803701,
-      "editor_name": "星霜崖地",
       "interact_cond_group": [
         {
           "interact_cond": 13
@@ -533,7 +478,6 @@
     },
     "602803702": {
       "id": 602803702,
-      "editor_name": "星霜崖地",
       "interact_cond_group": [
         {
           "interact_cond": 13

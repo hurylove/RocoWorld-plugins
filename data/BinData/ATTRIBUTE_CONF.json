@@ -2,643 +2,573 @@
   "RocoDataRows": {
     "1": {
       "attribute": 1,
-      "editor_name": "生命",
-      "attribute_name": "生命",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_01_png.ui_pet_attribute_01_png'",
+      "attribute_name": "",
+      "attribute_icon": "生命",
       "attr_ui_type": 1,
-      "is_ui_show": 1
+      "is_ui_show": 2,
+      "is_percent_attr": 1
     },
     "2": {
       "attribute": 2,
-      "editor_name": "物攻",
-      "attribute_name": "物攻",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_02_png.ui_pet_attribute_02_png'",
-      "attr_ui_type": 1,
-      "is_ui_show": 1
+      "attribute_name": "",
+      "attribute_icon": "物攻",
+      "attr_ui_type": 3,
+      "is_ui_show": 4,
+      "is_percent_attr": 1
     },
     "3": {
       "attribute": 3,
-      "editor_name": "魔攻",
-      "attribute_name": "魔攻",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_04_png.ui_pet_attribute_04_png'",
-      "attr_ui_type": 1,
-      "is_ui_show": 1
+      "attribute_name": "",
+      "attribute_icon": "魔攻",
+      "attr_ui_type": 5,
+      "is_ui_show": 6,
+      "is_percent_attr": 1
     },
     "4": {
       "attribute": 4,
-      "editor_name": "物防",
-      "attribute_name": "物防",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_03_png.ui_pet_attribute_03_png'",
-      "attr_ui_type": 1,
-      "is_ui_show": 1
+      "attribute_name": "",
+      "attribute_icon": "物防",
+      "attr_ui_type": 7,
+      "is_ui_show": 8,
+      "is_percent_attr": 1
     },
     "5": {
       "attribute": 5,
-      "editor_name": "魔防",
-      "attribute_name": "魔防",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_05_png.ui_pet_attribute_05_png'",
-      "attr_ui_type": 1,
-      "is_ui_show": 1
+      "attribute_name": "",
+      "attribute_icon": "魔防",
+      "attr_ui_type": 9,
+      "is_ui_show": 10,
+      "is_percent_attr": 1
     },
     "6": {
       "attribute": 6,
-      "editor_name": "速度",
-      "attribute_name": "速度",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_06_png.ui_pet_attribute_06_png'",
-      "attr_ui_type": 1,
-      "is_ui_show": 1
+      "attribute_name": "",
+      "attribute_icon": "速度",
+      "attr_ui_type": 11,
+      "is_ui_show": 12,
+      "is_percent_attr": 1
     },
     "11": {
       "attribute": 11,
-      "editor_name": "命中率",
-      "attribute_name": "命中率",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "命中率"
     },
     "12": {
       "attribute": 12,
-      "editor_name": "闪避率",
-      "attribute_name": "闪避率",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "闪避率"
     },
     "13": {
       "attribute": 13,
-      "editor_name": "暴击几率",
-      "attribute_name": "暴击几率",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "暴击几率"
     },
     "14": {
       "attribute": 14,
-      "editor_name": "暴击抵抗",
-      "attribute_name": "暴击抵抗",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "暴击抵抗"
     },
     "15": {
       "attribute": 15,
-      "editor_name": "暴击伤害",
-      "attribute_name": "暴击伤害",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "暴击伤害"
     },
     "16": {
       "attribute": 16,
-      "editor_name": "暴击伤害抵抗",
-      "attribute_name": "暴击伤害抵抗",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "暴击伤害抵抗"
     },
     "17": {
       "attribute": 17,
-      "editor_name": "物理攻击加成",
-      "attribute_name": "物理攻击加成",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "物理攻击加成"
     },
     "18": {
       "attribute": 18,
-      "editor_name": "魔法攻击加成",
-      "attribute_name": "魔法攻击加成",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "魔法攻击加成"
     },
     "19": {
       "attribute": 19,
-      "editor_name": "物理伤害减免",
-      "attribute_name": "物理伤害减免",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "物理伤害减免"
     },
     "20": {
       "attribute": 20,
-      "editor_name": "魔法伤害减免",
-      "attribute_name": "魔法伤害减免",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "魔法伤害减免"
     },
     "21": {
       "attribute": 21,
-      "editor_name": "全伤害加成",
-      "attribute_name": "全伤害加成",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "全伤害加成"
     },
     "22": {
       "attribute": 22,
-      "editor_name": "全伤害减免",
-      "attribute_name": "全伤害减免",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "全伤害减免"
     },
     "23": {
       "attribute": 23,
-      "editor_name": "伤害波动下限",
-      "attribute_name": "伤害波动下限",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "伤害波动下限"
     },
     "24": {
       "attribute": 24,
-      "editor_name": "伤害波动上限",
-      "attribute_name": "伤害波动上限",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "伤害波动上限"
     },
     "25": {
       "attribute": 25,
-      "editor_name": "当前血量",
-      "attribute_name": "当前血量"
+      "attribute_name": "",
+      "attribute_icon": "当前血量"
     },
     "26": {
       "attribute": 26,
-      "editor_name": "宠物伤害类型1",
-      "attribute_name": "宠物伤害类型1"
+      "attribute_name": "",
+      "attribute_icon": "宠物伤害类型1"
     },
     "27": {
       "attribute": 27,
-      "editor_name": "宠物伤害类型2",
-      "attribute_name": "宠物伤害类型2"
+      "attribute_name": "",
+      "attribute_icon": "宠物伤害类型2"
     },
     "28": {
       "attribute": 28,
-      "editor_name": "宠物伤害类型3",
-      "attribute_name": "宠物伤害类型3"
+      "attribute_name": "",
+      "attribute_icon": "宠物伤害类型3"
     },
     "29": {
       "attribute": 29,
-      "editor_name": "物理攻击力加成",
-      "attribute_name": "物理攻击力加成",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "物理攻击力加成"
     },
     "30": {
       "attribute": 30,
-      "editor_name": "魔法攻击力加成",
-      "attribute_name": "魔法攻击力加成",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "魔法攻击力加成"
     },
     "31": {
       "attribute": 31,
-      "editor_name": "物理防御力加成",
-      "attribute_name": "物理防御力加成",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "物理防御力加成"
     },
     "32": {
       "attribute": 32,
-      "editor_name": "魔法防御力加成",
-      "attribute_name": "魔法防御力加成",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "魔法防御力加成"
     },
     "33": {
       "attribute": 33,
-      "editor_name": "物理攻击力削弱",
-      "attribute_name": "物理攻击力削弱",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "物理攻击力削弱"
     },
     "34": {
       "attribute": 34,
-      "editor_name": "魔法攻击力削弱",
-      "attribute_name": "魔法攻击力削弱",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "魔法攻击力削弱"
     },
     "35": {
       "attribute": 35,
-      "editor_name": "物理防御力削弱",
-      "attribute_name": "物理防御力削弱",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "物理防御力削弱"
     },
     "36": {
       "attribute": 36,
-      "editor_name": "魔法防御力削弱",
-      "attribute_name": "魔法防御力削弱",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "魔法防御力削弱"
     },
     "37": {
       "attribute": 37,
-      "editor_name": "克制强化",
-      "attribute_name": "克制强化",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "克制强化"
     },
     "38": {
       "attribute": 38,
-      "editor_name": "抵抗强化",
-      "attribute_name": "抵抗强化",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "抵抗强化"
     },
     "39": {
       "attribute": 39,
-      "editor_name": "普通技能强化",
-      "attribute_name": "普通技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_COMMON_ENHANCE_png.AT_COMMON_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "普通技能强化",
+      "attr_ui_type": 41,
+      "is_ui_show": 42,
+      "is_percent_attr": 3
     },
     "40": {
       "attribute": 40,
-      "editor_name": "草系技能强化",
-      "attribute_name": "草系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_GRASS_ENHANCE_png.AT_GRASS_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "草系技能强化",
+      "attr_ui_type": 43,
+      "is_ui_show": 44,
+      "is_percent_attr": 3
     },
     "41": {
       "attribute": 41,
-      "editor_name": "火系技能强化",
-      "attribute_name": "火系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_FIRE_ENHANCE_png.AT_FIRE_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "火系技能强化",
+      "attr_ui_type": 45,
+      "is_ui_show": 46,
+      "is_percent_attr": 3
     },
     "42": {
       "attribute": 42,
-      "editor_name": "水系技能强化",
-      "attribute_name": "水系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_WATER_ENHANCE_png.AT_WATER_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "水系技能强化",
+      "attr_ui_type": 47,
+      "is_ui_show": 48,
+      "is_percent_attr": 3
     },
     "43": {
       "attribute": 43,
-      "editor_name": "光系技能强化",
-      "attribute_name": "光系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_LIGHT_ENHANCE_png.AT_LIGHT_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "光系技能强化",
+      "attr_ui_type": 49,
+      "is_ui_show": 50,
+      "is_percent_attr": 3
     },
     "45": {
       "attribute": 45,
-      "editor_name": "地系技能强化",
-      "attribute_name": "地系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_EARTH_ENHANCE_png.AT_EARTH_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "地系技能强化",
+      "attr_ui_type": 51,
+      "is_ui_show": 52,
+      "is_percent_attr": 3
     },
     "57": {
       "attribute": 57,
-      "editor_name": "幻系技能强化",
-      "attribute_name": "幻系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_PHANTOM_ENHANCE_png.AT_PHANTOM_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "幻系技能强化",
+      "attr_ui_type": 53,
+      "is_ui_show": 54,
+      "is_percent_attr": 3
     },
     "46": {
       "attribute": 46,
-      "editor_name": "冰系技能强化",
-      "attribute_name": "冰系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_ICE_ENHANCE_png.AT_ICE_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "冰系技能强化",
+      "attr_ui_type": 55,
+      "is_ui_show": 56,
+      "is_percent_attr": 3
     },
     "47": {
       "attribute": 47,
-      "editor_name": "龙系技能强化",
-      "attribute_name": "龙系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_DRAGON_ENHANCE_png.AT_DRAGON_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "龙系技能强化",
+      "attr_ui_type": 57,
+      "is_ui_show": 58,
+      "is_percent_attr": 3
     },
     "48": {
       "attribute": 48,
-      "editor_name": "电系技能强化",
-      "attribute_name": "电系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_ELECTRIC_ENHANCE_png.AT_ELECTRIC_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "电系技能强化",
+      "attr_ui_type": 59,
+      "is_ui_show": 60,
+      "is_percent_attr": 3
     },
     "49": {
       "attribute": 49,
-      "editor_name": "毒系技能强化",
-      "attribute_name": "毒系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_TOXIC_ENHANCE_png.AT_TOXIC_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "毒系技能强化",
+      "attr_ui_type": 61,
+      "is_ui_show": 62,
+      "is_percent_attr": 3
     },
     "50": {
       "attribute": 50,
-      "editor_name": "虫系技能强化",
-      "attribute_name": "虫系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_INSECT_ENHANCE_png.AT_INSECT_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "虫系技能强化",
+      "attr_ui_type": 63,
+      "is_ui_show": 64,
+      "is_percent_attr": 3
     },
     "51": {
       "attribute": 51,
-      "editor_name": "武系技能强化",
-      "attribute_name": "武系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_FIGHT_ENHANCE_png.AT_FIGHT_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "武系技能强化",
+      "attr_ui_type": 65,
+      "is_ui_show": 66,
+      "is_percent_attr": 3
     },
     "52": {
       "attribute": 52,
-      "editor_name": "翼系技能强化",
-      "attribute_name": "翼系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_WING_ENHANCE_png.AT_WING_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "翼系技能强化",
+      "attr_ui_type": 67,
+      "is_ui_show": 68,
+      "is_percent_attr": 3
     },
     "53": {
       "attribute": 53,
-      "editor_name": "萌系技能强化",
-      "attribute_name": "萌系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_MOE_ENHANCE_png.AT_MOE_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "萌系技能强化",
+      "attr_ui_type": 69,
+      "is_ui_show": 70,
+      "is_percent_attr": 3
     },
     "54": {
       "attribute": 54,
-      "editor_name": "幽系技能强化",
-      "attribute_name": "幽系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_GHOST_ENHANCE_png.AT_GHOST_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "幽系技能强化",
+      "attr_ui_type": 71,
+      "is_ui_show": 72,
+      "is_percent_attr": 3
     },
     "55": {
       "attribute": 55,
-      "editor_name": "恶系技能强化",
-      "attribute_name": "恶系技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_DEMON_ENHANCE_png.AT_DEMON_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "恶系技能强化",
+      "attr_ui_type": 73,
+      "is_ui_show": 74,
+      "is_percent_attr": 3
     },
     "56": {
       "attribute": 56,
-      "editor_name": "机械技能强化",
-      "attribute_name": "机械技能强化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_MECHANIC_ENHANCE_png.AT_MECHANIC_ENHANCE_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "机械技能强化",
+      "attr_ui_type": 75,
+      "is_ui_show": 76,
+      "is_percent_attr": 3
     },
     "58": {
       "attribute": 58,
-      "editor_name": "普通技能抗性",
-      "attribute_name": "普通技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_COMMON_RESIST_png.AT_COMMON_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "普通技能抗性",
+      "attr_ui_type": 77,
+      "is_ui_show": 78,
+      "is_percent_attr": 3
     },
     "59": {
       "attribute": 59,
-      "editor_name": "草系技能抗性",
-      "attribute_name": "草系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_GRASS_RESIST_png.AT_GRASS_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "草系技能抗性",
+      "attr_ui_type": 79,
+      "is_ui_show": 80,
+      "is_percent_attr": 3
     },
     "60": {
       "attribute": 60,
-      "editor_name": "火系技能抗性",
-      "attribute_name": "火系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_FIRE_RESIST_png.AT_FIRE_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "火系技能抗性",
+      "attr_ui_type": 81,
+      "is_ui_show": 82,
+      "is_percent_attr": 3
     },
     "61": {
       "attribute": 61,
-      "editor_name": "水系技能抗性",
-      "attribute_name": "水系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_WATER_RESIST_png.AT_WATER_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "水系技能抗性",
+      "attr_ui_type": 83,
+      "is_ui_show": 84,
+      "is_percent_attr": 3
     },
     "62": {
       "attribute": 62,
-      "editor_name": "光系技能抗性",
-      "attribute_name": "光系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_LIGHT_RESIST_png.AT_LIGHT_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "光系技能抗性",
+      "attr_ui_type": 85,
+      "is_ui_show": 86,
+      "is_percent_attr": 3
     },
     "64": {
       "attribute": 64,
-      "editor_name": "地系技能抗性",
-      "attribute_name": "地系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_EARTH_RESIST_png.AT_EARTH_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "地系技能抗性",
+      "attr_ui_type": 87,
+      "is_ui_show": 88,
+      "is_percent_attr": 3
     },
     "76": {
       "attribute": 76,
-      "editor_name": "幻系技能抗性",
-      "attribute_name": "幻系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_PHANTOM_RESIST_png.AT_PHANTOM_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "幻系技能抗性",
+      "attr_ui_type": 89,
+      "is_ui_show": 90,
+      "is_percent_attr": 3
     },
     "65": {
       "attribute": 65,
-      "editor_name": "冰系技能抗性",
-      "attribute_name": "冰系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_ICE_RESIST_png.AT_ICE_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "冰系技能抗性",
+      "attr_ui_type": 91,
+      "is_ui_show": 92,
+      "is_percent_attr": 3
     },
     "66": {
       "attribute": 66,
-      "editor_name": "龙系技能抗性",
-      "attribute_name": "龙系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_DRAGON_RESIST_png.AT_DRAGON_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "龙系技能抗性",
+      "attr_ui_type": 93,
+      "is_ui_show": 94,
+      "is_percent_attr": 3
     },
     "67": {
       "attribute": 67,
-      "editor_name": "电系技能抗性",
-      "attribute_name": "电系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_ELECTRIC_RESIST_png.AT_ELECTRIC_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "电系技能抗性",
+      "attr_ui_type": 95,
+      "is_ui_show": 96,
+      "is_percent_attr": 3
     },
     "68": {
       "attribute": 68,
-      "editor_name": "毒系技能抗性",
-      "attribute_name": "毒系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_TOXIC_RESIST_png.AT_TOXIC_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "毒系技能抗性",
+      "attr_ui_type": 97,
+      "is_ui_show": 98,
+      "is_percent_attr": 3
     },
     "69": {
       "attribute": 69,
-      "editor_name": "虫系技能抗性",
-      "attribute_name": "虫系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_INSECT_RESIST_png.AT_INSECT_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "虫系技能抗性",
+      "attr_ui_type": 99,
+      "is_ui_show": 100,
+      "is_percent_attr": 3
     },
     "70": {
       "attribute": 70,
-      "editor_name": "武系技能抗性",
-      "attribute_name": "武系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_FIGHT_RESIST_png.AT_FIGHT_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "武系技能抗性",
+      "attr_ui_type": 101,
+      "is_ui_show": 102,
+      "is_percent_attr": 3
     },
     "71": {
       "attribute": 71,
-      "editor_name": "翼系技能抗性",
-      "attribute_name": "翼系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_WING_RESIST_png.AT_WING_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "翼系技能抗性",
+      "attr_ui_type": 103,
+      "is_ui_show": 104,
+      "is_percent_attr": 3
     },
     "72": {
       "attribute": 72,
-      "editor_name": "萌系技能抗性",
-      "attribute_name": "萌系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_MOE_RESIST_png.AT_MOE_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "萌系技能抗性",
+      "attr_ui_type": 105,
+      "is_ui_show": 106,
+      "is_percent_attr": 3
     },
     "73": {
       "attribute": 73,
-      "editor_name": "幽系技能抗性",
-      "attribute_name": "幽系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_GHOST_RESIST_png.AT_GHOST_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "幽系技能抗性",
+      "attr_ui_type": 107,
+      "is_ui_show": 108,
+      "is_percent_attr": 3
     },
     "74": {
       "attribute": 74,
-      "editor_name": "恶系技能抗性",
-      "attribute_name": "恶系技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_DEMON_RESIST_png.AT_DEMON_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "恶系技能抗性",
+      "attr_ui_type": 109,
+      "is_ui_show": 110,
+      "is_percent_attr": 3
     },
     "75": {
       "attribute": 75,
-      "editor_name": "机械技能抗性",
-      "attribute_name": "机械技能抗性",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/AT_MECHANIC_RESIST_png.AT_MECHANIC_RESIST_png'",
-      "attr_ui_type": 3,
-      "is_ui_show": 1,
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "机械技能抗性",
+      "attr_ui_type": 111,
+      "is_ui_show": 112,
+      "is_percent_attr": 3
     },
     "77": {
       "attribute": 77,
-      "editor_name": "被治疗加成",
-      "attribute_name": "被治疗加成",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "被治疗加成"
     },
     "78": {
       "attribute": 78,
-      "editor_name": "护盾加成",
-      "attribute_name": "护盾加成",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "护盾加成"
     },
     "79": {
       "attribute": 79,
-      "editor_name": "生命",
-      "attribute_name": "生命",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_01_png.ui_pet_attribute_01_png'",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "生命",
+      "attr_ui_type": 1
     },
     "80": {
       "attribute": 80,
-      "editor_name": "物攻",
-      "attribute_name": "物攻",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_02_png.ui_pet_attribute_02_png'",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "物攻",
+      "attr_ui_type": 3
     },
     "81": {
       "attribute": 81,
-      "editor_name": "魔攻",
-      "attribute_name": "魔攻",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_04_png.ui_pet_attribute_04_png'",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "魔攻",
+      "attr_ui_type": 5
     },
     "82": {
       "attribute": 82,
-      "editor_name": "物防",
-      "attribute_name": "物防",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_03_png.ui_pet_attribute_03_png'",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "物防",
+      "attr_ui_type": 7
     },
     "83": {
       "attribute": 83,
-      "editor_name": "魔防",
-      "attribute_name": "魔防",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_05_png.ui_pet_attribute_05_png'",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "魔防",
+      "attr_ui_type": 9
     },
     "84": {
       "attribute": 84,
-      "editor_name": "速度",
-      "attribute_name": "速度",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_06_png.ui_pet_attribute_06_png'",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "速度",
+      "attr_ui_type": 11
     },
     "85": {
       "attribute": 85,
-      "editor_name": "基础生命上限",
-      "attribute_name": "基础生命上限",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_01_png.ui_pet_attribute_01_png'"
+      "attribute_name": "",
+      "attribute_icon": "基础生命上限",
+      "attr_ui_type": 115
     },
     "86": {
       "attribute": 86,
-      "editor_name": "基础物理攻击",
-      "attribute_name": "基础物理攻击",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_02_png.ui_pet_attribute_02_png'"
+      "attribute_name": "",
+      "attribute_icon": "基础物理攻击",
+      "attr_ui_type": 116
     },
     "87": {
       "attribute": 87,
-      "editor_name": "基础魔法攻击",
-      "attribute_name": "基础魔法攻击",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_04_png.ui_pet_attribute_04_png'"
+      "attribute_name": "",
+      "attribute_icon": "基础魔法攻击",
+      "attr_ui_type": 117
     },
     "88": {
       "attribute": 88,
-      "editor_name": "基础物理防御",
-      "attribute_name": "基础物理防御",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_03_png.ui_pet_attribute_03_png'"
+      "attribute_name": "",
+      "attribute_icon": "基础物理防御",
+      "attr_ui_type": 118
     },
     "89": {
       "attribute": 89,
-      "editor_name": "基础魔法防御",
-      "attribute_name": "基础魔法防御",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_05_png.ui_pet_attribute_05_png'"
+      "attribute_name": "",
+      "attribute_icon": "基础魔法防御",
+      "attr_ui_type": 119
     },
     "90": {
       "attribute": 90,
-      "editor_name": "基础速度",
-      "attribute_name": "基础速度",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_attribute_06_png.ui_pet_attribute_06_png'"
+      "attribute_name": "",
+      "attribute_icon": "基础速度",
+      "attr_ui_type": 120
     },
     "93": {
       "attribute": 93,
-      "editor_name": "系别极化",
-      "attribute_name": "系别极化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_Polarization_png.ui_pet_Polarization_png'",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "系别极化",
+      "attr_ui_type": 121
     },
     "94": {
       "attribute": 94,
-      "editor_name": "系别钝化",
-      "attribute_name": "系别钝化",
-      "attribute_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_Passivation_png.ui_pet_Passivation_png'",
-      "is_percent_attr": 1
+      "attribute_name": "",
+      "attribute_icon": "系别钝化",
+      "attr_ui_type": 123
     }
   },
   "LocalizationStrings": {}

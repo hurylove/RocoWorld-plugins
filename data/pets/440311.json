@@ -1190,7 +1190,7 @@
         "refresh_locations": [],
         "movement_type": null,
         "classis_id": 4,
-        "classis_name": "植物类精灵",
+        "classis_name": null,
         "handbook_area_ids": []
     },
     "catch_info": null,

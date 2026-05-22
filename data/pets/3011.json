@@ -1249,7 +1249,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 15,
-        "classis_name": "神奇类精灵",
+        "classis_name": null,
         "handbook_area_ids": [
             1,
             2

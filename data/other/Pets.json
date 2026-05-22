@@ -83267,7 +83267,7 @@
                 "name": "方方狐"
             }
         },
-        "implemented": false,
+        "implemented": true,
         "base_hp": 105,
         "base_phy_atk": 37,
         "base_mag_atk": 88,
@@ -83314,7 +83314,7 @@
                 "name": "狐脸擦擦"
             }
         },
-        "implemented": false,
+        "implemented": true,
         "base_hp": 124,
         "base_phy_atk": 156,
         "base_mag_atk": 151,

@@ -2,6 +2,7 @@
   "RocoDataRows": {
     "101": {
       "id": 101,
+      "mbti": "ISTJ",
       "period_weight": [
         30,
         50,
@@ -151,6 +152,7 @@
     },
     "102": {
       "id": 102,
+      "mbti": "ESTJ",
       "period_weight": [
         30,
         50,
@@ -300,6 +302,7 @@
     },
     "201": {
       "id": 201,
+      "mbti": "INTJ",
       "period_weight": [
         30,
         50,
@@ -449,6 +452,7 @@
     },
     "202": {
       "id": 202,
+      "mbti": "ENTJ",
       "period_weight": [
         30,
         50,
@@ -598,6 +602,7 @@
     },
     "301": {
       "id": 301,
+      "mbti": "ISFJ",
       "period_weight": [
         10,
         20,
@@ -749,6 +754,7 @@
     },
     "302": {
       "id": 302,
+      "mbti": "ESFJ",
       "period_weight": [
         10,
         20,
@@ -900,6 +906,7 @@
     },
     "401": {
       "id": 401,
+      "mbti": "ISFP",
       "period_weight": [
         10,
         20,
@@ -1051,6 +1058,7 @@
     },
     "402": {
       "id": 402,
+      "mbti": "ESFP",
       "period_weight": [
         10,
         20,
@@ -1202,6 +1210,7 @@
     },
     "501": {
       "id": 501,
+      "mbti": "INFP",
       "period_weight": [
         10,
         20,
@@ -1353,6 +1362,7 @@
     },
     "502": {
       "id": 502,
+      "mbti": "ENFP",
       "period_weight": [
         10,
         20,
@@ -1504,6 +1514,7 @@
     },
     "601": {
       "id": 601,
+      "mbti": "ISTP",
       "period_weight": [
         10,
         20,
@@ -1655,6 +1666,7 @@
     },
     "602": {
       "id": 602,
+      "mbti": "ESTP",
       "period_weight": [
         10,
         20,
@@ -1769,157 +1781,6 @@
             10,
             10,
             10
-          ],
-          "required_interact_count": [
-            0,
-            3,
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      ],
-      "find_random": [
-        {
-          "find_type": 18,
-          "find_weight": [
-            100,
-            100,
-            100,
-            100,
-            100,
-            100
-          ],
-          "required_interact_count": [
-            3,
-            3,
-            3,
-            3,
-            3,
-            3
-          ]
-        }
-      ],
-      "base_friendly_param_value": 55,
-      "close_exp_retio": 3600
-    },
-    "603": {
-      "id": 603,
-      "period_weight": [
-        10,
-        20,
-        30,
-        30,
-        50
-      ],
-      "default_scale": 80,
-      "minimum_factor": 80,
-      "maximum_factor": 120,
-      "option_id": 140006,
-      "find_gift_option": 140010,
-      "close_level": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "close_level_need_exp": [
-        150,
-        500,
-        1100,
-        2350,
-        5850,
-        5850
-      ],
-      "bond_random": [
-        {
-          "type": 2,
-          "weight": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
-          ],
-          "required_interact_count": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "type": 3,
-          "weight": [
-            40,
-            40,
-            40,
-            40,
-            40,
-            40
-          ],
-          "required_interact_count": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "type": 4,
-          "weight": [
-            40,
-            40,
-            40,
-            40,
-            40,
-            40
-          ],
-          "required_interact_count": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "type": 5,
-          "weight": [
-            40,
-            40,
-            40,
-            40,
-            40,
-            40
-          ],
-          "required_interact_count": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "type": 9,
-          "weight": [
-            0,
-            40,
-            40,
-            40,
-            40,
-            40
           ],
           "required_interact_count": [
             0,
@@ -1957,6 +1818,7 @@
     },
     "701": {
       "id": 701,
+      "mbti": "INTP",
       "period_weight": [
         10,
         20,
@@ -2108,6 +1970,7 @@
     },
     "702": {
       "id": 702,
+      "mbti": "ENTP",
       "period_weight": [
         10,
         20,
@@ -2259,6 +2122,7 @@
     },
     "801": {
       "id": 801,
+      "mbti": "INFJ",
       "period_weight": [
         10,
         20,
@@ -2410,6 +2274,7 @@
     },
     "802": {
       "id": 802,
+      "mbti": "ENFJ",
       "period_weight": [
         10,
         20,

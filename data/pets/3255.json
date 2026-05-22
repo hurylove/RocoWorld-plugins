@@ -626,6 +626,28 @@
             "energy_cost": 3,
             "power": 100,
             "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7110270,
+            "name": "自己获得1层蓄电印记。",
+            "icon_id": "711008",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "自己获得1层蓄电印记。",
+                    "description": "从新型电系炼金术中得到灵感，竟然可以活用于精灵对战中。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "从新型电系炼金术中得到灵感，竟然可以活用于精灵对战中。"
         }
     ],
     "legacy_moves": [
@@ -1188,7 +1210,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 6,
-        "classis_name": "自然类精灵",
+        "classis_name": null,
         "handbook_area_ids": [
             1,
             3

@@ -450,48 +450,48 @@
             "description": "敌方获得4层星陨印记。"
         },
         {
-            "id": 7020630,
-            "name": "力量增效",
-            "icon_id": "700020",
+            "id": 7190430,
+            "name": "技能 7190430",
+            "icon_id": null,
             "move_type": {
-                "id": 1,
-                "name": "Normal",
+                "id": 20,
+                "name": "Unknown",
                 "localized": {
-                    "zh": "普通"
+                    "zh": "未知"
                 }
             },
             "localized": {
                 "zh": {
-                    "name": "力量增效",
-                    "description": "自己获得物攻+100%。"
+                    "name": "技能 7190430",
+                    "description": ""
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "自己获得物攻+100%。"
+            "description": ""
         },
         {
-            "id": 7020600,
-            "name": "吞噬",
-            "icon_id": "201022",
+            "id": 7190440,
+            "name": "技能 7190440",
+            "icon_id": null,
             "move_type": {
-                "id": 1,
-                "name": "Normal",
+                "id": 20,
+                "name": "Unknown",
                 "localized": {
-                    "zh": "普通"
+                    "zh": "未知"
                 }
             },
             "localized": {
                 "zh": {
-                    "name": "吞噬",
-                    "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
+                    "name": "技能 7190440",
+                    "description": ""
                 }
             },
-            "move_category": "Magic Attack",
-            "energy_cost": 6,
-            "power": 130,
-            "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": ""
         },
         {
             "id": 7020730,
@@ -890,6 +890,28 @@
             "energy_cost": 3,
             "power": null,
             "description": "敌方获得2层星陨印记。"
+        },
+        {
+            "id": 7020630,
+            "name": "力量增效",
+            "icon_id": "700020",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得物攻+100%。"
         }
     ],
     "legacy_moves": [
@@ -1451,7 +1473,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 6,
-        "classis_name": "自然类精灵",
+        "classis_name": null,
         "handbook_area_ids": []
     },
     "catch_info": {

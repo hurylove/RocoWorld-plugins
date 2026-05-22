@@ -632,6 +632,28 @@
             "energy_cost": 6,
             "power": 60,
             "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020800,
+            "name": "应对！防反",
+            "icon_id": "301053",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！防反",
+                    "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
         }
     ],
     "legacy_moves": [
@@ -1239,7 +1261,7 @@
         ],
         "movement_type": "浮游",
         "classis_id": 6,
-        "classis_name": "自然类精灵",
+        "classis_name": null,
         "handbook_area_ids": [
             1,
             2

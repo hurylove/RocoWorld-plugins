@@ -2,7 +2,6 @@
   "RocoDataRows": {
     "100211": {
       "id": 100211,
-      "editor_name": "可可果",
       "can_cost": 1,
       "carryon_skill_type": 1,
       "skill": [
@@ -11,7 +10,6 @@
     },
     "100212": {
       "id": 100212,
-      "editor_name": "无花果",
       "can_cost": 1,
       "carryon_skill_type": 1,
       "skill": [
@@ -20,7 +18,6 @@
     },
     "100213": {
       "id": 100213,
-      "editor_name": "魔力果",
       "can_cost": 1,
       "carryon_skill_type": 1,
       "skill": [
@@ -29,7 +26,6 @@
     },
     "100502": {
       "id": 100502,
-      "editor_name": "活力香氛",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -42,7 +38,6 @@
     },
     "100503": {
       "id": 100503,
-      "editor_name": "魔法扫帚",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -55,7 +50,6 @@
     },
     "100504": {
       "id": 100504,
-      "editor_name": "赐福之种",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -68,7 +62,6 @@
     },
     "100505": {
       "id": 100505,
-      "editor_name": "赐福之火",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -81,7 +74,6 @@
     },
     "100506": {
       "id": 100506,
-      "editor_name": "赐福之水",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -94,7 +86,6 @@
     },
     "100507": {
       "id": 100507,
-      "editor_name": "赐福之蜕",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -107,7 +98,6 @@
     },
     "100508": {
       "id": 100508,
-      "editor_name": "赐福之土",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -120,7 +110,6 @@
     },
     "100509": {
       "id": 100509,
-      "editor_name": "英勇徽章",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -133,7 +122,6 @@
     },
     "100510": {
       "id": 100510,
-      "editor_name": "活力护符",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -146,7 +134,6 @@
     },
     "100511": {
       "id": 100511,
-      "editor_name": "迅捷徽章",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -159,7 +146,6 @@
     },
     "100512": {
       "id": 100512,
-      "editor_name": "智慧徽章",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -172,7 +158,6 @@
     },
     "100513": {
       "id": 100513,
-      "editor_name": "古老的日记",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -185,7 +170,6 @@
     },
     "100514": {
       "id": 100514,
-      "editor_name": "蓝品质持有物1",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -198,7 +182,6 @@
     },
     "100515": {
       "id": 100515,
-      "editor_name": "蓝品质持有物2",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -211,7 +194,6 @@
     },
     "100516": {
       "id": 100516,
-      "editor_name": "蓝品质持有物3",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -224,7 +206,6 @@
     },
     "100517": {
       "id": 100517,
-      "editor_name": "蓝品质持有物4",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -237,7 +218,6 @@
     },
     "100518": {
       "id": 100518,
-      "editor_name": "蓝品质持有物5",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -250,7 +230,6 @@
     },
     "100519": {
       "id": 100519,
-      "editor_name": "蓝品质持有物6",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -263,7 +242,6 @@
     },
     "100520": {
       "id": 100520,
-      "editor_name": "冰冻光线",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -276,7 +254,6 @@
     },
     "100521": {
       "id": 100521,
-      "editor_name": "雷击",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -289,7 +266,6 @@
     },
     "100522": {
       "id": 100522,
-      "editor_name": "溶解液",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -302,7 +278,6 @@
     },
     "100523": {
       "id": 100523,
-      "editor_name": "空间压迫",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -315,7 +290,6 @@
     },
     "100524": {
       "id": 100524,
-      "editor_name": "无影脚",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -328,7 +302,6 @@
     },
     "100525": {
       "id": 100525,
-      "editor_name": "幽灵爆发",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -341,7 +314,6 @@
     },
     "100526": {
       "id": 100526,
-      "editor_name": "斩断",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -354,7 +326,6 @@
     },
     "100527": {
       "id": 100527,
-      "editor_name": "光能聚集",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -367,7 +338,6 @@
     },
     "100528": {
       "id": 100528,
-      "editor_name": "烈焰冲锋",
       "carryon_effect": [
         {
           "sequence_desc": 1,
@@ -380,7 +350,6 @@
     },
     "100529": {
       "id": 100529,
-      "editor_name": "爆炸种子",
       "carryon_effect": [
         {
           "sequence_desc": 1,

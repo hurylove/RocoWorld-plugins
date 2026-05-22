@@ -19,7 +19,8 @@
       "player_sals": 3,
       "sals_status_name": "战斗中",
       "is_not_afk_sals": true,
-      "look_at_block_sals_list": true
+      "look_at_block_sals_list": true,
+      "not_set_abnormal_status": true
     },
     "4": {
       "id": 4,
@@ -36,13 +37,15 @@
       "id": 6,
       "player_sals": 6,
       "sals_status_name": "播放CG中(mp4/sequence)",
-      "look_at_block_sals_list": true
+      "look_at_block_sals_list": true,
+      "not_set_abnormal_status": true
     },
     "7": {
       "id": 7,
       "player_sals": 7,
       "sals_status_name": "打开全屏UI中",
-      "is_not_afk_sals": true
+      "is_not_afk_sals": true,
+      "cut_hide_abnormal_status": true
     },
     "8": {
       "id": 8,
@@ -59,21 +62,24 @@
       "player_sals": 10,
       "sals_status_name": "登录中",
       "is_not_afk_sals": true,
-      "look_at_block_sals_list": true
+      "look_at_block_sals_list": true,
+      "not_set_abnormal_status": true
     },
     "11": {
       "id": 11,
       "player_sals": 11,
       "sals_status_name": "传送中",
       "is_not_afk_sals": true,
-      "look_at_block_sals_list": true
+      "look_at_block_sals_list": true,
+      "not_set_abnormal_status": true
     },
     "12": {
       "id": 12,
       "player_sals": 12,
       "sals_status_name": "死亡复活中",
       "is_not_afk_sals": true,
-      "look_at_block_sals_list": true
+      "look_at_block_sals_list": true,
+      "not_set_abnormal_status": true
     },
     "13": {
       "id": 13,
@@ -114,7 +120,8 @@
     "20": {
       "id": 20,
       "player_sals": 20,
-      "sals_status_name": "小游戏中"
+      "sals_status_name": "小游戏中",
+      "cut_hide_abnormal_status": true
     },
     "21": {
       "id": 21,
@@ -130,12 +137,14 @@
     "23": {
       "id": 23,
       "player_sals": 23,
-      "sals_status_name": "大世界战斗中"
+      "sals_status_name": "大世界战斗中",
+      "not_set_abnormal_status": true
     },
     "24": {
       "id": 24,
       "player_sals": 24,
-      "sals_status_name": "大世界战斗脱战中"
+      "sals_status_name": "大世界战斗脱战中",
+      "not_set_abnormal_status": true
     },
     "25": {
       "id": 25,
@@ -351,6 +360,12 @@
       "id": 63,
       "player_sals": 63,
       "sals_status_name": "玩家观战状态"
+    },
+    "69": {
+      "id": 69,
+      "player_sals": 69,
+      "sals_status_name": "玩家异常状态",
+      "is_afk_sals": true
     }
   },
   "LocalizationStrings": {}

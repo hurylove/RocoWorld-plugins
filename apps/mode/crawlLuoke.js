@@ -98,9 +98,10 @@ function loadPetsIdToNameMap() {
                 // Pets.json 中 base_id 就是该条目的 id 本身，相同 name 的多个 id 即为同一组
                 if (!_petsBaseIdMap[pet.name]) _petsBaseIdMap[pet.name] = [];
                 _petsBaseIdMap[pet.name].push(pet.id);
-                // 收集已实装的宠物 name
+                // 收集已实装的宠物中文名（result.name 来自 PET_CONF，是中文名）
                 if (pet.implemented === true) {
-                    _implementedNameSet.add(pet.name);
+                    const zhName = pet.localized?.zh?.name;
+                    if (zhName) _implementedNameSet.add(zhName);
                 }
             }
         }

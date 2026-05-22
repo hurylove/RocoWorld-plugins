@@ -108,9 +108,48 @@ function mapMoveCategory(category) {
     const map = {
         'Physical Attack': '物攻',
         'Magic Attack': '魔攻',
+        'Defense': '防御',
         'Status': '状态'
     };
     return map[category] || '状态';
+}
+
+// 缓存：技能查找表（从 moves.json 构建）
+let _movesLookupCache = null;
+
+function loadMovesLookup() {
+    if (_movesLookupCache) return _movesLookupCache;
+    const byDescription = new Map();
+    const byName = new Map();
+    try {
+        const movesPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'other', 'moves.json');
+        if (fs.existsSync(movesPath)) {
+            const rawData = fs.readFileSync(movesPath, 'utf-8');
+            const moves = JSON.parse(rawData);
+            for (const move of moves) {
+                const desc = move.localized?.zh?.description;
+                const name = move.localized?.zh?.name;
+                if (desc) byDescription.set(desc, {
+                    name: name || move.name || '',
+                    move_category: move.move_category,
+                    energy_cost: move.energy_cost,
+                    power: move.power,
+                    description: desc
+                });
+                if (name) byName.set(name, {
+                    name: name,
+                    move_category: move.move_category,
+                    energy_cost: move.energy_cost,
+                    power: move.power,
+                    description: move.localized?.zh?.description || move.description || ''
+                });
+            }
+        }
+    } catch (error) {
+        console.warn('读取 moves.json 失败，将使用宠物JSON中的技能数据:', error.message);
+    }
+    _movesLookupCache = { byDescription, byName };
+    return _movesLookupCache;
 }
 
 // 主函数：生成解析卡
@@ -197,14 +236,23 @@ async function generateCard(spriteName, petId) {
         }
     }
 
-    // 映射技能数据
+    // 映射技能数据（使用 moves.json 作为权威数据源）
+    const movesLookup = loadMovesLookup();
     const mapMove = (move) => {
-        const moveName = move.localized?.zh?.name || move.name || '-';
-        const moveDesc = move.localized?.zh?.description || move.description || '';
+        const moveNameRaw = move.localized?.zh?.name || move.name || '-';
+        const moveDescRaw = move.localized?.zh?.description || move.description || '';
+        
+        // 优先用技能描述查找 moves.json（正常技能），其次用名称查找（问题技能的名称就是描述文本）
+        let bestMatch = movesLookup.byDescription.get(moveDescRaw) ||
+                        movesLookup.byDescription.get(moveNameRaw) ||
+                        movesLookup.byName.get(moveNameRaw);
+        
+        const moveName = bestMatch ? bestMatch.name : moveNameRaw;
+        const moveDesc = bestMatch ? bestMatch.description : moveDescRaw;
         const moveAttr = move.move_type?.localized?.zh || '普通';
-        const moveType = mapMoveCategory(move.move_category);
-        const power = move.power != null ? move.power : '-';
-        const energy = move.energy_cost != null ? move.energy_cost : '-';
+        const moveType = mapMoveCategory(bestMatch ? bestMatch.move_category : move.move_category);
+        const power = bestMatch ? (bestMatch.power != null ? bestMatch.power : '-') : (move.power != null ? move.power : '-');
+        const energy = bestMatch ? (bestMatch.energy_cost != null ? bestMatch.energy_cost : '-') : (move.energy_cost != null ? move.energy_cost : '-');
         return { name: moveName, attr: moveAttr, type: moveType, power, energy, description: moveDesc };
     };
 

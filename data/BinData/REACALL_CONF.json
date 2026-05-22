@@ -26,7 +26,7 @@
     },
     "5": {
       "id": 5,
-      "reacall_title_name": "想要…击败强大的对手！",
+      "reacall_title_name": "想要…击败强大对手！",
       "jump_target": 101,
       "data1": 101
     },
@@ -116,7 +116,7 @@
     },
     "22": {
       "id": 22,
-      "reacall_title_name": "想要…击败强大的对手！",
+      "reacall_title_name": "想要…击败强大对手！",
       "jump_target": 2003,
       "data1": 2001,
       "data2": 2002,

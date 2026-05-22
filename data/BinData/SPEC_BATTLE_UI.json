@@ -2,31 +2,31 @@
   "RocoDataRows": {
     "1": {
       "id": 1,
-      "tips": "",
-      "head_icon": "分院代表设有4个难度等级，必须从简单到困难依次解锁，不可跳级挑战。（稳扎稳打才是魔法师的修养喔～）\n首通奖励：每个难度首次挑战成功时，均可获得一份专属奖励。",
-      "title": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_bg_shengtai.img_bg_shengtai'",
-      "subtitle": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_xueyuan_shengtai.img_xueyuan_shengtai'"
+      "tips": "分院代表设有4个难度等级，必须从简单到困难依次解锁，不可跳级挑战。（稳扎稳打才是魔法师的修养喔～）\n首通奖励：每个难度首次挑战成功时，均可获得一份专属奖励。",
+      "head_icon": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_bg_shengtai.img_bg_shengtai'",
+      "title": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_xueyuan_shengtai.img_xueyuan_shengtai'",
+      "subtitle": "\r\u0000\u0000\u0000\u000e\u0000\u0000\u0000\u000f\u0000\u0000\u0000\u0010\u0000\u0000\u0000"
     },
     "2": {
       "id": 2,
-      "tips": "",
-      "head_icon": "分院代表设有4个难度等级，必须从简单到困难依次解锁，不可跳级挑战。（稳扎稳打才是魔法师的修养喔～）\n首通奖励：每个难度首次挑战成功时，均可获得一份专属奖励。",
-      "title": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_bg_lianjin.img_bg_lianjin'",
-      "subtitle": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_xueyuan_lianjin.img_xueyuan_lianjin'"
+      "tips": "分院代表设有4个难度等级，必须从简单到困难依次解锁，不可跳级挑战。（稳扎稳打才是魔法师的修养喔～）\n首通奖励：每个难度首次挑战成功时，均可获得一份专属奖励。",
+      "head_icon": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_bg_lianjin.img_bg_lianjin'",
+      "title": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_xueyuan_lianjin.img_xueyuan_lianjin'",
+      "subtitle": "\u0011\u0000\u0000\u0000\u0012\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0014\u0000\u0000\u0000"
     },
     "3": {
       "id": 3,
-      "tips": "",
-      "head_icon": "分院代表设有4个难度等级，必须从简单到困难依次解锁，不可跳级挑战。（稳扎稳打才是魔法师的修养喔～）\n首通奖励：每个难度首次挑战成功时，均可获得一份专属奖励。",
-      "title": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_bg_shengtai.img_bg_shengtai'",
-      "subtitle": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_xueyuan_yidian.img_xueyuan_yidian'"
+      "tips": "分院代表设有4个难度等级，必须从简单到困难依次解锁，不可跳级挑战。（稳扎稳打才是魔法师的修养喔～）\n首通奖励：每个难度首次挑战成功时，均可获得一份专属奖励。",
+      "head_icon": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_bg_shengtai.img_bg_shengtai'",
+      "title": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_xueyuan_yidian.img_xueyuan_yidian'",
+      "subtitle": "\u0015\u0000\u0000\u0000\u0016\u0000\u0000\u0000\u0017\u0000\u0000\u0000\u0018\u0000\u0000\u0000"
     },
     "4": {
       "id": 4,
-      "tips": "",
-      "head_icon": "分院代表设有4个难度等级，必须从简单到困难依次解锁，不可跳级挑战。（稳扎稳打才是魔法师的修养喔～）\n首通奖励：每个难度首次挑战成功时，均可获得一份专属奖励。",
-      "title": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_bg_jingji.img_bg_jingji'",
-      "subtitle": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_xueyuan_jingji.img_xueyuan_jingji'"
+      "tips": "分院代表设有4个难度等级，必须从简单到困难依次解锁，不可跳级挑战。（稳扎稳打才是魔法师的修养喔～）\n首通奖励：每个难度首次挑战成功时，均可获得一份专属奖励。",
+      "head_icon": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_bg_jingji.img_bg_jingji'",
+      "title": "Texture2D'/Game/NewRoco/Modules/System/OpenairChallenge/Raw/Textures/img_xueyuan_jingji.img_xueyuan_jingji'",
+      "subtitle": "\u0019\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u001b\u0000\u0000\u0000\u001c\u0000\u0000\u0000"
     }
   },
   "LocalizationStrings": {}

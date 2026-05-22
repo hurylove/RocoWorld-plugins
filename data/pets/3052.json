@@ -125,8 +125,8 @@
                         "evolution_conditions": [
                             "等级达到 28 级",
                             "消耗 10,000 洛克贝",
-                            "消耗 魔法石专用——魔法粉尘 ×5",
-                            "消耗 未知用途 —— 勇气信笺 ×1"
+                            "消耗 魔法粉尘 ×5",
+                            "消耗 勇气信笺 ×1"
                         ]
                     }
                 ],
@@ -141,7 +141,7 @@
                         "form": "default",
                         "localized": {
                             "zh": {
-                                "name": "害羞球球"
+                                "name": "蓝衣夜灵"
                             }
                         },
                         "is_leader_form": false,
@@ -162,8 +162,8 @@
                         "evolution_conditions": [
                             "等级达到 40 级",
                             "消耗 30,000 洛克贝",
-                            "消耗 魔法石专用——魔法石碎 ×10",
-                            "消耗 未知用途 —— 修行信笺 ×1"
+                            "消耗 魔法石碎（不投放） ×10",
+                            "消耗 修行信笺 ×1"
                         ]
                     }
                 ],
@@ -184,7 +184,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 7,
-        "classis_name": null,
+        "classis_name": "岩石类精灵",
         "handbook_area_ids": []
     },
     "catch_info": {
@@ -193,25 +193,41 @@
         "catch_ball_level": 1
     },
     "breeding": {
-        "id": 3052001,
-        "pet_id": 3052001,
+        "id": 3049002,
+        "pet_id": 3049002,
         "name": "煤球憨憨",
-        "model_id": 3052001,
-        "hatch_data": 1,
-        "weight_low": 1,
-        "weight_high": 10,
-        "height_low": 1,
-        "height_high": 10,
-        "precious_egg_type": null,
+        "model_id": 3049001,
+        "hatch_data": 57600,
+        "weight_low": 6825,
+        "weight_high": 9400,
+        "height_low": 31,
+        "height_high": 43,
+        "precious_egg_type": 1,
         "egg_base_glass_prob_array": null,
         "egg_add_glass_prob_array": null,
         "is_contact_add_glass_prob": null,
         "is_contact_add_shining_prob": null,
         "variants": [
             {
+                "id": 3049002,
+                "pet_id": 3049002,
+                "name": "煤球憨憨",
+                "model_id": 3049001,
+                "hatch_data": 57600,
+                "weight_low": 6825,
+                "weight_high": 9400,
+                "height_low": 31,
+                "height_high": 43,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
                 "id": 3052001,
                 "pet_id": 3052001,
-                "name": "煤球憨憨",
+                "name": "一窝蜂（首领血脉）",
                 "model_id": 3052001,
                 "hatch_data": 1,
                 "weight_low": 1,
@@ -227,7 +243,7 @@
             {
                 "id": 30520001,
                 "pet_id": 30520001,
-                "name": "煤球憨憨",
+                "name": "一窝蜂（首领血脉）",
                 "model_id": 3052001,
                 "hatch_data": 300,
                 "weight_low": 1,

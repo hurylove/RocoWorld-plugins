@@ -422,14 +422,14 @@
     "Map_Mark_Is_Full_Tips": {
       "id": 172,
       "key": "Map_Mark_Is_Full_Tips",
-      "str": "",
+      "str": "目前暂无可用标记，请先删除一个标记点",
       "is_loc": 1
     },
     "Star_Debris_Recover_Rule": {
       "id": 173,
       "key": "Star_Debris_Recover_Rule",
-      "str": "",
-      "is_loc": 2
+      "str": "契约印记达到或超过上限时，将随时间恢复凝练印记\n每满24小时恢复20点，最多储存600点",
+      "is_loc": 1
     },
     "cross_border_return_safe_time": {
       "id": 174,
@@ -536,8 +536,8 @@
     "map_random_shop_icon": {
       "id": 187,
       "key": "map_random_shop_icon",
-      "str": "",
-      "is_loc": 3
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMapStatic/Frames/img_lvxingshangren_png.img_lvxingshangren_png'",
+      "is_loc": 2
     },
     "main_compass_icon_resource_scale": {
       "id": 188,
@@ -578,14 +578,14 @@
     "highvalue_pet_track_not_owner": {
       "id": 203,
       "key": "highvalue_pet_track_not_owner",
-      "str": "",
-      "is_loc": 4
+      "str": "一只炫彩精灵出现在了这个位置，快去看看吧！\n该精灵的拥有者为：%s，需要这位小洛克同行才可捕捉。",
+      "is_loc": 1
     },
     "highvalue_nightmare_pet_track_not_owner": {
       "id": 204,
       "key": "highvalue_nightmare_pet_track_not_owner",
-      "str": "",
-      "is_loc": 5
+      "str": "一只惊喜盒子出现在了这个位置，快去看看吧！\n该盒子的拥有者为：{0}，需要这位小洛克同行才可互动。",
+      "is_loc": 1
     }
   },
   "LocalizationStrings": {}

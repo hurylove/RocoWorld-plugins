@@ -58,7 +58,7 @@
       "id": 10,
       "key": "legendary_ticket_exchange",
       "num": 80000000,
-      "str": "",
+      "str": "消耗<span size=\"24\" color=\"#af3d3e\">%s</>愿望果核，补充<span size=\"24\" color=\"#af3d3e\">%s</>命定印记。",
       "is_loc": 1
     },
     "weekly_star_limit": {
@@ -76,14 +76,14 @@
     "star_limit_reset_time": {
       "id": 13,
       "key": "star_limit_reset_time",
-      "str": "",
+      "str": "2024-10-28 4:00:00",
       "is_loc": 2
     },
     "star_limit_reset_period": {
       "id": 14,
       "key": "star_limit_reset_period",
-      "str": "",
-      "is_loc": 3
+      "str": "7 00:00:00",
+      "is_loc": 2
     },
     "assist_npc": {
       "id": 15,
@@ -174,8 +174,8 @@
         1005,
         1006
       ],
-      "str": "",
-      "is_loc": 4
+      "str": "I",
+      "is_loc": 2
     },
     "level_2": {
       "id": 27,
@@ -187,8 +187,8 @@
         1005,
         1006
       ],
-      "str": "",
-      "is_loc": 5
+      "str": "II",
+      "is_loc": 2
     },
     "level_3": {
       "id": 28,
@@ -200,8 +200,8 @@
         1005,
         1006
       ],
-      "str": "",
-      "is_loc": 6
+      "str": "III",
+      "is_loc": 2
     },
     "level_4": {
       "id": 29,
@@ -213,8 +213,8 @@
         1005,
         1006
       ],
-      "str": "",
-      "is_loc": 7
+      "str": "IV",
+      "is_loc": 2
     },
     "level_5": {
       "id": 30,
@@ -225,8 +225,8 @@
         1005,
         1006
       ],
-      "str": "",
-      "is_loc": 8
+      "str": "V",
+      "is_loc": 2
     },
     "level_6": {
       "id": 31,
@@ -237,8 +237,8 @@
         1005,
         1006
       ],
-      "str": "",
-      "is_loc": 9
+      "str": "VI",
+      "is_loc": 2
     },
     "level_7": {
       "id": 32,
@@ -249,8 +249,8 @@
         1005,
         1006
       ],
-      "str": "",
-      "is_loc": 10
+      "str": "VII",
+      "is_loc": 2
     },
     "level_8": {
       "id": 33,
@@ -261,8 +261,8 @@
         1005,
         1006
       ],
-      "str": "",
-      "is_loc": 11
+      "str": "VIII",
+      "is_loc": 2
     },
     "level_9": {
       "id": 34,
@@ -273,8 +273,8 @@
         1005,
         1006
       ],
-      "str": "",
-      "is_loc": 12
+      "str": "IX",
+      "is_loc": 2
     },
     "level_10": {
       "id": 35,
@@ -285,8 +285,8 @@
         1005,
         1006
       ],
-      "str": "",
-      "is_loc": 13
+      "str": "X",
+      "is_loc": 2
     },
     "level_1_glassy": {
       "id": 36,

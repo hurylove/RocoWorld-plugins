@@ -146,7 +146,7 @@
     "10012": {
       "id": 10012,
       "title": "<span color=\"#FFC65F\">灵魂颤动</>",
-      "desc": "<span color=\"#AF3D3E\">【首领】</>每次攻击获得双防-<span color=\"#AF3D3E\">10%</>，技能威力<span color=\"#AF3D3E\">20</>",
+      "desc": "<span color=\"#AF3D3E\">【首领】</>每次攻击获得双防-<span color=\"#AF3D3E\">10%</>，技能威力+<span color=\"#AF3D3E\">20</>",
       "target": 2,
       "rank": 1,
       "buff": [
@@ -1488,6 +1488,264 @@
       "rank": 1,
       "buff": [
         20172660
+      ]
+    },
+    "10139": {
+      "id": 10139,
+      "title": "<span color=\"#FFC65F\">蜷缩</>",
+      "desc": "<span color=\"#AF3D3E\">【敌人】</>攻击降低20%，防御提升<span color=\"#73C615\">50%</>",
+      "target": 2,
+      "rank": 1,
+      "buff": [
+        20010038
+      ],
+      "season_title": "蜷缩",
+      "season_desc": "【敌人】攻击降低20%，防御提升50%"
+    },
+    "10140": {
+      "id": 10140,
+      "title": "<span color=\"#FFC65F\">扰乱</>",
+      "desc": "<span color=\"#AF3D3E\">【敌人】</>获取能量时-<span color=\"#73C615\">1</>",
+      "target": 2,
+      "rank": 1,
+      "buff": [
+        20030052
+      ],
+      "season_title": "扰乱",
+      "season_desc": "【己方】获得能量时-1"
+    },
+    "10141": {
+      "id": 10141,
+      "title": "<span color=\"#FFC65F\">攀比</>",
+      "desc": "<span color=\"#AF3D3E\">【敌人】</>回合结束若造成的伤害高于对手，降低对手<span color=\"#73C615\">20%</>防御",
+      "target": 2,
+      "rank": 1,
+      "buff": [
+        21470020,
+        20172770
+      ],
+      "season_title": "攀比",
+      "season_desc": "【敌人】回合结束若造成的伤害高于对手，降低对手20%防御"
+    },
+    "10142": {
+      "id": 10142,
+      "title": "<span color=\"#FFC65F\">加固</>",
+      "desc": "<span color=\"#AF3D3E\">【己方】</>技能连击固定为1",
+      "target": 1,
+      "rank": 1,
+      "buff": [
+        20450140
+      ],
+      "season_title": "加固",
+      "season_desc": "【己方】技能连击固定为1"
+    },
+    "10143": {
+      "id": 10143,
+      "title": "<span color=\"#FFC65F\">快攻精通</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>能量低于4的技能，威力+<span color=\"#73C615\">30%</>",
+      "rank": 1,
+      "buff": [
+        20530100
+      ],
+      "season_title": "快攻",
+      "season_desc": "【全体】能量低于4的技能，威力+30%"
+    },
+    "10144": {
+      "id": 10144,
+      "title": "<span color=\"#FFC65F\">梦想三三的游戏</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>回合结束时，获得<span color=\"#73C615\">1</>层<span color=\"#73C615\">萌化</>",
+      "rank": 1,
+      "buff": [
+        20172750
+      ]
+    },
+    "10145": {
+      "id": 10145,
+      "title": "<span color=\"#FFC65F\">寒音蛇的游戏</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>获得<span color=\"#73C615\">萌化</>时，攻击和防御提升<span color=\"#73C615\">20%</>",
+      "rank": 1,
+      "buff": [
+        20860090
+      ]
+    },
+    "10146": {
+      "id": 10146,
+      "title": "<span color=\"#FFC65F\">魔眷鸟的游戏</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</><span color=\"#73C615\">萌化</>可以无限叠加",
+      "rank": 1,
+      "buff": [
+        21360011
+      ]
+    },
+    "10147": {
+      "id": 10147,
+      "title": "<span color=\"#FFC65F\">沉浸</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>获得<span color=\"#73C615\">萌化</>时，额外获得<span color=\"#73C615\">1</>层",
+      "rank": 1,
+      "buff": [
+        20370190
+      ]
+    },
+    "10148": {
+      "id": 10148,
+      "title": "<span color=\"#FFC65F\">快乐</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>萌系技能，能耗<span color=\"#73C615\">-3</>",
+      "rank": 1,
+      "buff": [
+        20320520
+      ]
+    },
+    "10149": {
+      "id": 10149,
+      "title": "<span color=\"#FFC65F\">友善</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>非攻击类技能，能耗<span color=\"#73C615\">-2</>",
+      "rank": 1,
+      "buff": [
+        20320530
+      ]
+    },
+    "10150": {
+      "id": 10150,
+      "title": "<span color=\"#FFC65F\">和平</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>首次受到致命伤害，获得1层<span color=\"#73C615\">萌化</>",
+      "rank": 1,
+      "buff": [
+        20490350,
+        20380180
+      ]
+    },
+    "10151": {
+      "id": 10151,
+      "title": "<span color=\"#FFC65F\">成长</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>攻击技能威力<span color=\"#73C615\">-50%</>，但可以移除目标1层<span color=\"#73C615\">萌化</>",
+      "rank": 1,
+      "buff": [
+        20231190
+      ]
+    },
+    "10152": {
+      "id": 10152,
+      "title": "<span color=\"#FFC65F\">休憩</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>释放聚能后，移除自身1层<span color=\"#73C615\">萌化</>",
+      "rank": 1,
+      "buff": [
+        20350820
+      ]
+    },
+    "10154": {
+      "id": 10154,
+      "title": "<span color=\"#FFC65F\">诡秘之夜</>",
+      "desc": "<span color=\"#AF3D3E\">【己方】</>大于等于5能量时，回合结束损失<span color=\"#AF3D3E\">1</>能量",
+      "target": 1,
+      "rank": 1,
+      "buff": [
+        20520180
+      ]
+    },
+    "10155": {
+      "id": 10155,
+      "title": "<span color=\"#FFC65F\">快乐的玩耍</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>本场战斗的胜利条件改为：全场一共获得<span color=\"#73C615\">10</>层<span color=\"#73C615\">萌化</>效果",
+      "rank": 1
+    },
+    "10156": {
+      "id": 10156,
+      "title": "<span color=\"#FFC65F\">交流</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>攻击拥有减益效果的精灵时，伤害降低<span color=\"#73C615\">20%</>",
+      "rank": 1,
+      "buff": [
+        20250090
+      ]
+    },
+    "10157": {
+      "id": 10157,
+      "title": "<span color=\"#FFC65F\">嬉闹</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>攻击拥有减益效果的精灵时，伤害增加<span color=\"#73C615\">20%</>",
+      "rank": 1,
+      "buff": [
+        20250100
+      ]
+    },
+    "10158": {
+      "id": 10158,
+      "title": "<span color=\"#FFC65F\">追忆</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>释放非攻击类技能后，对敌人附加1层<span color=\"#73C615\">萌化</>",
+      "rank": 1,
+      "buff": [
+        20350860
+      ]
+    },
+    "10159": {
+      "id": 10159,
+      "title": "<span color=\"#FFC65F\">异常萌化</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>获得萌化时，获得<span color=\"#73C615\">10%</>攻防强化",
+      "rank": 1,
+      "buff": [
+        20860100
+      ]
+    },
+    "10160": {
+      "id": 10160,
+      "title": "<span color=\"#FFC65F\">异常吸血</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>吸血<span color=\"#73C615\">+50%</>",
+      "rank": 1,
+      "buff": [
+        20540022
+      ]
+    },
+    "10161": {
+      "id": 10161,
+      "title": "<span color=\"#FFC65F\">异常入场</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>场上的精灵<desc_id=3009>离场</>后，更换入场的精灵恢复<span color=\"#73C615\">25%</>生命",
+      "rank": 1,
+      "buff": [
+        20490360
+      ]
+    },
+    "10162": {
+      "id": 10162,
+      "title": "<span color=\"#FFC65F\">异常强化</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>普通系技能威力<span color=\"#73C615\">+25%</>",
+      "rank": 1,
+      "buff": [
+        20231220
+      ]
+    },
+    "10163": {
+      "id": 10163,
+      "title": "<span color=\"#FFC65F\">异常回合</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>所有回合结束时效果，触发次数<span color=\"#73C615\">+1</>",
+      "target": 2,
+      "rank": 1,
+      "buff": [
+        20750011
+      ]
+    },
+    "10164": {
+      "id": 10164,
+      "title": "<span color=\"#FFC65F\">异常组合</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>根据自身携带的技能，触发不同的效果",
+      "rank": 1,
+      "buff": [
+        20890100
+      ]
+    },
+    "10165": {
+      "id": 10165,
+      "title": "<span color=\"#FFC65F\">异常巧变</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>如果使用的技能与上一回合不同，则攻击永久<span color=\"#73C615\">+20%</>",
+      "rank": 1,
+      "buff": [
+        21030030
+      ]
+    },
+    "10166": {
+      "id": 10166,
+      "title": "<span color=\"#FFC65F\">异常冷却</>",
+      "desc": "<span color=\"#AF3D3E\">【全体】</>所有技能，释放后冷却<span color=\"#AF3D3E\">+1</>",
+      "rank": 1,
+      "buff": [
+        20350641
       ]
     }
   },

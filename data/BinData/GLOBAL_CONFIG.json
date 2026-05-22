@@ -50,8 +50,8 @@
     "valid_devices": {
       "id": 126,
       "key": "valid_devices",
-      "str": "",
-      "is_loc": 1
+      "str": "0080f69523102ad7;668e550ee5c69291",
+      "is_loc": 2
     },
     "tod_time_accelerate": {
       "id": 127,
@@ -130,14 +130,14 @@
     "camera_turn_acc_distance_curve": {
       "id": 135,
       "key": "camera_turn_acc_distance_curve",
-      "str": "",
+      "str": "/Game/NewRoco/Modules/Core/Scene/Ability/Common/Curves/TurnAccDistCurve.TurnAccDistCurve",
       "is_loc": 2
     },
     "camera_turn_acc_speed_angle": {
       "id": 136,
       "key": "camera_turn_acc_speed_angle",
-      "str": "",
-      "is_loc": 3
+      "str": "/Game/NewRoco/Modules/Core/Scene/Ability/Common/Curves/TurnAccSpeedCurve.TurnAccSpeedCurve",
+      "is_loc": 2
     },
     "camera_rotate_aim_speed_yaw": {
       "id": 137,
@@ -398,8 +398,8 @@
     "RegistName": {
       "id": 323,
       "key": "RegistName",
-      "str": "",
-      "is_loc": 4
+      "str": "UnregisteredName",
+      "is_loc": 2
     },
     "RegistLimitNum": {
       "id": 324,
@@ -419,8 +419,8 @@
     "begin_clean_time": {
       "id": 327,
       "key": "begin_clean_time",
-      "str": "",
-      "is_loc": 5
+      "str": "2020-09-21 04:00:00",
+      "is_loc": 2
     },
     "long_press_lobby_btn": {
       "id": 328,
@@ -509,20 +509,20 @@
     "magic_change_send_times_text": {
       "id": 343,
       "key": "magic_change_send_times_text",
-      "str": "",
-      "is_loc": 6
+      "str": "已达到本日发起上限，明天再来试试吧。",
+      "is_loc": 1
     },
     "magic_change_receive_times_text": {
       "id": 344,
       "key": "magic_change_receive_times_text",
-      "str": "",
-      "is_loc": 7
+      "str": "已达到本日接收上限，明天再来试试吧。",
+      "is_loc": 1
     },
     "magic_change_succeed": {
       "id": 345,
       "key": "magic_change_succeed",
-      "str": "",
-      "is_loc": 8
+      "str": "星链移转已成立。",
+      "is_loc": 1
     },
     "magic_change_npcid": {
       "id": 346,
@@ -533,8 +533,8 @@
     "magic_change_refresh_time": {
       "id": 347,
       "key": "magic_change_refresh_time",
-      "str": "",
-      "is_loc": 9
+      "str": "04:00:00",
+      "is_loc": 2
     },
     "ganzhi_small_icon_time": {
       "id": 348,
@@ -643,77 +643,77 @@
     "logout_preannounce_text": {
       "id": 362,
       "key": "logout_preannounce_text",
-      "str": "",
-      "is_loc": 10
+      "str": "亲爱的小洛克，您今日游戏时长还剩15分钟，请合理安排您的游戏时间。",
+      "is_loc": 1
     },
     "pvp_match_banned_text": {
       "id": 363,
       "key": "pvp_match_banned_text",
-      "str": "",
-      "title": "",
-      "is_loc": 11
+      "str": "亲爱的小洛克，您今日游戏时长不足15分钟，期间将无法进行PVP对战，详情说明请查看官方防沉迷系统公告。",
+      "title": "提示",
+      "is_loc": 1
     },
     "mail_notice_text": {
       "id": 364,
       "key": "mail_notice_text",
-      "str": "",
-      "title": "",
-      "is_loc": 13
+      "str": "<span color=\"#d56c1f\">邮件有效期说明</>\n邮件超出有效期后会自动消失，附件内容也会消失，请记得在邮件有效期内领取附件哦。\n\n<span color=\"#d56c1f\">邮箱上限说明</>\n邮箱最多能保存500封邮件，当邮件数量达到上限时，系统会自动删除无附件或附件已领取的邮件，若均为未领取的邮件则会按时间顺序清理，以确保新邮件正常送达，请注意及时查收附件。",
+      "title": "邮件说明",
+      "is_loc": 1
     },
     "login_notice": {
       "id": 365,
       "key": "login_notice",
-      "str": "",
-      "title": "",
-      "button_left": "",
-      "button_right": "",
-      "is_loc": 15
+      "str": "欢迎您使用腾讯游戏!我们非常重视您的个人信息安全和隐私保护，为更好地保障您的权益，在您使用腾讯服务前，我们将通过<a id=\"《游戏许可及服务协议》\">https://game.qq.com/tencent_other_contract.shtml</>、<a id=\"《隐私保护指引》\">https://rule.tencent.com/rule/202502190001</>、<a id=\"《儿童隐私保护指引》\">https://game.qq.com/tencent_other_children_privacy.shtml</>及<a id=\"《第三方信息共享清单》\">https://rule.tencent.com/rule/202502180001</>帮助您了解我们收集和处理个人个人信息的情况，请您仔细阅读。\n同时，您应特别注意前述协议中有关您个人信息权利的条款、免除或限制我们责任的条款以及约定争议解决方式和司法管辖的条款。\n如您同意腾讯游戏用户协议、隐私保护指引、儿童隐私保护指引及第三方信息共享清单，请点击“同意”，开始使用我们的服务如您对以上内容有任何疑问，请通过隐私保护指引中列出的方式与我们联系。",
+      "title": "游戏用户协议和隐私保护指引",
+      "button_left": "拒绝",
+      "button_right": "同意",
+      "is_loc": 1
     },
     "login_notice_second_check": {
       "id": 366,
       "key": "login_notice_second_check",
-      "str": "",
-      "title": "",
-      "button_left": "",
-      "button_right": "",
-      "is_loc": 19
+      "str": "确定要拒绝游戏用户协议和隐私保护指引吗？拒绝后将直接退出游戏客户端哦。",
+      "title": "提示",
+      "button_left": "拒绝",
+      "button_right": "重新阅读",
+      "is_loc": 1
     },
     "banned_notice": {
       "id": 367,
       "key": "banned_notice",
-      "str": "",
-      "title": "",
-      "is_loc": 23
+      "str": "您的账号UID:%s存在异常部分功能受限。\n结束时间:%s，原因:%s。",
+      "title": "警告",
+      "is_loc": 1
     },
     "mute_notice": {
       "id": 368,
       "key": "mute_notice",
-      "str": "",
-      "is_loc": 25
+      "str": "您的账号UID:%s已被系统禁言，禁言原因%s，解禁时间:%s。",
+      "is_loc": 1
     },
     "mail_delete_notice": {
       "id": 369,
       "key": "mail_delete_notice",
-      "str": "",
-      "title": "",
-      "button_left": "",
-      "button_right": "",
-      "is_loc": 26
+      "str": "确定要删除邮件吗？",
+      "title": "提示",
+      "button_left": "取消",
+      "button_right": "确认",
+      "is_loc": 1
     },
     "read_delete_notice": {
       "id": 370,
       "key": "read_delete_notice",
-      "str": "",
-      "title": "",
-      "button_left": "",
-      "button_right": "",
-      "is_loc": 30
+      "str": "确定要删除所有已读邮件吗？未领取附件的邮件将不会被删除。",
+      "title": "提示",
+      "button_left": "取消",
+      "button_right": "确认",
+      "is_loc": 1
     },
     "topup_forbidden_notice_text": {
       "id": 371,
       "key": "topup_forbidden_notice_text",
-      "str": "",
-      "is_loc": 34
+      "str": "充值功能暂未开放，敬请谅解。",
+      "is_loc": 1
     },
     "bonfire_active_aura": {
       "id": 372,
@@ -735,8 +735,8 @@
     "age_notice": {
       "id": 374,
       "key": "age_notice",
-      "str": "",
-      "is_loc": 35
+      "str": "1.本游戏是一款玩法简单、单局耗时中等的精灵收集类开放世界游戏，适用于年满12周岁及以上的用户，建议未成年人在家长监护下使用游戏产品。\n\n2.本游戏为三维卡通风格，画面丰富，色彩鲜明，配乐轻快活泼。游戏基于洛克王国IP的架空奇幻世界观展开剧情，玩家扮演一名魔法世界的学院新生，在旅途中结识精灵伙伴，逐步了解世界。游戏中存在竞技玩法和与情节相关的对抗内容，但对抗画面以卡通的形式出现，不会与现实生活相混淆，鼓励玩家通过思考和判断达成目标。游戏中有基于文字的陌生人社交系统，社交系统的管理遵循相关法律法规。\n\n3.根据国家相关要求，游戏中有用户实名认证系统，未通过实名认证的用户不可进入游戏；认证为未成年人的用户除周五、周六、周日及法定节假日每日20时至21时外其他时间均不可进入游戏。\n游戏中部分玩法和道具需要付费。根据腾讯健康系统管理规定，认证为未成年人的用户将接受以下管理：\n\n未满12周岁的用户不能付费；12周岁以上未满16周岁的未成年人用户，单次充值金额不得超过50元人民币，每月充值金额累计不得超过200元人民币；16周岁以上未满18周岁的未成年人用户，单次充值金额不得超过100元人民币，每月充值金额累计不得超过400元人民币。请您合理安排时间，适度消费。\n\n4.游戏中的对战玩法可帮助玩家锻炼手眼协调能力和思考判断能力，同时，游戏中的剧情内容传递了积极向上的价值观，带来优质的情绪体验。游戏中提供了丰富的社交玩法，可以明显促进玩家社会交流，提升团队协作能力，带来集体归属感。",
+      "is_loc": 1
     },
     "minigame_blackscreen_cut_in": {
       "id": 375,
@@ -813,20 +813,20 @@
     "catch_ball_reward_start_time": {
       "id": 387,
       "key": "catch_ball_reward_start_time",
-      "str": "",
-      "is_loc": 36
+      "str": "2023-11-13 04:00:00",
+      "is_loc": 2
     },
     "catch_ball_reward_duration": {
       "id": 388,
       "key": "catch_ball_reward_duration",
-      "str": "",
-      "is_loc": 37
+      "str": "1 00:00:00",
+      "is_loc": 2
     },
     "award_pet_catch_chance_icon": {
       "id": 389,
       "key": "award_pet_catch_chance_icon",
-      "str": "",
-      "is_loc": 38
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_linshi.img_linshi'",
+      "is_loc": 2
     },
     "award_pet_catch_chance_tips_relate1": {
       "id": 390,
@@ -876,32 +876,32 @@
     "award_pet_catch_chance_tips1": {
       "id": 395,
       "key": "award_pet_catch_chance_tips1",
-      "str": "",
-      "is_loc": 39
+      "str": "捕捉该精灵时，提升5%的捕捉概率",
+      "is_loc": 1
     },
     "award_pet_catch_chance_tips2": {
       "id": 396,
       "key": "award_pet_catch_chance_tips2",
-      "str": "",
-      "is_loc": 40
+      "str": "捕捉该精灵时，提升10%的捕捉概率",
+      "is_loc": 1
     },
     "award_pet_catch_chance_tips3": {
       "id": 397,
       "key": "award_pet_catch_chance_tips3",
-      "str": "",
-      "is_loc": 41
+      "str": "捕捉该精灵时，提升15%的捕捉概率",
+      "is_loc": 1
     },
     "award_pet_catch_chance_tips4": {
       "id": 398,
       "key": "award_pet_catch_chance_tips4",
-      "str": "",
-      "is_loc": 42
+      "str": "捕捉该精灵时，提升17.5%的捕捉概率",
+      "is_loc": 1
     },
     "award_pet_catch_chance_tips5": {
       "id": 399,
       "key": "award_pet_catch_chance_tips5",
-      "str": "",
-      "is_loc": 43
+      "str": "捕捉该精灵时，提升20%的捕捉概率",
+      "is_loc": 1
     },
     "waiguan_world_colddowntime": {
       "id": 400,
@@ -930,20 +930,20 @@
     "owl_pet_fruit_start_time": {
       "id": 405,
       "key": "owl_pet_fruit_start_time",
-      "str": "",
-      "is_loc": 44
+      "str": "2023-11-13 04:00:00",
+      "is_loc": 2
     },
     "owl_pet_fruit_duration": {
       "id": 406,
       "key": "owl_pet_fruit_duration",
-      "str": "",
-      "is_loc": 45
+      "str": "1 00:00:00",
+      "is_loc": 2
     },
     "activity_daily_refresh_time": {
       "id": 409,
       "key": "activity_daily_refresh_time",
-      "str": "",
-      "is_loc": 46
+      "str": "04:00:00",
+      "is_loc": 2
     },
     "mail_max_threshold": {
       "id": 410,
@@ -966,8 +966,8 @@
     "visit_catch_number_reward_time": {
       "id": 413,
       "key": "visit_catch_number_reward_time",
-      "str": "",
-      "is_loc": 47
+      "str": "04:00:00",
+      "is_loc": 2
     },
     "max_visit_catch_number": {
       "id": 414,
@@ -990,14 +990,14 @@
     "visit_catch_number_notice": {
       "id": 417,
       "key": "visit_catch_number_notice",
-      "str": "",
-      "is_loc": 48
+      "str": "剩余互访捕捉次数为0，明天再来试试吧。",
+      "is_loc": 1
     },
     "visit_catch_number_rule_tips": {
       "id": 418,
       "key": "visit_catch_number_rule_tips",
-      "str": "",
-      "is_loc": 49
+      "str": "成功捕捉他人世界中的珍稀精灵时，需要消耗<yellow>1次</>互访珍稀精灵捕捉次数。\n每月<yellow>15号的04:00:00</>重置为1次。",
+      "is_loc": 1
     },
     "online_visit_world_ai_limit": {
       "id": 419,
@@ -1033,8 +1033,8 @@
       "id": 424,
       "key": "travel_npc_conf_id",
       "num": 20003,
-      "str": "",
-      "is_loc": 50
+      "str": "在处理旅行相关协议的时候都检查下是否正在和这个npc交互",
+      "is_loc": 2
     },
     "pet_depot_page_number": {
       "id": 425,
@@ -1069,50 +1069,50 @@
     "follow_task_accept": {
       "id": 430,
       "key": "follow_task_accept",
-      "str": "",
-      "is_loc": 51
+      "str": "{跟随npc}开始与你同行",
+      "is_loc": 1
     },
     "follow_task_finish": {
       "id": 431,
       "key": "follow_task_finish",
-      "str": "",
-      "is_loc": 52
+      "str": "{跟随npc}不再与你同行",
+      "is_loc": 1
     },
     "follow_task_change_off": {
       "id": 432,
       "key": "follow_task_change_off",
-      "str": "",
-      "is_loc": 53
+      "str": "{跟随npc}不再与你同行",
+      "is_loc": 1
     },
     "follow_task_change_on": {
       "id": 433,
       "key": "follow_task_change_on",
-      "str": "",
-      "is_loc": 54
+      "str": "{跟随npc}开始与你同行",
+      "is_loc": 1
     },
     "follow_task_area_out": {
       "id": 434,
       "key": "follow_task_area_out",
-      "str": "",
-      "is_loc": 55
+      "str": "已离开任务区域，{跟随npc}不再与你同行",
+      "is_loc": 1
     },
     "follow_task_area_in": {
       "id": 435,
       "key": "follow_task_area_in",
-      "str": "",
-      "is_loc": 56
+      "str": "已回到任务区域，{跟随npc}开始与你同行",
+      "is_loc": 1
     },
     "follow_online_off": {
       "id": 436,
       "key": "follow_online_off",
-      "str": "",
-      "is_loc": 57
+      "str": "已进入联机状态，{跟随npc}不再与你同行",
+      "is_loc": 1
     },
     "follow_default": {
       "id": 437,
       "key": "follow_default",
-      "str": "",
-      "is_loc": 58
+      "str": "正在同行中……",
+      "is_loc": 1
     },
     "tale_blood_magic_storyflag": {
       "id": 438,
@@ -1140,8 +1140,8 @@
     "pet_statistics_display_time": {
       "id": 442,
       "key": "pet_statistics_display_time",
-      "str": "",
-      "is_loc": 59
+      "str": "2025-04-03 10:00:00",
+      "is_loc": 2
     },
     " pet_statistics_pve_group_threshold": {
       "id": 443,
@@ -1200,8 +1200,8 @@
     "follow_online_on": {
       "id": 452,
       "key": "follow_online_on",
-      "str": "",
-      "is_loc": 60
+      "str": "已退出联机状态，{跟随npc}开始与你同行",
+      "is_loc": 1
     },
     "task_state_tips_time": {
       "id": 453,
@@ -1212,8 +1212,8 @@
     "daily_clean_time": {
       "id": 454,
       "key": "daily_clean_time",
-      "str": "",
-      "is_loc": 61
+      "str": "04:00:00",
+      "is_loc": 2
     },
     "long_press_pick_all": {
       "id": 455,
@@ -1320,8 +1320,8 @@
     "dark_river_soul_compass_ban": {
       "id": 467,
       "key": "dark_river_soul_compass_ban",
-      "str": "",
-      "is_loc": 62
+      "str": "罗盘并没有回应你，或许是时机不对……",
+      "is_loc": 1
     },
     "bag_item_not_enough_ability_button": {
       "id": 468,
@@ -1332,14 +1332,14 @@
     "battle_pass_theme_pk_refresh_start_time": {
       "id": 469,
       "key": "battle_pass_theme_pk_refresh_start_time",
-      "str": "",
-      "is_loc": 63
+      "str": "2024-12-23 10:00:00",
+      "is_loc": 2
     },
     "battle_pass_theme_pk_refresh_duration": {
       "id": 470,
       "key": "battle_pass_theme_pk_refresh_duration",
-      "str": "",
-      "is_loc": 64
+      "str": "0 00:01:00",
+      "is_loc": 2
     },
     "wind_magic_cast_distance_max": {
       "id": 471,
@@ -1380,8 +1380,8 @@
     "share_image_zoom": {
       "id": 491,
       "key": "share_image_zoom",
-      "str": "",
-      "is_loc": 65
+      "str": "1.05",
+      "is_loc": 2
     },
     "share_image_move": {
       "id": 492,
@@ -1412,188 +1412,188 @@
     "share_specialeffect_nature_conf_1": {
       "id": 495,
       "key": "share_specialeffect_nature_conf_1",
-      "str": "",
-      "is_loc": 66
+      "str": "Shock",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_2": {
       "id": 496,
       "key": "share_specialeffect_nature_conf_2",
-      "str": "",
-      "is_loc": 67
+      "str": "Angry",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_3": {
       "id": 497,
       "key": "share_specialeffect_nature_conf_3",
-      "str": "",
-      "is_loc": 68
+      "str": "PetHappy",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_4": {
       "id": 498,
       "key": "share_specialeffect_nature_conf_4",
-      "str": "",
-      "is_loc": 69
+      "str": "inspiration",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_5": {
       "id": 499,
       "key": "share_specialeffect_nature_conf_5",
-      "str": "",
-      "is_loc": 70
+      "str": "inspiration",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_6": {
       "id": 500,
       "key": "share_specialeffect_nature_conf_6",
-      "str": "",
-      "is_loc": 71
+      "str": "PetHappy",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_7": {
       "id": 501,
       "key": "share_specialeffect_nature_conf_7",
-      "str": "",
-      "is_loc": 72
+      "str": "inspiration",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_8": {
       "id": 502,
       "key": "share_specialeffect_nature_conf_8",
-      "str": "",
-      "is_loc": 73
+      "str": "Tired",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_9": {
       "id": 503,
       "key": "share_specialeffect_nature_conf_9",
-      "str": "",
-      "is_loc": 74
+      "str": "PetHappy",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_10": {
       "id": 504,
       "key": "share_specialeffect_nature_conf_10",
-      "str": "",
-      "is_loc": 75
+      "str": "PetHappy",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_11": {
       "id": 505,
       "key": "share_specialeffect_nature_conf_11",
-      "str": "",
-      "is_loc": 76
+      "str": "Shock",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_12": {
       "id": 506,
       "key": "share_specialeffect_nature_conf_12",
-      "str": "",
-      "is_loc": 77
+      "str": "inspiration",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_13": {
       "id": 507,
       "key": "share_specialeffect_nature_conf_13",
-      "str": "",
-      "is_loc": 78
+      "str": "Angry",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_14": {
       "id": 508,
       "key": "share_specialeffect_nature_conf_14",
-      "str": "",
-      "is_loc": 79
+      "str": "inspiration",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_15": {
       "id": 509,
       "key": "share_specialeffect_nature_conf_15",
-      "str": "",
-      "is_loc": 80
+      "str": "inspiration",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_16": {
       "id": 510,
       "key": "share_specialeffect_nature_conf_16",
-      "str": "",
-      "is_loc": 81
+      "str": "inspiration",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_17": {
       "id": 511,
       "key": "share_specialeffect_nature_conf_17",
-      "str": "",
-      "is_loc": 82
+      "str": "PetHappy",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_18": {
       "id": 512,
       "key": "share_specialeffect_nature_conf_18",
-      "str": "",
-      "is_loc": 83
+      "str": "Shock",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_19": {
       "id": 513,
       "key": "share_specialeffect_nature_conf_19",
-      "str": "",
-      "is_loc": 84
+      "str": "Angry",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_20": {
       "id": 514,
       "key": "share_specialeffect_nature_conf_20",
-      "str": "",
-      "is_loc": 85
+      "str": "Shock",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_21": {
       "id": 515,
       "key": "share_specialeffect_nature_conf_21",
-      "str": "",
-      "is_loc": 86
+      "str": "Shock",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_22": {
       "id": 516,
       "key": "share_specialeffect_nature_conf_22",
-      "str": "",
-      "is_loc": 87
+      "str": "Angry",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_23": {
       "id": 517,
       "key": "share_specialeffect_nature_conf_23",
-      "str": "",
-      "is_loc": 88
+      "str": "PetHappy",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_24": {
       "id": 518,
       "key": "share_specialeffect_nature_conf_24",
-      "str": "",
-      "is_loc": 89
+      "str": "PetHappy",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_25": {
       "id": 519,
       "key": "share_specialeffect_nature_conf_25",
-      "str": "",
-      "is_loc": 90
+      "str": "Angry",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_26": {
       "id": 520,
       "key": "share_specialeffect_nature_conf_26",
-      "str": "",
-      "is_loc": 91
+      "str": "inspiration",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_27": {
       "id": 521,
       "key": "share_specialeffect_nature_conf_27",
-      "str": "",
-      "is_loc": 92
+      "str": "inspiration",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_28": {
       "id": 522,
       "key": "share_specialeffect_nature_conf_28",
-      "str": "",
-      "is_loc": 93
+      "str": "inspiration",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_29": {
       "id": 523,
       "key": "share_specialeffect_nature_conf_29",
-      "str": "",
-      "is_loc": 94
+      "str": "Shock",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_30": {
       "id": 524,
       "key": "share_specialeffect_nature_conf_30",
-      "str": "",
-      "is_loc": 95
+      "str": "Shock",
+      "is_loc": 2
     },
     "share_specialeffect_nature_conf_31": {
       "id": 525,
       "key": "share_specialeffect_nature_conf_31",
-      "str": "",
-      "is_loc": 96
+      "str": "inspiration",
+      "is_loc": 2
     },
     "share_video_endingframe_duration": {
       "id": 530,
@@ -1622,8 +1622,8 @@
     "share_video_zoom": {
       "id": 536,
       "key": "share_video_zoom",
-      "str": "",
-      "is_loc": 97
+      "str": "1",
+      "is_loc": 2
     },
     "share_video_move": {
       "id": 537,
@@ -1697,8 +1697,8 @@
       "id": 552,
       "key": "legendary_battle_entrence_range",
       "num": 1600,
-      "str": "",
-      "is_loc": 98
+      "str": "                                                                                                                                                                                                                                                                                                                            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "is_loc": 2
     },
     "mark_player_per_groupcount": {
       "id": 553,
@@ -1847,8 +1847,8 @@
     "mark_magic_message_order": {
       "id": 575,
       "key": "mark_magic_message_order",
-      "str": "",
-      "is_loc": 99
+      "str": "umg_mark_magic_message_hot_order;umg_mark_magic_message_time_order",
+      "is_loc": 2
     },
     "being_liquefied_cool_down": {
       "id": 576,
@@ -1859,74 +1859,74 @@
     "service_protocol_url": {
       "id": 577,
       "key": "service_protocol_url",
-      "str": "",
-      "is_loc": 100
+      "str": "https://game.qq.com/contract.shtml",
+      "is_loc": 2
     },
     "privacy_protect_url": {
       "id": 578,
       "key": "privacy_protect_url",
-      "str": "",
-      "is_loc": 101
+      "str": "https://rule.tencent.com/rule/202502190001",
+      "is_loc": 2
     },
     "third_info_list_url": {
       "id": 579,
       "key": "third_info_list_url",
-      "str": "",
-      "is_loc": 102
+      "str": "https://rule.tencent.com/rule/202502180001",
+      "is_loc": 2
     },
     "children_protect_url": {
       "id": 580,
       "key": "children_protect_url",
-      "str": "",
-      "is_loc": 103
+      "str": "https://game.qq.com/privacy_guide_children.shtml",
+      "is_loc": 2
     },
     "credit_score_web_view_windows_url": {
       "id": 581,
       "key": "credit_score_web_view_windows_url",
-      "str": "",
-      "is_loc": 104
+      "str": "https://gamecredit.qq.com/static/index.htm#/",
+      "is_loc": 2
     },
     "credit_score_web_view_mobile_url": {
       "id": 582,
       "key": "credit_score_web_view_mobile_url",
-      "str": "",
-      "is_loc": 105
+      "str": "https://gamecredit.qq.com/static/games/index.htm",
+      "is_loc": 2
     },
     "delete_account_page_url_pub": {
       "id": 583,
       "key": "delete_account_page_url_pub",
-      "str": "",
-      "is_loc": 106
+      "str": "https://gacc-account-web.odp.qq.com/writeoff.html?",
+      "is_loc": 2
     },
     "delete_account_page_url_dev": {
       "id": 584,
       "key": "delete_account_page_url_dev",
-      "str": "",
-      "is_loc": 107
+      "str": "https://gacc-account-web-test.odp.qq.com/writeoff.html?",
+      "is_loc": 2
     },
     "bei_an_url": {
       "id": 585,
       "key": "bei_an_url",
-      "str": "",
-      "is_loc": 108
+      "str": "https://beian.miit.gov.cn",
+      "is_loc": 2
     },
     "privacy_helper_url": {
       "id": 586,
       "key": "privacy_helper_url",
-      "str": "",
-      "is_loc": 109
+      "str": "https://xyapi.game.qq.com/xiaoyue/service/redirect?",
+      "is_loc": 2
     },
     "family_guard_url_dev": {
       "id": 587,
       "key": "family_guard_url_dev",
-      "str": "",
-      "is_loc": 110
+      "str": "https://test.api.jiazhang.qq.com/cgi-bin/Gateway.fcgi?method=msdkLogin&localParams=1",
+      "is_loc": 2
     },
     "family_guard_url_pub": {
       "id": 588,
       "key": "family_guard_url_pub",
-      "str": "",
-      "is_loc": 111
+      "str": "https://api.jiazhang.qq.com/cgi-bin/Gateway.fcgi?method=msdkLogin&localParams=1",
+      "is_loc": 2
     },
     "outside_catch_trigger": {
       "id": 589,
@@ -1982,8 +1982,8 @@
     "privacy_protect_platform": {
       "id": 600,
       "key": "privacy_protect_platform",
-      "str": "",
-      "is_loc": 112
+      "str": "https://privacy.qq.com",
+      "is_loc": 2
     },
     "vitality_recover_distance": {
       "id": 601,
@@ -2300,127 +2300,127 @@
       "id": 646,
       "key": "card_share_common_SDT_COMMON",
       "num": 2,
-      "str": "",
-      "is_loc": 113
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_putong.img_putong'",
+      "is_loc": 2
     },
     "card_share_common_SDT_GRASS": {
       "id": 647,
       "key": "card_share_common_SDT_GRASS",
       "num": 3,
-      "str": "",
-      "is_loc": 114
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_cao.img_cao'",
+      "is_loc": 2
     },
     "card_share_common_SDT_FIRE": {
       "id": 648,
       "key": "card_share_common_SDT_FIRE",
       "num": 4,
-      "str": "",
-      "is_loc": 115
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_huo.img_huo'",
+      "is_loc": 2
     },
     "card_share_common_SDT_WATER": {
       "id": 649,
       "key": "card_share_common_SDT_WATER",
       "num": 5,
-      "str": "",
-      "is_loc": 116
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_shui.img_shui'",
+      "is_loc": 2
     },
     "card_share_common_SDT_LIGHT": {
       "id": 650,
       "key": "card_share_common_SDT_LIGHT",
       "num": 6,
-      "str": "",
-      "is_loc": 117
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_guang.img_guang'",
+      "is_loc": 2
     },
     "card_share_common_SDT_STONE": {
       "id": 651,
       "key": "card_share_common_SDT_STONE",
       "num": 8,
-      "str": "",
-      "is_loc": 118
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_shan.img_shan'",
+      "is_loc": 2
     },
     "card_share_common_SDT_ICE": {
       "id": 652,
       "key": "card_share_common_SDT_ICE",
       "num": 9,
-      "str": "",
-      "is_loc": 119
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_xue.img_xue'",
+      "is_loc": 2
     },
     "card_share_common_SDT_DRAGON": {
       "id": 653,
       "key": "card_share_common_SDT_DRAGON",
       "num": 10,
-      "str": "",
-      "is_loc": 120
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_long.img_long'",
+      "is_loc": 2
     },
     "card_share_common_SDT_ELECTRIC": {
       "id": 654,
       "key": "card_share_common_SDT_ELECTRIC",
       "num": 11,
-      "str": "",
-      "is_loc": 121
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_dian.img_dian'",
+      "is_loc": 2
     },
     "card_share_common_SDT_TOXIC": {
       "id": 655,
       "key": "card_share_common_SDT_TOXIC",
       "num": 12,
-      "str": "",
-      "is_loc": 122
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_du.img_du'",
+      "is_loc": 2
     },
     "card_share_common_SDT_INSECT": {
       "id": 656,
       "key": "card_share_common_SDT_INSECT",
       "num": 13,
-      "str": "",
-      "is_loc": 123
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_cong.img_cong'",
+      "is_loc": 2
     },
     "card_share_common_SDT_FIGHT": {
       "id": 657,
       "key": "card_share_common_SDT_FIGHT",
       "num": 14,
-      "str": "",
-      "is_loc": 124
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_wu.img_wu'",
+      "is_loc": 2
     },
     "card_share_common_SDT_WING": {
       "id": 658,
       "key": "card_share_common_SDT_WING",
       "num": 15,
-      "str": "",
-      "is_loc": 125
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_yi.img_yi'",
+      "is_loc": 2
     },
     "card_share_common_SDT_MOE": {
       "id": 659,
       "key": "card_share_common_SDT_MOE",
       "num": 16,
-      "str": "",
-      "is_loc": 126
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_meng.img_meng'",
+      "is_loc": 2
     },
     "card_share_common_SDT_GHOST": {
       "id": 660,
       "key": "card_share_common_SDT_GHOST",
       "num": 17,
-      "str": "",
-      "is_loc": 127
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_youling.img_youling'",
+      "is_loc": 2
     },
     "card_share_common_SDT_DEMON": {
       "id": 661,
       "key": "card_share_common_SDT_DEMON",
       "num": 18,
-      "str": "",
-      "is_loc": 128
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_emo.img_emo'",
+      "is_loc": 2
     },
     "card_share_common_SDT_MECHANIC": {
       "id": 662,
       "key": "card_share_common_SDT_MECHANIC",
       "num": 19,
-      "str": "",
-      "is_loc": 129
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_jixie.img_jixie'",
+      "is_loc": 2
     },
     "card_share_common_SDT_PHANTOM": {
       "id": 663,
       "key": "card_share_common_SDT_PHANTOM",
       "num": 20,
-      "str": "",
-      "is_loc": 130
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_huan.img_huan'",
+      "is_loc": 2
     },
     "interactiontree_cifu_distance": {
       "id": 664,
@@ -2449,21 +2449,21 @@
     "kefu_qq_url": {
       "id": 669,
       "key": "kefu_qq_url",
-      "str": "",
-      "is_loc": 131
+      "str": "https://kf.qq.com",
+      "is_loc": 2
     },
     "notification_full_screen": {
       "id": 670,
       "key": "notification_full_screen",
-      "str": "",
-      "is_loc": 132
+      "str": "LevelMain;Shop;SeasonalCombinationBagShop;AppearanceTryOn;BattlePassSelectPanel;ActivityMainPanel;Friend;StudentCard;EmailMainPanel;TeachingManual;SystemSettingMain;MagicManualMainPanel;TaskMainPanel;MainBigMap;HandbookCover;HandbookMain;PetInfoMain;BagMain;SeasonIntegrationPanel;BattlePassSelectPanel",
+      "is_loc": 2
     },
     "textediting_notice": {
       "id": 671,
       "key": "textediting_notice",
-      "str": "",
-      "title": "",
-      "is_loc": 133
+      "str": "由于您的文本内容已不可用，已对您的自定义信息进行了替换处理。",
+      "title": "提示",
+      "is_loc": 1
     },
     "max_resend_mail_num": {
       "id": 672,
@@ -2510,8 +2510,8 @@
     "random_shop_band_bg_source": {
       "id": 679,
       "key": "random_shop_band_bg_source",
-      "str": "",
-      "is_loc": 135
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Monthly/Textures/fashion_bond_band_bg_%d_%d.fashion_bond_band_bg_%d_%d'",
+      "is_loc": 2
     },
     "MARK_MAGIC_FLOWER_TIPS_CD": {
       "id": 680,
@@ -2552,74 +2552,74 @@
     "mall_quality_bg_color_1": {
       "id": 688,
       "key": "mall_quality_bg_color_1",
-      "str": "",
-      "is_loc": 136
+      "str": "#73A335",
+      "is_loc": 2
     },
     "mall_quality_bg_color_2": {
       "id": 689,
       "key": "mall_quality_bg_color_2",
-      "str": "",
-      "is_loc": 137
+      "str": "#73A335",
+      "is_loc": 2
     },
     "mall_quality_bg_color_3": {
       "id": 690,
       "key": "mall_quality_bg_color_3",
-      "str": "",
-      "is_loc": 138
+      "str": "#57A5C1",
+      "is_loc": 2
     },
     "mall_quality_bg_color_4": {
       "id": 691,
       "key": "mall_quality_bg_color_4",
-      "str": "",
-      "is_loc": 139
+      "str": "#8D6DCD",
+      "is_loc": 2
     },
     "mall_quality_bg_color_5": {
       "id": 692,
       "key": "mall_quality_bg_color_5",
-      "str": "",
-      "is_loc": 140
+      "str": "#D79121",
+      "is_loc": 2
     },
     "mall_quality_word_color_1": {
       "id": 693,
       "key": "mall_quality_word_color_1",
-      "str": "",
-      "is_loc": 141
+      "str": "#679D26",
+      "is_loc": 2
     },
     "mall_quality_word_color_2": {
       "id": 694,
       "key": "mall_quality_word_color_2",
-      "str": "",
-      "is_loc": 142
+      "str": "#679D26",
+      "is_loc": 2
     },
     "mall_quality_word_color_3": {
       "id": 695,
       "key": "mall_quality_word_color_3",
-      "str": "",
-      "is_loc": 143
+      "str": "#479FC0F",
+      "is_loc": 2
     },
     "mall_quality_word_color_4": {
       "id": 696,
       "key": "mall_quality_word_color_4",
-      "str": "",
-      "is_loc": 144
+      "str": "#8465CB",
+      "is_loc": 2
     },
     "mall_quality_word_color_5": {
       "id": 697,
       "key": "mall_quality_word_color_5",
-      "str": "",
-      "is_loc": 145
+      "str": "#D48508",
+      "is_loc": 2
     },
     "mall_money_bg_color": {
       "id": 698,
       "key": "mall_money_bg_color",
-      "str": "",
-      "is_loc": 146
+      "str": "#c44f50",
+      "is_loc": 2
     },
     "mall_money_word_color": {
       "id": 699,
       "key": "mall_money_word_color",
-      "str": "",
-      "is_loc": 147
+      "str": "#cd5555",
+      "is_loc": 2
     },
     "warehouse_arrange_auto_move": {
       "id": 700,
@@ -2805,14 +2805,14 @@
     "mail_alert_400": {
       "id": 728,
       "key": "mail_alert_400",
-      "str": "",
-      "is_loc": 148
+      "str": "您的邮箱即将到达上限，请尽快清理，否则可能导致重要物品丢失！",
+      "is_loc": 1
     },
     "mail_alert_500": {
       "id": 729,
       "key": "mail_alert_500",
-      "str": "",
-      "is_loc": 149
+      "str": "您的邮箱已满，请清理邮箱，否则可能导致重要物品丢失！",
+      "is_loc": 1
     },
     "personal_marquee_freq_limit": {
       "id": 730,
@@ -2841,14 +2841,14 @@
     "sneak_correction_bigworld": {
       "id": 734,
       "key": "sneak_correction_bigworld",
-      "str": "",
-      "is_loc": 150
+      "str": "BAS_SLEEP;BAS_MAGIC_STUN_1;BAS_MAGIC_STUN_2;BAS_MAGIC_STUN_3;BAS_MAGIC_STUN_4",
+      "is_loc": 2
     },
     "sneak_correction_battle": {
       "id": 735,
       "key": "sneak_correction_battle",
-      "str": "",
-      "is_loc": 151
+      "str": "BGS_SLEEP;BGS_MAGICDIZZY;BGS_BACKSTAB",
+      "is_loc": 2
     },
     "mark_ban_npc_blacklist": {
       "id": 736,
@@ -2975,14 +2975,14 @@
     "mark_video_random_message": {
       "id": 742,
       "key": "mark_video_random_message",
-      "str": "",
-      "is_loc": 152
+      "str": "mark_video_random_message_1;mark_video_random_message_2;mark_video_random_message_3;mark_video_random_message_4;mark_video_random_message_5;mark_video_random_message_6;mark_video_random_message_7;mark_video_random_message_8;mark_video_random_message_9;mark_video_random_message_10;",
+      "is_loc": 2
     },
     "mark_music_random_message": {
       "id": 743,
       "key": "mark_music_random_message",
-      "str": "",
-      "is_loc": 153
+      "str": "mark_music_random_message_1;mark_music_random_message_2;mark_music_random_message_3;mark_music_random_message_4;mark_music_random_message_5;mark_music_random_message_6;mark_music_random_message_7;mark_music_random_message_8;mark_music_random_message_9;mark_music_random_message_10;",
+      "is_loc": 2
     },
     "mark_video_clothes_blacklist": {
       "id": 744,
@@ -3015,8 +3015,8 @@
     "type_advantage_pic_save": {
       "id": 748,
       "key": "type_advantage_pic_save",
-      "str": "",
-      "is_loc": 154
+      "str": "点击右侧保存按钮，即可保存该系别克制图",
+      "is_loc": 1
     },
     "mark_video_upload_time_out": {
       "id": 749,
@@ -3118,8 +3118,8 @@
     "head_info_priority": {
       "id": 764,
       "key": "head_info_priority",
-      "str": "",
-      "is_loc": 155
+      "str": "SALS_OBSERVING;SALS_FIGHTING;SALS_PLAYER_AFK;SALS_PLAYER_NPC;SALS_OPEN_UI_FULL_SCENE",
+      "is_loc": 2
     },
     "mark_video_name_show": {
       "id": 765,
@@ -3136,14 +3136,14 @@
     "combat_battle_teach2_unlock": {
       "id": 767,
       "key": "combat_battle_teach2_unlock",
-      "str": "",
-      "is_loc": 156
+      "str": "完成入门训练后解锁该科目",
+      "is_loc": 1
     },
     "combat_battle_teach3_unlock": {
       "id": 768,
       "key": "combat_battle_teach3_unlock",
-      "str": "",
-      "is_loc": 157
+      "str": "完成学徒训练后解锁该科目",
+      "is_loc": 1
     },
     "bp_gift_tips_time": {
       "id": 769,
@@ -3197,7 +3197,7 @@
     "privacy_setting_https": {
       "id": 777,
       "key": "privacy_setting_https",
-      "str": ""
+      "str": "https://rule.tencent.com/rule/202601210004"
     },
     "role_max_world_level": {
       "id": 778,
@@ -3207,17 +3207,17 @@
     "ai_coach_team_name": {
       "id": 779,
       "key": "ai_coach_team_name",
-      "str": ""
+      "str": "斯嘉丽推荐"
     },
     "ai_coach_head_picture": {
       "id": 780,
       "key": "ai_coach_head_picture",
-      "str": ""
+      "str": "img_AICoach"
     },
     "ai_coach_player_name": {
       "id": 781,
       "key": "ai_coach_player_name",
-      "str": ""
+      "str": "斯嘉丽"
     },
     "ai_coach_pet_level": {
       "id": 782,
@@ -3242,12 +3242,12 @@
     "zhiji_wbe": {
       "id": 786,
       "key": "zhiji_wbe",
-      "str": ""
+      "str": "https://tool.helper.qq.com"
     },
     "zhiji_wbe_test": {
       "id": 787,
       "key": "zhiji_wbe_test",
-      "str": ""
+      "str": "https://test.tool.helper.qq.com"
     },
     "mail_attachment_limit": {
       "id": 788,
@@ -3266,25 +3266,25 @@
       "id": 790,
       "key": "fashion_giftbag_icon_female_qishi",
       "num": 18043,
-      "str": ""
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item512/GiftBag_Ver2_9.GiftBag_Ver2_9'"
     },
     "fashion_giftbag_icon_female_youxia": {
       "id": 791,
       "key": "fashion_giftbag_icon_female_youxia",
       "num": 18044,
-      "str": ""
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item512/GiftBag_Ver2_8.GiftBag_Ver2_8'"
     },
     "fashion_giftbag_icon_female_wuqu": {
       "id": 792,
       "key": "fashion_giftbag_icon_female_wuqu",
       "num": 18045,
-      "str": ""
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item512/GiftBag_Ver2_10.GiftBag_Ver2_10'"
     },
     "fashion_giftbag_icon_female_xueshan": {
       "id": 793,
       "key": "fashion_giftbag_icon_female_xueshan",
       "num": 18046,
-      "str": ""
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item512/GiftBag_Ver2_11.GiftBag_Ver2_11'"
     },
     "idip_del_pet": {
       "id": 794,

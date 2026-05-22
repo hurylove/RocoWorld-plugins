@@ -10,7 +10,7 @@
     },
     "9110102": {
       "id": 9110102,
-      "name": "斜纹地板",
+      "name": "橙木墙面",
       "type": 2,
       "comfort": 50,
       "classification": 72,
@@ -19,7 +19,7 @@
     },
     "9110201": {
       "id": 9110201,
-      "name": "橙木墙面",
+      "name": "暮紫墙面",
       "type": 1,
       "comfort": 50,
       "classification": 71,
@@ -28,7 +28,7 @@
     },
     "9110202": {
       "id": 9110202,
-      "name": "星纹地板",
+      "name": "密林炼金",
       "type": 2,
       "comfort": 50,
       "classification": 72,
@@ -36,7 +36,7 @@
     },
     "9110301": {
       "id": 9110301,
-      "name": "暮紫墙面",
+      "name": "发条剧场",
       "type": 1,
       "comfort": 50,
       "classification": 71,
@@ -44,7 +44,7 @@
     },
     "9110302": {
       "id": 9110302,
-      "name": "藤纹地板",
+      "name": "",
       "type": 2,
       "comfort": 50,
       "classification": 72,
@@ -52,7 +52,7 @@
     },
     "9110401": {
       "id": 9110401,
-      "name": "密林炼金",
+      "name": "",
       "type": 1,
       "comfort": 50,
       "classification": 71,
@@ -60,7 +60,7 @@
     },
     "9110402": {
       "id": 9110402,
-      "name": "赤色矿石",
+      "name": "",
       "type": 2,
       "comfort": 50,
       "classification": 72,
@@ -68,7 +68,7 @@
     },
     "9110501": {
       "id": 9110501,
-      "name": "发条剧场",
+      "name": "",
       "type": 1,
       "comfort": 50,
       "classification": 71,
@@ -76,11 +76,24 @@
     },
     "9110502": {
       "id": 9110502,
-      "name": "拼色彩格",
+      "name": "",
       "type": 2,
       "comfort": 50,
-      "classification": 72,
-      "icon": "Texture2D'/Game/NewRoco/Modules/System/Home/Raw/Icon/256/1005.1005'"
+      "classification": 72
+    },
+    "9110601": {
+      "id": 9110601,
+      "name": "",
+      "type": 1,
+      "comfort": 50,
+      "classification": 71
+    },
+    "9110602": {
+      "id": 9110602,
+      "name": "",
+      "type": 2,
+      "comfort": 50,
+      "classification": 72
     }
   },
   "LocalizationStrings": {}

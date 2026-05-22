@@ -55,7 +55,7 @@
     "move_pool": [
         {
             "id": 7050200,
-            "name": "水炮",
+            "name": "水刃",
             "icon_id": "705010",
             "move_type": {
                 "id": 4,
@@ -66,14 +66,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "水炮",
-                    "description": "造成魔伤，每次使用后，本技能能耗永久-1。"
+                    "name": "水刃",
+                    "description": "造成物伤，应对状态：本技能能耗永久-3。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 4,
             "power": 115,
-            "description": "造成魔伤，每次使用后，本技能能耗永久-1。"
+            "description": "造成物伤，应对状态：本技能能耗永久-3。"
         }
     ],
     "move_stones": [],
@@ -119,7 +119,7 @@
         "refresh_locations": [],
         "movement_type": null,
         "classis_id": 6,
-        "classis_name": null,
+        "classis_name": "自然类精灵",
         "handbook_area_ids": []
     },
     "catch_info": null,

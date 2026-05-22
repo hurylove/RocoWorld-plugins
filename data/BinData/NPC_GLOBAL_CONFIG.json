@@ -248,44 +248,44 @@
     "camera_angle_speed": {
       "id": 188,
       "key": "camera_angle_speed",
-      "str": "",
-      "is_loc": 1
+      "str": "0.7",
+      "is_loc": 2
     },
     "projectile_bounciness": {
       "id": 189,
       "key": "projectile_bounciness",
-      "str": "",
+      "str": "0.2",
       "is_loc": 2
     },
     "projectile_friction": {
       "id": 190,
       "key": "projectile_friction",
-      "str": "",
-      "is_loc": 3
+      "str": "0.8",
+      "is_loc": 2
     },
     "projectile_bounciness_disturb": {
       "id": 191,
       "key": "projectile_bounciness_disturb",
-      "str": "",
-      "is_loc": 4
+      "str": "0.05",
+      "is_loc": 2
     },
     "projectile_friction_disturb": {
       "id": 192,
       "key": "projectile_friction_disturb",
-      "str": "",
-      "is_loc": 5
+      "str": "0.05",
+      "is_loc": 2
     },
     "npc_turn_time": {
       "id": 193,
       "key": "npc_turn_time",
-      "str": "",
-      "is_loc": 6
+      "str": "0.5",
+      "is_loc": 2
     },
     "player_turn_time": {
       "id": 194,
       "key": "player_turn_time",
-      "str": "",
-      "is_loc": 7
+      "str": "0.8",
+      "is_loc": 2
     },
     "enable_area_load": {
       "id": 196,
@@ -295,8 +295,8 @@
     "behavior_tree_root_path": {
       "id": 197,
       "key": "behavior_tree_root_path",
-      "str": "",
-      "is_loc": 8
+      "str": "/Game/NewRoco/Modules/AI/BehaviorTree/MFBT/",
+      "is_loc": 2
     },
     "amplitude_dip_bag": {
       "id": 198,
@@ -337,14 +337,14 @@
     "camera_speed_unfold_compass": {
       "id": 204,
       "key": "camera_speed_unfold_compass",
-      "str": "",
-      "is_loc": 9
+      "str": "2",
+      "is_loc": 2
     },
     "camera_speed_retract_compass": {
       "id": 205,
       "key": "camera_speed_retract_compass",
-      "str": "",
-      "is_loc": 10
+      "str": "2",
+      "is_loc": 2
     },
     "bt_response_range_1": {
       "id": 206,
@@ -427,8 +427,8 @@
     "meta_ai_behavior_tree_path": {
       "id": 219,
       "key": "meta_ai_behavior_tree_path",
-      "str": "",
-      "is_loc": 11
+      "str": "/Game/NewRoco/Modules/AI/BehaviorTree/MFBT/DotsVersion2/BT_MetaAI",
+      "is_loc": 2
     },
     "online_npc_option_visible": {
       "id": 221,
@@ -518,26 +518,26 @@
     "worldcombat_begin_tips_id": {
       "id": 235,
       "key": "worldcombat_begin_tips_id",
-      "str": "",
-      "is_loc": 12
+      "str": "worldcombat_tips_1",
+      "is_loc": 2
     },
     "worldcombat_barrier_broken_tips_id": {
       "id": 236,
       "key": "worldcombat_barrier_broken_tips_id",
-      "str": "",
-      "is_loc": 13
+      "str": "worldcombat_tips_2",
+      "is_loc": 2
     },
     "worldcombat_internal_battle_finish_tips_id": {
       "id": 237,
       "key": "worldcombat_internal_battle_finish_tips_id",
-      "str": "",
-      "is_loc": 14
+      "str": "worldcombat_tips_3",
+      "is_loc": 2
     },
     "ai_release_npc_play_skill": {
       "id": 238,
       "key": "ai_release_npc_play_skill",
-      "str": "",
-      "is_loc": 15
+      "str": "/Game/ArtRes/Effects/G6Skill/SceneEffect/791247",
+      "is_loc": 2
     },
     "pet_fight_range_height": {
       "id": 239,
@@ -1024,14 +1024,14 @@
     "worldcombat_execution_tips_id": {
       "id": 270,
       "key": "worldcombat_execution_tips_id",
-      "str": "",
-      "is_loc": 16
+      "str": "worldcombat_execution_tips",
+      "is_loc": 2
     },
     "worldcombat_exit_tips_id": {
       "id": 271,
       "key": "worldcombat_exit_tips_id",
-      "str": "",
-      "is_loc": 17
+      "str": "worldcombat_exit_tips",
+      "is_loc": 2
     },
     "sticked_socket_player": {
       "id": 272,
@@ -1049,8 +1049,8 @@
     "stick_to_socket_enum_mapping": {
       "id": 273,
       "key": "stick_to_socket_enum_mapping",
-      "str": "",
-      "is_loc": 18
+      "str": "locator_pos;locator_l_foot;locator_r_foot;locator_hurt;locator_back;locator_overhead;locator_cam;locator_l_shoulder;locator_r_shoulder;locator_pos;locator_body",
+      "is_loc": 2
     },
     "role_play_think_behavior_group": {
       "id": 274,
@@ -1131,14 +1131,14 @@
     "wild_limit_glass_reset_date": {
       "id": 285,
       "key": "wild_limit_glass_reset_date",
-      "str": "",
-      "is_loc": 19
+      "str": "2024-12-23 04:00:00",
+      "is_loc": 2
     },
     "wild_limit_glass_reset_gap": {
       "id": 286,
       "key": "wild_limit_glass_reset_gap",
-      "str": "",
-      "is_loc": 20
+      "str": "14 00:00:00",
+      "is_loc": 2
     },
     "act_teleport_no_loading_max_range": {
       "id": 287,
@@ -1196,8 +1196,8 @@
     "planeness_allowance_failed_point_ratio": {
       "id": 294,
       "key": "planeness_allowance_failed_point_ratio",
-      "str": "",
-      "is_loc": 21
+      "str": "0.3",
+      "is_loc": 2
     },
     "throw_npc_ai_pause_timeout": {
       "id": 295,
@@ -1298,14 +1298,14 @@
     "wild_limit_nightmare_reset_date": {
       "id": 311,
       "key": "wild_limit_nightmare_reset_date",
-      "str": "",
-      "is_loc": 22
+      "str": "2024-12-23 04:00:00",
+      "is_loc": 2
     },
     "wild_limit_nightmare_reset_gap": {
       "id": 312,
       "key": "wild_limit_nightmare_reset_gap",
-      "str": "",
-      "is_loc": 23
+      "str": "3 00:00:00",
+      "is_loc": 2
     },
     "online_battle_show_player_npc_refresh_radius": {
       "id": 313,
@@ -1406,8 +1406,8 @@
     "ban_catch_pet_world_hide_type": {
       "id": 327,
       "key": "ban_catch_pet_world_hide_type",
-      "str": "",
-      "is_loc": 24
+      "str": "WH_MIMIC;WH_MIMIC_OPTION;WH_GHOST;WH_DRILL_IMME",
+      "is_loc": 2
     },
     "random_nightmare_elite_scale_fix": {
       "id": 328,
@@ -1467,8 +1467,8 @@
     "visit_owl_npc_check_gap": {
       "id": 335,
       "key": "visit_owl_npc_check_gap",
-      "str": "",
-      "is_loc": 25
+      "str": "00:01:30",
+      "is_loc": 2
     },
     "visit_owl_npc_refresh_content_id_min": {
       "id": 336,
@@ -1491,14 +1491,14 @@
     "mimic_aim_dispaly_null": {
       "id": 339,
       "key": "mimic_aim_dispaly_null",
-      "str": "",
-      "is_loc": 26
+      "str": "WH_MIMIC;WH_MIMIC_OPTION",
+      "is_loc": 2
     },
     "tongyongnpc_default_mfbt_tree_path": {
       "id": 340,
       "key": "tongyongnpc_default_mfbt_tree_path",
-      "str": "",
-      "is_loc": 27
+      "str": "/Game/NewRoco/Modules/AI/BehaviorTree/MFBT/DotsVersion2/SubTree/NewVer/Common/BT_BossAttack_TongyongNPC",
+      "is_loc": 2
     },
     "falling_speed_uplimit": {
       "id": 341,
@@ -1614,14 +1614,14 @@
     "wild_mutation_change_reset_date": {
       "id": 359,
       "key": "wild_mutation_change_reset_date",
-      "str": "",
-      "is_loc": 28
+      "str": "2024-12-23 04:00:00",
+      "is_loc": 2
     },
     "wild_mutation_change_reset_gap": {
       "id": 360,
       "key": "wild_mutation_change_reset_gap",
-      "str": "",
-      "is_loc": 29
+      "str": "7 00:00:00",
+      "is_loc": 2
     }
   },
   "LocalizationStrings": {}

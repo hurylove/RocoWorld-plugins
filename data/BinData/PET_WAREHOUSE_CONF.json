@@ -41,9 +41,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -53,9 +53,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -65,9 +65,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -77,9 +77,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -89,9 +89,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -101,9 +101,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -113,9 +113,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -125,9 +125,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -137,9 +137,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -149,9 +149,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -161,9 +161,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -173,9 +173,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -185,9 +185,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -197,9 +197,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -209,9 +209,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 5
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 5
         }
       ]
     },
@@ -221,9 +221,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 10
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 10
         }
       ]
     },
@@ -233,9 +233,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 10
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 10
         }
       ]
     },
@@ -245,9 +245,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 10
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 10
         }
       ]
     },
@@ -257,9 +257,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 10
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 10
         }
       ]
     },
@@ -269,9 +269,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 10
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 10
         }
       ]
     },
@@ -281,9 +281,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 10
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 10
         }
       ]
     },
@@ -293,9 +293,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 10
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 10
         }
       ]
     },
@@ -305,9 +305,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 10
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 10
         }
       ]
     },
@@ -317,9 +317,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 10
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 10
         }
       ]
     },
@@ -329,9 +329,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 10
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 10
         }
       ]
     },
@@ -341,9 +341,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 20
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 20
         }
       ]
     },
@@ -353,9 +353,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 20
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 20
         }
       ]
     },
@@ -365,9 +365,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 20
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 20
         }
       ]
     },
@@ -377,9 +377,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 20
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 20
         }
       ]
     },
@@ -389,9 +389,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 20
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 20
         }
       ]
     },
@@ -401,9 +401,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 20
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 20
         }
       ]
     },
@@ -413,9 +413,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 20
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 20
         }
       ]
     },
@@ -425,9 +425,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 20
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 20
         }
       ]
     },
@@ -437,9 +437,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 20
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 20
         }
       ]
     },
@@ -449,9 +449,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d许愿星</>",
-          "unlock_vitem_type": 3,
-          "value": 20
+          "unlock_rule_text": "精灵盒子",
+          "value": 3,
+          "unlock_id": 20
         }
       ]
     },
@@ -461,9 +461,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -473,9 +473,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -485,9 +485,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -497,9 +497,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -509,9 +509,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -521,9 +521,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -533,9 +533,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -545,9 +545,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -557,9 +557,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -569,9 +569,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -581,9 +581,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -593,9 +593,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -605,9 +605,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -617,9 +617,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -629,9 +629,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -641,9 +641,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -653,9 +653,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -665,9 +665,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -677,9 +677,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -689,9 +689,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -701,9 +701,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -713,9 +713,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -725,9 +725,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -737,9 +737,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -749,9 +749,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -761,9 +761,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -773,9 +773,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -785,9 +785,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -797,9 +797,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     },
@@ -809,9 +809,9 @@
       "unlock_rule": [
         {
           "unlockcondition": 1,
-          "unlock_rule_text": "花费<span color=\"#d56c1f\">%d洛克钻</>",
-          "unlock_vitem_type": 2,
-          "value": 200
+          "unlock_rule_text": "精灵盒子",
+          "value": 2,
+          "unlock_id": 200
         }
       ]
     }

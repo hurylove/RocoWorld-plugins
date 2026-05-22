@@ -280,7 +280,7 @@
       "id": 310002,
       "part_name": "测试福利返还",
       "start_time": "2025-11-14 04:00:00",
-      "end_time": "2026-04-27 03:59:59",
+      "end_time": "2026-06-30 03:59:59",
       "interactive_before_txt": "前往领取",
       "website_path": "https://rocom.qq.com/act/a20251011rebate/index.html",
       "if_icon_change": 3,
@@ -368,7 +368,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -386,7 +385,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -404,7 +402,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -422,7 +419,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -440,7 +436,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -457,7 +452,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -474,7 +468,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -491,7 +484,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -508,7 +500,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -530,7 +521,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -546,7 +536,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -562,7 +551,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -585,7 +573,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -608,7 +595,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -631,7 +617,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -654,7 +639,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -671,7 +655,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -696,7 +679,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -715,7 +697,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -734,7 +715,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -753,7 +733,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -772,7 +751,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -791,7 +769,6 @@
       "interactive_after_txt": "领取奖励",
       "reward_id": 200000013,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "mail_id": 80002,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
@@ -816,7 +793,6 @@
       "website_path": "https://in.weisurvey.com/v2/?sid=6953a4c647f5a1a9340a0772",
       "if_icon_change": 3,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
     },
@@ -840,7 +816,6 @@
       "website_path": "https://in.weisurvey.com/v2/?sid=6953a4cea1931ef298054c92",
       "if_icon_change": 3,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
     },
@@ -864,7 +839,6 @@
       "website_path": "https://in.weisurvey.com/v2/?sid=6953a4d347f5a1a9340a0774",
       "if_icon_change": 3,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
     },
@@ -888,7 +862,6 @@
       "website_path": "https://in.weisurvey.com/v2/?sid=6953a4d6a0f3cf9e2b01c532",
       "if_icon_change": 3,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
     },
@@ -912,7 +885,6 @@
       "website_path": "https://in.weisurvey.com/v2/?sid=6953a4d97741d8acf30d88a2",
       "if_icon_change": 3,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
     },
@@ -936,7 +908,6 @@
       "website_path": "https://in.weisurvey.com/v2/?sid=6953a4dc7c355bca290ca8d2",
       "if_icon_change": 3,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
     },
@@ -960,7 +931,6 @@
       "website_path": "https://in.weisurvey.com/v2/?sid=6953a740a0f3cf9e2b01c537",
       "if_icon_change": 3,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
     },
@@ -981,7 +951,6 @@
       "website_path": "https://in.weisurvey.com/v2/?sid=6953a5111223bfaf1e0fab43",
       "if_icon_change": 3,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
     },
@@ -1002,7 +971,6 @@
       "website_path": "https://in.weisurvey.com/v2/?sid=6953a5167741d8acf30d88a4",
       "if_icon_change": 3,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
     },
@@ -1023,7 +991,6 @@
       "website_path": "https://in.weisurvey.com/v2/?sid=6953a525304d070174094f72",
       "if_icon_change": 3,
       "option_recover": true,
-      "is_redpoint_notify": true,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
     },
@@ -1036,7 +1003,92 @@
       "website_path": "https://in.weisurvey.com/v2/?sid=696d991c4dfa51d84c081452",
       "if_icon_change": 3,
       "option_recover": true,
-      "is_redpoint_notify": true,
+      "flag_num_join": "J0011",
+      "flag_num_finish": "C0011"
+    },
+    "320035": {
+      "id": 320035,
+      "part_name": "版本满意度问卷#1",
+      "note": "V101",
+      "start_time": "2026-05-25 04:00:00",
+      "end_time": "2026-06-01 03:59:59",
+      "required_group": [
+        {
+          "required_type": 1,
+          "required_param": 10
+        }
+      ],
+      "is_questionnaire": true,
+      "interactive_before_txt": "前往填写",
+      "website_path": "https://in.weisurvey.com/v2/?sid=69e6e7e9fed3d15ec2002522",
+      "if_icon_change": 3,
+      "option_recover": true,
+      "flag_num_join": "J0011",
+      "flag_num_finish": "C0011"
+    },
+    "320036": {
+      "id": 320036,
+      "part_name": "版本满意度问卷#2",
+      "note": "V101",
+      "start_time": "2026-07-04 04:00:00",
+      "end_time": "2026-07-11 03:59:59",
+      "required_group": [
+        {
+          "required_type": 1,
+          "required_param": 10
+        }
+      ],
+      "is_questionnaire": true,
+      "interactive_before_txt": "前往填写",
+      "website_path": "https://in.weisurvey.com/v2/?sid=69e6e81b34ff3d3e3a0db042",
+      "if_icon_change": 3,
+      "option_recover": true,
+      "flag_num_join": "J0011",
+      "flag_num_finish": "C0011"
+    },
+    "320037": {
+      "id": 320037,
+      "part_name": "新玩家调研问卷",
+      "note": "V101",
+      "required_group": [
+        {
+          "required_type": 1,
+          "required_param": 10
+        },
+        {
+          "required_type": 15,
+          "required_param": 1
+        }
+      ],
+      "is_questionnaire": true,
+      "questionnaire_duration": 3,
+      "interactive_before_txt": "前往填写",
+      "website_path": "https://in.weisurvey.com/v2/?sid=69e6f0a6e293e75f26007674",
+      "if_icon_change": 3,
+      "option_recover": true,
+      "flag_num_join": "J0011",
+      "flag_num_finish": "C0011"
+    },
+    "320038": {
+      "id": 320038,
+      "part_name": "回流调研问卷",
+      "note": "V101",
+      "required_group": [
+        {
+          "required_type": 1,
+          "required_param": 10
+        },
+        {
+          "required_type": 7,
+          "required_param": 14
+        }
+      ],
+      "is_questionnaire": true,
+      "questionnaire_duration": 7,
+      "interactive_before_txt": "前往填写",
+      "website_path": "https://in.weisurvey.com/v2/?sid=69e6f0d6f59c7842da011b13",
+      "if_icon_change": 3,
+      "option_recover": true,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"
     },
@@ -1076,6 +1128,46 @@
       "note": "V100",
       "interactive_before_txt": "前往购买",
       "website_path": "https://m.mall.qq.com/rocom/detail/35276",
+      "if_icon_change": 3,
+      "flag_num_join": "J0011",
+      "flag_num_finish": "C0011"
+    },
+    "330005": {
+      "id": 330005,
+      "part_name": "爆焰喷喷周边购买链接-PC",
+      "note": "V101",
+      "interactive_before_txt": "前往购买",
+      "website_path": "https://mall.qq.com/rocom/detail.shtml?id=35661",
+      "if_icon_change": 3,
+      "flag_num_join": "J0011",
+      "flag_num_finish": "C0011"
+    },
+    "330006": {
+      "id": 330006,
+      "part_name": "雪怪周边购买链接-PC",
+      "note": "V101",
+      "interactive_before_txt": "前往购买",
+      "website_path": "https://mall.qq.com/rocom/detail.shtml?id=35662",
+      "if_icon_change": 3,
+      "flag_num_join": "J0011",
+      "flag_num_finish": "C0011"
+    },
+    "330007": {
+      "id": 330007,
+      "part_name": "爆焰喷喷周边购买链接-H5",
+      "note": "V101",
+      "interactive_before_txt": "前往购买",
+      "website_path": "https://m.mall.qq.com/rocom/detail/35661",
+      "if_icon_change": 3,
+      "flag_num_join": "J0011",
+      "flag_num_finish": "C0011"
+    },
+    "330008": {
+      "id": 330008,
+      "part_name": "雪怪周边购买链接-H5",
+      "note": "V101",
+      "interactive_before_txt": "前往购买",
+      "website_path": "https://m.mall.qq.com/rocom/detail/35662",
       "if_icon_change": 3,
       "flag_num_join": "J0011",
       "flag_num_finish": "C0011"

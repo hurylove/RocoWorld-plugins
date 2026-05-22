@@ -22,7 +22,7 @@
     "preferred_attack_style": "Both",
     "localized": {
         "zh": {
-            "name": "古齿帝牙"
+            "name": "冰晶古齿虎"
         }
     },
     "implemented": false,
@@ -37,17 +37,17 @@
         "id": 3340,
         "name": "bingjingguchihu",
         "localized": {
-            "zh": "古齿帝牙"
+            "zh": "冰晶古齿虎"
         }
     },
     "trait": {
         "id": 200261,
-        "name": "古齿帝牙",
+        "name": "冰晶古齿虎",
         "description": "攻击应对成功时，赋予敌方3层冻结",
         "icon_id": "200074",
         "localized": {
             "zh": {
-                "name": "古齿帝牙",
+                "name": "冰晶古齿虎",
                 "description": "攻击应对成功时，赋予敌方3层冻结"
             }
         }
@@ -66,7 +66,7 @@
                         "form": "default",
                         "localized": {
                             "zh": {
-                                "name": "古齿帝牙"
+                                "name": "冰晶古齿虎"
                             }
                         },
                         "is_leader_form": false,
@@ -98,7 +98,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 6,
-        "classis_name": null,
+        "classis_name": "自然类精灵",
         "handbook_area_ids": []
     },
     "catch_info": {

@@ -6,6 +6,7 @@
       "share_part_name": "精灵分享-图片",
       "tab_name": "图片",
       "share_type": 1,
+      "is_need_information": true,
       "umg_path": "WidgetBlueprint'/Game/NewRoco/Modules/System/ShareUI/Res/UMG_ShareUI_Photo.UMG_ShareUI_Photo_C'"
     },
     "102": {
@@ -80,6 +81,21 @@
       "share_part_name": "精灵上报分享",
       "share_type": 1,
       "umg_path": "WidgetBlueprint'/Game/NewRoco/Modules/System/ShareUI/Res/UMG_PetReportShare.UMG_PetReportShare_C'"
+    },
+    "801": {
+      "id": 801,
+      "share_button_type": 8,
+      "share_part_name": "精灵合影分享",
+      "share_type": 1,
+      "is_need_information": true,
+      "umg_path": "WidgetBlueprint'/Game/NewRoco/Modules/System/ShareUI/Res/UMG_PetGroupPhotoShare.UMG_PetGroupPhotoShare_C'"
+    },
+    "901": {
+      "id": 901,
+      "share_button_type": 9,
+      "share_part_name": "留影分享",
+      "share_type": 2,
+      "umg_path": "WidgetBlueprint'/Game/NewRoco/Modules/System/ShareUI/Res/UMG_ShareUI_VideoShare.UMG_ShareUI_VideoShare_C'"
     },
     "1001": {
       "id": 1001,

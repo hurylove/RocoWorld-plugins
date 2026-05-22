@@ -30,7 +30,7 @@
     },
     "1001": {
       "id": 1001,
-      "name": "音速犬",
+      "name": "铠甲虫",
       "event_combine": [
         {
           "type_param1": 3071,
@@ -58,7 +58,7 @@
     },
     "1002": {
       "id": 1002,
-      "name": "武者鸡",
+      "name": "芋香巨角蛛",
       "event_combine": [
         {
           "type_param1": 3089,
@@ -86,7 +86,7 @@
     },
     "1003": {
       "id": 1003,
-      "name": "铠甲虫",
+      "name": "雪影娃娃",
       "event_combine": [
         {
           "type_param1": 3013,
@@ -114,7 +114,7 @@
     },
     "1004": {
       "id": 1004,
-      "name": "花衣蝶",
+      "name": "古啦多",
       "event_combine": [
         {
           "type_param1": 3141,
@@ -142,7 +142,7 @@
     },
     "1005": {
       "id": 1005,
-      "name": "芋香巨角蛛",
+      "name": "月亮砣",
       "event_combine": [
         {
           "type_param1": 3132,
@@ -170,7 +170,7 @@
     },
     "1006": {
       "id": 1006,
-      "name": "雪巨人",
+      "name": "高脚鹬",
       "event_combine": [
         {
           "type_param1": 3174,
@@ -198,7 +198,7 @@
     },
     "1007": {
       "id": 1007,
-      "name": "雪影娃娃",
+      "name": "影狸",
       "event_combine": [
         {
           "type_param1": 3123,
@@ -226,7 +226,7 @@
     },
     "1008": {
       "id": 1008,
-      "name": "大古拉海象",
+      "name": "翼龙",
       "event_combine": [
         {
           "type_param1": 3261,
@@ -254,7 +254,7 @@
     },
     "1009": {
       "id": 1009,
-      "name": "古啦多",
+      "name": "立方人",
       "event_combine": [
         {
           "type_param1": 3153,
@@ -282,7 +282,7 @@
     },
     "1010": {
       "id": 1010,
-      "name": "嘟嘟锅",
+      "name": "贝古斯",
       "event_combine": [
         {
           "type_param1": 3368,
@@ -310,7 +310,7 @@
     },
     "1011": {
       "id": 1011,
-      "name": "月亮砣",
+      "name": "健猫教练",
       "event_combine": [
         {
           "type_param1": 3583,
@@ -338,7 +338,7 @@
     },
     "1012": {
       "id": 1012,
-      "name": "岚鸟",
+      "name": "荆棘电环",
       "event_combine": [
         {
           "type_param1": 3037,
@@ -366,7 +366,7 @@
     },
     "1013": {
       "id": 1013,
-      "name": "高脚鹬",
+      "name": "友爱星飞",
       "event_combine": [
         {
           "type_param1": 3252,
@@ -394,7 +394,7 @@
     },
     "1014": {
       "id": 1014,
-      "name": "蓝珠天鹅",
+      "name": "火羽",
       "event_combine": [
         {
           "type_param1": 3345,
@@ -422,7 +422,7 @@
     },
     "1015": {
       "id": 1015,
-      "name": "影狸",
+      "name": "小雪人",
       "event_combine": [
         {
           "type_param1": 3066,
@@ -450,7 +450,7 @@
     },
     "1016": {
       "id": 1016,
-      "name": "梦悠悠",
+      "name": "皇家狮鹫",
       "event_combine": [
         {
           "type_param1": 3439,
@@ -478,7 +478,7 @@
     },
     "1017": {
       "id": 1017,
-      "name": "翼龙",
+      "name": "雪巨人/雪影娃娃",
       "event_combine": [
         {
           "type_param1": 3210,
@@ -506,7 +506,7 @@
     },
     "1018": {
       "id": 1018,
-      "name": "伊兰亚龙",
+      "name": "嘟嘟锅/古啦多",
       "event_combine": [
         {
           "type_param1": 3412,
@@ -534,7 +534,7 @@
     },
     "1019": {
       "id": 1019,
-      "name": "立方人",
+      "name": "梦悠悠/伊兰亚龙",
       "event_combine": [
         {
           "type_param1": 3202,
@@ -562,7 +562,7 @@
     },
     "1020": {
       "id": 1020,
-      "name": "波多西",
+      "name": "影狸/爵士鹿/翼龙",
       "event_combine": [
         {
           "type_param1": 3208,
@@ -590,7 +590,7 @@
     },
     "1021": {
       "id": 1021,
-      "name": "贝古斯",
+      "name": "爵士鹿/岚鸟/嘟嘟锅",
       "event_combine": [
         {
           "type_param1": 3205,
@@ -618,7 +618,7 @@
     },
     "1022": {
       "id": 1022,
-      "name": "格斗小五",
+      "name": "小雪人/蓝珠天鹅/高脚鹬",
       "event_combine": [
         {
           "type_param1": 3416,
@@ -646,7 +646,7 @@
     },
     "1023": {
       "id": 1023,
-      "name": "健猫教练",
+      "name": "魔法师萌萌",
       "event_combine": [
         {
           "type_param1": 3219,
@@ -674,7 +674,7 @@
     },
     "1024": {
       "id": 1024,
-      "name": "爵士鹿",
+      "name": "魔法师尼尔森",
       "event_combine": [
         {
           "type_param1": 3359,
@@ -702,7 +702,7 @@
     },
     "1025": {
       "id": 1025,
-      "name": "荆棘电环",
+      "name": "研究员易西",
       "event_combine": [
         {
           "type_param1": 3197,
@@ -730,7 +730,7 @@
     },
     "1026": {
       "id": 1026,
-      "name": "寒音蛇",
+      "name": "老师捷比",
       "event_combine": [
         {
           "type_param1": 3226,
@@ -758,7 +758,7 @@
     },
     "1027": {
       "id": 1027,
-      "name": "友爱星飞",
+      "name": "易西/萌萌",
       "event_combine": [
         {
           "type_param1": 3229,
@@ -786,7 +786,7 @@
     },
     "1028": {
       "id": 1028,
-      "name": "尖嘴狐仙",
+      "name": "研究员易西/魔法师兰若那",
       "event_combine": [
         {
           "type_param1": 3077,
@@ -814,7 +814,7 @@
     },
     "1029": {
       "id": 1029,
-      "name": "火羽",
+      "name": "魔力之源",
       "event_combine": [
         {
           "type_param1": 3080,
@@ -842,7 +842,7 @@
     },
     "1030": {
       "id": 1030,
-      "name": "冰封怨灵",
+      "name": "魔力之源",
       "event_combine": [
         {
           "type_param1": 3334,
@@ -870,7 +870,7 @@
     },
     "1031": {
       "id": 1031,
-      "name": "小雪人",
+      "name": "魔力之源",
       "event_combine": [
         {
           "type_param1": 3531,
@@ -898,7 +898,7 @@
     },
     "1032": {
       "id": 1032,
-      "name": "裘洛",
+      "name": "",
       "event_combine": [
         {
           "type_param1": 3154,
@@ -926,7 +926,7 @@
     },
     "1033": {
       "id": 1033,
-      "name": "皇家狮鹫",
+      "name": "",
       "event_combine": [
         {
           "type_param1": 3469,
@@ -954,7 +954,7 @@
     },
     "1200": {
       "id": 1200,
-      "name": "火焰猿/爵士鹿",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 1,
       "event_combine": [
@@ -996,7 +996,7 @@
     },
     "1201": {
       "id": 1201,
-      "name": "雪巨人/雪影娃娃",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 1,
       "event_combine": [
@@ -1038,7 +1038,7 @@
     },
     "1202": {
       "id": 1202,
-      "name": "立方人/大古拉海象",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 1,
       "event_combine": [
@@ -1080,7 +1080,7 @@
     },
     "1203": {
       "id": 1203,
-      "name": "嘟嘟锅/古啦多",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 1,
       "event_combine": [
@@ -1122,7 +1122,7 @@
     },
     "1204": {
       "id": 1204,
-      "name": "尖嘴狐仙/贝古斯",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 1,
       "event_combine": [
@@ -1164,7 +1164,7 @@
     },
     "1205": {
       "id": 1205,
-      "name": "梦悠悠/伊兰亚龙",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 1,
       "event_combine": [
@@ -1206,7 +1206,7 @@
     },
     "1300": {
       "id": 1300,
-      "name": "火焰猿/爵士鹿/音速犬",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 1,
       "event_combine": [
@@ -1252,7 +1252,7 @@
     },
     "1301": {
       "id": 1301,
-      "name": "影狸/爵士鹿/翼龙",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 1,
       "event_combine": [
@@ -1298,7 +1298,7 @@
     },
     "1302": {
       "id": 1302,
-      "name": "格斗小五/健猫教练/铠甲虫",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 1,
       "event_combine": [
@@ -1344,7 +1344,7 @@
     },
     "1303": {
       "id": 1303,
-      "name": "爵士鹿/岚鸟/嘟嘟锅",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 1,
       "event_combine": [
@@ -1390,7 +1390,7 @@
     },
     "1304": {
       "id": 1304,
-      "name": "荆棘电环/火羽/皇家狮鹫",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 1,
       "event_combine": [
@@ -1436,7 +1436,7 @@
     },
     "1305": {
       "id": 1305,
-      "name": "小雪人/蓝珠天鹅/高脚鹬",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 1,
       "event_combine": [
@@ -1482,7 +1482,7 @@
     },
     "2000": {
       "id": 2000,
-      "name": "魔法师易西",
+      "name": "",
       "event_combine": [
         {
           "type": 3,
@@ -1528,7 +1528,7 @@
     },
     "2001": {
       "id": 2001,
-      "name": "魔法师萌萌",
+      "name": "",
       "event_combine": [
         {
           "type": 3,
@@ -1574,7 +1574,7 @@
     },
     "2002": {
       "id": 2002,
-      "name": "魔法师科林",
+      "name": "",
       "event_combine": [
         {
           "type": 3,
@@ -1620,7 +1620,7 @@
     },
     "2003": {
       "id": 2003,
-      "name": "魔法师尼尔森",
+      "name": "",
       "event_combine": [
         {
           "type": 3,
@@ -1666,7 +1666,7 @@
     },
     "2004": {
       "id": 2004,
-      "name": "魔法师路易斯",
+      "name": "",
       "event_combine": [
         {
           "type": 3,
@@ -1712,7 +1712,7 @@
     },
     "2005": {
       "id": 2005,
-      "name": "研究员易西",
+      "name": "",
       "event_combine": [
         {
           "type": 3,
@@ -1758,7 +1758,7 @@
     },
     "2006": {
       "id": 2006,
-      "name": "魔法师兰若那",
+      "name": "",
       "event_combine": [
         {
           "type": 3,
@@ -1804,7 +1804,7 @@
     },
     "2007": {
       "id": 2007,
-      "name": "老师捷比",
+      "name": "",
       "event_combine": [
         {
           "type": 3,
@@ -1850,7 +1850,7 @@
     },
     "2200": {
       "id": 2200,
-      "name": "科林/尼尔森",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 2,
       "event_combine": [
@@ -1903,7 +1903,7 @@
     },
     "2201": {
       "id": 2201,
-      "name": "易西/萌萌",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 2,
       "event_combine": [
@@ -1956,7 +1956,7 @@
     },
     "2202": {
       "id": 2202,
-      "name": "老师捷比/魔法师尼尔森",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 2,
       "event_combine": [
@@ -2009,7 +2009,7 @@
     },
     "2203": {
       "id": 2203,
-      "name": "研究员易西/魔法师兰若那",
+      "name": "",
       "pet_num": 1,
       "opponent_num": 2,
       "event_combine": [
@@ -2062,7 +2062,7 @@
     },
     "3000": {
       "id": 3000,
-      "name": "魔力之源",
+      "name": "",
       "icon": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/Interestplace_Campinglan_png.Interestplace_Campinglan_png'",
       "event_combine": [
         {
@@ -2076,7 +2076,7 @@
     },
     "3001": {
       "id": 3001,
-      "name": "魔力之源",
+      "name": "",
       "icon": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/Interestplace_Campinglan_png.Interestplace_Campinglan_png'",
       "event_combine": [
         {
@@ -2090,7 +2090,7 @@
     },
     "3002": {
       "id": 3002,
-      "name": "魔力之源",
+      "name": "",
       "icon": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/Interestplace_Campinglan_png.Interestplace_Campinglan_png'",
       "event_combine": [
         {
@@ -2104,7 +2104,7 @@
     },
     "3003": {
       "id": 3003,
-      "name": "魔力之源",
+      "name": "",
       "icon": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/Interestplace_Campinglan_png.Interestplace_Campinglan_png'",
       "event_combine": [
         {
@@ -2118,7 +2118,7 @@
     },
     "3004": {
       "id": 3004,
-      "name": "魔力之源",
+      "name": "",
       "icon": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/Interestplace_Campinglan_png.Interestplace_Campinglan_png'",
       "event_combine": [
         {
@@ -2132,7 +2132,7 @@
     },
     "3005": {
       "id": 3005,
-      "name": "魔力之源",
+      "name": "",
       "icon": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/Interestplace_Campinglan_png.Interestplace_Campinglan_png'",
       "event_combine": [
         {

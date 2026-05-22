@@ -28,7 +28,7 @@
     "preferred_attack_style": "Physical",
     "localized": {
         "zh": {
-            "name": "害羞球球"
+            "name": "蓝衣夜灵"
         }
     },
     "implemented": false,
@@ -43,7 +43,7 @@
         "id": 3054,
         "name": "lanyiyeling",
         "localized": {
-            "zh": "害羞球球"
+            "zh": "蓝衣夜灵"
         }
     },
     "trait": {
@@ -125,8 +125,8 @@
                         "evolution_conditions": [
                             "等级达到 28 级",
                             "消耗 10,000 洛克贝",
-                            "消耗 魔法石专用——魔法粉尘 ×5",
-                            "消耗 未知用途 —— 勇气信笺 ×1"
+                            "消耗 魔法粉尘 ×5",
+                            "消耗 勇气信笺 ×1"
                         ]
                     }
                 ],
@@ -141,7 +141,7 @@
                         "form": "default",
                         "localized": {
                             "zh": {
-                                "name": "害羞球球"
+                                "name": "蓝衣夜灵"
                             }
                         },
                         "is_leader_form": false,
@@ -162,8 +162,8 @@
                         "evolution_conditions": [
                             "等级达到 40 级",
                             "消耗 30,000 洛克贝",
-                            "消耗 魔法石专用——魔法石碎 ×10",
-                            "消耗 未知用途 —— 修行信笺 ×1"
+                            "消耗 魔法石碎（不投放） ×10",
+                            "消耗 修行信笺 ×1"
                         ]
                     }
                 ],
@@ -184,7 +184,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 15,
-        "classis_name": null,
+        "classis_name": "神奇类精灵",
         "handbook_area_ids": []
     },
     "catch_info": {

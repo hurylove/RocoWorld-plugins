@@ -55,7 +55,7 @@
     "move_pool": [
         {
             "id": 7030530,
-            "name": "应对！纤维化",
+            "name": "抽枝",
             "icon_id": "102038",
             "move_type": {
                 "id": 2,
@@ -66,14 +66,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "应对！纤维化",
-                    "description": "减伤80%，应对攻击：自己获得物防+70%。"
+                    "name": "抽枝",
+                    "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 4,
             "power": 90,
-            "description": "减伤80%，应对攻击：自己获得物防+70%。"
+            "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
         }
     ],
     "move_stones": [],
@@ -119,7 +119,7 @@
         "refresh_locations": [],
         "movement_type": null,
         "classis_id": 4,
-        "classis_name": null,
+        "classis_name": "植物类精灵",
         "handbook_area_ids": []
     },
     "catch_info": null,

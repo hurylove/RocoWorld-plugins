@@ -129,13 +129,19 @@
                         },
                         "is_leader_form": false,
                         "main_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        },
+                        "sub_type": {
                             "id": 14,
                             "name": "Cute",
                             "localized": {
                                 "zh": "萌"
                             }
                         },
-                        "sub_type": null,
                         "evolution_conditions": []
                     },
                     {
@@ -183,13 +189,19 @@
                         },
                         "is_leader_form": false,
                         "main_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        },
+                        "sub_type": {
                             "id": 14,
                             "name": "Cute",
                             "localized": {
                                 "zh": "萌"
                             }
                         },
-                        "sub_type": null,
                         "evolution_conditions": []
                     },
                     {
@@ -238,7 +250,7 @@
         ],
         "movement_type": "浮游",
         "classis_id": 6,
-        "classis_name": null,
+        "classis_name": "自然类精灵",
         "handbook_area_ids": []
     },
     "catch_info": {
@@ -246,68 +258,7 @@
         "catch_guarant_rate": 1700,
         "catch_ball_level": null
     },
-    "breeding": {
-        "id": 3597001,
-        "pet_id": 3597001,
-        "name": "水滴蛇",
-        "model_id": 3597001,
-        "hatch_data": 43200,
-        "weight_low": 788,
-        "weight_high": 1640,
-        "height_low": 23,
-        "height_high": 29,
-        "precious_egg_type": null,
-        "egg_base_glass_prob_array": [
-            8,
-            1125
-        ],
-        "egg_add_glass_prob_array": [
-            1,
-            50
-        ],
-        "is_contact_add_glass_prob": true,
-        "is_contact_add_shining_prob": null,
-        "variants": [
-            {
-                "id": 3597001,
-                "pet_id": 3597001,
-                "name": "水滴蛇",
-                "model_id": 3597001,
-                "hatch_data": 43200,
-                "weight_low": 788,
-                "weight_high": 1640,
-                "height_low": 23,
-                "height_high": 29,
-                "precious_egg_type": null,
-                "egg_base_glass_prob_array": [
-                    8,
-                    1125
-                ],
-                "egg_add_glass_prob_array": [
-                    1,
-                    50
-                ],
-                "is_contact_add_glass_prob": true,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 35970001,
-                "pet_id": 35970001,
-                "name": "水滴蛇",
-                "model_id": 3597001,
-                "hatch_data": 300,
-                "weight_low": 788,
-                "weight_high": 1640,
-                "height_low": 23,
-                "height_high": 29,
-                "precious_egg_type": 7,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            }
-        ]
-    },
+    "breeding": null,
     "breeding_profile": {
         "pet_base_id": 3723,
         "egg_groups": [

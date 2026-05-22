@@ -48,13 +48,13 @@
     },
     "trait": {
         "id": 7800030,
-        "name": "聚焰",
-        "description": "首领技，增加20%魔攻。",
+        "name": "能量衰退",
+        "description": "首领技，每个回合恢复能量，但恢复的能量逐渐减少。",
         "icon_id": "700025",
         "localized": {
             "zh": {
-                "name": "聚焰",
-                "description": "首领技，增加20%魔攻。"
+                "name": "能量衰退",
+                "description": "首领技，每个回合恢复能量，但恢复的能量逐渐减少。"
             }
         }
     },
@@ -140,7 +140,7 @@
         "refresh_locations": [],
         "movement_type": null,
         "classis_id": 7,
-        "classis_name": null,
+        "classis_name": "岩石类精灵",
         "handbook_area_ids": []
     },
     "catch_info": null,

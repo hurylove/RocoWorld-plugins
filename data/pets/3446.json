@@ -49,12 +49,12 @@
     "trait": {
         "id": 200121,
         "name": "迟滞",
-        "description": "在场时，敌方所有的技能能耗+2。",
+        "description": "每有一个其他的己方精灵携带一个系别的技能，威力+10",
         "icon_id": "200074",
         "localized": {
             "zh": {
                 "name": "迟滞",
-                "description": "在场时，敌方所有的技能能耗+2。"
+                "description": "每有一个其他的己方精灵携带一个系别的技能，威力+10"
             }
         }
     },
@@ -162,7 +162,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 6,
-        "classis_name": null,
+        "classis_name": "自然类精灵",
         "handbook_area_ids": []
     },
     "catch_info": {
@@ -171,13 +171,13 @@
         "catch_ball_level": null
     },
     "breeding": {
-        "id": 3445001,
-        "pet_id": 3445001,
-        "name": "雪毛角羚牛",
-        "model_id": 3445001,
+        "id": 3446001,
+        "pet_id": 3446001,
+        "name": "矿晶虫（首领血脉）",
+        "model_id": 3446001,
         "hatch_data": 72000,
-        "weight_low": 34825,
-        "weight_high": 43200,
+        "weight_low": 34125,
+        "weight_high": 41000,
         "height_low": 64,
         "height_high": 68,
         "precious_egg_type": null,
@@ -193,31 +193,9 @@
         "is_contact_add_shining_prob": null,
         "variants": [
             {
-                "id": 3445001,
-                "pet_id": 3445001,
-                "name": "雪毛角羚牛",
-                "model_id": 3445001,
-                "hatch_data": 72000,
-                "weight_low": 34825,
-                "weight_high": 43200,
-                "height_low": 64,
-                "height_high": 68,
-                "precious_egg_type": null,
-                "egg_base_glass_prob_array": [
-                    400,
-                    3125
-                ],
-                "egg_add_glass_prob_array": [
-                    2,
-                    113
-                ],
-                "is_contact_add_glass_prob": true,
-                "is_contact_add_shining_prob": null
-            },
-            {
                 "id": 3446001,
                 "pet_id": 3446001,
-                "name": "雪毛角羚牛",
+                "name": "矿晶虫（首领血脉）",
                 "model_id": 3446001,
                 "hatch_data": 72000,
                 "weight_low": 34125,
@@ -237,13 +215,13 @@
                 "is_contact_add_shining_prob": null
             },
             {
-                "id": 34450001,
-                "pet_id": 34450001,
-                "name": "雪毛角羚牛",
-                "model_id": 3445001,
+                "id": 34460001,
+                "pet_id": 34460001,
+                "name": "矿晶虫（首领血脉）",
+                "model_id": 3446001,
                 "hatch_data": 300,
-                "weight_low": 34825,
-                "weight_high": 43200,
+                "weight_low": 34125,
+                "weight_high": 41000,
                 "height_low": 64,
                 "height_high": 68,
                 "precious_egg_type": 7,
@@ -253,15 +231,15 @@
                 "is_contact_add_shining_prob": null
             },
             {
-                "id": 34460001,
-                "pet_id": 34460001,
+                "id": 37060001,
+                "pet_id": 37060001,
                 "name": "雪毛角羚牛",
-                "model_id": 3446001,
+                "model_id": 3706001,
                 "hatch_data": 300,
-                "weight_low": 34125,
-                "weight_high": 41000,
-                "height_low": 64,
-                "height_high": 68,
+                "weight_low": 1,
+                "weight_high": 10,
+                "height_low": 1,
+                "height_high": 10,
                 "precious_egg_type": 7,
                 "egg_base_glass_prob_array": null,
                 "egg_add_glass_prob_array": null,

@@ -3,67 +3,97 @@
     "3200001": {
       "id": 3200001,
       "entire_reward": 200000133,
-      "reward_des": "",
-      "fashion_bond_id": 1,
-      "required_part_num": 305055,
+      "reward_des": "100%%完成任意1个模块后获得：%s/%s",
+      "fashion_bond_id": 305055,
+      "required_part_num": 1,
       "part_group": [
+        {
+          "part_name": "",
+          "part_enum": 1,
+          "include_condition_id": [
+            1600072,
+            1600073,
+            1600074,
+            1600075,
+            1600076,
+            1600093
+          ]
+        },
         {
           "part_name": "",
           "part_enum": 2,
           "include_condition_id": [
-            3,
-            4,
-            5,
-            6
-          ]
+            1600087,
+            1600088,
+            1600089,
+            1600090,
+            1600091,
+            1600096
+          ],
+          "require_world_level": 1,
+          "unlock_tips": "20级晋升见习魔法生后解锁"
         },
         {
           "part_name": "",
           "part_enum": 3,
           "include_condition_id": [
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19,
-            20,
-            21
-          ],
-          "require_world_level": 23,
-          "unlock_tips": "\u0003\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0006\u0000\u0000\u0000"
+            1600082,
+            1600083,
+            1600084,
+            1600085,
+            1600086,
+            1600095
+          ]
         },
         {
           "part_name": "",
           "part_enum": 4,
           "include_condition_id": [
-            736,
-            256,
-            5632
-          ]
-        },
-        {
-          "part_name": "",
-          "part_enum": 5,
-          "include_condition_id": [
-            1016,
-            512,
-            5888,
-            256,
-            6144
+            1600077,
+            1600078,
+            1600079,
+            1600080,
+            1600081,
+            1600094
           ],
-          "require_world_level": 26,
-          "unlock_tips": "\u0007\u0000\u0000\u0000\b\u0000\u0000\u0000\t\u0000\u0000\u0000\n\u0000\u0000\u0000\u000b\u0000\u0000\u0000\f\u0000\u0000\u0000\r\u0000\u0000\u0000\u000e\u0000\u0000\u0000\u000f\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0012\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0014\u0000\u0000\u0000\u0015\u0000\u0000\u0000"
+          "require_world_level": 2,
+          "unlock_tips": "30级晋升精灵研究员后解锁"
         }
       ],
       "dialogue_group": [
+        {
+          "dialogue_text": ""
+        },
+        {
+          "dialogue_text": ""
+        },
+        {
+          "dialogue_text": ""
+        },
+        {
+          "dialogue_text": ""
+        },
+        {
+          "dialogue_text": ""
+        },
+        {
+          "dialogue_text": ""
+        },
+        {
+          "dialogue_text": ""
+        },
+        {
+          "dialogue_text": ""
+        },
+        {
+          "dialogue_text": ""
+        },
+        {
+          "dialogue_text": ""
+        },
+        {
+          "dialogue_text": ""
+        },
         {
           "dialogue_text": ""
         },

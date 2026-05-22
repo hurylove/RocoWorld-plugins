@@ -6,35 +6,35 @@
       "bonus_desc": "",
       "bonus_rule": 256,
       "bonus_pr": 256,
-      "param1": 256,
-      "param2": 512
+      "param1": 512,
+      "param2": 768
     },
     "512": {
       "id": 512,
       "bonus_type": 512,
       "bonus_desc": "",
-      "bonus_rule": 1024,
-      "bonus_pr": 512,
-      "param1": 1024,
-      "param2": 1280
+      "bonus_rule": 512,
+      "bonus_pr": 1024,
+      "param1": 1280,
+      "param2": 1536
     },
     "896": {
       "id": 896,
       "bonus_type": 512,
       "bonus_desc": "",
-      "bonus_rule": 1792,
-      "bonus_pr": 1024,
-      "param1": 512,
-      "param2": 2048
+      "bonus_rule": 1024,
+      "bonus_pr": 512,
+      "param1": 2048,
+      "param2": 2304
     },
     "1024": {
       "id": 1024,
       "bonus_type": 1024,
       "bonus_desc": "",
-      "bonus_rule": 2560,
+      "bonus_rule": 1280,
       "bonus_pr": 1280,
-      "param1": 1280,
-      "param2": 2816
+      "param1": 2816,
+      "param2": 3072
     },
     "1408": {
       "id": 1408,
@@ -47,10 +47,10 @@
       "id": 1536,
       "bonus_type": 512,
       "bonus_desc": "",
-      "bonus_rule": 3840,
-      "bonus_pr": 1792,
-      "param1": 768,
-      "param2": 4096
+      "bonus_rule": 1792,
+      "bonus_pr": 768,
+      "param1": 4096,
+      "param2": 1536
     }
   },
   "LocalizationStrings": {}

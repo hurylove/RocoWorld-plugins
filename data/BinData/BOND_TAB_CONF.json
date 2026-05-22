@@ -3,40 +3,40 @@
     "1": {
       "id": 1,
       "fashion_bond_band": 1,
-      "band_name": "",
-      "icon": "暮光歌剧",
-      "band_long_text": "",
-      "band_short_text": ""
+      "band_name": "暮光歌剧",
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/Frames/img_tab_normal_1_png.img_tab_normal_1_png'",
+      "band_long_text": "浪漫，古典，雅致",
+      "band_short_text": "原野空径"
     },
     "2": {
       "id": 2,
       "fashion_bond_band": 2,
-      "band_name": "",
-      "icon": "原野空径",
-      "band_long_text": "",
-      "band_short_text": ""
+      "band_name": "今日无大事，一切刚刚好。\n\n字迹很快被风吹散，世界在此刻深呼吸。",
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/Frames/img_tab_normal_2_png.img_tab_normal_2_png'",
+      "band_long_text": "昼梦信使",
+      "band_short_text": "天空某个云层中，有一家只在正午营业的“星辰慢递局”。慢递局的信使是来往的精灵，信件是无主的白日梦，精灵们日日研读信件，妄图用某种力量实现梦。"
     },
     "3": {
       "id": 3,
       "fashion_bond_band": 3,
-      "band_name": "",
-      "icon": "昼梦信使",
-      "band_long_text": "",
-      "band_short_text": ""
+      "band_name": "自由，幻想，梦境",
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/Frames/img_tab_normal_3_png.img_tab_normal_3_png'",
+      "band_long_text": "大魔法师们试图找出一个位于未知空间的孤立坐标，据说那里保存着所有愿望的原始注释。每当有人成功读取该点，因为遗忘而消失的愿望也会重新存在。",
+      "band_short_text": "复古，文明，考究"
     },
     "4": {
       "id": 4,
       "fashion_bond_band": 4,
-      "band_name": "",
-      "icon": "第五象限",
-      "band_long_text": "",
+      "band_name": "噪点裂变",
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/Frames/img_tab_normal_4_png.img_tab_normal_4_png'",
+      "band_long_text": "神秘，怪诞，反叛",
       "band_short_text": ""
     },
     "5": {
       "id": 5,
       "fashion_bond_band": 5,
       "band_name": "",
-      "icon": "噪点裂变",
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/Frames/img_tab_normal_5_png.img_tab_normal_5_png'",
       "band_long_text": "",
       "band_short_text": ""
     }

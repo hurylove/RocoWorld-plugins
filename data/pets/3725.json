@@ -129,13 +129,19 @@
                         },
                         "is_leader_form": false,
                         "main_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        },
+                        "sub_type": {
                             "id": 14,
                             "name": "Cute",
                             "localized": {
                                 "zh": "萌"
                             }
                         },
-                        "sub_type": null,
                         "evolution_conditions": []
                     },
                     {
@@ -183,13 +189,19 @@
                         },
                         "is_leader_form": false,
                         "main_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        },
+                        "sub_type": {
                             "id": 14,
                             "name": "Cute",
                             "localized": {
                                 "zh": "萌"
                             }
                         },
-                        "sub_type": null,
                         "evolution_conditions": []
                     },
                     {
@@ -238,7 +250,7 @@
         ],
         "movement_type": "浮游",
         "classis_id": 6,
-        "classis_name": null,
+        "classis_name": "自然类精灵",
         "handbook_area_ids": []
     },
     "catch_info": {

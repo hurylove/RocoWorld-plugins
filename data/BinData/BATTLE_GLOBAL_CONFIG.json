@@ -248,7 +248,7 @@
     "fantastic_ui1": {
       "id": 94,
       "key": "fantastic_ui1",
-      "str": ""
+      "str": "PrimaryDataAsset'/Game/NewRoco/Modules/System/PVPQualifier/Res/SeasonSkill/PDA_SeasonSkillUiConfiguration_S1.PDA_SeasonSkillUiConfiguration_S1'"
     },
     "common_nightmare_keep_pro": {
       "id": 95,
@@ -268,27 +268,27 @@
     "fantastic_ui2": {
       "id": 98,
       "key": "fantastic_ui2",
-      "str": ""
+      "str": "Texture2D'/Game/NewRoco/Modules/System/BattleUI/Raw/Texture/img_qiyijinngkuang.img_qiyijinngkuang'"
     },
     "fantastic_ui3": {
       "id": 99,
       "key": "fantastic_ui3",
-      "str": ""
+      "str": "Material'/Game/ArtRes/UI/Effects/Materials/MI_UI_LSC_02.MI_UI_LSC_02'"
     },
     "fantastic_ui4": {
       "id": 100,
       "key": "fantastic_ui4",
-      "str": ""
+      "str": "Material'/Game/ArtRes/UI/Effects/Materials/MI_UI_LSC_01.MI_UI_LSC_01'"
     },
     "fantastic_ui5": {
       "id": 101,
       "key": "fantastic_ui5",
-      "str": ""
+      "str": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_LSC_08.T_UI_LSC_08'"
     },
     "fantastic_ui6": {
       "id": 102,
       "key": "fantastic_ui6",
-      "str": ""
+      "str": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_LSC_07.T_UI_LSC_07'"
     },
     "character_max_energy": {
       "id": 121,
@@ -364,38 +364,38 @@
     "battle_entry_role_hp_low_text": {
       "id": 185,
       "key": "battle_entry_role_hp_low_text",
-      "str": "",
-      "is_loc": 7
+      "str": "干劲值低，危险！",
+      "is_loc": 1
     },
     "battle_process_role_hp_deduct_text": {
       "id": 186,
       "key": "battle_process_role_hp_deduct_text",
-      "str": "",
-      "is_loc": 8
+      "str": "%s力竭，你的魔力损耗了。",
+      "is_loc": 1
     },
     "battle_end_role_hp_deduct_text": {
       "id": 187,
       "key": "battle_end_role_hp_deduct_text",
-      "str": "",
-      "is_loc": 9
+      "str": "%s力竭，你的魔力损耗了。",
+      "is_loc": 1
     },
     "battle_process_opposite_hp_deduct_text": {
       "id": 188,
       "key": "battle_process_opposite_hp_deduct_text",
-      "str": "",
-      "is_loc": 10
+      "str": "%s力竭，对手的魔力损耗了。",
+      "is_loc": 1
     },
     "battle_end_opposite_hp_deduct_text": {
       "id": 189,
       "key": "battle_end_opposite_hp_deduct_text",
-      "str": "",
-      "is_loc": 11
+      "str": "%s力竭，对手的魔力损耗了。",
+      "is_loc": 1
     },
     "battle_people_hp_rules": {
       "id": 190,
       "key": "battle_people_hp_rules",
-      "str": "",
-      "is_loc": 12
+      "str": "注意：魔力耗尽的一方，战斗失败！",
+      "is_loc": 1
     },
     "enjoy_field_buff1": {
       "id": 191,
@@ -514,20 +514,20 @@
     "battle_skill_prediction_sihu": {
       "id": 213,
       "key": "battle_skill_prediction_sihu",
-      "str": "",
-      "is_loc": 13
+      "str": "%s似乎想要",
+      "is_loc": 1
     },
     "battle_skill_prediction_xiang": {
       "id": 214,
       "key": "battle_skill_prediction_xiang",
-      "str": "",
-      "is_loc": 14
+      "str": "向",
+      "is_loc": 1
     },
     "battle_skill_prediction_shifang": {
       "id": 215,
       "key": "battle_skill_prediction_shifang",
-      "str": "",
-      "is_loc": 15
+      "str": "释放%s技能。",
+      "is_loc": 1
     },
     "area_succeed_percent": {
       "id": 216,
@@ -579,8 +579,8 @@
     "battle_skill_prediction_sihubu": {
       "id": 224,
       "key": "battle_skill_prediction_sihubu",
-      "str": "",
-      "is_loc": 16
+      "str": "%s似乎不会使用",
+      "is_loc": 1
     },
     "sleep_buff_id": {
       "id": 225,
@@ -627,50 +627,50 @@
     "battle_npc_skill_prediction_sihu": {
       "id": 232,
       "key": "battle_npc_skill_prediction_sihu",
-      "str": "",
-      "is_loc": 17
+      "str": "%s说他打算使用",
+      "is_loc": 1
     },
     "battle_npc_skill_prediction_xiang": {
       "id": 233,
       "key": "battle_npc_skill_prediction_xiang",
-      "str": "",
-      "is_loc": 18
+      "str": "向",
+      "is_loc": 1
     },
     "battle_npc_skill_prediction_shifang": {
       "id": 234,
       "key": "battle_npc_skill_prediction_shifang",
-      "str": "",
-      "is_loc": 19
+      "str": "释放%s技能。",
+      "is_loc": 1
     },
     "battle_npc_skill_prediction_sihubu": {
       "id": 235,
       "key": "battle_npc_skill_prediction_sihubu",
-      "str": "",
-      "is_loc": 20
+      "str": "%s说他打算使用",
+      "is_loc": 1
     },
     "sleep_buff_loop": {
       "id": 236,
       "key": "sleep_buff_loop",
-      "str": "",
-      "is_loc": 21
+      "str": "%s正在睡觉。",
+      "is_loc": 1
     },
     "sleep_buff_end": {
       "id": 237,
       "key": "sleep_buff_end",
-      "str": "",
-      "is_loc": 22
+      "str": "%s醒来了！",
+      "is_loc": 1
     },
     "backstab_buff_loop": {
       "id": 238,
       "key": "backstab_buff_loop",
-      "str": "",
-      "is_loc": 23
+      "str": "%s正背对着你。",
+      "is_loc": 1
     },
     "backstab_buff_end": {
       "id": 239,
       "key": "backstab_buff_end",
-      "str": "",
-      "is_loc": 24
+      "str": "%s转了过来！",
+      "is_loc": 1
     },
     "drill_buff_id": {
       "id": 240,
@@ -681,14 +681,14 @@
     "drill_buff_loop": {
       "id": 241,
       "key": "drill_buff_loop",
-      "str": "",
-      "is_loc": 25
+      "str": "%s正埋着自己。",
+      "is_loc": 1
     },
     "drill_buff_end": {
       "id": 242,
       "key": "drill_buff_end",
-      "str": "",
-      "is_loc": 26
+      "str": "%s钻出了地面！",
+      "is_loc": 1
     },
     "static_buff_id": {
       "id": 243,
@@ -699,14 +699,14 @@
     "static_buff_loop": {
       "id": 244,
       "key": "static_buff_loop",
-      "str": "",
-      "is_loc": 27
+      "str": "%s正试图降低存在感。",
+      "is_loc": 1
     },
     "static_buff_end": {
       "id": 245,
       "key": "static_buff_end",
-      "str": "",
-      "is_loc": 28
+      "str": "%s放弃了伪装！",
+      "is_loc": 1
     },
     "mimic_buff_id": {
       "id": 246,
@@ -717,32 +717,32 @@
     "mimic_buff_loop": {
       "id": 247,
       "key": "mimic_buff_loop",
-      "str": "",
-      "is_loc": 29
+      "str": "看起来不像是精灵。",
+      "is_loc": 1
     },
     "mimic_buff_end": {
       "id": 248,
       "key": "mimic_buff_end",
-      "str": "",
-      "is_loc": 30
+      "str": "精灵解除了幻化！",
+      "is_loc": 1
     },
     "drill_forbid_catch": {
       "id": 249,
       "key": "drill_forbid_catch",
-      "str": "",
-      "is_loc": 31
+      "str": "%s正埋在地下，无法捕捉。",
+      "is_loc": 1
     },
     "static_forbid_catch": {
       "id": 250,
       "key": "static_forbid_catch",
-      "str": "",
-      "is_loc": 32
+      "str": "%s正藏着自己，无法捕捉。",
+      "is_loc": 1
     },
     "mimic_forbid_catch": {
       "id": 251,
       "key": "mimic_forbid_catch",
-      "str": "",
-      "is_loc": 33
+      "str": "看起来不像是精灵，无法捕捉。",
+      "is_loc": 1
     },
     "magic_stun_buff_id": {
       "id": 252,
@@ -753,14 +753,14 @@
     "magic_stun_loop": {
       "id": 253,
       "key": "magic_stun_loop",
-      "str": "",
-      "is_loc": 34
+      "str": "%s正头晕目眩。",
+      "is_loc": 1
     },
     "magic_stun_end": {
       "id": 254,
       "key": "magic_stun_end",
-      "str": "",
-      "is_loc": 35
+      "str": "%s清醒了！",
+      "is_loc": 1
     },
     "is_battle_defeat_get_energy": {
       "id": 255,
@@ -770,50 +770,50 @@
     "sleep_skill_tip": {
       "id": 256,
       "key": "sleep_skill_tip",
-      "str": "",
-      "is_loc": 36
+      "str": "%s睡得很香。",
+      "is_loc": 1
     },
     "drill_skill_tip": {
       "id": 257,
       "key": "drill_skill_tip",
-      "str": "",
-      "is_loc": 37
+      "str": "%s继续埋着。",
+      "is_loc": 1
     },
     "static_skill_tip": {
       "id": 258,
       "key": "static_skill_tip",
-      "str": "",
-      "is_loc": 38
+      "str": "%s一动不动。",
+      "is_loc": 1
     },
     "mimic_skill_tip": {
       "id": 259,
       "key": "mimic_skill_tip",
-      "str": "",
-      "is_loc": 39
+      "str": "这是什么精灵。",
+      "is_loc": 1
     },
     "battle_skill_prediction_energy": {
       "id": 260,
       "key": "battle_skill_prediction_energy",
-      "str": "",
-      "is_loc": 40
+      "str": "%d能量",
+      "is_loc": 1
     },
     "drill_forbid_props": {
       "id": 261,
       "key": "drill_forbid_props",
-      "str": "",
-      "is_loc": 41
+      "str": "%s正埋在地下，无法使用道具。",
+      "is_loc": 1
     },
     "static_forbid_props": {
       "id": 262,
       "key": "static_forbid_props",
-      "str": "",
-      "is_loc": 42
+      "str": "%s正藏着自己，无法使用道具。",
+      "is_loc": 1
     },
     "mimic_forbid_props": {
       "id": 263,
       "key": "mimic_forbid_props",
-      "str": "",
-      "is_loc": 43
+      "str": "看起来不像是精灵，无法使用道具。",
+      "is_loc": 1
     },
     "pet_word_hint": {
       "id": 264,
@@ -866,20 +866,20 @@
     "thunder_buff_loop": {
       "id": 272,
       "key": "thunder_buff_loop",
-      "str": "",
-      "is_loc": 44
+      "str": "%s正在观察。",
+      "is_loc": 1
     },
     "diving_buff_loop": {
       "id": 273,
       "key": "diving_buff_loop",
-      "str": "",
-      "is_loc": 45
+      "str": "%s正在观察。",
+      "is_loc": 1
     },
     "trail_buff_loop": {
       "id": 274,
       "key": "trail_buff_loop",
-      "str": "",
-      "is_loc": 46
+      "str": "%s有些害怕。",
+      "is_loc": 1
     },
     "notify_radius": {
       "id": 275,
@@ -1020,14 +1020,14 @@
     "player_hit_npc_world_animation": {
       "id": 296,
       "key": "player_hit_npc_world_animation",
-      "str": "",
-      "is_loc": 47
+      "str": "Hit2",
+      "is_loc": 2
     },
     "player_hit_npc_closeup_animation": {
       "id": 297,
       "key": "player_hit_npc_closeup_animation",
-      "str": "",
-      "is_loc": 48
+      "str": "Shock",
+      "is_loc": 2
     },
     "player_hit_skip_throw_ball": {
       "id": 298,
@@ -1037,14 +1037,14 @@
     "npc_hit_player_world_animation": {
       "id": 299,
       "key": "npc_hit_player_world_animation",
-      "str": "",
-      "is_loc": 49
+      "str": "HitLightBR",
+      "is_loc": 2
     },
     "npc_hit_npc_closeup_animation": {
       "id": 300,
       "key": "npc_hit_npc_closeup_animation",
-      "str": "",
-      "is_loc": 50
+      "str": "Show",
+      "is_loc": 2
     },
     "npc_hit_skip_throw_ball": {
       "id": 301,
@@ -1055,20 +1055,20 @@
     "each_hit_npc_closeup_animation": {
       "id": 302,
       "key": "each_hit_npc_closeup_animation",
-      "str": "",
-      "is_loc": 51
+      "str": "Anger",
+      "is_loc": 2
     },
     "each_hit_npc_world_animation": {
       "id": 303,
       "key": "each_hit_npc_world_animation",
-      "str": "",
-      "is_loc": 52
+      "str": "Hit2",
+      "is_loc": 2
     },
     "each_hit_player_world_animation": {
       "id": 304,
       "key": "each_hit_player_world_animation",
-      "str": "",
-      "is_loc": 53
+      "str": "HitLightFR",
+      "is_loc": 2
     },
     "each_hit_skip_throw_ball": {
       "id": 305,
@@ -1102,20 +1102,20 @@
     "low_catch_prob_show": {
       "id": 310,
       "key": "low_catch_prob_show",
-      "str": "",
-      "is_loc": 54
+      "str": "Anger",
+      "is_loc": 2
     },
     "middle_catch_prob_show": {
       "id": 311,
       "key": "middle_catch_prob_show",
-      "str": "",
-      "is_loc": 55
+      "str": "Alert",
+      "is_loc": 2
     },
     "high_catch_prob_show": {
       "id": 312,
       "key": "high_catch_prob_show",
-      "str": "",
-      "is_loc": 56
+      "str": "Show",
+      "is_loc": 2
     },
     "worldcombat_battle_dizzy_buff0": {
       "id": 313,
@@ -1137,20 +1137,20 @@
     "1vn_battle_cheer_pet_enter": {
       "id": 315,
       "key": "1vn_battle_cheer_pet_enter",
-      "str": "",
-      "is_loc": 57
+      "str": "围攻的%s登场了！",
+      "is_loc": 1
     },
     "1vn_battle_pet_join_1vn": {
       "id": 316,
       "key": "1vn_battle_pet_join_1vn",
-      "str": "",
-      "is_loc": 58
+      "str": "%s加入了战斗",
+      "is_loc": 1
     },
     "1vn_battle_cheer_pet_escape": {
       "id": 317,
       "key": "1vn_battle_cheer_pet_escape",
-      "str": "",
-      "is_loc": 59
+      "str": "%s逃离了战斗",
+      "is_loc": 1
     },
     "worldcombat_battle_dizzy_buff3": {
       "id": 318,
@@ -1289,8 +1289,8 @@
     "battle_map_local_blood": {
       "id": 337,
       "key": "battle_map_local_blood",
-      "str": "",
-      "is_loc": 60
+      "str": "/Game/ArtRes/Level/Editor/BigWorld/L_Bigworld_01/Arena_Levels/L_Arena_XMTZ_02",
+      "is_loc": 2
     },
     "blood_pr_low": {
       "id": 338,
@@ -1440,8 +1440,8 @@
     "pvp_rank_stage_bgm": {
       "id": 352,
       "key": "pvp_rank_stage_bgm",
-      "str": "",
-      "is_loc": 61
+      "str": "Battle\\;Battle\\;Battle_Type\\;Boss\\;Boss\\;PVP\\;Battle_Stage\\;Stage_1;Battle\\;Battle\\;Battle_Type\\;Boss\\;Boss\\;PVP\\;Battle_Stage\\;Stage_2",
+      "is_loc": 2
     },
     "fantastic_blood_pro": {
       "id": 353,
@@ -1565,20 +1565,20 @@
     "battle_process_assist_hp_deduct_text": {
       "id": 408,
       "key": "battle_process_assist_hp_deduct_text",
-      "str": "",
-      "is_loc": 62
+      "str": "%s力竭，队友的魔力损耗了。",
+      "is_loc": 1
     },
     "battle_end_assist_hp_deduct_text": {
       "id": 409,
       "key": "battle_end_assist_hp_deduct_text",
-      "str": "",
-      "is_loc": 63
+      "str": "%s力竭，队友的魔力损耗了。",
+      "is_loc": 1
     },
     "1vn_escape_res": {
       "id": 410,
       "key": "1vn_escape_res",
-      "str": "",
-      "is_loc": 64
+      "str": "/Game/ArtRes/Effects/G6Skill/Jineng/G6_Nor_TP_20480090",
+      "is_loc": 1
     },
     "catch_pet_recover_playermagic_time": {
       "id": 411,
@@ -1613,44 +1613,44 @@
     "syn_battle_waiting_tip": {
       "id": 416,
       "key": "syn_battle_waiting_tip",
-      "str": "",
-      "is_loc": 65
+      "str": "等待同伴思考中......",
+      "is_loc": 1
     },
     "syn_battle_catch_tip": {
       "id": 417,
       "key": "syn_battle_catch_tip",
-      "str": "",
-      "is_loc": 66
+      "str": "%s扔出了%s！",
+      "is_loc": 1
     },
     "syn_battle_other_player_flee_tip": {
       "id": 418,
       "key": "syn_battle_other_player_flee_tip",
-      "str": "",
-      "is_loc": 67
+      "str": "%s离开了战斗......",
+      "is_loc": 1
     },
     "watch_to_assist_not_friend_tip": {
       "id": 419,
       "key": "watch_to_assist_not_friend_tip",
-      "str": "",
-      "is_loc": 68
+      "str": "添加该玩家为好友后才能助战",
+      "is_loc": 1
     },
     "watch_to_assist_player_is_full_tip": {
       "id": 420,
       "key": "watch_to_assist_player_is_full_tip",
-      "str": "",
-      "is_loc": 69
+      "str": "可参加战斗人数已满",
+      "is_loc": 1
     },
     "watch_to_assist_battle_tip": {
       "id": 421,
       "key": "watch_to_assist_battle_tip",
-      "str": "",
-      "is_loc": 70
+      "str": "正在等待出手时机...",
+      "is_loc": 1
     },
     "assist_battle_tip": {
       "id": 422,
       "key": "assist_battle_tip",
-      "str": "",
-      "is_loc": 71
+      "str": "%s前来助战",
+      "is_loc": 1
     },
     "syn_battle_end_waiting_time": {
       "id": 423,
@@ -1661,14 +1661,14 @@
     "syn_battle_choose_other_player_pet": {
       "id": 424,
       "key": "syn_battle_choose_other_player_pet",
-      "str": "",
-      "is_loc": 72
+      "str": "不能选择更换同伴的精灵",
+      "is_loc": 1
     },
     "observed_battle_end_tip": {
       "id": 425,
       "key": "observed_battle_end_tip",
-      "str": "",
-      "is_loc": 73
+      "str": "观战的战斗已结束",
+      "is_loc": 1
     },
     "catch_bigworld_low_1": {
       "id": 500,
@@ -1733,116 +1733,116 @@
     "battle_solo_title": {
       "id": 1001,
       "key": "battle_solo_title",
-      "str": "",
-      "is_loc": 74
+      "str": "匹配模式",
+      "is_loc": 1
     },
     "battle_pair_title": {
       "id": 1002,
       "key": "battle_pair_title",
-      "str": "",
-      "is_loc": 75
+      "str": "人机模式",
+      "is_loc": 1
     },
     "battle_practice_title": {
       "id": 1003,
       "key": "battle_practice_title",
-      "str": "",
-      "is_loc": 76
+      "str": "训练模式",
+      "is_loc": 1
     },
     "battle_solo_picture_big": {
       "id": 1004,
       "key": "battle_solo_picture_big",
-      "str": "",
-      "is_loc": 77
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/img_zhaopian.img_zhaopian'",
+      "is_loc": 2
     },
     "battle_pair_picture_big": {
       "id": 1005,
       "key": "battle_pair_picture_big",
-      "str": "",
-      "is_loc": 78
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/img_zhaopian1.img_zhaopian1'",
+      "is_loc": 2
     },
     "battle_practice_picture_big": {
       "id": 1006,
       "key": "battle_practice_picture_big",
-      "str": "",
-      "is_loc": 79
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/img_zhaopian2.img_zhaopian2'",
+      "is_loc": 2
     },
     "battle_solo_picture_0": {
       "id": 1007,
       "key": "battle_solo_picture_0",
-      "str": "",
-      "is_loc": 80
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Formation/Frames/img_moshi3_png.img_moshi3_png'",
+      "is_loc": 2
     },
     "battle_pair_picture_0": {
       "id": 1008,
       "key": "battle_pair_picture_0",
-      "str": "",
-      "is_loc": 81
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Formation/Frames/img_moshi1_png.img_moshi1_png'",
+      "is_loc": 2
     },
     "battle_practice_picture_0": {
       "id": 1009,
       "key": "battle_practice_picture_0",
-      "str": "",
-      "is_loc": 82
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Formation/Frames/img_moshi2_png.img_moshi2_png'",
+      "is_loc": 2
     },
     "battle_solo_picture_1": {
       "id": 1010,
       "key": "battle_solo_picture_1",
-      "str": "",
-      "is_loc": 83
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Formation/Frames/img_moshi6_png.img_moshi6_png'",
+      "is_loc": 2
     },
     "battle_pair_picture_1": {
       "id": 1011,
       "key": "battle_pair_picture_1",
-      "str": "",
-      "is_loc": 84
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Formation/Frames/img_moshi4_png.img_moshi4_png'",
+      "is_loc": 2
     },
     "battle_practice_picture_1": {
       "id": 1012,
       "key": "battle_practice_picture_1",
-      "str": "",
-      "is_loc": 85
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Formation/Frames/img_moshi5_png.img_moshi5_png'",
+      "is_loc": 2
     },
     "battle_solo_depict": {
       "id": 1013,
       "key": "battle_solo_depict",
-      "str": "",
-      "is_loc": 86
+      "str": "匹配模式下每方训练师共有4点魔力，精灵被击败会损耗1点魔力。\n对方的每点魔力损耗会让己方获得1制胜点数。先让对方全部魔力损耗的训练师获得胜利！",
+      "is_loc": 1
     },
     "battle_pair_depict": {
       "id": 1014,
       "key": "battle_pair_depict",
-      "str": "",
-      "is_loc": 87
+      "str": "人机模式下的对战规则和匹配模式完全一致，在模拟实战中锻炼对战技巧！",
+      "is_loc": 1
     },
     "battle_practice_depict": {
       "id": 1015,
       "key": "battle_practice_depict",
-      "str": "",
-      "is_loc": 88
+      "str": "在训练模式中，自由尝试队伍搭配与精灵技能选择，探索最合理的对战队伍配置。",
+      "is_loc": 1
     },
     "battle_solo_button": {
       "id": 1016,
       "key": "battle_solo_button",
-      "str": "",
-      "is_loc": 89
+      "str": "开始对战",
+      "is_loc": 1
     },
     "battle_pair_button": {
       "id": 1017,
       "key": "battle_pair_button",
-      "str": "",
-      "is_loc": 90
+      "str": "开始对战",
+      "is_loc": 1
     },
     "battle_practice_button": {
       "id": 1018,
       "key": "battle_practice_button",
-      "str": "",
-      "is_loc": 91
+      "str": "开始训练",
+      "is_loc": 1
     },
     "battle_double_depict": {
       "id": 1019,
       "key": "battle_double_depict",
-      "str": "",
-      "is_loc": 92
+      "str": "双精灵模式下每方训练师共有4点魔力，并且可以同时上场两只精灵！\n对方的每点魔力损耗会让己方获得1制胜点数。先让对方全部魔力损耗的训练师获得胜利！",
+      "is_loc": 1
     },
     "battle_pvp_level": {
       "id": 1020,
@@ -1995,14 +1995,14 @@
     "around_npc_animation_name2": {
       "id": 1114,
       "key": "around_npc_animation_name2",
-      "str": "",
-      "is_loc": 93
+      "str": "Cheerup1",
+      "is_loc": 2
     },
     "around_npc_animation_name3": {
       "id": 1115,
       "key": "around_npc_animation_name3",
-      "str": "",
-      "is_loc": 94
+      "str": "Cheerup2",
+      "is_loc": 2
     },
     "around_npc_animation_battle_actime_random_deviation": {
       "id": 1116,
@@ -2019,8 +2019,8 @@
     "around_player_animation_name": {
       "id": 1118,
       "key": "around_player_animation_name",
-      "str": "",
-      "is_loc": 95
+      "str": "RolePlayThink;RolePlayCommand;RolePlayShow;Fig;Relax;HZRelax",
+      "is_loc": 2
     },
     "around_player_animation_time interval": {
       "id": 1119,
@@ -2049,38 +2049,38 @@
     "battle_trainer_emoji1": {
       "id": 1301,
       "key": "battle_trainer_emoji1",
-      "str": "",
-      "is_loc": 96
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/img_biaoqing2.img_biaoqing2'",
+      "is_loc": 2
     },
     "battle_trainer_emoji2": {
       "id": 1302,
       "key": "battle_trainer_emoji2",
-      "str": "",
-      "is_loc": 97
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/img_biaoqing5.img_biaoqing5'",
+      "is_loc": 2
     },
     "battle_trainer_emoji3": {
       "id": 1303,
       "key": "battle_trainer_emoji3",
-      "str": "",
-      "is_loc": 98
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/img_biaoqing6.img_biaoqing6'",
+      "is_loc": 2
     },
     "battle_trainer_action_boy_1": {
       "id": 1304,
       "key": "battle_trainer_action_boy_1",
-      "str": "",
-      "is_loc": 99
+      "str": "Happy1",
+      "is_loc": 2
     },
     "battle_trainer_action_boy_2": {
       "id": 1305,
       "key": "battle_trainer_action_boy_2",
-      "str": "",
-      "is_loc": 100
+      "str": "Fear1",
+      "is_loc": 2
     },
     "battle_trainer_action_boy_3": {
       "id": 1306,
       "key": "battle_trainer_action_boy_3",
-      "str": "",
-      "is_loc": 101
+      "str": "True",
+      "is_loc": 2
     },
     "is_battle_catch_need_round": {
       "id": 1307,
@@ -2259,8 +2259,8 @@
     "visit_catch_number_battle_notice": {
       "id": 1334,
       "key": "visit_catch_number_battle_notice",
-      "str": "",
-      "is_loc": 102
+      "str": "互访捕捉次数:%s",
+      "is_loc": 1
     },
     "pvp_match_award_vitem_id": {
       "id": 1335,
@@ -2358,62 +2358,62 @@
     "pvp_team_name": {
       "id": 1350,
       "key": "pvp_team_name",
-      "str": "",
-      "is_loc": 103
+      "str": "队伍%d",
+      "is_loc": 1
     },
     "pvp_team_magic_nameless": {
       "id": 1351,
       "key": "pvp_team_magic_nameless",
-      "str": "",
-      "is_loc": 104
+      "str": "无共鸣魔法",
+      "is_loc": 1
     },
     "pvp_team_same_pet": {
       "id": 1352,
       "key": "pvp_team_same_pet",
-      "str": "",
-      "is_loc": 105
+      "str": "无法上阵同进化链的精灵",
+      "is_loc": 1
     },
     "pvp_team_name_set": {
       "id": 1353,
       "key": "pvp_team_name_set",
-      "str": "",
-      "is_loc": 106
+      "str": "编辑小队名称",
+      "is_loc": 1
     },
     "pvp_team_none": {
       "id": 1354,
       "key": "pvp_team_none",
-      "str": "",
-      "is_loc": 107
+      "str": "请选择需要上阵的精灵",
+      "is_loc": 1
     },
     "pvp_team_exceed_num": {
       "id": 1355,
       "key": "pvp_team_exceed_num",
-      "str": "",
-      "is_loc": 108
+      "str": "已携带超过6只精灵",
+      "is_loc": 1
     },
     "pvp_team_num_none": {
       "id": 1356,
       "key": "pvp_team_num_none",
-      "str": "",
-      "is_loc": 109
+      "str": "队伍中没有精灵",
+      "is_loc": 1
     },
     "pvp_refresh_type": {
       "id": 1357,
       "key": "pvp_refresh_type",
-      "str": "",
-      "is_loc": 110
+      "str": "TRE_DAILY_FROM",
+      "is_loc": 2
     },
     "pvp_refresh_reset_param": {
       "id": 1358,
       "key": "pvp_refresh_reset_param",
-      "str": "",
-      "is_loc": 111
+      "str": "7 0:00:00",
+      "is_loc": 2
     },
     "pvp_refresh_reset_param2": {
       "id": 1359,
       "key": "pvp_refresh_reset_param2",
-      "str": "",
-      "is_loc": 112
+      "str": "2024-11-04 4:00:00",
+      "is_loc": 2
     },
     "pvp_score_max": {
       "id": 1360,
@@ -2424,14 +2424,14 @@
     "pvp_score_localization1": {
       "id": 1361,
       "key": "pvp_score_localization1",
-      "str": "",
-      "is_loc": 113
+      "str": "本周",
+      "is_loc": 1
     },
     "pvp_score_localization2": {
       "id": 1362,
       "key": "pvp_score_localization2",
-      "str": "",
-      "is_loc": 114
+      "str": "本周(已满)",
+      "is_loc": 1
     },
     "pvp_battle_again_num": {
       "id": 1363,
@@ -2442,38 +2442,38 @@
     "pvp_juezhan": {
       "id": 1364,
       "key": "pvp_juezhan",
-      "str": "",
-      "is_loc": 115
+      "str": "Sources/ArtResources/Release/Effects/G6Skill/PVP/PVP_Fight_JueZhan.uasset",
+      "is_loc": 2
     },
     "pvp_liansha": {
       "id": 1365,
       "key": "pvp_liansha",
-      "str": "",
-      "is_loc": 116
+      "str": "Sources/ArtResources/Release/Effects/G6Skill/PVP/PVP_Fight_LianSha.uasset",
+      "is_loc": 2
     },
     "pvp_wansha": {
       "id": 1366,
       "key": "pvp_wansha",
-      "str": "",
-      "is_loc": 117
+      "str": "Sources/ArtResources/Release/Effects/G6Skill/PVP/PVP_Fight_ WanSha.uasset",
+      "is_loc": 2
     },
     "pvp_yingdui": {
       "id": 1367,
       "key": "pvp_yingdui",
-      "str": "",
-      "is_loc": 118
+      "str": "Sources/ArtResources/Release/Effects/G6Skill/PVP/PVP_Fight_ YingDui.uasset",
+      "is_loc": 2
     },
     "pvp_team_pet1": {
       "id": 1368,
       "key": "pvp_team_pet1",
-      "str": "",
-      "is_loc": 119
+      "str": "精灵编队",
+      "is_loc": 1
     },
     "pvp_battle_again_max_tip": {
       "id": 1369,
       "key": "pvp_battle_again_max_tip",
-      "str": "",
-      "is_loc": 120
+      "str": "已达切磋次数上限，无法再次切磋",
+      "is_loc": 1
     },
     "a1_finalbattle_prologue_target_camera": {
       "id": 1387,
@@ -2527,26 +2527,26 @@
     "a1_finalbattle_summon_failed": {
       "id": 1394,
       "key": "a1_finalbattle_summon_failed",
-      "str": "",
-      "is_loc": 121
+      "str": "确定是这个名字吗？再想一想吧。",
+      "is_loc": 1
     },
     "a1_finalbattle_autosummon_tips": {
       "id": 1395,
       "key": "a1_finalbattle_autosummon_tips",
-      "str": "",
-      "is_loc": 122
+      "str": "错误次数过多，已为您选择一只。",
+      "is_loc": 1
     },
     "a1_finalbattle_summonbox_text": {
       "id": 1396,
       "key": "a1_finalbattle_summonbox_text",
-      "str": "",
-      "is_loc": 123
+      "str": "呼唤你的精灵",
+      "is_loc": 1
     },
     "a1_finalbattle_sequence_arthur_path": {
       "id": 1397,
       "key": "a1_finalbattle_sequence_arthur_path",
-      "str": "",
-      "is_loc": 124
+      "str": "/Game/ArtRes/AnimSequence/Sequence/CG/QYT_Layout/JQ08_CS06/JQ08_CS06_Master.JQ08_CS06_Master",
+      "is_loc": 2
     },
     "a1_finalbattle_postsummon_dialogue_ID": {
       "id": 1398,
@@ -2620,128 +2620,128 @@
     "pvp_rank_character1": {
       "id": 1409,
       "key": "pvp_rank_character1",
-      "str": "",
-      "is_loc": 125
+      "str": "队伍编辑",
+      "is_loc": 1
     },
     "pvp_rank_character2": {
       "id": 1410,
       "key": "pvp_rank_character2",
-      "str": "",
-      "is_loc": 126
+      "str": "队伍中没有精灵",
+      "is_loc": 1
     },
     "pvp_rank_character3": {
       "id": 1411,
       "key": "pvp_rank_character3",
-      "str": "",
-      "is_loc": 127
+      "str": "结算中无法进行调整",
+      "is_loc": 1
     },
     "pvp_tips1": {
       "id": 1412,
       "key": "pvp_tips1",
-      "str": "",
-      "is_loc": 128
+      "str": "目前还没有共鸣魔法可以装备",
+      "is_loc": 1
     },
     "pvp_rank_character4": {
       "id": 1413,
       "key": "pvp_rank_character4",
-      "str": "",
-      "is_loc": 129
+      "str": "%d场胜利",
+      "is_loc": 1
     },
     "pvp_rank_character5": {
       "id": 1414,
       "key": "pvp_rank_character5",
-      "str": "",
-      "is_loc": 130
+      "str": "第%d名",
+      "is_loc": 1
     },
     "pvp_rank_character6": {
       "id": 1415,
       "key": "pvp_rank_character6",
-      "str": "",
-      "is_loc": 131
+      "str": "<span color=\"#d76c07\">胜利  %d</>  失败  %d",
+      "is_loc": 1
     },
     "pvp_rank_character7": {
       "id": 1416,
       "key": "pvp_rank_character7",
-      "str": "",
-      "is_loc": 132
+      "str": "本周胜场（含观战）  <span color=\"#D56C1F\">%d/%d</>， 挑战刷新时间  <span color=\"#D56C1F\">%s</>",
+      "is_loc": 1
     },
     "pvp_rank_character8": {
       "id": 1417,
       "key": "pvp_rank_character8",
-      "str": "",
-      "is_loc": 133
+      "str": "赛季倒计时:%s",
+      "is_loc": 1
     },
     "pvp_rank_character9": {
       "id": 1418,
       "key": "pvp_rank_character9",
-      "str": "",
-      "is_loc": 134
+      "str": "%s",
+      "is_loc": 1
     },
     "pvp_rank_character10": {
       "id": 1419,
       "key": "pvp_rank_character10",
-      "str": "",
-      "is_loc": 135
+      "str": "结算中",
+      "is_loc": 1
     },
     "pvp_rank_character11": {
       "id": 1420,
       "key": "pvp_rank_character11",
-      "str": "",
-      "is_loc": 136
+      "str": "快速编队",
+      "is_loc": 1
     },
     "pvp_rank_character12": {
       "id": 1421,
       "key": "pvp_rank_character12",
-      "str": "",
-      "is_loc": 137
+      "str": "剩余%s",
+      "is_loc": 1
     },
     "pvp_rank_character13": {
       "id": 1422,
       "key": "pvp_rank_character13",
-      "str": "",
-      "is_loc": 138
+      "str": "您不会在此段位降级",
+      "is_loc": 1
     },
     "pvp_rank_character14": {
       "id": 1423,
       "key": "pvp_rank_character14",
-      "str": "",
-      "is_loc": 139
+      "str": "结算中，无法进行对战",
+      "is_loc": 1
     },
     "pvp_character1": {
       "id": 1424,
       "key": "pvp_character1",
-      "str": "",
-      "is_loc": 140
+      "str": "本周获得点数",
+      "is_loc": 1
     },
     "pvp_rank_character15": {
       "id": 1425,
       "key": "pvp_rank_character15",
-      "str": "",
-      "is_loc": 141
+      "str": "对方正在加载中(%s秒）",
+      "is_loc": 1
     },
     "pvp_rank_character16": {
       "id": 1426,
       "key": "pvp_rank_character16",
-      "str": "",
-      "is_loc": 142
+      "str": "快捷编辑",
+      "is_loc": 1
     },
     "pvp_rank_character17": {
       "id": 1427,
       "key": "pvp_rank_character17",
-      "str": "",
-      "is_loc": 143
+      "str": "保存编辑",
+      "is_loc": 1
     },
     "pvp_rank_character18": {
       "id": 1428,
       "key": "pvp_rank_character18",
-      "str": "",
-      "is_loc": 144
+      "str": "随机精灵",
+      "is_loc": 1
     },
     "pvp_rank_character19": {
       "id": 1429,
       "key": "pvp_rank_character19",
-      "str": "",
-      "is_loc": 145
+      "str": "队伍中有精灵携带奇异技能，将无法进行匹配",
+      "is_loc": 1
     },
     "pvp_rank_dashi_initial_scroe": {
       "id": 1430,
@@ -2884,14 +2884,14 @@
     "pvp_para4": {
       "id": 1447,
       "key": "pvp_para4",
-      "str": "",
-      "is_loc": 146
+      "str": "5 04:00:00",
+      "is_loc": 2
     },
     "pvp_para5": {
       "id": 1448,
       "key": "pvp_para5",
-      "str": "",
-      "is_loc": 147
+      "str": "1 04:00:00",
+      "is_loc": 2
     },
     "pvp_rank_battle1": {
       "id": 1452,
@@ -2997,14 +2997,14 @@
     "pvp_rank_week_reward_time1": {
       "id": 1467,
       "key": "pvp_rank_week_reward_time1",
-      "str": "",
-      "is_loc": 148
+      "str": "7 0:00:00",
+      "is_loc": 2
     },
     "pvp_rank_week_reward_time2": {
       "id": 1468,
       "key": "pvp_rank_week_reward_time2",
-      "str": "",
-      "is_loc": 149
+      "str": "2024-11-04 4:00:00",
+      "is_loc": 2
     },
     "pvp_rank_battle_mappoint_random": {
       "id": 1469,
@@ -3069,8 +3069,8 @@
     "pvp_rank_week_reward_time3": {
       "id": 1475,
       "key": "pvp_rank_week_reward_time3",
-      "str": "",
-      "is_loc": 150
+      "str": "TRE_DAILY_FROM",
+      "is_loc": 2
     },
     "pvp_balance_effort_grow_level": {
       "id": 1476,
@@ -3081,62 +3081,62 @@
     "pvp_AI_pet": {
       "id": 1477,
       "key": "pvp_AI_pet",
-      "str": "",
-      "is_loc": 151
+      "str": "MFBT_BattleAI_fulijuAI",
+      "is_loc": 2
     },
     "pvp_AI_NPC": {
       "id": 1478,
       "key": "pvp_AI_NPC",
-      "str": "",
-      "is_loc": 152
+      "str": "MFBT_fulijunpcAI",
+      "is_loc": 2
     },
     "pvp_battlewatch_character1": {
       "id": 1479,
       "key": "pvp_battlewatch_character1",
-      "str": "",
-      "is_loc": 153
+      "str": "退出",
+      "is_loc": 1
     },
     "pvp_battlewatch_character2": {
       "id": 1480,
       "key": "pvp_battlewatch_character2",
-      "str": "",
-      "is_loc": 154
+      "str": "确定要退出观战吗？",
+      "is_loc": 1
     },
     "pvp_battlewatch_character3": {
       "id": 1481,
       "key": "pvp_battlewatch_character3",
-      "str": "",
-      "is_loc": 155
+      "str": "你已被移出观战模式",
+      "is_loc": 1
     },
     "pvp_battlewatch_character4": {
       "id": 1482,
       "key": "pvp_battlewatch_character4",
-      "str": "",
-      "is_loc": 156
+      "str": "移出观战",
+      "is_loc": 1
     },
     "pvp_battlewatch_character5": {
       "id": 1483,
       "key": "pvp_battlewatch_character5",
-      "str": "",
-      "is_loc": 157
+      "str": "你确定要将好友 %s 移出观战吗？",
+      "is_loc": 1
     },
     "pvp_battlewatch_character6": {
       "id": 1484,
       "key": "pvp_battlewatch_character6",
-      "str": "",
-      "is_loc": 158
+      "str": "正在进行[%s]",
+      "is_loc": 1
     },
     "pvp_battlewatch_character7": {
       "id": 1485,
       "key": "pvp_battlewatch_character7",
-      "str": "",
-      "is_loc": 159
+      "str": "<span color=\"#d76c07\">%s</> 正在观看你的对战",
+      "is_loc": 1
     },
     "pvp_friend_battle": {
       "id": 1486,
       "key": "pvp_friend_battle",
-      "str": "",
-      "is_loc": 160
+      "str": "BT_PVP;好友切磋",
+      "is_loc": 1
     },
     "pvp_rank_npc_position": {
       "id": 1487,
@@ -3176,26 +3176,26 @@
     "pvp_rank_trial_pet_para1": {
       "id": 1492,
       "key": "pvp_rank_trial_pet_para1",
-      "str": "",
-      "is_loc": 161
+      "str": "TRE_DAILY_FROM",
+      "is_loc": 2
     },
     "pvp_rank_trial_pet_para2": {
       "id": 1493,
       "key": "pvp_rank_trial_pet_para2",
-      "str": "",
-      "is_loc": 162
+      "str": "7 0:00:00",
+      "is_loc": 2
     },
     "pvp_rank_trial_pet_para3": {
       "id": 1494,
       "key": "pvp_rank_trial_pet_para3",
-      "str": "",
-      "is_loc": 163
+      "str": "2026-01-29 4:00:00",
+      "is_loc": 2
     },
     "pvp_rank_trial_pet_character1": {
       "id": 1495,
       "key": "pvp_rank_trial_pet_character1",
-      "str": "",
-      "is_loc": 164
+      "str": "试用精灵无法修改",
+      "is_loc": 1
     },
     "pvp_ddl": {
       "id": 1496,
@@ -3215,32 +3215,32 @@
     "pvp_rank_task_tips": {
       "id": 1498,
       "key": "pvp_rank_task_tips",
-      "str": "",
-      "is_loc": 165
+      "str": "您即将前往一个未知之地参与闪耀大赛，该地区可能会涉及部分剧透，传送前请进行确认。",
+      "is_loc": 1
     },
     "pvp_rank_trial_pet_character2": {
       "id": 1499,
       "key": "pvp_rank_trial_pet_character2",
-      "str": "",
-      "is_loc": 166
+      "str": "我的精灵",
+      "is_loc": 1
     },
     "pvp_rank_trial_pet_character3": {
       "id": 1500,
       "key": "pvp_rank_trial_pet_character3",
-      "str": "",
-      "is_loc": 167
+      "str": "试用精灵",
+      "is_loc": 1
     },
     "pvp_rank_trial_pet_character4": {
       "id": 1501,
       "key": "pvp_rank_trial_pet_character4",
-      "str": "",
-      "is_loc": 168
+      "str": "试用精灵已过期，请从本界面退出重新进入",
+      "is_loc": 1
     },
     "pvp_rank_trial_pet_character5": {
       "id": 1502,
       "key": "pvp_rank_trial_pet_character5",
-      "str": "",
-      "is_loc": 169
+      "str": "暂无对战数据",
+      "is_loc": 1
     },
     "npc_challenge_mappoint1": {
       "id": 1503,
@@ -3251,8 +3251,8 @@
         524554,
         34783
       ],
-      "str": "",
-      "is_loc": 170
+      "str": "12:00:00",
+      "is_loc": 2
     },
     "npc_challenge_mappoint2": {
       "id": 1504,
@@ -3263,8 +3263,8 @@
         524554,
         34783
       ],
-      "str": "",
-      "is_loc": 171
+      "str": "12:00:00",
+      "is_loc": 2
     },
     "npc_challenge_mappoint3": {
       "id": 1505,
@@ -3275,8 +3275,8 @@
         524554,
         34783
       ],
-      "str": "",
-      "is_loc": 172
+      "str": "12:00:00",
+      "is_loc": 2
     },
     "npc_challenge_mappoint4": {
       "id": 1506,
@@ -3287,8 +3287,8 @@
         524554,
         34783
       ],
-      "str": "",
-      "is_loc": 173
+      "str": "12:00:00",
+      "is_loc": 2
     },
     "npc_challenge_unlock_task": {
       "id": 1507,
@@ -3305,8 +3305,8 @@
     "battle_character1": {
       "id": 1509,
       "key": "battle_character1",
-      "str": "",
-      "is_loc": 174
+      "str": "精灵被退化，借用等均无法使用该技能",
+      "is_loc": 1
     },
     "pvp_rank_param1": {
       "id": 1510,
@@ -3478,14 +3478,14 @@
     "pvp_rank_character31": {
       "id": 1534,
       "key": "pvp_rank_character31",
-      "str": "",
-      "is_loc": 175
+      "str": "本期限时试用系别",
+      "is_loc": 1
     },
     "pvp_rank_character32": {
       "id": 1535,
       "key": "pvp_rank_character32",
-      "str": "",
-      "is_loc": 176
+      "str": "本期限时试用全系别",
+      "is_loc": 1
     },
     "pvp_param12": {
       "id": 1551,
@@ -3502,20 +3502,20 @@
     "pvp_param14": {
       "id": 1553,
       "key": "pvp_param14",
-      "str": "",
-      "is_loc": 177
+      "str": "TRE_DAILY_FROM",
+      "is_loc": 2
     },
     "pvp_param15": {
       "id": 1554,
       "key": "pvp_param15",
-      "str": "",
-      "is_loc": 178
+      "str": "7 0:00:00",
+      "is_loc": 2
     },
     "pvp_param16": {
       "id": 1555,
       "key": "pvp_param16",
-      "str": "",
-      "is_loc": 179
+      "str": "2025-03-17 04:00:00",
+      "is_loc": 2
     },
     "pvp_param17": {
       "id": 1556,
@@ -3526,20 +3526,20 @@
     "pvp_rank_character20": {
       "id": 1600,
       "key": "pvp_rank_character20",
-      "str": "",
-      "is_loc": 180
+      "str": "胜利可获得的最多星级加成",
+      "is_loc": 1
     },
     "pvp_rank_character21": {
       "id": 1601,
       "key": "pvp_rank_character21",
-      "str": "",
-      "is_loc": 181
+      "str": "胜利获得的制胜点数加成",
+      "is_loc": 1
     },
     "pvp_rank_character22": {
       "id": 1602,
       "key": "pvp_rank_character22",
-      "str": "",
-      "is_loc": 182
+      "str": "击败对方精灵制胜点数加成",
+      "is_loc": 1
     },
     "pvp_rank_param4": {
       "id": 1603,
@@ -3574,8 +3574,8 @@
     "pvp_rank_character23": {
       "id": 1608,
       "key": "pvp_rank_character23",
-      "str": "",
-      "is_loc": 183
+      "str": "完成今日首胜获得奖励",
+      "is_loc": 1
     },
     "territory_trial_point_param": {
       "id": 1609,
@@ -3592,20 +3592,20 @@
     "pvp_rank_character24": {
       "id": 1611,
       "key": "pvp_rank_character24",
-      "str": "",
-      "is_loc": 184
+      "str": "赛季段位重置",
+      "is_loc": 1
     },
     "battle_train_skip_title": {
       "id": 1612,
       "key": "battle_train_skip_title",
-      "str": "",
-      "is_loc": 185
+      "str": "跳过指引",
+      "is_loc": 1
     },
     "battle_train_skip_display": {
       "id": 1613,
       "key": "battle_train_skip_display",
-      "str": "",
-      "is_loc": 186
+      "str": "是否跳过当前战斗指引？",
+      "is_loc": 1
     },
     "pvp_param1": {
       "id": 1614,
@@ -3640,20 +3640,20 @@
     "pvp_rank_character25": {
       "id": 1619,
       "key": "pvp_rank_character25",
-      "str": "",
-      "is_loc": 187
+      "str": "使用随机精灵获得额外星级！",
+      "is_loc": 1
     },
     "pvp_rank_character26": {
       "id": 1620,
       "key": "pvp_rank_character26",
-      "str": "",
-      "is_loc": 188
+      "str": "连胜获得额外星级！",
+      "is_loc": 1
     },
     "pvp_rank_character27": {
       "id": 1621,
       "key": "pvp_rank_character27",
-      "str": "",
-      "is_loc": 189
+      "str": "连胜及使用随机精灵获得额外星级！",
+      "is_loc": 1
     },
     "pvp_param6": {
       "id": 1622,
@@ -3664,20 +3664,20 @@
     "pvp_rank_character28": {
       "id": 1623,
       "key": "pvp_rank_character28",
-      "str": "",
-      "is_loc": 190
+      "str": "第%s/%s页",
+      "is_loc": 1
     },
     "pvp_rank_character29": {
       "id": 1624,
       "key": "pvp_rank_character29",
-      "str": "",
-      "is_loc": 191
+      "str": "该精灵已在队伍中",
+      "is_loc": 1
     },
     "pvp_rank_character30": {
       "id": 1625,
       "key": "pvp_rank_character30",
-      "str": "",
-      "is_loc": 192
+      "str": "观战人数：%s",
+      "is_loc": 1
     },
     "pvp_param7": {
       "id": 1626,

@@ -3,7 +3,7 @@
     "1001002": {
       "id": 1001002,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/10062.10062'",
-      "npc_name": "恩佐与伊里斯",
+      "npc_name": "恩佐",
       "npc_config_group_id": 1001002,
       "npc_follow_areas": [
         700107,
@@ -35,7 +35,7 @@
     "1001004": {
       "id": 1001004,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/10196.10196'",
-      "npc_name": "伊里斯",
+      "npc_name": "芙蕾雅",
       "npc_config_group_id": 1001004,
       "npc_follow_areas": [
         132190045
@@ -99,7 +99,7 @@
     "1002004": {
       "id": 1002004,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/10062.10062'",
-      "npc_name": "恩佐与芙蕾雅",
+      "npc_name": "露萌",
       "npc_config_group_id": 1002004,
       "npc_follow_areas": [
         132200004
@@ -115,7 +115,7 @@
     "1002005": {
       "id": 1002005,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/10062.10062'",
-      "npc_name": "恩佐与芙蕾雅",
+      "npc_name": "露萌",
       "npc_config_group_id": 1002005,
       "npc_follow_areas": [
         132200005
@@ -131,7 +131,7 @@
     "1002006": {
       "id": 1002006,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/10270.10270'",
-      "npc_name": "芙蕾雅",
+      "npc_name": "露萌",
       "npc_config_group_id": 1002006,
       "npc_follow_areas": [
         132200006
@@ -147,7 +147,7 @@
     "1002008": {
       "id": 1002008,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/10270.10270'",
-      "npc_name": "芙蕾雅",
+      "npc_name": "露萌",
       "npc_config_group_id": 1002008,
       "npc_follow_areas": [
         132200008
@@ -162,7 +162,7 @@
     "1002010": {
       "id": 1002010,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/10270.10270'",
-      "npc_name": "芙蕾雅与嘟嘟煲",
+      "npc_name": "恩佐",
       "npc_config_group_id": 1002010,
       "npc_follow_areas": [
         132200010
@@ -178,7 +178,7 @@
     "1002011": {
       "id": 1002011,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/10270.10270'",
-      "npc_name": "芙蕾雅",
+      "npc_name": "露萌",
       "npc_config_group_id": 1002011,
       "npc_follow_areas": [
         132200011
@@ -194,7 +194,7 @@
     "1002012": {
       "id": 1002012,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/10198.10198'",
-      "npc_name": "芙蕾雅",
+      "npc_name": "露萌",
       "npc_config_group_id": 1002012,
       "npc_follow_areas": [
         132200012
@@ -263,7 +263,7 @@
     "1013004": {
       "id": 1013004,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/HeadIcon/3202.3202'",
-      "npc_name": "驻地管家",
+      "npc_name": "",
       "npc_config_group_id": 1013004,
       "npc_follow_areas": [
         132200013
@@ -278,7 +278,7 @@
     "1013005": {
       "id": 1013005,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/HeadIcon/3202.3202'",
-      "npc_name": "里奥",
+      "npc_name": "",
       "npc_config_group_id": 1013005,
       "npc_follow_areas": [
         160001
@@ -294,7 +294,7 @@
     "1014001": {
       "id": 1014001,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/10196.10196'",
-      "npc_name": "小男孩、小女孩、星灵",
+      "npc_name": "",
       "npc_config_group_id": 1014001,
       "npc_follow_areas": [
         160001
@@ -310,7 +310,7 @@
     "1014002": {
       "id": 1014002,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/10196.10196'",
-      "npc_name": "小男孩、小女孩、星灵",
+      "npc_name": "",
       "npc_config_group_id": 1014002,
       "npc_follow_areas": [
         160001
@@ -326,7 +326,7 @@
     "1034001": {
       "id": 1034001,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/10219.10219'",
-      "npc_name": "拉尔夫",
+      "npc_name": "",
       "npc_config_group_id": 1034001,
       "npc_follow_areas": [
         700305,
@@ -343,7 +343,7 @@
     "4210101": {
       "id": 4210101,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/PEO_04904.PEO_04904'",
-      "npc_name": "露萌",
+      "npc_name": "",
       "npc_config_group_id": 4210101,
       "npc_follow_areas": [
         405040000
@@ -359,7 +359,7 @@
     "4210102": {
       "id": 4210102,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/PEO_04904.PEO_04904'",
-      "npc_name": "露萌",
+      "npc_name": "",
       "npc_config_group_id": 4210102,
       "npc_follow_areas": [
         405040000
@@ -376,7 +376,7 @@
     "4220101": {
       "id": 4220101,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/PEO_04904.PEO_04904'",
-      "npc_name": "露萌",
+      "npc_name": "",
       "npc_config_group_id": 4220101,
       "npc_follow_areas": [
         405040001
@@ -393,7 +393,7 @@
     "4220102": {
       "id": 4220102,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/PEO_04904.PEO_04904'",
-      "npc_name": "露萌",
+      "npc_name": "",
       "npc_config_group_id": 4220102,
       "npc_follow_areas": [
         405040001
@@ -409,7 +409,7 @@
     "4220103": {
       "id": 4220103,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/PEO_04904.PEO_04904'",
-      "npc_name": "露萌",
+      "npc_name": "",
       "npc_config_group_id": 4220103,
       "npc_follow_areas": [
         405040001
@@ -425,7 +425,7 @@
     "4220105": {
       "id": 4220105,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/PEO_04904.PEO_04904'",
-      "npc_name": "露萌",
+      "npc_name": "",
       "npc_config_group_id": 4220105,
       "npc_follow_areas": [
         405040001
@@ -438,7 +438,7 @@
     "4230101": {
       "id": 4230101,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/PEO_04904.PEO_04904'",
-      "npc_name": "露萌",
+      "npc_name": "",
       "npc_config_group_id": 4230101,
       "npc_follow_areas": [
         405040002
@@ -451,7 +451,7 @@
     "4230102": {
       "id": 4230102,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/PEO_04904.PEO_04904'",
-      "npc_name": "露萌",
+      "npc_name": "",
       "npc_config_group_id": 4230102,
       "npc_follow_areas": [
         405040002
@@ -467,7 +467,7 @@
     "4230103": {
       "id": 4230103,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/PEO_04904.PEO_04904'",
-      "npc_name": "露萌",
+      "npc_name": "",
       "npc_config_group_id": 4230103,
       "npc_follow_areas": [
         405040002
@@ -483,7 +483,7 @@
     "4240101": {
       "id": 4240101,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/PEO_04904.PEO_04904'",
-      "npc_name": "露萌",
+      "npc_name": "",
       "npc_config_group_id": 4230103,
       "npc_follow_areas": [
         405040003
@@ -499,7 +499,7 @@
     "4240102": {
       "id": 4240102,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/PEO_04904.PEO_04904'",
-      "npc_name": "露萌",
+      "npc_name": "",
       "npc_config_group_id": 4230103,
       "npc_follow_areas": [
         405040003
@@ -515,7 +515,7 @@
     "4240103": {
       "id": 4240103,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/PEO_04904.PEO_04904'",
-      "npc_name": "露萌",
+      "npc_name": "",
       "npc_config_group_id": 4230103,
       "npc_follow_areas": [
         405040003
@@ -531,7 +531,7 @@
     "4240104": {
       "id": 4240104,
       "npc_icon": "Texture2D'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/WorldMapNpc/Frames/PEO_04904.PEO_04904'",
-      "npc_name": "露萌",
+      "npc_name": "",
       "npc_config_group_id": 4230103,
       "npc_follow_areas": [
         405040003

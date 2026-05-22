@@ -133,7 +133,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 6,
-        "classis_name": null,
+        "classis_name": "自然类精灵",
         "handbook_area_ids": []
     },
     "catch_info": {
@@ -144,7 +144,7 @@
     "breeding": {
         "id": 3253001,
         "pet_id": 3253001,
-        "name": "速粒小子",
+        "name": "贝瑟",
         "model_id": 3253001,
         "hatch_data": 57600,
         "weight_low": 5355,
@@ -166,7 +166,7 @@
             {
                 "id": 3253001,
                 "pet_id": 3253001,
-                "name": "速粒小子",
+                "name": "贝瑟",
                 "model_id": 3253001,
                 "hatch_data": 57600,
                 "weight_low": 5355,
@@ -186,9 +186,25 @@
                 "is_contact_add_shining_prob": null
             },
             {
+                "id": 3330002,
+                "pet_id": 3330002,
+                "name": "速粒小子",
+                "model_id": 3330001,
+                "hatch_data": 57600,
+                "weight_low": 2590,
+                "weight_high": 3440,
+                "height_low": 23,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
                 "id": 32530001,
                 "pet_id": 32530001,
-                "name": "速粒小子",
+                "name": "贝瑟",
                 "model_id": 3253001,
                 "hatch_data": 300,
                 "weight_low": 5355,

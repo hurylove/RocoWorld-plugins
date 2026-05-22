@@ -55,28 +55,6 @@
     "move_pool": [
         {
             "id": 7300001,
-            "name": "静电",
-            "icon_id": "708003",
-            "move_type": {
-                "id": 6,
-                "name": "Ground",
-                "localized": {
-                    "zh": "地"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "静电",
-                    "description": "造成物伤"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 0,
-            "power": 100,
-            "description": "造成物伤"
-        },
-        {
-            "id": 7300002,
             "name": "测试buff6",
             "icon_id": "708003",
             "move_type": {
@@ -98,7 +76,7 @@
             "description": "造成物伤"
         },
         {
-            "id": 7300003,
+            "id": 7300002,
             "name": "测试buff28",
             "icon_id": "708003",
             "move_type": {
@@ -111,6 +89,28 @@
             "localized": {
                 "zh": {
                     "name": "测试buff28",
+                    "description": "造成物伤"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 100,
+            "description": "造成物伤"
+        },
+        {
+            "id": 7300003,
+            "name": "测试buff134",
+            "icon_id": "708003",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "测试buff134",
                     "description": "造成物伤"
                 }
             },
@@ -163,7 +163,7 @@
         "refresh_locations": [],
         "movement_type": null,
         "classis_id": 3,
-        "classis_name": null,
+        "classis_name": "猫咪类精灵",
         "handbook_area_ids": []
     },
     "catch_info": null,

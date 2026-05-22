@@ -4,7 +4,7 @@
       "id": 1,
       "unit_type": 2,
       "color": "#9a9a9a",
-      "name": "普通系",
+      "name": "草系",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_putong.evo_putong'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_putong.img_putong'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Pu/T_BackGround_pu.T_BackGround_pu'",
@@ -15,7 +15,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 39,
-          "synchron_text": "普通系精灵的普通系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -23,7 +23,7 @@
       "id": 2,
       "unit_type": 3,
       "color": "#3bbe39",
-      "name": "草系",
+      "name": "毒系",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_cao.evo_cao'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_cao.img_cao'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Cao/T_TestNG.T_TestNG'",
@@ -34,7 +34,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 40,
-          "synchron_text": "草系精灵的草系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -42,7 +42,7 @@
       "id": 3,
       "unit_type": 4,
       "color": "#d42a2f",
-      "name": "火系",
+      "name": "未知",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_huo.evo_huo'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_huo.img_huo'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Fire/T_BackGround_huo.T_BackGround_huo'",
@@ -53,7 +53,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 41,
-          "synchron_text": "火系精灵的火系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -61,7 +61,7 @@
       "id": 4,
       "unit_type": 5,
       "color": "#03cdff",
-      "name": "水系",
+      "name": "冰系精灵的冰系技能强化",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_shui.evo_shui'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_shui.img_shui'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Shui/T_BackGround_shui.T_BackGround_shui'",
@@ -72,7 +72,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 42,
-          "synchron_text": "水系精灵的水系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -80,7 +80,7 @@
       "id": 5,
       "unit_type": 6,
       "color": "#ffd65a",
-      "name": "光系",
+      "name": "恶系精灵的恶系技能强化",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_guang.evo_guang'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_guangxi.img_guangxi'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Guang/T_BackGround_guang.T_BackGround_guang'",
@@ -91,7 +91,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 43,
-          "synchron_text": "光系精灵的光系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -99,7 +99,7 @@
       "id": 6,
       "unit_type": 7,
       "color": "#9c6b43",
-      "name": "地系（已废弃）",
+      "name": "",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_tu.evo_tu'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_yanxi.img_yanxi'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Yan/T_BackGround_yan.T_BackGround_yan'",
@@ -110,7 +110,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 44,
-          "synchron_text": "地系精灵的地系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -118,7 +118,7 @@
       "id": 7,
       "unit_type": 8,
       "color": "#7f9ca0",
-      "name": "地系",
+      "name": "",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_yan.evo_yan'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_yanxi.img_yanxi'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Yan/T_BackGround_yan.T_BackGround_yan'",
@@ -129,7 +129,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 45,
-          "synchron_text": "地系精灵的地系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -137,7 +137,7 @@
       "id": 8,
       "unit_type": 9,
       "color": "#52efff",
-      "name": "冰系",
+      "name": "",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_bing.evo_bing'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_bing.img_bing'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Bing/T_BackGround_bing.T_BackGround_bing'",
@@ -148,7 +148,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 46,
-          "synchron_text": "冰系精灵的冰系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -156,7 +156,7 @@
       "id": 9,
       "unit_type": 10,
       "color": "#72309c",
-      "name": "龙系",
+      "name": "",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_long.evo_long'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_longxi.img_longxi'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Long/T_BackGround_long.T_BackGround_long'",
@@ -167,7 +167,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 47,
-          "synchron_text": "龙系精灵的龙系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -175,7 +175,7 @@
       "id": 10,
       "unit_type": 11,
       "color": "#fdc801",
-      "name": "电系",
+      "name": "",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_dian.evo_dian'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_dian.img_dian'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Dian/T_BackGround_dian.T_BackGround_dian'",
@@ -186,7 +186,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 48,
-          "synchron_text": "电系精灵的电系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -194,7 +194,7 @@
       "id": 11,
       "unit_type": 12,
       "color": "#b91dfc",
-      "name": "毒系",
+      "name": "",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_du.evo_du'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_du.img_du'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Du/T_BackGround_du.T_BackGround_du'",
@@ -205,7 +205,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 49,
-          "synchron_text": "毒系精灵的毒系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -213,7 +213,7 @@
       "id": 12,
       "unit_type": 13,
       "color": "#a6bd17",
-      "name": "虫系",
+      "name": "",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_chong.evo_chong'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_chongxi.img_chongxi'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Chong/T_BackGround_chong.T_BackGround_chong'",
@@ -224,7 +224,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 50,
-          "synchron_text": "虫系精灵的虫系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -232,7 +232,7 @@
       "id": 13,
       "unit_type": 14,
       "color": "#994d35",
-      "name": "武系",
+      "name": "",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_wu.evo_wu'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_wu.img_wu'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Wu/T_BackGround_wu.T_BackGround_wu'",
@@ -243,7 +243,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 51,
-          "synchron_text": "武系精灵的武系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -251,7 +251,7 @@
       "id": 14,
       "unit_type": 15,
       "color": "#9dabf7",
-      "name": "翼系",
+      "name": "",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_yi.evo_yi'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_yixi.img_yixi'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Yi/T_BackGround_yi.T_BackGround_yi'",
@@ -262,7 +262,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 52,
-          "synchron_text": "翼系精灵的翼系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -270,7 +270,7 @@
       "id": 15,
       "unit_type": 16,
       "color": "#ff5198",
-      "name": "萌系",
+      "name": "",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_meng.evo_meng'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_mengxi.img_mengxi'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Meng/T_BackGround_meng.T_BackGround_meng'",
@@ -281,7 +281,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 53,
-          "synchron_text": "萌系精灵的萌系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -289,7 +289,7 @@
       "id": 16,
       "unit_type": 17,
       "color": "#9d1fff",
-      "name": "幽系",
+      "name": "",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_youling.evo_youling'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_youxi.img_youxi'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Youxi/T_BackGround_you.T_BackGround_you'",
@@ -300,7 +300,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 54,
-          "synchron_text": "幽系精灵的幽系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -308,7 +308,7 @@
       "id": 17,
       "unit_type": 18,
       "color": "#8f1a20",
-      "name": "恶系",
+      "name": "",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_emo.evo_emo'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_exi.img_exi'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/ER/T_BackGround_e.T_BackGround_e'",
@@ -319,7 +319,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 55,
-          "synchron_text": "恶系精灵的恶系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -327,7 +327,7 @@
       "id": 18,
       "unit_type": 19,
       "color": "#85c8ef",
-      "name": "机械系",
+      "name": "",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_jixie.evo_jixie'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_jixie.img_jixie'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Jixie/T_BackGround_jixie.T_BackGround_jixie'",
@@ -338,7 +338,7 @@
         {
           "synchron_number": 10,
           "attribute_type": 56,
-          "synchron_text": "机械系精灵的机械系技能强化"
+          "synchron_text": ""
         }
       ]
     },
@@ -346,7 +346,7 @@
       "id": 19,
       "unit_type": 20,
       "color": "#929feb",
-      "name": "幻系",
+      "name": "",
       "JL_background": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Texture/TypeIcon/evo_huan.evo_huan'",
       "handbook_type_background": "Texture2D'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Textures/img_huan.img_huan'",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/Huan/T_BackGround_huan.T_BackGround_huan'",
@@ -357,14 +357,14 @@
         {
           "synchron_number": 10,
           "attribute_type": 57,
-          "synchron_text": "幻系精灵的幻系技能强化"
+          "synchron_text": ""
         }
       ]
     },
     "22": {
       "id": 22,
       "unit_type": 22,
-      "name": "未知",
+      "name": "",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/General/T_BackGround_General.T_BackGround_General'",
       "JL_background_colour": "MaterialInstanceConstant'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/General/MI_General.MI_General'",
       "JL_background_clear": "MaterialInstanceConstant'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/General/MI_General_Bottom.MI_General_Bottom'"
@@ -372,7 +372,7 @@
     "23": {
       "id": 23,
       "unit_type": 23,
-      "name": "通用背景",
+      "name": "",
       "JL_background_icon": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/General/T_BackGround_General.T_BackGround_General'",
       "JL_background_colour": "MaterialInstanceConstant'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/General/MI_General.MI_General'",
       "JL_background_clear": "MaterialInstanceConstant'/Game/NewRoco/Modules/System/PetUI/Raw/BP/Back/General/MI_General_Bottom.MI_General_Bottom'"

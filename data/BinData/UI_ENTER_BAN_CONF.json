@@ -24,8 +24,8 @@
         }
       ],
       "auto_perform": true,
-      "func_name": "",
-      "img_path": "「精灵」"
+      "func_name": "「对战」",
+      "img_path": "Texture2D'/Game/NewRoco/Modules/System/MainUI/Raw/CompassIcon/img_jingling.img_jingling'"
     },
     "2": {
       "id": 2,
@@ -57,8 +57,8 @@
         }
       ],
       "auto_perform": true,
-      "func_name": "",
-      "img_path": "「地图」"
+      "func_name": "星盘没有回应你的意志，等待星盘闪耀的时候再来试试吧。",
+      "img_path": "Texture2D'/Game/NewRoco/Modules/System/MainUI/Raw/CompassIcon/img_ditu.img_ditu'"
     },
     "4": {
       "id": 4,
@@ -96,8 +96,8 @@
         }
       ],
       "auto_perform": true,
-      "func_name": "",
-      "img_path": "「图鉴」"
+      "func_name": "星盘没有回应你的意志，等待星盘闪耀的时候再来试试吧。",
+      "img_path": "Texture2D'/Game/NewRoco/Modules/System/MainUI/Raw/CompassIcon/img_tujian.img_tujian'"
     },
     "6": {
       "id": 6,
@@ -113,8 +113,8 @@
           "ban_text": ""
         }
       ],
-      "func_name": "",
-      "img_path": "「对战」"
+      "func_name": "留影机尚未解锁。",
+      "img_path": "Texture2D'/Game/NewRoco/Modules/System/MainUI/Raw/CompassIcon/img_pvp.img_pvp'"
     },
     "7": {
       "id": 7,
@@ -457,7 +457,7 @@
       ],
       "auto_perform": true,
       "func_name": "",
-      "img_path": "「便捷换装」"
+      "img_path": "Texture2D'/Game/NewRoco/Modules/System/MainUI/Raw/CompassIcon/img_ConvenientCostumeChange.img_ConvenientCostumeChange'"
     },
     "54": {
       "id": 54,

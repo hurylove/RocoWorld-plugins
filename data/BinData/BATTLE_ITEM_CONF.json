@@ -13,7 +13,7 @@
     },
     "100652": {
       "id": 100652,
-      "name": "灵感药水",
+      "name": "罗盘",
       "legally_used_object": 2,
       "use_time_in_round": 1,
       "resource_usage_path": "/Game/ArtRes/Effects/G6Skill/DaojuUse/DaojuApply/DaoJuApply_Insight",
@@ -88,7 +88,7 @@
     },
     "104009": {
       "id": 104009,
-      "name": "唤名",
+      "name": "罗盘",
       "legally_used_object": 1,
       "use_time_in_round": 1,
       "model": "Blueprint'/Game/NewRoco/Modules/Core/Battle/BP_PlayerSkill_LuoPan.BP_PlayerSkill_LuoPan_C'",
@@ -96,7 +96,7 @@
     },
     "104010": {
       "id": 104010,
-      "name": "召唤亚瑟",
+      "name": "罗盘",
       "legally_used_object": 1,
       "use_time_in_round": 1,
       "model": "Blueprint'/Game/NewRoco/Modules/Core/Battle/BP_PlayerSkill_LuoPan.BP_PlayerSkill_LuoPan_C'",

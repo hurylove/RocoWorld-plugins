@@ -12,7 +12,7 @@
     },
     "2": {
       "id": 2,
-      "tabname": "法杖",
+      "tabname": "上装",
       "rank_value": 4,
       "use_FashionLabelType": 15,
       "use_SalonLabelType": -1,
@@ -22,7 +22,7 @@
     },
     "3": {
       "id": 3,
-      "tabname": "衣服一级tab",
+      "tabname": "装饰一级tab",
       "rank_value": 2,
       "use_FashionLabelType": 16,
       "use_SalonLabelType": -1,
@@ -31,7 +31,7 @@
     },
     "4": {
       "id": 4,
-      "tabname": "连体服",
+      "tabname": "袜子",
       "subrank_value": 1,
       "fathertab": "3",
       "use_FashionLabelType": 2,
@@ -40,7 +40,7 @@
     },
     "5": {
       "id": 5,
-      "tabname": "上装",
+      "tabname": "发型一级tab",
       "subrank_value": 2,
       "fathertab": "3",
       "use_SalonLabelType": -1,
@@ -48,7 +48,7 @@
     },
     "6": {
       "id": 6,
-      "tabname": "下装",
+      "tabname": "肤色",
       "subrank_value": 3,
       "fathertab": "3",
       "use_FashionLabelType": 1,
@@ -57,7 +57,7 @@
     },
     "7": {
       "id": 7,
-      "tabname": "头饰",
+      "tabname": "睫毛",
       "subrank_value": 4,
       "fathertab": "3",
       "use_FashionLabelType": 5,
@@ -66,7 +66,7 @@
     },
     "8": {
       "id": 8,
-      "tabname": "手饰",
+      "tabname": "贴花",
       "subrank_value": 5,
       "fathertab": "3",
       "use_FashionLabelType": 9,
@@ -75,7 +75,7 @@
     },
     "9": {
       "id": 9,
-      "tabname": "装饰一级tab",
+      "tabname": "",
       "rank_value": 3,
       "use_FashionLabelType": 17,
       "use_SalonLabelType": -1,
@@ -84,7 +84,7 @@
     },
     "10": {
       "id": 10,
-      "tabname": "面饰",
+      "tabname": "",
       "subrank_value": 1,
       "fathertab": "9",
       "use_FashionLabelType": 6,
@@ -93,7 +93,7 @@
     },
     "11": {
       "id": 11,
-      "tabname": "鞋子",
+      "tabname": "",
       "subrank_value": 2,
       "fathertab": "9",
       "use_FashionLabelType": 4,
@@ -102,7 +102,7 @@
     },
     "12": {
       "id": 12,
-      "tabname": "袜子",
+      "tabname": "",
       "subrank_value": 3,
       "fathertab": "9",
       "use_FashionLabelType": 3,
@@ -111,7 +111,7 @@
     },
     "13": {
       "id": 13,
-      "tabname": "背饰",
+      "tabname": "",
       "subrank_value": 4,
       "fathertab": "9",
       "use_FashionLabelType": 10,
@@ -120,7 +120,7 @@
     },
     "14": {
       "id": 14,
-      "tabname": "包挂饰",
+      "tabname": "",
       "subrank_value": 5,
       "fathertab": "9",
       "use_FashionLabelType": 14,
@@ -129,7 +129,7 @@
     },
     "15": {
       "id": 15,
-      "tabname": "发型一级tab",
+      "tabname": "",
       "rank_value": 5,
       "use_FashionLabelType": -1,
       "use_SalonLabelType": 1,
@@ -138,7 +138,7 @@
     },
     "16": {
       "id": 16,
-      "tabname": "妆容一级tab",
+      "tabname": "",
       "rank_value": 6,
       "use_FashionLabelType": 18,
       "use_SalonLabelType": -1,
@@ -147,7 +147,7 @@
     },
     "17": {
       "id": 17,
-      "tabname": "肤色",
+      "tabname": "",
       "subrank_value": 1,
       "fathertab": "16",
       "use_FashionLabelType": -1,
@@ -155,7 +155,7 @@
     },
     "18": {
       "id": 18,
-      "tabname": "眉毛",
+      "tabname": "",
       "subrank_value": 2,
       "fathertab": "16",
       "use_FashionLabelType": -1,
@@ -164,7 +164,7 @@
     },
     "19": {
       "id": 19,
-      "tabname": "睫毛",
+      "tabname": "",
       "subrank_value": 3,
       "fathertab": "16",
       "use_FashionLabelType": -1,
@@ -173,7 +173,7 @@
     },
     "20": {
       "id": 20,
-      "tabname": "瞳孔",
+      "tabname": "",
       "subrank_value": 4,
       "fathertab": "16",
       "use_FashionLabelType": -1,
@@ -182,7 +182,7 @@
     },
     "21": {
       "id": 21,
-      "tabname": "贴花",
+      "tabname": "",
       "subrank_value": 5,
       "fathertab": "16",
       "use_FashionLabelType": -1,
@@ -191,7 +191,7 @@
     },
     "22": {
       "id": 22,
-      "tabname": "名片",
+      "tabname": "",
       "use_FashionLabelType": 19,
       "use_SalonLabelType": -1,
       "icon": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/Frames/img_mingpian_png.img_mingpian_png'",

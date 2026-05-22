@@ -45,7 +45,7 @@
     },
     "2100002": {
       "id": 2100002,
-      "name": "星辰扫除法则",
+      "name": "【测试】泡泡飞行日",
       "reward_id": 200200001,
       "pet_group": [
         {
@@ -53,7 +53,7 @@
           "instead_reward": 200200006,
           "img": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityElfCollection/FreeHuggersPet/img_buchenchangrong.img_buchenchangrong'",
           "trail_type": 2,
-          "trail_param": "通过毛头小蛛分支进化获得\n听说和身高有关\n毛头小蛛出没在魔法学院",
+          "trail_param": "",
           "trail_param2": [
             3604
           ]
@@ -63,7 +63,7 @@
           "instead_reward": 200200006,
           "img": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityElfCollection/FreeHuggersPet/img_shichenduanrong.img_shichenduanrong'",
           "trail_type": 2,
-          "trail_param": "通过毛头小蛛分支进化获得\n听说和身高有关\n毛头小蛛出没在魔法学院",
+          "trail_param": "",
           "trail_param2": [
             3605
           ]
@@ -90,7 +90,7 @@
     },
     "2100003": {
       "id": 2100003,
-      "name": "【测试】泡泡飞行日",
+      "name": "魔法口袋糖",
       "reward_id": 200200001,
       "pet_group": [
         {
@@ -127,7 +127,7 @@
     },
     "2100004": {
       "id": 2100004,
-      "name": "【测试】会走的蘑菇屋",
+      "name": "通过毛头小蛛分支进化获得\n听说和身高有关\n毛头小蛛出没在魔法学院",
       "reward_id": 200200001,
       "pet_group": [
         {

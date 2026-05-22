@@ -2,29 +2,26 @@
   "RocoDataRows": {
     "1": {
       "id": 1,
-      "display_name": "",
+      "display_name": "入门训练",
       "combat_mechanism_battle": [
-        3919939045,
-        2934483095,
-        2210129837
+        1,
+        2
       ]
     },
     "2": {
       "id": 2,
-      "display_name": "",
+      "display_name": "魔法师训练",
       "combat_mechanism_battle": [
-        3852905957,
-        2934477502,
-        2210129837
+        3,
+        4
       ]
     },
     "3": {
       "id": 3,
       "display_name": "",
       "combat_mechanism_battle": [
-        3868503529,
-        3102053811,
-        2913921160
+        5,
+        6
       ]
     }
   },

@@ -5,12 +5,12 @@
       "state_areas": [
         132190044
       ],
-      "begin_tips": "",
-      "end_tips": "",
-      "state_type": 2,
-      "effect_begin": "魔法力量消失了，你的身体恢复了轻盈",
-      "effect_loop": "\\\u000f�\u0007",
-      "effect_end": "NiagaraSystem'/Game/ArtRes/Effects/Particle/Res/XianZhiYiSu/NS_Scene_YSXZ_Start.NS_Scene_YSXZ_Start'"
+      "begin_tips": "魔法力量消失了，你的身体恢复了轻盈",
+      "end_tips": "商店街、休整地特殊状态开启",
+      "state_type": 1,
+      "effect_begin": "NiagaraSystem'/Game/ArtRes/Effects/Particle/Res/XianZhiYiSu/NS_Scene_YSXZ_Start.NS_Scene_YSXZ_Start'",
+      "effect_loop": "NiagaraSystem'/Game/ArtRes/Effects/Particle/Res/XianZhiYiSu/NS_Scene_YSXZ_Loop.NS_Scene_YSXZ_Loop'",
+      "effect_end": "NiagaraSystem'/Game/ArtRes/Effects/Particle/Res/XianZhiYiSu/NS_Scene_YSXZ_End.NS_Scene_YSXZ_End'"
     },
     "100100102": {
       "id": 100100102,
@@ -20,7 +20,7 @@
       ],
       "begin_tips": "",
       "end_tips": "",
-      "state_type": 8
+      "state_type": 18
     },
     "100100103": {
       "id": 100100103,
@@ -35,33 +35,11 @@
         521030205
       ],
       "begin_tips": "",
-      "effect_begin": "受到登天之路的影响，无法借助精灵飞行。",
-      "effect_end": "NiagaraSystem'/Game/ArtRes/Effects/Particle/Res/XianZhiYiSu/NS_Scene_YSXZ_Start.NS_Scene_YSXZ_Start'",
+      "effect_begin": "NiagaraSystem'/Game/ArtRes/Effects/Particle/Res/XianZhiYiSu/NS_Scene_YSXZ_Start.NS_Scene_YSXZ_Start'",
+      "effect_end": "NiagaraSystem'/Game/ArtRes/Effects/Particle/Res/XianZhiYiSu/NS_Scene_YSXZ_End.NS_Scene_YSXZ_End'",
       "rideall_ban_type": [
-        1734437198,
-        1398895201,
-        1702130553,
-        1194272621,
-        795176289,
-        1383363137,
-        1160737637,
-        1667589734,
-        1345287028,
-        1769239137,
-        795176035,
-        796091730,
-        1851877720,
-        1500080218,
-        796218217,
-        1398756174,
-        1701733731,
-        1481857375,
-        1850040154,
-        1397632612,
-        1701008223,
-        1499424110,
-        1599756371,
-        660893253
+        6,
+        8
       ]
     }
   },

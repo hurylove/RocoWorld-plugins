@@ -4,6 +4,8 @@
       "id": 1,
       "tab_name": "家具",
       "is_first_tab": true,
+      "is_bagpack_filter": true,
+      "is_handbook_filter": true,
       "sec_tab_array": [
         11,
         12,
@@ -20,6 +22,8 @@
       "id": 2,
       "tab_name": "摆设",
       "is_first_tab": true,
+      "is_bagpack_filter": true,
+      "is_handbook_filter": true,
       "sec_tab_array": [
         21,
         22
@@ -32,6 +36,8 @@
       "id": 3,
       "tab_name": "小型摆件",
       "is_first_tab": true,
+      "is_bagpack_filter": true,
+      "is_handbook_filter": true,
       "sec_tab_array": [
         31,
         32,
@@ -46,6 +52,8 @@
       "id": 4,
       "tab_name": "地面",
       "is_first_tab": true,
+      "is_bagpack_filter": true,
+      "is_handbook_filter": true,
       "sec_tab_array": [
         41
       ],
@@ -57,6 +65,8 @@
       "id": 5,
       "tab_name": "墙饰",
       "is_first_tab": true,
+      "is_bagpack_filter": true,
+      "is_handbook_filter": true,
       "sec_tab_array": [
         51,
         52,
@@ -70,12 +80,15 @@
       "id": 6,
       "tab_name": "特殊",
       "is_first_tab": true,
+      "is_bagpack_filter": true,
+      "is_handbook_filter": true,
       "visual_angle": 1
     },
     "7": {
       "id": 7,
       "tab_name": "装潢",
       "is_first_tab": true,
+      "is_bagpack_filter": true,
       "sec_tab_array": [
         71,
         72

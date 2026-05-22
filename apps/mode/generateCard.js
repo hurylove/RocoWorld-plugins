@@ -242,10 +242,10 @@ async function generateCard(spriteName, petId) {
         const moveNameRaw = move.localized?.zh?.name || move.name || '-';
         const moveDescRaw = move.localized?.zh?.description || move.description || '';
         
-        // 优先用技能描述查找 moves.json（正常技能），其次用名称查找（问题技能的名称就是描述文本）
-        let bestMatch = movesLookup.byDescription.get(moveDescRaw) ||
-                        movesLookup.byDescription.get(moveNameRaw) ||
-                        movesLookup.byName.get(moveNameRaw);
+        // 优先用名称查找 moves.json（避免通用描述误匹配），其次用描述查找，兜底用名称作为描述查找
+        let bestMatch = movesLookup.byName.get(moveNameRaw) ||
+                        movesLookup.byDescription.get(moveDescRaw) ||
+                        movesLookup.byDescription.get(moveNameRaw);
         
         const moveName = bestMatch ? bestMatch.name : moveNameRaw;
         const moveDesc = bestMatch ? bestMatch.description : moveDescRaw;

@@ -44,8 +44,8 @@
     "task_accept_guide_visible": {
       "id": 6,
       "key": "task_accept_guide_visible",
-      "str": "",
-      "is_loc": 1
+      "str": "ESCALE_D",
+      "is_loc": 2
     },
     "light_scale_distance_min": {
       "id": 7,

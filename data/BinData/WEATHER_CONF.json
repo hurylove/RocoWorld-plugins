@@ -28,82 +28,82 @@
           "available_time_enum": 4,
           "field_type": 17,
           "field_layer": 1,
-          "des": "夜晚"
+          "des": ""
         }
       ],
       "temperature": 5,
       "weather_buff": [
         20170880
       ],
-      "report_tip": "天气放晴了",
+      "report_tip": "小雨",
       "icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_qingtian2_png.img_qingtian2_png'",
       "show_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_qingtian_png.img_qingtian_png'"
     },
     "2": {
       "id": 2,
       "weather_type": 2,
-      "name": "阴天",
+      "name": "开始下大雨了",
       "weather_params": "CloudyData",
       "tod_param": [
         {
           "available_time_enum": 1,
           "field_type": 1,
           "field_layer": 1,
-          "des": "阴天"
+          "des": "开始下大雨了"
         },
         {
           "available_time_enum": 2,
           "field_type": 1,
           "field_layer": 1,
-          "des": "阴天"
+          "des": "开始下大雨了"
         },
         {
           "available_time_enum": 3,
           "field_type": 1,
           "field_layer": 1,
-          "des": "阴天"
+          "des": "开始下大雨了"
         },
         {
           "available_time_enum": 4,
           "field_type": 17,
           "field_layer": 1,
-          "des": "夜晚"
+          "des": ""
         }
       ],
       "weather_buff": [
         20170880
       ],
-      "report_tip": "天气转阴了"
+      "report_tip": "沙尘暴"
     },
     "3": {
       "id": 3,
       "weather_type": 3,
-      "name": "小雨",
+      "name": "刮起了沙尘暴",
       "weather_params": "LightRainData",
       "tod_param": [
         {
           "available_time_enum": 1,
           "field_type": 5,
           "field_layer": 1,
-          "des": "雨天"
+          "des": ""
         },
         {
           "available_time_enum": 2,
           "field_type": 5,
           "field_layer": 1,
-          "des": "雨天"
+          "des": ""
         },
         {
           "available_time_enum": 3,
           "field_type": 5,
           "field_layer": 1,
-          "des": "雨天"
+          "des": ""
         },
         {
           "available_time_enum": 4,
           "field_type": 5,
           "field_layer": 1,
-          "des": "雨天"
+          "des": ""
         }
       ],
       "temperature": -3,
@@ -111,7 +111,7 @@
         20230030,
         20170870
       ],
-      "report_tip": "开始下小雨了",
+      "report_tip": "出现异常天气了",
       "reject_aura_effect": [
         10003
       ],
@@ -121,32 +121,32 @@
     "4": {
       "id": 4,
       "weather_type": 4,
-      "name": "大雨",
+      "name": "噩梦空间",
       "weather_params": "HeavyRainData",
       "tod_param": [
         {
           "available_time_enum": 1,
           "field_type": 5,
           "field_layer": 1,
-          "des": "雨天"
+          "des": ""
         },
         {
           "available_time_enum": 2,
           "field_type": 5,
           "field_layer": 1,
-          "des": "雨天"
+          "des": ""
         },
         {
           "available_time_enum": 3,
           "field_type": 5,
           "field_layer": 1,
-          "des": "雨天"
+          "des": ""
         },
         {
           "available_time_enum": 4,
           "field_type": 5,
           "field_layer": 1,
-          "des": "雨天"
+          "des": ""
         }
       ],
       "temperature": -5,
@@ -154,7 +154,7 @@
         20230030,
         20170870
       ],
-      "report_tip": "开始下大雨了",
+      "report_tip": "加强版带雾气噩梦天气",
       "reject_aura_effect": [
         10003
       ],
@@ -164,32 +164,32 @@
     "5": {
       "id": 5,
       "weather_type": 5,
-      "name": "暴风雪",
+      "name": "晴天",
       "weather_params": "SnowstormData",
       "tod_param": [
         {
           "available_time_enum": 1,
           "field_type": 9,
           "field_layer": 1,
-          "des": "雪天"
+          "des": ""
         },
         {
           "available_time_enum": 2,
           "field_type": 9,
           "field_layer": 1,
-          "des": "雪天"
+          "des": ""
         },
         {
           "available_time_enum": 3,
           "field_type": 9,
           "field_layer": 1,
-          "des": "雪天"
+          "des": ""
         },
         {
           "available_time_enum": 4,
           "field_type": 9,
           "field_layer": 1,
-          "des": "雪天"
+          "des": ""
         }
       ],
       "temperature": -10,
@@ -197,46 +197,46 @@
         20170910,
         20171230
       ],
-      "report_tip": "开始下大雪了",
+      "report_tip": "阴天",
       "icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_xuetian2_png.img_xuetian2_png'",
       "show_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_xuetian_png.img_xuetian_png'"
     },
     "6": {
       "id": 6,
       "weather_type": 6,
-      "name": "沙尘暴",
+      "name": "雨天",
       "weather_params": "SandstormData",
       "tod_param": [
         {
           "available_time_enum": 1,
           "field_type": 8,
           "field_layer": 1,
-          "des": "沙暴"
+          "des": ""
         },
         {
           "available_time_enum": 2,
           "field_type": 8,
           "field_layer": 1,
-          "des": "沙暴"
+          "des": ""
         },
         {
           "available_time_enum": 3,
           "field_type": 8,
           "field_layer": 1,
-          "des": "沙暴"
+          "des": ""
         },
         {
           "available_time_enum": 4,
           "field_type": 8,
           "field_layer": 1,
-          "des": "沙暴"
+          "des": ""
         }
       ],
       "weather_buff": [
         20170900,
         20320490
       ],
-      "report_tip": "刮起了沙尘暴",
+      "report_tip": "雪天",
       "reject_aura_effect": [
         10003,
         10007,
@@ -248,103 +248,103 @@
     "7": {
       "id": 7,
       "weather_type": 7,
-      "name": "雾天",
+      "name": "沙暴",
       "weather_params": "FoggyData",
       "tod_param": [
         {
           "available_time_enum": 1,
           "field_type": 17,
           "field_layer": 1,
-          "des": "雾天"
+          "des": "沙暴"
         },
         {
           "available_time_enum": 2,
           "field_type": 17,
           "field_layer": 1,
-          "des": "雾天"
+          "des": "沙暴"
         },
         {
           "available_time_enum": 3,
           "field_type": 17,
           "field_layer": 1,
-          "des": "雾天"
+          "des": "沙暴"
         },
         {
           "available_time_enum": 4,
           "field_type": 17,
           "field_layer": 1,
-          "des": "雾天"
+          "des": "沙暴"
         }
       ],
       "weather_buff": [
         20170990
       ],
-      "report_tip": "开始起雾了",
+      "report_tip": "雾天",
       "icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_wutian2_png.img_wutian2_png'",
       "show_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_wutian_png.img_wutian_png'"
     },
     "8": {
       "id": 8,
       "weather_type": 8,
-      "name": "异常天气",
+      "name": "雾天",
       "weather_params": "AbnormalData",
       "tod_param": [
         {
           "available_time_enum": 1,
           "field_type": 1,
           "field_layer": 1,
-          "des": "异常"
+          "des": ""
         },
         {
           "available_time_enum": 2,
           "field_type": 1,
           "field_layer": 1,
-          "des": "异常"
+          "des": ""
         },
         {
           "available_time_enum": 3,
           "field_type": 1,
           "field_layer": 1,
-          "des": "异常"
+          "des": ""
         },
         {
           "available_time_enum": 4,
           "field_type": 1,
           "field_layer": 1,
-          "des": "异常"
+          "des": ""
         }
       ],
-      "report_tip": "出现异常天气了"
+      "report_tip": "异常"
     },
     "9": {
       "id": 9,
       "weather_type": 9,
-      "name": "小雪",
+      "name": "异常",
       "weather_params": "SnowData",
       "tod_param": [
         {
           "available_time_enum": 1,
           "field_type": 9,
           "field_layer": 1,
-          "des": "雪天"
+          "des": ""
         },
         {
           "available_time_enum": 2,
           "field_type": 9,
           "field_layer": 1,
-          "des": "雪天"
+          "des": ""
         },
         {
           "available_time_enum": 3,
           "field_type": 9,
           "field_layer": 1,
-          "des": "雪天"
+          "des": ""
         },
         {
           "available_time_enum": 4,
           "field_type": 9,
           "field_layer": 1,
-          "des": "雪天"
+          "des": ""
         }
       ],
       "temperature": -10,
@@ -352,71 +352,71 @@
         20170910,
         20171230
       ],
-      "report_tip": "开始下小雪了",
+      "report_tip": "无天气",
       "icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_xuetian2_png.img_xuetian2_png'",
       "show_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_xuetian_png.img_xuetian_png'"
     },
     "10": {
       "id": 10,
       "weather_type": 10,
-      "name": "空白天气",
+      "name": "无天气",
       "weather_params": "SunnyData",
       "tod_param": [
         {
           "available_time_enum": 1,
           "field_type": 1,
           "field_layer": 1,
-          "des": "无天气"
+          "des": ""
         },
         {
           "available_time_enum": 2,
           "field_type": 1,
           "field_layer": 1,
-          "des": "无天气"
+          "des": ""
         },
         {
           "available_time_enum": 3,
           "field_type": 1,
           "field_layer": 1,
-          "des": "无天气"
+          "des": ""
         },
         {
           "available_time_enum": 4,
           "field_type": 1,
           "field_layer": 1,
-          "des": "无天气"
+          "des": ""
         }
       ]
     },
     "11": {
       "id": 11,
       "weather_type": 11,
-      "name": "噩梦空间",
+      "name": "噩梦",
       "weather_params": "NightmareSpace",
       "tod_param": [
         {
           "available_time_enum": 1,
           "field_type": 18,
           "field_layer": 1,
-          "des": "噩梦"
+          "des": ""
         },
         {
           "available_time_enum": 2,
           "field_type": 18,
           "field_layer": 1,
-          "des": "噩梦"
+          "des": ""
         },
         {
           "available_time_enum": 3,
           "field_type": 18,
           "field_layer": 1,
-          "des": "噩梦"
+          "des": ""
         },
         {
           "available_time_enum": 4,
           "field_type": 18,
           "field_layer": 1,
-          "des": "噩梦"
+          "des": ""
         }
       ],
       "weather_buff": [
@@ -428,32 +428,32 @@
     "12": {
       "id": 12,
       "weather_type": 12,
-      "name": "噩梦领地",
+      "name": "",
       "weather_params": "NightmareHalo",
       "tod_param": [
         {
           "available_time_enum": 1,
           "field_type": 18,
           "field_layer": 1,
-          "des": "噩梦"
+          "des": ""
         },
         {
           "available_time_enum": 2,
           "field_type": 18,
           "field_layer": 1,
-          "des": "噩梦"
+          "des": ""
         },
         {
           "available_time_enum": 3,
           "field_type": 18,
           "field_layer": 1,
-          "des": "噩梦"
+          "des": ""
         },
         {
           "available_time_enum": 4,
           "field_type": 18,
           "field_layer": 1,
-          "des": "噩梦"
+          "des": ""
         }
       ],
       "weather_buff": [
@@ -465,32 +465,32 @@
     "13": {
       "id": 13,
       "weather_type": 13,
-      "name": "加强版带雾气噩梦天气",
+      "name": "",
       "weather_params": "NightMareSpecialData",
       "tod_param": [
         {
           "available_time_enum": 1,
           "field_type": 18,
           "field_layer": 1,
-          "des": "噩梦"
+          "des": ""
         },
         {
           "available_time_enum": 2,
           "field_type": 18,
           "field_layer": 1,
-          "des": "噩梦"
+          "des": ""
         },
         {
           "available_time_enum": 3,
           "field_type": 18,
           "field_layer": 1,
-          "des": "噩梦"
+          "des": ""
         },
         {
           "available_time_enum": 4,
           "field_type": 18,
           "field_layer": 1,
-          "des": "噩梦"
+          "des": ""
         }
       ],
       "weather_buff": [

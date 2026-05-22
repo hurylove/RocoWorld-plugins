@@ -161,21 +161,21 @@
       "id": 159,
       "key": "player_head_icon_man",
       "num": 10001,
-      "str": "",
-      "is_loc": 1
+      "str": "Texture2D'/Game/NewRoco/Modules/System/MainUI/Raw/Texture/img_touxiang.img_touxiang'",
+      "is_loc": 2
     },
     "player_head_icon_female": {
       "id": 160,
       "key": "player_head_icon_female",
       "num": 20001,
-      "str": "",
+      "str": "Texture2D'/Game/NewRoco/Modules/System/MainUI/Raw/Texture/img_Femtouxiang.img_Femtouxiang'",
       "is_loc": 2
     },
     "players_title": {
       "id": 162,
       "key": "players_title",
-      "str": "",
-      "is_loc": 3
+      "str": "小洛克",
+      "is_loc": 1
     },
     "role_born_max_HP": {
       "id": 163,
@@ -280,20 +280,20 @@
     "star_buytext_item": {
       "id": 177,
       "key": "star_buytext_item",
-      "str": "",
-      "is_loc": 4
+      "str": "补充<span size=\"24\" color=\"#D56C1F\">40契约印记</>。",
+      "is_loc": 1
     },
     "star_buytext_diamond": {
       "id": 178,
       "key": "star_buytext_diamond",
-      "str": "",
-      "is_loc": 5
+      "str": "消耗<span size=\"24\" color=\"#D56C1F\">%s洛克钻</>，补充<span size=\"24\" color=\"#D56C1F\">%s契约印记</>，今日还能补充<span size=\"24\" color=\"#D56C1F\">%s次</>。",
+      "is_loc": 1
     },
     "star_buytext_diamond_notimes": {
       "id": 179,
       "key": "star_buytext_diamond_notimes",
-      "str": "",
-      "is_loc": 6
+      "str": "今日补充次数已用尽。",
+      "is_loc": 1
     },
     "star_item": {
       "id": 180,
@@ -507,14 +507,14 @@
     "roleplay_reward_toast_text1": {
       "id": 203,
       "key": "roleplay_reward_toast_text1",
-      "str": "",
-      "is_loc": 7
+      "str": "点击查看新的动作。（%s秒）",
+      "is_loc": 1
     },
     "roleplay_reward_toast_text2": {
       "id": 204,
       "key": "roleplay_reward_toast_text2",
-      "str": "",
-      "is_loc": 8
+      "str": "点击查看新的模仿叫声。（%s秒）",
+      "is_loc": 1
     },
     "roleplay_reward_toast_time": {
       "id": 205,
@@ -531,8 +531,8 @@
     "fashion_suits_reward_toast": {
       "id": 207,
       "key": "fashion_suits_reward_toast",
-      "str": "",
-      "is_loc": 9
+      "str": "点击查看新套装。（%s秒）",
+      "is_loc": 1
     },
     "fashion_suits_reward_toast_time": {
       "id": 208,
@@ -578,26 +578,26 @@
     "ftue_camera_adjust": {
       "id": 217,
       "key": "ftue_camera_adjust",
-      "str": "",
-      "is_loc": 10
+      "str": "滑动屏幕来控制方向",
+      "is_loc": 1
     },
     "ftue_sprint": {
       "id": 218,
       "key": "ftue_sprint",
-      "str": "",
-      "is_loc": 11
+      "str": "点击进入疾跑",
+      "is_loc": 1
     },
     "ftue_jump": {
       "id": 219,
       "key": "ftue_jump",
-      "str": "",
-      "is_loc": 12
+      "str": "点击进行跳跃",
+      "is_loc": 1
     },
     "ftue_joystick": {
       "id": 220,
       "key": "ftue_joystick",
-      "str": "",
-      "is_loc": 13
+      "str": "使用摇杆移动角色",
+      "is_loc": 1
     },
     "perception_movement_id": {
       "id": 221,
@@ -649,8 +649,8 @@
     "transform_idleanim": {
       "id": 228,
       "key": "transform_idleanim",
-      "str": "",
-      "is_loc": 14
+      "str": "Alert;Happy;Relax;Show",
+      "is_loc": 2
     },
     "star_debris_recover": {
       "id": 229,
@@ -682,8 +682,8 @@
     "lobby_main_inner_tag": {
       "id": 235,
       "key": "lobby_main_inner_tag",
-      "str": "",
-      "is_loc": 15
+      "str": "LobbyMainInner",
+      "is_loc": 2
     },
     "grow_power_circle": {
       "id": 236,
@@ -694,14 +694,14 @@
     "bp_week_reset_start_time": {
       "id": 237,
       "key": "bp_week_reset_start_time",
-      "str": "",
-      "is_loc": 16
+      "str": "2025-01-06 04:00:00",
+      "is_loc": 2
     },
     "bp_week_reset_start_duration": {
       "id": 238,
       "key": "bp_week_reset_start_duration",
-      "str": "",
-      "is_loc": 17
+      "str": "7 00:00:00",
+      "is_loc": 2
     },
     "enable_offline_data_login_times": {
       "id": 239,
@@ -711,32 +711,32 @@
     "ftue_camera_adjust_PC": {
       "id": 240,
       "key": "ftue_camera_adjust_PC",
-      "str": "",
-      "is_loc": 18
+      "str": "移动鼠标来调整方向  ",
+      "is_loc": 1
     },
     "ftue_sprint_PC": {
       "id": 241,
       "key": "ftue_sprint_PC",
-      "str": "",
-      "is_loc": 19
+      "str": "按下左Shift/鼠标右键可进入疾跑",
+      "is_loc": 1
     },
     "ftue_jump_PC": {
       "id": 242,
       "key": "ftue_jump_PC",
-      "str": "",
-      "is_loc": 20
+      "str": "按下空格键可进行跳跃",
+      "is_loc": 1
     },
     "ftue_joystick_PC": {
       "id": 243,
       "key": "ftue_joystick_PC",
-      "str": "",
-      "is_loc": 21
+      "str": "使用键盘上的WASD进行移动",
+      "is_loc": 1
     },
     "ftue_entername": {
       "id": 244,
       "key": "ftue_entername",
-      "str": "",
-      "is_loc": 22
+      "str": "名字需要在6个字以内",
+      "is_loc": 1
     },
     "svr_restart_offline_delay_time": {
       "id": 245,
@@ -747,14 +747,14 @@
     "pika_shop_anim_idle_a": {
       "id": 246,
       "key": "pika_shop_anim_idle_a",
-      "str": "",
-      "is_loc": 23
+      "str": "HZRelax;HZRelax02;IdleToHZIdle",
+      "is_loc": 2
     },
     "pika_shop_anim_idle_s": {
       "id": 247,
       "key": "pika_shop_anim_idle_s",
-      "str": "",
-      "is_loc": 24
+      "str": "HZLookBack;HZLookBody;HZLookFoot;HZLookHand",
+      "is_loc": 2
     },
     "pika_shop_trans_time": {
       "id": 248,
@@ -835,20 +835,20 @@
     "stamina_exchange_text1": {
       "id": 261,
       "key": "stamina_exchange_text1",
-      "str": "",
-      "is_loc": 25
+      "str": "补充<span size=\"24\" color=\"#D56C1F\">40契约印记</>。",
+      "is_loc": 1
     },
     "stamina_exchange_text2": {
       "id": 262,
       "key": "stamina_exchange_text2",
-      "str": "",
-      "is_loc": 26
+      "str": "消耗<span size=\"24\" color=\"#D56C1F\">%s洛克钻</>，补充<span size=\"24\" color=\"#D56C1F\">%s契约印记</>，今日还能补充<span size=\"24\" color=\"#D56C1F\">%s次</>。",
+      "is_loc": 1
     },
     "roleplay_reward_toast_text3": {
       "id": 263,
       "key": "roleplay_reward_toast_text3",
-      "str": "",
-      "is_loc": 27
+      "str": "点击查看新的道具。（%s秒）",
+      "is_loc": 1
     },
     "afk_sals_block_list": {
       "id": 264,
@@ -1037,14 +1037,14 @@
     "name_ascii_white_list": {
       "id": 277,
       "key": "name_ascii_white_list",
-      "str": "",
-      "is_loc": 28
+      "str": "_-~·",
+      "is_loc": 2
     },
     "name_utf8_black_list": {
       "id": 278,
       "key": "name_utf8_black_list",
-      "str": "",
-      "is_loc": 29
+      "str": "0x0080~0x009F;0x00A0;0x00AD;0x200B~0x200F;0x2028~0x2029;0x202A~0x202E;0x2060~0x2064;0x2066~0x2069;0x3000;0xFE00~0xFE0F;0xFEFF;0xFFFC;0xFDD0~0xFDEF;0xFFF0~0xFFFF",
+      "is_loc": 2
     },
     "fashion_male_choose_suits": {
       "id": 279,
@@ -1085,50 +1085,50 @@
     "fashion_icon_suitgrade_daily": {
       "id": 283,
       "key": "fashion_icon_suitgrade_daily",
-      "str": "",
-      "is_loc": 30
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/Frames/img_IconDaily_png.img_IconDaily_png'",
+      "is_loc": 2
     },
     "fashion_icon_suitgrade_uniform": {
       "id": 284,
       "key": "fashion_icon_suitgrade_uniform",
-      "str": "",
-      "is_loc": 31
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/Frames/img_IconProfessional_png.img_IconProfessional_png'",
+      "is_loc": 2
     },
     "fashion_icon_suitgrade_bond": {
       "id": 285,
       "key": "fashion_icon_suitgrade_bond",
-      "str": "",
-      "is_loc": 32
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/Frames/img_IconBond_png.img_IconBond_png'",
+      "is_loc": 2
     },
     "fashion_male_suits_pants_icon": {
       "id": 286,
       "key": "fashion_male_suits_pants_icon",
-      "str": "",
-      "is_loc": 33
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_999_01.suits1_999_01'",
+      "is_loc": 2
     },
     "fashion_female_suits_pants_icon": {
       "id": 287,
       "key": "fashion_female_suits_pants_icon",
-      "str": "",
-      "is_loc": 34
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_999_01.suits2_999_01'",
+      "is_loc": 2
     },
     "fashion_male_suits_pants_icon_big": {
       "id": 288,
       "key": "fashion_male_suits_pants_icon_big",
-      "str": "",
-      "is_loc": 35
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_999_01_pose.suits1_999_01_pose'",
+      "is_loc": 2
     },
     "fashion_female_suits_pants_icon_big": {
       "id": 289,
       "key": "fashion_female_suits_pants_icon_big",
-      "str": "",
-      "is_loc": 36
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_999_01_pose.suits2_999_01_pose'",
+      "is_loc": 2
     },
     "fashion_bagcharm_normal_effect": {
       "id": 290,
       "key": "fashion_bagcharm_normal_effect",
-      "str": "",
-      "is_loc": 37
+      "str": "SkillBlueprint'/Game/ArtRes/Effects/Particle/Scene/Avatar/BaoGua/G6_BaoGua_Common.G6_BaoGua_Common'",
+      "is_loc": 2
     }
   },
   "LocalizationStrings": {}

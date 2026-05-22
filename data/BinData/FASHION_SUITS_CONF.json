@@ -26,6 +26,7 @@
       "flavor_text": "魔法学院的校服，入学新生每人一件，不要弄丢啦。",
       "fashion_bond_band": 1,
       "display_suit": true,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "裁缝铺兑换"
@@ -58,6 +59,7 @@
       "flavor_text": "魔法学院的校服，入学新生每人一件，不要弄丢啦。",
       "fashion_bond_band": 1,
       "display_suit": true,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "裁缝铺兑换"
@@ -93,6 +95,7 @@
       "flavor_text": "模糊的回忆里，这件衣服上有阳光晒被子的味道。",
       "fashion_bond_band": 2,
       "display_suit": true,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "回想记忆中的样子"
@@ -127,6 +130,7 @@
       "grade_name": "纪念时装",
       "flavor_text": "皮卡小姐手工缝制的新衣服，裁缝铺里有少量现货售卖。",
       "fashion_bond_band": 2,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "裁缝铺兑换"
@@ -161,6 +165,7 @@
       "grade_name": "纪念时装",
       "flavor_text": "曲奇的花纹都很有趣不是吗，尤其是棋盘格的样式。",
       "fashion_bond_band": 2,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时活动获得"
@@ -195,6 +200,7 @@
       "grade_name": "纪念时装",
       "flavor_text": "皮卡小姐手工缝制的新衣服，裁缝铺里有少量现货售卖。",
       "fashion_bond_band": 2,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "裁缝铺兑换"
@@ -229,6 +235,7 @@
       "grade_name": "纪念时装",
       "flavor_text": "皮卡小姐手工缝制的新衣服，裁缝铺里有少量现货售卖。",
       "fashion_bond_band": 2,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "裁缝铺兑换"
@@ -263,6 +270,7 @@
       "grade_name": "纪念时装",
       "flavor_text": "皮卡小姐手工缝制的新衣服，裁缝铺里有少量现货售卖。",
       "fashion_bond_band": 2,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "裁缝铺兑换"
@@ -298,6 +306,7 @@
       "flavor_text": "模糊的回忆里，这件衣服上有阳光晒被子的味道。",
       "fashion_bond_band": 2,
       "display_suit": true,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "回想记忆中的样子"
@@ -332,6 +341,7 @@
       "grade_name": "纪念时装",
       "flavor_text": "皮卡小姐手工缝制的新衣服，裁缝铺里有少量现货售卖。",
       "fashion_bond_band": 2,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "裁缝铺兑换"
@@ -366,6 +376,7 @@
       "grade_name": "纪念时装",
       "flavor_text": "皮卡小姐手工缝制的新衣服，裁缝铺里有少量现货售卖。",
       "fashion_bond_band": 2,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "裁缝铺兑换"
@@ -400,6 +411,7 @@
       "grade_name": "纪念时装",
       "flavor_text": "皮卡小姐手工缝制的新衣服，裁缝铺里有少量现货售卖。",
       "fashion_bond_band": 2,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "裁缝铺兑换"
@@ -434,6 +446,7 @@
       "grade_name": "纪念时装",
       "flavor_text": "皮卡小姐手工缝制的新衣服，裁缝铺里有少量现货售卖。",
       "fashion_bond_band": 2,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "裁缝铺兑换"
@@ -468,6 +481,7 @@
       "grade_name": "纪念时装",
       "flavor_text": "现在回忆起来那段时光，也会带有热烈的心情。",
       "fashion_bond_band": 2,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时活动获得"
@@ -503,6 +517,7 @@
       "suit_grade": 1,
       "flavor_text": "我们的征途是星辰大海！",
       "fashion_bond_band": 5,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "裁缝铺兑换"
@@ -538,6 +553,7 @@
       "suit_grade": 1,
       "flavor_text": "我们的征途是星辰大海！",
       "fashion_bond_band": 5,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "裁缝铺兑换"
@@ -569,6 +585,7 @@
       "suit_grade": 1,
       "flavor_text": "唱诗班的歌谣晦涩难懂，他们说天空与宇宙是一个整体。",
       "fashion_bond_band": 3,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "裁缝铺兑换"
@@ -600,6 +617,7 @@
       "suit_grade": 1,
       "flavor_text": "唱诗班的歌谣晦涩难懂，他们说天空与宇宙是一个整体。",
       "fashion_bond_band": 3,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "裁缝铺兑换"
@@ -633,6 +651,7 @@
       "suit_grade": 1,
       "flavor_text": "在明朗的天空下许下的心愿，是大树摇下的一片落叶。",
       "fashion_bond_band": 3,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "拾光通行证奖励"
@@ -666,6 +685,7 @@
       "suit_grade": 1,
       "flavor_text": "在浪漫的海岸边许下的心愿，是沙滩上浅浅的沟壑。",
       "fashion_bond_band": 3,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "拾光通行证奖励"
@@ -699,6 +719,7 @@
       "suit_grade": 1,
       "flavor_text": "在宁静的夜晚里许下的心愿，是流星划过时的回响。",
       "fashion_bond_band": 3,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "拾光通行证奖励"
@@ -732,6 +753,7 @@
       "suit_grade": 1,
       "flavor_text": "在明朗的天空下许下的心愿，是大树摇下的一片落叶。",
       "fashion_bond_band": 3,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "拾光通行证奖励"
@@ -765,6 +787,7 @@
       "suit_grade": 1,
       "flavor_text": "在浪漫的海岸边许下的心愿，是沙滩上浅浅的沟壑。",
       "fashion_bond_band": 3,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "拾光通行证奖励"
@@ -798,6 +821,7 @@
       "suit_grade": 1,
       "flavor_text": "在宁静的夜晚里许下的心愿，是流星划过时的回响。",
       "fashion_bond_band": 3,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "拾光通行证奖励"
@@ -852,6 +876,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits19_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -940,6 +965,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits19_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -1027,6 +1053,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits20_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -1114,6 +1141,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits20_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -1204,6 +1232,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits21_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -1294,6 +1323,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits21_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -1383,6 +1413,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits18_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -1472,6 +1503,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits18_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -1574,6 +1606,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits22_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -1676,6 +1709,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits22_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -1762,6 +1796,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits23_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -1848,6 +1883,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits23_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -1935,6 +1971,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits24_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -2022,6 +2059,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits24_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -2112,6 +2150,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits25_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -2202,6 +2241,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits25_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -2289,6 +2329,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits26_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -2376,6 +2417,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits26_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -2470,6 +2512,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits27_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -2548,6 +2591,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits27_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -2615,6 +2659,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits28_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -2682,6 +2727,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits28_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -2749,6 +2795,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits29_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -2816,6 +2863,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits29_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -2884,6 +2932,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits30_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -2952,6 +3001,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits30_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时礼包获得"
@@ -3024,6 +3074,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits35_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -3112,6 +3163,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits35_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -3199,6 +3251,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits36_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -3286,6 +3339,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits36_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -3372,6 +3426,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits37_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -3458,6 +3513,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits37_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -3545,6 +3601,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits31_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -3616,6 +3673,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits31_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -3671,7 +3729,7 @@
       "petbase_id": [
         3031,
         3030,
-        3329,
+        3029,
         13000153,
         4022,
         5005
@@ -3689,6 +3747,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits32_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -3744,7 +3803,7 @@
       "petbase_id": [
         3031,
         3030,
-        3329,
+        3029,
         13000153,
         4022,
         5005
@@ -3762,6 +3821,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits32_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -3832,6 +3892,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits33_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -3902,6 +3963,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits33_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -3972,6 +4034,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits34_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -4042,6 +4105,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits34_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -4100,6 +4164,9 @@
       ],
       "flavor_text": "如果梦可以被记录，那你的梦会是什么颜色的呢？",
       "fashion_bond_band": 2,
+      "ai_effect": [
+        24
+      ],
       "bond_id": 305030,
       "perform_id": 10021,
       "suit_effect_tips": [
@@ -4108,6 +4175,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits41_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -4166,6 +4234,9 @@
       ],
       "flavor_text": "如果梦可以被记录，那你的梦会是什么颜色的呢？",
       "fashion_bond_band": 2,
+      "ai_effect": [
+        24
+      ],
       "bond_id": 305030,
       "perform_id": 10021,
       "suit_effect_tips": [
@@ -4174,6 +4245,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits41_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -4231,6 +4303,9 @@
       ],
       "flavor_text": "晚安，闭上眼睛，准备好迎接疯狂的冒险了吗？",
       "fashion_bond_band": 2,
+      "ai_effect": [
+        25
+      ],
       "bond_id": 305031,
       "perform_id": 10022,
       "suit_effect_tips": [
@@ -4239,6 +4314,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits42_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -4296,6 +4372,9 @@
       ],
       "flavor_text": "晚安，闭上眼睛，准备好迎接疯狂的冒险了吗？",
       "fashion_bond_band": 2,
+      "ai_effect": [
+        25
+      ],
       "bond_id": 305031,
       "perform_id": 10022,
       "suit_effect_tips": [
@@ -4304,6 +4383,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits42_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -4365,6 +4445,9 @@
       ],
       "flavor_text": "开心还是难过也没关系，就这样，一直陪在你身边。",
       "fashion_bond_band": 2,
+      "ai_effect": [
+        26
+      ],
       "bond_id": 305032,
       "perform_id": 10023,
       "suit_effect_tips": [
@@ -4373,6 +4456,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits43_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -4434,6 +4518,9 @@
       ],
       "flavor_text": "开心还是难过也没关系，就这样，一直陪在你身边。",
       "fashion_bond_band": 2,
+      "ai_effect": [
+        26
+      ],
       "bond_id": 305032,
       "perform_id": 10023,
       "suit_effect_tips": [
@@ -4442,6 +4529,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits43_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -4501,6 +4589,9 @@
       ],
       "flavor_text": "闭上眼看到的世界仿佛也是可以触摸到一切的。",
       "fashion_bond_band": 2,
+      "ai_effect": [
+        27
+      ],
       "bond_id": 305033,
       "perform_id": 10024,
       "suit_effect_tips": [
@@ -4509,6 +4600,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits44_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -4568,6 +4660,9 @@
       ],
       "flavor_text": "闭上眼看到的世界仿佛也是可以触摸到一切的。",
       "fashion_bond_band": 2,
+      "ai_effect": [
+        27
+      ],
       "bond_id": 305033,
       "perform_id": 10024,
       "suit_effect_tips": [
@@ -4576,6 +4671,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits44_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -4634,6 +4730,9 @@
         5020
       ],
       "fashion_bond_band": 3,
+      "ai_effect": [
+        21
+      ],
       "bond_id": 305027,
       "perform_id": 10025,
       "suit_effect_tips": [
@@ -4646,6 +4745,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits52_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时活动获得"
@@ -4720,6 +4820,9 @@
         5020
       ],
       "fashion_bond_band": 3,
+      "ai_effect": [
+        21
+      ],
       "bond_id": 305027,
       "perform_id": 10025,
       "suit_effect_tips": [
@@ -4732,6 +4835,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits52_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时活动获得"
@@ -4803,6 +4907,9 @@
         3118
       ],
       "fashion_bond_band": 3,
+      "ai_effect": [
+        22
+      ],
       "bond_id": 305028,
       "perform_id": 10026,
       "suit_effect_tips": [
@@ -4815,6 +4922,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits53_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时活动获得"
@@ -4886,6 +4994,9 @@
         3118
       ],
       "fashion_bond_band": 3,
+      "ai_effect": [
+        22
+      ],
       "bond_id": 305028,
       "perform_id": 10026,
       "suit_effect_tips": [
@@ -4898,6 +5009,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits53_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时活动获得"
@@ -4985,6 +5097,9 @@
         5035
       ],
       "fashion_bond_band": 3,
+      "ai_effect": [
+        23
+      ],
       "bond_id": 305029,
       "perform_id": 10027,
       "suit_effect_tips": [
@@ -4997,6 +5112,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits54_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时活动获得"
@@ -5084,6 +5200,9 @@
         5035
       ],
       "fashion_bond_band": 3,
+      "ai_effect": [
+        23
+      ],
       "bond_id": 305029,
       "perform_id": 10027,
       "suit_effect_tips": [
@@ -5096,6 +5215,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits54_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "限时活动获得"
@@ -5167,6 +5287,9 @@
         3367
       ],
       "fashion_bond_band": 4,
+      "ai_effect": [
+        28
+      ],
       "bond_id": 305034,
       "perform_id": 10028,
       "suit_effect_tips": [
@@ -5179,6 +5302,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits38_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -5250,6 +5374,9 @@
         3367
       ],
       "fashion_bond_band": 4,
+      "ai_effect": [
+        28
+      ],
       "bond_id": 305034,
       "perform_id": 10028,
       "suit_effect_tips": [
@@ -5262,6 +5389,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits38_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -5334,6 +5462,9 @@
         4094
       ],
       "fashion_bond_band": 4,
+      "ai_effect": [
+        29
+      ],
       "bond_id": 305035,
       "perform_id": 10029,
       "suit_effect_tips": [
@@ -5346,6 +5477,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits39_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -5418,6 +5550,9 @@
         4094
       ],
       "fashion_bond_band": 4,
+      "ai_effect": [
+        29
+      ],
       "bond_id": 305035,
       "perform_id": 10029,
       "suit_effect_tips": [
@@ -5430,6 +5565,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits39_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -5502,6 +5638,9 @@
         3379
       ],
       "fashion_bond_band": 4,
+      "ai_effect": [
+        30
+      ],
       "bond_id": 305036,
       "perform_id": 10030,
       "suit_effect_tips": [
@@ -5514,6 +5653,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits40_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -5586,6 +5726,9 @@
         3379
       ],
       "fashion_bond_band": 4,
+      "ai_effect": [
+        30
+      ],
       "bond_id": 305036,
       "perform_id": 10030,
       "suit_effect_tips": [
@@ -5598,6 +5741,7 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits40_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "皮卡月刊限定"
@@ -5662,6 +5806,7 @@
       "flavor_text": "「倾听万物回响」",
       "fashion_bond_band": 1,
       "display_suit": true,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "绩点大赛活动获取"
@@ -5692,6 +5837,7 @@
       "flavor_text": "「倾听万物回响」",
       "fashion_bond_band": 1,
       "display_suit": true,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "绩点大赛活动获取"
@@ -5722,6 +5868,7 @@
       "flavor_text": "「化虚为实，点石成金」",
       "fashion_bond_band": 1,
       "display_suit": true,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "绩点大赛活动获取"
@@ -5752,6 +5899,7 @@
       "flavor_text": "「化虚为实，点石成金」",
       "fashion_bond_band": 1,
       "display_suit": true,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "绩点大赛活动获取"
@@ -5782,6 +5930,7 @@
       "flavor_text": "「法则即世界」",
       "fashion_bond_band": 1,
       "display_suit": true,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "绩点大赛活动获取"
@@ -5812,6 +5961,7 @@
       "flavor_text": "「法则即世界」",
       "fashion_bond_band": 1,
       "display_suit": true,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "绩点大赛活动获取"
@@ -5842,6 +5992,7 @@
       "flavor_text": "「以心为盾，以武止武」",
       "fashion_bond_band": 1,
       "display_suit": true,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "绩点大赛活动获取"
@@ -5872,6 +6023,7 @@
       "flavor_text": "「以心为盾，以武止武」",
       "fashion_bond_band": 1,
       "display_suit": true,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "绩点大赛活动获取"
@@ -5910,7 +6062,7 @@
       "petbase_id": [
         3031,
         3030,
-        3329,
+        3029,
         13000153,
         4022,
         5005
@@ -5918,6 +6070,9 @@
       "flavor_text": "不论在哪里都是被阳光眷顾着的幸运儿。",
       "fashion_bond_band": 2,
       "display_suit": true,
+      "ai_effect": [
+        18
+      ],
       "bond_id": 305024,
       "perform_id": 10018,
       "suit_effect_tips": [
@@ -5926,9 +6081,10 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits32_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
-          "acquire_way_text": "异色精灵赠送"
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
         }
       ]
     },
@@ -5964,7 +6120,7 @@
       "petbase_id": [
         3031,
         3030,
-        3329,
+        3029,
         13000153,
         4022,
         5005
@@ -5972,6 +6128,9 @@
       "flavor_text": "不论在哪里都是被阳光眷顾着的幸运儿。",
       "fashion_bond_band": 2,
       "display_suit": true,
+      "ai_effect": [
+        18
+      ],
       "bond_id": 305024,
       "perform_id": 10018,
       "suit_effect_tips": [
@@ -5980,9 +6139,10 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits32_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
-          "acquire_way_text": "异色精灵赠送"
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
         }
       ]
     },
@@ -6025,6 +6185,9 @@
       "flavor_text": "开心还是难过也没关系，就这样，一直陪在你身边。",
       "fashion_bond_band": 2,
       "display_suit": true,
+      "ai_effect": [
+        26
+      ],
       "bond_id": 305032,
       "perform_id": 10023,
       "suit_effect_tips": [
@@ -6033,9 +6196,10 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits43_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
-          "acquire_way_text": "异色精灵赠送"
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
         }
       ]
     },
@@ -6078,6 +6242,9 @@
       "flavor_text": "开心还是难过也没关系，就这样，一直陪在你身边。",
       "fashion_bond_band": 2,
       "display_suit": true,
+      "ai_effect": [
+        26
+      ],
       "bond_id": 305032,
       "perform_id": 10023,
       "suit_effect_tips": [
@@ -6086,9 +6253,10 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits43_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
-          "acquire_way_text": "异色精灵赠送"
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
         }
       ]
     },
@@ -6126,6 +6294,9 @@
       "flavor_text": "向前冲吧，在我的身后是勇敢的猪猪。",
       "fashion_bond_band": 3,
       "display_suit": true,
+      "ai_effect": [
+        11
+      ],
       "bond_id": 305019,
       "perform_id": 10014,
       "suit_effect_tips": [
@@ -6134,9 +6305,10 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits28_male_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
-          "acquire_way_text": "异色精灵赠送"
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
         }
       ]
     },
@@ -6174,6 +6346,9 @@
       "flavor_text": "向前冲吧，在我的身后是勇敢的猪猪。",
       "fashion_bond_band": 3,
       "display_suit": true,
+      "ai_effect": [
+        11
+      ],
       "bond_id": 305019,
       "perform_id": 10014,
       "suit_effect_tips": [
@@ -6182,9 +6357,10 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits28_female_callout.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
-          "acquire_way_text": "异色精灵赠送"
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
         }
       ]
     },
@@ -6222,6 +6398,9 @@
       ],
       "fashion_bond_band": 3,
       "display_suit": true,
+      "ai_effect": [
+        15
+      ],
       "bond_id": 305016,
       "perform_id": 10011,
       "suit_effect_tips": [
@@ -6234,9 +6413,10 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits36_male_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
-          "acquire_way_text": "异色精灵赠送"
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
         }
       ]
     },
@@ -6274,6 +6454,9 @@
       ],
       "fashion_bond_band": 3,
       "display_suit": true,
+      "ai_effect": [
+        15
+      ],
       "bond_id": 305016,
       "perform_id": 10011,
       "suit_effect_tips": [
@@ -6286,9 +6469,788 @@
           "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits36_female_win.mp4"
         }
       ],
+      "launch_item": true,
       "acquire_struct": [
         {
-          "acquire_way_text": "异色精灵赠送"
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
+        }
+      ]
+    },
+    "127": {
+      "id": 127,
+      "name": "圆号鱼印象",
+      "editor_name": "圆号鱼印象",
+      "gender": 1,
+      "package_id": 11001,
+      "item_id": [
+        10704501,
+        10904501,
+        11204501,
+        11304501,
+        10804501,
+        11004501,
+        11104501
+      ],
+      "effect_item_id": [
+        10704501,
+        10904501,
+        11204501,
+        11304501,
+        10804501,
+        11004501,
+        11104501
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_045.suits1_045'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_045_pose.suits1_045_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3530,
+        3529
+      ],
+      "flavor_text": "嘀嘟嘀嘟！吹响欢快的号角！",
+      "fashion_bond_band": 2,
+      "ai_effect": [
+        41
+      ],
+      "bond_id": 305037,
+      "perform_id": 10031,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「圆号鱼印象」</>的套装，在对战中更换圆号鱼进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits45_male_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "吟游诗人发型-圆号鱼印象",
+          "lv_item_type": 11,
+          "lv_item_id": 236,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-圆号鱼",
+          "lv_item_type": 28,
+          "lv_item_id": 305037,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "128": {
+      "id": 128,
+      "name": "圆号鱼印象",
+      "editor_name": "圆号鱼印象",
+      "gender": 2,
+      "package_id": 11002,
+      "item_id": [
+        20704501,
+        20904501,
+        21204501,
+        21304501,
+        20804501,
+        21004501,
+        21104501
+      ],
+      "effect_item_id": [
+        20704501,
+        20904501,
+        21204501,
+        21304501,
+        20804501,
+        21004501,
+        21104501
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_045.suits2_045'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_045_pose.suits2_045_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3530,
+        3529
+      ],
+      "flavor_text": "嘀嘟嘀嘟！吹响欢快的号角！",
+      "fashion_bond_band": 2,
+      "ai_effect": [
+        41
+      ],
+      "bond_id": 305037,
+      "perform_id": 10031,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「圆号鱼印象」</>的套装，在对战中更换圆号鱼进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits45_female_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "吟游诗人发型-圆号鱼印象",
+          "lv_item_type": 11,
+          "lv_item_id": 237,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-圆号鱼",
+          "lv_item_type": 28,
+          "lv_item_id": 305037,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "129": {
+      "id": 129,
+      "name": "蹦床松鼠印象",
+      "editor_name": "蹦床松鼠印象",
+      "gender": 1,
+      "package_id": 11001,
+      "item_id": [
+        10704601,
+        10904601,
+        11204601,
+        12104601,
+        10804601,
+        11004601,
+        11104601
+      ],
+      "effect_item_id": [
+        10704601,
+        10904601,
+        11204601,
+        12104601,
+        10804601,
+        11004601,
+        11104601
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_046.suits1_046'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_046_pose.suits1_046_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3100,
+        3099,
+        3098
+      ],
+      "flavor_text": "蹦蹦跳跳，将这份诗意带到你身旁。",
+      "fashion_bond_band": 2,
+      "ai_effect": [
+        42
+      ],
+      "bond_id": 305038,
+      "perform_id": 10032,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「蹦床松鼠印象」</>的套装，在对战中更换蹦床松鼠进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits46_male_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "吟游诗人发型-蹦床松鼠印象",
+          "lv_item_type": 11,
+          "lv_item_id": 238,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-蹦床松鼠",
+          "lv_item_type": 28,
+          "lv_item_id": 305038,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "130": {
+      "id": 130,
+      "name": "蹦床松鼠印象",
+      "editor_name": "蹦床松鼠印象",
+      "gender": 2,
+      "package_id": 11002,
+      "item_id": [
+        20704601,
+        20904601,
+        21204601,
+        22104601,
+        20804601,
+        21004601,
+        21104601
+      ],
+      "effect_item_id": [
+        20704601,
+        20904601,
+        21204601,
+        22104601,
+        20804601,
+        21004601,
+        21104601
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_046.suits2_046'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_046_pose.suits2_046_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3100,
+        3099,
+        3098
+      ],
+      "flavor_text": "蹦蹦跳跳，将这份诗意带到你身旁。",
+      "fashion_bond_band": 2,
+      "ai_effect": [
+        42
+      ],
+      "bond_id": 305038,
+      "perform_id": 10032,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c2f\">「蹦床松鼠印象」</>的套装，在对战中更换蹦床松鼠进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits46_female_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "吟游诗人发型-蹦床松鼠印象",
+          "lv_item_type": 11,
+          "lv_item_id": 239,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-蹦床松鼠",
+          "lv_item_type": 28,
+          "lv_item_id": 305038,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "131": {
+      "id": 131,
+      "name": "卡瓦重印象",
+      "editor_name": "卡瓦重印象",
+      "gender": 1,
+      "package_id": 11001,
+      "item_id": [
+        10704701,
+        10904701,
+        11204701,
+        12104701,
+        10804701,
+        11004701,
+        11104701
+      ],
+      "effect_item_id": [
+        10704701,
+        10904701,
+        11204701,
+        12104701,
+        10804701,
+        11004701,
+        11104701
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_047.suits1_047'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_047_pose.suits1_047_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3042,
+        3041,
+        3040,
+        3296,
+        3293,
+        3290,
+        3295,
+        3292,
+        3289,
+        3294,
+        3291,
+        3288
+      ],
+      "flavor_text": "叮咚叮咚！随着这节奏一起迈开脚步。",
+      "fashion_bond_band": 2,
+      "ai_effect": [
+        43
+      ],
+      "bond_id": 305039,
+      "perform_id": 10033,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「卡瓦重印象」</>的套装，在对战中更换卡瓦重进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits47_male_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "吟游诗人发型-卡瓦重印象",
+          "lv_item_type": 11,
+          "lv_item_id": 240,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-卡瓦重",
+          "lv_item_type": 28,
+          "lv_item_id": 305039,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "132": {
+      "id": 132,
+      "name": "卡瓦重印象",
+      "editor_name": "卡瓦重印象",
+      "gender": 2,
+      "package_id": 11002,
+      "item_id": [
+        20704701,
+        20904701,
+        21204701,
+        22104701,
+        20804701,
+        21004701,
+        21104701
+      ],
+      "effect_item_id": [
+        20704701,
+        20904701,
+        21204701,
+        22104701,
+        20804701,
+        21004701,
+        21104701
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_047.suits2_047'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_047_pose.suits2_047_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3042,
+        3041,
+        3040,
+        3296,
+        3293,
+        3290,
+        3295,
+        3292,
+        3289,
+        3294,
+        3291,
+        3288
+      ],
+      "flavor_text": "叮咚叮咚！随着这节奏一起迈开脚步。",
+      "fashion_bond_band": 2,
+      "ai_effect": [
+        43
+      ],
+      "bond_id": 305039,
+      "perform_id": 10033,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「卡瓦重印象」</>的套装，在对战中更换卡瓦重进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits47_female_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "吟游诗人发型-卡瓦重印象",
+          "lv_item_type": 11,
+          "lv_item_id": 241,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-卡瓦重",
+          "lv_item_type": 28,
+          "lv_item_id": 305039,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "133": {
+      "id": 133,
+      "name": "里拉鳐印象",
+      "editor_name": "里拉鳐印象",
+      "gender": 1,
+      "package_id": 11001,
+      "item_id": [
+        10704801,
+        10904801,
+        11204801,
+        11304801,
+        10804801,
+        11004801,
+        11104801
+      ],
+      "effect_item_id": [
+        10704801,
+        10904801,
+        11204801,
+        11304801,
+        10804801,
+        11004801,
+        11104801
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_048.suits1_048'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_048_pose.suits1_048_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3521
+      ],
+      "flavor_text": "演奏一首悠扬的琴曲，诉说着海底深埋的秘密。",
+      "fashion_bond_band": 2,
+      "ai_effect": [
+        44
+      ],
+      "bond_id": 305040,
+      "perform_id": 10034,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「里拉鳐印象」</>的套装，在对战中更换里拉鳐进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits48_male_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "吟游诗人发型-里拉鳐印象",
+          "lv_item_type": 11,
+          "lv_item_id": 242,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-里拉鳐",
+          "lv_item_type": 28,
+          "lv_item_id": 305040,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "134": {
+      "id": 134,
+      "name": "里拉鳐印象",
+      "editor_name": "里拉鳐印象",
+      "gender": 2,
+      "package_id": 11002,
+      "item_id": [
+        20704801,
+        20904801,
+        21204801,
+        21304801,
+        20804801,
+        21004801,
+        21104801
+      ],
+      "effect_item_id": [
+        20704801,
+        20904801,
+        21204801,
+        21304801,
+        20804801,
+        21004801,
+        21104801
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_048.suits2_048'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_048_pose.suits2_048_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3521
+      ],
+      "flavor_text": "演奏一首悠扬的琴曲，诉说着海底的秘密。",
+      "fashion_bond_band": 2,
+      "ai_effect": [
+        44
+      ],
+      "bond_id": 305040,
+      "perform_id": 10034,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c2f\">「里拉鳐印象」</>的套装，在对战中更换里拉鳐进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits48_female_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "吟游诗人发型-里拉鳐印象",
+          "lv_item_type": 11,
+          "lv_item_id": 243,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-里拉鳐",
+          "lv_item_type": 28,
+          "lv_item_id": 305040,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "135": {
+      "id": 135,
+      "name": "凛冬革风",
+      "editor_name": "凛冬革风",
+      "gender": 1,
+      "item_id": [
+        10700701,
+        10900701,
+        11000401,
+        11100701,
+        11200701,
+        11301001
+      ],
+      "effect_item_id": [
+        10700701,
+        10900701,
+        11000401,
+        11100701,
+        11200701,
+        11301001
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_007_01.suits1_007_01'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_007_01_pose.suits1_007_01_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 1,
+      "fashion_bond_band": 2,
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "狂欢通行证奖励"
+        }
+      ]
+    },
+    "136": {
+      "id": 136,
+      "name": "凛冬革风",
+      "editor_name": "凛冬革风",
+      "gender": 2,
+      "item_id": [
+        20700701,
+        20900701,
+        21000401,
+        21100701,
+        21200701,
+        21300901
+      ],
+      "effect_item_id": [
+        20700701,
+        20900701,
+        21000401,
+        21100701,
+        21200701,
+        21300901
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_007_01.suits2_007_01'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_007_01_pose.suits2_007_01_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 1,
+      "fashion_bond_band": 2,
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "狂欢通行证奖励"
+        }
+      ]
+    },
+    "137": {
+      "id": 137,
+      "name": "晴午革风",
+      "editor_name": "晴午革风",
+      "gender": 1,
+      "item_id": [
+        10700702,
+        10900702,
+        11000402,
+        11100702,
+        11200702,
+        11301002
+      ],
+      "effect_item_id": [
+        10700702,
+        10900702,
+        11000402,
+        11100702,
+        11200702,
+        11301002
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_007_02.suits1_007_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_007_02_pose.suits1_007_02_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 1,
+      "fashion_bond_band": 2,
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "狂欢通行证奖励"
+        }
+      ]
+    },
+    "138": {
+      "id": 138,
+      "name": "晴午革风",
+      "editor_name": "晴午革风",
+      "gender": 2,
+      "item_id": [
+        20700702,
+        20900702,
+        21000402,
+        21100702,
+        21200702,
+        21300902
+      ],
+      "effect_item_id": [
+        20700702,
+        20900702,
+        21000402,
+        21100702,
+        21200702,
+        21300902
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_007_02.suits2_007_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_007_02_pose.suits2_007_02_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 1,
+      "fashion_bond_band": 2,
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "狂欢通行证奖励"
+        }
+      ]
+    },
+    "139": {
+      "id": 139,
+      "name": "柿红革风",
+      "editor_name": "柿红革风",
+      "gender": 1,
+      "item_id": [
+        10700703,
+        10900703,
+        11000403,
+        11100703,
+        11200703,
+        11301003
+      ],
+      "effect_item_id": [
+        10700703,
+        10900703,
+        11000403,
+        11100703,
+        11200703,
+        11301003
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_007_03.suits1_007_03'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_007_03_pose.suits1_007_03_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 1,
+      "fashion_bond_band": 2,
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "狂欢通行证奖励"
+        }
+      ]
+    },
+    "140": {
+      "id": 140,
+      "name": "柿红革风",
+      "editor_name": "柿红革风",
+      "gender": 2,
+      "item_id": [
+        20700703,
+        20900703,
+        21000403,
+        21100703,
+        21200703,
+        21300903
+      ],
+      "effect_item_id": [
+        20700703,
+        20900703,
+        21000403,
+        21100703,
+        21200703,
+        21300903
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_007_03.suits2_007_03'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_007_03_pose.suits2_007_03_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 1,
+      "fashion_bond_band": 2,
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "狂欢通行证奖励"
         }
       ]
     },
@@ -6321,6 +7283,7 @@
       "flavor_text": "模糊的回忆里，这件衣服上有阳光晒被子的味道。",
       "fashion_bond_band": 2,
       "display_suit": true,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "回想记忆中的样子"
@@ -6356,11 +7319,2550 @@
       "flavor_text": "模糊的回忆里，这件衣服上有阳光晒被子的味道。",
       "fashion_bond_band": 2,
       "display_suit": true,
+      "launch_item": true,
       "acquire_struct": [
         {
           "acquire_way_text": "回想记忆中的样子"
         }
       ]
+    },
+    "143": {
+      "id": 143,
+      "name": "幻影灵菇印象",
+      "editor_name": "幻影灵菇印象",
+      "gender": 1,
+      "package_id": 11101,
+      "item_id": [
+        11106501,
+        11006501,
+        10806501,
+        1070650101,
+        11306501,
+        11206501
+      ],
+      "effect_item_id": [
+        11106501,
+        11006501,
+        10806501,
+        1070650101,
+        11306501,
+        11206501
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_065.suits1_065'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_065_pose.suits1_065_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3147,
+        3146,
+        3145
+      ],
+      "fashion_bond_band": 2,
+      "ai_effect": [
+        38
+      ],
+      "bond_id": 305056,
+      "perform_id": 10036,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「幻影灵菇印象」</>的套装，在对战中更换幻影灵菇进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits65_male_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，幻影灵菇给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits65_male_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "面部组件",
+          "goods_name": "口罩-幻影灵菇印象",
+          "lv_item_type": 10,
+          "lv_item_id": 12606501,
+          "lv_cost_type": 40,
+          "lv_cost_price": 5
+        },
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "梦境流浪者发型-幻影灵菇",
+          "lv_item_type": 11,
+          "lv_item_id": 246,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "包挂饰",
+          "goods_name": "包挂饰-小灵菇",
+          "lv_item_type": 10,
+          "lv_item_id": 32408401,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-幻影灵菇",
+          "lv_item_type": 28,
+          "lv_item_id": 305056,
+          "lv_cost_type": 40,
+          "lv_cost_price": 60
+        }
+      ]
+    },
+    "144": {
+      "id": 144,
+      "name": "幻影灵菇印象",
+      "editor_name": "幻影灵菇印象",
+      "gender": 2,
+      "package_id": 11102,
+      "item_id": [
+        21106501,
+        21006501,
+        20806501,
+        2070650101,
+        21306501,
+        21206501
+      ],
+      "effect_item_id": [
+        21106501,
+        21006501,
+        20806501,
+        2070650101,
+        21306501,
+        21206501
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_065.suits2_065'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_065_pose.suits2_065_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3147,
+        3146,
+        3145
+      ],
+      "fashion_bond_band": 2,
+      "ai_effect": [
+        38
+      ],
+      "bond_id": 305056,
+      "perform_id": 10036,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「幻影灵菇印象」</>的套装，在对战中更换幻影灵菇进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits65_female_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，幻影灵菇给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits65_female_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "面部组件",
+          "goods_name": "口罩-幻影灵菇印象",
+          "lv_item_type": 10,
+          "lv_item_id": 22606501,
+          "lv_cost_type": 40,
+          "lv_cost_price": 5
+        },
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "梦境流浪者发型-幻影灵菇",
+          "lv_item_type": 11,
+          "lv_item_id": 247,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "包挂饰",
+          "goods_name": "包挂饰-小灵菇",
+          "lv_item_type": 10,
+          "lv_item_id": 32408401,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-幻影灵菇",
+          "lv_item_type": 28,
+          "lv_item_id": 305056,
+          "lv_cost_type": 40,
+          "lv_cost_price": 60
+        }
+      ]
+    },
+    "145": {
+      "id": 145,
+      "name": "怖哭菇印象",
+      "editor_name": "怖哭菇印象",
+      "gender": 1,
+      "package_id": 11101,
+      "item_id": [
+        11106601,
+        11006601,
+        10806601,
+        1070660101,
+        11306601,
+        11206601
+      ],
+      "effect_item_id": [
+        11106601,
+        11006601,
+        10806601,
+        1070660101,
+        11306601,
+        11206601
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_066.suits1_066'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_066_pose.suits1_066_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3241,
+        3240,
+        3239
+      ],
+      "fashion_bond_band": 2,
+      "ai_effect": [
+        39
+      ],
+      "bond_id": 305057,
+      "perform_id": 10037,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「怖哭菇印象」</>的套装，在对战中更换怖哭菇进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits66_male_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，怖哭菇给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits66_male_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "面部组件",
+          "goods_name": "瞳孔-怖哭菇印象",
+          "lv_item_type": 11,
+          "lv_item_id": 252,
+          "lv_cost_type": 40,
+          "lv_cost_price": 5
+        },
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "梦境流浪者发型-怖哭菇",
+          "lv_item_type": 11,
+          "lv_item_id": 248,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "包挂饰",
+          "goods_name": "包挂饰-哭哭菇",
+          "lv_item_type": 10,
+          "lv_item_id": 32408501,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-怖哭菇",
+          "lv_item_type": 28,
+          "lv_item_id": 305057,
+          "lv_cost_type": 40,
+          "lv_cost_price": 60
+        }
+      ]
+    },
+    "146": {
+      "id": 146,
+      "name": "怖哭菇印象",
+      "editor_name": "怖哭菇印象",
+      "gender": 2,
+      "package_id": 11102,
+      "item_id": [
+        21106601,
+        21006601,
+        20806601,
+        2070660101,
+        21306601,
+        21206601
+      ],
+      "effect_item_id": [
+        21106601,
+        21006601,
+        20806601,
+        2070660101,
+        21306601,
+        21206601
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_066.suits2_066'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_066_pose.suits2_066_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3241,
+        3240,
+        3239
+      ],
+      "fashion_bond_band": 2,
+      "ai_effect": [
+        39
+      ],
+      "bond_id": 305057,
+      "perform_id": 10037,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「怖哭菇印象」</>的套装，在对战中更换怖哭菇进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits66_female_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，怖哭菇给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits66_female_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "面部组件",
+          "goods_name": "瞳孔-怖哭菇印象",
+          "lv_item_type": 11,
+          "lv_item_id": 252,
+          "lv_cost_type": 40,
+          "lv_cost_price": 5
+        },
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "梦境流浪者发型-怖哭菇",
+          "lv_item_type": 11,
+          "lv_item_id": 249,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "包挂饰",
+          "goods_name": "包挂饰-哭哭菇",
+          "lv_item_type": 10,
+          "lv_item_id": 32408501,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-怖哭菇",
+          "lv_item_type": 28,
+          "lv_item_id": 305057,
+          "lv_cost_type": 40,
+          "lv_cost_price": 60
+        }
+      ]
+    },
+    "147": {
+      "id": 147,
+      "name": "流浪鼠印象",
+      "editor_name": "流浪鼠印象",
+      "gender": 1,
+      "package_id": 11101,
+      "item_id": [
+        11106701,
+        11006701,
+        10806701,
+        1070670101,
+        11306701,
+        11206701
+      ],
+      "effect_item_id": [
+        11106701,
+        11006701,
+        10806701,
+        1070670101,
+        11306701,
+        11206701
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_067.suits1_067'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_067_pose.suits1_067_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3256,
+        3255
+      ],
+      "fashion_bond_band": 2,
+      "ai_effect": [
+        40
+      ],
+      "bond_id": 305058,
+      "perform_id": 10038,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「流浪鼠印象」</>的套装，在对战中更换流浪鼠进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits67_male_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，流浪鼠给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits67_male_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "面部组件",
+          "goods_name": "面饰-流浪鼠印象",
+          "lv_item_type": 10,
+          "lv_item_id": 12206701,
+          "lv_cost_type": 40,
+          "lv_cost_price": 5
+        },
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "梦境流浪者发型-流浪鼠",
+          "lv_item_type": 11,
+          "lv_item_id": 250,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "包挂饰",
+          "goods_name": "包挂饰-奔波鼠",
+          "lv_item_type": 10,
+          "lv_item_id": 32408601,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-流浪鼠",
+          "lv_item_type": 28,
+          "lv_item_id": 305058,
+          "lv_cost_type": 40,
+          "lv_cost_price": 60
+        }
+      ]
+    },
+    "148": {
+      "id": 148,
+      "name": "流浪鼠印象",
+      "editor_name": "流浪鼠印象",
+      "gender": 2,
+      "package_id": 11102,
+      "item_id": [
+        21106701,
+        21006701,
+        20806701,
+        2070670101,
+        21306701,
+        21206701
+      ],
+      "effect_item_id": [
+        21106701,
+        21006701,
+        20806701,
+        2070670101,
+        21306701,
+        21206701
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_067.suits2_067'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_067_pose.suits2_067_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3256,
+        3255
+      ],
+      "fashion_bond_band": 2,
+      "ai_effect": [
+        40
+      ],
+      "bond_id": 305058,
+      "perform_id": 10038,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「流浪鼠印象」</>的套装，在对战中更换流浪鼠进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits67_female_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，流浪鼠给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits67_female_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "面部组件",
+          "goods_name": "面饰-流浪鼠印象",
+          "lv_item_type": 10,
+          "lv_item_id": 22206701,
+          "lv_cost_type": 40,
+          "lv_cost_price": 5
+        },
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "梦境流浪者发型-流浪鼠",
+          "lv_item_type": 11,
+          "lv_item_id": 251,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "包挂饰",
+          "goods_name": "包挂饰-奔波鼠",
+          "lv_item_type": 10,
+          "lv_item_id": 32408601,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-流浪鼠",
+          "lv_item_type": 28,
+          "lv_item_id": 305058,
+          "lv_cost_type": 40,
+          "lv_cost_price": 60
+        }
+      ]
+    },
+    "149": {
+      "id": 149,
+      "name": "咕德帽帽印象",
+      "editor_name": "咕德帽帽印象",
+      "gender": 1,
+      "package_id": 11201,
+      "item_id": [
+        10705501,
+        10905501,
+        11205501,
+        10805501,
+        11005501,
+        11105501,
+        12105501
+      ],
+      "effect_item_id": [
+        10705501,
+        10905501,
+        11205501,
+        10805501,
+        11005501,
+        11105501,
+        12105501
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_055.suits1_055'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_055_pose.suits1_055_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3684,
+        3683
+      ],
+      "flavor_text": "猜猜我的帽子里藏着什么？是魔术，还是魔法？",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        34
+      ],
+      "bond_id": 305044,
+      "perform_id": 10039,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「咕德帽帽印象」</>的套装，在对战中更换咕德帽帽进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits55_male_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "魔法嘉年华发型-咕德帽帽印象",
+          "lv_item_type": 11,
+          "lv_item_id": 255,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-咕德帽帽",
+          "lv_item_type": 28,
+          "lv_item_id": 305044,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "150": {
+      "id": 150,
+      "name": "咕德帽帽印象",
+      "editor_name": "咕德帽帽印象",
+      "gender": 2,
+      "package_id": 11202,
+      "item_id": [
+        20705501,
+        20905501,
+        21205501,
+        20805501,
+        21005501,
+        21105501,
+        22105501
+      ],
+      "effect_item_id": [
+        20705501,
+        20905501,
+        21205501,
+        20805501,
+        21005501,
+        21105501,
+        22105501
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_055.suits2_055'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_055_pose.suits2_055_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3684,
+        3683
+      ],
+      "flavor_text": "猜猜我的帽子里藏着什么？是魔术，还是魔法？",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        34
+      ],
+      "bond_id": 305044,
+      "perform_id": 10039,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「咕德帽帽印象」</>的套装，在对战中更换咕德帽帽进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits55_female_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "魔法嘉年华发型-咕德帽帽印象",
+          "lv_item_type": 11,
+          "lv_item_id": 256,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-咕德帽帽",
+          "lv_item_type": 28,
+          "lv_item_id": 305044,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "151": {
+      "id": 151,
+      "name": "巨鼓象印象",
+      "editor_name": "巨鼓象印象",
+      "gender": 1,
+      "package_id": 11201,
+      "item_id": [
+        10705601,
+        10905601,
+        11205601,
+        10805601,
+        11005601,
+        11105601,
+        11305601
+      ],
+      "effect_item_id": [
+        10705601,
+        10905601,
+        11205601,
+        10805601,
+        11005601,
+        11105601,
+        11305601
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_056.suits1_056'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_056_pose.suits1_056_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3709,
+        3708
+      ],
+      "flavor_text": "敲击乐鼓，响起欢快的节奏！",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        35
+      ],
+      "bond_id": 305045,
+      "perform_id": 10040,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「巨鼓象印象」</>的套装，在对战中更换巨鼓象进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits56_male_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "魔法嘉年华发型-巨鼓象印象",
+          "lv_item_type": 11,
+          "lv_item_id": 257,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-巨鼓象",
+          "lv_item_type": 28,
+          "lv_item_id": 305045,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "152": {
+      "id": 152,
+      "name": "巨鼓象印象",
+      "editor_name": "巨鼓象印象",
+      "gender": 2,
+      "package_id": 11202,
+      "item_id": [
+        20705601,
+        20905601,
+        21205601,
+        20805601,
+        21005601,
+        21105601,
+        22105601
+      ],
+      "effect_item_id": [
+        20705601,
+        20905601,
+        21205601,
+        20805601,
+        21005601,
+        21105601,
+        22105601
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_056.suits2_056'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_056_pose.suits2_056_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3709,
+        3708
+      ],
+      "flavor_text": "敲击乐鼓，响起欢快的节奏！",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        35
+      ],
+      "bond_id": 305045,
+      "perform_id": 10040,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「巨鼓象印象」</>的套装，在对战中更换巨鼓象进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits56_female_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "魔法嘉年华发型-巨鼓象印象",
+          "lv_item_type": 11,
+          "lv_item_id": 258,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-巨鼓象",
+          "lv_item_type": 28,
+          "lv_item_id": 305045,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "153": {
+      "id": 153,
+      "name": "烟花伯爵印象",
+      "editor_name": "烟花伯爵印象",
+      "gender": 1,
+      "package_id": 11201,
+      "item_id": [
+        10705701,
+        10905701,
+        11205701,
+        10805701,
+        11005701,
+        11105701,
+        12105701
+      ],
+      "effect_item_id": [
+        10705701,
+        10905701,
+        11205701,
+        10805701,
+        11005701,
+        11105701,
+        12105701
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_057.suits1_057'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_057_pose.suits1_057_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3678,
+        3677
+      ],
+      "flavor_text": "即使是绽放一瞬的烟花也会变成美好的回忆。",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        36
+      ],
+      "bond_id": 305046,
+      "perform_id": 10041,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「烟花伯爵印象」</>的套装，在对战中更换烟花伯爵进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits57_male_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "魔法嘉年华发型-烟花伯爵印象",
+          "lv_item_type": 11,
+          "lv_item_id": 259,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-烟花伯爵",
+          "lv_item_type": 28,
+          "lv_item_id": 305046,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "154": {
+      "id": 154,
+      "name": "烟花伯爵印象",
+      "editor_name": "烟花伯爵印象",
+      "gender": 2,
+      "package_id": 11202,
+      "item_id": [
+        20705701,
+        20905701,
+        21205701,
+        20805701,
+        21005701,
+        21105701,
+        22105701
+      ],
+      "effect_item_id": [
+        20705701,
+        20905701,
+        21205701,
+        20805701,
+        21005701,
+        21105701,
+        22105701
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_057.suits2_057'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_057_pose.suits2_057_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3678,
+        3677
+      ],
+      "flavor_text": "即使是绽放一瞬的烟花也会变成美好的回忆。",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        36
+      ],
+      "bond_id": 305046,
+      "perform_id": 10041,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「烟花伯爵印象」</>的套装，在对战中更换烟花伯爵进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits57_female_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "魔法嘉年华发型-烟花伯爵印象",
+          "lv_item_type": 11,
+          "lv_item_id": 260,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-烟花伯爵",
+          "lv_item_type": 28,
+          "lv_item_id": 305046,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "155": {
+      "id": 155,
+      "name": "小丑公爵印象",
+      "editor_name": "小丑公爵印象",
+      "gender": 1,
+      "package_id": 11201,
+      "item_id": [
+        10705801,
+        10905801,
+        11205801,
+        10805801,
+        11005801,
+        11105801,
+        11305801
+      ],
+      "effect_item_id": [
+        10705801,
+        10905801,
+        11205801,
+        10805801,
+        11005801,
+        11105801,
+        11305801
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_058.suits1_058'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_058_pose.suits1_058_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3489,
+        3488,
+        3487
+      ],
+      "flavor_text": "希望能在这里给你带来欢笑。这就是我的“魔法”。",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        37
+      ],
+      "bond_id": 305047,
+      "perform_id": 10042,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「小丑公爵印象」</>的套装，在对战中更换小丑公爵重进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits58_male_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "魔法嘉年华发型-小丑公爵印象",
+          "lv_item_type": 11,
+          "lv_item_id": 261,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-小丑公爵",
+          "lv_item_type": 28,
+          "lv_item_id": 305047,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "156": {
+      "id": 156,
+      "name": "小丑公爵印象",
+      "editor_name": "小丑公爵印象",
+      "gender": 2,
+      "package_id": 11202,
+      "item_id": [
+        20705801,
+        20905801,
+        21205801,
+        20805801,
+        21005801,
+        21105801,
+        21305801
+      ],
+      "effect_item_id": [
+        20705801,
+        20905801,
+        21205801,
+        20805801,
+        21005801,
+        21105801,
+        21305801
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_058.suits2_058'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_058_pose.suits2_058_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3489,
+        3488,
+        3487
+      ],
+      "flavor_text": "希望能在这里给你带来欢笑。这就是我的“魔法”。",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        37
+      ],
+      "bond_id": 305047,
+      "perform_id": 10042,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「小丑公爵印象」</>的套装，在对战中更换小丑公爵进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits58_female_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "魔法嘉年华发型-小丑公爵印象",
+          "lv_item_type": 11,
+          "lv_item_id": 262,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-小丑公爵",
+          "lv_item_type": 28,
+          "lv_item_id": 305047,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        }
+      ]
+    },
+    "157": {
+      "id": 157,
+      "name": "海豹船长印象",
+      "editor_name": "海豹船长印象",
+      "gender": 1,
+      "package_id": 11301,
+      "item_id": [
+        1070750101,
+        11307501,
+        10807501,
+        11207501,
+        11007501,
+        11107501
+      ],
+      "effect_item_id": [
+        1070750101,
+        11307501,
+        10807501,
+        11207501,
+        11007501,
+        11107501
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_075.suits1_075'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_075_pose.suits1_075_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3216,
+        3215
+      ],
+      "fashion_bond_band": 5,
+      "ai_effect": [
+        31
+      ],
+      "bond_id": 305041,
+      "perform_id": 10043,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「海豹船长印象」</>的套装，在对战中更换海豹船长进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits75_male_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，海豹船长给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits75_male_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "面部组件",
+          "goods_name": "面饰-海豹船长印象",
+          "lv_item_type": 10,
+          "lv_item_id": 12207501,
+          "lv_cost_type": 40,
+          "lv_cost_price": 5
+        },
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "深海的馈赠发型-海豹船长",
+          "lv_item_type": 11,
+          "lv_item_id": 269,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "包挂饰",
+          "goods_name": "包挂饰-海豹战士",
+          "lv_item_type": 10,
+          "lv_item_id": 32409701,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-海豹船长",
+          "lv_item_type": 28,
+          "lv_item_id": 305041,
+          "lv_cost_type": 40,
+          "lv_cost_price": 60
+        }
+      ]
+    },
+    "158": {
+      "id": 158,
+      "name": "海豹船长印象",
+      "editor_name": "海豹船长印象",
+      "gender": 2,
+      "package_id": 11302,
+      "item_id": [
+        2070750101,
+        21307501,
+        20807501,
+        21207501,
+        21007501,
+        21107501
+      ],
+      "effect_item_id": [
+        2070750101,
+        21307501,
+        20807501,
+        21207501,
+        21007501,
+        21107501
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_075.suits2_075'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_075_pose.suits2_075_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3216,
+        3215
+      ],
+      "fashion_bond_band": 5,
+      "ai_effect": [
+        31
+      ],
+      "bond_id": 305041,
+      "perform_id": 10043,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「海豹船长印象」</>的套装，在对战中更换海豹船长进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits75_female_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，海豹船长给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits75_female_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "面部组件",
+          "goods_name": "面饰-海豹船长印象",
+          "lv_item_type": 10,
+          "lv_item_id": 22207501,
+          "lv_cost_type": 40,
+          "lv_cost_price": 5
+        },
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "深海的馈赠发型-海豹船长",
+          "lv_item_type": 11,
+          "lv_item_id": 270,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "包挂饰",
+          "goods_name": "包挂饰-海豹战士",
+          "lv_item_type": 10,
+          "lv_item_id": 32409701,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-海豹船长",
+          "lv_item_type": 28,
+          "lv_item_id": 305041,
+          "lv_cost_type": 40,
+          "lv_cost_price": 60
+        }
+      ]
+    },
+    "159": {
+      "id": 159,
+      "name": "千棘盔印象",
+      "editor_name": "千棘盔印象",
+      "gender": 1,
+      "package_id": 11301,
+      "item_id": [
+        1070760101,
+        12707601,
+        10807601,
+        11007601,
+        11107601,
+        11207601
+      ],
+      "effect_item_id": [
+        1070760101,
+        12707601,
+        10807601,
+        11007601,
+        11107601,
+        11207601
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_076.suits1_076'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_076_pose.suits1_076_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3332,
+        3477,
+        3331,
+        3476,
+        3330,
+        3475,
+        4020,
+        5012,
+        5029
+      ],
+      "fashion_bond_band": 5,
+      "ai_effect": [
+        32
+      ],
+      "bond_id": 305042,
+      "perform_id": 10044,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「千棘盔印象」</>的套装，在对战中更换千棘盔进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits76_male_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，千棘盔给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits76_male_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "面部组件",
+          "goods_name": "面妆-千棘盔印象",
+          "lv_item_type": 11,
+          "lv_item_id": 263,
+          "lv_cost_type": 40,
+          "lv_cost_price": 5
+        },
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "深海的馈赠发型-千棘盔",
+          "lv_item_type": 11,
+          "lv_item_id": 271,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "包挂饰",
+          "goods_name": "包挂饰-海盔虫",
+          "lv_item_type": 10,
+          "lv_item_id": 32409801,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-千棘盔",
+          "lv_item_type": 28,
+          "lv_item_id": 305042,
+          "lv_cost_type": 40,
+          "lv_cost_price": 60
+        }
+      ]
+    },
+    "160": {
+      "id": 160,
+      "name": "千棘盔印象",
+      "editor_name": "千棘盔印象",
+      "gender": 2,
+      "package_id": 11302,
+      "item_id": [
+        2070760101,
+        22707601,
+        20807601,
+        21007601,
+        21107601,
+        21207601
+      ],
+      "effect_item_id": [
+        2070760101,
+        22707601,
+        20807601,
+        21007601,
+        21107601,
+        21207601
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_076.suits2_076'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_076_pose.suits2_076_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3332,
+        3477,
+        3331,
+        3476,
+        3330,
+        3475,
+        4020,
+        5012,
+        5029
+      ],
+      "fashion_bond_band": 5,
+      "ai_effect": [
+        32
+      ],
+      "bond_id": 305042,
+      "perform_id": 10044,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「千棘盔印象」</>的套装，在对战中更换千棘盔进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits76_female_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，千棘盔给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits76_female_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "面部组件",
+          "goods_name": "面妆-千棘盔印象",
+          "lv_item_type": 11,
+          "lv_item_id": 264,
+          "lv_cost_type": 40,
+          "lv_cost_price": 5
+        },
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "深海的馈赠发型-千棘盔",
+          "lv_item_type": 11,
+          "lv_item_id": 272,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "包挂饰",
+          "goods_name": "包挂饰-海盔虫",
+          "lv_item_type": 10,
+          "lv_item_id": 32409801,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-千棘盔",
+          "lv_item_type": 28,
+          "lv_item_id": 305042,
+          "lv_cost_type": 40,
+          "lv_cost_price": 60
+        }
+      ]
+    },
+    "161": {
+      "id": 161,
+      "name": "迷迷箱怪印象",
+      "editor_name": "迷迷箱怪印象",
+      "gender": 1,
+      "package_id": 11301,
+      "item_id": [
+        1070770101,
+        12807701,
+        10807701,
+        11007701,
+        11107701,
+        11207701
+      ],
+      "effect_item_id": [
+        1070770101,
+        12807701,
+        10807701,
+        11007701,
+        11107701,
+        11207701
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_077.suits1_077'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_077_pose.suits1_077_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3619,
+        3618
+      ],
+      "fashion_bond_band": 5,
+      "ai_effect": [
+        33
+      ],
+      "bond_id": 305043,
+      "perform_id": 10045,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「迷迷箱怪印象」</>的套装，在对战中更换迷迷箱怪进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits77_male_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，迷迷箱怪给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits77_male_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "面部组件",
+          "goods_name": "睫毛-迷迷箱怪印象",
+          "lv_item_type": 11,
+          "lv_item_id": 265,
+          "lv_cost_type": 40,
+          "lv_cost_price": 5
+        },
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "深海的馈赠发型-迷迷箱怪",
+          "lv_item_type": 11,
+          "lv_item_id": 273,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "包挂饰",
+          "goods_name": "包挂饰-小箱怪",
+          "lv_item_type": 10,
+          "lv_item_id": 32409901,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-迷迷箱怪",
+          "lv_item_type": 28,
+          "lv_item_id": 305043,
+          "lv_cost_type": 40,
+          "lv_cost_price": 60
+        }
+      ]
+    },
+    "162": {
+      "id": 162,
+      "name": "迷迷箱怪印象",
+      "editor_name": "迷迷箱怪印象",
+      "gender": 2,
+      "package_id": 11302,
+      "item_id": [
+        2070770101,
+        22807701,
+        20807701,
+        21007701,
+        21107701,
+        21207701
+      ],
+      "effect_item_id": [
+        2070770101,
+        22807701,
+        20807701,
+        21007701,
+        21107701,
+        21207701
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_077.suits2_077'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_077_pose.suits2_077_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3619,
+        3618
+      ],
+      "fashion_bond_band": 5,
+      "ai_effect": [
+        33
+      ],
+      "bond_id": 305043,
+      "perform_id": 10045,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「迷迷箱怪印象」</>的套装，在对战中更换迷迷箱怪进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits77_female_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，迷迷箱怪给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits77_female_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "皮卡月刊限定"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "面部组件",
+          "goods_name": "睫毛-迷迷箱怪印象",
+          "lv_item_type": 11,
+          "lv_item_id": 266,
+          "lv_cost_type": 40,
+          "lv_cost_price": 5
+        },
+        {
+          "goods_ui_text": "发型发色",
+          "goods_name": "深海的馈赠发型-迷迷箱怪",
+          "lv_item_type": 11,
+          "lv_item_id": 274,
+          "lv_cost_type": 40,
+          "lv_cost_price": 10
+        },
+        {
+          "goods_ui_text": "包挂饰",
+          "goods_name": "包挂饰-小箱怪",
+          "lv_item_type": 10,
+          "lv_item_id": 32409901,
+          "lv_cost_type": 40,
+          "lv_cost_price": 30
+        },
+        {
+          "goods_ui_text": "华丽徽章",
+          "goods_name": "华丽徽章-迷迷箱怪",
+          "lv_item_type": 28,
+          "lv_item_id": 305043,
+          "lv_cost_type": 40,
+          "lv_cost_price": 60
+        }
+      ]
+    },
+    "163": {
+      "id": 163,
+      "name": "异色白金独角兽印象",
+      "editor_name": "异色白金独角兽印象",
+      "gender": 1,
+      "suits_original_id": 71,
+      "color_suits_launch": 2,
+      "season_id": 2,
+      "item_id": [
+        1070370201,
+        12103702,
+        10803702,
+        11203702,
+        11003702,
+        11103702
+      ],
+      "effect_item_id": [
+        1070370201,
+        12103702,
+        10803702,
+        11203702,
+        11003702,
+        11103702
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_037_02.suits1_037_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_037_02_pose.suits1_037_02_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3063,
+        3062
+      ],
+      "fashion_bond_band": 3,
+      "ai_effect": [
+        16
+      ],
+      "bond_id": 305017,
+      "perform_id": 10012,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「异色白金独角兽印象」</>的套装，在对战中更换异色白金独角兽进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits37_male_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，异色白金独角兽给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits37_male_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
+        }
+      ]
+    },
+    "164": {
+      "id": 164,
+      "name": "异色白金独角兽印象",
+      "editor_name": "异色白金独角兽印象",
+      "gender": 2,
+      "suits_original_id": 72,
+      "color_suits_launch": 2,
+      "season_id": 2,
+      "item_id": [
+        2070370201,
+        22103702,
+        20803702,
+        21203702,
+        21003702,
+        21103702
+      ],
+      "effect_item_id": [
+        2070370201,
+        22103702,
+        20803702,
+        21203702,
+        21003702,
+        21103702
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_037_02.suits2_037_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_037_02_pose.suits2_037_02_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3063,
+        3062
+      ],
+      "fashion_bond_band": 3,
+      "ai_effect": [
+        16
+      ],
+      "bond_id": 305017,
+      "perform_id": 10012,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「异色白金独角兽印象」</>的套装，在对战中更换异色白金独角兽进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits37_female_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，异色白金独角兽给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits37_female_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
+        }
+      ]
+    },
+    "165": {
+      "id": 165,
+      "name": "异色小丑公爵印象",
+      "editor_name": "异色小丑公爵印象",
+      "gender": 1,
+      "suits_original_id": 155,
+      "color_suits_launch": 1,
+      "item_id": [
+        10705802,
+        10905802,
+        11205802,
+        10805802,
+        11005802,
+        11105802,
+        11305802
+      ],
+      "effect_item_id": [
+        10705802,
+        10905802,
+        11205802,
+        10805802,
+        11005802,
+        11105802,
+        11305802
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_058_02.suits1_058_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_058_02_pose.suits1_058_02_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3489,
+        3488,
+        3487
+      ],
+      "flavor_text": "希望能在这里给你带来欢笑。这就是我的“魔法”。",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        37
+      ],
+      "bond_id": 305047,
+      "perform_id": 10042,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「异色小丑公爵印象」</>的套装，在对战中更换异色小丑公爵重进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits58_male_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
+        }
+      ]
+    },
+    "166": {
+      "id": 166,
+      "name": "异色小丑公爵印象",
+      "editor_name": "异色小丑公爵印象",
+      "gender": 2,
+      "suits_original_id": 156,
+      "color_suits_launch": 1,
+      "item_id": [
+        20705802,
+        20905802,
+        21205802,
+        20805802,
+        21005802,
+        21105802,
+        21305802
+      ],
+      "effect_item_id": [
+        20705802,
+        20905802,
+        21205802,
+        20805802,
+        21005802,
+        21105802,
+        21305802
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_058_02.suits2_058_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_058_02_pose.suits2_058_02_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3489,
+        3488,
+        3487
+      ],
+      "flavor_text": "希望能在这里给你带来欢笑。这就是我的“魔法”。",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        37
+      ],
+      "bond_id": 305047,
+      "perform_id": 10042,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「异色小丑公爵印象」</>的套装，在对战中更换异色小丑公爵重进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits58_female_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
+        }
+      ]
+    },
+    "167": {
+      "id": 167,
+      "name": "异色烟花伯爵印象",
+      "editor_name": "异色烟花伯爵印象",
+      "gender": 1,
+      "suits_original_id": 153,
+      "color_suits_launch": 1,
+      "item_id": [
+        10705702,
+        10905702,
+        11205702,
+        10805702,
+        11005702,
+        11105702,
+        12105702
+      ],
+      "effect_item_id": [
+        10705702,
+        10905702,
+        11205702,
+        10805702,
+        11005702,
+        11105702,
+        12105702
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_057_02.suits1_057_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_057_02_pose.suits1_057_02_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3678,
+        3677
+      ],
+      "flavor_text": "即使是绽放一瞬的烟花也会变成美好的回忆。",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        36
+      ],
+      "bond_id": 305046,
+      "perform_id": 10041,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「异色烟花伯爵印象」</>的套装，在对战中更换异色烟花伯爵进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits57_male_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
+        }
+      ]
+    },
+    "168": {
+      "id": 168,
+      "name": "异色烟花伯爵印象",
+      "editor_name": "异色烟花伯爵印象",
+      "gender": 2,
+      "suits_original_id": 154,
+      "color_suits_launch": 1,
+      "item_id": [
+        20705702,
+        20905702,
+        21205702,
+        20805702,
+        21005702,
+        21105702,
+        22105702
+      ],
+      "effect_item_id": [
+        20705702,
+        20905702,
+        21205702,
+        20805702,
+        21005702,
+        21105702,
+        22105702
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_057_02.suits2_057_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_057_02_pose.suits2_057_02_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3678,
+        3677
+      ],
+      "flavor_text": "即使是绽放一瞬的烟花也会变成美好的回忆。",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        36
+      ],
+      "bond_id": 305046,
+      "perform_id": 10041,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「异色烟花伯爵印象」</>的套装，在对战中更换异色烟花伯爵进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits57_female_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
+        }
+      ]
+    },
+    "169": {
+      "id": 169,
+      "name": "异色咕德帽帽印象",
+      "editor_name": "异色咕德帽帽印象",
+      "gender": 1,
+      "suits_original_id": 149,
+      "color_suits_launch": 1,
+      "item_id": [
+        10705502,
+        10905502,
+        11205502,
+        10805502,
+        11005502,
+        11105502,
+        12105502
+      ],
+      "effect_item_id": [
+        10705502,
+        10905502,
+        11205502,
+        10805502,
+        11005502,
+        11105502,
+        12105502
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_055_02.suits1_055_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_055_02_pose.suits1_055_02_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3684,
+        3683
+      ],
+      "flavor_text": "猜猜我的帽子里藏着什么？是魔术，还是魔法？",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        34
+      ],
+      "bond_id": 305044,
+      "perform_id": 10039,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「异色咕德帽帽印象」</>的套装，在对战中更换异色咕德帽帽进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits55_male_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
+        }
+      ]
+    },
+    "170": {
+      "id": 170,
+      "name": "异色咕德帽帽印象",
+      "editor_name": "异色咕德帽帽印象",
+      "gender": 2,
+      "suits_original_id": 150,
+      "color_suits_launch": 1,
+      "item_id": [
+        20705502,
+        20905502,
+        21205502,
+        20805502,
+        21005502,
+        21105502,
+        22105502
+      ],
+      "effect_item_id": [
+        20705502,
+        20905502,
+        21205502,
+        20805502,
+        21005502,
+        21105502,
+        22105502
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_055_02.suits2_055_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_055_02_pose.suits2_055_02_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3684,
+        3683
+      ],
+      "flavor_text": "猜猜我的帽子里藏着什么？是魔术，还是魔法？",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        34
+      ],
+      "bond_id": 305044,
+      "perform_id": 10039,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「异色咕德帽帽印象」</>的套装，在对战中更换异色咕德帽帽进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits55_female_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
+        }
+      ]
+    },
+    "171": {
+      "id": 171,
+      "name": "异色巨鼓象印象",
+      "editor_name": "异色巨鼓象印象",
+      "gender": 1,
+      "suits_original_id": 151,
+      "color_suits_launch": 1,
+      "item_id": [
+        10705602,
+        10905602,
+        11205602,
+        10805602,
+        11005602,
+        11105602,
+        11305602
+      ],
+      "effect_item_id": [
+        10705602,
+        10905602,
+        11205602,
+        10805602,
+        11005602,
+        11105602,
+        11305602
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_056_02.suits1_056_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_056_02_pose.suits1_056_02_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3709,
+        3708
+      ],
+      "flavor_text": "敲击乐鼓，响起欢快的节奏！",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        35
+      ],
+      "bond_id": 305045,
+      "perform_id": 10040,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「异色巨鼓象印象」</>的套装，在对战中更换异色巨鼓象进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits56_male_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
+        }
+      ]
+    },
+    "172": {
+      "id": 172,
+      "name": "异色巨鼓象印象",
+      "editor_name": "异色巨鼓象印象",
+      "gender": 2,
+      "suits_original_id": 152,
+      "color_suits_launch": 1,
+      "item_id": [
+        20705602,
+        20905602,
+        21205602,
+        20805602,
+        21005602,
+        21105602,
+        22105602
+      ],
+      "effect_item_id": [
+        20705602,
+        20905602,
+        21205602,
+        20805602,
+        21005602,
+        21105602,
+        22105602
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_056_02.suits2_056_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_056_02_pose.suits2_056_02_pose'",
+      "grade_name": "手作时装",
+      "suit_grade": 3,
+      "petbase_id": [
+        3709,
+        3708
+      ],
+      "flavor_text": "敲击乐鼓，响起欢快的节奏！",
+      "fashion_bond_band": 1,
+      "ai_effect": [
+        35
+      ],
+      "bond_id": 305045,
+      "perform_id": 10040,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「异色巨鼓象印象」</>的套装，在对战中更换异色巨鼓象进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits56_female_callout.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
+        }
+      ]
+    },
+    "173": {
+      "id": 173,
+      "name": "异色嘟嘟锅印象",
+      "editor_name": "异色嘟嘟锅印象",
+      "gender": 1,
+      "suits_original_id": 95,
+      "color_suits_launch": 2,
+      "season_id": 2,
+      "item_id": [
+        1070380201,
+        11203802,
+        11303802,
+        10803802,
+        11003802,
+        11103802
+      ],
+      "effect_item_id": [
+        1070380201,
+        11203802,
+        11303802,
+        10803802,
+        11003802,
+        11103802
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_038_02.suits1_038_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_038_02_pose.suits1_038_02_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3368,
+        3367
+      ],
+      "fashion_bond_band": 4,
+      "ai_effect": [
+        28
+      ],
+      "bond_id": 305034,
+      "perform_id": 10028,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「异色嘟嘟锅印象」</>的套装，在对战中更换异色嘟嘟锅进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits38_male_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，异色嘟嘟锅给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Male/suits38_male_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
+        }
+      ]
+    },
+    "174": {
+      "id": 174,
+      "name": "异色嘟嘟锅印象",
+      "editor_name": "异色嘟嘟锅印象",
+      "gender": 2,
+      "suits_original_id": 96,
+      "color_suits_launch": 2,
+      "season_id": 2,
+      "item_id": [
+        2070380201,
+        21203802,
+        21303802,
+        20803802,
+        21003802,
+        21103802
+      ],
+      "effect_item_id": [
+        2070380201,
+        21203802,
+        21303802,
+        20803802,
+        21003802,
+        21103802
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_038_02.suits2_038_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_038_02_pose.suits2_038_02_pose'",
+      "grade_name": "契约时装",
+      "suit_grade": 2,
+      "petbase_id": [
+        3368,
+        3367
+      ],
+      "fashion_bond_band": 4,
+      "ai_effect": [
+        28
+      ],
+      "bond_id": 305034,
+      "perform_id": 10028,
+      "suit_effect_tips": [
+        {
+          "tips_text": "穿着<span color=\"#d56c1f\">「异色嘟嘟锅印象」</>的套装，在对战中更换异色嘟嘟锅进场时，可以看到特殊登场演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits38_female_callout.mp4"
+        },
+        {
+          "tips_text": "在和其他玩家对战中，异色嘟嘟锅给对方最终一击时，还可以看到特殊胜利结算演出效果。",
+          "tips_image": "https://video.nrc.qq.com/MoviesMobile/Operations/Female/suits38_female_win.mp4"
+        }
+      ],
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "解锁徽章后异色精灵赠送"
+        }
+      ]
+    },
+    "175": {
+      "id": 175,
+      "name": "快乐的果实",
+      "editor_name": "快乐的果实",
+      "gender": 1,
+      "item_id": [
+        11411101,
+        10811101,
+        11111101
+      ],
+      "effect_item_id": [
+        11411101,
+        10811101,
+        11111101
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_111.suits1_111'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_111_pose.suits1_111_pose'",
+      "grade_name": "纪念时装",
+      "flavor_text": "通过观察其花纹可以看出，这不是果实，是调皮的小洛克。",
+      "fashion_bond_band": 4,
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "限时活动获得，活动结束后万事通商店获得"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "时装套装",
+          "goods_name": "时装-轻风省的果实",
+          "lv_item_type": 23,
+          "lv_item_id": 221,
+          "lv_cost_type": 40,
+          "lv_cost_price": 15
+        }
+      ],
+      "activity_time": "2026-05-29 03:59:59"
+    },
+    "176": {
+      "id": 176,
+      "name": "快乐的果实",
+      "editor_name": "快乐的果实",
+      "gender": 2,
+      "item_id": [
+        21411101,
+        20811101,
+        21111101
+      ],
+      "effect_item_id": [
+        21411101,
+        20811101,
+        21111101
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_111.suits2_111'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_111_pose.suits2_111_pose'",
+      "grade_name": "纪念时装",
+      "flavor_text": "通过观察其花纹可以看出，这不是果实，是调皮的小洛克。",
+      "fashion_bond_band": 4,
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "限时活动获得，活动结束后万事通商店获得"
+        }
+      ],
+      "lv_up_closet": [
+        {
+          "goods_ui_text": "时装套装",
+          "goods_name": "时装-轻风省的果实",
+          "lv_item_type": 23,
+          "lv_item_id": 222,
+          "lv_cost_type": 40,
+          "lv_cost_price": 15
+        }
+      ],
+      "activity_time": "2026-05-29 03:59:59"
+    },
+    "199": {
+      "id": 199,
+      "name": "夏日暖阳",
+      "editor_name": "夏日暖阳",
+      "gender": 1,
+      "item_id": [
+        10900501,
+        10700601,
+        10800301,
+        11100601,
+        11300501,
+        11200601
+      ],
+      "effect_item_id": [
+        10900501,
+        10700601,
+        10800301,
+        11100601,
+        11300501,
+        11200601
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_006_01.suits1_006_01'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_006_01_pose.suits1_006_01_pose'",
+      "grade_name": "纪念时装",
+      "flavor_text": "暖暖的阳光照在身上，留下了属于夏日的回忆。",
+      "fashion_bond_band": 3,
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "限时活动获得"
+        }
+      ],
+      "activity_time": "2026-05-23 03:59:59"
+    },
+    "200": {
+      "id": 200,
+      "name": "夏日暖阳",
+      "editor_name": "夏日暖阳",
+      "gender": 2,
+      "item_id": [
+        20900501,
+        20700601,
+        20800301,
+        21100601,
+        21300801,
+        21200601
+      ],
+      "effect_item_id": [
+        20900501,
+        20700601,
+        20800301,
+        21100601,
+        21300801,
+        21200601
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_006_01.suits2_006_01'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_006_01_pose.suits2_006_01_pose'",
+      "grade_name": "纪念时装",
+      "flavor_text": "暖暖的阳光照在身上，留下了属于夏日的回忆。",
+      "fashion_bond_band": 3,
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "限时活动获得"
+        }
+      ],
+      "activity_time": "2026-05-23 03:59:59"
+    },
+    "201": {
+      "id": 201,
+      "name": "糖心暖阳",
+      "editor_name": "糖心暖阳",
+      "gender": 1,
+      "item_id": [
+        10900503,
+        10700603,
+        10800303,
+        11100603,
+        11300503,
+        11200603
+      ],
+      "effect_item_id": [
+        10900503,
+        10700603,
+        10800303,
+        11100603,
+        11300503,
+        11200603
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_006_03.suits1_006_03'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_006_03_pose.suits1_006_03_pose'",
+      "grade_name": "纪念时装",
+      "flavor_text": "阳光透过叶子的间隙，落在手心暖暖的。",
+      "fashion_bond_band": 3,
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "限时活动获得"
+        }
+      ],
+      "activity_time": "2026-05-23 03:59:59"
+    },
+    "202": {
+      "id": 202,
+      "name": "糖心暖阳",
+      "editor_name": "糖心暖阳",
+      "gender": 2,
+      "item_id": [
+        20900503,
+        20700603,
+        20800303,
+        21100603,
+        21300803,
+        21200603
+      ],
+      "effect_item_id": [
+        20900503,
+        20700603,
+        20800303,
+        21100603,
+        21300803,
+        21200603
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_006_03.suits2_006_03'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_006_03_pose.suits2_006_03_pose'",
+      "grade_name": "纪念时装",
+      "flavor_text": "阳光透过叶子的间隙，落在手心暖暖的。",
+      "fashion_bond_band": 3,
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "限时活动获得"
+        }
+      ],
+      "activity_time": "2026-05-23 03:59:59"
+    },
+    "221": {
+      "id": 221,
+      "name": "轻风省的果实",
+      "editor_name": "轻风省的果实",
+      "gender": 1,
+      "item_id": [
+        11411102,
+        10811102,
+        11111102
+      ],
+      "effect_item_id": [
+        11411102,
+        10811102,
+        11111102
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_111_02.suits1_111_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_111_02_pose.suits1_111_02_pose'",
+      "grade_name": "纪念时装",
+      "flavor_text": "通过观察其花纹可以看出，这不是果实，是调皮的小洛克。",
+      "fashion_bond_band": 4,
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "快乐的果实时装进阶解锁获取"
+        }
+      ],
+      "activity_time": "2026-05-29 03:59:59"
+    },
+    "222": {
+      "id": 222,
+      "name": "轻风省的果实",
+      "editor_name": "轻风省的果实",
+      "gender": 2,
+      "item_id": [
+        21411102,
+        20811102,
+        21111102
+      ],
+      "effect_item_id": [
+        21411101,
+        20811101,
+        21111101
+      ],
+      "suits_icon": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_111_02.suits2_111_02'",
+      "suits_icon_big": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_111_02_pose.suits2_111_02_pose'",
+      "grade_name": "纪念时装",
+      "flavor_text": "通过观察其花纹可以看出，这不是果实，是调皮的小洛克。",
+      "fashion_bond_band": 4,
+      "launch_item": true,
+      "acquire_struct": [
+        {
+          "acquire_way_text": "快乐的果实时装进阶解锁获取"
+        }
+      ],
+      "activity_time": "2026-05-29 03:59:59"
     }
   },
   "LocalizationStrings": {}

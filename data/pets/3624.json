@@ -3,24 +3,24 @@
     "name": "songzai",
     "form": "default",
     "main_type": {
-        "id": 5,
-        "name": "Light",
+        "id": 11,
+        "name": "Bug",
         "localized": {
-            "zh": "光"
+            "zh": "虫"
         }
     },
     "sub_type": {
-        "id": 15,
-        "name": "Ghost",
+        "id": 16,
+        "name": "Dark",
         "localized": {
-            "zh": "幽"
+            "zh": "恶"
         }
     },
     "default_legacy_type": {
-        "id": 5,
-        "name": "Light",
+        "id": 11,
+        "name": "Bug",
         "localized": {
-            "zh": "光"
+            "zh": "虫"
         }
     },
     "leader_potential": false,
@@ -66,17 +66,17 @@
                         },
                         "is_leader_form": false,
                         "main_type": {
-                            "id": 5,
-                            "name": "Light",
+                            "id": 11,
+                            "name": "Bug",
                             "localized": {
-                                "zh": "光"
+                                "zh": "虫"
                             }
                         },
                         "sub_type": {
-                            "id": 15,
-                            "name": "Ghost",
+                            "id": 16,
+                            "name": "Dark",
                             "localized": {
-                                "zh": "幽"
+                                "zh": "恶"
                             }
                         },
                         "evolution_conditions": []
@@ -98,17 +98,17 @@
                         },
                         "is_leader_form": false,
                         "main_type": {
-                            "id": 5,
-                            "name": "Light",
+                            "id": 11,
+                            "name": "Bug",
                             "localized": {
-                                "zh": "光"
+                                "zh": "虫"
                             }
                         },
                         "sub_type": {
-                            "id": 15,
-                            "name": "Ghost",
+                            "id": 16,
+                            "name": "Dark",
                             "localized": {
-                                "zh": "幽"
+                                "zh": "恶"
                             }
                         },
                         "evolution_conditions": []
@@ -131,7 +131,7 @@
         ],
         "movement_type": null,
         "classis_id": 6,
-        "classis_name": null,
+        "classis_name": "自然类精灵",
         "handbook_area_ids": []
     },
     "catch_info": {

@@ -2,14 +2,14 @@
   "RocoDataRows": {
     "23001": {
       "id": 23001,
-      "bp_name": "星月通行证",
+      "bp_name": "拾光通行证",
       "theme_id": [
         230011,
         230012
       ],
       "top_level": 100,
       "loop_level": 999,
-      "level_name": "队员等级",
+      "level_name": "狂欢通行证",
       "open_time": "2024-07-22 04:00:00",
       "close_time": "2026-05-21 04:00:00",
       "rule_tips_id": "BP_rule_tips_23001",

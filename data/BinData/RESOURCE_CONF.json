@@ -2,50 +2,47 @@
   "RocoDataRows": {
     "10001": {
       "id": 10001,
-      "name": "",
-      "magician_level": 1,
-      "role_level": 5,
-      "pet_promotion_level": 60,
+      "name": "高级账号资源",
+      "magician_level": 5,
+      "role_level": 60,
+      "pet_promotion_level": 5,
       "mission_id": [
-        1130019
-      ],
-      "reward_id": [
         1130015
       ],
-      "NPC_VISIBLE": 3,
+      "reward_id": [
+        17063
+      ],
+      "NPC_VISIBLE": 1,
       "MISSION_BLOCKED": 1,
       "unlock_handbook": 1
     },
     "10002": {
       "id": 10002,
       "name": "",
-      "magician_level": 4,
-      "role_level": 2,
-      "pet_promotion_level": 30,
+      "magician_level": 2,
+      "role_level": 30,
+      "pet_promotion_level": 3,
       "mission_id": [
-        17063
-      ],
-      "reward_id": [
         1130019
       ],
-      "NPC_VISIBLE": 6,
+      "reward_id": [
+        17062
+      ],
+      "NPC_VISIBLE": 1,
       "MISSION_BLOCKED": 1,
       "unlock_handbook": 1
     },
     "10003": {
       "id": 10003,
       "name": "",
-      "magician_level": 7,
-      "role_level": 1,
-      "pet_promotion_level": 15,
+      "magician_level": 1,
+      "role_level": 15,
+      "pet_promotion_level": 1,
       "mission_id": [
-        3885542377,
-        3035146170,
-        3079660966,
-        3867457000
+        1130015
       ],
       "reward_id": [
-        1130015
+        17061
       ]
     }
   },

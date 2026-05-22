@@ -66,7 +66,7 @@
         },
         {
             "id": 7030170,
-            "name": "种子弹",
+            "name": "荆棘爪",
             "icon_id": "703014",
             "move_type": {
                 "id": 2,
@@ -77,18 +77,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "种子弹",
-                    "description": "造成物伤，自己回复1能量。"
+                    "name": "荆棘爪",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "造成物伤，自己回复1能量。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7050170,
-            "name": "造成魔伤，自己回复1能量。",
+            "name": "水弹枪",
             "icon_id": "703101",
             "move_type": {
                 "id": 4,
@@ -99,18 +99,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "造成魔伤，自己回复1能量。",
-                    "description": "一滴水珠被波波拉的小手托起，它说赠我小小的蓝。"
+                    "name": "水弹枪",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "一滴水珠被波波拉的小手托起，它说赠我小小的蓝。"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7060090,
-            "name": "应对！水星水1",
+            "name": "闪光",
             "icon_id": "704002",
             "move_type": {
                 "id": 5,
@@ -121,18 +121,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "应对！水星水1",
-                    "description": "造成魔伤，应对状态：本次伤害不受自身属性减益和敌方属性增益影响"
+                    "name": "闪光",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 1,
             "power": 60,
-            "description": "造成魔伤，应对状态：本次伤害不受自身属性减益和敌方属性增益影响"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7080120,
-            "name": "对敌方精灵造成物理伤害。",
+            "name": "跺地",
             "icon_id": "708012",
             "move_type": {
                 "id": 6,
@@ -143,18 +143,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "对敌方精灵造成物理伤害。",
-                    "description": "聚沙，成塔，成为利刃。"
+                    "name": "跺地",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "聚沙，成塔，成为利刃。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7110190,
-            "name": "电弧",
+            "name": "触电",
             "icon_id": "711007",
             "move_type": {
                 "id": 9,
@@ -165,18 +165,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "电弧",
-                    "description": "造成物伤，迸发：本次技能威力+40。"
+                    "name": "触电",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "造成物伤，迸发：本次技能威力+40。"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7160130,
-            "name": "疾风连袭",
+            "name": "飞吻",
             "icon_id": "716001",
             "move_type": {
                 "id": 14,
@@ -187,14 +187,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "疾风连袭",
-                    "description": "释放自己释放过的迅捷技能，其能耗之和的二分之一加至本技能能耗，每次使用后能耗+1。"
+                    "name": "飞吻",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "释放自己释放过的迅捷技能，其能耗之和的二分之一加至本技能能耗，每次使用后能耗+1。"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7170160,
@@ -210,17 +210,17 @@
             "localized": {
                 "zh": {
                     "name": "恐吓",
-                    "description": "减伤70%，应对攻击：敌方失去3能量。"
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "减伤70%，应对攻击：敌方失去3能量。"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7190210,
-            "name": "应对！小光恶1",
+            "name": "念力膨胀",
             "icon_id": "719008",
             "move_type": {
                 "id": 18,
@@ -231,14 +231,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "应对！小光恶1",
-                    "description": "造成魔伤，应对状态：自身立即使用一次被应对技能"
+                    "name": "念力膨胀",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "造成魔伤，应对状态：自身立即使用一次被应对技能"
+            "description": "对敌方精灵造成物理伤害。"
         }
     ],
     "move_stones": [],
@@ -286,7 +286,7 @@
         "refresh_locations": [],
         "movement_type": null,
         "classis_id": 3,
-        "classis_name": null,
+        "classis_name": "猫咪类精灵",
         "handbook_area_ids": []
     },
     "catch_info": null,

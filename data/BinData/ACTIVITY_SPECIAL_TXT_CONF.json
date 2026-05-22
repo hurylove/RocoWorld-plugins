@@ -16,15 +16,15 @@
         },
         {
           "txt": "",
-          "image_path": "按照藏宝图的指示前往指定地区，骑乘藏宝图指引上要求的某种精灵，精灵会做出对应的反应。"
+          "image_path": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/img_treasurehunt_02.img_treasurehunt_02'"
         },
         {
           "txt": "",
-          "image_path": "精灵会有四种不同的反应，随着越接近宝藏会有越明显的反应，可以仔细留意一下精灵情绪变化！"
+          "image_path": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/img_treasurehunt_03.img_treasurehunt_03'"
         },
         {
           "txt": "",
-          "image_path": "宝藏会散发蓝色的亮光，当找到宝藏后，你就可以把宝藏挖出来了！"
+          "image_path": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/img_treasurehunt_01.img_treasurehunt_01'"
         }
       ]
     }

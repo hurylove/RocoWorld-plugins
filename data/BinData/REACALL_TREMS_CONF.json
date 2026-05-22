@@ -286,25 +286,25 @@
     },
     "32002": {
       "id": 32002,
-      "reacall_terms_name": "系别克制",
+      "reacall_terms_name": "同行",
       "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_xibiekezhi.recall_xibiekezhi'",
-      "reacall_terms_text": "查看新手教学可以获得咕噜球",
+      "reacall_terms_text": "邀请他人同行，不仅可以让对方获得许愿星，还可以将捕捉到的精灵赠与对方。",
       "reacall_terms_teach": 111,
       "reacallt_terms_unlock_trigger1": 1,
       "trigger1_data": 71008317
     },
     "33001": {
       "id": 33001,
-      "reacall_terms_name": "同行",
+      "reacall_terms_name": "贴贴",
       "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tezhiguluqiu.tezhiguluqiu'",
-      "reacall_terms_text": "邀请他人同行，不仅可以让对方获得许愿星，还可以将捕捉到的精灵赠与对方。",
+      "reacall_terms_text": "查看新手教学可以获得咕噜球",
       "reacall_terms_teach": 111,
       "reacallt_terms_unlock_trigger1": 1,
       "trigger1_data": 71008317
     },
     "33002": {
       "id": 33002,
-      "reacall_terms_name": "贴贴",
+      "reacall_terms_name": "赠与",
       "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tezhiguluqiu.tezhiguluqiu'",
       "reacall_terms_text": "查看新手教学可以获得咕噜球",
       "reacall_terms_teach": 111,
@@ -313,7 +313,7 @@
     },
     "33003": {
       "id": 33003,
-      "reacall_terms_name": "赠与",
+      "reacall_terms_name": "分享",
       "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tezhiguluqiu.tezhiguluqiu'",
       "reacall_terms_text": "查看新手教学可以获得咕噜球",
       "reacall_terms_teach": 111,
@@ -322,7 +322,7 @@
     },
     "33004": {
       "id": 33004,
-      "reacall_terms_name": "分享",
+      "reacall_terms_name": "传说精灵战斗",
       "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tezhiguluqiu.tezhiguluqiu'",
       "reacall_terms_text": "查看新手教学可以获得咕噜球",
       "reacall_terms_teach": 111,
@@ -331,9 +331,9 @@
     },
     "34001": {
       "id": 34001,
-      "reacall_terms_name": "传说精灵战斗",
+      "reacall_terms_name": "",
       "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tezhiguluqiu.tezhiguluqiu'",
-      "reacall_terms_text": "查看新手教学可以获得咕噜球",
+      "reacall_terms_text": "",
       "reacall_terms_teach": 111,
       "reacallt_terms_unlock_trigger1": 1,
       "trigger1_data": 71008317

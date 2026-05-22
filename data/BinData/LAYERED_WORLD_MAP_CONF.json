@@ -6,9 +6,9 @@
       "map_sort_order": 1,
       "map_layer_icon_select": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dibiao2_png.img_dibiao2_png'",
       "map_layer_icon_unselected": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dibiao1_png.img_dibiao1_png'",
-      "display_name": "",
-      "belong_camp": 3,
-      "scene_res_id": 130169
+      "display_name": "卡洛西亚大陆",
+      "belong_camp": 130169,
+      "scene_res_id": 10003
     },
     "2": {
       "id": 2,
@@ -18,15 +18,15 @@
       "map_sort_order": 2,
       "map_layer_icon_select": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dikuai2_png.img_dikuai2_png'",
       "map_layer_icon_unselected": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dikuai1_png.img_dikuai1_png'",
-      "display_name": "",
+      "display_name": "拾荒者港口一层",
       "camera_center": [
-        3867916516,
-        2934420656,
-        2474764705
+        563650,
+        691212,
+        2000
       ],
-      "Ortho_width": 8,
-      "belong_camp": 12600,
-      "scene_res_id": 130169
+      "Ortho_width": 12600,
+      "belong_camp": 130169,
+      "scene_res_id": 10003
     },
     "3": {
       "id": 3,
@@ -34,9 +34,9 @@
       "map_sort_order": 1,
       "map_layer_icon_select": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dibiao2_png.img_dibiao2_png'",
       "map_layer_icon_unselected": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dibiao1_png.img_dibiao1_png'",
-      "display_name": "",
-      "belong_camp": 3,
-      "scene_res_id": 130174
+      "display_name": "卡洛西亚大陆",
+      "belong_camp": 130174,
+      "scene_res_id": 10003
     },
     "4": {
       "id": 4,
@@ -46,17 +46,15 @@
       "map_sort_order": 2,
       "map_layer_icon_select": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dikuai2_png.img_dikuai2_png'",
       "map_layer_icon_unselected": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dikuai1_png.img_dikuai1_png'",
-      "display_name": "",
+      "display_name": "二叠山丘一层",
       "camera_center": [
-        3835805668,
-        2162733243,
-        2443044485,
-        3837628648,
-        2984607928
+        521400,
+        633758,
+        4335
       ],
-      "Ortho_width": 11,
-      "belong_camp": 23000,
-      "scene_res_id": 130174
+      "Ortho_width": 23000,
+      "belong_camp": 130174,
+      "scene_res_id": 10003
     },
     "5": {
       "id": 5,
@@ -66,17 +64,15 @@
       "map_sort_order": 3,
       "map_layer_icon_select": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dikuai2_png.img_dikuai2_png'",
       "map_layer_icon_unselected": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dikuai1_png.img_dikuai1_png'",
-      "display_name": "",
+      "display_name": "地下室",
       "camera_center": [
-        3835805668,
-        2162733243,
-        2443044485,
-        3837628648,
-        2984611002
+        521400,
+        633758,
+        4335
       ],
-      "Ortho_width": 11,
-      "belong_camp": 23000,
-      "scene_res_id": 130174
+      "Ortho_width": 23000,
+      "belong_camp": 130174,
+      "scene_res_id": 10003
     },
     "6": {
       "id": 6,
@@ -84,9 +80,9 @@
       "map_sort_order": 1,
       "map_layer_icon_select": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dibiao2_png.img_dibiao2_png'",
       "map_layer_icon_unselected": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dibiao1_png.img_dibiao1_png'",
-      "display_name": "",
-      "belong_camp": 3,
-      "scene_res_id": 130172
+      "display_name": "卡洛西亚大陆",
+      "belong_camp": 130172,
+      "scene_res_id": 10003
     },
     "7": {
       "id": 7,
@@ -96,17 +92,15 @@
       "map_sort_order": 2,
       "map_layer_icon_select": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dikuai2_png.img_dikuai2_png'",
       "map_layer_icon_unselected": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dikuai1_png.img_dikuai1_png'",
-      "display_name": "",
+      "display_name": "二楼",
       "camera_center": [
-        3904801766,
-        2162725517,
-        2948130437,
-        3835924453,
-        2984607928
+        525559,
+        656800,
+        4335
       ],
-      "Ortho_width": 16,
-      "belong_camp": 21000,
-      "scene_res_id": 130172
+      "Ortho_width": 21000,
+      "belong_camp": 130172,
+      "scene_res_id": 10003
     },
     "8": {
       "id": 8,
@@ -118,15 +112,13 @@
       "map_layer_icon_unselected": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dikuai1_png.img_dikuai1_png'",
       "display_name": "",
       "camera_center": [
-        3904801766,
-        2162725517,
-        2948130437,
-        3835924453,
-        2984611002
+        525559,
+        656800,
+        4335
       ],
-      "Ortho_width": 16,
-      "belong_camp": 21000,
-      "scene_res_id": 130172
+      "Ortho_width": 21000,
+      "belong_camp": 130172,
+      "scene_res_id": 10003
     },
     "9": {
       "id": 9,
@@ -134,9 +126,9 @@
       "map_sort_order": 1,
       "map_layer_icon_select": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dibiao2_png.img_dibiao2_png'",
       "map_layer_icon_unselected": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dibiao1_png.img_dibiao1_png'",
-      "display_name": "",
-      "belong_camp": 3,
-      "scene_res_id": 130171
+      "display_name": "卡洛西亚大陆",
+      "belong_camp": 130171,
+      "scene_res_id": 10003
     },
     "10": {
       "id": 10,
@@ -148,14 +140,13 @@
       "map_layer_icon_unselected": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dikuai1_png.img_dikuai1_png'",
       "display_name": "",
       "camera_center": [
-        3851205348,
-        2984616079,
-        2562254001,
-        3850418404
+        553395,
+        640777,
+        4187
       ],
-      "Ortho_width": 21,
-      "belong_camp": 20000,
-      "scene_res_id": 130171
+      "Ortho_width": 20000,
+      "belong_camp": 130171,
+      "scene_res_id": 10003
     },
     "11": {
       "id": 11,
@@ -163,9 +154,9 @@
       "map_sort_order": 1,
       "map_layer_icon_select": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dibiao2_png.img_dibiao2_png'",
       "map_layer_icon_unselected": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dibiao1_png.img_dibiao1_png'",
-      "display_name": "",
-      "belong_camp": 3,
-      "scene_res_id": 130175
+      "display_name": "卡洛西亚大陆",
+      "belong_camp": 130175,
+      "scene_res_id": 10003
     },
     "12": {
       "id": 12,
@@ -177,13 +168,13 @@
       "map_layer_icon_unselected": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dikuai1_png.img_dikuai1_png'",
       "display_name": "",
       "camera_center": [
-        3850935526,
-        2598802565,
-        2948130455
+        595000,
+        652054,
+        1000
       ],
-      "Ortho_width": 24,
-      "belong_camp": 40000,
-      "scene_res_id": 130175
+      "Ortho_width": 40000,
+      "belong_camp": 130175,
+      "scene_res_id": 10003
     },
     "13": {
       "id": 13,
@@ -195,38 +186,14 @@
       "map_layer_icon_unselected": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dikuai1_png.img_dikuai1_png'",
       "display_name": "",
       "camera_center": [
-        3836779749,
-        2934279096
+        248,
+        0,
+        0
       ],
-      "Ortho_width": 27,
-      "map_layer_unlock_type": 12000,
+      "Ortho_width": 12000,
+      "map_layer_unlock_type": 1,
       "para": [
-        1701863760,
-        1919964018,
-        660960361,
-        1835091759,
-        1699622757,
-        1668239991,
-        1867329391,
-        1701606756,
-        2035494771,
-        1835365491,
-        1734951471,
-        795894093,
-        796352850,
-        1634497601,
-        1765945203,
-        1885424999,
-        1634879023,
-        796091757,
-        1600613737,
-        1768057188,
-        1597140833,
-        778530416,
-        1600613737,
-        1768057188,
-        1597140833,
-        661089904
+        4
       ]
     },
     "14": {
@@ -247,37 +214,14 @@
       "map_layer_icon_unselected": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMap/Frames/img_dikuai1_png.img_dikuai1_png'",
       "display_name": "",
       "camera_center": [
-        3867982564
+        248,
+        0,
+        0
       ],
-      "Ortho_width": 27,
-      "map_layer_unlock_type": 12000,
+      "Ortho_width": 12000,
+      "map_layer_unlock_type": 1,
       "para": [
-        1701863760,
-        1919964018,
-        660960361,
-        1835091759,
-        1699622757,
-        1668239991,
-        1867329391,
-        1701606756,
-        2035494771,
-        1835365491,
-        1734951471,
-        795894093,
-        796352850,
-        1634497601,
-        1765945203,
-        1885424999,
-        1634879023,
-        796091757,
-        1600613737,
-        1768057188,
-        1597140833,
-        778530416,
-        1600613737,
-        1768057188,
-        1597140833,
-        661089904
+        5
       ]
     }
   },

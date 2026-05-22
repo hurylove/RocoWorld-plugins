@@ -13,11 +13,11 @@
         1001
       ],
       "is_auto_wear": 1,
-      "prefix_text": "魁梧的"
+      "prefix_text": "勇者"
     },
     "1002": {
       "id": 1002,
-      "name": "小不点",
+      "name": "最好的伙伴",
       "quality": 1,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Mini.img_MedalIcon_Mini'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Mini.img_MedalIcon_Mini'",
@@ -28,11 +28,11 @@
         1002
       ],
       "is_auto_wear": 1,
-      "prefix_text": "迷你的"
+      "prefix_text": "骑士"
     },
     "1003": {
       "id": 1003,
-      "name": "命定勇者",
+      "name": "皎皎明月",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Brave.img_MedalIcon_Brave'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Brave.img_MedalIcon_Brave'",
@@ -41,11 +41,11 @@
       "medal_type": 1,
       "medal_source": 3,
       "is_not_give_peer_pet": true,
-      "prefix_text": "勇者"
+      "prefix_text": "博学的"
     },
     "1004": {
       "id": 1004,
-      "name": "最好的伙伴",
+      "name": "完美无瑕",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Dimo.img_MedalIcon_Dimo'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Dimo.img_MedalIcon_Dimo'",
@@ -57,12 +57,12 @@
         1004
       ],
       "is_auto_wear": 1,
-      "prefix_text": "唯一的",
+      "prefix_text": "搭档",
       "fx_res": "Dimo"
     },
     "1005": {
       "id": 1005,
-      "name": "轻风之息",
+      "name": "好战的",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Qingfeng.img_MedalIcon_Qingfeng'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Qingfeng.img_MedalIcon_Qingfeng'",
@@ -73,11 +73,11 @@
         1011
       ],
       "is_auto_wear": 1,
-      "prefix_text": "逐风的"
+      "prefix_text": "可可果絮语"
     },
     "1006": {
       "id": 1006,
-      "name": "王国颂歌",
+      "name": "贪吃的",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Wangguoling.img_MedalIcon_Wangguoling'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Wangguoling.img_MedalIcon_Wangguoling'",
@@ -88,11 +88,11 @@
         1012
       ],
       "is_auto_wear": 1,
-      "prefix_text": "骑士"
+      "prefix_text": "老朋友火花"
     },
     "1007": {
       "id": 1007,
-      "name": "皎皎明月",
+      "name": "童年的",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Moonlight.img_MedalIcon_Moonlight'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Moonlight.img_MedalIcon_Moonlight'",
@@ -101,12 +101,12 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "辉映的",
+      "prefix_text": "同心的",
       "fx_res": "Moonlight"
     },
     "1008": {
       "id": 1008,
-      "name": "熠熠星辉",
+      "name": "同心的",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Starlight.img_MedalIcon_Starlight'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Starlight.img_MedalIcon_Starlight'",
@@ -115,12 +115,12 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "闪耀的",
+      "prefix_text": "契约",
       "fx_res": "Starlight"
     },
     "1009": {
       "id": 1009,
-      "name": "学无止境",
+      "name": "低沉的",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Smart.img_MedalIcon_Smart'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Smart.img_MedalIcon_Smart'",
@@ -133,11 +133,11 @@
       ],
       "is_show_redpoint": 1,
       "is_backtrack_need_check": 1,
-      "prefix_text": "博学的"
+      "prefix_text": "灼日凌空"
     },
     "1010": {
       "id": 1010,
-      "name": "完美无瑕",
+      "name": "炽热的",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Perfect.img_MedalIcon_Perfect'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Perfect.img_MedalIcon_Perfect'",
@@ -150,12 +150,12 @@
       "is_show_redpoint": 1,
       "is_auto_wear": 1,
       "is_backtrack_need_check": 1,
-      "prefix_text": "完美的",
+      "prefix_text": "同心相伴",
       "fx_res": "Perfect"
     },
     "1011": {
       "id": 1011,
-      "name": "大师级决斗家",
+      "name": "水蓝蓝羁绊",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Brave.img_MedalIcon_Brave'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Brave.img_MedalIcon_Brave'",
@@ -164,11 +164,11 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "决斗大师"
+      "prefix_text": "喵喵羁绊"
     },
     "1012": {
       "id": 1012,
-      "name": "结伴同行",
+      "name": "童年的",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Close.img_MedalIcon_Close'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Close.img_MedalIcon_Close'",
@@ -180,11 +180,11 @@
         1007
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "搭档"
+      "prefix_text": "魔法纹章"
     },
     "1013": {
       "id": 1013,
-      "name": "以一敌多",
+      "name": "魔法师",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Attack.img_MedalIcon_Attack'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Attack.img_MedalIcon_Attack'",
@@ -196,11 +196,11 @@
         1008
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "好战的"
+      "prefix_text": "应对大师"
     },
     "1014": {
       "id": 1014,
-      "name": "端水大师",
+      "name": "正确的",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Status.img_MedalIcon_Status'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Status.img_MedalIcon_Status'",
@@ -212,11 +212,11 @@
         1009
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "机敏的"
+      "prefix_text": "抵抗大师"
     },
     "1015": {
       "id": 1015,
-      "name": "耐活王",
+      "name": "巧妙的",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Defend.img_MedalIcon_Defend'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Defend.img_MedalIcon_Defend'",
@@ -228,11 +228,11 @@
         1010
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "无畏的"
+      "prefix_text": "命悬一线"
     },
     "1016": {
       "id": 1016,
-      "name": "可可果絮语",
+      "name": "逆境的",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Kekeguo.img_MedalIcon_Kekeguo'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Kekeguo.img_MedalIcon_Kekeguo'",
@@ -240,12 +240,12 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "贪吃的",
+      "prefix_text": "亚瑟的王冠",
       "fx_res": "Kekeguo"
     },
     "1017": {
       "id": 1017,
-      "name": "老朋友水蓝蓝",
+      "name": "亚瑟的披风",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_BFF_ShuiLanLan.img_MedalIcon_BFF_ShuiLanLan'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_BFF_ShuiLanLan.img_MedalIcon_BFF_ShuiLanLan'",
@@ -254,13 +254,13 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "童年的",
+      "prefix_text": "经验老道",
       "fx_res": "Shuilanlan",
       "medal_ui_format": 1
     },
     "1018": {
       "id": 1018,
-      "name": "老朋友喵喵",
+      "name": "烈火卷卷",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_BFF_MiaoMiao.img_MedalIcon_BFF_MiaoMiao'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_BFF_MiaoMiao.img_MedalIcon_BFF_MiaoMiao'",
@@ -269,13 +269,13 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "童年的",
+      "prefix_text": "经验老道",
       "fx_res": "Miaomiao",
       "medal_ui_format": 1
     },
     "1019": {
       "id": 1019,
-      "name": "老朋友火花",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_BFF_XiaoHuoMiao.img_MedalIcon_BFF_XiaoHuoMiao'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_BFF_XiaoHuoMiao.img_MedalIcon_BFF_XiaoHuoMiao'",
@@ -284,13 +284,13 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "童年的",
+      "prefix_text": "经验老道",
       "fx_res": "Huohua",
       "medal_ui_format": 1
     },
     "1020": {
       "id": 1020,
-      "name": "初遇水蓝蓝",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_BFF_ShuiLanLan.img_MedalIcon_BFF_ShuiLanLan'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_BFF_ShuiLanLan.img_MedalIcon_BFF_ShuiLanLan'",
@@ -299,13 +299,13 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "同心的",
+      "prefix_text": "",
       "fx_res": "Shuilanlan",
       "medal_ui_format": 2
     },
     "1021": {
       "id": 1021,
-      "name": "初遇喵喵",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_BFF_MiaoMiao.img_MedalIcon_BFF_MiaoMiao'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_BFF_MiaoMiao.img_MedalIcon_BFF_MiaoMiao'",
@@ -314,13 +314,13 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "同心的",
+      "prefix_text": "",
       "fx_res": "Miaomiao",
       "medal_ui_format": 2
     },
     "1022": {
       "id": 1022,
-      "name": "初遇火花",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_BFF_XiaoHuoMiao.img_MedalIcon_BFF_XiaoHuoMiao'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_BFF_XiaoHuoMiao.img_MedalIcon_BFF_XiaoHuoMiao'",
@@ -329,13 +329,13 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "同心的",
+      "prefix_text": "",
       "fx_res": "Huohua",
       "medal_ui_format": 2
     },
     "1023": {
       "id": 1023,
-      "name": "燃了鸭",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_YaJiJiAr003.img_MedalIcon_YaJiJiAr003'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_YaJiJiAr003.img_MedalIcon_YaJiJiAr003'",
@@ -344,12 +344,12 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "燃了",
+      "prefix_text": "",
       "fx_res": "Ranleya"
     },
     "1024": {
       "id": 1024,
-      "name": "契约之证",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_FateCertificate.img_MedalIcon_FateCertificate'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_FateCertificate.img_MedalIcon_FateCertificate'",
@@ -358,12 +358,12 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "契约",
+      "prefix_text": "",
       "fx_res": "Qiyue"
     },
     "1025": {
       "id": 1025,
-      "name": "粗嗓门",
+      "name": "",
       "quality": 1,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_low.img_MedalIcon_low'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_low.img_MedalIcon_low'",
@@ -374,11 +374,11 @@
         1025
       ],
       "is_auto_wear": 1,
-      "prefix_text": "低沉的"
+      "prefix_text": ""
     },
     "1026": {
       "id": 1026,
-      "name": "婉转声",
+      "name": "",
       "quality": 1,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_high.img_MedalIcon_high'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_high.img_MedalIcon_high'",
@@ -389,11 +389,11 @@
         1026
       ],
       "is_auto_wear": 1,
-      "prefix_text": "高昂的"
+      "prefix_text": ""
     },
     "1027": {
       "id": 1027,
-      "name": "晨光破晓",
+      "name": "",
       "quality": 1,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Day.img_MedalIcon_Day'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Day.img_MedalIcon_Day'",
@@ -404,11 +404,11 @@
         1027
       ],
       "is_auto_wear": 1,
-      "prefix_text": "朝气的"
+      "prefix_text": ""
     },
     "1028": {
       "id": 1028,
-      "name": "灼日凌空",
+      "name": "",
       "quality": 1,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Dawn.img_MedalIcon_Dawn'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Dawn.img_MedalIcon_Dawn'",
@@ -419,11 +419,11 @@
         1028
       ],
       "is_auto_wear": 1,
-      "prefix_text": "炽热的"
+      "prefix_text": ""
     },
     "1029": {
       "id": 1029,
-      "name": "暮色衔山",
+      "name": "",
       "quality": 1,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Twilight.img_MedalIcon_Twilight'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Twilight.img_MedalIcon_Twilight'",
@@ -434,11 +434,11 @@
         1029
       ],
       "is_auto_wear": 1,
-      "prefix_text": "困倦的"
+      "prefix_text": ""
     },
     "1030": {
       "id": 1030,
-      "name": "星月交辉",
+      "name": "",
       "quality": 1,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Evening.img_MedalIcon_Evening'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Evening.img_MedalIcon_Evening'",
@@ -449,11 +449,11 @@
         1030
       ],
       "is_auto_wear": 1,
-      "prefix_text": "望月的"
+      "prefix_text": ""
     },
     "1031": {
       "id": 1031,
-      "name": "同心相伴",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_petblessing.img_MedalIcon_petblessing'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_petblessing.img_MedalIcon_petblessing'",
@@ -463,11 +463,11 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "并肩的"
+      "prefix_text": ""
     },
     "1032": {
       "id": 1032,
-      "name": "水蓝蓝羁绊",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_BFF_ShuiLanLan.img_MedalIcon_BFF_ShuiLanLan'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_BFF_ShuiLanLan.img_MedalIcon_BFF_ShuiLanLan'",
@@ -476,12 +476,12 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "童年的",
+      "prefix_text": "经验老道",
       "fx_res": "Shuilanlan"
     },
     "1033": {
       "id": 1033,
-      "name": "喵喵羁绊",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_BFF_MiaoMiao.img_MedalIcon_BFF_MiaoMiao'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_BFF_MiaoMiao.img_MedalIcon_BFF_MiaoMiao'",
@@ -490,12 +490,12 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "童年的",
+      "prefix_text": "经验老道",
       "fx_res": "Miaomiao"
     },
     "1034": {
       "id": 1034,
-      "name": "火花羁绊",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_BFF_XiaoHuoMiao.img_MedalIcon_BFF_XiaoHuoMiao'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_BFF_XiaoHuoMiao.img_MedalIcon_BFF_XiaoHuoMiao'",
@@ -504,12 +504,12 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "童年的",
+      "prefix_text": "经验老道",
       "fx_res": "Huohua"
     },
     "1035": {
       "id": 1035,
-      "name": "最好的伙伴",
+      "name": "完美无瑕",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Dimo.img_MedalIcon_Dimo'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Dimo.img_MedalIcon_Dimo'",
@@ -518,12 +518,12 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "唯一的",
+      "prefix_text": "搭档",
       "fx_res": "Dimo"
     },
     "2003": {
       "id": 2003,
-      "name": "先驱者",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Pvp_Yiji.img_MedalIcon_Pvp_Yiji'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Pvp_Yiji.img_MedalIcon_Pvp_Yiji'",
@@ -535,11 +535,11 @@
         2007
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "先驱的"
+      "prefix_text": ""
     },
     "2004": {
       "id": 2004,
-      "name": "收割者",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Pvp_Juedi.img_MedalIcon_Pvp_Juedi'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Pvp_Juedi.img_MedalIcon_Pvp_Juedi'",
@@ -551,11 +551,11 @@
         2008
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "好胜的"
+      "prefix_text": ""
     },
     "2005": {
       "id": 2005,
-      "name": "应对大师",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Pvp_Yingdui.img_MedalIcon_Pvp_Yingdui'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Pvp_Yingdui.img_MedalIcon_Pvp_Yingdui'",
@@ -567,11 +567,11 @@
         2009
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "正确的"
+      "prefix_text": ""
     },
     "2006": {
       "id": 2006,
-      "name": "躲避大师",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Pvp_Duobi.img_MedalIcon_Pvp_Duobi'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Pvp_Duobi.img_MedalIcon_Pvp_Duobi'",
@@ -583,11 +583,11 @@
         2010
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "错误的"
+      "prefix_text": ""
     },
     "2007": {
       "id": 2007,
-      "name": "克制大师",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Pvp_Kezhi.img_MedalIcon_Pvp_Kezhi'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Pvp_Kezhi.img_MedalIcon_Pvp_Kezhi'",
@@ -599,11 +599,11 @@
         2011
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "精准的"
+      "prefix_text": ""
     },
     "2008": {
       "id": 2008,
-      "name": "抵抗大师",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Pvp_Dikang.img_MedalIcon_Pvp_Dikang'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Pvp_Dikang.img_MedalIcon_Pvp_Dikang'",
@@ -615,11 +615,11 @@
         2012
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "巧妙的"
+      "prefix_text": ""
     },
     "2009": {
       "id": 2009,
-      "name": "下克上",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Pvp_Yiruo.img_MedalIcon_Pvp_Yiruo'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Pvp_Yiruo.img_MedalIcon_Pvp_Yiruo'",
@@ -631,11 +631,11 @@
         2013
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "叛逆的"
+      "prefix_text": ""
     },
     "2010": {
       "id": 2010,
-      "name": "同门高手",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Pvp_Jingxiang.img_MedalIcon_Pvp_Jingxiang'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Pvp_Jingxiang.img_MedalIcon_Pvp_Jingxiang'",
@@ -647,11 +647,11 @@
         2014
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "一样的"
+      "prefix_text": ""
     },
     "2011": {
       "id": 2011,
-      "name": "命悬一线",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Pvp_Jixian.img_MedalIcon_Pvp_Jixian'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Pvp_Jixian.img_MedalIcon_Pvp_Jixian'",
@@ -663,11 +663,11 @@
         2015
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "逆境的"
+      "prefix_text": ""
     },
     "2012": {
       "id": 2012,
-      "name": "背水一战",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Pvp_Nishi.img_MedalIcon_Pvp_Nishi'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Pvp_Nishi.img_MedalIcon_Pvp_Nishi'",
@@ -679,11 +679,11 @@
         2016
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "勇敢的"
+      "prefix_text": ""
     },
     "3001": {
       "id": 3001,
-      "name": "亚瑟的王冠",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_Medallcon_YaseCrown.img_Medallcon_YaseCrown'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_Medallcon_YaseCrown.img_Medallcon_YaseCrown'",
@@ -692,12 +692,12 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "威严的",
+      "prefix_text": "",
       "fx_res": "Wangguan"
     },
     "3002": {
       "id": 3002,
-      "name": "亚瑟的披风",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_Medallcon_YaseCloak.img_Medallcon_YaseCloak'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_Medallcon_YaseCloak.img_Medallcon_YaseCloak'",
@@ -706,12 +706,12 @@
       "medal_source": 2,
       "is_not_give_peer_pet": true,
       "is_show_redpoint": 1,
-      "prefix_text": "受到庇护的",
+      "prefix_text": "",
       "fx_res": "Pifeng"
     },
     "4011": {
       "id": 4011,
-      "name": "摧枯拉朽",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Pvp_Cuiku_Tong.img_MedalIcon_Pvp_Cuiku_Tong'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Pvp_Cuiku_Tong.img_MedalIcon_Pvp_Cuiku_Tong'",
@@ -723,7 +723,7 @@
         2001
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "强力的",
+      "prefix_text": "",
       "medal_ui_format": 4,
       "repeat_get_award": [
         {
@@ -742,7 +742,7 @@
     },
     "4021": {
       "id": 4021,
-      "name": "经验老道",
+      "name": "",
       "quality": 2,
       "icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/BagItem/img_MedalIcon_Pvp_Jingyan_Tong.img_MedalIcon_Pvp_Jingyan_Tong'",
       "big_icon": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_MedalIcon_Pvp_Jingyan_Tong.img_MedalIcon_Pvp_Jingyan_Tong'",
@@ -754,7 +754,7 @@
         2004
       ],
       "is_show_redpoint": 1,
-      "prefix_text": "熟练的",
+      "prefix_text": "",
       "medal_ui_format": 3,
       "ui_param": "b99f74ff;PaperSprite'/Game/NewRoco/Modules/System/PetUI/Raw/Atlas/PetUI/Frames/img_jibai_tong_png.img_jibai_tong_png';PaperSprite'/Game/NewRoco/Modules/System/PetUI/Raw/Atlas/PetUI/Frames/img_jibailiang_tong_png.img_jibailiang_tong_png'",
       "repeat_get_award": [

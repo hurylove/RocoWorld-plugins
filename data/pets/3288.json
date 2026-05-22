@@ -69,7 +69,7 @@
                     {
                         "id": 3058,
                         "name": "xiaomifeng",
-                        "form": "default",
+                        "form": "一窝蜂",
                         "localized": {
                             "zh": {
                                 "name": "一窝蜂"
@@ -127,7 +127,7 @@
                     {
                         "id": 3059,
                         "name": "huangfenghou",
-                        "form": "default",
+                        "form": "黄蜂后",
                         "localized": {
                             "zh": {
                                 "name": "黄蜂后"
@@ -151,8 +151,8 @@
                         "evolution_conditions": [
                             "等级达到 21 级",
                             "消耗 12,000 洛克贝",
-                            "消耗 魔法石专用——魔法石碎 ×5",
-                            "消耗 系别石头专用——虫系灵碎 ×2",
+                            "消耗 魔法石碎（不投放） ×5",
+                            "消耗 虫系灵碎 ×2",
                             "需为雌性"
                         ]
                     },
@@ -183,8 +183,8 @@
                         "evolution_conditions": [
                             "等级达到 16 级",
                             "消耗 12,000 洛克贝",
-                            "消耗 道具——蓝掌 ×5",
-                            "消耗 未知用途 —— 勇气信笺 ×1"
+                            "消耗 蓝掌 ×5",
+                            "消耗 勇气信笺 ×1"
                         ]
                     }
                 ],
@@ -196,7 +196,7 @@
                     {
                         "id": 3157,
                         "name": "huakuifenghou",
-                        "form": "default",
+                        "form": "花魁蜂后",
                         "localized": {
                             "zh": {
                                 "name": "花魁蜂后"
@@ -249,8 +249,8 @@
                         "evolution_conditions": [
                             "等级达到 36 级",
                             "消耗 50,000 洛克贝",
-                            "消耗 道具——向阳花 ×5",
-                            "消耗 未知用途 —— 修行信笺 ×2"
+                            "消耗 向阳花 ×5",
+                            "消耗 修行信笺 ×2"
                         ]
                     }
                 ],
@@ -271,7 +271,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 5,
-        "classis_name": null,
+        "classis_name": "昆虫类精灵",
         "handbook_area_ids": []
     },
     "catch_info": {
@@ -280,16 +280,16 @@
         "catch_ball_level": 1
     },
     "breeding": {
-        "id": 3040001,
-        "pet_id": 3040001,
+        "id": 3029004,
+        "pet_id": 3029004,
         "name": "丢丢",
-        "model_id": 3040001,
+        "model_id": 3029002,
         "hatch_data": 28800,
-        "weight_low": 1505,
-        "weight_high": 2440,
-        "height_low": 15,
-        "height_high": 21,
-        "precious_egg_type": null,
+        "weight_low": 1435,
+        "weight_high": 2280,
+        "height_low": 16,
+        "height_high": 23,
+        "precious_egg_type": 2,
         "egg_base_glass_prob_array": [
             531,
             500
@@ -302,16 +302,16 @@
         "is_contact_add_shining_prob": null,
         "variants": [
             {
-                "id": 3040001,
-                "pet_id": 3040001,
+                "id": 3029004,
+                "pet_id": 3029004,
                 "name": "丢丢",
-                "model_id": 3040001,
+                "model_id": 3029002,
                 "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": null,
+                "weight_low": 1435,
+                "weight_high": 2280,
+                "height_low": 16,
+                "height_high": 23,
+                "precious_egg_type": 2,
                 "egg_base_glass_prob_array": [
                     531,
                     500
@@ -326,7 +326,7 @@
             {
                 "id": 3288001,
                 "pet_id": 3288001,
-                "name": "丢丢",
+                "name": "白发懒人",
                 "model_id": 3288001,
                 "hatch_data": 28800,
                 "weight_low": 1505,
@@ -346,69 +346,69 @@
                 "is_contact_add_shining_prob": null
             },
             {
-                "id": 3289001,
-                "pet_id": 3289001,
+                "id": 3408002,
+                "pet_id": 3408002,
                 "name": "丢丢",
-                "model_id": 3289001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": null,
-                "egg_base_glass_prob_array": [
-                    531,
-                    500
-                ],
-                "egg_add_glass_prob_array": [
-                    0,
-                    24
-                ],
-                "is_contact_add_glass_prob": true,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 3290001,
-                "pet_id": 3290001,
-                "name": "丢丢",
-                "model_id": 3290001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": null,
-                "egg_base_glass_prob_array": [
-                    531,
-                    500
-                ],
-                "egg_add_glass_prob_array": [
-                    0,
-                    24
-                ],
-                "is_contact_add_glass_prob": true,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 30400001,
-                "pet_id": 30400001,
-                "name": "丢丢",
-                "model_id": 3040001,
+                "model_id": 3408001,
                 "hatch_data": 300,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 7,
+                "weight_low": 11725,
+                "weight_high": 16600,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 1,
                 "egg_base_glass_prob_array": null,
                 "egg_add_glass_prob_array": null,
                 "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3416001,
+                "pet_id": 3416001,
+                "name": "丢丢",
+                "model_id": 3416001,
+                "hatch_data": 72000,
+                "weight_low": 17325,
+                "weight_high": 21840,
+                "height_low": 62,
+                "height_high": 64,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3418001,
+                "pet_id": 3418001,
+                "name": "丢丢",
+                "model_id": 3418001,
+                "hatch_data": 72000,
+                "weight_low": 13475,
+                "weight_high": 17400,
+                "height_low": 55,
+                "height_high": 58,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
                 "is_contact_add_shining_prob": null
             },
             {
                 "id": 32880001,
                 "pet_id": 32880001,
-                "name": "丢丢",
+                "name": "白发懒人",
                 "model_id": 3288001,
                 "hatch_data": 300,
                 "weight_low": 1505,
@@ -422,15 +422,15 @@
                 "is_contact_add_shining_prob": null
             },
             {
-                "id": 32890001,
-                "pet_id": 32890001,
+                "id": 34160001,
+                "pet_id": 34160001,
                 "name": "丢丢",
-                "model_id": 3289001,
+                "model_id": 3416001,
                 "hatch_data": 300,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
+                "weight_low": 17325,
+                "weight_high": 21840,
+                "height_low": 62,
+                "height_high": 64,
                 "precious_egg_type": 7,
                 "egg_base_glass_prob_array": null,
                 "egg_add_glass_prob_array": null,
@@ -438,518 +438,16 @@
                 "is_contact_add_shining_prob": null
             },
             {
-                "id": 32900001,
-                "pet_id": 32900001,
+                "id": 34180001,
+                "pet_id": 34180001,
                 "name": "丢丢",
-                "model_id": 3290001,
+                "model_id": 3418001,
                 "hatch_data": 300,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
+                "weight_low": 13475,
+                "weight_high": 17400,
+                "height_low": 55,
+                "height_high": 58,
                 "precious_egg_type": 7,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 91000063,
-                "pet_id": 91000063,
-                "name": "丢丢",
-                "model_id": 3040001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": null,
-                "egg_base_glass_prob_array": [
-                    531,
-                    500
-                ],
-                "egg_add_glass_prob_array": [
-                    0,
-                    24
-                ],
-                "is_contact_add_glass_prob": true,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 91000064,
-                "pet_id": 91000064,
-                "name": "丢丢",
-                "model_id": 3289001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": null,
-                "egg_base_glass_prob_array": [
-                    531,
-                    500
-                ],
-                "egg_add_glass_prob_array": [
-                    0,
-                    24
-                ],
-                "is_contact_add_glass_prob": true,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 91000065,
-                "pet_id": 91000065,
-                "name": "丢丢",
-                "model_id": 3290001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": null,
-                "egg_base_glass_prob_array": [
-                    531,
-                    500
-                ],
-                "egg_add_glass_prob_array": [
-                    0,
-                    24
-                ],
-                "is_contact_add_glass_prob": true,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 92000063,
-                "pet_id": 92000063,
-                "name": "丢丢",
-                "model_id": 3040001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 92000064,
-                "pet_id": 92000064,
-                "name": "丢丢",
-                "model_id": 3289001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 92000065,
-                "pet_id": 92000065,
-                "name": "丢丢",
-                "model_id": 3290001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 93000063,
-                "pet_id": 93000063,
-                "name": "丢丢",
-                "model_id": 3040001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 93000064,
-                "pet_id": 93000064,
-                "name": "丢丢",
-                "model_id": 3289001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 93000065,
-                "pet_id": 93000065,
-                "name": "丢丢",
-                "model_id": 3290001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 94000063,
-                "pet_id": 94000063,
-                "name": "丢丢",
-                "model_id": 3040001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 94000064,
-                "pet_id": 94000064,
-                "name": "丢丢",
-                "model_id": 3289001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 94000065,
-                "pet_id": 94000065,
-                "name": "丢丢",
-                "model_id": 3290001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 95000006,
-                "pet_id": 95000006,
-                "name": "丢丢",
-                "model_id": 3040001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": [
-                    531,
-                    500
-                ],
-                "egg_add_glass_prob_array": [
-                    0,
-                    24
-                ],
-                "is_contact_add_glass_prob": true,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 95000034,
-                "pet_id": 95000034,
-                "name": "丢丢",
-                "model_id": 3289001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": [
-                    531,
-                    500
-                ],
-                "egg_add_glass_prob_array": [
-                    0,
-                    24
-                ],
-                "is_contact_add_glass_prob": true,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 95000035,
-                "pet_id": 95000035,
-                "name": "丢丢",
-                "model_id": 3290001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": [
-                    531,
-                    500
-                ],
-                "egg_add_glass_prob_array": [
-                    0,
-                    24
-                ],
-                "is_contact_add_glass_prob": true,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 96000063,
-                "pet_id": 96000063,
-                "name": "丢丢",
-                "model_id": 3040001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 96000064,
-                "pet_id": 96000064,
-                "name": "丢丢",
-                "model_id": 3289001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 96000065,
-                "pet_id": 96000065,
-                "name": "丢丢",
-                "model_id": 3290001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 97000063,
-                "pet_id": 97000063,
-                "name": "丢丢",
-                "model_id": 3040001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 97000064,
-                "pet_id": 97000064,
-                "name": "丢丢",
-                "model_id": 3289001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 97000065,
-                "pet_id": 97000065,
-                "name": "丢丢",
-                "model_id": 3290001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 98000063,
-                "pet_id": 98000063,
-                "name": "丢丢",
-                "model_id": 3040001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 98000064,
-                "pet_id": 98000064,
-                "name": "丢丢",
-                "model_id": 3289001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 98000065,
-                "pet_id": 98000065,
-                "name": "丢丢",
-                "model_id": 3290001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 99000006,
-                "pet_id": 99000006,
-                "name": "丢丢",
-                "model_id": 3040001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": [
-                    531,
-                    500
-                ],
-                "egg_add_glass_prob_array": [
-                    0,
-                    24
-                ],
-                "is_contact_add_glass_prob": true,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 99000034,
-                "pet_id": 99000034,
-                "name": "丢丢",
-                "model_id": 3289001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": [
-                    531,
-                    500
-                ],
-                "egg_add_glass_prob_array": [
-                    0,
-                    24
-                ],
-                "is_contact_add_glass_prob": true,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 99000035,
-                "pet_id": 99000035,
-                "name": "丢丢",
-                "model_id": 3290001,
-                "hatch_data": 28800,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 1,
-                "egg_base_glass_prob_array": [
-                    531,
-                    500
-                ],
-                "egg_add_glass_prob_array": [
-                    0,
-                    24
-                ],
-                "is_contact_add_glass_prob": true,
-                "is_contact_add_shining_prob": null
-            },
-            {
-                "id": 99000112,
-                "pet_id": 99000112,
-                "name": "丢丢",
-                "model_id": 3040001,
-                "hatch_data": 72000,
-                "weight_low": 1505,
-                "weight_high": 2440,
-                "height_low": 15,
-                "height_high": 21,
-                "precious_egg_type": 4,
                 "egg_base_glass_prob_array": null,
                 "egg_add_glass_prob_array": null,
                 "is_contact_add_glass_prob": null,

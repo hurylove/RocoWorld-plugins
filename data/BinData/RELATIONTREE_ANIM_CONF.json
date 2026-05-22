@@ -14,13 +14,13 @@
         {},
         {
           "name": "",
-          "icon": "带带你"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_yaoqingtongxing_png.img_yaoqingtongxing_png'"
         }
       ],
       "invite_key": "InviteTogether",
-      "invite_tip": "",
-      "receive_invite_tip": "",
-      "cancel_tip": ""
+      "invite_tip": "收到了来自%s的同行申请",
+      "receive_invite_tip": "同行申请中断",
+      "cancel_tip": "已发送访问申请"
     },
     "3": {
       "id": 3,
@@ -30,13 +30,13 @@
         {},
         {
           "name": "",
-          "icon": "求带带"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_shenqingtongxing_png.img_shenqingtongxing_png'"
         }
       ],
       "invite_key": "RequestTogether",
-      "invite_tip": "",
-      "receive_invite_tip": "",
-      "cancel_tip": ""
+      "invite_tip": "已发送切磋申请",
+      "receive_invite_tip": "收到了来自%s的切磋申请",
+      "cancel_tip": "切磋申请中断"
     },
     "4": {
       "id": 4,
@@ -46,14 +46,14 @@
         {},
         {
           "name": "",
-          "icon": "申请访问"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_shenqingfangwen_png.img_shenqingfangwen_png'"
         }
       ],
       "invite_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Rltt_Visit_Start.G6_Rltt_Visit_Start'",
       "accept_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Rltt_Visit_End.G6_Rltt_Visit_End'",
-      "invite_tip": "",
-      "receive_invite_tip": "",
-      "cancel_tip": ""
+      "invite_tip": "已发送碰拳申请",
+      "receive_invite_tip": "收到了来自%s的碰拳申请",
+      "cancel_tip": "碰拳申请中断"
     },
     "5": {
       "id": 5,
@@ -61,7 +61,7 @@
         {},
         {
           "name": "",
-          "icon": "邀请访问"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_yaoqingfangwen_png.img_yaoqingfangwen_png'"
         }
       ],
       "invite_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Interact_Fist_Start.G6_Interact_Fist_Start'",
@@ -75,14 +75,14 @@
         {},
         {
           "name": "",
-          "icon": "切磋"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_qiecuo_png.img_qiecuo_png'"
         }
       ],
       "invite_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Rltt_PVP_Start.G6_Rltt_PVP_Start'",
       "accept_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Rltt_PVP_End.G6_Rltt_PVP_End'",
-      "invite_tip": "",
-      "receive_invite_tip": "",
-      "cancel_tip": ""
+      "invite_tip": "已发送勾肩搭背申请",
+      "receive_invite_tip": "收到了来自%s的勾肩搭背申请",
+      "cancel_tip": "勾肩搭背申请中断"
     },
     "7": {
       "id": 7,
@@ -90,7 +90,7 @@
         {},
         {
           "name": "",
-          "icon": "加好友"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_jiahaoyou_png.img_jiahaoyou_png'"
         }
       ]
     },
@@ -102,15 +102,15 @@
         {},
         {
           "name": "",
-          "icon": "赠送精灵蛋"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_songdan_png.img_songdan_png'"
         }
       ],
       "invite_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Rltt_Apply_Start.G6_Rltt_Apply_Start'",
       "accept_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Rltt_Give_Egg.G6_Rltt_Give_Egg'",
       "failed_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Rltt_Give_Lose.G6_Rltt_Give_Lose'",
-      "invite_tip": "",
-      "receive_invite_tip": "",
-      "cancel_tip": ""
+      "invite_tip": "加好友",
+      "receive_invite_tip": "赠送精灵蛋",
+      "cancel_tip": "贴贴回能"
     },
     "9": {
       "id": 9,
@@ -118,7 +118,7 @@
         {},
         {
           "name": "",
-          "icon": "贴贴回能"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_tietie_png.img_tietie_png'"
         }
       ]
     },
@@ -128,7 +128,7 @@
         {},
         {
           "name": "",
-          "icon": "阵容镜像"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_Lineup_png.img_Lineup_png'"
         }
       ]
     },
@@ -139,19 +139,19 @@
       "name_icon_struct": [
         {
           "name": "",
-          "icon": "解锁碰拳"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_suo_png.img_suo_png'"
         },
         {
           "name": "",
-          "icon": "碰拳"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_Highfive_png.img_Highfive_png'"
         }
       ],
       "invite_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Interact_Fist_Start.G6_Interact_Fist_Start'",
       "accept_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Interact_Fist_End.G6_Interact_Fist_End'",
       "failed_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Interact_Fist_Lose.G6_Interact_Fist_Lose'",
-      "invite_tip": "",
-      "receive_invite_tip": "",
-      "cancel_tip": ""
+      "invite_tip": "拥抱",
+      "receive_invite_tip": "观战",
+      "cancel_tip": "私聊"
     },
     "12": {
       "id": 12,
@@ -160,19 +160,19 @@
       "name_icon_struct": [
         {
           "name": "",
-          "icon": "解锁拥抱"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_suo_png.img_suo_png'"
         },
         {
           "name": "",
-          "icon": "拥抱"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_Embrace_png.img_Embrace_png'"
         }
       ],
       "invite_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Interact_Hug_Start.G6_Interact_Hug_Start'",
       "accept_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Interact_Hug_End.G6_Interact_Hug_End'",
       "failed_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Interact_Hug_Lose.G6_Interact_Hug_Lose'",
-      "invite_tip": "",
-      "receive_invite_tip": "",
-      "cancel_tip": ""
+      "invite_tip": "敬请期待",
+      "receive_invite_tip": "摸头",
+      "cancel_tip": "亲昵"
     },
     "13": {
       "id": 13,
@@ -180,7 +180,7 @@
         {},
         {
           "name": "",
-          "icon": "观战"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_guanzhan_png.img_guanzhan_png'"
         }
       ]
     },
@@ -190,7 +190,7 @@
         {},
         {
           "name": "",
-          "icon": "私聊"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_liaotian_png.img_liaotian_png'"
         }
       ]
     },
@@ -200,7 +200,7 @@
         {},
         {
           "name": "",
-          "icon": "查看信息"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_chakanxinxi_png.img_chakanxinxi_png'"
         }
       ]
     },
@@ -210,7 +210,7 @@
         {},
         {
           "name": "",
-          "icon": "赐福"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_qingqiucifu_png.img_qingqiucifu_png'"
         }
       ],
       "invite_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Rltt_Apply_Start.G6_Rltt_Apply_Start'",
@@ -224,7 +224,7 @@
         },
         {
           "name": "",
-          "icon": "骑乘"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_haicheng_png.img_haicheng_png'"
         },
         {
           "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_feixing_png.img_feixing_png'"
@@ -239,7 +239,7 @@
         {},
         {
           "name": "",
-          "icon": "申请赐福"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_qingqiucifu_png.img_qingqiucifu_png'"
         }
       ],
       "invite_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Rltt_Apply_Start.G6_Rltt_Apply_Start'",
@@ -263,7 +263,7 @@
         {},
         {
           "name": "",
-          "icon": "摸头"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_TouchHead_png.img_TouchHead_png'"
         }
       ],
       "param1": "200001;200002;200003;200004",
@@ -275,7 +275,7 @@
         {},
         {
           "name": "",
-          "icon": "亲昵"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_qinni_png.img_qinni_png'"
         }
       ]
     },
@@ -287,7 +287,7 @@
         {},
         {
           "name": "",
-          "icon": "勾肩搭背"
+          "icon": "PaperSprite'/Game/NewRoco/Modules/System/RelationTree/Rew/Frames/img_Arm_png.img_Arm_png'"
         }
       ],
       "invite_key": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/ScenePlay/G6_Interact_GJDB_Start.G6_Interact_GJDB_Start'",

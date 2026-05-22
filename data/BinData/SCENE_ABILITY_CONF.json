@@ -17,7 +17,7 @@
     },
     "1300003": {
       "id": 1300003,
-      "ability_name": "普通游泳",
+      "ability_name": "抛球入口",
       "skill_bp_path": "/Game/NewRoco/Modules/Core/Scene/Ability/Dash/BP_PassiveSwimmingAbility.BP_PassiveSwimmingAbility",
       "scene_ability_type": 1,
       "scene_ability_type_id": 1360003,
@@ -30,7 +30,7 @@
     },
     "1300004": {
       "id": 1300004,
-      "ability_name": "游泳冲刺",
+      "ability_name": "坠落（被动）",
       "skill_bp_path": "/Game/NewRoco/Modules/Core/Scene/Ability/Dash/BP_DashAbility.BP_DashAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_youyong_png.btn_youyong_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_youyong_zhihui_png.btn_youyong_zhihui_png'",
@@ -46,7 +46,7 @@
     },
     "1300019": {
       "id": 1300019,
-      "ability_name": "滑行",
+      "ability_name": "潜行（移除）",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_chongci_png.btn_chongci_png'",
       "scene_ability_slot_cast_type": 1,
       "scene_ability_type": 6,
@@ -57,7 +57,7 @@
     },
     "1300020": {
       "id": 1300020,
-      "ability_name": "冲刺主技能",
+      "ability_name": "滑行（被动）",
       "skill_bp_path": "/Game/NewRoco/Modules/Core/Scene/Ability/Dash/BP_MainAbility.BP_MainAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_chongci_png.btn_chongci_png'",
       "scene_ability_slot_cast_type": 1,
@@ -72,7 +72,7 @@
     },
     "1300021": {
       "id": 1300021,
-      "ability_name": "主技能入口",
+      "ability_name": "风场魔法释放",
       "skill_bp_path": "/Game/NewRoco/Modules/Core/Scene/Ability/Dash/BP_MainAbilityEntry.BP_MainAbilityEntry",
       "scene_ability_slot_cast_type": 1,
       "priority": 2,
@@ -81,7 +81,7 @@
     },
     "1300025": {
       "id": 1300025,
-      "ability_name": "抛球入口",
+      "ability_name": "星星魔法释放",
       "skill_bp_path": "/Game/NewRoco/Modules/Core/Scene/Ability/ThrowBall/BP_ThrowBallEntry.BP_ThrowBallEntry",
       "cooldown": 0.5,
       "priority": 2,
@@ -90,7 +90,7 @@
     },
     "1300026": {
       "id": 1300026,
-      "ability_name": "精准抛球",
+      "ability_name": "攀爬冲刺",
       "skill_bp_path": "/Game/NewRoco/Modules/Core/Scene/Ability/ThrowBall/BP_AimThrowBall.BP_AimThrowBall",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_touzhi_png.btn_touzhi_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_touzhi_zhihui_png.btn_touzhi_zhihui_png'",
@@ -107,7 +107,7 @@
     },
     "1300027": {
       "id": 1300027,
-      "ability_name": "回收宠物",
+      "ability_name": "创造魔法蓄力",
       "skill_bp_path": "/Game/NewRoco/Modules/Core/Scene/Ability/ThrowBall/BP_RecycleThrowBall.BP_RecycleThrowBall",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_huishou_png.btn_huishou_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_huishou_zhihui_png.btn_huishou_zhihui_png'",
@@ -121,7 +121,7 @@
     },
     "1300028": {
       "id": 1300028,
-      "ability_name": "坠落（被动）",
+      "ability_name": "光系魔法蓄力-1",
       "skill_bp_path": "/Game/NewRoco/Modules/Core/Scene/Ability/BP_PassiveFallingAbility.BP_PassiveFallingAbility",
       "is_passive": true,
       "add_status": [
@@ -132,7 +132,7 @@
     },
     "1300035": {
       "id": 1300035,
-      "ability_name": "冲刺主技能(解除)",
+      "ability_name": "特殊移动（移除）",
       "skill_lua_path": "MainAbility.StopMainAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_chongci_png.btn_chongci_png'",
       "scene_ability_slot_cast_type": 1,
@@ -146,7 +146,7 @@
     },
     "1300036": {
       "id": 1300036,
-      "ability_name": "投掷出手",
+      "ability_name": "双人动作邀请",
       "skill_path": "/Game/NewRoco/Modules/Core/Scene/Ability/ThrowBall/BP_ThrowSkill.BP_ThrowSkill",
       "skill_lua_path": "ThrowAbility.EndThrowAbility",
       "scene_ability_slot_cast_type": 1,
@@ -160,7 +160,7 @@
     },
     "1300037": {
       "id": 1300037,
-      "ability_name": "潜行（添加）",
+      "ability_name": "精灵赐福",
       "skill_lua_path": "Crouch.StartCrouchAbility",
       "add_status": [
         13
@@ -170,7 +170,7 @@
     },
     "1300038": {
       "id": 1300038,
-      "ability_name": "潜行（移除）",
+      "ability_name": "留影魔法蓄力",
       "skill_lua_path": "Crouch.StopCrouchAbility",
       "add_sub_status": 1,
       "remove_status": [
@@ -180,7 +180,7 @@
     },
     "1300046": {
       "id": 1300046,
-      "ability_name": "滑行（被动）",
+      "ability_name": "",
       "skill_bp_path": "/Game/NewRoco/Modules/Core/Scene/Ability/BP_PassiveSlideAbility.BP_PassiveSlideAbility",
       "is_passive": true,
       "add_status": [
@@ -191,7 +191,7 @@
     },
     "1300056": {
       "id": 1300056,
-      "ability_name": "感知",
+      "ability_name": "",
       "skill_lua_path": "Perception.PerceptionAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_xiao_ganzhi_png.btn_xiao_ganzhi_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_xiao_ganzhizhihui_png.btn_xiao_ganzhizhihui_png'",
@@ -209,7 +209,7 @@
     },
     "1300057": {
       "id": 1300057,
-      "ability_name": "感知关闭",
+      "ability_name": "",
       "skill_lua_path": "Perception.EndPerceptionAbility",
       "scene_ability_slot_cast_type": 1,
       "add_sub_status": 1,
@@ -221,7 +221,7 @@
     },
     "1300058": {
       "id": 1300058,
-      "ability_name": "风场魔法蓄力",
+      "ability_name": "",
       "skill_lua_path": "MagicAbility.PrepareWindAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabang_png.btn_mofabang_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabangzhihui_png.btn_mofabangzhihui_png'",
@@ -237,7 +237,7 @@
     },
     "1300059": {
       "id": 1300059,
-      "ability_name": "风场魔法释放",
+      "ability_name": "",
       "skill_path": "/Game/NewRoco/Modules/Core/Scene/Ability/Magic/BP_MagicSkill_Wind.BP_MagicSkill_Wind",
       "skill_lua_path": "MagicAbility.CastWindAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabang_png.btn_mofabang_png'",
@@ -252,7 +252,7 @@
     },
     "1300060": {
       "id": 1300060,
-      "ability_name": "星星魔法蓄力",
+      "ability_name": "",
       "skill_bp_path": "/Game/NewRoco/Modules/Core/Scene/Ability/Magic/BP_MagicStar.BP_MagicStar",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabang_png.btn_mofabang_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabangzhihui_png.btn_mofabangzhihui_png'",
@@ -268,7 +268,7 @@
     },
     "1300061": {
       "id": 1300061,
-      "ability_name": "星星魔法释放",
+      "ability_name": "",
       "skill_path": "/Game/NewRoco/Modules/Core/Scene/Ability/Magic/BP_MagicSkill_Star.BP_MagicSkill_Star",
       "skill_lua_path": "MagicAbility.CastMagicStar",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabang_png.btn_mofabang_png'",
@@ -283,7 +283,7 @@
     },
     "1300062": {
       "id": 1300062,
-      "ability_name": "解除攀爬",
+      "ability_name": "",
       "skill_lua_path": "Climb.CancelClimb",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_xia_qicheng_png.btn_xia_qicheng_png'",
       "ability_press_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_xia_qicheng_xuanzhong_png.btn_xia_qicheng_xuanzhong_png'",
@@ -298,7 +298,7 @@
     },
     "1300063": {
       "id": 1300063,
-      "ability_name": "攀爬冲刺",
+      "ability_name": "",
       "skill_lua_path": "Climb.ClimbDash",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_chongci_png.btn_chongci_png'",
       "ability_press_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_xiao_feixing_panpaxuanzhong_png.btn_xiao_feixing_panpaxuanzhong_png'",
@@ -315,7 +315,7 @@
     },
     "1300064": {
       "id": 1300064,
-      "ability_name": "攀爬",
+      "ability_name": "",
       "add_sub_status": 1,
       "remove_sub_status": 1,
       "disable_env": [
@@ -324,7 +324,7 @@
     },
     "1300065": {
       "id": 1300065,
-      "ability_name": "全精灵骑乘",
+      "ability_name": "",
       "skill_lua_path": "RideAll.RideAllAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_xiao_qicheng_png.btn_xiao_qicheng_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_xiao_qicheng_zhihui_png.btn_xiao_qicheng_zhihui_png'",
@@ -341,7 +341,7 @@
     },
     "1300066": {
       "id": 1300066,
-      "ability_name": "解散全精灵骑乘",
+      "ability_name": "",
       "skill_lua_path": "RideAll.OffRideAllAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_CancelRide1_png.btn_CancelRide1_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_CancelRide4_png.btn_CancelRide4_png'",
@@ -357,7 +357,7 @@
     },
     "1300067": {
       "id": 1300067,
-      "ability_name": "全精灵主动技能",
+      "ability_name": "",
       "skill_lua_path": "RideAll.RideAllMainAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_qichengchongci_png.btn_qichengchongci_png'",
       "scene_ability_slot_cast_type": 1,
@@ -373,7 +373,7 @@
     },
     "1300068": {
       "id": 1300068,
-      "ability_name": "解散全精灵主动",
+      "ability_name": "",
       "skill_lua_path": "RideAll.OffRideAllMainAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_xia_qicheng_png.btn_xia_qicheng_png'",
       "scene_ability_slot_cast_type": 1,
@@ -389,7 +389,7 @@
     },
     "1300069": {
       "id": 1300069,
-      "ability_name": "玩家跳跃",
+      "ability_name": "",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_jump_png.btn_jump_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_jump_zhihui_png.btn_jump_zhihui_png'",
       "ability_press_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_jump_jinzhi_png.btn_jump_jinzhi_png'",
@@ -403,7 +403,7 @@
     },
     "1300080": {
       "id": 1300080,
-      "ability_name": "创造魔法蓄力",
+      "ability_name": "",
       "skill_lua_path": "MagicAbility.PrepareCreateAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabang_png.btn_mofabang_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabangzhihui_png.btn_mofabangzhihui_png'",
@@ -423,7 +423,7 @@
     },
     "1300081": {
       "id": 1300081,
-      "ability_name": "创造魔法释放",
+      "ability_name": "",
       "skill_lua_path": "MagicAbility.CastCreateAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabang_png.btn_mofabang_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabangzhihui_png.btn_mofabangzhihui_png'",
@@ -440,7 +440,7 @@
     },
     "1300090": {
       "id": 1300090,
-      "ability_name": "液化术",
+      "ability_name": "",
       "skill_lua_path": "MagicAbility.MagicTransformAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabang_png.btn_mofabang_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabangzhihui_png.btn_mofabangzhihui_png'",
@@ -455,7 +455,7 @@
     },
     "1300091": {
       "id": 1300091,
-      "ability_name": "液化术",
+      "ability_name": "",
       "skill_lua_path": "MagicAbility.CastMagicTransform",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabang_png.btn_mofabang_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabangzhihui_png.btn_mofabangzhihui_png'",
@@ -469,7 +469,7 @@
     },
     "1300092": {
       "id": 1300092,
-      "ability_name": "变形开始",
+      "ability_name": "",
       "skill_lua_path": "Transform.TransformAbility",
       "add_status": [
         30
@@ -478,7 +478,7 @@
     },
     "1300093": {
       "id": 1300093,
-      "ability_name": "变形结束",
+      "ability_name": "",
       "skill_lua_path": "Transform.EndTransformAbility",
       "remove_status": [
         30
@@ -487,7 +487,7 @@
     },
     "1300100": {
       "id": 1300100,
-      "ability_name": "光系魔法蓄力-1",
+      "ability_name": "",
       "skill_lua_path": "MagicAbility.PrepareLightAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabang_png.btn_mofabang_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabangzhihui_png.btn_mofabangzhihui_png'",
@@ -503,7 +503,7 @@
     },
     "1300101": {
       "id": 1300101,
-      "ability_name": "光系魔法释放-1",
+      "ability_name": "",
       "skill_path": "/Game/NewRoco/Modules/Core/Scene/Ability/Magic/BP_MagicSkill_Star.BP_MagicSkill_Star",
       "skill_lua_path": "MagicAbility.CastLightAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabang_png.btn_mofabang_png'",
@@ -518,7 +518,7 @@
     },
     "1300110": {
       "id": 1300110,
-      "ability_name": "特殊移动（添加）",
+      "ability_name": "",
       "skill_lua_path": "SpecialMove.StartSpecialMoveAbility",
       "add_status": [
         31
@@ -528,7 +528,7 @@
     },
     "1300111": {
       "id": 1300111,
-      "ability_name": "特殊移动（移除）",
+      "ability_name": "",
       "skill_lua_path": "SpecialMove.StopSpecialMoveAbility",
       "add_sub_status": 1,
       "remove_status": [
@@ -538,7 +538,7 @@
     },
     "1300120": {
       "id": 1300120,
-      "ability_name": "留言魔法蓄力",
+      "ability_name": "",
       "skill_lua_path": "MagicAbility.PrepareMessageAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabang_png.btn_mofabang_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabangzhihui_png.btn_mofabangzhihui_png'",
@@ -557,7 +557,7 @@
     },
     "1300121": {
       "id": 1300121,
-      "ability_name": "留言魔法释放",
+      "ability_name": "",
       "skill_lua_path": "MagicAbility.CastMessageAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabang_png.btn_mofabang_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabangzhihui_png.btn_mofabangzhihui_png'",
@@ -574,7 +574,7 @@
     },
     "1300122": {
       "id": 1300122,
-      "ability_name": "双人动作邀请",
+      "ability_name": "",
       "skill_lua_path": "Perform.InviteInteractAbility",
       "priority": 2,
       "add_status": [
@@ -588,7 +588,7 @@
     },
     "1300123": {
       "id": 1300123,
-      "ability_name": "双人动作",
+      "ability_name": "",
       "skill_lua_path": "Perform.TwoPlayerAnimAbility",
       "add_status": [
         35
@@ -601,7 +601,7 @@
     },
     "1300124": {
       "id": 1300124,
-      "ability_name": "双人牵手",
+      "ability_name": "",
       "skill_lua_path": "Perform.HandInHandAbility",
       "add_status": [
         36
@@ -614,7 +614,7 @@
     },
     "1300125": {
       "id": 1300125,
-      "ability_name": "双人牵手-2P解除",
+      "ability_name": "",
       "skill_lua_path": "Perform.HandInHand2PAbility",
       "add_status": [
         37
@@ -627,7 +627,7 @@
     },
     "1300126": {
       "id": 1300126,
-      "ability_name": "精灵赐福",
+      "ability_name": "",
       "skill_lua_path": "Perform.PetBlessingAbility",
       "add_status": [
         38
@@ -640,7 +640,7 @@
     },
     "1300127": {
       "id": 1300127,
-      "ability_name": "自拍",
+      "ability_name": "",
       "skill_lua_path": "TakePhoto.TakePhotoSelfAbility",
       "add_status": [
         39
@@ -652,7 +652,7 @@
     },
     "1300128": {
       "id": 1300128,
-      "ability_name": "休闲待机",
+      "ability_name": "",
       "skill_lua_path": "Perform.IdleRelaxAbility",
       "priority": 3,
       "add_status": [
@@ -664,7 +664,7 @@
     },
     "1300129": {
       "id": 1300129,
-      "ability_name": "留影魔法蓄力",
+      "ability_name": "",
       "skill_lua_path": "MagicAbility.PrepareVideoAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabang_png.btn_mofabang_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabangzhihui_png.btn_mofabangzhihui_png'",
@@ -683,7 +683,7 @@
     },
     "1300130": {
       "id": 1300130,
-      "ability_name": "留影魔法释放",
+      "ability_name": "",
       "skill_lua_path": "MagicAbility.CastVideoAbility",
       "ability_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabang_png.btn_mofabang_png'",
       "ability_block_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUI/Frames/btn_mofabangzhihui_png.btn_mofabangzhihui_png'",
@@ -700,7 +700,7 @@
     },
     "1300131": {
       "id": 1300131,
-      "ability_name": "玩家跳跃",
+      "ability_name": "",
       "skill_lua_path": "RideAll.RideAllJumpAbility",
       "scene_ability_slot_cast_type": 1,
       "cooldown": 0.5,

@@ -2,80 +2,83 @@
   "RocoDataRows": {
     "1": {
       "id": 1,
-      "tag": "",
+      "tag": "攻击类",
       "condition_skilltype": [
-        -440691482,
-        -1310213241
+        1
       ],
-      "tag_icon": "\u0001\u0000\u0000\u0000"
+      "tag_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Hints/Frames/img_gongji_png.img_gongji_png'"
     },
     "2": {
       "id": 2,
-      "tag": "",
+      "tag": "物攻",
       "condition_skilltype": [
-        -441280279,
-        -1310219842
+        3
       ],
-      "tag_icon": "\u0003\u0000\u0000\u0000"
+      "tag_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Hints/Frames/img_fangyu_png.img_fangyu_png'"
     },
     "3": {
       "id": 3,
-      "tag": "",
+      "tag": "回能",
       "condition_skilltype": [
-        -427256346,
-        -1310221154
+        2,
+        0
       ],
-      "tag_icon": "\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      "tag_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Hints/Frames/img_zhuangtai_png.img_zhuangtai_png'"
     },
     "4": {
       "id": 4,
-      "tag": "",
+      "tag": "待机",
       "condition_damtype": [
-        -425096729
+        2
       ],
-      "tag_icon": "\u0002\u0000\u0000\u0000"
+      "tag_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Hints/Frames/img_wugong_png.img_wugong_png'"
     },
     "5": {
       "id": 5,
-      "tag": "",
+      "tag": "技能目标",
       "condition_damtype": [
-        -424048153
+        3
       ],
-      "tag_icon": "\u0003\u0000\u0000\u0000"
+      "tag_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Hints/Frames/img_tegong_png.img_tegong_png'"
     },
     "6": {
       "id": 6,
       "tag": "",
       "condition_effecttype": [
-        -442334746
+        5,
+        11
       ],
-      "tag_icon": "\u0005\u0000\u0000\u0000\u000b\u0000\u0000\u0000"
+      "tag_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Hints/Frames/img_huixue_png.img_huixue_png'"
     },
     "7": {
       "id": 7,
       "tag": "",
       "condition_effecttype": [
-        -392258587
+        18,
+        19
       ],
-      "tag_icon": "\u0012\u0000\u0000\u0000\u0013\u0000\u0000\u0000"
+      "tag_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Hints/Frames/img_huineng_png.img_huineng_png'"
     },
     "8": {
       "id": 8,
       "tag": "",
-      "tag_icon": "特殊"
+      "tag_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Hints/Frames/img_teshu_png.img_teshu_png'"
     },
     "9": {
       "id": 9,
       "tag": "",
       "condition_skillid": [
-        3868176613
+        7000010,
+        7000030,
+        7000040,
+        7000050
       ],
-      "tag_icon": "��j\u0000��j\u0000��j\u0000��j\u0000"
+      "tag_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Hints/Frames/img_xiuqi_png.img_xiuqi_png'"
     },
     "10": {
       "id": 10,
       "tag": "",
-      "tag_icon": "待机"
+      "tag_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Hints/Frames/img_daiji_png.img_daiji_png'"
     },
     "101": {
       "id": 101,

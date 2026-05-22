@@ -9,8 +9,8 @@
       "badge_icon_noedge": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_013.T_UI_HX_013'",
       "badge_icon_noedge2": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_015.T_UI_HX_015'",
       "badge_icon_mask": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_014.T_UI_HX_014'",
-      "button_text": "",
-      "badge_type_text": ""
+      "button_text": "解锁",
+      "badge_type_text": "无"
     },
     "10101": {
       "id": 10101,
@@ -21,11 +21,11 @@
       "badge_icon_noedge": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_013.T_UI_HX_013'",
       "badge_icon_noedge2": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_015.T_UI_HX_015'",
       "badge_icon_mask": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_014.T_UI_HX_014'",
-      "button_text": "",
-      "next_level_task_num": 3,
-      "badge_type": 20,
-      "badge_type_param1": 1,
-      "badge_type_text": ""
+      "button_text": "升级",
+      "next_level_task_num": 20,
+      "badge_type": 1,
+      "badge_type_param1": 2000,
+      "badge_type_text": "星光值获取比例加成：20%"
     },
     "10102": {
       "id": 10102,
@@ -36,11 +36,11 @@
       "badge_icon_noedge": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_013.T_UI_HX_013'",
       "badge_icon_noedge2": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_015.T_UI_HX_015'",
       "badge_icon_mask": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_014.T_UI_HX_014'",
-      "button_text": "",
-      "next_level_task_num": 5,
-      "badge_type": 23,
-      "badge_type_param1": 1,
-      "badge_type_text": ""
+      "button_text": "升级",
+      "next_level_task_num": 23,
+      "badge_type": 1,
+      "badge_type_param1": 2000,
+      "badge_type_text": "星光值获取比例加成：40%"
     },
     "10103": {
       "id": 10103,
@@ -51,11 +51,11 @@
       "badge_icon_noedge": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_013.T_UI_HX_013'",
       "badge_icon_noedge2": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_015.T_UI_HX_015'",
       "badge_icon_mask": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_014.T_UI_HX_014'",
-      "button_text": "",
-      "next_level_task_num": 7,
-      "badge_type": 27,
-      "badge_type_param1": 1,
-      "badge_type_text": ""
+      "button_text": "升级",
+      "next_level_task_num": 27,
+      "badge_type": 1,
+      "badge_type_param1": 1500,
+      "badge_type_text": "星光值获取比例加成：55%"
     },
     "10104": {
       "id": 10104,
@@ -66,11 +66,11 @@
       "badge_icon_noedge": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_013.T_UI_HX_013'",
       "badge_icon_noedge2": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_015.T_UI_HX_015'",
       "badge_icon_mask": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_014.T_UI_HX_014'",
-      "button_text": "",
-      "next_level_task_num": 9,
-      "badge_type": 30,
-      "badge_type_param1": 1,
-      "badge_type_text": ""
+      "button_text": "领取",
+      "next_level_task_num": 30,
+      "badge_type": 1,
+      "badge_type_param1": 1500,
+      "badge_type_text": "星光值获取比例加成：70%"
     },
     "10105": {
       "id": 10105,
@@ -83,7 +83,7 @@
       "next_level_task_num": 38,
       "badge_type": 4,
       "badge_type_param1": 120005068,
-      "badge_type_text": ""
+      "badge_type_text": "额外获得赛季徽章名片"
     },
     "10200": {
       "id": 10200,
@@ -94,8 +94,8 @@
       "badge_icon_noedge": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_013.T_UI_HX_013'",
       "badge_icon_noedge2": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_015.T_UI_HX_015'",
       "badge_icon_mask": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_014.T_UI_HX_014'",
-      "button_text": "",
-      "badge_type_text": ""
+      "button_text": "解锁",
+      "badge_type_text": "无"
     },
     "10201": {
       "id": 10201,
@@ -106,11 +106,11 @@
       "badge_icon_noedge": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_013.T_UI_HX_013'",
       "badge_icon_noedge2": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_015.T_UI_HX_015'",
       "badge_icon_mask": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_014.T_UI_HX_014'",
-      "button_text": "",
-      "next_level_task_num": 14,
-      "badge_type": 20,
-      "badge_type_param1": 1,
-      "badge_type_text": ""
+      "button_text": "升级",
+      "next_level_task_num": 20,
+      "badge_type": 1,
+      "badge_type_param1": 2000,
+      "badge_type_text": "星光值获取比例加成：20%"
     },
     "10202": {
       "id": 10202,
@@ -121,11 +121,11 @@
       "badge_icon_noedge": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_013.T_UI_HX_013'",
       "badge_icon_noedge2": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_015.T_UI_HX_015'",
       "badge_icon_mask": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_014.T_UI_HX_014'",
-      "button_text": "",
-      "next_level_task_num": 16,
-      "badge_type": 22,
-      "badge_type_param1": 1,
-      "badge_type_text": ""
+      "button_text": "升级",
+      "next_level_task_num": 22,
+      "badge_type": 1,
+      "badge_type_param1": 2000,
+      "badge_type_text": "星光值获取比例加成：40%"
     },
     "10203": {
       "id": 10203,
@@ -136,11 +136,11 @@
       "badge_icon_noedge": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_013.T_UI_HX_013'",
       "badge_icon_noedge2": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_015.T_UI_HX_015'",
       "badge_icon_mask": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_014.T_UI_HX_014'",
-      "button_text": "",
-      "next_level_task_num": 18,
-      "badge_type": 24,
-      "badge_type_param1": 1,
-      "badge_type_text": ""
+      "button_text": "升级",
+      "next_level_task_num": 24,
+      "badge_type": 1,
+      "badge_type_param1": 1500,
+      "badge_type_text": "星光值获取比例加成：55%"
     },
     "10204": {
       "id": 10204,
@@ -151,11 +151,11 @@
       "badge_icon_noedge": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_013.T_UI_HX_013'",
       "badge_icon_noedge2": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_015.T_UI_HX_015'",
       "badge_icon_mask": "Texture2D'/Game/ArtRes/UI/Effects/Textures/T_UI_HX_014.T_UI_HX_014'",
-      "button_text": "",
-      "next_level_task_num": 20,
-      "badge_type": 26,
-      "badge_type_param1": 1,
-      "badge_type_text": ""
+      "button_text": "领取",
+      "next_level_task_num": 26,
+      "badge_type": 1,
+      "badge_type_param1": 1500,
+      "badge_type_text": "星光值获取比例加成：70%"
     },
     "10205": {
       "id": 10205,
@@ -168,7 +168,7 @@
       "next_level_task_num": 32,
       "badge_type": 4,
       "badge_type_param1": 120005070,
-      "badge_type_text": ""
+      "badge_type_text": "S2异色奇遇新精灵蛋自选、赛季徽章名片"
     }
   },
   "LocalizationStrings": {}

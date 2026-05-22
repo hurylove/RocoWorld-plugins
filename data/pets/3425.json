@@ -133,7 +133,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 6,
-        "classis_name": null,
+        "classis_name": "自然类精灵",
         "handbook_area_ids": []
     },
     "catch_info": {
@@ -144,7 +144,7 @@
     "breeding": {
         "id": 3425001,
         "pet_id": 3425001,
-        "name": "三叶草龙",
+        "name": "彩玉球形态",
         "model_id": 3425001,
         "hatch_data": 1,
         "weight_low": 1,
@@ -160,7 +160,7 @@
             {
                 "id": 3425001,
                 "pet_id": 3425001,
-                "name": "三叶草龙",
+                "name": "彩玉球形态",
                 "model_id": 3425001,
                 "hatch_data": 1,
                 "weight_low": 1,
@@ -174,9 +174,31 @@
                 "is_contact_add_shining_prob": null
             },
             {
+                "id": 3606001,
+                "pet_id": 3606001,
+                "name": "三叶草龙",
+                "model_id": 3606001,
+                "hatch_data": 28800,
+                "weight_low": 347,
+                "weight_high": 608,
+                "height_low": 12,
+                "height_high": 16,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
                 "id": 34250001,
                 "pet_id": 34250001,
-                "name": "三叶草龙",
+                "name": "彩玉球形态",
                 "model_id": 3425001,
                 "hatch_data": 300,
                 "weight_low": 1,
@@ -184,6 +206,82 @@
                 "height_low": 1,
                 "height_high": 10,
                 "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 36060001,
+                "pet_id": 36060001,
+                "name": "三叶草龙",
+                "model_id": 3606001,
+                "hatch_data": 300,
+                "weight_low": 347,
+                "weight_high": 608,
+                "height_low": 12,
+                "height_high": 16,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 95000053,
+                "pet_id": 95000053,
+                "name": "三叶草龙",
+                "model_id": 3606001,
+                "hatch_data": 28800,
+                "weight_low": 347,
+                "weight_high": 608,
+                "height_low": 12,
+                "height_high": 16,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000053,
+                "pet_id": 99000053,
+                "name": "三叶草龙",
+                "model_id": 3606001,
+                "hatch_data": 28800,
+                "weight_low": 347,
+                "weight_high": 608,
+                "height_low": 12,
+                "height_high": 16,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000176,
+                "pet_id": 99000176,
+                "name": "三叶草龙",
+                "model_id": 3606001,
+                "hatch_data": 72000,
+                "weight_low": 347,
+                "weight_high": 608,
+                "height_low": 12,
+                "height_high": 16,
+                "precious_egg_type": 4,
                 "egg_base_glass_prob_array": null,
                 "egg_add_glass_prob_array": null,
                 "is_contact_add_glass_prob": null,

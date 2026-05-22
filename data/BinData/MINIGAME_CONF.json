@@ -48,7 +48,7 @@
     },
     "10003": {
       "id": 10003,
-      "editor_name": "藏在码头的木箱",
+      "editor_name": "藏在码头的木靶",
       "effect_type": 1,
       "rule": 10003,
       "time_limit": 90,
@@ -71,7 +71,7 @@
     },
     "10004": {
       "id": 10004,
-      "editor_name": "在湖心击碎木箱",
+      "editor_name": "在湖心击碎木靶",
       "effect_type": 1,
       "rule": 10004,
       "time_limit": 90,
@@ -163,7 +163,7 @@
     },
     "10008": {
       "id": 10008,
-      "editor_name": "废墟里的木箱",
+      "editor_name": "废墟里的木靶",
       "effect_type": 1,
       "rule": 10008,
       "time_limit": 120,
@@ -186,7 +186,7 @@
     },
     "10009": {
       "id": 10009,
-      "editor_name": "藏在屋檐上的木箱",
+      "editor_name": "藏在屋檐上的木靶",
       "effect_type": 1,
       "rule": 10009,
       "time_limit": 90,
@@ -278,7 +278,7 @@
     },
     "10013": {
       "id": 10013,
-      "editor_name": "瀑布前的木箱",
+      "editor_name": "瀑布前的木靶",
       "effect_type": 1,
       "rule": 10013,
       "time_limit": 90,
@@ -301,7 +301,7 @@
     },
     "10014": {
       "id": 10014,
-      "editor_name": "钓鱼？砸木箱！",
+      "editor_name": "钓鱼？砸木靶！",
       "effect_type": 1,
       "rule": 10014,
       "time_limit": 90,
@@ -461,7 +461,7 @@
     },
     "11002": {
       "id": 11002,
-      "editor_name": "漂浮的木箱",
+      "editor_name": "漂浮的木靶",
       "effect_type": 1,
       "rule": 11002,
       "time_limit": 90,
@@ -507,7 +507,7 @@
     },
     "11004": {
       "id": 11004,
-      "editor_name": "废墟尖上的木箱",
+      "editor_name": "废墟尖上的木靶",
       "effect_type": 1,
       "rule": 11004,
       "time_limit": 90,
@@ -622,7 +622,7 @@
     },
     "11009": {
       "id": 11009,
-      "editor_name": "拾荒港口的木箱",
+      "editor_name": "拾荒港口的木靶",
       "effect_type": 1,
       "rule": 11009,
       "time_limit": 60,
@@ -714,7 +714,7 @@
     },
     "11013": {
       "id": 11013,
-      "editor_name": "交汇镇的木箱",
+      "editor_name": "交汇镇的木靶",
       "effect_type": 1,
       "rule": 11013,
       "time_limit": 60,
@@ -806,7 +806,7 @@
     },
     "11017": {
       "id": 11017,
-      "editor_name": "黑水峡的木箱",
+      "editor_name": "黑水峡的木靶",
       "effect_type": 1,
       "rule": 11017,
       "time_limit": 60,
@@ -858,8 +858,8 @@
       "time_limit": 600,
       "start_point": 431030640,
       "quit_type": 1,
-      "manual_quit_point": 431030688,
       "end_point": 431030689,
+      "manual_quit_point": 431030688,
       "block_id": 431030014,
       "gameplay_area": 431030642,
       "opening_camera": 11037,
@@ -1723,7 +1723,7 @@
     "1004201": {
       "id": 1004201,
       "editor_name": "魔法学院叶冕魔力猫挑战",
-      "effect_type": 1,
+      "effect_type": 4,
       "rule": 1004201,
       "start_point": 101036465,
       "block_id": 101030123,
@@ -1743,7 +1743,7 @@
     "1004202": {
       "id": 1004202,
       "editor_name": "魔法学院圣水守护挑战",
-      "effect_type": 1,
+      "effect_type": 4,
       "rule": 1004202,
       "start_point": 101036465,
       "block_id": 101030123,
@@ -1763,7 +1763,7 @@
     "1004203": {
       "id": 1004203,
       "editor_name": "魔法学院烈火战神挑战",
-      "effect_type": 1,
+      "effect_type": 4,
       "rule": 1004203,
       "start_point": 101036465,
       "block_id": 101030123,

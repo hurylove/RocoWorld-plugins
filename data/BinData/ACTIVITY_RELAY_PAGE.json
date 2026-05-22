@@ -2,7 +2,7 @@
   "RocoDataRows": {
     "1": {
       "id": 1,
-      "select_des": "",
+      "select_des": "请选择想要挑战的分院代表",
       "relay_part_group": [
         {
           "img": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Card/img_shengtai.img_shengtai'",
@@ -35,28 +35,6 @@
           "reward_show": 200000120,
           "spec_battle_ui_id": 4,
           "faction_type": 4
-        }
-      ]
-    },
-    "2": {
-      "id": 2,
-      "select_des": "",
-      "relay_part_group": [
-        {
-          "img": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Card/img_meng_sansan.img_meng_sansan'",
-          "option_id": 2006
-        },
-        {
-          "img": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Card/img_meng_she.img_meng_she'",
-          "option_id": 2007
-        },
-        {
-          "img": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Card/img_meng_mojuanniao.img_meng_mojuanniao'",
-          "option_id": 2008
-        },
-        {
-          "img": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Card/img_meng_suiji.img_meng_suiji'",
-          "option_id": 2009
         }
       ]
     }

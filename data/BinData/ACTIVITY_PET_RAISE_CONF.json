@@ -2,7 +2,6 @@
   "RocoDataRows": {
     "600001": {
       "id": 600001,
-      "editor_name": "主题系别：水+冰。甜田螺和布鲁斯",
       "umg_texture_path": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/Textures/img_jinglingpeiyu.img_jinglingpeiyu'",
       "unit_type": [
         5,
@@ -122,7 +121,6 @@
     },
     "600002": {
       "id": 600002,
-      "editor_name": "主题系别：火。火尾瓦特和烈钻鸟",
       "umg_texture_path": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/Textures/img_jinglingpeiyu3.img_jinglingpeiyu3'",
       "unit_type": [
         4
@@ -241,7 +239,6 @@
     },
     "600003": {
       "id": 600003,
-      "editor_name": "主题系别：草+幻。春团和幽星光",
       "umg_texture_path": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/Textures/img_jinglingpeiyu1.img_jinglingpeiyu1'",
       "unit_type": [
         3,
@@ -361,7 +358,6 @@
     },
     "600004": {
       "id": 600004,
-      "editor_name": "主题系别：格斗。格斗小五、小六和小八",
       "umg_texture_path": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/Textures/img_jinglingpeiyu2.img_jinglingpeiyu2'",
       "unit_type": [
         14

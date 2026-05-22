@@ -55,30 +55,8 @@
     "move_pool": [
         {
             "id": 7110340,
-            "name": "交叉闪电",
-            "icon_id": "110019",
-            "move_type": {
-                "id": 9,
-                "name": "Electric",
-                "localized": {
-                    "zh": "电"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "交叉闪电",
-                    "description": "对敌方精灵造成物理伤害。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 70,
-            "description": "对敌方精灵造成物理伤害。"
-        },
-        {
-            "id": 7110350,
             "name": "超导加速",
-            "icon_id": "110020",
+            "icon_id": "110019",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -93,14 +71,14 @@
                 }
             },
             "move_category": "Magic Attack",
-            "energy_cost": 4,
-            "power": 50,
+            "energy_cost": 2,
+            "power": 70,
             "description": "造成魔伤，自己获得速度+30。"
         },
         {
-            "id": 7110360,
+            "id": 7110350,
             "name": "双联脉冲",
-            "icon_id": "110021",
+            "icon_id": "110020",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -114,15 +92,15 @@
                     "description": "造成魔伤，迸发：本技能使用次数+1。"
                 }
             },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 50,
             "description": "造成魔伤，迸发：本技能使用次数+1。"
         },
         {
-            "id": 7110370,
+            "id": 7110360,
             "name": "过载回路",
-            "icon_id": "110022",
+            "icon_id": "110021",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -137,14 +115,14 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 2,
+            "energy_cost": 1,
             "power": null,
             "description": "回合结束自己返场，下回合所选技能使用次数+1。"
         },
         {
-            "id": 7110380,
+            "id": 7110370,
             "name": "远程访问",
-            "icon_id": "110023",
+            "icon_id": "110022",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -158,15 +136,15 @@
                     "description": "使敌方精灵返场。"
                 }
             },
-            "move_category": "Magic Attack",
+            "move_category": "Status",
             "energy_cost": 2,
-            "power": 60,
+            "power": null,
             "description": "使敌方精灵返场。"
         },
         {
-            "id": 7110390,
+            "id": 7110380,
             "name": "感电",
-            "icon_id": "110025",
+            "icon_id": "110023",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -181,14 +159,14 @@
                 }
             },
             "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 90,
+            "energy_cost": 2,
+            "power": 60,
             "description": "造成魔伤，每离场1次，本技能使用次数永久+1。"
         },
         {
-            "id": 7110400,
-            "name": "应对！强制重启",
-            "icon_id": "310026",
+            "id": 7110390,
+            "name": "强制重启",
+            "icon_id": "110025",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -198,19 +176,19 @@
             },
             "localized": {
                 "zh": {
-                    "name": "应对！强制重启",
+                    "name": "强制重启",
                     "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
                 }
             },
-            "move_category": "Status",
-            "energy_cost": 8,
-            "power": null,
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 90,
             "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
         },
         {
-            "id": 7110410,
+            "id": 7110400,
             "name": "电容循环",
-            "icon_id": "110027",
+            "icon_id": "310026",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -225,14 +203,14 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 3,
+            "energy_cost": 8,
             "power": null,
             "description": "每离场一次，本技能能耗-2，将天气改为雷暴天气"
         },
         {
-            "id": 7110420,
+            "id": 7110410,
             "name": "电离爆破",
-            "icon_id": "110029",
+            "icon_id": "110027",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -246,10 +224,32 @@
                     "description": "敌方获得速度-40，3连击。"
                 }
             },
-            "move_category": "Defense",
+            "move_category": "Status",
             "energy_cost": 3,
             "power": null,
             "description": "敌方获得速度-40，3连击。"
+        },
+        {
+            "id": 7110420,
+            "name": "电磁偏转",
+            "icon_id": "110029",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "电磁偏转",
+                    "description": "减伤70%，应对攻击：下回合所选技能使用次数+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "减伤70%，应对攻击：下回合所选技能使用次数+1。"
         }
     ],
     "move_stones": [],
@@ -295,7 +295,7 @@
         "refresh_locations": [],
         "movement_type": null,
         "classis_id": 3,
-        "classis_name": null,
+        "classis_name": "猫咪类精灵",
         "handbook_area_ids": []
     },
     "catch_info": null,

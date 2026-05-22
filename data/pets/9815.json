@@ -67,13 +67,13 @@
             "localized": {
                 "zh": {
                     "name": "嘲弄",
-                    "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。"
+                    "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。"
+            "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
         },
         {
             "id": 7170250,
@@ -89,13 +89,13 @@
             "localized": {
                 "zh": {
                     "name": "勾魂",
-                    "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+                    "description": "偷取敌方3能量。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+            "description": "偷取敌方3能量。"
         },
         {
             "id": 7170260,
@@ -111,13 +111,13 @@
             "localized": {
                 "zh": {
                     "name": "虚化",
-                    "description": "偷取敌方3能量。"
+                    "description": "减伤80%，应对攻击：自己获得魔防+70%。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "偷取敌方3能量。"
+            "description": "减伤80%，应对攻击：自己获得魔防+70%。"
         }
     ],
     "move_stones": [],
@@ -163,7 +163,7 @@
         "refresh_locations": [],
         "movement_type": null,
         "classis_id": 3,
-        "classis_name": null,
+        "classis_name": "猫咪类精灵",
         "handbook_area_ids": []
     },
     "catch_info": null,

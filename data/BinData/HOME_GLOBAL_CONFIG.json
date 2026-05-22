@@ -118,8 +118,8 @@
       "numList": [
         0
       ],
-      "str": "",
-      "is_loc": 1
+      "str": "2025-05-09 04:00:00",
+      "is_loc": 2
     },
     "home_house_flag_change_taskparagraph": {
       "id": 40,
@@ -130,20 +130,20 @@
     "room_name": {
       "id": 41,
       "key": "room_name",
-      "str": "",
-      "is_loc": 2
+      "str": "客厅;房间1;房间2;地下室;二楼房间",
+      "is_loc": 1
     },
     "scene_magic_ban": {
       "id": 53,
       "key": "scene_magic_ban",
-      "str": "",
-      "is_loc": 3
+      "str": "SMT_CREATE;SMT_CREATE_MAGIC_MASSAGE",
+      "is_loc": 2
     },
     "scene_magic_ban_plant": {
       "id": 54,
       "key": "scene_magic_ban_plant",
-      "str": "",
-      "is_loc": 4
+      "str": "SMT_CREATE;SMT_CREATE_MAGIC_MASSAGE",
+      "is_loc": 2
     },
     "home_decoration_cd": {
       "id": 57,
@@ -304,20 +304,20 @@
     "emote_resource_path_m": {
       "id": 119,
       "key": "emote_resource_path_m",
-      "str": "",
-      "is_loc": 5
+      "str": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/Home/G6_Home_Call.G6_Home_Call'",
+      "is_loc": 2
     },
     "emote_resource_path_w": {
       "id": 120,
       "key": "emote_resource_path_w",
-      "str": "",
-      "is_loc": 6
+      "str": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/Home/G6_Home_Call.G6_Home_Call'",
+      "is_loc": 2
     },
     "call_resource_path": {
       "id": 121,
       "key": "call_resource_path",
-      "str": "",
-      "is_loc": 7
+      "str": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/Home/G6_Home_Call.G6_Home_Call'",
+      "is_loc": 2
     },
     "home_steal_fix_value_friend": {
       "id": 122,
@@ -359,14 +359,14 @@
     "home_feed_resource_path": {
       "id": 128,
       "key": "home_feed_resource_path",
-      "str": "",
-      "is_loc": 8
+      "str": "happy;relax;show",
+      "is_loc": 2
     },
     "home_steal_reward_resource_path": {
       "id": 129,
       "key": "home_steal_reward_resource_path",
-      "str": "",
-      "is_loc": 9
+      "str": "alert",
+      "is_loc": 2
     },
     "home_petbed_camera_param": {
       "id": 130,
@@ -412,8 +412,8 @@
     "plant_seed_harvestimg_path": {
       "id": 204,
       "key": "plant_seed_harvestimg_path",
-      "str": "",
-      "is_loc": 10
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Dialogue/Raw/Frames/img_Harvest_png.img_Harvest_png'",
+      "is_loc": 2
     },
     "plant_coord_noticeboard": {
       "id": 205,
@@ -481,20 +481,20 @@
     "plant_water_path": {
       "id": 220,
       "key": "plant_water_path",
-      "str": "",
-      "is_loc": 11
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUIStatic/Frames/img_HomePlanting_Watering_png.img_HomePlanting_Watering_png'",
+      "is_loc": 2
     },
     "plant_manure_path": {
       "id": 221,
       "key": "plant_manure_path",
-      "str": "",
-      "is_loc": 12
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUIStatic/Frames/img_HomePlanting_Fertilization_png.img_HomePlanting_Fertilization_png'",
+      "is_loc": 2
     },
     "plant_get_path": {
       "id": 222,
       "key": "plant_get_path",
-      "str": "",
-      "is_loc": 13
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUIStatic/Frames/img_HomePlanting_Harvestable2_png.img_HomePlanting_Harvestable2_png'",
+      "is_loc": 2
     },
     "plant_guard_pet_birth_num": {
       "id": 223,
@@ -505,8 +505,8 @@
     "plant_coord_noticeboard_head_icon": {
       "id": 224,
       "key": "plant_coord_noticeboard_head_icon",
-      "str": "",
-      "is_loc": 14
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/Lobby/Frames/img_Cultivable_png.img_Cultivable_png'",
+      "is_loc": 2
     },
     "plant_pet_water_distance": {
       "id": 225,
@@ -575,38 +575,38 @@
     "home_bigworld_level_0": {
       "id": 234,
       "key": "home_bigworld_level_0",
-      "str": "",
-      "is_loc": 15
+      "str": "Plot_Homeworld_DerelictHouse",
+      "is_loc": 2
     },
     "home_bigworld_level_1": {
       "id": 235,
       "key": "home_bigworld_level_1",
-      "str": "",
-      "is_loc": 16
+      "str": "Plot_Homeworld_House_01",
+      "is_loc": 2
     },
     "home_bigworld_level_2": {
       "id": 236,
       "key": "home_bigworld_level_2",
-      "str": "",
-      "is_loc": 17
+      "str": "Plot_Homeworld_House_02",
+      "is_loc": 2
     },
     "home_bigworld_level_3": {
       "id": 237,
       "key": "home_bigworld_level_3",
-      "str": "",
-      "is_loc": 18
+      "str": "Plot_Homeworld_House_03",
+      "is_loc": 2
     },
     "home_bigworld_level_4": {
       "id": 238,
       "key": "home_bigworld_level_4",
-      "str": "",
-      "is_loc": 19
+      "str": "Plot_Homeworld_House_04",
+      "is_loc": 2
     },
     "home_bigworld_level_5": {
       "id": 239,
       "key": "home_bigworld_level_5",
-      "str": "",
-      "is_loc": 20
+      "str": "Plot_Homeworld_House_05",
+      "is_loc": 2
     },
     "home_visit_cd": {
       "id": 240,
@@ -670,20 +670,20 @@
     "home_main_UI": {
       "id": 303,
       "key": "home_main_UI",
-      "str": "",
-      "is_loc": 21
+      "str": "FE_PET;FE_TASK;FE_EDIT_HOME;FE_FURNITURE_HANDBOOK",
+      "is_loc": 2
     },
     "visit_home_main_UI": {
       "id": 304,
       "key": "visit_home_main_UI",
-      "str": "",
-      "is_loc": 22
+      "str": "FE_PET;FE_TASK;FE_FURNITURE_HANDBOOK",
+      "is_loc": 2
     },
     "plant_main_UI": {
       "id": 305,
       "key": "plant_main_UI",
-      "str": "",
-      "is_loc": 23
+      "str": "FE_PET;FE_TASK;FE_FURNITURE_HANDBOOK",
+      "is_loc": 2
     },
     "plant_guard_pet_random_point": {
       "id": 306,

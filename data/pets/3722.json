@@ -126,7 +126,7 @@
                 "monsters": [
                     {
                         "id": 3573,
-                        "name": "baoyanpenpen",
+                        "name": "baoyanpengpeng",
                         "form": "default",
                         "localized": {
                             "zh": {
@@ -149,7 +149,8 @@
                             }
                         },
                         "evolution_conditions": [
-                            "等级达到 36 级"
+                            "等级达到 40 级",
+                            "完成技能「流星火雨」相关试炼（参数 15）"
                         ]
                     },
                     {
@@ -226,13 +227,13 @@
     "world_profile": {
         "type_desc": null,
         "description_habitat": null,
-        "introduction": "来去如风，极少能看到它们的身影。 “所谓的规则像是藤蔓，又好像荆棘。被缠上时使人烦躁，被刺伤时让人疼痛。但规则也有如树干，在支撑着森林的生命——所谓自由，亦是如此\"。",
+        "introduction": "丛林的向导，拥有修长的四肢与轻盈的骨骼结构，发育完全的角呈树枝状。“所谓的规则像是枝条，又好像荆棘。被缠上时使人烦躁，被刺伤时让人疼痛。但规则也有如树干，在支撑着森林的生命——所谓自由，亦是如此\"。",
         "refresh_locations": [
             "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
         ],
         "movement_type": "步行",
         "classis_id": 6,
-        "classis_name": null,
+        "classis_name": "自然类精灵",
         "handbook_area_ids": []
     },
     "catch_info": {

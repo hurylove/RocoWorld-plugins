@@ -56,17 +56,17 @@
             "localized": {
                 "zh": {
                     "name": "猛烈撞击",
-                    "description": "造成物伤，自己回复1能量。"
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 1,
             "power": 65,
-            "description": "造成物伤，自己回复1能量。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7040150,
-            "name": "针刺射击",
+            "name": "火焰冲锋",
             "icon_id": "704010",
             "move_type": {
                 "id": 3,
@@ -77,18 +77,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "针刺射击",
-                    "description": "造成物伤，若敌方本回合更换精灵，自己回复7点能量。"
+                    "name": "火焰冲锋",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 1,
             "power": 60,
-            "description": "造成物伤，若敌方本回合更换精灵，自己回复7点能量。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7070010,
-            "name": "光系技能威力永久+50%，应对防御：改为永久+100%。",
+            "name": "械斗",
             "icon_id": "720001",
             "move_type": {
                 "id": 17,
@@ -99,18 +99,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "光系技能威力永久+50%，应对防御：改为永久+100%。",
-                    "description": "光系研究员的最高杰作——让光最终的归处，与自然融为一体，变成晴天。"
+                    "name": "械斗",
+                    "description": "造成物伤，本技能位于1号位时威力+60，传动1。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 1,
             "power": 45,
-            "description": "光系研究员的最高杰作——让光最终的归处，与自然融为一体，变成晴天。"
+            "description": "造成物伤，本技能位于1号位时威力+60，传动1。"
         },
         {
             "id": 7080110,
-            "name": "应对！机械2",
+            "name": "扬沙",
             "icon_id": "708015",
             "move_type": {
                 "id": 6,
@@ -121,18 +121,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "应对！机械2",
-                    "description": "造成物伤，传动1，应对状态：本次威力+100"
+                    "name": "扬沙",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 1,
             "power": 60,
-            "description": "造成物伤，传动1，应对状态：本次威力+100"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7100120,
-            "name": "蓄力",
+            "name": "龙吼",
             "icon_id": "710002",
             "move_type": {
                 "id": 8,
@@ -143,18 +143,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "蓄力",
-                    "description": "精灵蓄力中"
+                    "name": "龙吼",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 1,
             "power": 60,
-            "description": "精灵蓄力中"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7180080,
-            "name": "魔爪",
+            "name": "恶能量",
             "icon_id": "718013",
             "move_type": {
                 "id": 16,
@@ -165,18 +165,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "魔爪",
-                    "description": "造成物伤，自己回复1能量。"
+                    "name": "恶能量",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 1,
             "power": 60,
-            "description": "造成物伤，自己回复1能量。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7999107,
-            "name": "检测工具返场",
+            "name": "疾风涡轮",
             "icon_id": "715017",
             "move_type": {
                 "id": 13,
@@ -187,14 +187,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "检测工具返场",
-                    "description": "返场，下回合额外所选技能使用次数+1。"
+                    "name": "疾风涡轮",
+                    "description": "对全体精灵造成物理伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 80,
-            "description": "返场，下回合额外所选技能使用次数+1。"
+            "description": "对全体精灵造成物理伤害。"
         }
     ],
     "move_stones": [],
@@ -242,7 +242,7 @@
         "refresh_locations": [],
         "movement_type": null,
         "classis_id": 3,
-        "classis_name": null,
+        "classis_name": "猫咪类精灵",
         "handbook_area_ids": []
     },
     "catch_info": null,

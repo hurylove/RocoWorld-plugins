@@ -3,7 +3,7 @@
     "1": {
       "id": 1,
       "editor_name": "第1期",
-      "task_type_name": "精灵捕捉",
+      "task_type_name": "精灵养成",
       "task_type": 1,
       "final_task_id": 100000001,
       "task_id": [
@@ -20,7 +20,7 @@
     "2": {
       "id": 2,
       "editor_name": "第1期",
-      "task_type_name": "精灵养成",
+      "task_type_name": "精灵捕捉",
       "task_type": 2,
       "final_task_id": 100000002,
       "task_id": [
@@ -40,7 +40,7 @@
     "3": {
       "id": 3,
       "editor_name": "第1期",
-      "task_type_name": "精灵历练",
+      "task_type_name": "精灵养成",
       "task_type": 3,
       "final_task_id": 100000003,
       "task_id": [
@@ -58,7 +58,7 @@
     "4": {
       "id": 4,
       "editor_name": "第2期",
-      "task_type_name": "精灵捕捉",
+      "task_type_name": "精灵养成",
       "task_type": 1,
       "final_task_id": 100000024,
       "task_id": [
@@ -75,7 +75,7 @@
     "5": {
       "id": 5,
       "editor_name": "第2期",
-      "task_type_name": "精灵养成",
+      "task_type_name": "精灵捕捉",
       "task_type": 2,
       "final_task_id": 100000025,
       "task_id": [
@@ -95,7 +95,7 @@
     "6": {
       "id": 6,
       "editor_name": "第2期",
-      "task_type_name": "精灵历练",
+      "task_type_name": "精灵养成",
       "task_type": 3,
       "final_task_id": 100000026,
       "task_id": [
@@ -113,7 +113,7 @@
     "7": {
       "id": 7,
       "editor_name": "第3期",
-      "task_type_name": "精灵捕捉",
+      "task_type_name": "精灵养成",
       "task_type": 1,
       "final_task_id": 100000047,
       "task_id": [
@@ -130,7 +130,7 @@
     "8": {
       "id": 8,
       "editor_name": "第3期",
-      "task_type_name": "精灵养成",
+      "task_type_name": "精灵捕捉",
       "task_type": 2,
       "final_task_id": 100000048,
       "task_id": [
@@ -150,7 +150,7 @@
     "9": {
       "id": 9,
       "editor_name": "第3期",
-      "task_type_name": "精灵历练",
+      "task_type_name": "精灵养成",
       "task_type": 3,
       "final_task_id": 100000049,
       "task_id": [
@@ -168,7 +168,7 @@
     "10": {
       "id": 10,
       "editor_name": "第4期",
-      "task_type_name": "精灵捕捉",
+      "task_type_name": "精灵养成",
       "task_type": 1,
       "final_task_id": 100000070,
       "task_id": [
@@ -185,7 +185,7 @@
     "11": {
       "id": 11,
       "editor_name": "第4期",
-      "task_type_name": "精灵养成",
+      "task_type_name": "精灵捕捉",
       "task_type": 2,
       "final_task_id": 100000071,
       "task_id": [
@@ -205,7 +205,7 @@
     "12": {
       "id": 12,
       "editor_name": "第4期",
-      "task_type_name": "精灵历练",
+      "task_type_name": "精灵养成",
       "task_type": 3,
       "final_task_id": 100000072,
       "task_id": [

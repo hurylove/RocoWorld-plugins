@@ -138,8 +138,8 @@
     "21607021": {
       "id": 21607021,
       "show_paragraph": 21607021,
-      "task_name": "恩佐",
-      "task_des": "小咪真是幸运，有挂念他的小男孩，还有我，有你。",
+      "task_name": "小家伙，希望你能多吃点，变成大家伙！",
+      "task_des": "研究员",
       "sequence_res": "LevelSequence'/Game/ArtRes/UI/Photo/TQ05_SUM_01/TQ05_SUM_01.TQ05_SUM_01'",
       "res_conf": [
         {
@@ -273,8 +273,8 @@
     "30046012": {
       "id": 30046012,
       "show_paragraph": 30046012,
-      "task_name": "安妮",
-      "task_des": "要常回来商店街看看哦，小魔法师，我们都等着你呢~",
+      "task_name": "我不允许——你们动小家伙一根汗毛！",
+      "task_des": "路易斯",
       "sequence_res": "LevelSequence'/Game/ArtRes/UI/Photo/TQ10_SUM_01/TQ10_SUM_01.TQ10_SUM_01'",
       "res_conf": [
         {
@@ -408,8 +408,8 @@
     "60121015": {
       "id": 60121015,
       "show_paragraph": 60121015,
-      "task_name": "研究员",
-      "task_des": "小家伙，希望你能多吃点，变成大家伙！",
+      "task_name": "噜噜船长",
+      "task_des": "希望大家都能顺利入学咕——希望如此！",
       "res_conf": [
         {
           "tod": [
@@ -530,8 +530,8 @@
     "60122019": {
       "id": 60122019,
       "show_paragraph": 60122019,
-      "task_name": "研究员",
-      "task_des": "小……不对，你真的进化成了大家伙——帕尔萨斯？！",
+      "task_name": "噜噜船长",
+      "task_des": "小洛克，本鸭的宝藏就交给你了嘎！",
       "res_conf": [
         {
           "tod": [
@@ -652,8 +652,8 @@
     "60123019": {
       "id": 60123019,
       "show_paragraph": 60123019,
-      "task_name": "研究员",
-      "task_des": "辛辛苦苦的变形实验，结果成了白费工夫。",
+      "task_name": "噜噜船长",
+      "task_des": "这个小姑娘……总感觉她身上有许多秘密……",
       "res_conf": [
         {
           "tod": [
@@ -774,8 +774,8 @@
     "60124011": {
       "id": 60124011,
       "show_paragraph": 60124011,
-      "task_name": "研究员",
-      "task_des": "我不允许——你们动小家伙一根汗毛！",
+      "task_name": "噜噜船长",
+      "task_des": "你们，休想阻止我！！",
       "res_conf": [
         {
           "tod": [
@@ -896,8 +896,8 @@
     "70035029": {
       "id": 70035029,
       "show_paragraph": 81006002,
-      "task_name": "路易斯",
-      "task_des": "看着这张迟来的入学合照，希望你能记起在驻地的每一天。",
+      "task_name": "",
+      "task_des": "",
       "sequence_res": "LevelSequence'/Game/ArtRes/UI/Photo/JQ08_SUM_01/JQ08_SUM_01.JQ08_SUM_01'",
       "res_conf": [
         {
@@ -1031,8 +1031,8 @@
     "70037070": {
       "id": 70037070,
       "show_paragraph": 70037070,
-      "task_name": "恩佐",
-      "task_des": "谢谢你同我作伴，我恐怕不会忘记这一路上的艰难险阻。",
+      "task_name": "小家伙，希望你能多吃点，变成大家伙！",
+      "task_des": "",
       "sequence_res": "LevelSequence'/Game/ArtRes/UI/Photo/JQ07_SUM_02/JQ07_SUM_02.JQ07_SUM_02'",
       "res_conf": [
         {
@@ -1166,8 +1166,8 @@
     "70998019": {
       "id": 70998019,
       "show_paragraph": 70035001,
-      "task_name": "伊里斯",
-      "task_des": "你，和他有几分相似呢……哈哈哈哈，随口说说而已。",
+      "task_name": "",
+      "task_des": "",
       "sequence_res": "LevelSequence'/Game/ArtRes/UI/Photo/JQ07_SUM_01/JQ07_SUM_01.JQ07_SUM_01'",
       "res_conf": [
         {
@@ -1301,8 +1301,8 @@
     "71004005": {
       "id": 71004005,
       "show_paragraph": 71008002,
-      "task_name": "噜噜船长",
-      "task_des": "希望大家都能顺利入学咕——希望如此！",
+      "task_name": "",
+      "task_des": "",
       "sequence_res": "LevelSequence'/Game/ArtRes/UI/Photo/JQ01_SUM_01/JQ01_SUM_01.JQ01_SUM_01'",
       "res_conf": [
         {
@@ -1436,8 +1436,8 @@
     "80033002": {
       "id": 80033002,
       "show_paragraph": 80033002,
-      "task_name": "麦克达克",
-      "task_des": "小洛克，本鸭的宝藏就交给你了嘎！",
+      "task_name": "",
+      "task_des": "",
       "sequence_res": "LevelSequence'/Game/ArtRes/UI/Photo/JQ05_SUM_01/JQ05_SUM_01.JQ05_SUM_01'",
       "res_conf": [
         {
@@ -1571,8 +1571,8 @@
     "80055042": {
       "id": 80055042,
       "show_paragraph": 80055040,
-      "task_name": "恩佐",
-      "task_des": "这个小姑娘……总感觉她身上有许多秘密……",
+      "task_name": "小家伙，希望你能多吃点，变成大家伙！",
+      "task_des": "",
       "sequence_res": "LevelSequence'/Game/ArtRes/UI/Photo/JQ10_SUM_01/JQ10_SUM_01.JQ10_SUM_01'",
       "res_conf": [
         {
@@ -1706,8 +1706,8 @@
     "80059017": {
       "id": 80059017,
       "show_paragraph": 80059017,
-      "task_name": "恩佐",
-      "task_des": "你们，休想阻止我！！",
+      "task_name": "小家伙，希望你能多吃点，变成大家伙！",
+      "task_des": "",
       "sequence_res": "LevelSequence'/Game/ArtRes/UI/Photo/JQ11_SUM_01/JQ11_SUM_01.JQ11_SUM_01'",
       "res_conf": [
         {

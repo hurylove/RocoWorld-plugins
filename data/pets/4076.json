@@ -43,7 +43,7 @@
         "id": 117,
         "name": "baijindujiaoshou",
         "localized": {
-            "zh": "白金独角兽"
+            "zh": "蓝蝶鲨"
         }
     },
     "trait": {
@@ -69,7 +69,7 @@
                     {
                         "id": 3062,
                         "name": "xiaodujiaoshou",
-                        "form": "default",
+                        "form": "小独角兽",
                         "localized": {
                             "zh": {
                                 "name": "小独角兽"
@@ -95,7 +95,7 @@
                     {
                         "id": 3063,
                         "name": "baijindujiaoshou",
-                        "form": "default",
+                        "form": "白金独角兽",
                         "localized": {
                             "zh": {
                                 "name": "白金独角兽"
@@ -113,8 +113,8 @@
                         "evolution_conditions": [
                             "等级达到 40 级",
                             "消耗 12,000 洛克贝",
-                            "消耗 魔法石专用——魔法石碎 ×5",
-                            "消耗 系别石头专用——翼系灵碎 ×2"
+                            "消耗 魔法石碎（不投放） ×5",
+                            "消耗 翼系灵碎 ×2"
                         ]
                     }
                 ],
@@ -179,13 +179,13 @@
         "current_monster_id": 4076
     },
     "world_profile": {
-        "type_desc": "独角精灵",
-        "description_habitat": "常见于草地、山林",
+        "type_desc": "常见于矿石群旁",
+        "description_habitat": "小星光",
         "introduction": "在黑暗中能够照亮周围，像神明一般圣洁而华丽。头顶的角除了攻击，还能施放出让人震撼的强大魔法冲击。",
         "refresh_locations": [],
         "movement_type": null,
         "classis_id": 6,
-        "classis_name": null,
+        "classis_name": "自然类精灵",
         "handbook_area_ids": [
             1,
             2,
@@ -194,63 +194,69 @@
     },
     "catch_info": null,
     "breeding": {
-        "id": 3401001,
-        "pet_id": 3401001,
+        "id": 3568002,
+        "pet_id": 3568002,
         "name": "伊里斯",
-        "model_id": 3401001,
-        "hatch_data": 72000,
-        "weight_low": 33250,
-        "weight_high": 42000,
-        "height_low": 70,
-        "height_high": 73,
-        "precious_egg_type": null,
+        "model_id": 3568001,
+        "hatch_data": 300,
+        "weight_low": 1085,
+        "weight_high": 1800,
+        "height_low": 23,
+        "height_high": 27,
+        "precious_egg_type": 1,
         "egg_base_glass_prob_array": [
-            400,
-            3125
+            5191,
+            5191
         ],
         "egg_add_glass_prob_array": [
-            2,
-            113
+            0,
+            0
         ],
         "is_contact_add_glass_prob": true,
         "is_contact_add_shining_prob": null,
         "variants": [
             {
-                "id": 3401001,
-                "pet_id": 3401001,
+                "id": 3568002,
+                "pet_id": 3568002,
                 "name": "伊里斯",
-                "model_id": 3401001,
-                "hatch_data": 72000,
-                "weight_low": 33250,
-                "weight_high": 42000,
-                "height_low": 70,
-                "height_high": 73,
-                "precious_egg_type": null,
+                "model_id": 3568001,
+                "hatch_data": 300,
+                "weight_low": 1085,
+                "weight_high": 1800,
+                "height_low": 23,
+                "height_high": 27,
+                "precious_egg_type": 1,
                 "egg_base_glass_prob_array": [
-                    400,
-                    3125
+                    5191,
+                    5191
                 ],
                 "egg_add_glass_prob_array": [
-                    2,
-                    113
+                    0,
+                    0
                 ],
                 "is_contact_add_glass_prob": true,
                 "is_contact_add_shining_prob": null
             },
             {
-                "id": 34010001,
-                "pet_id": 34010001,
+                "id": 3568004,
+                "pet_id": 3568004,
                 "name": "伊里斯",
-                "model_id": 3401001,
+                "model_id": 3568001,
                 "hatch_data": 300,
-                "weight_low": 33250,
-                "weight_high": 42000,
-                "height_low": 70,
-                "height_high": 73,
-                "precious_egg_type": 7,
-                "egg_base_glass_prob_array": null,
-                "egg_add_glass_prob_array": null,
-                "is_contact_add_glass_prob": null,
+                "weight_low": 1085,
+                "weight_high": 1800,
+                "height_low": 23,
+                "height_high": 27,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    5191,
+                    5191
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    0
+                ],
+                "is_contact_add_glass_prob": true,
                 "is_contact_add_shining_prob": null
             }
         ]

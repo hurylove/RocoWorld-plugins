@@ -126,7 +126,7 @@
         ],
         "movement_type": "步行",
         "classis_id": 6,
-        "classis_name": null,
+        "classis_name": "自然类精灵",
         "handbook_area_ids": []
     },
     "catch_info": {
@@ -137,7 +137,7 @@
     "breeding": {
         "id": 3248001,
         "pet_id": 3248001,
-        "name": "绿洲象",
+        "name": "异色机械方方",
         "model_id": 3248001,
         "hatch_data": 72000,
         "weight_low": 33250,
@@ -159,7 +159,7 @@
             {
                 "id": 3248001,
                 "pet_id": 3248001,
-                "name": "绿洲象",
+                "name": "异色机械方方",
                 "model_id": 3248001,
                 "hatch_data": 72000,
                 "weight_low": 33250,
@@ -179,9 +179,31 @@
                 "is_contact_add_shining_prob": null
             },
             {
+                "id": 3319002,
+                "pet_id": 3319002,
+                "name": "绿洲象",
+                "model_id": 3319002,
+                "hatch_data": 57600,
+                "weight_low": 3430,
+                "weight_high": 5120,
+                "height_low": 17,
+                "height_high": 21,
+                "precious_egg_type": 2,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
                 "id": 32480001,
                 "pet_id": 32480001,
-                "name": "绿洲象",
+                "name": "异色机械方方",
                 "model_id": 3248001,
                 "hatch_data": 300,
                 "weight_low": 33250,

@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import plugin from "../../../lib/plugins/plugin.js";
 import { fileURLToPath } from 'url';
+import generatePetFormChart from './mode/generatePetFormChart.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -15,9 +16,10 @@ function buildFormMap() {
   try {
     const rawData = fs.readFileSync(petBaseConfPath, 'utf-8');
     const petBaseData = JSON.parse(rawData);
+    const rows = petBaseData.RocoDataRows || petBaseData;
     formMapCache = new Map();
 
-    for (const [, entry] of Object.entries(petBaseData)) {
+    for (const [, entry] of Object.entries(rows)) {
       if (!entry || typeof entry !== 'object' || !entry.id || !entry.name) continue;
       const name = entry.name;
       const form = entry.form || '默认形态';
@@ -69,22 +71,31 @@ export default class petFormQuery extends plugin {
         return;
       }
 
-      if (forms.length === 1 && forms[0].form === '默认形态') {
-        this.reply(`「${petName}」只有默认形态，暂无其他形态`, false);
+      // 构建文字回复，先发文字再渲染图片
+      const lines = forms.length === 1 && forms[0].form === '默认形态'
+        ? [`「${petName}」只有默认形态，暂无其他形态`, '正在生成形态图片，请稍候...']
+        : [`「${petName}」共有 ${forms.length} 种形态：`];
+
+      if (!(forms.length === 1 && forms[0].form === '默认形态')) {
+        for (let i = 0; i < forms.length; i++) {
+          const form = forms[i];
+          const label = form.form === '默认形态'
+            ? `${petName}（默认）`
+            : `${petName}（${form.form}）`;
+          lines.push(`${i + 1}. ${label}`);
+        }
+        lines.push('正在生成形态图片，请稍候...');
+      }
+
+      await this.reply(lines.join('\n'), false);
+
+      const base64Image = await generatePetFormChart(petName, forms);
+      if (!base64Image) {
+        this.reply('形态图片生成失败，请稍后重试', false);
         return;
       }
 
-      // 构建回复消息
-      const lines = [`「${petName}」共有 ${forms.length} 种形态：`];
-      for (let i = 0; i < forms.length; i++) {
-        const form = forms[i];
-        const label = form.form === '默认形态'
-          ? `${petName}（默认）`
-          : `${petName}（${form.form}）`;
-        lines.push(`${i + 1}. ${label}`);
-      }
-
-      this.reply(lines.join('\n'), false);
+      this.reply(segment.image(`base64://${base64Image}`), false);
 
     } catch (error) {
       console.error('形态查询失败:', error);

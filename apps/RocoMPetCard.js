@@ -45,12 +45,12 @@ function buildPetNameMap() {
     }
 
     // 第三步：从PETBASE_CONF加载形态信息，构建"名称（形态）"的精确映射
-    // PETBASE_CONF是对象格式（以id为key），form字段记录了形态名称（如"单只海葵的样子"）
+    // PETBASE_CONF可能带有RocoDataRows外层包装，form字段记录了形态名称（如"单只海葵的样子"）
     try {
       const petBaseRaw = fs.readFileSync(petBaseConfPath, 'utf-8');
       const petBaseData = JSON.parse(petBaseRaw);
-      for (const [key, entry] of Object.entries(petBaseData)) {
-        // 跳过非数字key的字段（如果有的话）
+      const rows = petBaseData.RocoDataRows || petBaseData;
+      for (const [, entry] of Object.entries(rows)) {
         if (!entry || typeof entry !== 'object' || !entry.id) continue;
         const name = entry.name;
         const form = entry.form;

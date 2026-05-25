@@ -48,7 +48,8 @@ function buildPetNameMap() {
     try {
       const petBaseRaw = fs.readFileSync(petBaseConfPath, 'utf-8');
       const petBaseData = JSON.parse(petBaseRaw);
-      for (const [key, entry] of Object.entries(petBaseData)) {
+      const rows = petBaseData.RocoDataRows || petBaseData;
+      for (const [, entry] of Object.entries(rows)) {
         if (!entry || typeof entry !== 'object' || !entry.id) continue;
         const name = entry.name;
         const form = entry.form;

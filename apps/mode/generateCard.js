@@ -59,46 +59,10 @@ const config = loadConfig();
 // 等待函数
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-// 缓存：编号映射（中文名 → 图鉴编号）
-let numberMapCache = null;
-function buildNumberMap() {
-    if (numberMapCache) return numberMapCache;
-    try {
-        const jllbPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'jllb', '精灵列表.json');
-        const rawData = fs.readFileSync(jllbPath, 'utf-8');
-        const list = JSON.parse(rawData);
-        numberMapCache = new Map();
-        for (const entry of list) {
-            numberMapCache.set(entry['名字'], entry['编号']);
-        }
-        return numberMapCache;
-    } catch (error) {
-        console.warn('读取精灵列表失败，将使用默认编号:', error.message);
-        numberMapCache = new Map();
-        return numberMapCache;
-    }
-}
-
-// 获取图鉴编号（支持中文名和 species.id）
-function getPetNumber(zhName, speciesId, fullName) {
-    const map = buildNumberMap();
-    // 优先用完整名称查找（如"梦游（穿旧睡衣的样子）"）
-    if (fullName && map.has(fullName)) {
-        return map.get(fullName);
-    }
-    // 其次用中文名查找
-    if (zhName && map.has(zhName)) {
-        return map.get(zhName);
-    }
-    // 如果都找不到，尝试用 species.id 推导编号
+// 获取图鉴编号（使用 species.id 直接格式化）
+function getPetNumber(speciesId) {
     if (speciesId != null && speciesId > 0 && speciesId < 10000) {
-        const noStr = `NO.${String(speciesId).padStart(3, '0')}`;
-        // 验证这个编号是否在精灵列表中
-        for (const [, no] of map) {
-            if (no === noStr) {
-                return noStr;
-            }
-        }
+        return `NO.${String(speciesId).padStart(3, '0')}`;
     }
     return '--';
 }
@@ -182,9 +146,9 @@ async function generateCard(spriteName, petId) {
         attributes.push('普通');
     }
 
-    // 提取图鉴编号（传入 species.id 和完整名称作为 fallback）
+    // 提取图鉴编号（使用 species.id 直接格式化）
     const speciesId = petData.species?.id;
-    const number = getPetNumber(zhName, speciesId, spriteName);
+    const number = getPetNumber(speciesId);
 
     // 提取基础能力值
     const stats = {

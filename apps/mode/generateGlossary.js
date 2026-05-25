@@ -56,6 +56,35 @@ function normalizeKeyword(keyword) {
   return String(keyword || '').trim().toLowerCase();
 }
 
+function normalizeGlossaryData(gameTerms = []) {
+  const items = (Array.isArray(gameTerms) ? gameTerms : [])
+    .map((term) => {
+      const zh = term.localized?.zh || {};
+      return {
+        词条名称: zh.name || term.key || `术语${term.id ?? ''}`,
+        详情: zh.description || term.description || '',
+        key: term.key || '',
+        id: term.id,
+        sort_order: term.sort_order ?? 999999
+      };
+    })
+    .filter((item) => item.词条名称 || item.详情)
+    .sort((a, b) => (a.sort_order - b.sort_order) || String(a.词条名称).localeCompare(String(b.词条名称), 'zh-CN'));
+
+  return {
+    title: '术语列表',
+    subtitle: '数据来源：data/other/game_terms.json',
+    description: '术语说明来自当前 game_terms 数据源',
+    version: 'game_terms',
+    categories: [
+      {
+        name: '战斗术语',
+        items
+      }
+    ]
+  };
+}
+
 function filterGlossaryData(glossaryData, keyword) {
   const normalized = normalizeKeyword(keyword);
 
@@ -68,7 +97,8 @@ function filterGlossaryData(glossaryData, keyword) {
       const filteredItems = (category.items || []).filter((item) => {
         const name = String(item.词条名称 || '').toLowerCase();
         const detail = String(item.详情 || '').toLowerCase();
-        return name.includes(normalized) || detail.includes(normalized);
+        const key = String(item.key || '').toLowerCase();
+        return name.includes(normalized) || detail.includes(normalized) || key.includes(normalized);
       });
 
       return {
@@ -84,15 +114,15 @@ function countItems(categories = []) {
 }
 
 async function generateGlossary(keyword = '') {
-  const jsonPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'jllb', '词条列表.json');
+  const jsonPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'other', 'game_terms.json');
   const config = loadConfig();
 
   let glossaryData;
   try {
     const rawData = fs.readFileSync(jsonPath, 'utf-8');
-    glossaryData = JSON.parse(rawData);
+    glossaryData = normalizeGlossaryData(JSON.parse(rawData));
   } catch (error) {
-    console.error('❌ 读取词条列表失败:', error);
+    console.error('❌ 读取术语数据失败:', error);
     throw error;
   }
 
@@ -284,7 +314,7 @@ async function generateGlossary(keyword = '') {
       <div class="card">
         <div class="header">
           <div class="title">
-            <h1>${escapeHTML(glossaryData.title || '词条列表')}</h1>
+            <h1>${escapeHTML(glossaryData.title || '术语列表')}</h1>
             <p>${escapeHTML(glossaryData.subtitle || '')}</p>
           </div>
           <div class="meta">
@@ -345,7 +375,7 @@ async function generateGlossary(keyword = '') {
 
     return base64Image;
   } catch (error) {
-    console.error('❌ 词条列表渲染失败:', error);
+    console.error('❌ 术语列表渲染失败:', error);
     throw error;
   } finally {
     await browser.close();

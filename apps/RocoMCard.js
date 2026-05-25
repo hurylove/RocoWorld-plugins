@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const petsDataPath = path.join(__dirname, '..', 'data', 'other', 'Pets.json');
-const jllbPath = path.join(__dirname, '..', 'data', 'jllb', '精灵列表.json');
+const petBaseConfPath = path.join(__dirname, '..', 'data', 'BinData', 'PETBASE_CONF.json');
 
 // 加载宠物数据并构建 中文名→宠物对象 的映射
 let petNameMap = null;
@@ -19,6 +19,12 @@ function buildPetNameMap() {
     const rawData = fs.readFileSync(petsDataPath, 'utf-8');
     const pets = JSON.parse(rawData);
     petNameMap = new Map();
+
+    // 构建 id -> pet 的索引（用于后续从 PETBASE 精确查找形态）
+    const petById = new Map();
+    for (const pet of pets) {
+      petById.set(pet.id, pet);
+    }
 
     // 第一步：建立 中文名 → [pet条目] 的映射（一个中文名可能对应多个形态）
     const zhNameToPets = new Map();
@@ -38,25 +44,24 @@ function buildPetNameMap() {
       petNameMap.set(zhName, petList[0]);
     }
 
-    // 第三步：加载精灵列表.json，支持带形态后缀的名称（如"梦游（穿旧睡衣的样子）"）
+    // 第三步：从PETBASE_CONF加载形态信息，构建"名称（形态）"的精确映射
     try {
-      const jllbRaw = fs.readFileSync(jllbPath, 'utf-8');
-      const jllbList = JSON.parse(jllbRaw);
-      for (const entry of jllbList) {
-        const fullName = entry.名字;
-        // 只处理带括号的形态名称
-        if (fullName && fullName.includes('（')) {
-          // 提取 base 名（括号前的部分）
-          const baseName = fullName.split('（')[0];
-          const petList = zhNameToPets.get(baseName);
-          if (petList && petList.length > 0) {
-            // 默认使用第一个条目（base 形态）
-            petNameMap.set(fullName, petList[0]);
+      const petBaseRaw = fs.readFileSync(petBaseConfPath, 'utf-8');
+      const petBaseData = JSON.parse(petBaseRaw);
+      for (const [key, entry] of Object.entries(petBaseData)) {
+        if (!entry || typeof entry !== 'object' || !entry.id) continue;
+        const name = entry.name;
+        const form = entry.form;
+        if (name && form) {
+          const fullName = `${name}（${form}）`;
+          const pet = petById.get(entry.id);
+          if (pet) {
+            petNameMap.set(fullName, pet);
           }
         }
       }
     } catch (e) {
-      console.error('加载精灵列表.json失败（非致命）:', e.message);
+      console.error('加载PETBASE_CONF失败（非致命）:', e.message);
     }
 
     console.log(`✅ 已加载 ${petNameMap.size} 个宠物名称索引（含形态名称）`);

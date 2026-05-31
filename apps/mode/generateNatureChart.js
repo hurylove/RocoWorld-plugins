@@ -50,41 +50,54 @@ function escapeHTML(value) {
         .replaceAll("'", String.fromCharCode(38) + '#39;');
 }
 
+const attrOrder = ['物攻', '物防', '魔攻', '魔防', '速度', '生命'];
+
 function loadNatureData() {
-    const naturePath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'BinData', 'NATURE_CONF.json');
-    const attrPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'BinData', 'ATTRIBUTE_CONF.json');
+    const personalityPath = path.join(projectRoot, 'plugins', 'RocoWorld-plugins', 'data', 'other', 'personalities.json');
+    const personalities = JSON.parse(fs.readFileSync(personalityPath, 'utf-8'));
 
-    const natureRaw = JSON.parse(fs.readFileSync(naturePath, 'utf-8')).RocoDataRows;
-    const attrRaw = JSON.parse(fs.readFileSync(attrPath, 'utf-8')).RocoDataRows;
-
-    const attrMap = {};
-    for (const key in attrRaw) {
-        const attr = attrRaw[key];
-        attrMap[attr.attribute] = attr.attribute_name;
-    }
+    const modFields = [
+        { key: 'hp_mod_pct', attr: '生命' },
+        { key: 'phy_atk_mod_pct', attr: '物攻' },
+        { key: 'mag_atk_mod_pct', attr: '魔攻' },
+        { key: 'phy_def_mod_pct', attr: '物防' },
+        { key: 'mag_def_mod_pct', attr: '魔防' },
+        { key: 'spd_mod_pct', attr: '速度' }
+    ];
 
     const natures = [];
-    for (const key in natureRaw) {
-        const n = natureRaw[key];
-        if (!n.is_player_pet_nature) continue;
-        natures.push({
-            id: n.id,
-            name: n.name,
-            positiveAttrId: n.positive_effect,
-            positiveAttr: attrMap[n.positive_effect] || `属性${n.positive_effect}`,
-            negativeAttrId: n.negative_effect,
-            negativeAttr: attrMap[n.negative_effect] || `属性${n.negative_effect}`,
-            proportion: n.positive_effect_proportion,
-            grow: n.positive_effect_grow,
-            descs: (n.random_desc || []).map(d => d.nature_desc)
-        });
+    for (const p of personalities) {
+        let positiveAttr = null;
+        let negativeAttr = null;
+        let positiveMod = 0;
+        let negativeMod = 0;
+
+        for (const { key, attr } of modFields) {
+            const val = p[key];
+            if (val > 0) {
+                positiveAttr = attr;
+                positiveMod = val;
+            } else if (val < 0) {
+                negativeAttr = attr;
+                negativeMod = val;
+            }
+        }
+
+        if (positiveAttr && negativeAttr) {
+            natures.push({
+                id: p.id,
+                name: p.localized?.zh || p.name,
+                positiveAttr,
+                negativeAttr,
+                proportion: Math.round(positiveMod * 10000),
+                negativeProportion: Math.round(Math.abs(negativeMod) * 10000),
+                descs: []
+            });
+        }
     }
 
-    return { natures, attrMap };
+    return { natures };
 }
-
-const attrOrder = ['物攻', '物防', '魔攻', '魔防', '速度', '生命'];
-const attrIdMap = { '物攻': 80, '物防': 82, '魔攻': 81, '魔防': 83, '速度': 84, '生命': 79 };
 
 const attrColors = {
     '物攻': { bg: 'rgba(239, 68, 68, 0.10)', text: '#b91c1c', border: 'rgba(239, 68, 68, 0.25)' },
@@ -159,7 +172,11 @@ async function generateNatureChart() {
         <head>
             <meta charset="UTF-8" />
             <style>
-                @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+                @font-face { font-family: 'Orbitron'; font-style: normal; font-weight: 500; src: local('Orbitron'), local('Arial'); }
+                @font-face { font-family: 'Orbitron'; font-style: normal; font-weight: 700; src: local('Orbitron'), local('Arial'); }
+                @font-face { font-family: 'Noto Sans SC'; font-style: normal; font-weight: 400; src: local('Noto Sans SC'), local('Microsoft YaHei'), local('PingFang SC'), local('sans-serif'); }
+                @font-face { font-family: 'Noto Sans SC'; font-style: normal; font-weight: 500; src: local('Noto Sans SC'), local('Microsoft YaHei'), local('PingFang SC'), local('sans-serif'); }
+                @font-face { font-family: 'Noto Sans SC'; font-style: normal; font-weight: 700; src: local('Noto Sans SC'), local('Microsoft YaHei Bold'), local('PingFang SC'), local('sans-serif'); }
                 * { box-sizing: border-box; }
                 body {
                     margin: 0;
@@ -259,7 +276,7 @@ async function generateNatureChart() {
                         <p>共 30 种性格，每种性格对应一项属性加成与一项属性减益</p>
                     </div>
                     <div class="meta">
-                        <div>数据来源: NATURE_CONF.json</div>
+                        <div>数据来源: personalities.json</div>
                     </div>
                 </div>
 
@@ -282,14 +299,14 @@ async function generateNatureChart() {
                     </tbody>
                 </table>
 
-                <div class="footer">影响比例：±10%（proportion: 1000）&nbsp;|&nbsp; 成长值：+200（grow: 200）</div>
+                <div class="footer">加成属性 +20% · 减益属性 −10% &nbsp;|&nbsp; 数据: personalities.json</div>
             </div>
         </body>
         </html>`;
 
         await page.setViewport({ width: 1480, height: 900 });
-        await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
-        await wait(600);
+        await page.setContent(htmlContent, { waitUntil: 'domcontentloaded' });
+        await wait(200);
 
         const base64Image = await page.screenshot({
             encoding: 'base64',
@@ -339,7 +356,11 @@ async function generateSingleNatureChart(natureName) {
         <head>
             <meta charset="UTF-8" />
             <style>
-                @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+                @font-face { font-family: 'Orbitron'; font-style: normal; font-weight: 500; src: local('Orbitron'), local('Arial'); }
+                @font-face { font-family: 'Orbitron'; font-style: normal; font-weight: 700; src: local('Orbitron'), local('Arial'); }
+                @font-face { font-family: 'Noto Sans SC'; font-style: normal; font-weight: 400; src: local('Noto Sans SC'), local('Microsoft YaHei'), local('PingFang SC'), local('sans-serif'); }
+                @font-face { font-family: 'Noto Sans SC'; font-style: normal; font-weight: 500; src: local('Noto Sans SC'), local('Microsoft YaHei'), local('PingFang SC'), local('sans-serif'); }
+                @font-face { font-family: 'Noto Sans SC'; font-style: normal; font-weight: 700; src: local('Noto Sans SC'), local('Microsoft YaHei Bold'), local('PingFang SC'), local('sans-serif'); }
                 * { box-sizing: border-box; }
                 body {
                     margin: 0;
@@ -478,7 +499,7 @@ async function generateSingleNatureChart(natureName) {
                     <div class="effect-card negative">
                         <div class="effect-label">属性减益</div>
                         <div class="effect-value">-${escapeHTML(nature.negativeAttr)}</div>
-                        <div class="effect-detail">比例 -${(nature.proportion / 100).toFixed(1)}%</div>
+                        <div class="effect-detail">比例 -${(nature.negativeProportion / 100).toFixed(1)}%</div>
                     </div>
                 </div>
 
@@ -487,14 +508,14 @@ async function generateSingleNatureChart(natureName) {
                     ${descItems}
                 </div>
 
-                <div class="footer">成长值加成: +${nature.grow} &nbsp;|&nbsp; 数据来源: NATURE_CONF.json</div>
+                <div class="footer">加成 +${(nature.proportion / 100).toFixed(1)}% · 减益 −${(nature.negativeProportion / 100).toFixed(1)}% &nbsp;|&nbsp; 数据: personalities.json</div>
             </div>
         </body>
         </html>`;
 
         await page.setViewport({ width: 900, height: 700 });
-        await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
-        await wait(600);
+        await page.setContent(htmlContent, { waitUntil: 'domcontentloaded' });
+        await wait(200);
 
         const base64Image = await page.screenshot({
             encoding: 'base64',

@@ -10,7 +10,7 @@ import path from 'path';
 const __dirname = path.dirname(new URL(import.meta.url).pathname).replace(/^\//, '');
 
 // 爬虫目标 API
-const apiUrl = 'https://roco.dayun.cool/api/merchant';
+const apiUrl = 'https://rocokingdomworld.org/data/merchant.json';
 
 // 保存路径
 const saveDir = path.join(__dirname, '..', '..', 'data', 'yxsr');
@@ -111,45 +111,42 @@ function calculateTimeRange() {
 // 从 API 返回的 JSON 中提取商品信息和时间
 function extractContent(json) {
   const items = json.items || [];
-  const roundInfo = json.roundInfo || {};
 
-  if (items.length > 0) {
+  if (json.status !== 'open' || items.length === 0) {
     const now = new Date();
-    const fetchTime = now.toLocaleString('zh-CN');
-
-    let startTime = null;
-    let endTime = null;
-
-    if (roundInfo.current && roundInfo.date) {
-      const parts = roundInfo.current.split('-').map(s => s.trim());
-      if (parts.length === 2) {
-        startTime = `${roundInfo.date} ${parts[0]}:00`;
-        endTime = `${roundInfo.date} ${parts[1]}:00`;
-      }
+    const hour = now.getHours();
+    if (hour >= 0 && hour < 8) {
+      return '远行商人还未出现';
     }
-
-    if (!startTime || !endTime) {
-      const timeRange = calculateTimeRange();
-      if (timeRange) {
-        startTime = timeRange.startTime;
-        endTime = timeRange.endTime;
-      }
-    }
-
-    let output = items.join(' ') + '\n\n';
-    output += `数据获取时间：${fetchTime}\n\n`;
-
-    if (startTime && endTime) {
-      output += `开始时间：${startTime}\n`;
-      output += `结束时间：${endTime}`;
-    } else {
-      output += '远行商人还未出现';
-    }
-
-    return output;
-  } else {
     return '未找到指定内容';
   }
+
+  const now = new Date();
+  const fetchTime = now.toLocaleString('zh-CN');
+
+  let startTime = json.startedAtBeijing || null;
+  let endTime = json.nextRefreshBeijing || null;
+
+  if (!startTime || !endTime) {
+    const timeRange = calculateTimeRange();
+    if (timeRange) {
+      startTime = timeRange.startTime;
+      endTime = timeRange.endTime;
+    }
+  }
+
+  const itemNames = items.map(item => item.name);
+  let output = itemNames.join(' ') + '\n\n';
+  output += `数据获取时间：${fetchTime}\n\n`;
+
+  if (startTime && endTime) {
+    output += `开始时间：${startTime}\n`;
+    output += `结束时间：${endTime}`;
+  } else {
+    output += '远行商人还未出现';
+  }
+
+  return output;
 }
 
 // 读取日志文件并解析时间范围和内容

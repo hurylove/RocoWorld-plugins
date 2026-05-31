@@ -184,7 +184,12 @@ async function generatePetFormChart(petName, forms = []) {
     <head>
       <meta charset="UTF-8" />
       <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap');
+        @font-face { font-family: 'Orbitron'; font-style: normal; font-weight: 500; src: local('Orbitron'), local('Arial'); }
+        @font-face { font-family: 'Orbitron'; font-style: normal; font-weight: 700; src: local('Orbitron'), local('Arial'); }
+        @font-face { font-family: 'Noto Sans SC'; font-style: normal; font-weight: 400; src: local('Noto Sans SC'), local('Microsoft YaHei'), local('PingFang SC'), local('sans-serif'); }
+        @font-face { font-family: 'Noto Sans SC'; font-style: normal; font-weight: 500; src: local('Noto Sans SC'), local('Microsoft YaHei'), local('PingFang SC'), local('sans-serif'); }
+        @font-face { font-family: 'Noto Sans SC'; font-style: normal; font-weight: 700; src: local('Noto Sans SC'), local('Microsoft YaHei Bold'), local('PingFang SC'), local('sans-serif'); }
+        @font-face { font-family: 'Noto Sans SC'; font-style: normal; font-weight: 800; src: local('Noto Sans SC'), local('Microsoft YaHei Bold'), local('PingFang SC'), local('sans-serif'); }
         * { box-sizing: border-box; }
         body {
           margin: 0;
@@ -408,8 +413,8 @@ async function generatePetFormChart(petName, forms = []) {
     `;
 
     await page.setViewport({ width, height: dynamicHeight });
-    await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
-    await new Promise((resolve) => setTimeout(resolve, 500));
+    await page.setContent(htmlContent, { waitUntil: 'domcontentloaded' });
+    await new Promise((resolve) => setTimeout(resolve, 200));
 
     const base64Image = await page.screenshot({
       encoding: 'base64',

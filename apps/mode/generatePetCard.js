@@ -302,7 +302,11 @@ async function generatePetCard(petName, petId) {
         <head>
             <meta charset="UTF-8" />
             <style>
-                @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Noto+Serif+SC:wght@400;600;700&display=swap');
+                @font-face { font-family: 'Orbitron'; font-style: normal; font-weight: 500; src: local('Orbitron'), local('Arial'); }
+                @font-face { font-family: 'Orbitron'; font-style: normal; font-weight: 700; src: local('Orbitron'), local('Arial'); }
+                @font-face { font-family: 'Noto Serif SC'; font-style: normal; font-weight: 400; src: local('Noto Serif SC'), local('SimSun'), local('sans-serif'); }
+                @font-face { font-family: 'Noto Serif SC'; font-style: normal; font-weight: 600; src: local('Noto Serif SC'), local('SimSun'), local('sans-serif'); }
+                @font-face { font-family: 'Noto Serif SC'; font-style: normal; font-weight: 700; src: local('Noto Serif SC'), local('SimSun'), local('sans-serif'); }
                 * {
                     box-sizing: border-box;
                 }
@@ -566,8 +570,8 @@ async function generatePetCard(petName, petId) {
 
         // 设置视口和截图
         await page.setViewport({ width: 1280, height: finalHeight });
-        await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
-        await wait(1000);
+        await page.setContent(htmlContent, { waitUntil: 'domcontentloaded' });
+        await wait(200);
         
         // 生成base64格式的图片
         const base64Image = await page.screenshot({ encoding: 'base64', fullPage: true, omitBackground: false });

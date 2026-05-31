@@ -174,7 +174,36 @@ async function generateSingleTypeChart(inputKeyword = '#光系克制') {
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <style>
-                @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+                @font-face {
+                    font-family: 'Orbitron';
+                    font-style: normal;
+                    font-weight: 500;
+                    src: local('Orbitron'), local('Arial');
+                }
+                @font-face {
+                    font-family: 'Orbitron';
+                    font-style: normal;
+                    font-weight: 700;
+                    src: local('Orbitron'), local('Arial');
+                }
+                @font-face {
+                    font-family: 'Noto Sans SC';
+                    font-style: normal;
+                    font-weight: 400;
+                    src: local('Noto Sans SC'), local('Microsoft YaHei'), local('PingFang SC'), local('sans-serif');
+                }
+                @font-face {
+                    font-family: 'Noto Sans SC';
+                    font-style: normal;
+                    font-weight: 500;
+                    src: local('Noto Sans SC'), local('Microsoft YaHei'), local('PingFang SC'), local('sans-serif');
+                }
+                @font-face {
+                    font-family: 'Noto Sans SC';
+                    font-style: normal;
+                    font-weight: 700;
+                    src: local('Noto Sans SC'), local('Microsoft YaHei Bold'), local('PingFang SC'), local('sans-serif');
+                }
 
                 :root {
                     --bg1: #f8fbff;
@@ -389,8 +418,8 @@ async function generateSingleTypeChart(inputKeyword = '#光系克制') {
         `;
 
         await page.setViewport({ width: 1200, height: 900 });
-        await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
-        await wait(900);
+        await page.setContent(htmlContent, { waitUntil: 'domcontentloaded' });
+        await wait(200);
 
         const base64Image = await page.screenshot({
             encoding: 'base64',

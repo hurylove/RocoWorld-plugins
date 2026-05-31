@@ -746,7 +746,7 @@ async function renderResultImage(results, inputWeightKg, inputHeightM) {
         `;
 
         await page.setViewport({ width: 1520, height: 800 });
-        await page.setContent(html, { waitUntil: 'networkidle0' });
+        await page.setContent(html, { waitUntil: 'domcontentloaded' });
 
         await new Promise(resolve => setTimeout(resolve, 500));
 

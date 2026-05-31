@@ -369,7 +369,7 @@ async function renderYxsrImageBase64(rawText) {
     `;
 
     await page.setViewport({ width: 1520, height: 800 });
-    await page.setContent(html, { waitUntil: 'domcontentloaded' });
+    await page.setContent(html, { waitUntil: 'networkidle2', timeout: 15000 });
 
     const image = await page.screenshot({
       encoding: 'base64',

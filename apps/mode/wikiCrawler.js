@@ -1,5 +1,5 @@
 // 洛克王国远行商人爬虫脚本
-// 功能：从 roco.dayun.cool API 获取远行商人商品数据，保存为txt文件
+// 功能：从 rocokingdomworld.org 实时 API 获取远行商人商品数据，保存为txt文件
 // 模块化输出，支持其他JS文件调用
 
 import https from 'https';
@@ -9,8 +9,9 @@ import path from 'path';
 // 使用当前文件所在目录作为基准
 const __dirname = path.dirname(new URL(import.meta.url).pathname).replace(/^\//, '');
 
-// 爬虫目标 API
-const apiUrl = 'https://rocokingdomworld.org/data/merchant.json';
+// 实时 API（主）和静态 JSON（备用）
+const apiUrl = 'https://rocokingdomworld.org/api/merchant/live';
+const fallbackUrl = 'https://rocokingdomworld.org/data/merchant.json';
 
 // 保存路径
 const saveDir = path.join(__dirname, '..', '..', 'data', 'yxsr');
@@ -24,14 +25,14 @@ function ensureDirExists(dir) {
   }
 }
 
-// 从 API 获取远行商人数据
-function crawlWiki() {
+// 发起 HTTPS 请求获取 JSON
+function fetchJson(urlStr) {
   return new Promise((resolve, reject) => {
-    const url = new URL(apiUrl);
+    const url = new URL(urlStr);
 
     const options = {
       hostname: url.hostname,
-      path: url.pathname,
+      path: url.pathname + url.search,
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
       }
@@ -51,13 +52,7 @@ function crawlWiki() {
 
       response.on('end', () => {
         try {
-          const json = JSON.parse(rawData);
-          ensureDirExists(saveDir);
-
-          const extractedContent = extractContent(json);
-
-          fs.writeFileSync(txtSavePath, extractedContent, 'utf-8');
-          resolve(extractedContent);
+          resolve(JSON.parse(rawData));
         } catch (parseError) {
           reject(new Error(`JSON解析失败: ${parseError.message}`));
         }
@@ -75,6 +70,24 @@ function crawlWiki() {
 
     req.setTimeout(10000);
   });
+}
+
+// 爬取远行商人数据（实时API优先，备用JSON兜底）
+async function crawlWiki() {
+  let json;
+
+  try {
+    json = await fetchJson(apiUrl);
+  } catch (e) {
+    json = await fetchJson(fallbackUrl);
+  }
+
+  ensureDirExists(saveDir);
+
+  const extractedContent = extractContent(json);
+
+  fs.writeFileSync(txtSavePath, extractedContent, 'utf-8');
+  return extractedContent;
 }
 
 // 计算开始时间和结束时间
@@ -110,43 +123,55 @@ function calculateTimeRange() {
 
 // 从 API 返回的 JSON 中提取商品信息和时间
 function extractContent(json) {
-  const items = json.items || [];
-
-  if (json.status !== 'open' || items.length === 0) {
-    const now = new Date();
-    const hour = now.getHours();
-    if (hour >= 0 && hour < 8) {
-      return '远行商人还未出现';
-    }
-    return '未找到指定内容';
-  }
-
   const now = new Date();
   const fetchTime = now.toLocaleString('zh-CN');
 
-  let startTime = json.startedAtBeijing || null;
-  let endTime = json.nextRefreshBeijing || null;
+  let itemNames = [];
+  let startTime = null;
+  let endTime = null;
+
+  if (json.status === 'open' && json.items && json.items.length > 0) {
+    itemNames = json.items.map(item => item.name);
+    startTime = json.startedAtBeijing || null;
+    endTime = json.nextRefreshBeijing || null;
+  } else if (json.rounds) {
+    const roundKeys = Object.keys(json.rounds).sort((a, b) => Number(a) - Number(b));
+    const firstRound = json.rounds[roundKeys[0]];
+    if (firstRound && firstRound.length > 0) {
+      itemNames = firstRound.map(item => item.name);
+    }
+    if (json.nextRefreshBeijing) {
+      startTime = json.nextRefreshBeijing;
+      endTime = null;
+    }
+  }
 
   if (!startTime || !endTime) {
     const timeRange = calculateTimeRange();
     if (timeRange) {
-      startTime = timeRange.startTime;
-      endTime = timeRange.endTime;
+      startTime = startTime || timeRange.startTime;
+      endTime = endTime || timeRange.endTime;
     }
   }
 
-  const itemNames = items.map(item => item.name);
-  let output = itemNames.join(' ') + '\n\n';
-  output += `数据获取时间：${fetchTime}\n\n`;
+  if (itemNames.length > 0) {
+    let output = itemNames.join(' ') + '\n\n';
+    output += `数据获取时间：${fetchTime}\n\n`;
 
-  if (startTime && endTime) {
-    output += `开始时间：${startTime}\n`;
-    output += `结束时间：${endTime}`;
-  } else {
-    output += '远行商人还未出现';
+    if (startTime && endTime) {
+      output += `开始时间：${startTime}\n`;
+      output += `结束时间：${endTime}`;
+    } else if (startTime) {
+      output += `开始时间：${startTime}\n`;
+      output += '远行商人还未出现';
+    } else {
+      output += '远行商人还未出现';
+    }
+
+    return output;
   }
 
-  return output;
+  return '未找到指定内容';
 }
 
 // 读取日志文件并解析时间范围和内容

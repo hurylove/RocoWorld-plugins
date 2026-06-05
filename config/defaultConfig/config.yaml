@@ -21,6 +21,10 @@ yxsrPushGroups: ""
 # 示例: "国王球,棱镜球,蓝晶碧玺"
 yxsrSubscribeItems: ""
 
+# 魔法书API配置
+# API密钥，用于访问魔法书接口
+magicBookApiKey: ""
+
 # 其他配置项
 plugin:  
   name: "RocoWorld-plugins"

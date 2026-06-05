@@ -762,33 +762,122 @@ async function renderResultImage(results, inputWeightKg, inputHeightM) {
     }
 }
 
+async function queryFromMagicBook(weightKg, heightM) {
+    const config = loadConfig();
+    const apiKey = config.magicBookApiKey;
+    
+    if (!apiKey) {
+        console.warn('未配置魔法书API密钥，跳过API查询');
+        return null;
+    }
+
+    try {
+        const params = new URLSearchParams({
+            diameter: heightM.toString(),
+            weight: weightKg.toString(),
+            sameRideEgg: ''
+        });
+
+        const url = `https://wegame.shallow.ink/api/v1/games/rocom/pet/size-query?${params}`;
+        
+        const response = await fetch(url, {
+            method: 'GET',
+            headers: {
+                'X-API-Key': apiKey,
+                'Authorization': `Bearer ${apiKey}`
+            }
+        });
+
+        const result = await response.json();
+        
+        if (result.code !== 0 || !result.data) {
+            console.warn('魔法书API返回错误:', result.message);
+            return null;
+        }
+
+        return result.data;
+    } catch (error) {
+        console.error('调用魔法书API失败:', error.message);
+        return null;
+    }
+}
+
+function convertApiResultsToLocalFormat(apiData) {
+    const results = [];
+    
+    // 处理精确匹配结果
+    if (apiData.exactResults && apiData.exactResults.length > 0) {
+        for (const item of apiData.exactResults) {
+            results.push({
+                name: item.pet,
+                form: '',
+                heightLow: item.diameterMin * 100,
+                heightHigh: item.diameterMax * 100,
+                weightLow: item.weightMin * 1000,
+                weightHigh: item.weightMax * 1000,
+                similarity: item.probability / 100,
+                baseId: null,
+                petId: item.petId,
+                attributes: item.attributes,
+                isExact: true
+            });
+        }
+    }
+    
+    // 处理候选结果
+    if (apiData.candidates && apiData.candidates.length > 0) {
+        for (const item of apiData.candidates) {
+            results.push({
+                name: item.pet,
+                form: '',
+                heightLow: item.diameterMin * 100,
+                heightHigh: item.diameterMax * 100,
+                weightLow: item.weightMin * 1000,
+                weightHigh: item.weightMax * 1000,
+                similarity: 0.5, // 候选结果没有相似度，默认0.5
+                baseId: null,
+                petId: item.petId,
+                attributes: item.attributes,
+                isExact: false
+            });
+        }
+    }
+    
+    return results;
+}
+
+function findBaseIdByPetName(petName) {
+    const petsData = JSON.parse(fs.readFileSync(PETS_JSON_PATH, 'utf-8'));
+    const pet = petsData.find(p => p.localized?.zh?.name === petName && p.implemented === true);
+    return pet ? pet.id : null;
+}
+
 async function crawlLuoke(weightKg, heightM, topN = 10) {
-    const inputWeightG = weightKg * 1000;
-    const inputHeightCm = heightM * 100;
-
-    const rawResults = findClosestPets(inputWeightG, inputHeightCm, 20);
+    // 优先使用魔法书API
+    const apiData = await queryFromMagicBook(weightKg, heightM);
     
-    if (rawResults.length === 0) {
-        return null;
+    if (apiData) {
+        console.log('使用魔法书API查询结果');
+        let results = convertApiResultsToLocalFormat(apiData);
+        
+        // 为每个结果查找baseId
+        for (const result of results) {
+            if (!result.baseId) {
+                result.baseId = findBaseIdByPetName(result.name);
+            }
+        }
+        
+        results = results.slice(0, topN);
+        
+        if (results.length === 0) {
+            return null;
+        }
+        
+        const imageBase64 = await renderResultImage(results, weightKg, heightM);
+        return imageBase64;
     }
-
-    const excludeSet = loadExcludeSet();
-    console.log(`排除名单共 ${excludeSet.size} 个精灵，匹配到 ${rawResults.length} 个候选`);
     
-    let filtered = filterByExcludeList(rawResults, excludeSet);
-    console.log(`排除名单过滤后剩余 ${filtered.length} 个精灵`);
-    
-    filtered = filterByImplemented(filtered);
-    console.log(`已实装过滤后剩余 ${filtered.length} 个精灵`);
-    
-    if (filtered.length === 0) {
-        return null;
-    }
-    
-    filtered = filtered.slice(0, topN);
-    
-    const imageBase64 = await renderResultImage(filtered, weightKg, heightM);
-    return imageBase64;
+    return null;
 }
 
 export {

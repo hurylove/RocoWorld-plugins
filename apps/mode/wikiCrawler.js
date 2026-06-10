@@ -6,8 +6,12 @@ import https from 'https';
 import fs from 'fs';
 import path from 'path';
 
-// 使用当前文件所在目录作为基准
-const __dirname = path.dirname(new URL(import.meta.url).pathname).replace(/^\//, '');
+// 使用当前文件所在目录作为基准（兼容 Windows 和 Linux）
+const __filename = new URL(import.meta.url).pathname;
+// Windows 路径开头有 /（如 /E:/...），Linux 路径开头是 /（如 /home/...）
+const __dirname = process.platform === 'win32'
+  ? path.dirname(__filename).replace(/^\//, '')
+  : path.dirname(__filename);
 
 // 实时 API（主）和静态 JSON（备用）
 const apiUrl = 'https://rocokingdomworld.org/api/merchant/live';

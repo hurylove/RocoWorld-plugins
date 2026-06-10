@@ -446,20 +446,21 @@ export default class yxsrPlugin extends plugin {
 
       // 每次都强制刷新数据
       const yxsrInfo = await refreshYxsrLog();
+      console.log('[远行商人] 获取到的数据:', yxsrInfo);
 
-      // 转图片并发送
-      const base64Image = await renderYxsrImageBase64(yxsrInfo);
-      this.reply(segment.image(`base64://${base64Image}`), false);
-    } catch (error) {
-      console.error('获取远行商人信息失败:', error);
-
-      // 兜底：发送文本
       try {
-        const yxsrInfo = await refreshYxsrLog();
-        this.reply(yxsrInfo || '获取远行商人信息时出现错误，请稍后重试', false);
-      } catch {
-        this.reply('获取远行商人信息时出现错误，请稍后重试', false);
+        // 转图片并发送
+        const base64Image = await renderYxsrImageBase64(yxsrInfo);
+        console.log('[远行商人] 图片生成成功');
+        this.reply(segment.image(`base64://${base64Image}`), false);
+      } catch (renderError) {
+        console.error('[远行商人] 图片生成失败，发送文本:', renderError);
+        // 图片生成失败时发送文本
+        this.reply(yxsrInfo || '图片渲染失败，请检查 puppeteer 配置', false);
       }
+    } catch (error) {
+      console.error('[远行商人] 获取远行商人信息失败:', error);
+      this.reply('获取远行商人信息时出现错误，请稍后重试', false);
     }
   }
 }

@@ -94,48 +94,16 @@ async function crawlOnebiji() {
     // 从页面提取数据
     const data = await page.evaluate(() => {
       const bodyText = document.body.innerText;
-      const bodyHtml = document.body.innerHTML;
       
-      // 尝试获取商品名称 - 更精确的选择器
+      // 获取商品名称 - 直接查找 em.shop_name 元素
       const items = [];
-      
-      // 方法1: 查找包含商品图片的元素
-      const imgElements = document.querySelectorAll('img[src*="100px"]');
-      imgElements.forEach(img => {
-        const parent = img.closest('.goods-item, .item, div');
-        if (parent) {
-          const nameEl = parent.querySelector('.goods-name, .item-name, .name, h3, h4');
-          if (nameEl) {
-            const text = nameEl.innerText.trim();
-            if (text && text.length >= 2 && text.length <= 10) {
-              items.push(text);
-            }
-          }
+      const nameElements = document.querySelectorAll('em.shop_name');
+      nameElements.forEach(el => {
+        const text = el.innerText.trim();
+        if (text) {
+          items.push(text);
         }
       });
-      
-      // 方法2: 查找特定的商品名称元素
-      if (items.length === 0) {
-        const nameElements = document.querySelectorAll('.goods-name, .item-name');
-        nameElements.forEach(el => {
-          const text = el.innerText.trim();
-          if (text && text.length >= 2 && text.length <= 10) {
-            items.push(text);
-          }
-        });
-      }
-      
-      // 方法3: 从页面文本中解析（更严格的匹配）
-      if (items.length === 0) {
-        const lines = bodyText.split('\n');
-        for (const line of lines) {
-          const trimmed = line.trim();
-          // 只匹配单独的商品名称行（2-4个中文字符，不能包含其他字符）
-          if (/^[\u4e00-\u9fa5]{2,4}$/.test(trimmed)) {
-            items.push(trimmed);
-          }
-        }
-      }
       
       // 提取时间信息
       let startTime = null;
@@ -149,9 +117,7 @@ async function crawlOnebiji() {
       return {
         items: [...new Set(items)], // 去重
         startTime,
-        endTime,
-        bodyText: bodyText.substring(0, 3000), // 保留部分文本用于调试
-        bodyHtml: bodyHtml.substring(0, 3000) // 保留部分HTML用于调试
+        endTime
       };
     });
     

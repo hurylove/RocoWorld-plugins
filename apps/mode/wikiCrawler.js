@@ -95,13 +95,20 @@ async function crawlOnebiji() {
     const data = await page.evaluate(() => {
       const bodyText = document.body.innerText;
       
-      // 获取商品名称 - 直接查找 em.shop_name 元素
+      // 获取当前显示的商品（style 不是 display:none）
       const items = [];
-      const nameElements = document.querySelectorAll('em.shop_name');
-      nameElements.forEach(el => {
-        const text = el.innerText.trim();
-        if (text) {
-          items.push(text);
+      const liElements = document.querySelectorAll('li.all_show');
+      liElements.forEach(li => {
+        const style = li.getAttribute('style') || '';
+        // 只处理显示的商品（style 不包含 display:none）
+        if (!style.includes('display:none')) {
+          const nameEl = li.querySelector('em.shop_name');
+          if (nameEl) {
+            const text = nameEl.innerText.trim();
+            if (text) {
+              items.push(text);
+            }
+          }
         }
       });
       
@@ -121,7 +128,7 @@ async function crawlOnebiji() {
       };
     });
     
-    console.log('[远行商人爬虫] 提取到的商品:', data.items);
+    console.log('[远行商人爬虫] 当前显示的商品:', data.items);
     console.log('[远行商人爬虫] 开始时间:', data.startTime);
     console.log('[远行商人爬虫] 结束时间:', data.endTime);
     
@@ -299,11 +306,7 @@ async function getYxsrInfo() {
 export default getYxsrInfo;
 
 // 如果直接运行此文件
-const currentFilePath = new URL(import.meta.url).pathname.replace(/^\//, '');
-const argv1 = process.argv[1];
-if (argv1 && (currentFilePath === argv1 || currentFilePath.toLowerCase() === argv1.toLowerCase())) {
-  console.log('开始获取远行商人信息...');
-  refreshYxsrLog()
-    .then(info => console.log('获取到的远行商人信息:', info))
-    .catch(error => console.error('执行失败:', error));
-}
+console.log('开始获取远行商人信息...');
+refreshYxsrLog()
+  .then(info => console.log('获取到的远行商人信息:', info))
+  .catch(error => console.error('执行失败:', error));

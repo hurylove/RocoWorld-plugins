@@ -54,6 +54,26 @@ function getItemsFromYxsrLogFirstLine() {
   return firstLine.split(/\s+/).map(item => item.trim()).filter(Boolean);
 }
 
+// 从远行商人日志第二行解析价格信息
+// 格式：棱镜球: 320w洛克贝(限购1) | 残缺魔镜: 48w洛克贝(限购1) | ...
+function getPricesFromYxsrLog() {
+  const logContent = readYxsrLogContent();
+  const lines = logContent.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+  // 第二行含|的是价格详情
+  const priceLine = lines.length >= 2 && lines[1].includes('|') ? lines[1] : '';
+  if (!priceLine) return {};
+
+  const priceMap = {};
+  const parts = priceLine.split('|').map(s => s.trim()).filter(Boolean);
+  for (const part of parts) {
+    const match = part.match(/^(.+?):\s*(.+?)洛克贝(?:\(限购(.+?)\))?$/);
+    if (match) {
+      priceMap[match[1].trim()] = { price: match[2].trim(), limit: match[3] || '' };
+    }
+  }
+  return priceMap;
+}
+
 function getYxsrLogMeta() {
   const logContent = readYxsrLogContent();
   const lines = logContent.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
@@ -121,7 +141,10 @@ async function renderYxsrImageBase64(rawText) {
   // 优先使用远行商人日志第一行（按空格分隔）的物品列表
   let items = getItemsFromYxsrLogFirstLine();
 
-  // 兜底：日志读取失败时，回退到展示文案中的“本轮上架”行解析
+  // 解析价格信息
+  const priceMap = getPricesFromYxsrLog();
+
+  // 兜底：日志读取失败时，回退到展示文案中的"本轮上架"行解析
   if (items.length === 0) {
     const itemLine = plainLines.find(line => /^本轮上架[:：]/.test(line)) || '';
     const itemText = itemLine.replace(/^本轮上架[:：]\s*/, '').trim();
@@ -168,6 +191,7 @@ async function renderYxsrImageBase64(rawText) {
   if (items.length > 0) {
     items.forEach(itemName => {
       const imageUrl = getItemImageUrl(itemName);
+      const priceInfo = priceMap[itemName] || {};
       contentRows += `
         <div class="item-row">
           <div class="item-left">
@@ -177,6 +201,7 @@ async function renderYxsrImageBase64(rawText) {
             <div class="item-main">
               <div class="item-title">${escapeHTML(itemName)}</div>
               <div class="item-sub">远行商人当前轮次商品</div>
+              ${priceInfo.price ? `<div class="item-price"><span class="price-val">${escapeHTML(priceInfo.price)}洛克贝</span>${priceInfo.limit ? `<span class="price-limit">限购${escapeHTML(priceInfo.limit)}</span>` : ''}</div>` : ''}
               <div class="item-time">${escapeHTML(getPeriodText())}</div>
             </div>
           </div>
@@ -350,6 +375,31 @@ async function renderYxsrImageBase64(rawText) {
             color: #6a5b4e;
             margin-bottom: 8px;
             font-weight: 700;
+          }
+
+          .item-price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+          }
+
+          .price-val {
+            font-size: 26px;
+            font-weight: 900;
+            color: #c0392b;
+            background: #fdf2f2;
+            border-radius: 8px;
+            padding: 4px 12px;
+          }
+
+          .price-limit {
+            font-size: 22px;
+            font-weight: 800;
+            color: #7d6b4e;
+            background: #f0ebde;
+            border-radius: 8px;
+            padding: 4px 12px;
           }
 
           .item-time {

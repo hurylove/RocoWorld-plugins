@@ -97,16 +97,27 @@ async function crawlOnebiji() {
       
       // 获取当前显示的商品（style 不是 display:none）
       const items = [];
+      const seenNames = new Set();
       const liElements = document.querySelectorAll('li.all_show');
       liElements.forEach(li => {
         const style = li.getAttribute('style') || '';
         // 只处理显示的商品（style 不包含 display:none）
         if (!style.includes('display:none')) {
           const nameEl = li.querySelector('em.shop_name');
+          const priceEl = li.querySelector('em.shop_price');
+          // 限购数量在 div.gitem > em 中
+          const limitEl = li.querySelector('div.gitem em');
           if (nameEl) {
-            const text = nameEl.innerText.trim();
-            if (text) {
-              items.push(text);
+            const name = nameEl.innerText.trim();
+            if (name && !seenNames.has(name)) {
+              seenNames.add(name);
+              const priceText = priceEl ? priceEl.innerText.trim() : '';
+              // 从"价格：320w"中提取"320w"
+              const price = priceText.replace(/^价格[：:]\s*/, '').trim();
+              const limitText = limitEl ? limitEl.innerText.trim() : '';
+              // 从"限购1"中提取"1"
+              const limit = limitText.replace(/^限购\s*/, '').trim();
+              items.push({ name, price, limit });
             }
           }
         }
@@ -122,7 +133,7 @@ async function crawlOnebiji() {
       }
       
       return {
-        items: [...new Set(items)], // 去重
+        items, // [{name, price, limit}, ...]
         startTime,
         endTime
       };
@@ -179,7 +190,7 @@ async function crawlWiki() {
   const now = new Date();
   const fetchTime = now.toLocaleString('zh-CN');
   
-  let itemNames = data.items || [];
+  const items = data.items || [];
   let startTime = data.startTime;
   let endTime = data.endTime;
   
@@ -194,8 +205,17 @@ async function crawlWiki() {
   
   // 生成日志内容
   let output;
-  if (itemNames.length > 0) {
-    output = itemNames.join(' ') + '\n\n';
+  if (items.length > 0) {
+    // 第一行：物品名称（空格分隔，保持向后兼容）
+    const itemNames = items.map(item => item.name);
+    output = itemNames.join(' ') + '\n';
+    // 第二行：价格详情
+    const priceDetails = items.map(item => {
+      let detail = `${item.name}: ${item.price}洛克贝`;
+      if (item.limit) detail += `(限购${item.limit})`;
+      return detail;
+    }).join(' | ');
+    output += priceDetails + '\n\n';
     output += `数据获取时间：${fetchTime}\n\n`;
     
     if (startTime && endTime) {
@@ -227,6 +247,7 @@ function readLogFile() {
       const lines = content.split('\n');
 
       let itemContent = '';
+      let priceContent = '';
       let fetchTime = '';
       let startTime = null;
       let endTime = null;
@@ -234,9 +255,8 @@ function readLogFile() {
 
       for (const line of lines) {
         const trimmedLine = line.trim();
-        if (!itemContent && trimmedLine) {
-          itemContent = trimmedLine;
-        } else if (trimmedLine.includes('数据获取时间')) {
+        if (!trimmedLine) continue;
+        if (trimmedLine.includes('数据获取时间')) {
           fetchTime = trimmedLine.replace('数据获取时间：', '').trim();
         } else if (trimmedLine.includes('开始时间')) {
           startTime = trimmedLine.replace('开始时间：', '').trim();
@@ -244,10 +264,16 @@ function readLogFile() {
           endTime = trimmedLine.replace('结束时间：', '').trim();
         } else if (trimmedLine === '远行商人还未出现') {
           isNotAppeared = true;
+        } else if (!itemContent) {
+          // 第一行非空非元数据行是物品名称
+          itemContent = trimmedLine;
+        } else if (!priceContent && trimmedLine.includes('|')) {
+          // 第二行含|的是价格详情
+          priceContent = trimmedLine;
         }
       }
 
-      return { startTime, endTime, itemContent, fetchTime, isNotAppeared, content };
+      return { startTime, endTime, itemContent, priceContent, fetchTime, isNotAppeared, content };
     }
     return null;
   } catch (error) {
@@ -264,11 +290,33 @@ function buildDisplayText(logData) {
   const rawItemLine = (logData.itemContent || '').trim();
   const itemList = rawItemLine ? rawItemLine.split(/\s+/).filter(Boolean) : [];
 
+  // 解析价格详情行：棱镜球: 320w洛克贝(限购1) | 残缺魔镜: 48w洛克贝(限购6) | ...
+  const priceItems = [];
+  if (logData.priceContent) {
+    const parts = logData.priceContent.split('|').map(s => s.trim()).filter(Boolean);
+    for (const part of parts) {
+      const match = part.match(/^(.+?):\s*(.+?)洛克贝(?:\(限购(.+?)\))?$/);
+      if (match) {
+        priceItems.push({ name: match[1].trim(), price: match[2].trim(), limit: match[3] || '' });
+      }
+    }
+  }
+
   const lines = [
     '远行商人情报更新',
     '限时货架已刷新',
-    `本轮上架：${itemList.length ? itemList.join('、') : '待确认'}`
   ];
+
+  if (priceItems.length > 0) {
+    const itemDetails = priceItems.map(item => {
+      let detail = `${item.name} ${item.price}洛克贝`;
+      if (item.limit) detail += `（限购${item.limit}）`;
+      return detail;
+    }).join('\n');
+    lines.push(`本轮上架：\n${itemDetails}`);
+  } else {
+    lines.push(`本轮上架：${itemList.length ? itemList.join('、') : '待确认'}`);
+  }
 
   if (logData.fetchTime) lines.push(`获取时间：${logData.fetchTime}`);
   if (logData.startTime && logData.endTime) {

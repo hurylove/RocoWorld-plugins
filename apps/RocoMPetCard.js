@@ -26,6 +26,9 @@ function buildPetNameMap() {
       petById.set(pet.id, pet);
     }
 
+    // 去除零宽空格等不可见字符
+    const cleanName = (str) => str.replace(/[\u200B-\u200D\uFEFF]/g, '').trim();
+
     // 第一步：建立 中文名 → [pet条目] 的映射（一个中文名可能对应多个形态）
     const zhNameToPets = new Map();
     for (const pet of pets) {
@@ -39,9 +42,16 @@ function buildPetNameMap() {
     }
 
     // 第二步：对只有一个条目的中文名，直接映射
-    // 对有多个条目的中文名，取第一个作为默认
+    // 对有多个条目的中文名，优先选择数据完整的（base_hp 不为 0）
     for (const [zhName, petList] of zhNameToPets) {
-      petNameMap.set(zhName, petList[0]);
+      // 优先选择 base_hp 不为 0 的宠物
+      const bestPet = petList.find(p => p.base_hp && p.base_hp > 0) || petList[0];
+      petNameMap.set(zhName, bestPet);
+      // 同时存储去除零宽空格后的名称
+      const cleaned = cleanName(zhName);
+      if (cleaned !== zhName && !petNameMap.has(cleaned)) {
+        petNameMap.set(cleaned, bestPet);
+      }
     }
 
     // 第三步：从PETBASE_CONF加载形态信息，构建"名称（形态）"的精确映射
@@ -60,6 +70,11 @@ function buildPetNameMap() {
           const pet = petById.get(entry.id);
           if (pet) {
             petNameMap.set(fullName, pet);
+            // 同时存储去除零宽空格后的名称
+            const cleanedFullName = cleanName(fullName);
+            if (cleanedFullName !== fullName && !petNameMap.has(cleanedFullName)) {
+              petNameMap.set(cleanedFullName, pet);
+            }
           }
         }
       }
@@ -107,6 +122,8 @@ export default class petCard extends plugin {
       }
 
       let petName = match[1].trim();
+      // 去除零宽空格等不可见字符
+      petName = petName.replace(/[\u200B-\u200D\uFEFF]/g, '').trim();
 
       if (!petName) {
         this.reply('请提供宠物名称，例如：#迪莫 或 迪莫资料卡', false);

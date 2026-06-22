@@ -55,6 +55,26 @@ function getItemsFromYxsrLogFirstLine() {
   return firstLine.split(/\s+/).map(item => item.trim()).filter(Boolean);
 }
 
+// 从远行商人日志第二行解析价格信息
+// 格式：棱镜球: 320w洛克贝(限购1) | 残缺魔镜: 48w洛克贝(限购1) | ...
+function getPricesFromYxsrLog() {
+  const logContent = readYxsrLogContent();
+  const lines = logContent.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+  // 第二行含|的是价格详情
+  const priceLine = lines.length >= 2 && lines[1].includes('|') ? lines[1] : '';
+  if (!priceLine) return {};
+
+  const priceMap = {};
+  const parts = priceLine.split('|').map(s => s.trim()).filter(Boolean);
+  for (const part of parts) {
+    const match = part.match(/^(.+?):\s*(.+?)洛克贝(?:\(限购(.+?)\))?$/);
+    if (match) {
+      priceMap[match[1].trim()] = { price: match[2].trim(), limit: match[3] || '' };
+    }
+  }
+  return priceMap;
+}
+
 function getYxsrLogMeta() {
   const logContent = readYxsrLogContent();
   const lines = logContent.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
@@ -81,10 +101,13 @@ async function renderYxsrImageBase64(rawText) {
   const plainLines = text.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
   const logMeta = getYxsrLogMeta();
 
-  // 优先使用远行商人日志第一行（按空格分隔）的物品列表
+  //// 优先使用远行商人日志第一行（按空格分隔）的物品列表
   let items = getItemsFromYxsrLogFirstLine();
 
-  // 兜底：日志读取失败时，回退到展示文案中的“本轮上架”行解析
+  // 解析价格信息
+  const priceMap = getPricesFromYxsrLog();
+
+  // 兜底：日志读取失败时，回退到展示文案中的"本轮上架"行解析
   if (items.length === 0) {
     const itemLine = plainLines.find(line => /^本轮上架[:：]/.test(line)) || '';
     const itemText = itemLine.replace(/^本轮上架[:：]\s*/, '').trim();
@@ -131,6 +154,7 @@ async function renderYxsrImageBase64(rawText) {
   if (items.length > 0) {
     items.forEach(itemName => {
       const imageUrl = getItemImageUrl(itemName);
+      const priceInfo = priceMap[itemName] || {};
       contentRows += `
         <div class="item-row">
           <div class="item-left">
@@ -140,6 +164,7 @@ async function renderYxsrImageBase64(rawText) {
             <div class="item-main">
               <div class="item-title">${escapeHTML(itemName)}</div>
               <div class="item-sub">远行商人当前轮次商品</div>
+              ${priceInfo.price ? `<div class="item-price"><span class="price-val">${escapeHTML(priceInfo.price)}洛克贝</span>${priceInfo.limit ? `<span class="price-limit">限购${escapeHTML(priceInfo.limit)}</span>` : ''}</div>` : ''}
               <div class="item-time">${escapeHTML(getPeriodText())}</div>
             </div>
           </div>
@@ -323,6 +348,33 @@ async function renderYxsrImageBase64(rawText) {
             padding: 6px 14px;
             font-size: 20px;
             font-weight: 800;
+          }
+
+          .item-price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+          }
+
+          .price-val {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            border-radius: 999px;
+            padding: 4px 12px;
+            font-size: 20px;
+            font-weight: 800;
+          }
+
+          .price-limit {
+            display: inline-block;
+            background: #fff3e0;
+            color: #e65100;
+            border-radius: 999px;
+            padding: 4px 10px;
+            font-size: 18px;
+            font-weight: 700;
           }
 
           .tag {
@@ -548,7 +600,9 @@ async function monitorAndPush(triggerHour) {
       }
     }
 
-    console.log(`[RocoYxsrPush] 推送完成：成功 ${successCount} 个群，失败 ${failCount} 个群`);
+    if (failCount > 0) {
+      console.warn(`[RocoYxsrPush] 推送完成：成功 ${successCount}，失败 ${failCount}`);
+    }
   } catch (error) {
     console.error('[RocoYxsrPush] 推送失败:', error);
   }
@@ -651,8 +705,6 @@ export default class RocoYxsrPush extends plugin {
         global.__rocoYxsrPushLastTrigger = triggerKey;
 
         const triggerHour = getPushTriggerHour(now);
-        console.log(`[RocoYxsrPush] 触发监控任务，时间：${triggerKey}`);
-
         await monitorAndPush(triggerHour);
       } catch (error) {
         console.error('[RocoYxsrPush] 定时推送失败:', error);
@@ -662,8 +714,7 @@ export default class RocoYxsrPush extends plugin {
     global.__rocoYxsrPushTimer = setInterval(checkAndRun, 30 * 1000);
 
     setTimeout(checkAndRun, 10 * 1000);
-
-    console.log('[RocoYxsrPush] 定时任务已启动，推送时间：08:02 / 12:02 / 16:02 / 20:02');
+    console.log('[RocoYxsrPush] 已加载');
   }
 
   async manualPush(e) {

@@ -115,55 +115,134 @@ function getPetImageSrc(pet, petName, petsMap) {
   return '';
 }
 
+// 去除零宽空格等不可见字符
+const cleanName = (str) => str.replace(/[\u200B-\u200D\uFEFF]/g, '').trim();
+
+// 通过 evolves_from_id 构建完整进化链（支持首领进化等）
+function buildChainFromEvolvesFrom(startPet, petsMap) {
+  const chain = [];
+  const addedIds = new Set();
+
+  // 向上查找：找到最初始的形态
+  let rootPet = startPet;
+  while (rootPet && rootPet.evolves_from_id) {
+    const parent = petsMap.get(rootPet.evolves_from_id);
+    if (parent) {
+      rootPet = parent;
+    } else {
+      break;
+    }
+  }
+
+  // 从初始形态向下递归构建完整进化链
+  function addDescendants(pet, stage) {
+    if (!pet || addedIds.has(pet.id)) return;
+
+    const formName = pet.localized?.zh?.name || pet.form;
+
+    // 检查是否已有同名宠物，优先选择 base_hp 不为 0 的
+    const existingSameName = chain.find(p => p.name === formName);
+    if (existingSameName) {
+      // 如果已有的 base_hp 为 0，而新的不为 0，则替换
+      if (existingSameName.baseHp === 0 && pet.base_hp > 0) {
+        const idx = chain.indexOf(existingSameName);
+        chain[idx] = {
+          id: pet.id,
+          name: formName,
+          stage: existingSameName.stage,
+          level: pet.level,
+          imageSrc: getPetImageSrc(pet, formName, petsMap),
+          typeText: [pet.main_type?.localized?.zh, pet.sub_type?.localized?.zh].filter(Boolean).join('/') || '未知',
+          baseHp: pet.base_hp || 0,
+          isLeader: pet.is_leader_form || false
+        };
+      }
+      // 不再递归这个宠物的后代，避免重复
+      return;
+    }
+
+    addedIds.add(pet.id);
+
+    chain.push({
+      id: pet.id,
+      name: formName,
+      stage,
+      level: pet.level,
+      imageSrc: getPetImageSrc(pet, formName, petsMap),
+      typeText: [pet.main_type?.localized?.zh, pet.sub_type?.localized?.zh].filter(Boolean).join('/') || '未知',
+      baseHp: pet.base_hp || 0,
+      isLeader: pet.is_leader_form || false
+    });
+
+    // 查找所有从这个宠物进化来的后代
+    for (const [, p] of petsMap) {
+      if (p.evolves_from_id === pet.id) {
+        addDescendants(p, stage + 1);
+      }
+    }
+  }
+
+  addDescendants(rootPet, 1);
+  return chain;
+}
+
 // 根据宠物名称查找所有相关进化链
 function findEvolutionChains(petName, evolutionData, petsMap) {
   const chains = [];
+  const cleanedPetName = cleanName(petName);
 
-  // 遍历所有进化链
+  // 找到目标宠物
+  let targetPet = null;
+  for (const [, pet] of petsMap) {
+    const formName = cleanName(pet.localized?.zh?.name || pet.form);
+    if (formName === cleanedPetName) {
+      targetPet = pet;
+      break;
+    }
+  }
+
+  if (!targetPet) return chains;
+
+  // 方法1: 从进化链数据中查找
   for (const chainId of Object.keys(evolutionData)) {
     const chain = evolutionData[chainId];
     if (!chain.evolution_chain || chain.evolution_chain.length === 0) continue;
 
-    // 检查进化链中是否包含目标宠物
-    const containsPet = chain.evolution_chain.some(evo => {
-      const pet = petsMap.get(evo.petbase_id);
-      if (!pet) return false;
-      const formName = pet.localized?.zh?.name || pet.form;
-      return formName === petName || chain.name.includes(petName);
-    });
+    const containsPet = chain.evolution_chain.some(evo => evo.petbase_id === targetPet.id);
 
     if (containsPet) {
-      chains.push(chain);
+      const details = [];
+      for (const evo of chain.evolution_chain) {
+        const pet = petsMap.get(evo.petbase_id);
+        if (!pet) continue;
+
+        const formName = pet.localized?.zh?.name || pet.form;
+        const imageSrc = getPetImageSrc(pet, formName, petsMap);
+        const mainType = pet.main_type?.localized?.zh || '未知';
+        const subType = pet.sub_type?.localized?.zh;
+
+        details.push({
+          id: evo.petbase_id,
+          name: formName,
+          stage: evo.stage,
+          level: evo.level,
+          imageSrc,
+          typeText: subType ? `${mainType}/${subType}` : mainType
+        });
+      }
+      chains.push({ name: chain.name, details });
+    }
+  }
+
+  // 方法2: 如果没找到，通过 evolves_from_id 构建进化链
+  if (chains.length === 0) {
+    const details = buildChainFromEvolvesFrom(targetPet, petsMap);
+    if (details.length > 0) {
+      chains.push({ name: `${petName}进化链`, details });
     }
   }
 
   return chains;
-}
-
-// 获取进化链中每个宠物的详细信息
-function getEvolutionChainDetails(chain, petsMap) {
-  const details = [];
-
-  for (const evo of chain.evolution_chain) {
-    const pet = petsMap.get(evo.petbase_id);
-    if (!pet) continue;
-
-    const formName = pet.localized?.zh?.name || pet.form;
-    const imageSrc = getPetImageSrc(pet, formName, petsMap);
-    const mainType = pet.main_type?.localized?.zh || '未知';
-    const subType = pet.sub_type?.localized?.zh;
-
-    details.push({
-      id: evo.petbase_id,
-      name: formName,
-      stage: evo.stage,
-      level: evo.level,
-      imageSrc,
-      typeText: subType ? `${mainType}/${subType}` : mainType
-    });
-  }
-
-  return details;
 }
 
 // 生成进化链HTML
@@ -198,6 +277,7 @@ function generateEvolutionChainHTML(petName, chains) {
           </div>
           <div class="pet-name">${escapeHTML(pet.name)}</div>
           <div class="pet-type">${escapeHTML(pet.typeText)}</div>
+          ${pet.isLeader ? '<div class="pet-leader">首领进化</div>' : ''}
           ${pet.level ? `<div class="pet-level">Lv.${pet.level} 进化</div>` : '<div class="pet-level">初始形态</div>'}
         </div>
         ${!isLast ? '<div class="evolution-arrow">→</div>' : ''}
@@ -372,6 +452,15 @@ async function generateEvolutionChain(petName) {
             background: rgba(40, 167, 69, 0.1);
             padding: 2px 8px;
             border-radius: 8px;
+          }
+          .pet-leader {
+            font-size: 12px;
+            color: #e91e63;
+            font-weight: 600;
+            background: rgba(233, 30, 99, 0.1);
+            padding: 2px 8px;
+            border-radius: 8px;
+            margin-bottom: 4px;
           }
           .evolution-arrow {
             font-size: 40px;

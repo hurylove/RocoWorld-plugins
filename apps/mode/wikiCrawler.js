@@ -139,10 +139,6 @@ async function crawlOnebiji() {
       };
     });
     
-    console.log('[远行商人爬虫] 当前显示的商品:', data.items);
-    console.log('[远行商人爬虫] 开始时间:', data.startTime);
-    console.log('[远行商人爬虫] 结束时间:', data.endTime);
-    
     return data;
   } finally {
     if (browser) await browser.close();
@@ -173,15 +169,11 @@ async function crawlWiki() {
   
   let data;
   try {
-    console.log('[远行商人爬虫] 开始爬取...');
     data = await crawlOnebiji();
-    console.log('[远行商人爬虫] 爬取完成，商品数量:', data.items?.length);
   } catch (error) {
     console.error('[远行商人爬虫] 爬取失败:', error.message);
-    console.error('[远行商人爬虫] 错误详情:', error);
     // 如果爬取失败且本地有缓存，返回缓存内容
     if (fs.existsSync(txtSavePath)) {
-      console.log('[远行商人爬虫] 使用本地缓存');
       return fs.readFileSync(txtSavePath, 'utf-8');
     }
     return '远行商人情报获取失败，请稍后重试';
@@ -234,7 +226,6 @@ async function crawlWiki() {
   }
   
   fs.writeFileSync(txtSavePath, output, 'utf-8');
-  console.log('[远行商人爬虫] 数据已保存到:', txtSavePath);
   
   return output;
 }
@@ -354,7 +345,9 @@ async function getYxsrInfo() {
 export default getYxsrInfo;
 
 // 如果直接运行此文件
-console.log('开始获取远行商人信息...');
-refreshYxsrLog()
-  .then(info => console.log('获取到的远行商人信息:', info))
-  .catch(error => console.error('执行失败:', error));
+if (process.argv[1]?.endsWith('wikiCrawler.js')) {
+  console.log('开始获取远行商人信息...');
+  refreshYxsrLog()
+    .then(info => console.log('获取到的远行商人信息:', info))
+    .catch(error => console.error('执行失败:', error));
+}

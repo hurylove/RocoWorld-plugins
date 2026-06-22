@@ -227,10 +227,60 @@ function findEvolutionChains(petName, evolutionData, petsMap) {
           stage: evo.stage,
           level: evo.level,
           imageSrc,
-          typeText: subType ? `${mainType}/${subType}` : mainType
+          typeText: subType ? `${mainType}/${subType}` : mainType,
+          baseHp: pet.base_hp || 0,
+          isLeader: pet.is_leader_form || false
         });
       }
-      chains.push({ name: chain.name, details });
+
+      // 继续通过 evolves_from_id 添加首领进化等
+      const lastDetail = details[details.length - 1];
+      if (lastDetail) {
+        for (const [, p] of petsMap) {
+          if (p.evolves_from_id === lastDetail.id) {
+            const formName = p.localized?.zh?.name || p.form;
+            // 检查是否已有同名宠物
+            const existingSameName = details.find(d => d.name === formName);
+            if (existingSameName) {
+              // 如果已有的 base_hp 为 0，而新的不为 0，则替换
+              if (existingSameName.baseHp === 0 && p.base_hp > 0) {
+                const idx = details.indexOf(existingSameName);
+                const imageSrc = getPetImageSrc(p, formName, petsMap);
+                const mainType = p.main_type?.localized?.zh || '未知';
+                const subType = p.sub_type?.localized?.zh;
+                details[idx] = {
+                  id: p.id,
+                  name: formName,
+                  stage: existingSameName.stage,
+                  level: p.level,
+                  imageSrc,
+                  typeText: subType ? `${mainType}/${subType}` : mainType,
+                  baseHp: p.base_hp || 0,
+                  isLeader: p.is_leader_form || false
+                };
+              }
+            } else {
+              const imageSrc = getPetImageSrc(p, formName, petsMap);
+              const mainType = p.main_type?.localized?.zh || '未知';
+              const subType = p.sub_type?.localized?.zh;
+              details.push({
+                id: p.id,
+                name: formName,
+                stage: lastDetail.stage + 1,
+                level: p.level,
+                imageSrc,
+                typeText: subType ? `${mainType}/${subType}` : mainType,
+                baseHp: p.base_hp || 0,
+                isLeader: p.is_leader_form || false
+              });
+            }
+          }
+        }
+      }
+
+      // 使用进化链中第一个宠物的名字作为标题，而不是数据中的名字
+      const firstName = details[0]?.name || petName;
+      chains.push({ name: `${firstName}进化链`, details });
     }
   }
 

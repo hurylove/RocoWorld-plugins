@@ -303,11 +303,6 @@ async function generateEvolutionChain(petName) {
   // 查找所有相关进化链
   const chains = findEvolutionChains(petName, evolutionData, petsMap);
 
-  // 获取每个进化链的详细信息
-  for (const chain of chains) {
-    chain.details = getEvolutionChainDetails(chain, petsMap);
-  }
-
   const config = loadConfig();
   const width = 1280;
   const chainCount = chains.length;
@@ -523,14 +518,16 @@ async function generateEvolutionChain(petName) {
 export default generateEvolutionChain;
 
 // 如果直接运行此文件
-const testPetName = process.argv[2] || '喵喵';
-console.log(`正在生成 ${testPetName} 的进化链图片...`);
-generateEvolutionChain(testPetName)
-  .then(base64 => {
-    const outputPath = path.join(__dirname, `${testPetName}_evolution.png`);
-    fs.writeFileSync(outputPath, Buffer.from(base64, 'base64'));
-    console.log(`图片已保存到: ${outputPath}`);
-  })
-  .catch(error => {
-    console.error('生成失败:', error);
-  });
+if (process.argv[1]?.endsWith('generateEvolutionChain.js')) {
+  const testPetName = process.argv[2] || '喵喵';
+  console.log(`正在生成 ${testPetName} 的进化链图片...`);
+  generateEvolutionChain(testPetName)
+    .then(base64 => {
+      const outputPath = path.join(__dirname, `${testPetName}_evolution.png`);
+      fs.writeFileSync(outputPath, Buffer.from(base64, 'base64'));
+      console.log(`图片已保存到: ${outputPath}`);
+    })
+    .catch(error => {
+      console.error('生成失败:', error);
+    });
+}

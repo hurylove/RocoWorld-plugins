@@ -11,6 +11,9 @@ const petBaseConfPath = path.join(__dirname, '..', 'data', 'BinData', 'PETBASE_C
 // 缓存：名称 → 形态列表
 let formMapCache = null;
 
+// 去除零宽空格等不可见字符
+const cleanName = (str) => str.replace(/[\u200B-\u200D\uFEFF]/g, '').trim();
+
 function buildFormMap() {
   if (formMapCache) return formMapCache;
   try {
@@ -28,6 +31,12 @@ function buildFormMap() {
         formMapCache.set(name, []);
       }
       formMapCache.get(name).push({ id: entry.id, form });
+
+      // 同时存储去除零宽空格后的名称
+      const cleanedName = cleanName(name);
+      if (cleanedName !== name && !formMapCache.has(cleanedName)) {
+        formMapCache.set(cleanedName, formMapCache.get(name));
+      }
     }
 
     console.log(`✅ 已加载形态查询索引，共 ${formMapCache.size} 个宠物名称`);
@@ -60,7 +69,9 @@ export default class petFormQuery extends plugin {
       const match = msg.match(/^#(.+?)(?:查询|全部形态)$/);
       if (!match) return;
 
-      const petName = match[1].trim();
+      let petName = match[1].trim();
+      // 去除零宽空格等不可见字符
+      petName = petName.replace(/[\u200B-\u200D\uFEFF]/g, '').trim();
       if (!petName) return;
 
       const map = buildFormMap();

@@ -53,6 +53,7 @@ function buildPetNameMap() {
         petNameMap.set(cleaned, bestPet);
       }
     }
+    
 
     // 第三步：从PETBASE_CONF加载形态信息，构建"名称（形态）"的精确映射
     // PETBASE_CONF可能带有RocoDataRows外层包装，form字段记录了形态名称（如"单只海葵的样子"）

@@ -363,8 +363,14 @@ async function renderResultImage(results, inputWeightKg, inputHeightM) {
         const topCandidate = results[0];
         const otherCandidates = results.slice(1);
         
-        const getImageSrc = (petName) => {
-            return imageCache[petName] || '';
+        const getImageSrc = (result) => {
+            const petName = getDisplayName(result);
+            // 优先使用本地缓存
+            if (imageCache[petName]) return imageCache[petName];
+            // 其次使用 API 返回的图片 URL
+            if (result.petImgUrl) return result.petImgUrl;
+            if (result.petIconUrl) return result.petIconUrl;
+            return '';
         };
 
         const html = `
@@ -699,7 +705,7 @@ async function renderResultImage(results, inputWeightKg, inputHeightM) {
             ${topCandidate ? `
             <div class="lead-candidate">
                 <div class="lead-thumb-wrap">
-                    ${getImageSrc(getDisplayName(topCandidate)) ? `<img src="${getImageSrc(getDisplayName(topCandidate))}" alt="${escapeHTML(getDisplayName(topCandidate))}" class="lead-thumb" />` : `<div class="thumb-fallback">${escapeHTML(getDisplayName(topCandidate))[0] || '?'}</div>`}
+                    ${getImageSrc(topCandidate) ? `<img src="${getImageSrc(topCandidate)}" alt="${escapeHTML(getDisplayName(topCandidate))}" class="lead-thumb" />` : `<div class="thumb-fallback">${escapeHTML(getDisplayName(topCandidate))[0] || '?'}</div>`}
                 </div>
                 <div class="lead-info">
                     <div class="lead-title">${escapeHTML(getDisplayName(topCandidate))}</div>
@@ -721,7 +727,7 @@ async function renderResultImage(results, inputWeightKg, inputHeightM) {
                     ${otherCandidates.map((candidate, index) => `
                     <div class="candidate-row">
                         <div class="candidate-thumb-wrap">
-                            ${getImageSrc(getDisplayName(candidate)) ? `<img src="${getImageSrc(getDisplayName(candidate))}" alt="${escapeHTML(getDisplayName(candidate))}" class="candidate-thumb" />` : `<div class="thumb-fallback">${escapeHTML(getDisplayName(candidate))[0] || '?'}</div>`}
+                            ${getImageSrc(candidate) ? `<img src="${getImageSrc(candidate)}" alt="${escapeHTML(getDisplayName(candidate))}" class="candidate-thumb" />` : `<div class="thumb-fallback">${escapeHTML(getDisplayName(candidate))[0] || '?'}</div>`}
                         </div>
                     <div class="candidate-info">
                         <div class="candidate-title">${escapeHTML(getDisplayName(candidate))}</div>
@@ -806,9 +812,11 @@ async function queryFromMagicBook(weightKg, heightM) {
 function convertApiResultsToLocalFormat(apiData) {
     const results = [];
     
-    // 处理新 API 格式：items 数组
-    if (apiData.items && apiData.items.length > 0) {
-        for (const item of apiData.items) {
+    // API 返回格式: { code: 0, data: { items: [...] } }
+    const items = apiData?.items || apiData?.data?.items || [];
+    
+    if (items.length > 0) {
+        for (const item of items) {
             results.push({
                 name: item.name,
                 form: item.form || '',
@@ -821,8 +829,8 @@ function convertApiResultsToLocalFormat(apiData) {
                 petId: item.id,
                 attributes: item.unit_type || [],
                 isExact: (item.r_value || 0) > 0.8,
-                petIconUrl: item.pet_icon_url ? `https://wegame.shallow.ink${item.pet_icon_url}` : null,
-                petImgUrl: item.pet_img_url ? `https://wegame.shallow.ink${item.pet_img_url}` : null
+                petIconUrl: item.pet_icon_url || null,
+                petImgUrl: item.pet_img_url || null
             });
         }
     }

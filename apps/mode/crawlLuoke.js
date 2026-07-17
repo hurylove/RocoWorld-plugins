@@ -862,14 +862,14 @@ async function crawlLuoke(weightKg, heightM, topN = 10) {
         results = results.slice(0, topN);
         
         if (results.length === 0) {
-            return null;
+            return { type: 'empty', message: '未找到匹配的宠物蛋，请检查尺寸和重量是否正确' };
         }
         
         const imageBase64 = await renderResultImage(results, weightKg, heightM);
-        return imageBase64;
+        return { type: 'success', imageBase64 };
     }
     
-    return null;
+    return { type: 'error', message: 'API查询失败，请检查配置' };
 }
 
 export {

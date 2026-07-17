@@ -41,12 +41,12 @@ export default class RocoEggQuery extends plugin {
 
       await this.reply('正在查询孵蛋信息，请稍候...', false);
 
-      const imageBase64 = await crawlLuoke(weight, size);
+      const result = await crawlLuoke(weight, size);
 
-      if (imageBase64) {
-        await this.reply(segment.image(`base64://${imageBase64}`), false);
+      if (result.type === 'success') {
+        await this.reply(segment.image(`base64://${result.imageBase64}`), false);
       } else {
-        await this.reply('查询失败，无法生成图片', false);
+        await this.reply(result.message || '查询失败', false);
       }
     } catch (error) {
       console.error('获取孵蛋信息失败:', error);

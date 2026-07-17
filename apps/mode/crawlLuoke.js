@@ -773,18 +773,19 @@ async function queryFromMagicBook(weightKg, heightM) {
 
     try {
         const params = new URLSearchParams({
-            diameter: heightM.toString(),
+            height: heightM.toString(),
             weight: weightKg.toString(),
-            sameRideEgg: ''
+            page_no: '1',
+            page_size: '20'
         });
 
-        const url = `https://wegame.shallow.ink/api/v1/games/rocom/pet/size-query?${params}`;
+        const url = `https://wegame.shallow.ink/api/v1/games/rocom/egg/search?${params}`;
         
         const response = await fetch(url, {
             method: 'GET',
             headers: {
                 'X-API-Key': apiKey,
-                'Authorization': `Bearer ${apiKey}`
+                'Authorization': apiKey
             }
         });
 
@@ -805,40 +806,23 @@ async function queryFromMagicBook(weightKg, heightM) {
 function convertApiResultsToLocalFormat(apiData) {
     const results = [];
     
-    // 处理精确匹配结果
-    if (apiData.exactResults && apiData.exactResults.length > 0) {
-        for (const item of apiData.exactResults) {
+    // 处理新 API 格式：items 数组
+    if (apiData.items && apiData.items.length > 0) {
+        for (const item of apiData.items) {
             results.push({
-                name: item.pet,
-                form: '',
-                heightLow: item.diameterMin * 100,
-                heightHigh: item.diameterMax * 100,
-                weightLow: item.weightMin * 1000,
-                weightHigh: item.weightMax * 1000,
-                similarity: item.probability / 100,
-                baseId: null,
-                petId: item.petId,
-                attributes: item.attributes,
-                isExact: true
-            });
-        }
-    }
-    
-    // 处理候选结果
-    if (apiData.candidates && apiData.candidates.length > 0) {
-        for (const item of apiData.candidates) {
-            results.push({
-                name: item.pet,
-                form: '',
-                heightLow: item.diameterMin * 100,
-                heightHigh: item.diameterMax * 100,
-                weightLow: item.weightMin * 1000,
-                weightHigh: item.weightMax * 1000,
-                similarity: 0.5, // 候选结果没有相似度，默认0.5
-                baseId: null,
-                petId: item.petId,
-                attributes: item.attributes,
-                isExact: false
+                name: item.name,
+                form: item.form || '',
+                heightLow: (item.height_range_m?.[0] || 0) * 100,
+                heightHigh: (item.height_range_m?.[1] || 0) * 100,
+                weightLow: (item.weight_range_kg?.[0] || 0) * 1000,
+                weightHigh: (item.weight_range_kg?.[1] || 0) * 1000,
+                similarity: item.r_value || 0,
+                baseId: item.id,
+                petId: item.id,
+                attributes: item.unit_type || [],
+                isExact: (item.r_value || 0) > 0.8,
+                petIconUrl: item.pet_icon_url ? `https://wegame.shallow.ink${item.pet_icon_url}` : null,
+                petImgUrl: item.pet_img_url ? `https://wegame.shallow.ink${item.pet_img_url}` : null
             });
         }
     }
